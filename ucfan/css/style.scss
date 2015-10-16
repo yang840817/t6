@@ -1,0 +1,127 @@
+html, body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url("../img/main_bg.jpg");
+    background-repeat: repeat-x;
+    background-position: 0 100px;
+    background-color: #1D1D1D;
+}
+
+.clear {
+    clear: both;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.header {
+    margin: 10px 20px;
+    background-image: url("../img/header_bg.gif");
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+    float: left;
+    padding: 40px 0px 40px 40px;
+}
+
+@mixin nth-social-icon($order) {
+    background-position: 0-37px*($order - 1) 0;
+}
+
+.social {
+    float: right;
+    padding: 40px 40px 40px 0px;
+    height: 53px;
+    text-align: right;
+
+    li {
+        display: inline-block;
+        line-height: 30px;
+        margin: 3px 0px 3px 4px;
+        height: 27px;
+        width: 27px;
+        background-image: url("../img/top_socials.png");
+
+        & > a {
+        }
+
+    }
+
+    .facebook  { @include nth-social-icon(1); }
+    .twitter   { @include nth-social-icon(2); }
+    .vimeo     { @include nth-social-icon(3); }
+    .delicious { @include nth-social-icon(4); }
+    .rss       { @include nth-social-icon(5); }
+
+}
+
+
+.top-menu {
+    padding-top: 3px;
+    background-image: url("../img/top_menu_bg.png");
+    background-color: transparent;
+    border: 0px;
+    margin: 0 20px;
+
+    .navbar-nav {
+        min-height: 60px;
+
+        &> li {
+            border-right: 1px #eee solid;
+
+            & > a {
+                color: #000;
+                padding: 0 25px;
+                line-height: 57px;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: #fff;
+                    background: #80B600;
+                }
+            }
+        }
+
+        .active > a, .active > a:hover, .active > a:active {
+            color: #fff;
+            background: #80B600;
+        }
+    }
+
+    .search {
+        margin: 10px 15px;
+        padding: 7px;
+        background-color: #F3F3F3;
+        border: 1px #E5E5E5 solid;
+        width: 304px;
+
+        input {
+            float: left;
+            border: 0;
+            background-color: inherit;
+            vertical-align: middle;
+            width: 90%;
+        }
+
+        button {
+            float: right;
+            background-image: url("../img/search_btn.png");
+            border: 0px;
+            height: 20px;
+            width: 20px;
+            vertical-align: middle;
+        }
+    }
+}
