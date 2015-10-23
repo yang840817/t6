@@ -1,0 +1,81 @@
+*
+  box-sizing: border-box
+
+.grayBorder
+  border-style: solid
+  border-width: 1px
+  border-color: $borderColor
+  box-shadow: 1px 1px $boxShadowColor
+
+/* -- classes and selectors for the background -- */
+#background
+  z-index: -1
+  width: $backgroundWidth
+  height: $backgroundHeight
+  background-color: $backgroundColor
+
+#backgroundImageLayer
+  z-index: 0
+  float: left
+  width: $backgroundWidth
+  height: $backgroundImageLayerHeight
+  background-image: url("../images/bg.png")
+  margin-top: $mainHeightUnit
+
+/* -- classes and selectors for the front layer -- */
+#bodyContainer
+  margin: 0 auto
+  width: $mainWidth
+  padding: 0
+
+.frontLayer
+  z-index: 1
+  width: 100%
+  background-image: url("../images/container_bg.png")
+
+/*  body - header */
+#header
+  height: $headerHeight
+  // height: 100% / 25 * 1.3
+  margin-top: -($mainHeightUnit * 0.9)
+  // background-color: $testBGColor1
+@import "headerStyle"
+
+/*  body - nav bar */
+#topNavBar
+  clear: both
+  float: left
+  width: 70%
+  height: $topNavBarHeight
+  margin-top: $mainHeightUnit / 3.5
+  // background-color: $testBGColor2
+@import "topNavBarStyle"
+
+#searchBar
+  float: right
+  width: 29%
+  height: $searchBarHeight
+  margin-top: $mainHeightUnit / 3.5
+  // background-color: $testBGColor2
+@import "searchBarStyle"
+
+#mainContainer
+  clear: both
+  float: left
+  height: $mainContainerHeight
+@import "mainContainerStyle"
+
+#subContainer
+  float: left
+  height: $subContainerHeight
+  margin-top: $mainHeightUnit * 0.5
+  margin-bottom: 0
+@import "subContainerStyle"
+
+#footer
+  float: left
+  margin-top: 2%
+  height: $footerHeight
+  width: 100%
+  background-color: #000000
+@import "footerStyle"
