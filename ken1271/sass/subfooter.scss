@@ -1,0 +1,22 @@
+.subfooter{
+  height: 150px;
+  background-color: #3B3B3B;
+  font-size: 18px;
+  p{
+    float: left;
+    color: white;
+    >a{
+      color: #80B600;
+    }
+  }
+  >div{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: 60%;
+    ul{
+      float: right;
+      font-variant: small-caps;
+    }
+  }
+}

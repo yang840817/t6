@@ -1,0 +1,27 @@
+/* line 1, ../sass/subfooter.scss */
+.subfooter {
+  height: 150px;
+  background-color: #3B3B3B;
+  font-size: 18px;
+}
+/* line 5, ../sass/subfooter.scss */
+.subfooter p {
+  float: left;
+  color: white;
+}
+/* line 8, ../sass/subfooter.scss */
+.subfooter p > a {
+  color: #80B600;
+}
+/* line 12, ../sass/subfooter.scss */
+.subfooter > div {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  top: 60%;
+}
+/* line 17, ../sass/subfooter.scss */
+.subfooter > div ul {
+  float: right;
+  font-variant: small-caps;
+}

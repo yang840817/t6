@@ -1,0 +1,19 @@
+/* line 1, ../sass/subheader.scss */
+.subheader {
+  position: relative;
+  bottom: 50px;
+  background-image: url("img/header_bg.gif");
+  background-position: center;
+  background-repeat: repeat;
+  border-width: 1px;
+  border-style: solid;
+}
+/* line 9, ../sass/subheader.scss */
+.subheader > div {
+  padding: 30px;
+}
+/* line 12, ../sass/subheader.scss */
+.subheader > div > div {
+  float: right;
+  margin: 0 20px;
+}

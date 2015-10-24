@@ -1,0 +1,12 @@
+/* line 1, ../sass/page.scss */
+body {
+  background-image: url("img/main_bg.jpg");
+  background-position: center;
+  background-repeat: repeat;
+}
+
+/* line 6, ../sass/page.scss */
+.page {
+  width: 1200px;
+  margin: 0 auto;
+}

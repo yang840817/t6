@@ -1,0 +1,32 @@
+/* line 1, ../sass/main-top.scss */
+.main-top {
+  width: 96%;
+  margin: 0 auto;
+  position: relative;
+  bottom: 50px;
+  text-align: center;
+}
+/* line 7, ../sass/main-top.scss */
+.main-top .work-content {
+  background-color: #c1bbbb;
+  width: 24%;
+  height: 300px;
+  margin: 0 5px;
+}
+/* line 12, ../sass/main-top.scss */
+.main-top .work-content h4 {
+  font-variant: small-caps;
+}
+/* line 15, ../sass/main-top.scss */
+.main-top .work-content img {
+  padding: 10px 0;
+}
+/* line 18, ../sass/main-top.scss */
+.main-top .work-content a {
+  background-color: white;
+  padding: 10px;
+}
+/* line 22, ../sass/main-top.scss */
+.main-top .work-content p {
+  padding: 10px 0;
+}

@@ -1,0 +1,29 @@
+.main-top{
+  width:96%;
+  margin: 0 auto;
+  position: relative;
+  bottom: 50px;
+  text-align: center;
+  .work-content{
+    background-color: #c1bbbb;
+    width:24%;
+    height:300px;
+    margin: 0 5px;
+    h4{
+      font-variant: small-caps;
+    }
+    img{
+      padding: 10px 0;
+    }
+    a{
+      background-color: white;
+      padding: 10px;
+    }
+    p{
+      padding: 10px 0;
+    }
+
+  }
+
+
+}

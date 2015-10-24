@@ -1,0 +1,15 @@
+/* line 1, ../sass/main-bottom.scss */
+.main-bottom {
+  width: 96%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+/* line 5, ../sass/main-bottom.scss */
+.main-bottom h1 {
+  font-variant: small-caps;
+}
+/* line 8, ../sass/main-bottom.scss */
+.main-bottom img {
+  margin: 20px auto;
+  width: 100%;
+}
