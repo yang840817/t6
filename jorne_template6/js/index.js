@@ -4,9 +4,9 @@ $(window).scroll(function(){
 	var scrollValue = $(this).scrollTop();
 	if(window.innerWidth>1024){
 		if(scrollValue > $(window).height()*0.5){
-			$('.top').css('display','block');
+			$('.top').fadeIn();
 		}else{
-			$('.top').css('display','none');
+			$('.top').fadeOut();
 		}
 	}
 });
