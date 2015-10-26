@@ -2,31 +2,30 @@
 .main-top {
   width: 96%;
   margin: 0 auto;
-  position: relative;
-  bottom: 50px;
   text-align: center;
 }
-/* line 7, ../sass/main-top.scss */
+/* line 5, ../sass/main-top.scss */
 .main-top .work-content {
-  background-color: #c1bbbb;
+  background-color: #E7E7E7;
   width: 24%;
   height: 300px;
   margin: 0 5px;
 }
-/* line 12, ../sass/main-top.scss */
+/* line 10, ../sass/main-top.scss */
 .main-top .work-content h4 {
   font-variant: small-caps;
 }
-/* line 15, ../sass/main-top.scss */
+/* line 13, ../sass/main-top.scss */
 .main-top .work-content img {
   padding: 10px 0;
 }
-/* line 18, ../sass/main-top.scss */
+/* line 16, ../sass/main-top.scss */
 .main-top .work-content a {
-  background-color: white;
+  background-color: #c1bbbb;
   padding: 10px;
+  color: black;
 }
-/* line 22, ../sass/main-top.scss */
+/* line 21, ../sass/main-top.scss */
 .main-top .work-content p {
   padding: 10px 0;
 }

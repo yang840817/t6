@@ -10,3 +10,9 @@
 .clear {
   clear: both;
 }
+
+/* line 10, ../sass/main.scss */
+.shift-top {
+  position: relative;
+  bottom: 90px;
+}

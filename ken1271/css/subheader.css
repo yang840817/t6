@@ -1,7 +1,7 @@
 /* line 1, ../sass/subheader.scss */
 .subheader {
   position: relative;
-  bottom: 50px;
+  bottom: 90px;
   background-image: url("img/header_bg.gif");
   background-position: center;
   background-repeat: repeat;
@@ -10,7 +10,7 @@
 }
 /* line 9, ../sass/subheader.scss */
 .subheader > div {
-  padding: 30px;
+  padding: 40px;
 }
 /* line 12, ../sass/subheader.scss */
 .subheader > div > div {

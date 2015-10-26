@@ -1,17 +1,17 @@
 .subheader{
   position: relative;
-  bottom: 50px;
+  bottom: 90px;
   background-image: url("img/header_bg.gif");
   background-position: center;
   background-repeat: repeat;
   border-width: 1px;
   border-style: solid;
   >div{
-    padding:30px;
+    padding:40px;
   }
   >div>div{
     float: right;
     margin: 0 20px;
   }
-  
+
 }

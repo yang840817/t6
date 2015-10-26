@@ -1,8 +1,8 @@
 /* line 1, ../sass/page-footer.scss */
 .page-footer {
-  width: 1200px;
+  width: 1250px;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 40px 0;
   position: relative;
   top: 50px;
   background-image: url("img/header_bg.gif");
@@ -16,16 +16,51 @@
   margin: 0 auto 20px;
 }
 /* line 15, ../sass/page-footer.scss */
-.page-footer .input-text {
+.page-footer .para-background {
+  margin: 20px auto;
+}
+/* line 17, ../sass/page-footer.scss */
+.page-footer .para-background p {
+  background-color: #E6E6E6;
+  border: 1px solid #DBDBDB;
+  padding: 20px;
+  margin-bottom: -5px;
+}
+/* line 25, ../sass/page-footer.scss */
+.page-footer .input-text > input {
   width: 100%;
 }
-/* line 18, ../sass/page-footer.scss */
-.page-footer > div > div > div {
+/* line 28, ../sass/page-footer.scss */
+.page-footer .input-text > div {
+  padding: 10px 0;
+}
+/* line 31, ../sass/page-footer.scss */
+.page-footer .input-text #message {
+  height: 100px;
+}
+/* line 34, ../sass/page-footer.scss */
+.page-footer .input-text a {
+  margin: 10px auto;
+  font-variant: small-caps;
+  color: white;
+  font-size: 16px;
+  padding: 8px;
+}
+/* line 41, ../sass/page-footer.scss */
+.page-footer .input-text #clearform {
+  background-color: black;
+}
+/* line 44, ../sass/page-footer.scss */
+.page-footer .input-text #send {
+  background-color: #80B600;
+}
+/* line 48, ../sass/page-footer.scss */
+.page-footer .display-size > div > div {
   padding: 0;
   width: 22%;
   margin: 0 4px 4px 0;
 }
-/* line 22, ../sass/page-footer.scss */
-.page-footer > div > div > div img {
+/* line 52, ../sass/page-footer.scss */
+.page-footer .display-size > div > div img {
   width: 100%;
 }
