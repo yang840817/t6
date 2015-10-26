@@ -1,0 +1,48 @@
+.nav-menu {
+	background-color: white;
+	padding: 0;
+	ul {
+		margin: 0;
+		li {
+			border-right: 1px solid #EEFFBB;
+			padding: 0;
+			a {
+				display: block; //make height of <a> same as ul
+				line-height: 55px;
+				color: black;
+				font-size: 15px;
+				padding: 0px 20px;
+				text-decoration: none;
+				&:hover {
+					background-color: green;
+					color: white;
+				}
+			}
+		}
+	}
+}
+.search-box {
+	padding-right: 0px;
+	.search-form {
+		position: relative;
+		padding: 10px;
+		background: white;
+		#search-field {
+			width: 100%;
+			height: auto;
+			background-color: #DDDDDD;
+			border:0;
+			font-size: 14px;
+			padding: 7px;
+		}
+		button {
+			position: absolute;
+			right: 10px;
+			top: 0;
+			bottom: 0;
+			z-index: 2;
+			border: 0;
+			background: transparent;
+		}
+	}	
+}

@@ -1,0 +1,13 @@
+@mixin setNavLinkPic($number, $x, $y) {
+	@for $i from 1 through $number {
+		&:nth-child( #{$i} ) {
+			a {
+				$x-axis: ($i - 1) * (-1) * $x;
+				background-position: #{$x-axis}px 0px;
+				&:hover {
+					background-position: ($x-axis)px (-$y)px;
+				}
+			}
+		}	
+	}	
+}
