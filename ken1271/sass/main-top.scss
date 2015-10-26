@@ -1,11 +1,9 @@
 .main-top{
   width:96%;
   margin: 0 auto;
-  position: relative;
-  bottom: 50px;
   text-align: center;
   .work-content{
-    background-color: #c1bbbb;
+    background-color: #E7E7E7;
     width:24%;
     height:300px;
     margin: 0 5px;
@@ -16,8 +14,9 @@
       padding: 10px 0;
     }
     a{
-      background-color: white;
+      background-color: #c1bbbb;
       padding: 10px;
+      color: black;
     }
     p{
       padding: 10px 0;

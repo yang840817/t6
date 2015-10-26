@@ -1,4 +1,9 @@
-/* line 2, ../sass/main-cover.scss */
+/* line 1, ../sass/main-cover.scss */
+.main-cover {
+  position: relative;
+  bottom: 60px;
+}
+/* line 4, ../sass/main-cover.scss */
 .main-cover img {
   width: 100%;
 }

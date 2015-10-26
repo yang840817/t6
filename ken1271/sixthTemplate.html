@@ -54,36 +54,35 @@
     </div>
     <div class="main">
       <div class="main-header">
-        <nav class="navbar-default">
-          <ul class="nav navbar-nav">
-            <li class="active">
-              <a href="">home</a>
-            </li>
-            <li>
-              <a href="">about</a>
-            </li>
-            <li>
-              <a href="">features</a>
-            </li>
-            <li>
-              <a href="">portfolio</a>
-            </li>
-            <li>
-              <a href="">blog</a>
-            </li>
-            <li>
-              <a href="">contacts</a>
-            </li>
-          </ul>
-        </nav>
+        <ul class="nav navbar-nav">
+          <li id="item1">
+            <a href="">home</a>
+          </li>
+          <li>
+            <a href="">about</a>
+          </li>
+          <li>
+            <a href="">features</a>
+          </li>
+          <li>
+            <a href="">portfolio</a>
+          </li>
+          <li>
+            <a href="">blog</a>
+          </li>
+          <li>
+            <a href="">contacts</a>
+          </li>
+        </ul>
         <div>
-          <input placeholder="search...">
+          <input id="search-bar" placeholder="search...">
+          <a id="search-icon"href=""><img src="img/search_btn.png"></a>
         </div>
       </div>
-      <div class="main-cover">
+      <div class="main-cover clear">
         <img src="img/cover3.jpg">
       </div>
-      <div class="main-top row">
+      <div class="main-top row shift-top">
         <div class="work-content col-md-3">
           <h4>growth strategies</h4>
           <img src="img/icon1.png">
@@ -117,7 +116,7 @@
           <a href="">More</a>
         </div>
       </div>
-      <div class="main-center row">
+      <div class="main-center row shift-top">
         <div class="col-md-4">
           <h1>welcome</h1>
           <img src="img/post_blog.jpg">
@@ -181,7 +180,7 @@
           </div>
         </div>
       </div>
-      <div class="main-bottom">
+      <div class="main-bottom shift-top">
         <h1>featured works</h1>
         <div class="row">
           <div class="col-md-3">
@@ -208,14 +207,17 @@
       </div>
       <div class="col-md-3">
         <h2>testimonials</h2>
-        <p>
-          " Sed dapibus molestie interdum. Fusce nec est ante, sit amet lacinia lorem. Maecenas nec eros ut mauris pulvinar suscipit. Aliquam erat
-        </p>
+        <div class="para-background">
+          <p class="">
+            " Sed dapibus molestie interdum. Fusce nec est ante, sit amet lacinia lorem. Maecenas nec eros ut mauris pulvinar suscipit. Aliquam erat
+          </p>
+          <img src="img/testimonials_arrow.png">
+        </div>
         <div class="row">
           <div class="col-md-2">
             <img src="img/img11.jpg">
           </div>
-          <div class="col-md-8">
+          <div class="col-md-10">
             <p>
               Stephen Bingham
             </p>
@@ -223,15 +225,17 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 input-text">
         <h2>get in touch!</h2>
-        <input class="input-text" placeholder="Name">
-        <input class="input-text" placeholder="Email">
-        <input class="input-text" placeholder="Message">
-        <input type="submit" value="clear form">
-        <input type="submit" value="send!">
+        <input placeholder="Name">
+        <input placeholder="Email">
+        <input id="message" type="text" placeholder="Message">
+        <div>
+          <a id="clearform" href="">clear form</a>
+          <a id="send" href="">send!</a>
+        </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 display-size">
         <h2>flickr</h2>
         <div row>
           <div class="col-md-3">
@@ -281,22 +285,23 @@
   <div class="subfooter">
     <div>
       <p>
-        business planet © 2020 |<a href="" >Privacy Policy</a>
+        business planet © 2020 |
       </p>
+      <a href="" >Privacy Policy</a>
       <ul class="list-inline">
-        <li class="active">
+        <li class="border-right footer-item1" >
           <a href="">home</a>
-        </li>
-        <li>
+        </li >
+        <li class="border-right">
           <a href="">about</a>
         </li>
-        <li>
+        <li class="border-right">
           <a href="">features</a>
-        </li>
-        <li>
+        </li >
+        <li class="border-right">
           <a href="">portfolio</a>
         </li>
-        <li>
+        <li class="border-right">
           <a href="">blog</a>
         </li>
         <li>

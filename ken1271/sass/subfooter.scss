@@ -1,22 +1,37 @@
+$font-color-1:#5C5C5C;
+$font-color-2:#80B600 ;
 .subfooter{
   height: 150px;
   background-color: #3B3B3B;
   font-size: 18px;
+  a{
+    color: $font-color-2;
+  }
   p{
     float: left;
     color: white;
-    >a{
-      color: #80B600;
-    }
+    font-variant: small-caps;
+    color: $font-color-1;
   }
   >div{
-    width: 1200px;
+    width: 1250px;
     margin: 0 auto;
     position: relative;
     top: 60%;
     ul{
       float: right;
       font-variant: small-caps;
+      li{
+        color: $font-color-2;
+        padding: 0 5px;
+      }
+      .footer-item1>a{
+        color: $font-color-1;
+      }
+      .border-right{
+        border-right: solid 2px #a6a0a0;
+      }
+
     }
   }
 }

@@ -1,27 +1,42 @@
-/* line 1, ../sass/subfooter.scss */
+/* line 3, ../sass/subfooter.scss */
 .subfooter {
   height: 150px;
   background-color: #3B3B3B;
   font-size: 18px;
 }
-/* line 5, ../sass/subfooter.scss */
+/* line 7, ../sass/subfooter.scss */
+.subfooter a {
+  color: #80B600;
+}
+/* line 10, ../sass/subfooter.scss */
 .subfooter p {
   float: left;
   color: white;
+  font-variant: small-caps;
+  color: #5C5C5C;
 }
-/* line 8, ../sass/subfooter.scss */
-.subfooter p > a {
-  color: #80B600;
-}
-/* line 12, ../sass/subfooter.scss */
+/* line 16, ../sass/subfooter.scss */
 .subfooter > div {
-  width: 1200px;
+  width: 1250px;
   margin: 0 auto;
   position: relative;
   top: 60%;
 }
-/* line 17, ../sass/subfooter.scss */
+/* line 21, ../sass/subfooter.scss */
 .subfooter > div ul {
   float: right;
   font-variant: small-caps;
+}
+/* line 24, ../sass/subfooter.scss */
+.subfooter > div ul li {
+  color: #80B600;
+  padding: 0 5px;
+}
+/* line 28, ../sass/subfooter.scss */
+.subfooter > div ul .footer-item1 > a {
+  color: #5C5C5C;
+}
+/* line 31, ../sass/subfooter.scss */
+.subfooter > div ul .border-right {
+  border-right: solid 2px #a6a0a0;
 }
