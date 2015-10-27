@@ -1,27 +1,25 @@
-/* line 1, ../sass/main-center.scss */
 .main-center {
   width: 96%;
   margin: 0 auto;
   padding: 50px 0;
   border-bottom: 1px solid black;
 }
-/* line 6, ../sass/main-center.scss */
 .main-center h1 {
   font-variant: small-caps;
 }
-/* line 9, ../sass/main-center.scss */
-.main-center p {
-  display: inline;
-}
-/* line 12, ../sass/main-center.scss */
-.main-center > div > div {
-  padding: 10px 0;
-}
-/* line 15, ../sass/main-center.scss */
 .main-center h4 {
   background-color: #80B600;
   color: white;
   padding: 5px;
   width: 90px;
   margin: 0 0 20px 0;
+}
+.main-center p {
+  display: inline;
+}
+.main-center > div > img {
+  width: 100%;
+}
+.main-center > div > div {
+  padding: 10px 0;
 }

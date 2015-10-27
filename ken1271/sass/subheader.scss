@@ -2,10 +2,7 @@
   position: relative;
   bottom: 90px;
   background-image: url("img/header_bg.gif");
-  background-position: center;
-  background-repeat: repeat;
-  border-width: 1px;
-  border-style: solid;
+  border: 1px solid;
   >div{
     padding:40px;
   }
@@ -13,5 +10,4 @@
     float: right;
     margin: 0 20px;
   }
-
 }

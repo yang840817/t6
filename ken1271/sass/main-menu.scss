@@ -1,4 +1,4 @@
-.main-header{
+.main-menu{
   background-color: rgba(0, 0, 0, 0);
   position: relative;
   bottom: 60px;
@@ -9,8 +9,8 @@
   }
   >ul{
     width:950px;
+    margin: 0 auto;
     font-variant: small-caps;
-
     #item1{
       background-color: #80B600;
     }
@@ -23,20 +23,22 @@
     }
   }
   >div{
-    float: right;
     width:280px;
     margin: 0 0 0 20px;
-    input,a{
+    position: relative;
+    input{
       position: relative;
-      top:10px;
+      top:20%;
     }
     #search-bar{
       margin: 0 auto;
       width:90%;
-      left: 10px;
+      left: 5%;
     }
     #search-icon{
-      right:20px;
+      position: absolute;
+      top: 20%;
+      right:10%;
     }
   }
 }

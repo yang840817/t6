@@ -2,11 +2,16 @@
   width:96%;
   margin: 0 auto;
   text-align: center;
+  >div{
+      margin: 5px auto;
+  }
   .work-content{
     background-color: #E7E7E7;
-    width:24%;
+    border: 1px solid #DBDBDB;
+    padding: 10px 5px;
+    width:90%;
     height:300px;
-    margin: 0 5px;
+    margin: 0 auto;
     h4{
       font-variant: small-caps;
     }
@@ -23,6 +28,4 @@
     }
 
   }
-
-
 }
