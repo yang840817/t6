@@ -1,6 +1,7 @@
+@import "mixin";
+
 .subheader{
-  position: relative;
-  bottom: 90px;
+  @include position_shift_vertical;
   background-image: url("img/header_bg.gif");
   border: 1px solid;
   >div{

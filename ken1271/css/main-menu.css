@@ -30,15 +30,15 @@
 }
 .main-menu > div input {
   position: relative;
-  top: 20%;
+  bottom: -20%;
 }
 .main-menu > div #search-bar {
-  margin: 0 auto;
   width: 90%;
+  margin: 0 auto;
   left: 5%;
 }
 .main-menu > div #search-icon {
   position: absolute;
-  top: 20%;
+  bottom: 30%;
   right: 10%;
 }

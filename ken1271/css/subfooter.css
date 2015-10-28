@@ -1,5 +1,5 @@
 .subfooter {
-  height: 150px;
+  height: 200px;
   background-color: #3B3B3B;
   font-size: 18px;
 }
@@ -17,7 +17,7 @@
   width: 98%;
   margin: 0 auto;
   position: relative;
-  top: 60%;
+  bottom: -70%;
 }
 .subfooter > div ul {
   float: right;

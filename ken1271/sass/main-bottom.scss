@@ -1,12 +1,11 @@
+@import "mixin";
 .main-bottom{
-  width: 96%;
-  margin: 0 auto;
+  @include container_width(96%,0,auto);
   padding: 20px 0;
   h1{
     font-variant: small-caps;
   }
   img{
-    margin: 20px auto;
-    width: 100%;
+    @include container_width(100%,20px,auto);
   }
 }

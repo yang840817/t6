@@ -1,17 +1,18 @@
+@import "mixin";
+@import "variable";
+
 .main-top{
-  width:96%;
-  margin: 0 auto;
+  @include container_width;
   text-align: center;
   >div{
       margin: 5px auto;
   }
   .work-content{
-    background-color: #E7E7E7;
-    border: 1px solid #DBDBDB;
+    background-color: $back-color-3;
+    border: 1px solid $border-color-3;
     padding: 10px 5px;
-    width:90%;
     height:300px;
-    margin: 0 auto;
+    @include container_width(90%,0,auto);
     h4{
       font-variant: small-caps;
     }
@@ -19,13 +20,12 @@
       padding: 10px 0;
     }
     a{
-      background-color: #c1bbbb;
+      background-color: $back-color-4;
       padding: 10px;
-      color: black;
+      color: $font-color-4;
     }
     p{
       padding: 10px 0;
     }
-
   }
 }

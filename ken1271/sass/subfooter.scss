@@ -1,8 +1,9 @@
-$font-color-1:#5C5C5C;
-$font-color-2:#80B600 ;
+@import "mixin";
+@import "variable";
+
 .subfooter{
-  height: 150px;
-  background-color: #3B3B3B;
+  height: 200px;
+  background-color: $back-color-2;
   font-size: 18px;
   a{
     color: $font-color-2;
@@ -15,10 +16,8 @@ $font-color-2:#80B600 ;
     color: $font-color-1;
   }
   >div{
-    width: 98%;
-    margin: 0 auto;
-    position: relative;
-    top: 60%;
+    @include container_width(98%,0,auto);
+    @include position_shift_vertical(relative,-70%);
     ul{
       float: right;
       font-variant: small-caps;
@@ -30,9 +29,8 @@ $font-color-2:#80B600 ;
         color: $font-color-1;
       }
       .border-right{
-        border-right: solid 2px #a6a0a0;
+        border-right: solid 2px $border-color-2;
       }
-
     }
   }
 }
