@@ -1,0 +1,98 @@
+@mixin screen_width() {
+  width: 1100px;
+}
+@mixin social_pic {
+  background-image: url("../img/social.png");
+  display: inline-block;
+  height: 27px;
+  width: 27px;
+}
+
+body{
+  background-image: url("../img/bg.jpg");
+
+  .containerr{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+  }
+
+  .containerrr{
+    background-color: black;
+    height: 230px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+  }
+
+  header{
+    background-image: url("../img/subbg.gif");
+    position: relative;
+    top: 10px;
+    padding: 30px;
+  }
+
+  .container{
+    @include screen_width();
+  }
+
+  .social-pic
+  {
+    float: right;
+    right: 10px;
+    ul{
+      list-style-type: none;
+      padding-left: 0px;
+    }
+    li{
+      display: inline-block;
+      margin-left: 6px;
+      margin-right: 6px;
+    }
+  }
+
+  #scl_pic1{
+    @include social_pic();
+    background-position:0px 0px;
+  }
+
+  #scl_pic2{
+    @include social_pic();
+    background-position:-37px 0px;
+  }
+
+  #scl_pic3{
+    @include social_pic();
+    background-position:-74px 0px;
+  }
+
+  #scl_pic4{
+    @include social_pic();
+    background-position:-111px 0px;
+  }
+
+  #scl_pic5{
+    @include social_pic();
+    background-position:-150px 0px;
+  }
+
+  #scl_pic1:hover{
+    background-position: 0px -27px;
+  }
+  #scl_pic2:hover{
+    background-position: -37px -27px;
+  }
+  #scl_pic3:hover{
+    background-position: -74px -27px;
+  }
+  #scl_pic4:hover{
+    background-position: -111px -27px;
+  }
+  #scl_pic5:hover{
+    background-position: -150px -27px;
+  }
+
+
+}

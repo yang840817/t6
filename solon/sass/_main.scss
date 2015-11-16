@@ -1,0 +1,51 @@
+.clear{
+  clear: both;
+}
+
+.main{
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  ul{
+    list-style-type: none;
+    padding-left: 0px;
+    li{
+      padding: 20px;
+      float: left;
+      border-right: 1px solid #d9d9d9;
+      color: black;
+    }
+    a{
+      text-decoration: none;
+    }
+
+    li:hover{
+      background-color: #80b600;
+      color: white;
+    }
+  }
+
+  #menu{
+    background-color: white;
+  }
+
+  .col-md-9{
+    background-color: white;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .col-md-3{
+    background-color: white;
+
+    input{
+      background-color: #dddddd;
+      border: 0px;
+      height: 100%;
+    }
+    button{
+      border: 0px;
+    }
+  }
+}
