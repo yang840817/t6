@@ -45,11 +45,13 @@
               <a href="#"><li>CONTACTS</li></a>
             </ul>
           </div>
-          <div class=".clear">
+            <div class=".clear">
           </div>
           <div class="col-md-3">
-            <input type="text" name="searchtext" placeholder="Search the Site...">
-            <button type="button" name=""><img src="img/search.png" alt="" /></button>
+            <div class="shearch-bg">
+              <input type="text" name="searchtext" placeholder="Search the Site...">
+              <button type="button" name=""><img src="img/search.png" alt="" /></button>
+            </div>
           </div>
         </div>
       </div>
@@ -111,51 +113,42 @@
               Curabitur velit nisl, porttitor viverra molestie quis, lacinia eget purus. Suspendisse ipsum massa, rutrum in hendrerit malesuada, fermentum id erat...<a href="">More</a>
             </p>
           </div>
-          <div class="col-md-4" id="choose">
+          <div class="col-md-4 choose">
             <h3>WHY CHOOSE US?</h3>
-            <div class="row">
-              <div class="col-md-3">
-                <a href=""><img src="img/arrow.png" alt="" /></a>
-              </div>
-              <div class="col-md-9">
+            <table>
+              <tr>
                 <td>
-                Etiam rutrum venenatis dui, non
+                  <a href=""><img src="img/arrow.png" alt="" /></a>
                 </td>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-3">
-                <a href=""><img src="img/arrow.png" alt="" /></a>
-              </div>
-              <div class="col-md-9">
-                <tr>
-                  <td>
-                    Aliquam ac diam in lorem vulputate auctor.
-                  </td>
-                </tr>
-
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-3">
-                <a href=""><img src="img/arrow.png" alt="" /></a>
-              </div>
-              <div class="col-md-9">
+                <td>
+                  Etiam rutrum venenatis dui, non
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href=""><img src="img/arrow.png" alt="" /></a>
+                </td>
+                <td>
+                  Aliquam ac diam in lorem vulputate auctor.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href=""><img src="img/arrow.png" alt="" /></a>
+                </td>
                 <td>
                   Vestibulum vitae urna quis eros convallis
                 </td>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-3">
-                <a href=""><img src="img/arrow.png" alt="" /></a>
-              </div>
-              <div class="col-md-9">
+              </tr>
+              <tr>
+                <td>
+                  <a href=""><img src="img/arrow.png" alt="" /></a>
+                </td>
                 <td>
                   Sed magna magna, congue
                 </td>
-              </div>
-            </div>
+              </tr>
+            </table>
           </div>
           <div class="col-md-4">
             <h3>NEWS & EVENTS</h3>
@@ -238,9 +231,13 @@
           </div>
           <div class="col-md-3" id="link-pic">
             <h3>GET IN TOUCH!</h3>
-            <input type="text" name="searchtext" placeholder="Name">
-            <input type="text" name="searchtext" placeholder="Email">
-            <input type="text" name="searchtext" placeholder="Message">
+            <form class="" action="index.html" method="post">
+              <input type="text" name="searchtext" placeholder="Name">
+              <input type="text" name="searchtext" placeholder="Email">
+              <textarea name="message" placeholder="Message"></textarea>
+              <button type="reset" class="clr-form" name="clear-form">CLEAR FORM</button>
+              <button type="submit" class="send" name="send">SEND!</button>
+            </form>
           </div>
           <div class="col-md-3" id="web">
             <h3>FLICKR</h3>

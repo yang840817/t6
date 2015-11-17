@@ -26,10 +26,6 @@
     }
   }
 
-  #menu{
-    background-color: white;
-  }
-
   .col-md-9{
     background-color: white;
     padding-left: 0px;
@@ -38,14 +34,19 @@
 
   .col-md-3{
     background-color: white;
+    padding: 0px;
+    margin-left: 15px;
 
     input{
       background-color: #dddddd;
       border: 0px;
+      width: 100%;
       height: 100%;
     }
     button{
       border: 0px;
+      float: right;
+      right: 5px;
     }
   }
 }

@@ -2,6 +2,7 @@
     @include board-bg;
     position: relative;
     top:80px;
+    padding-bottom: 20px;
 
     p{
       font-size: 10pt;
@@ -20,12 +21,9 @@
       background-color: #e6e6e6;
     }
 
-
     #men{
       margin-top: 10px;
       margin-bottom: 10px;
-
-
       a{
         text-decoration: none;
         color: #80b600;
@@ -33,17 +31,35 @@
     }
 
     #link-pic{
-      .col-md-3{
-        padding-bottom: 10px;
-        padding-right: 10px;
-        img{
+        textarea{
           width: 100%;
+          height: 80px;
+          background-color: #e6e6e6;
+          border: 0px;
+          resize: none;
+          margin-bottom: 15px;
         }
-      }
+        button{
+          font-size: 8pt;
+          color: white;
+          border: 0px;
+          height: 30px;
+          font-weight: bold;
+          border: 0px;
+        }
+        .clr-form{
+          background-color: black;
+          margin-right: 10px;
+        }
+        .send{
+          font-size: 8pt;
+          background-color: #80b600;
+        }
     }
 
     .web-site{
-      padding-left: 10px;
+      margin-left: -5px;
+      margin-top: -5px;
       img{
         width: 100%;
         height: 100%;
