@@ -238,21 +238,25 @@ body #scl_pic5:hover {
   font-size: 10pt;
 }
 /* line 72, ../sass/_content.scss */
+.content #intro .choose table {
+  margin-top: -10px;
+}
+/* line 75, ../sass/_content.scss */
 .content #intro .choose td {
   vertical-align: middle;
 }
-/* line 75, ../sass/_content.scss */
+/* line 78, ../sass/_content.scss */
 .content #intro .choose img {
   vertical-align: middle;
   width: 48px;
   height: 48px;
   margin: 10px auto;
 }
-/* line 83, ../sass/_content.scss */
+/* line 86, ../sass/_content.scss */
 .content #intro .event1 {
   padding-bottom: 10px;
 }
-/* line 85, ../sass/_content.scss */
+/* line 88, ../sass/_content.scss */
 .content #intro .event1 h5 {
   background-color: #80b600;
   padding: 5px;
@@ -261,7 +265,7 @@ body #scl_pic5:hover {
   margin-top: 0px;
   color: white;
 }
-/* line 96, ../sass/_content.scss */
+/* line 99, ../sass/_content.scss */
 .content #feature-work {
   background-image: url("../img/subbg.gif");
   padding-left: 20px;
@@ -273,11 +277,11 @@ body #scl_pic5:hover {
   margin-bottom: 20px;
   font-weight: bold;
 }
-/* line 100, ../sass/_content.scss */
+/* line 103, ../sass/_content.scss */
 .content #feature-work h3 {
   padding-left: 15px;
 }
-/* line 103, ../sass/_content.scss */
+/* line 106, ../sass/_content.scss */
 .content #feature-work img {
   width: 100%;
 }
@@ -288,7 +292,7 @@ body #scl_pic5:hover {
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
-  top: 80px;
+  margin-top: 80px;
   padding-bottom: 20px;
 }
 /* line 7, ../sass/_footer.scss */
@@ -363,50 +367,55 @@ body #scl_pic5:hover {
 
 /* line 73, ../sass/_footer.scss */
 #black-bot {
-  position: relative;
-  top: 80px;
   background-color: black;
   color: #8e8e8e;
   padding: 20px 0px 20px 0px;
 }
-/* line 79, ../sass/_footer.scss */
+/* line 77, ../sass/_footer.scss */
 #black-bot .col-md-6 {
   padding: 0px;
 }
-/* line 83, ../sass/_footer.scss */
+/* line 81, ../sass/_footer.scss */
 #black-bot #copyright a {
   text-decoration: none;
   color: #80b600;
 }
-/* line 87, ../sass/_footer.scss */
+/* line 85, ../sass/_footer.scss */
 #black-bot #copyright p {
   margin-bottom: 0px;
 }
-/* line 93, ../sass/_footer.scss */
+/* line 91, ../sass/_footer.scss */
 #black-bot #bot-menu a {
   text-decoration: none;
   color: #8e8e8e;
 }
-/* line 97, ../sass/_footer.scss */
+/* line 95, ../sass/_footer.scss */
 #black-bot #bot-menu a:hover {
   color: #80b600;
 }
-/* line 100, ../sass/_footer.scss */
+/* line 98, ../sass/_footer.scss */
 #black-bot #bot-menu ul {
   list-style-type: none;
   float: right;
   margin-bottom: 0px;
 }
-/* line 105, ../sass/_footer.scss */
+/* line 103, ../sass/_footer.scss */
 #black-bot #bot-menu li {
   display: inline;
   padding-left: 5px;
   padding-right: 5px;
   border-right: 1px solid #8e8e8e;
 }
+
 /* line 112, ../sass/_footer.scss */
-#black-bot .bottom-bg {
+footer {
+  margin-bottom: -200px;
+}
+
+/* line 116, ../sass/_footer.scss */
+.bottom-bg {
   background-color: black;
-  height: 300px;
+  height: 200px;
+  width: 100%;
   z-index: -1;
 }
