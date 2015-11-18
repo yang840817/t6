@@ -1,47 +1,52 @@
 /* line 12, ../sass/_header.scss */
+.clear {
+  clear: both;
+}
+
+/* line 16, ../sass/_header.scss */
 body {
   background-image: url("../img/bg.jpg");
 }
-/* line 15, ../sass/_header.scss */
-body .containerr {
+/* line 19, ../sass/_header.scss */
+body .black-top {
   background-color: black;
   height: 100px;
   width: 100%;
   position: absolute;
   top: 0px;
 }
-/* line 23, ../sass/_header.scss */
+/* line 27, ../sass/_header.scss */
 body .container {
   width: 1100px;
   margin: 0 auto;
 }
-/* line 27, ../sass/_header.scss */
+/* line 31, ../sass/_header.scss */
 body header {
   background-image: url("../img/subbg.gif");
   position: relative;
-  top: 10px;
-  padding: 30px;
+  margin-top: 10px;
   margin-bottom: 30px;
   margin-left: -15px;
   margin-right: -15px;
+  padding: 30px;
 }
-/* line 38, ../sass/_header.scss */
+/* line 42, ../sass/_header.scss */
 body .social-pic {
   float: right;
   right: 10px;
 }
-/* line 41, ../sass/_header.scss */
+/* line 45, ../sass/_header.scss */
 body .social-pic ul {
   list-style-type: none;
   padding-left: 0px;
 }
-/* line 45, ../sass/_header.scss */
+/* line 49, ../sass/_header.scss */
 body .social-pic li {
   display: inline-block;
   margin-left: 6px;
   margin-right: 6px;
 }
-/* line 52, ../sass/_header.scss */
+/* line 56, ../sass/_header.scss */
 body #scl_pic1 {
   background-image: url("../img/social.png");
   display: inline-block;
@@ -49,7 +54,7 @@ body #scl_pic1 {
   width: 27px;
   background-position: 0px 0px;
 }
-/* line 57, ../sass/_header.scss */
+/* line 61, ../sass/_header.scss */
 body #scl_pic2 {
   background-image: url("../img/social.png");
   display: inline-block;
@@ -57,7 +62,7 @@ body #scl_pic2 {
   width: 27px;
   background-position: -37px 0px;
 }
-/* line 62, ../sass/_header.scss */
+/* line 66, ../sass/_header.scss */
 body #scl_pic3 {
   background-image: url("../img/social.png");
   display: inline-block;
@@ -65,7 +70,7 @@ body #scl_pic3 {
   width: 27px;
   background-position: -74px 0px;
 }
-/* line 67, ../sass/_header.scss */
+/* line 71, ../sass/_header.scss */
 body #scl_pic4 {
   background-image: url("../img/social.png");
   display: inline-block;
@@ -73,7 +78,7 @@ body #scl_pic4 {
   width: 27px;
   background-position: -111px 0px;
 }
-/* line 72, ../sass/_header.scss */
+/* line 76, ../sass/_header.scss */
 body #scl_pic5 {
   background-image: url("../img/social.png");
   display: inline-block;
@@ -81,75 +86,70 @@ body #scl_pic5 {
   width: 27px;
   background-position: -150px 0px;
 }
-/* line 77, ../sass/_header.scss */
+/* line 81, ../sass/_header.scss */
 body #scl_pic1:hover {
   background-position: 0px -27px;
 }
-/* line 80, ../sass/_header.scss */
+/* line 84, ../sass/_header.scss */
 body #scl_pic2:hover {
   background-position: -37px -27px;
 }
-/* line 83, ../sass/_header.scss */
+/* line 87, ../sass/_header.scss */
 body #scl_pic3:hover {
   background-position: -74px -27px;
 }
-/* line 86, ../sass/_header.scss */
+/* line 90, ../sass/_header.scss */
 body #scl_pic4:hover {
   background-position: -111px -27px;
 }
-/* line 89, ../sass/_header.scss */
+/* line 93, ../sass/_header.scss */
 body #scl_pic5:hover {
   background-position: -150px -27px;
 }
 
 /* line 1, ../sass/_main.scss */
-.clear {
-  clear: both;
-}
-
-/* line 5, ../sass/_main.scss */
 .main {
   margin-top: 50px;
 }
-/* line 8, ../sass/_main.scss */
+/* line 4, ../sass/_main.scss */
 .main ul {
   list-style-type: none;
   padding-left: 0px;
 }
-/* line 11, ../sass/_main.scss */
+/* line 7, ../sass/_main.scss */
 .main ul li {
   padding: 20px;
   float: left;
   border-right: 1px solid #d9d9d9;
   color: black;
 }
-/* line 17, ../sass/_main.scss */
+/* line 13, ../sass/_main.scss */
 .main ul a {
   text-decoration: none;
 }
-/* line 21, ../sass/_main.scss */
+/* line 17, ../sass/_main.scss */
 .main ul li:hover {
   background-color: #80b600;
   color: white;
 }
-/* line 27, ../sass/_main.scss */
+/* line 23, ../sass/_main.scss */
 .main .col-md-9 {
   background-color: white;
   padding-left: 0px;
   padding-right: 0px;
 }
-/* line 33, ../sass/_main.scss */
+/* line 29, ../sass/_main.scss */
 .main .col-md-3 {
   padding-right: 0px;
 }
-/* line 36, ../sass/_main.scss */
+/* line 32, ../sass/_main.scss */
 .main .col-md-3 .search-bg {
   background-color: white;
   height: 100%;
   width: 100%;
   padding: 6px;
 }
-/* line 43, ../sass/_main.scss */
+/* line 39, ../sass/_main.scss */
 .main .col-md-3 textarea {
   background-color: #dddddd;
   border: 0px;
@@ -157,7 +157,7 @@ body #scl_pic5:hover {
   height: 100%;
   resize: none;
 }
-/* line 51, ../sass/_main.scss */
+/* line 47, ../sass/_main.scss */
 .main .col-md-3 button {
   background-color: #dddddd;
   border: 0px;
@@ -166,12 +166,11 @@ body #scl_pic5:hover {
   top: 15px;
 }
 
-/* line 2, ../sass/_cover.scss */
-.cover img {
+/* line 17, ../sass/_content.scss */
+.content #cover img {
   width: 100%;
 }
-
-/* line 16, ../sass/_content.scss */
+/* line 22, ../sass/_content.scss */
 .content button {
   width: 60px;
   height: 30px;
@@ -179,7 +178,7 @@ body #scl_pic5:hover {
   background-color: #cdcdcd;
   border: none;
 }
-/* line 24, ../sass/_content.scss */
+/* line 30, ../sass/_content.scss */
 .content #service {
   background-image: url("../img/subbg.gif");
   padding-left: 20px;
@@ -187,29 +186,29 @@ body #scl_pic5:hover {
   padding-bottom: 20px;
   text-align: center;
 }
-/* line 29, ../sass/_content.scss */
+/* line 35, ../sass/_content.scss */
 .content #service .col-bg {
   background-color: #e7e7e7;
   padding: 20px 30px 20px 30px;
   position: relative;
   top: -40px;
 }
-/* line 34, ../sass/_content.scss */
+/* line 40, ../sass/_content.scss */
 .content #service .col-bg p {
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 10pt;
 }
-/* line 39, ../sass/_content.scss */
+/* line 45, ../sass/_content.scss */
 .content #service .col-bg img {
   padding-top: 10px;
 }
-/* line 44, ../sass/_content.scss */
+/* line 50, ../sass/_content.scss */
 .content #service .col-bg:hover {
   background-color: #646464;
   color: white;
 }
-/* line 50, ../sass/_content.scss */
+/* line 56, ../sass/_content.scss */
 .content #intro {
   background-image: url("../img/subbg.gif");
   padding-left: 20px;
@@ -221,42 +220,42 @@ body #scl_pic5:hover {
   margin-bottom: 20px;
   font-weight: bold;
 }
-/* line 55, ../sass/_content.scss */
+/* line 61, ../sass/_content.scss */
 .content #intro a {
   text-decoration: none;
   font-weight: bold;
   color: black;
 }
-/* line 61, ../sass/_content.scss */
+/* line 67, ../sass/_content.scss */
 .content #intro img {
   width: 100%;
   height: 100%;
   margin-bottom: 20px;
 }
-/* line 67, ../sass/_content.scss */
+/* line 73, ../sass/_content.scss */
 .content #intro p {
   font-size: 10pt;
 }
-/* line 72, ../sass/_content.scss */
+/* line 78, ../sass/_content.scss */
 .content #intro .choose table {
   margin-top: -10px;
 }
-/* line 75, ../sass/_content.scss */
+/* line 81, ../sass/_content.scss */
 .content #intro .choose td {
   vertical-align: middle;
 }
-/* line 78, ../sass/_content.scss */
+/* line 84, ../sass/_content.scss */
 .content #intro .choose img {
   vertical-align: middle;
   width: 48px;
   height: 48px;
   margin: 10px auto;
 }
-/* line 86, ../sass/_content.scss */
+/* line 92, ../sass/_content.scss */
 .content #intro .event1 {
   padding-bottom: 10px;
 }
-/* line 88, ../sass/_content.scss */
+/* line 94, ../sass/_content.scss */
 .content #intro .event1 h5 {
   background-color: #80b600;
   padding: 5px;
@@ -265,7 +264,7 @@ body #scl_pic5:hover {
   margin-top: 0px;
   color: white;
 }
-/* line 99, ../sass/_content.scss */
+/* line 105, ../sass/_content.scss */
 .content #feature-work {
   background-image: url("../img/subbg.gif");
   padding-left: 20px;
@@ -277,11 +276,11 @@ body #scl_pic5:hover {
   margin-bottom: 20px;
   font-weight: bold;
 }
-/* line 103, ../sass/_content.scss */
+/* line 109, ../sass/_content.scss */
 .content #feature-work h3 {
   padding-left: 15px;
 }
-/* line 106, ../sass/_content.scss */
+/* line 112, ../sass/_content.scss */
 .content #feature-work img {
   width: 100%;
 }
