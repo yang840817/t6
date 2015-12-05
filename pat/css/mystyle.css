@@ -5,24 +5,60 @@ html,body,h1,h2,h3,p,div,ul,li,img{
 
 body {
 	background: url(../img/bg.jpg);
-	height: auto;
+	
+	position: relative;
+	
+}
+
+.clear {
+	clear: both;
 }
 
 #wrapper {
 	width: 80%;
 	margin: 0 auto;
-	position: relative;
-	top: -70px;
+
 }
 
-body::before{
+#wrapper::before{
 	content:"";
 	display: block;
 	height: 100px;
 	background-color: black;
-	z-index: 1;
-
+	position:absolute;
+	width: 110%;
+	left:-10%;
+	top:-20px;
+	z-index: 0;
 }
+
+#wrapper::after{
+	content:"";
+	display: block;
+	height: 200px;
+	background-color: black;
+	position:absolute;
+	width: 110%;
+	left:-10%;
+	top:93%;
+	z-index: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+	#wrapper::after{
+	content:"";
+	display: block;
+	height: 200px;
+	background-color: black;
+	position:absolute;
+	width: 110%;
+	left:-10%;
+	top:96.5%;
+	z-index: 0;
+}
+	
+}
+
 
 #testfluid {
 	padding: 0;
@@ -43,7 +79,32 @@ body::before{
 /*--header--*/
 #header {
 	background: url(../img/header_bg.gif);
+	position: relative;
+	z-index: 1;
+
+	margin:20px 0;
 }
+
+@media only screen and (max-width: 1200px) {
+	#Brand5 {
+	text-align: center;
+	
+	width: 100%;
+	margin: 0 auto;
+	}
+
+	#res_one {
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+		padding: 0;
+	}
+	#header img{
+		padding: 20px;
+	}
+}
+
+
 
 #Brand5 {
 	padding: 40px 0;
@@ -78,35 +139,55 @@ body::before{
 }
 
 /*-nav-*/
+
 #abc {
 	margin: 30px 0 0 0;
 }
 
 /*--main1--*/
-#main1 {
-	background: url(../img/cover3.jpg) no-repeat;
-	height: 600px;
-	background-size: cover;
+
+#main1 img{
+	width: 100%;
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*--main2--*/
 
 #main2 {
 	background: url(../img/subbg.gif);
-	height: 1350px;
 
 }
 
-
-
-
 .b1234 {
 	display: inline-block;
-	width: 300px;
+	
 	background-color: #DCD7D7;
 	text-align: center;
-	margin: 0 30px;
-	padding:30px 20px;
+	margin: 20px 5%;
+	padding:40px 20px;
 	position: relative;
 	top:-35px;
 }
@@ -130,15 +211,67 @@ body::before{
 	font-size: 20px;
 }
 
-#whiteL {
-	width: 400px;
-	float: left;
+
+
+@media only screen and (max-width: 1000px) {
+
+	.b1234 {
+		display: inline-block;
+		background-color: #DCD7D7;
+		text-align: center;
+		margin: 20px 5%;
+		padding:5%;
+		position: relative;
+		top:-35px;
+	}
+	.b1234 h1 {
+		margin-bottom: 20px;
+	}
+	.b1234 p {
+		margin:15px;
+	}
+	.changemid {
+		text-align: center;
+	}
+	.changemid h1 {
+		text-align: center;
+		margin: 40px 0 20px 0;
+	}
+	#welcome {
+		
+		margin: 20px auto;
+	}
+	#whiteL p{
+		padding: 0 40px;
+	}
+
+	.arr img {
+		margin:0 50px 0 10%;
+
+	}
+	.arr p {
+		text-align: left;
+		padding: 0;
+		margin-left: 30px;
+	}
+	.arr {
+		padding: 0;
+	}
 }
 
-#whiteL img {
-	height: 250px;
-	margin: 20px 0;
+
+
+
+
+.white h1 {
+	font-size: rem;
 }
+
+#whiteMid {
+	margin:0 10px;
+}
+
+
 
 .arr p{
 	padding: 10px 10px;
@@ -153,31 +286,30 @@ body::before{
 	margin-right: 15px;
 }
 
-#whiteM {
-	float: left;
-	margin-left: 80px;
 
-}
+
 
 #whiteMid {
-	height: 530px;
+	
 	padding: 20px 0;
 	border-bottom: solid #D5C8C8;
 	margin-bottom: 50px;
 }
 
 
-#whiteR {
-	float: left;
-	width: 500px;
+#whiteR img{
+
+	margin:0 5% 0 0;
+}
+#whiteR p {
+
+	padding: 20px 10%;
 }
 
-.white {
-	margin:0 30px;
-}
+
 
 #ptxt1 {
-	width: 500px;
+	
 	height: 200px;
 	margin: 20px 0;
 }
@@ -189,33 +321,17 @@ body::before{
 #ptxt2 img{
 	float: left;
 }
-#ptxt1 a {
+.GreenA {
 	text-decoration: none;
 	color: white;
 	background-color: #07D007;
 	padding: 5px 10px;
-	margin: 0 0 0 35px;
-}
-
-#ptxt2 a {
-	text-decoration: none;
-	color: white;
-	background-color: #07D007;
-	padding: 5px 10px;
-	margin: 0 0 0 35px;
-	
+	margin: 0 0 0 2%;
 }
 
 
-#ptxt1 p {
-	width:200px;
-	margin:20px 0 0 180px;
-}
 
-#ptxt2 p {
-	width:200px;
-	margin:20px 0 0 180px;
-}
+
 
 
 #last {
@@ -224,17 +340,46 @@ body::before{
 }
 
 #last img {
-	float: left;
-	height: 290px;
+	
 	margin:0 20px 0 0;
 }
 
+@media only screen and (max-width: 1000px) {
+	#last img {
+			width: 90%;
+			margin:50px auto;
+	}
+}
 /*--main3--*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #main3 {
 	margin-top: 80px;
-	height: auto;
+	
 	background: url(../img/subbg.gif);
 	padding: 40px 40px;
 	position : relative;
@@ -352,15 +497,7 @@ body::before{
 	color: #2CEC6C;
 }
 
-#blackfooter {
-	width: 100%;
-	background-color: black;
-	height: 355px;
-	z-index: 0;
-	position: absolute;
-	top:2500px;
-	
-}
+
 
 #footer li {
 	display: inline-block;
