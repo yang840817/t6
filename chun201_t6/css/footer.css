@@ -1,0 +1,218 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+/*----------  common use  ----------*/
+/* line 4, ../scss/footer.scss */
+.move {
+  position: relative;
+  bottom: -100px;
+  z-index: 999;
+}
+
+/*----------  footer  ----------*/
+/* line 11, ../scss/footer.scss */
+footer {
+  background: url(../img/subbg.gif) repeat;
+}
+/* line 13, ../scss/footer.scss */
+footer h4 {
+  padding: 20px 0 10px 0;
+  color: #000;
+  font-size: 20px;
+}
+/* line 18, ../scss/footer.scss */
+footer p {
+  color: #000;
+}
+/* line 21, ../scss/footer.scss */
+footer .testimonials {
+  padding: 0;
+}
+/* line 23, ../scss/footer.scss */
+footer .testimonials .talking {
+  background-color: #e6e6e6;
+  padding: 15px 15px 5px 15px;
+  border-radius: 5px;
+  position: relative;
+}
+/* line 29, ../scss/footer.scss */
+footer .testimonials .triangle {
+  border-color: #e6e6e6 transparent transparent transparent;
+  border-style: solid solid solid solid;
+  border-width: 25px 40px 0 0;
+  border-bottom-left-radius: 5px;
+  margin-bottom: 10px;
+  width: 0;
+  height: 0;
+  position: relative;
+  bottom: 5px;
+}
+/* line 41, ../scss/footer.scss */
+footer .testimonials .man_info p {
+  margin: 5px 0 2px 0;
+  color: #57514c;
+}
+/* line 45, ../scss/footer.scss */
+footer .testimonials .man_info a {
+  color: #80b600;
+  font-style: italic;
+}
+/* line 48, ../scss/footer.scss */
+footer .testimonials .man_info a:hover {
+  text-decoration: none;
+}
+/* line 55, ../scss/footer.scss */
+footer .touch input, footer .touch textarea {
+  background-color: #e6e6e6;
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  color: #000;
+}
+/* line 63, ../scss/footer.scss */
+footer .touch ::-webkit-input-placeholder, footer .touch ::-webkit-textarea-placeholder {
+  color: #777;
+}
+/* line 66, ../scss/footer.scss */
+footer .touch .name, footer .touch .email {
+  height: 30px;
+  text-indent: 8px;
+}
+/* line 70, ../scss/footer.scss */
+footer .touch .message {
+  height: 100px;
+  padding-left: 8px;
+}
+/* line 74, ../scss/footer.scss */
+footer .touch button {
+  padding: 5px 15px;
+  border: 1px solid #777;
+  border-radius: 4px;
+  margin: 5px 0 40px 0;
+  color: #fff;
+  font-family: Montserrat;
+}
+/* line 81, ../scss/footer.scss */
+footer .touch button:hover {
+  transition-duration: 1s;
+  font-size: 18px;
+}
+/* line 86, ../scss/footer.scss */
+footer .touch .clear {
+  background-color: #000;
+}
+/* line 89, ../scss/footer.scss */
+footer .touch .send {
+  background-color: #80b600;
+}
+/* line 93, ../scss/footer.scss */
+footer .flick_img_list {
+  padding: 0 10px 10px 10px;
+}
+/* line 95, ../scss/footer.scss */
+footer .flick_img_list .flick_img {
+  padding: 0 0 5px 5px;
+}
+
+/*----------  author  ----------*/
+/* line 102, ../scss/footer.scss */
+.author {
+  padding: 20px 0;
+}
+/* line 104, ../scss/footer.scss */
+.author p {
+  float: left;
+  color: #7c7c7c;
+}
+/* line 107, ../scss/footer.scss */
+.author p a {
+  color: #80b600;
+}
+/* line 109, ../scss/footer.scss */
+.author p a:hover {
+  text-decoration: none;
+}
+/* line 112, ../scss/footer.scss */
+.author p a:focus {
+  text-decoration: none;
+}
+/* line 117, ../scss/footer.scss */
+.author ul {
+  float: right;
+}
+/* line 119, ../scss/footer.scss */
+.author ul a {
+  color: #7c7c7c;
+}
+/* line 121, ../scss/footer.scss */
+.author ul a:hover {
+  transition-duration: 0.5s;
+  color: #80b600;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #80b600;
+}
+/* line 127, ../scss/footer.scss */
+.author ul a:focus {
+  color: #80b600;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #80b600;
+}
+
+/*=============== RDW ===============*/
+/*----- xs:768↓（480~768） -----*/
+@media (max-width: 767px) {
+  /* line 141, ../scss/footer.scss */
+  footer .touch button {
+    margin: 5px 0 0 0;
+  }
+
+  /* line 146, ../scss/footer.scss */
+  .author {
+    padding: 10px 0;
+  }
+  /* line 148, ../scss/footer.scss */
+  .author p {
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+  }
+  /* line 153, ../scss/footer.scss */
+  .author ul {
+    float: none;
+    margin: auto;
+    font-size: 14px;
+    text-align: center;
+  }
+  /* line 158, ../scss/footer.scss */
+  .author ul li {
+    padding-left: 3px;
+    padding-right: 0;
+  }
+}
+/*----- sm:768~991 -----*/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 170, ../scss/footer.scss */
+  footer .touch button {
+    margin: 5px 0 0 0;
+  }
+
+  /* line 175, ../scss/footer.scss */
+  .author {
+    padding: 10px 0;
+  }
+  /* line 177, ../scss/footer.scss */
+  .author p {
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+  }
+  /* line 182, ../scss/footer.scss */
+  .author ul {
+    float: none;
+    margin: auto;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+/*----- md:768~991 -----*/
+/*----- lg:768~991 -----*/
