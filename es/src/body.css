@@ -1,0 +1,38 @@
+/* body.css */
+
+#background {
+
+    & #background-image {
+    background-image: url(../images/bg.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    /* min-height:600px; */
+    height: 100%;
+    position: absolute;
+    };
+
+    & .background-blackbar {
+    width: 100%;
+    background-color: black;
+    z-index: 0;
+    };
+
+    & #bg-bar-top {
+    top: 0%;
+    height: 100px;
+    position: relative;
+    };
+
+    & #bg-bar-bottom {
+    /* bottom: 0%; */
+    bottom: 6%;
+    /* TODO */
+    height: 50px;
+    position: absolute;
+    };
+}
+
+.content {
+   position: absolute;
+   margin: 0 auto;
+}
