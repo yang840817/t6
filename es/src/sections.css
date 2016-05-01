@@ -1,0 +1,106 @@
+:root {
+    --basecolor: #80B600;
+}
+
+.content {
+    & .card {
+        border: 1px solid #000; 
+        background-color: white;
+        margin: 1% 0;
+    }
+    & .serviceCard {
+        _/* position: absolute; */
+        /* top: 65%; */
+        & .serviceCard-Innerwrap {
+            & .card {
+                /* background-color: blue; */
+                /* margin: 1.5%; */
+                /* padding: 3% 1%; */
+                /* position: absolute; */
+                /* width: 20%; */
+                /* top: 70%; */
+            }
+        }
+    }
+    & #banner {
+        display: flex;
+        align-items: center;
+        padding: 2% 1%;
+        & #banner-contact {
+            margin-left: auto;
+            width: 20%;
+        }
+    }
+    & .cardrow {
+        display: flex;
+        margin-right: inherit;
+        margin-left: inherit;
+        & .card {
+            margin-bottom: 0;
+        }
+        & #card-divided-7 {
+            width: 69%;
+            & ._navbar {
+                width: 70%;
+                & .navbutton-list {
+                    display: flex;
+                    text-align: center;
+                    & .navbutton-wrap {
+                        background-color: var(--basecolor);
+                        padding: 1%;
+                        & .navbutton {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+        & #card-divided-3 {
+        width: 29%;
+        margin-left: auto;
+        }
+    }
+    & .pic1 {
+        background-image: url(../images/banner1.jpg);
+    }
+    & .pic2 {
+        background-image: url(../images/banner2.jpg);
+    }
+    & .pic3 {
+        background-image: url(../images/banner3.jpg);
+    }
+    & #bigpicture {
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & #arrowbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        & .arrow {
+            width: 30px;
+            height: 30px;
+            background-color: color(black alpha(-50%));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        & #leftarrow {
+            align-self: flex-start;
+        }
+        & #rightarrow {
+            margin-left: auto;
+        }
+    }
+    & .card-notop {
+    margin-top: 0;
+    }
+    & .pointcard-row {
+    }
+}

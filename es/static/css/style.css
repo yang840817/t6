@@ -56,39 +56,209 @@ table {
 
 /* body.css */
 
-#background {;
+.content {
 }
 
-#background #background-image {
-	background-image: url(../images/bg.jpg);
-	background-repeat: repeat;
-	background-position: center;/* min-height:600px; */
-	height: 100%;
-	position: absolute;
+.content .card {
+	border: 1px solid #000;
+	background-color: white;
+	margin: 1% 0;
+}
+
+.content .serviceCard {
+
+	_/* position: absolute; */
+        /* top: 65%; */
+        & .serviceCard-Innerwrap {
+}
+
+	_
+        
+        & .serviceCard-Innerwrap .card {/* background-color: blue; *//* margin: 1.5%; *//* padding: 3% 1%; *//* position: absolute; *//* width: 20%; *//* top: 70%; */
+	}
+}
+
+.content #banner {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding: 2% 1%;
+}
+
+.content #banner #banner-contact {
+	margin-left: auto;
+	width: 20%;
+}
+
+.content .cardrow {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	margin-right: inherit;
+	margin-left: inherit;
+}
+
+.content .cardrow .card {
+	margin-bottom: 0;
+}
+
+.content .cardrow #card-divided-7 {
+	width: 69%;
+}
+
+.content .cardrow #card-divided-7 ._navbar {
+	width: 70%;
+}
+
+.content .cardrow #card-divided-7 ._navbar .navbutton-list {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	text-align: center;
+}
+
+.content .cardrow #card-divided-7 ._navbar .navbutton-list .navbutton-wrap {
+	background-color: #80B600;
+	padding: 1%;
+}
+
+.content .cardrow #card-divided-7 ._navbar .navbutton-list .navbutton-wrap .navbutton {
+	text-decoration: none;
+}
+
+.content .cardrow #card-divided-3 {
+	width: 29%;
+	margin-left: auto;
+}
+
+.content .pic1 {
+	background-image: url(../images/banner1.jpg);
+}
+
+.content .pic2 {
+	background-image: url(../images/banner2.jpg);
+}
+
+.content .pic3 {
+	background-image: url(../images/banner3.jpg);
+}
+
+.content #bigpicture {
+	background-size: cover;
+	width: 100%;
+	height: 500px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.content #bigpicture #arrowbar {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	width: 100%;
+}
+
+.content #bigpicture .arrow {
+	width: 30px;
+	height: 30px;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	color: white;
+}
+
+.content #bigpicture #leftarrow {
+	-webkit-align-self: flex-start;
+	    -ms-flex-item-align: start;
+	        align-self: flex-start;
+}
+
+.content #bigpicture #rightarrow {
+	margin-left: auto;
+}
+
+.content .card-notop {
+	margin-top: 0;
+}
+
+.content .pointcard-row {
+}
+
+body {
+    background-image: url(../images/bg.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    height: 100%;
+    position: relative;
+}
+
+#background {
+    height: 100%;
 }
 
 #background .background-blackbar {
 	width: 100%;
 	background-color: black;
 	z-index: 0;
+	position: absolute;
 }
 
 #background #bg-bar-top {
 	top: 0%;
 	height: 100px;
-	position: relative;
 }
 
-#background #bg-bar-bottom {/* bottom: 0%; */
-	bottom: 6%;/* TODO */
+#background #bg-bar-bottom {
+	bottom: 0%;
 	height: 50px;
-	position: absolute;
 }
 
 .content {
    position: absolute;
+   top: 1%;
+   bottom: 1%;
+   left: 10%;
+   right: 10%;
    margin: 0 auto;
+   z-index: 1;
 }
 
-.test {
+body, html {
+   height: 100%; 
 }

@@ -1,38 +1,41 @@
 /* body.css */
+@import 'sections.css';
 
-#background {
-
-    & #background-image {
+body {
     background-image: url(../images/bg.jpg);
     background-repeat: repeat;
     background-position: center;
-    /* min-height:600px; */
     height: 100%;
-    position: absolute;
-    };
+    position: relative;
+}
+#background {
+    height: 100%;
+
 
     & .background-blackbar {
     width: 100%;
     background-color: black;
     z-index: 0;
+    position: absolute;
     };
 
     & #bg-bar-top {
     top: 0%;
     height: 100px;
-    position: relative;
     };
 
     & #bg-bar-bottom {
-    /* bottom: 0%; */
-    bottom: 6%;
-    /* TODO */
+    bottom: 0%;
     height: 50px;
-    position: absolute;
     };
 }
 
 .content {
    position: absolute;
+   top: 1%;
+   bottom: 1%;
+   left: 10%;
+   right: 10%;
    margin: 0 auto;
+   z-index: 1;
 }
