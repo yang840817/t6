@@ -65,6 +65,10 @@ table {
 	margin: 1% 0;
 }
 
+.content .card .row {
+	width: 100%;
+}
+
 .content .serviceCard {
 
 	_/* position: absolute; */
@@ -87,29 +91,22 @@ table {
 	-webkit-align-items: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	padding: 2% 1%;
+	padding: 2% 1%;/* & #banner-contact { *//* margin-left: auto; *//* width: 20%; *//* } */
 }
 
-.content #banner #banner-contact {
-	margin-left: auto;
-	width: 20%;
+.content .cardrow.row {
+	margin-left: 0;
+	margin-right: 0;
 }
 
-.content .cardrow {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	margin-right: inherit;
-	margin-left: inherit;
+.content .cardrow {/* display: flex; *//* margin-right: inherit; *//* margin-left: inherit; */
 }
 
 .content .cardrow .card {
 	margin-bottom: 0;
 }
 
-.content .cardrow #card-divided-7 {
-	width: 69%;
+.content .cardrow #card-divided-7 {/* width: 69%; */
 }
 
 .content .cardrow #card-divided-7 ._navbar {
@@ -134,8 +131,7 @@ table {
 }
 
 .content .cardrow #card-divided-3 {
-	width: 29%;
-	margin-left: auto;
+	margin-left: 8.33333333%;
 }
 
 .content .pic1 {

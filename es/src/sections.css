@@ -2,11 +2,17 @@
     --basecolor: #80B600;
 }
 
+@custom-media --desktop (max-width: 992px);
+
 .content {
     & .card {
         border: 1px solid #000; 
         background-color: white;
         margin: 1% 0;
+
+        & .row {
+            width: 100%;
+        }
     }
     & .serviceCard {
         _/* position: absolute; */
@@ -26,20 +32,24 @@
         display: flex;
         align-items: center;
         padding: 2% 1%;
-        & #banner-contact {
-            margin-left: auto;
-            width: 20%;
-        }
+        /* & #banner-contact { */
+            /* margin-left: auto; */
+            /* width: 20%; */
+        /* } */
+    }
+    & .cardrow.row {
+        margin-left: 0;
+        margin-right: 0;
     }
     & .cardrow {
-        display: flex;
-        margin-right: inherit;
-        margin-left: inherit;
+        /* display: flex; */
+        /* margin-right: inherit; */
+        /* margin-left: inherit; */
         & .card {
             margin-bottom: 0;
         }
         & #card-divided-7 {
-            width: 69%;
+            /* width: 69%; */
             & ._navbar {
                 width: 70%;
                 & .navbutton-list {
@@ -56,8 +66,7 @@
             }
         }
         & #card-divided-3 {
-        width: 29%;
-        margin-left: auto;
+            margin-left: 8.33333333%;
         }
     }
     & .pic1 {
