@@ -49,7 +49,7 @@
             margin-bottom: 0;
         }
         & #card-divided-7 {
-            /* width: 69%; */
+            width: 100%;
             & ._navbar {
                 width: 70%;
                 & .navbutton-list {
@@ -66,7 +66,15 @@
             }
         }
         & #card-divided-3 {
-            margin-left: 8.33333333%;
+            width: 100%;
+        }
+        @media (--desktop) {
+            #card-divided-7 {
+                width: 69%;
+            }
+            #card-divided-3
+                margin-left: 1%;
+                width: 30%;
         }
     }
     & .pic1 {
