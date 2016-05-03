@@ -1,5 +1,6 @@
 /* body.css */
 @import 'sections.css';
+@custom-media --desktop (min-width: 992px);
 
 body {
     background-image: url(../images/bg.jpg);
@@ -17,25 +18,33 @@ body {
     background-color: black;
     z-index: 0;
     position: absolute;
-    };
+    }
 
     & #bg-bar-top {
-    top: 0%;
-    height: 100px;
-    };
+        @media (--desktop) {
+            height: 5%;
+        }
+    top: -1%;
+    height: 2%;
+    }
 
     & #bg-bar-bottom {
     bottom: 0%;
-    height: 50px;
-    };
+    height: 10%;
+    }
+}
+
+@media (--desktop) {
+    .content {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }
 
 .content {
-   position: absolute;
+   position: relative;
    top: 1%;
    bottom: 1%;
-   left: 10%;
-   right: 10%;
    margin: 0 auto;
    z-index: 1;
 }
