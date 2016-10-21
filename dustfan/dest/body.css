@@ -1,0 +1,119 @@
+.border{
+  box-shadow: 0 -4px 8px 0 rgba(20%, 20%, 40%, 0.5);
+}
+.rowset{
+  margin: 0;
+}
+.colset{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.head{
+  display: block;
+  position: absolute;
+  width: 80%;
+  margin-top:  -70px;
+  padding: 20px;
+}
+.logo{
+  width:30%;
+  height:25px;
+  background-image:url("../images/social.png");
+  background-size:100% 50px;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+.butlist{
+  padding-top: 70px;
+  display: block;
+  width: 100%;
+}
+.searchlist{
+  width: 98%;
+  float: right;
+}
+.imagewidth100{
+  width: 100%;
+}
+.leftrsaquo{
+  width:3%;
+  height:100px;
+  background-color:black;
+  margin-top: 15%;
+  line-height:100px;
+}
+.rightrsaquo{
+  width:3%;
+  height:100px;
+  background-color:black;
+  margin-top: 15%;
+  margin-left: 97%;
+  line-height:100px;
+}
+.morelist{
+  background-color: #D9D9D9;
+  align-self: center;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.morelist:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.more{
+  background-color:black;
+  width:50px;
+  margin-top:30px;
+  color: white;
+}
+.more:hover{
+  background-color:black;
+  color: white;
+  text-decoration: none;
+  margin-top:30px;
+}
+.fourmore{
+  position: absolute;
+  width: 80%;
+  margin-top: -50px;
+}
+.welcome{
+  padding-top: 300px;
+  padding-bottom: 30px;
+}
+.circle{
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 25px;
+  line-height: 45px;
+  display: inline-block;;
+  background-color: gray;
+  color: white;
+  text-align: center;
+}
+.hr{
+  margin-top:50px;
+  margin-bottom:0;
+  width:98%;
+  height:1px;
+  background-color:black;
+}
+.featured{
+  padding-bottom: 50px;
+}
+.latest{
+  position: absolute;
+  margin-top: 50px;
+  padding-top: 30px;
+  width: 80%;
+}
+.triangle{
+  border-left: 40px solid #D9D9D9;
+  border-bottom: 25px solid transparent;
+}
+.SB{
+  width:20%;
+  vertical-align:middle;
+  display:inline;
+}
