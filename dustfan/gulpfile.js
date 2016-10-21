@@ -7,7 +7,7 @@ var postcssimport = require("postcss-import")
 gulp.task('css', function () {
   var processors = [
  	cssnext,
-  precss,
+  	precss,
 	postcssimport
   ];
   return gulp.src('./src/*.css')
