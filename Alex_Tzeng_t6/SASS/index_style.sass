@@ -1,0 +1,569 @@
+$border-width: 0px
+
+$text-border-width: 0px
+
+@mixin bd1
+    border: $border-width solid red
+@mixin bd2
+    border: $border-width solid yellow
+@mixin bd3
+    border: $border-width solid purple
+@mixin bd4
+    border: $border-width solid cyan
+/* bd == border
+
+@mixin shH
+    height: 75px
+@mixin lgH
+    height: 500px
+/* shH == shortHeight ; lgH == longHeight
+
+@mixin bgBlack
+    background-color: rgb(28,28,28)
+
+@mixin bxShw
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15)
+
+
+div#background
+    +bd1
+    position: relative
+    padding-top: 10px
+    background-color: grey
+    z-index: 0
+    div#backgroundHead
+        +bd2
+        +shH
+        +bgBlack
+        position: absolute
+        top: 0
+        width: 100%
+    div#backgroundFoot
+        +bd4
+        height: 250px
+        +bgBlack
+        position: absolute
+        bottom: 0
+        width: 100%
+    div#content
+        +bd1
+        margin-left: 7.5vw
+        margin-right: 7.5vw
+        position: relative
+        div#Header
+            +bd2
+            background-color: white
+            +bxShw
+            div.container-fluid
+                +bd3
+                div.row
+                    +bd4
+                    height: 100%
+                    div.col-sm-6
+                        +bd1
+                        padding: 2vw
+                        padding-bottom: 20px
+                        img
+                            +bd2
+                            height: 55px
+                            max-width: 100%
+                        div#contactBox
+                            div#iconBox
+                                height: 30px
+                                a
+                                    display: block
+                                    float: right
+                                    margin-right: 10px
+                                    img
+                                        height: 100%
+                            div#telBox
+                                p
+                                    margin-bottom: 0
+                                    margin-top: 5px
+                                    margin-right: 10px
+                                    word-break: break-all
+                                    text-align: right
+        div#Body
+            +bd3
+            margin-top: 2vw
+            background-color: transparent
+            +bxShw
+            div.foo
+                +bd4
+                background-color: #444
+                height: 500px
+            div#navSearchBar
+                +bd3
+                div.row
+                    +bd4
+                    div.col-md-9
+                        +bd1
+                        padding: 0
+                        padding-left: 0.20vw
+                        padding-right: 0.20vw
+                        nav
+                            +bd2
+                            +bxShw
+                            div.navbar-header
+                                +bd3
+                                button
+                                    +bd1
+                            div.navbar-collapse
+                                +bd4
+                                padding: 0
+                                background-color: white
+                                ul
+                                    margin: 0
+                                    +bd1
+                                    background-color: white
+                                    li
+                                        +bd2
+                                        a
+                                            border-right: 1px solid #ccc
+                                            font-family: Arial
+                                            color: rgb(38,38,38)
+                                            font-size: 14px
+                                            padding: 20px 19px
+                                            height: 60px
+                                            background-color: white
+                                        a:hover
+                                            color: white
+                                            background-color: rgb(128,182,0)
+                                            +bxShw
+                                        a:focus
+                                            color: white
+                                            background-color: rgb(128,182,0)
+                                            +bxShw
+                                    li.dropdown
+                                        +bd3
+                                        background-color: #aaa
+                                        ul
+                                            +bd4
+                                            padding: 0
+                                            background-color: #aaa
+                                            li
+                                                +bd1
+                                                border-top: 1px solid #ccc
+                                                background-color: #888
+                                                a
+                                                    +bd2
+                                                    margin: 0
+                                                    background-color: #dddddd
+                                                a:hover
+                                                    color: white
+                                                    background-color: rgb(108,172,30)
+                                                    +bxShw
+
+                    div.col-md-3
+                        +bd1
+                        +bxShw
+                        height: 60px
+                        background-color: white
+                        padding: 12.5px 17.5px
+                        position: relative
+                        input
+                            +bd2
+                            height: 40px
+                            width: 100%
+                            padding: 10px
+                            background-color: rgb(243,243,243)
+                            color: rgb(161,161,161)
+                            border: 1px solid rgb(229,229,229)
+                        div
+                            height: 40px
+                            width: 40px
+                            position: absolute
+                            top: 12.5px
+                            right: 17.5px
+                            padding: 10px
+                            a
+                                img
+                                    height: 20px
+                                    width: 20px
+
+            div#carousel
+                +bd1
+                +bxShw
+                position: relative
+                z-index: 0
+                margin-top: 0px
+                padding: 0
+                div#myCarousel
+
+            div#featureBar
+                +bd2
+                margin-top: -3.25vw
+                background-color: rgb(252,252,252)
+                div.row
+                    +bd3
+                    margin: 0
+                    padding-left: 1.5vw
+                    padding-right: 1.5vw
+                    div.col-md-6
+                        +bd4
+                        padding: 0
+                        div.row
+                            +bd1
+                            padding: 0
+                            div.col-xs-6
+                                +bd2
+                                padding: 1vw
+                                div.featureCard
+                                    +bd3
+                                    +bxShw
+                                    background-color: rgb(230,230,230)
+                                    padding-bottom: 20px
+                                    position: relative
+                                    p.featureTitle
+                                        +bd4
+                                        border: $text-border-width solid yellow
+                                        font-family: Arial
+                                        font-size: 2.25vh
+                                        text-align: center
+                                        letter-spacing: 1px
+                                        padding: 2vw
+                                        margin-bottom: 0
+                                    img.featureIcon
+                                        +bd1
+                                        display: block
+                                        border: $text-border-width solid red
+                                        margin: 0 auto
+                                        height: 65px
+                                        width: 65px
+                                    p.featureInfo
+                                        border: $text-border-width solid yellow
+                                        font-family: Arial
+                                        font-size: 1.75vh
+                                        text-align: center
+                                        padding: 2vw
+                                        padding-bottom: 0
+                                        margin-bottom: 0.75vw
+                                        height: 10vw
+                                        text-overflow: ellipsis
+                                        overflow: hidden
+                                    a.more
+                                        display: block
+                                        border: $text-border-width solid red
+                                        color: rgb(28,28,28)
+                                        font-size: 12px
+                                        padding: 10px
+                                        text-align: center
+                                        width: 60px
+                                        background-color: rgb(204,204,204)
+                                        margin: 0 auto
+                                        text-decoration: none
+                                div.premium
+                                    background-color: rgba(60,60,60,0.79)
+                                    border: 1px solid black
+                                    p
+                                        color: white
+
+            div#introBar
+                +bd3
+                background-color: rgb(252,252,252)
+                div.row
+                    +bd4
+                    padding-left: 1.5vw
+                    padding-right: 1.5vw
+                    margin: 0
+                    div.col-md-4
+                        +bd1
+                        padding: 1.5vw
+                        padding-top: 3vw
+                        p.introTitle
+                            +bd2
+                            font-family: "Helvetica Neue"
+                            font-weight: 400
+                            color: black
+                            font-size: 22.5px
+                            letter-spacing: 1px
+                            margin-bottom: 2vw
+                        img#building
+                            +bd3
+                            display: block
+                            width: 100%
+                            max-width: 400px
+                            margin-bottom: 1.5vw
+                            +bxShw
+                        p.introText
+                            +bd4
+                            margin-bottom: 0
+                            color: #777
+                            a
+                                color: black
+                                text-decoration: none
+                        div.chooseBlock
+                            +bd1
+                            margin-top: 20px
+                            height: 80+4px
+                            border-bottom: 2px solid #eee
+                            div.iconBlock
+                                +bd4
+                                width: 50px
+                                height: 50px
+                                float: left
+                                margin-left: 5px
+                                img
+                                    +bd2
+                                    width: 100%
+                                    height: 100%
+                            div.textBlock
+                                +bd2
+                                float: left
+                                width: 65%
+                                padding-top: 15px
+                                margin-left: 10px
+                                p
+                                    +bd3
+                                    color: #777
+                        div.newsBlock
+                            +bd4
+                            height: 140px
+                            margin-bottom: 20px
+                            div.newsImgBlock
+                                +bd1
+                                width: 40%
+                                max-width: 150px
+                                float: left
+                                img
+                                    width: 100%
+                                    height: 100%
+                                    +bxShw
+                            div.newsTextBlock
+                                +bd3
+                                float: left
+                                width: 50%
+                                margin-left: 5%
+                                p.date
+                                    font-family: Arial
+                                    background-color: rgb(130,181,0)
+                                    display: inline-block
+                                    padding: 5px 12.5px
+                                    color: white
+                                    +bxShw
+                                p.newsText
+                                    +bd4
+                                    margin-bottom: 0
+                                    word-break: break-all
+                                    color: #777
+                                    a
+                                        color: black
+                                        text-decoration: none
+
+            div.breakLine
+                +bd1
+                background-color: rgb(252,252,252)
+                padding: 3vw 3vw
+                border-bottom: 0
+                div.theLine
+                    +bd3
+                    height: 1px
+                    background-color: #ccc
+
+            div#featuredWorksBlock
+                +bd3
+                background-color: rgb(252,252,252)
+                padding: 0 2vw
+                padding-bottom: 2.5vw
+                div.control-bar
+                    +bd4
+                    margin: 0 1vw
+                    padding-top: 2vw
+                    padding-bottom: 1.5vw
+                    p.workTitle
+                        +bd2
+                        width: 250px
+                        font-family: "Helvetica Neue"
+                        font-weight: 400
+                        color: black
+                        font-size: 22.5px
+                        letter-spacing: 1px
+                        margin-bottom: 0
+                        display: inline-block
+                    div
+                        +bd1
+                        position: relative
+                        z-index: 10
+                        float: right
+                        background-image: none
+                        background-color: transparent
+                        opacity: 1
+                        margin-top: 2vw
+                        width: 35px
+                        height: 35px
+                        margin-left: 0px
+                        cursor: pointer
+                        span
+                            margin: auto
+                            padding: 5px
+                            +bd2
+                            position: static
+                            color: grey
+                            font-size: 15px
+                div.col-lg-12
+                    +bd2
+                    float: none
+                    padding: 0
+                    div#myCarousel2
+                        +bd3
+                        div.inner-2
+                            +bd4
+                            div.item
+                                div.col-xs-3
+                                    +bd2
+                                    padding: 1vw
+                                    a
+                                        img
+                                            +bd4
+                                            width: 100%
+                                            +bxShw
+
+        div#Footer
+            +bd1
+            +bxShw
+            margin-top: 4vw
+            background-color: rgb(252,252,252)
+            padding: 2vw
+            div.container-fluid
+                +bd2
+                div.row
+                    +bd3
+                    div.col-md-3
+                        +bd4
+                        padding: 1vw
+                        padding-bottom: 35px
+                        p.footerTitle
+                            +bd1
+                            margin: 0
+                            font-family: "Helvetica Neue"
+                            font-weight: 400
+                            color: black
+                            font-size: 22.5px
+                            letter-spacing: 1px
+                            margin-bottom: 2vw
+                        p.tweetText
+                            +bd2
+                            font-family: "Helvetica Neue"
+                            font-weight: 400
+                            color: rgb(28,28,28)
+                            font-size: 16px
+                        div#chatBubble
+                            +bd3
+                            padding: 1vw 2vw
+                            border: 1px solid #bbb
+                            background-color: rgb(226,226,226)
+                        div#headBox
+                            +bd4
+                            height: 50px
+                            margin-top: 2.5vw
+                            div#headImgBox
+                                +bd3
+                                width: 50px
+                                height: 50px
+                                float: left
+                                img
+                                    width: 50px
+                                    height: 50px
+                            div#headTextBox
+                                +bd1
+                                float: left
+                                margin-left: 1vw
+                                p#headName
+                                    +bd2
+                                    margin-bottom: 0
+                                    font-size: 15px
+                                    margin-top: 5px
+                                    margin-bottom: 5px
+                                    color: #333
+                                a#headSite
+                                    +bd3
+                                    margin-bottom: 0
+                                    color: rgb(128,182,0)
+                                    font-style: italic
+                                    text-decoration: none
+                        input
+                            border: 1px solid #bbb
+                            background-color: rgb(226,226,226)
+                            width: 100%
+                            padding: 5px 7.5px
+                            margin-bottom: 5px
+                        input::-webkit-input-placeholder
+                            color: #888
+                        textarea
+                            width: 100%
+                            height: 10vw
+                            border: 1px solid #bbb
+                            background-color: rgb(226,226,226)
+                            padding: 5px 7.5px
+                            margin-bottom: 10px
+                        textarea::-webkit-input-placeholder
+                            color: #888
+                        a.clearButton
+                            display: inline-block
+                            font-family: Arial
+                            font-size: 14px
+                            background-color: rgb(28,28,28)
+                            color: #eee
+                            text-decoration: none
+                            padding: 5px 12.5px
+                        a.sendButton
+                            display: inline-block
+                            font-family: Arial
+                            font-size: 14px
+                            background-color: rgb(128,182,0)
+                            color: #eee
+                            text-decoration: none
+                            padding: 5px 12.5px
+                        img#flickr
+                            width: 100%
+                            max-width: 300px
+
+        div#endBar
+            +bd1
+            div.container-fluid
+                +bd2
+                div.row
+                    +bd3
+                    div.col-lg-6
+                        +bd4
+                        padding: 1vw 0
+                        position: relative
+                        min-height: 55px
+                        p.copyright
+                            +bd1
+                            display: inline-block
+                            margin-bottom: 0
+                            padding-right: 7.8px
+                            border-right: 2px solid grey
+                            font-size: 15px
+                            color: #666
+                        a.policy
+                            +bd2
+                            padding-left: 3.5px
+                            text-decoration: none
+                            display: inline-block
+                            margin-bottom: 0
+                            font-size: 15px
+                            color: rgb(128,182,0)
+                        ul
+                            +bd3
+                            list-style-type: none
+                            margin: 0
+                            display: inline-block
+                            padding-left: 0
+                            position: absolute
+                            right: 0
+                            li
+                                +bd4
+                                display: inline-block
+                                a
+                                    +bd1
+                                    font-size: 15px
+                                    color: #666
+                                    text-decoration: none
+                                    padding-left: 4px
+                                a.borderRight
+                                    border-right: 2px solid #ccc
+                                    padding-right: 8px
+                                a.actived
+                                    color: rgb(128,182,0)

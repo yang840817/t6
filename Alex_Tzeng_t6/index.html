@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>BUSINESSS PLANET</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="SASS/index_style.css"><!--我的SASS-->
+
+        <style>
+            div#myCarousel .carousel-inner > .item > img,
+            div#myCarousel .carousel-inner > .item > a > img
+            {
+                width: 100%;
+                height: 40vw;
+            }
+        </style>
+
+        <style>
+
+            .col-xs-3 {width: 25%;}
+
+            div.inner-2 > div.item.next,
+            div.inner-2 > div.item.active.right
+            {
+              left: 0;
+              -webkit-transform: translate3d(25%, 0, 0);
+                      transform: translate3d(25%, 0, 0);
+            }
+
+            div.inner-2 > .item.prev,
+            div.inner-2 > .item.active.left {
+              left: 0;
+              -webkit-transform: translate3d(-25%, 0, 0);
+                      transform: translate3d(-25%, 0, 0);
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <div id="background">
+            <div id="backgroundHead"></div>
+            <div id="backgroundFoot"></div>
+            <div id="content">
+
+                <div id="Header">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="img/logo_img.png" alt="">
+                            </div>
+                            <div class="col-sm-6">
+                                <div id="contactBox">
+                                    <div id="iconBox">
+                                        <a href="#"><img src="img/icon5.png" alt=""></a>
+                                        <a href="#"><img src="img/icon4.png" alt=""></a>
+                                        <a href="#"><img src="img/icon3.png" alt=""></a>
+                                        <a href="#"><img src="img/icon2.png" alt=""></a>
+                                        <a href="#"><img src="img/icon1.png" alt=""></a>
+                                    </div>
+                                    <div id="telBox">
+                                        <p>Call Us Now: +1 (777)784-25-43</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Body">
+                    <div class="container-fluid" id="navSearchBar">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <nav class="nav navbar-default">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                    <div class="collapse navbar-collapse" id="myNavbar">
+                                        <ul class="nav navbar-nav">
+                                            <li><a href="#home">HOME</a></li>
+                                            <li><a href="#menu1">ABOUT</a></li>
+                                            <li class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">FEATURES<span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                  <li><a href="">Feature1</a></li>
+                                                  <li><a href="">Feature2</a></li>
+                                                  <li><a href="">Feature3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">PORTFOLIO<span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                  <li><a href="">Portfolio1</a></li>
+                                                  <li><a href="">Portfolio2</a></li>
+                                                  <li><a href="">Portfolio3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">BLOG<span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                  <li><a href="">Blog1</a></li>
+                                                  <li><a href="">Blog2</a></li>
+                                                  <li><a href="">Blog3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#menu2">CONTACTS</a></li>
+
+                                        </ul>
+                                    </div>
+                                </nav>
+
+                            </div>
+                            <div class="col-md-3">
+                                <input type="text" placeholder="Search this Site...">
+
+                                </input>
+                                <div>
+                                    <a href="#"><img src="img/magnifier.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid" id="carousel">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                            <!-- Indicators
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                            </ol>
+                            -->
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="img/bus1.jpg" alt="Chania" width="460" height="345">
+                                </div>
+
+                                <div class="item">
+                                    <img src="img/bus2.jpg" alt="Chania" width="460" height="345">
+                                </div>
+
+                                <div class="item">
+                                    <img src="img/bus3.jpg" alt="Flower" width="460" height="345">
+                                </div>
+
+                                <div class="item">
+                                    <img src="img/bus4.jpg" alt="Flower" width="460" height="345">
+                                </div>
+                            </div>
+
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                    <div id="featureBar">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <div class="featureCard">
+
+                                            <p class="featureTitle">GROWTH STRATEGIES</p>
+                                            <img src="img/feature_icon_1.png" alt="" class="featureIcon">
+                                            <p class="featureInfo">
+                                                However, I think you’re missing the spirit behind the classic “centering is hard” complaint in a couple of places, which, at least for me, always comes back to not knowing the height of the elements.
+                                            </p>
+                                            <a href="" class="more">More</a>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="featureCard">
+
+                                            <p class="featureTitle">PERFECT SUPPORT</p>
+                                            <img src="img/feature_icon_2.png" alt="" class="featureIcon">
+                                            <p class="featureInfo">
+                                                However, I think you’re missing the spirit behind the classic “centering is hard” complaint in a couple of places, which, at least for me, always comes back to not knowing the height of the elements.
+                                            </p>
+                                            <a href="" class="more">More</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <div class="featureCard">
+
+                                            <p class="featureTitle">PARTNERS PROGRAMS</p>
+                                            <img src="img/feature_icon_3.png" alt="" class="featureIcon">
+                                            <p class="featureInfo">
+                                                However, I think you’re missing the spirit behind the classic “centering is hard” complaint in a couple of places, which, at least for me, always comes back to not knowing the height of the elements.
+                                            </p>
+                                            <a href="" class="more">More</a>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="featureCard premium">
+                                            <p class="featureTitle">PREMIUM SERVICES</p>
+                                            <img src="img/feature_icon_4.png" alt="" class="featureIcon">
+                                            <p class="featureInfo">
+                                                However, I think you’re missing the spirit behind the classic “centering is hard” complaint in a couple of places, which, at least for me, always comes back to not knowing the height of the elements.
+                                            </p>
+                                            <a href="" class="more">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="introBar">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p class="introTitle">WELCOME</p>
+                                <img src="img/building_img.png" alt="" id="building">
+                                <p class="introText">
+                                    However, I think you’re missing the spirit behind the classic “centering is hard” complaint in a couple of places, which, at le... <a href="#">More</a>
+                                </p>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="introTitle">WHY CHOOSE US?</p>
+                                <div class="chooseBlock">
+                                    <div class="iconBlock">
+                                        <img src="img/choose_icon.png" alt="">
+                                    </div>
+                                    <div class="textBlock">
+                                        <p>However, I think you’re missing the spirit behi...</p>
+                                    </div>
+                                </div>
+                                <div class="chooseBlock">
+                                    <div class="iconBlock">
+                                        <img src="img/choose_icon.png" alt="">
+                                    </div>
+                                    <div class="textBlock">
+                                        <p>However, I think you’re missing the spirit behi...</p>
+                                    </div>
+                                </div>
+                                <div class="chooseBlock">
+                                    <div class="iconBlock">
+                                        <img src="img/choose_icon.png" alt="">
+                                    </div>
+                                    <div class="textBlock">
+                                        <p>However, I think you’re missing the spirit behi...</p>
+                                    </div>
+                                </div>
+                                <div class="chooseBlock">
+                                    <div class="iconBlock">
+                                        <img src="img/choose_icon.png" alt="">
+                                    </div>
+                                    <div class="textBlock">
+                                        <p>However, I think you’re missing the spirit behi...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="introTitle">NEWS & EVENTS</p>
+                                <div class="newsBlock">
+                                    <div class="newsImgBlock">
+                                        <img src="img/news_img1.png" alt="">
+                                    </div>
+                                    <div class="newsTextBlock">
+                                        <p class="date">12.12.12</p>
+                                        <p class="newsText">However, I think you’re missing the spirit behind the classic “centering i... <a href="" class="more">More</a></p>
+                                    </div>
+                                </div>
+                                <div class="newsBlock">
+                                    <div class="newsImgBlock">
+                                        <img src="img/news_img1.png" alt="">
+                                    </div>
+                                    <div class="newsTextBlock">
+                                        <p class="date">12.12.12</p>
+                                        <p class="newsText">However, I think you’re missing the spirit behind the classic “centering i... <a href="" class="more">More</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="breakLine">
+                        <div class="theLine"></div>
+                    </div>
+
+
+                    <div id="featuredWorksBlock">
+
+                        <div class="control-bar">
+                            <p class="workTitle">FEATURED WORKS</p>
+                            <div class="left carousel-control" href="#myCarousel2" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            </div>
+                            <div class="right carousel-control" href="#myCarousel2" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-12">
+
+                            <div class="carousel slide" id="myCarousel2">
+
+                                <div class="carousel-inner inner-2">
+
+                                    <div class="item active">
+                                        <div class="col-xs-3">
+                                            <a href="#"><img src="img/work1_img.png" class="img-responsive"></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="col-xs-3">
+                                            <a href="#"><img src="img/work2_img.png" class="img-responsive"></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="col-xs-3">
+                                            <a href="#"><img src="img/work3_img.png" class="img-responsive"></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="col-xs-3">
+                                            <a href="#"><img src="img/work4_img.png" class="img-responsive"></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="col-xs-3">
+                                            <a href="#"><img src="img/work1_img.png" class="img-responsive"></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="col-xs-3">
+                                            <a href="#"><img src="img/work2_img.png" class="img-responsive"></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="col-xs-3">
+                                            <a href="#"><img src="img/work3_img.png" class="img-responsive"></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="col-xs-3">
+                                            <a href="#"><img src="img/work4_img.png" class="img-responsive"></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="Footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <p class="footerTitle">LATEST TWEETS</p>
+                                <p class="tweetText">loading tweets...</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="footerTitle">TESTIMONIALS</p>
+                                <div id="chatBubble">
+                                    However, I think you’re missing the spirit behind the classic “centering is hard” complaint in a couple of places.
+                                </div>
+                                <div id="headBox">
+                                    <div id="headImgBox">
+                                        <img src="img/head_img.png" alt="">
+                                    </div>
+                                    <div id="headTextBox">
+                                        <p id="headName">Stephen Bingham</p>
+                                        <a href="#" id="headSite">demolink.org</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="footerTitle">GET IN TOUCH!</p>
+                                <input type="text" placeholder="Name">
+                                <input type="text" placeholder="Email">
+                                <textarea placeholder="Message"></textarea>
+                                <a href="" class="clearButton">CLEAR FORM</a>
+                                <a href="" class="sendButton">SEND!</a>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="footerTitle">FLICKR</p>
+                                <img id="flickr"src="img/flickr_img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="endBar">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <p class="copyright">BUSINESS PLANET © 2020</p>
+                                <a href="" class="policy">Privacy Policy</a>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul>
+                                    <li><a class="borderRight actived" href="#">HOME</a></li>
+                                    <li><a class="borderRight" href="#">ABOUT</a></li>
+                                    <li><a class="borderRight" href="#">FEATURES</a></li>
+                                    <li><a class="borderRight" href="#">PORTFOLIO</a></li>
+                                    <li><a class="borderRight" href="#">BLOG</a></li>
+                                    <li><a href="#">CONTACTS</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    <script src="./jQuery/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+
+    $('.carousel').carousel({
+      interval: false
+    })
+
+    $('#myCarousel2').carousel({
+      interval: false
+    })
+
+    $('#myCarousel2 .item').each(function(){
+      var next = $(this).next();
+      if (!next.length) {
+        next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+
+      for (var i=0;i<2;i++) {
+        next=next.next();
+        if (!next.length) {
+            next = $(this).siblings(':first');
+        }
+
+        next.children(':first-child').clone().appendTo($(this));
+      }
+    });
+    </script>
+
+
+    </body>
+
+</html>
