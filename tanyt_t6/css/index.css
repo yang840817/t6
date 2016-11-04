@@ -1,0 +1,197 @@
+/* line 1, ../sass/_reset.scss */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* line 5, ../sass/_reset.scss */
+.clear {
+  clear: both;
+}
+
+/* line 9, ../sass/_reset.scss */
+.container {
+  max-width: 1250px;
+}
+
+/* line 2, ../sass/_header.scss */
+header .main-header {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 25px;
+  background-image: url(../images/white_bg.gif);
+}
+/* line 7, ../sass/_header.scss */
+header .main-header .logo {
+  float: left;
+}
+/* line 11, ../sass/_header.scss */
+header .main-header .social_connection {
+  float: right;
+}
+/* line 13, ../sass/_header.scss */
+header .main-header .social_connection ul {
+  list-style-type: none;
+  text-align: right;
+}
+/* line 16, ../sass/_header.scss */
+header .main-header .social_connection ul li {
+  padding: 0px 2px;
+}
+/* line 18, ../sass/_header.scss */
+header .main-header .social_connection ul li a {
+  background-image: url(../images/top_socials.png);
+  display: block;
+  width: 27px;
+  height: 27px;
+}
+/* line 4, ../sass/_mytool.scss */
+header .main-header .social_connection ul li:nth-child(1) a {
+  background-position: 0px 0px;
+}
+/* line 7, ../sass/_mytool.scss */
+header .main-header .social_connection ul li:nth-child(1) a:hover {
+  background-position: 0 px -27 px;
+}
+/* line 4, ../sass/_mytool.scss */
+header .main-header .social_connection ul li:nth-child(2) a {
+  background-position: -37px 0px;
+}
+/* line 7, ../sass/_mytool.scss */
+header .main-header .social_connection ul li:nth-child(2) a:hover {
+  background-position: -37 px -27 px;
+}
+/* line 4, ../sass/_mytool.scss */
+header .main-header .social_connection ul li:nth-child(3) a {
+  background-position: -74px 0px;
+}
+/* line 7, ../sass/_mytool.scss */
+header .main-header .social_connection ul li:nth-child(3) a:hover {
+  background-position: -74 px -27 px;
+}
+/* line 4, ../sass/_mytool.scss */
+header .main-header .social_connection ul li:nth-child(4) a {
+  background-position: -111px 0px;
+}
+/* line 7, ../sass/_mytool.scss */
+header .main-header .social_connection ul li:nth-child(4) a:hover {
+  background-position: -111 px -27 px;
+}
+/* line 4, ../sass/_mytool.scss */
+header .main-header .social_connection ul li:nth-child(5) a {
+  background-position: -148px 0px;
+}
+/* line 7, ../sass/_mytool.scss */
+header .main-header .social_connection ul li:nth-child(5) a:hover {
+  background-position: -148 px -27 px;
+}
+/* line 29, ../sass/_header.scss */
+header #black-bar {
+  position: absolute;
+  background-color: black;
+  height: 100px;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+}
+
+/* line 1, ../sass/_navAndSearch.scss */
+.nav-menu {
+  background-color: white;
+  padding: 0;
+}
+/* line 4, ../sass/_navAndSearch.scss */
+.nav-menu ul {
+  margin: 0;
+}
+/* line 6, ../sass/_navAndSearch.scss */
+.nav-menu ul li {
+  border-right: 1px solid #EEFFBB;
+  padding: 0;
+}
+/* line 9, ../sass/_navAndSearch.scss */
+.nav-menu ul li a {
+  display: block;
+  line-height: 55px;
+  color: black;
+  font-size: 15px;
+  padding: 0px 20px;
+  text-decoration: none;
+}
+/* line 16, ../sass/_navAndSearch.scss */
+.nav-menu ul li a:hover {
+  background-color: green;
+  color: white;
+}
+
+/* line 24, ../sass/_navAndSearch.scss */
+.search-box {
+  padding-right: 0px;
+}
+/* line 26, ../sass/_navAndSearch.scss */
+.search-box .search-form {
+  position: relative;
+  padding: 10px;
+  background: white;
+}
+/* line 30, ../sass/_navAndSearch.scss */
+.search-box .search-form #search-field {
+  width: 100%;
+  height: auto;
+  background-color: #DDDDDD;
+  border: 0;
+  font-size: 14px;
+  padding: 7px;
+}
+/* line 38, ../sass/_navAndSearch.scss */
+.search-box .search-form button {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  border: 0;
+  background: transparent;
+}
+
+/* line 6, ../sass/index.scss */
+body {
+  background-image: url(../images/main_bg.jpg);
+}
+
+/* line 10, ../sass/index.scss */
+.mainContent {
+  padding: 0;
+}
+/* line 12, ../sass/index.scss */
+.mainContent .banner {
+  background-image: url(../images/cover1.jpg);
+  max-width: 100%;
+  height: 450px;
+  background-size: 100% auto;
+}
+/* line 20, ../sass/index.scss */
+.mainContent .serviceBoxs .service-item {
+  background-color: #FFE4E1;
+  text-align: center;
+  padding: 20px 30px;
+}
+/* line 24, ../sass/index.scss */
+.mainContent .serviceBoxs .service-item h1 {
+  font-size: 15px;
+}
+/* line 27, ../sass/index.scss */
+.mainContent .serviceBoxs .service-item img {
+  margin: 20px 0px;
+}
+/* line 30, ../sass/index.scss */
+.mainContent .serviceBoxs .service-item p {
+  margin-bottom: 40px;
+}
+/* line 34, ../sass/index.scss */
+.mainContent .serviceBoxs .service-item a {
+  background-color: #FFC0CB;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}

@@ -1,0 +1,121 @@
+#foter{
+    @include board-bg;
+    position: relative;
+    margin-top: 80px;
+    padding-bottom: 20px;
+
+    p{
+      font-size: 10pt;
+      margin: 0px;
+    }
+
+    input{
+      background-color: #e6e6e6;
+      border-width: 0px;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    .test-descript{
+      padding: 20px;
+      background-color: #e6e6e6;
+    }
+
+    #men{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      a{
+        text-decoration: none;
+        color: #80b600;
+      }
+    }
+
+    #link-pic{
+        textarea{
+          width: 100%;
+          height: 80px;
+          background-color: #e6e6e6;
+          border: 0px;
+          resize: none;
+          margin-bottom: 15px;
+        }
+        button{
+          font-size: 8pt;
+          color: white;
+          border: 0px;
+          height: 30px;
+          font-weight: bold;
+          border: 0px;
+        }
+        .clr-form{
+          background-color: black;
+          margin-right: 10px;
+        }
+        .send{
+          font-size: 8pt;
+          background-color: #80b600;
+        }
+    }
+
+    .web-site{
+      margin-left: -5px;
+      margin-top: -5px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+      .col-md-3{
+        padding: 5px;
+      }
+    }
+}
+
+#black-bot{
+  background-color: black;
+  color: #8e8e8e;
+  padding: 20px 0px 20px 0px;
+  .col-md-6{
+    padding: 0px;
+  }
+  #copyright{
+    a{
+      text-decoration: none;
+      color: #80b600;
+    }
+    p{
+      margin-bottom: 0px;
+    }
+  }
+
+  #bot-menu{
+    a{
+      text-decoration: none;
+      color: #8e8e8e;
+    }
+    a:hover{
+      color: #80b600;
+    }
+    ul{
+      list-style-type: none;
+      float: right;
+      margin-bottom: 0px;
+    }
+    li{
+      display: inline;
+      padding-left: 5px;
+      padding-right: 5px;
+      border-right: 1px solid #8e8e8e;
+    }
+  }
+}
+
+footer{
+  margin-bottom: -200px;
+}
+
+  .bottom-bg{
+    background-color: black;
+    height: 200px;
+    width: 100%;
+    z-index: -1;
+  }

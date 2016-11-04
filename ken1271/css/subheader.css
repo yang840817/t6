@@ -1,0 +1,13 @@
+.subheader {
+  position: relative;
+  bottom: 90px;
+  background-image: url("img/header_bg.gif");
+  border: 1px solid;
+}
+.subheader > div {
+  padding: 40px;
+}
+.subheader > div > div {
+  float: right;
+  margin: 0 20px;
+}

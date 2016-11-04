@@ -1,0 +1,12 @@
+@import "mixin";
+@import "variable";
+body{
+  background-image: url("img/main_bg.jpg");
+}
+.top{
+  height: 100px;
+  background-color: $back-color-2;
+}
+.page{
+    @include container_width(98%,0,auto);
+}

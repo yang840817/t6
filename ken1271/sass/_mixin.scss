@@ -1,0 +1,8 @@
+@mixin container_width($con_width:96%,$vertical_margin:0, $horizon_margin:auto){
+  width: $con_width;
+  margin: $vertical_margin $horizon_margin;
+}
+@mixin position_shift_vertical($position_var:relative,$shift_var:90px) {
+  position: $position_var;
+  bottom:$shift_var;
+}

@@ -1,0 +1,10 @@
+npm init
+npm install autoprefixer --save-dev
+npm install cssnext --save-dev
+npm install precss --save-dev
+npm install postcss-import --save-dev
+
+要使用gulp編譯需先把gulpfle裡所需的插件安裝
+
+專案資料夾打開終端機輸入
+npm install ｘｘｘｘｘｘ --save-dev

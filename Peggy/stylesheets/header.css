@@ -1,0 +1,81 @@
+/* line 3, ../sass/header.scss */
+header {
+  background-image: url("../img/subbg.gif");
+  padding: 30px 10px 30px 10px;
+  margin: -20px 50px 0 50px;
+}
+
+/* line 9, ../sass/header.scss */
+#connet p {
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+/* line 16, ../sass/header.scss */
+#icon ul li {
+  display: inline-block;
+  padding: 0 5px;
+}
+/* line 19, ../sass/header.scss */
+#icon ul li a {
+  background-image: url("../img/social.png");
+  width: 29px;
+  height: 27px;
+  display: block;
+}
+/* line 25, ../sass/header.scss */
+#icon ul li:nth-child(1) a {
+  background-position: top left;
+}
+/* line 27, ../sass/header.scss */
+#icon ul li:nth-child(1) a:hover {
+  background-position: bottom left;
+}
+/* line 31, ../sass/header.scss */
+#icon ul li:nth-child(2) a {
+  background-position: -37px 0;
+}
+/* line 33, ../sass/header.scss */
+#icon ul li:nth-child(2) a:hover {
+  background-position: -37px -27px;
+}
+/* line 37, ../sass/header.scss */
+#icon ul li:nth-child(3) a {
+  background-position: -74px 0;
+}
+/* line 39, ../sass/header.scss */
+#icon ul li:nth-child(3) a:hover {
+  background-position: -74px -27px;
+}
+/* line 43, ../sass/header.scss */
+#icon ul li:nth-child(4) a {
+  background-position: -111px 0;
+}
+/* line 45, ../sass/header.scss */
+#icon ul li:nth-child(4) a:hover {
+  background-position: -111px -27px;
+}
+/* line 49, ../sass/header.scss */
+#icon ul li:nth-child(5) a {
+  background-position: -148px 0;
+}
+/* line 51, ../sass/header.scss */
+#icon ul li:nth-child(5) a:hover {
+  background-position: -148px -27px;
+}
+
+@media (max-width: 767px) {
+  /* line 60, ../sass/header.scss */
+  header #tittle {
+    text-align: center;
+  }
+  /* line 63, ../sass/header.scss */
+  header #icon {
+    margin-top: 20px;
+    text-align: center;
+  }
+  /* line 67, ../sass/header.scss */
+  header p {
+    text-align: center;
+  }
+}
