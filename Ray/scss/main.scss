@@ -1,0 +1,23 @@
+*{
+  padding:0;
+  margin:0;
+  text-decoration: none;
+  list-style: none;
+  word-break: break-all;
+
+}
+$circle-width:100%;
+$circle-height:100%;
+body{
+  background-image: url(/home/ray/git/t6/Ray/img/bg.jpg);
+  background-position: center;
+
+}
+
+@mixin circle($circle-width,$circle-height) {
+  background-color: black;
+  border-radius: 50%;
+  border:2px solid yellow;
+  width:$circle-width+5%;
+  height:$circle-width+5%;
+ }

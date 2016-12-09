@@ -1,0 +1,54 @@
+/* line 1, ../scss/nav.scss */
+.nav {
+  width: 83%;
+  margin: 0 auto;
+  border: 1px black solid;
+  margin-top: 10%;
+}
+/* line 6, ../scss/nav.scss */
+.nav br {
+  display: block;
+  height: 50%;
+}
+/* line 10, ../scss/nav.scss */
+.nav .home {
+  background-color: #16bd0c;
+}
+/* line 13, ../scss/nav.scss */
+.nav .navlist {
+  background-color: white;
+  border-top-left-radius: 8px;
+  padding: 5px;
+}
+/* line 18, ../scss/nav.scss */
+.nav .navlist a {
+  text-align: center;
+  color: black;
+  font-size: 18px;
+  padding: 3px 0;
+}
+/* line 24, ../scss/nav.scss */
+.nav .navlist a:hover {
+  background-color: #16bd0c;
+  color: white;
+  text-decoration: none;
+}
+/* line 30, ../scss/nav.scss */
+.nav .search {
+  display: block;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px grey solid;
+}
+/* line 36, ../scss/nav.scss */
+.nav .search .searcharea {
+  padding: 5px;
+  border-radius: 5px;
+  border: 0px grey solid;
+  width: 70%;
+}
+/* line 42, ../scss/nav.scss */
+.nav .search .zoomin {
+  width: auto;
+}

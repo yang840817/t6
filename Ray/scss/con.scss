@@ -1,0 +1,146 @@
+.content{
+  background-color: white;
+  width: 83%;
+  margin:0 auto;
+  img{
+    width:100%;
+  }
+  .fix{
+    padding: 100% 0;
+  }
+}
+.items{
+  background-color:rgb(221, 224, 224);
+  padding:3% 0;
+  h3{
+    width:80%;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;padding:10%;
+    word-spacing: 5px;
+  }
+  .itemimg{
+    width:30%;
+    margin: 5% auto;
+  }
+  p{
+    width:70%;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  a{
+    display: block;
+    width:40%;
+    padding:2% 5%;
+    text-align: center;
+    background-color: rgb(122, 120, 119);
+    color:white;
+    margin:5% auto;
+  }
+  a:hover{
+    color:white;
+    text-decoration: none;
+    background-color: rgb(82, 80, 81);
+  }
+}
+.items:hover{
+  background-color: rgba(93, 90, 92, 0.39);
+}
+.item1{margin-top: -2%;}
+.info{
+  border:3px green solid;
+  margin:  2% 0;
+  h3{
+    padding:2% 0;
+  }
+  p{
+    margin:2% 0;
+    color:rgb(129, 131, 128)
+  }
+  a{
+    color:black;
+  }
+}
+
+.why{
+  margin:2% 0;
+  display: flex;
+  border-bottom: 1px grey solid;
+  .whyimg{
+    width:20%;
+  }
+  .whymeg{
+    margin:auto 0;
+    width: 80%;
+    a{
+      display: block;
+      margin:auto 0;
+    }
+    a:hover{
+      text-decoration: none;
+    }
+  }
+}
+.new{
+  margin:5% 0;
+  display: flex;
+  border:2px purple solid;
+  .newimg{
+    width:40%;
+  }
+  .newinfo{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;;
+    margin-left: 2%;
+    width:57%;
+    border:1px green solid;
+    h5{
+      display: block;
+      background-color:rgb(123, 179, 15);
+      color:white;
+      margin-top: 1%;
+      padding:2% 0;
+      font-weight: bold;
+    }
+  }
+}
+.featured{
+  h3{
+    width:68%;
+    margin-left: 2%;
+    display: block;
+  }
+  .controlbt{
+    width:100%;
+    display: flex;
+    border:1px yellow solid;
+    justify-content: space-around;;
+    a{
+      display: flex;
+      justify-content: center;
+      float: left;
+      width:10%;
+      margin:auto 0;
+    }
+    a:hover{
+      color:rgb(146, 218, 28);
+      text-decoration: none;
+    }
+  }
+}
+.list{
+  border:3px purple solid;
+  img{
+    display: block;
+    border: 1px solid green;
+    height:25%;
+    width: 25%;
+  }
+}
+.whyimg:hover{
+  width:25%;
+
+}

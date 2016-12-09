@@ -1,0 +1,57 @@
+/* line 1, ../scss/footer.scss */
+footer {
+  background-color: black;
+}
+/* line 3, ../scss/footer.scss */
+footer .footerdiv {
+  width: 83%;
+  margin: 0 auto;
+  position: relative;
+  top: -4%;
+}
+
+/* line 10, ../scss/footer.scss */
+.footerleft {
+  display: flex;
+  margin-top: 1%;
+}
+/* line 13, ../scss/footer.scss */
+.footerleft p {
+  display: block;
+  font-weight: bold;
+  color: #7d7c7b;
+}
+/* line 18, ../scss/footer.scss */
+.footerleft a {
+  color: #94da22;
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 1%;
+}
+/* line 24, ../scss/footer.scss */
+.footerleft a:hover {
+  color: #94da22;
+  text-decoration: none;
+}
+
+/* line 30, ../scss/footer.scss */
+.footerright ul {
+  padding: 2%;
+  padding-left: 12%;
+  align-self: flex-end;
+}
+/* line 35, ../scss/footer.scss */
+.footerright li {
+  display: flex;
+  justify-content: center;
+}
+/* line 38, ../scss/footer.scss */
+.footerright li a {
+  color: #7d7c7b;
+  font-weight: bold;
+}
+/* line 42, ../scss/footer.scss */
+.footerright li a:hover {
+  text-decoration: none;
+  color: #94da22;
+}

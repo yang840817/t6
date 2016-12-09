@@ -1,0 +1,47 @@
+@media (max-width: 1024px) {
+  /* line 2, ../scss/media.scss */
+  .logo {
+    justify-content: space-between;
+  }
+  /* line 4, ../scss/media.scss */
+  .logo .logoinfo {
+    justify-content: flex-end;
+    width: 40%;
+    border: 1px blue solid;
+  }
+  /* line 8, ../scss/media.scss */
+  .logo .logoinfo ul {
+    width: 100%;
+    height: 50%;
+    padding-top: 10%;
+    padding-bottom: 0;
+  }
+  /* line 14, ../scss/media.scss */
+  .logo .logoinfo li {
+    margin: 0;
+  }
+  /* line 17, ../scss/media.scss */
+  .logo .logoinfo p {
+    font-size: 8px;
+    text-align: right;
+    position: relative;
+    line-height: 10px;
+  }
+  /* line 23, ../scss/media.scss */
+  .logo .logoinfo a {
+    font-size: 5px;
+    padding: 0;
+    margin: 0;
+  }
+  /* line 29, ../scss/media.scss */
+  .logo .logoimg {
+    width: 50%;
+    border: 1px blue solid;
+    height: 50%;
+  }
+  /* line 33, ../scss/media.scss */
+  .logo .logoimg img {
+    width: 100%;
+    height: 50%;
+  }
+}

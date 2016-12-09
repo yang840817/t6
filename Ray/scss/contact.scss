@@ -1,0 +1,88 @@
+.contact{
+  background-color: white;
+  width: 83%;
+  margin:0 auto;
+  margin-top: 2%;
+  padding: 1% 0;
+  h4{
+    line-height: 25px;
+  }
+  .mes{
+    background-color:rgb(219, 219, 219);
+    display: block;
+    padding:10%;
+    border-radius: 8px;
+    border-bottom-left-radius: 0px;
+    margin-bottom: 0;
+  }
+  .tran{
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 30px 0 0;
+    border-color: rgb(219, 219, 219) transparent transparent transparent;
+  }
+  .testimg{
+    width:100%;
+    img{
+      width:100%;
+    }
+  }
+  h5{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .url{
+    font-weight: bold;
+    color: black;
+    margin:0 -2%;
+    display: block;
+  }
+  .url:hover{
+    color:rgb(146, 218, 28);
+    text-decoration: none;
+  }
+}
+.inputinfo{
+  margin:2% 0;
+  background-color: rgb(219, 219, 219)  ;
+  border-radius: 4px;
+  width:100%;
+}
+.clear{
+  display: block;
+  margin-bottom: -3%;
+  background-color: rgb(148, 218, 34);
+  color:white;
+  font-weight: bold;
+  width:70%;
+  padding:1%;
+}
+.submit{
+  display: block;
+  background-color:black;
+  color:white;
+  font-weight: bold;
+  width:40%;
+  padding:1%;
+}
+.flkimg{
+  width:100%;
+  img{
+    width:100%;
+  }
+}
+.rowmargin{
+  margin-bottom: 3%;
+}
+.flkimg:hover{
+  cursor: pointer;
+  img{
+    width:130%;
+    transition-property: all;
+    transition-duration: 0.6s;
+    transition-delay: 0.1s;
+    transition-timing-function: ease-in;
+  }
+}
