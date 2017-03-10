@@ -1,9 +1,0 @@
-/* body.css */
-
-#background {
-    background-image: url(../images/bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height:600px;
-    height: 100%;
-}
