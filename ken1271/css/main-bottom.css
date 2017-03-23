@@ -1,0 +1,12 @@
+.main-bottom {
+  width: 96%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.main-bottom h1 {
+  font-variant: small-caps;
+}
+.main-bottom img {
+  width: 100%;
+  margin: 20px auto;
+}

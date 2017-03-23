@@ -1,0 +1,30 @@
+.main-top {
+  width: 96%;
+  margin: 0 auto;
+  text-align: center;
+}
+.main-top > div {
+  margin: 5px auto;
+}
+.main-top .work-content {
+  background-color: #E7E7E7;
+  border: 1px solid #DBDBDB;
+  padding: 10px 5px;
+  height: 300px;
+  width: 90%;
+  margin: 0 auto;
+}
+.main-top .work-content h4 {
+  font-variant: small-caps;
+}
+.main-top .work-content img {
+  padding: 10px 0;
+}
+.main-top .work-content a {
+  background-color: #c1bbbb;
+  padding: 10px;
+  color: black;
+}
+.main-top .work-content p {
+  padding: 10px 0;
+}

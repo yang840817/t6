@@ -1,0 +1,29 @@
+@import "mixin";
+@import "variable";
+
+.main-center{
+  @include container_width(96%,0,auto);
+  padding: 50px 0;
+  border-bottom: 1px solid $border-color-4;
+  h1{
+    font-variant: small-caps;
+  }
+  h4{
+    background-color: $back-color-1;
+    color:$font-color-3;
+    padding: 5px;
+    width:90px;
+    margin: 0 0 20px 0;
+  }
+  p{
+    display: inline;
+  }
+  >div{
+    >img{
+      width:100%;
+    }
+    >div{
+      padding: 10px 0;
+    }
+  }
+}
