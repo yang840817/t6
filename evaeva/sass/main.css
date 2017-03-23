@@ -44,7 +44,11 @@ nav {
     nav ul li {
       border-right: #d0d0d0 solid 1px;
       display: inline-flex;
-      padding: 10.5px 9px; }
+      padding: 10.5px 9px;
+      transition-duration: 0.4s; }
+    nav ul li:hover {
+      background-color: #4CAF50;
+      color: white; }
     nav ul a {
       color: black;
       display: block;
@@ -53,10 +57,12 @@ nav {
       width: 120px; }
 
 .search {
+  display: inline-flex;
   float: right;
   height: 45px;
-  margin-left: 30px;
   width: 240px; }
+  .search input {
+    height: 24px; }
 
 /* slider............................................. */
 .slider {
@@ -66,16 +72,22 @@ nav {
 
 /* gallery............................................. */
 .gallery {
-  display: inline-flex;
+  align-items: stretch;
+  display: flex;
   flex-flow: row nowrap; }
   .gallery .gBlock {
     background-color: #dddddd;
     padding: 19px 29px;
-    text-align: center; }
+    text-align: center;
+    transition-duration: 0.4s; }
     .gallery .gBlock .gTitle {
       font-size: 16px; }
     .gallery .gBlock p {
       font-size: 12px; }
+  .gallery .gBlock:hover {
+    background-color: #000000;
+    color: white;
+    opacity: 0.5; }
   .gallery .gBlock_1 {
     margin: 0 10px 0 39.5px; }
   .gallery .gBlock_2 {
@@ -102,11 +114,17 @@ nav {
       font-size: 13px; }
     .info .iBlock .iContent_3 {
       font-size: 13px; }
+    .info .iBlock p {
+      margin: 0 15px; }
     .info .iBlock #welcome {
+      height: 210px;
       max-width: 100%; }
     .info .iBlock .news {
       display: inline-flex;
-      flex: 1 1 50%; }
+      flex: 1 1 50%;
+      margin: 15px 0; }
+    .info .iBlock img {
+      height: 25px; }
   .info .iBlock_1 {
     margin: 0 15px 0 39.5px; }
   .info .iBlock_2 {

@@ -45,6 +45,10 @@ nav
 			border-right: #d0d0d0 solid 1px
 			display: inline-flex
 			padding: 10.5px 9px
+			transition-duration: 0.4s
+		li:hover
+			background-color: #4CAF50
+			color: white
 		a
 			color: black
 			display: block
@@ -53,13 +57,12 @@ nav
 			width: 120px
 
 .search
-	
-
-.search
+	display: inline-flex
 	float: right
 	height: 45px
-	margin-left: 30px
 	width: 240px
+	input
+		height: 24px
 
 /* slider.............................................*/
 .slider
@@ -69,16 +72,22 @@ nav
 
 /* gallery.............................................*/
 .gallery
-	display: inline-flex
+	align-items: stretch
+	display: flex
 	flex-flow: row nowrap
 	.gBlock
 		background-color: #dddddd
 		padding: 19px 29px
 		text-align: center
+		transition-duration: 0.4s
 		.gTitle
 			font-size: 16px
 		p
 			font-size: 12px
+	.gBlock:hover
+		background-color: #000000
+		color: white
+		opacity: 0.5
 	.gBlock_1
 		margin: 0 10px 0 39.5px
 	.gBlock_2
@@ -104,12 +113,18 @@ nav
 			display: inline
 			font-size: 13px
 		.iContent_3
-			font-size: 13px 
+			font-size: 13px
+		p
+			margin: 0 15px
 		#welcome
+			height: 210px
 			max-width: 100%
 		.news
 			display: inline-flex 
 			flex: 1 1 50%
+			margin: 15px 0
+		img
+			height: 25px
 	.iBlock_1
 		margin: 0 15px 0 39.5px
 	.iBlock_2
