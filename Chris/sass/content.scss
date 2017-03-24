@@ -1,0 +1,79 @@
+@import "colors";
+@import "base";
+@import "function_card";
+
+.content_background {
+    .content {
+        @include partical_space(25px);
+        @extend %partical_area;
+
+        .nav {}
+
+        .banner {}
+
+        .content_items {
+            padding: 24px;
+            .function_card {
+                position: relative;
+                bottom: 12vh;
+            }
+
+            ul.why_choose_us_list {
+                padding-left: 0;
+
+                li {
+                    display: block;
+                    border-bottom: 1px solid $light_gray;
+                    padding: 14px 0;
+                }
+            }
+        }
+    }
+}
+
+.content_unit{
+    font-size: 9pt;
+    color: $light_gray;
+
+    p {
+        padding-top: 15px;
+        margin-bottom: 0;
+    }
+
+    .read_more {
+        color: $dark_gray;
+        padding-left: 2px;
+
+        &:hover {
+            color: light_gray;
+        }
+    }
+}
+
+.news_item {
+    display: flex;
+    flex-direction: row;
+
+    > div, img {
+        margin: 5px;
+    }
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .news_date {
+            //font
+            font-size: 11pt;
+            // size
+            width: 76px;
+            line-height: 28px;
+            // align & justify
+            text-align: center;
+            //color
+            color: $light_white;
+            background-color: $light_green;
+        }
+        font-size: 9pt;
+    }
+}

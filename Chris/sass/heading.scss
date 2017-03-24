@@ -1,0 +1,20 @@
+@import "base";
+
+.heading_background {
+    .heading {
+        @include partical_space(5px);
+        @extend %partical_area;
+        padding: 32px;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .logo {
+
+        }
+
+        .call_us{
+
+        }
+    }
+}

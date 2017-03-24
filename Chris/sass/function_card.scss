@@ -1,0 +1,50 @@
+@import "base";
+@import "colors";
+
+$shift_color: #787878;
+
+.function_card {
+    width: 230px;
+    height: 283px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $light_gray + $shift_color;
+    padding: 25px 35px;
+    text-align: center;
+
+    transition:
+        background-color $speed_quick,
+        opacity $speed_quick;
+    .card_title {
+        font-size: 14px;
+    }
+    .card_icon {
+        color: $light_gray;
+        transition: color $speed_quick;
+        font-size: 52px;
+    }
+    .card_text {
+        transition: color $speed_quick;
+        font-size: 9pt;
+    }
+    .card_btn {
+        background: $light_gray;
+        border: none;
+        font-size: 9pt;
+        padding: 5px 10px;
+        align-self: center;
+    }
+
+    &:hover {
+        background-color: $light_gray - $shift_color;
+        opacity: 0.6;
+        color: black;
+        .card_title {
+            color: white;
+        }
+        .card_text {
+            color: white;
+        }
+    }
+}

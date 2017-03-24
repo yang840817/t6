@@ -1,0 +1,49 @@
+/* line 6, ../sass/function_card.scss */
+.function_card {
+  width: 230px;
+  height: 283px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #dbdbdb;
+  padding: 25px 35px;
+  text-align: center;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+/* line 19, ../sass/function_card.scss */
+.function_card .card_title {
+  font-size: 14px;
+}
+/* line 22, ../sass/function_card.scss */
+.function_card .card_icon {
+  color: #636363;
+  transition: color 0.3s;
+  font-size: 52px;
+}
+/* line 27, ../sass/function_card.scss */
+.function_card .card_text {
+  transition: color 0.3s;
+  font-size: 9pt;
+}
+/* line 31, ../sass/function_card.scss */
+.function_card .card_btn {
+  background: #636363;
+  border: none;
+  font-size: 9pt;
+  padding: 5px 10px;
+  align-self: center;
+}
+/* line 39, ../sass/function_card.scss */
+.function_card:hover {
+  background-color: black;
+  opacity: 0.6;
+  color: black;
+}
+/* line 43, ../sass/function_card.scss */
+.function_card:hover .card_title {
+  color: white;
+}
+/* line 46, ../sass/function_card.scss */
+.function_card:hover .card_text {
+  color: white;
+}
