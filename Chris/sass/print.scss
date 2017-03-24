@@ -2,8 +2,6 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
 
-@import "array_icon";
-
-@import "heading";
-@import "content";
-@import "footer";
+@import "partical/heading";
+@import "partical/content";
+@import "partical/footer";

@@ -27,8 +27,40 @@
         <div class="content_background">
             <div class="content">
                 <div class="nav">
-                    <div class="menu"></div>
-                    <div class="searcher"></div>
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group mr-2" role="group" aria-label="menu">
+                            <button type="button" class="btn btn-secondary">HOME</button>
+                            <button type="button" class="btn btn-secondary">ABOUT</button>
+                            <button id="features" type="button" class="rounded-0 btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                FEATURES
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="features">
+                                <a class="dropdown-item" href="#">FEATURES 1</a>
+                                <a class="dropdown-item" href="#">FEATURES 2</a>
+                            </div>
+                            <button id="portfolio" type="button" class="rounded-0 btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                PORTFOLIO
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="portfolio">
+                                <a class="dropdown-item" href="#">PORTFOLIO 1</a>
+                                <a class="dropdown-item" href="#">PORTFOLIO 2</a>
+                            </div>
+                            <button id="blog" type="button" class="rounded-0 btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                BLOG
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="blog">
+                                <a class="dropdown-item" href="#">BLOG 1</a>
+                                <a class="dropdown-item" href="#">BLOG 2</a>
+                            </div>
+
+                        </div>
+                        <div class="btn-group" role="group" aria-label="search group">
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="rounded-0 form-control mr-sm-2" type="text" placeholder="Search">
+                                <!-- <button class="rounded-0 btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+                            </form>
+                        </div>
+                    </div>
                 </div>
                 <div class="banner">
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
@@ -157,66 +189,95 @@
                             <div class="col-xs-12 col-sm-12">
                                 <div class="content_unit">
                                     <h2>FEATURED WORKS</h2>
-                                    <img src="http://placehold.it/231x196" alt="">
-                                    <img src="http://placehold.it/231x196" alt="">
-                                    <img src="http://placehold.it/231x196" alt="">
-                                    <img src="http://placehold.it/231x196" alt="">
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="footer_background">
-            <div class="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-3">
-                            <h2>LATEST TWEETS</h2>
-                        </div>
-                        <div class="col-xs-12 col-sm-3">
-                            <h2>TESTIMONIALS</h2>
-                        </div>
-                        <div class="col-xs-12 col-sm-3">
-                            <h2>GET IN TOUCH!</h2>
-                        </div>
-                        <div class="col-xs-12 col-sm-3">
-                            <h2>FLICKR</h2>
-                            <div class="row">
-                                <div class="col-xs-6 col-sm-3"><img src="http://placehold.it/53x53" alt=""></div>
-                                <div class="col-xs-6 col-sm-3"><img src="http://placehold.it/53x53" alt=""></div>
-                                <div class="col-xs-6 col-sm-3"><img src="http://placehold.it/53x53" alt=""></div>
-                                <div class="col-xs-6 col-sm-3"><img src="http://placehold.it/53x53" alt=""></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-6 col-sm-3"><img src="http://placehold.it/53x53" alt=""></div>
-                                <div class="col-xs-6 col-sm-3"><img src="http://placehold.it/53x53" alt=""></div>
-                                <div class="col-xs-6 col-sm-3"><img src="http://placehold.it/53x53" alt=""></div>
-                                <div class="col-xs-6 col-sm-3"><img src="http://placehold.it/53x53" alt=""></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-6 col-sm-3"><img src="http://placehold.it/53x53" alt=""></div>
-                                <div class="col-xs-6 col-sm-3"><img src="http://placehold.it/53x53" alt=""></div>
-                                <div class="col-xs-6 col-sm-3"><img src="http://placehold.it/53x53" alt=""></div>
-                                <div class="col-xs-6 col-sm-3"><img src="http://placehold.it/53x53" alt=""></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-6 col-sm-3"><img src="http://placehold.it/53x53" alt=""></div>
-                                <div class="col-xs-6 col-sm-3"><img src="http://placehold.it/53x53" alt=""></div>
-                                <div class="col-xs-6 col-sm-3"><img src="http://placehold.it/53x53" alt=""></div>
-                                <div class="col-xs-6 col-sm-3"><img src="http://placehold.it/53x53" alt=""></div>
-                            </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-3"><img src="http://placehold.it/231x196" alt=""></div>
+                            <div class="col-xs-12 col-sm-3"><img src="http://placehold.it/231x196" alt=""></div>
+                            <div class="col-xs-12 col-sm-3"><img src="http://placehold.it/231x196" alt=""></div>
+                            <div class="col-xs-12 col-sm-3"><img src="http://placehold.it/231x196" alt=""></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-        <script src="http://localhost:35729/livereload.js"></script>
-    </body>
+        </div>
+    </div>
+    <div class="footer_background">
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-3">
+                        <h5>LATEST TWEETS</h5>
+                        <p>
+                            loading tweets...
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-3">
+                        <h5>TESTIMONIALS</h5>
+                        <div class="talkbuble">
+                            " Sed dapibus molestie interdum. Fusce nec est ante, sit amet lacinia lorem. Maecenas nec eros ut mauris pulvinar suscipit. Aliquam erat
+                        </div>
+                        <div class=about_author>
+                            <img src="http://placehold.it/43x43" alt="">
+                            <div>
+                                <div>
+                                    Stephen Bingham
+                                </div>
+                                <i>
+                                    demolink.org
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-3">
+                        <h5>GET IN TOUCH!</h5>
+                        <form class="get_it_touch">
+                            <div class="text_area">
+                                <input class="rounded" type="textarea" placeholder="Name"/>
+                                <input class="rounded" type="textarea" placeholder="Email"/>
+                                <textarea class="rounded">Message</textarea>
+                            </div>
+                            <div class="btn_area">
+                                <input class="rounded clear_form_btn" type="button" value="CLEAR FORM"/>
+                                <input class="rounded send_btn" type="button" value="SEND!"/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-xs-12 col-sm-3">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12">
+                                <h5>FLICKR</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-3"><img src="http://placehold.it/53x53" alt=""></div>
+                            <div class="col-xs-6 col-sm-3"><img src="http://placehold.it/53x53" alt=""></div>
+                            <div class="col-xs-6 col-sm-3"><img src="http://placehold.it/53x53" alt=""></div>
+                            <div class="col-xs-6 col-sm-3"><img src="http://placehold.it/53x53" alt=""></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-3"><img src="http://placehold.it/53x53" alt=""></div>
+                            <div class="col-xs-6 col-sm-3"><img src="http://placehold.it/53x53" alt=""></div>
+                            <div class="col-xs-6 col-sm-3"><img src="http://placehold.it/53x53" alt=""></div>
+                            <div class="col-xs-6 col-sm-3"><img src="http://placehold.it/53x53" alt=""></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-3"><img src="http://placehold.it/53x53" alt=""></div>
+                            <div class="col-xs-6 col-sm-3"><img src="http://placehold.it/53x53" alt=""></div>
+                            <div class="col-xs-6 col-sm-3"><img src="http://placehold.it/53x53" alt=""></div>
+                            <div class="col-xs-6 col-sm-3"><img src="http://placehold.it/53x53" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="http://localhost:35729/livereload.js"></script>
+</body>
+</html>
 </html>

@@ -1,13 +1,25 @@
-@import "colors";
-@import "base";
-@import "function_card";
+@import "module/colors";
+@import "module/base";
+@import "module/function_card";
+@import "module/array_icon";
 
 .content_background {
     .content {
         @include partical_space(25px);
         @extend %partical_area;
 
-        .nav {}
+        //shadow
+        @extend %shadow;
+
+        .nav {
+            .btn-toolbar {
+                
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-content: space-between;
+            }
+        }
 
         .banner {}
 
@@ -27,6 +39,12 @@
                     padding: 14px 0;
                 }
             }
+
+            .line {
+                @include line($light_gray);
+                margin-top: 62px;
+                margin-bottom: 40px;
+            }
         }
     }
 }
@@ -34,6 +52,7 @@
 .content_unit{
     font-size: 9pt;
     color: $light_gray;
+
 
     p {
         padding-top: 15px;

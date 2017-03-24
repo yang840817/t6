@@ -1,0 +1,14 @@
+
+$light_green: #8EBA26;
+$light_gray: #cbcbcb;
+$dark_gray: #959595;
+$light_white: #FBFBFB;
+
+@mixin border($color: $light_gray) {
+    border: solid 1px $color;
+}
+
+@mixin line($color: $light_gray) {
+    border-top: solid 1px $color;
+    border-bottom: none;
+}

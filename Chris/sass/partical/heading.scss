@@ -1,0 +1,27 @@
+@import "module/base";
+
+.heading_background {
+    .heading {
+        // spacer
+        @include partical_space(5px);
+        @extend %partical_area;
+        padding: 32px;
+
+        // flex box
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        //box shadow
+        @extend %shadow;
+
+        .call_us{
+            // flex box
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            // font
+            font-size: 9pt;
+        }
+    }
+}

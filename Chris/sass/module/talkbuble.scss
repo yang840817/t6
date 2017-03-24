@@ -1,0 +1,40 @@
+@import "colors";
+
+@mixin aligh_center($center_position: 5px) {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -$center_position;
+}
+
+@mixin aligh_left($center_position: 5px) {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  // margin-left: -$center_position;
+}
+
+@mixin aligh_sharp ($size: 5px) {
+  content:"";
+  border-top: $size solid $light_gray;
+  // border-left: $size solid transparent;
+  border-right: $size solid transparent;
+  z-index: 1;
+}
+
+$triangle_hdight: 15px;
+
+.talkbuble {
+  color: $light_gray;
+  position: relative;
+  // line-height: 40px;
+  padding: 15px;
+  background-color: $light_gray;
+  // line-height: 60px;
+  font-size: 1rem;
+
+  &::before {
+    @include aligh_left($triangle_hdight);
+    @include aligh_sharp($triangle_hdight);
+  }
+}

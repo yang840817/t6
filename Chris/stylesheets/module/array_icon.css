@@ -1,5 +1,6 @@
-/* line 4, ../sass/array_icon.scss */
+/* line 4, ../../sass/module/array_icon.scss */
 .array_icon {
+  font-size: 16pt;
   /*size*/
   width: 40px;
   height: 40px;
