@@ -5,23 +5,12 @@
 
 .content_background {
     .content {
-        @include partical_space(25px);
         @extend %partical_area;
 
         //shadow
         @extend %shadow;
 
-        .nav {
-            .btn-toolbar {
-                
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                align-content: space-between;
-            }
-        }
 
-        .banner {}
 
         .content_items {
             padding: 24px;

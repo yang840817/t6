@@ -1,0 +1,27 @@
+/* line 16, ../../sass/module/_colors.scss */
+.transparent_background {
+  background-color: transparent;
+}
+
+/* line 11, ../../sass/module/_base.scss */
+.content_background .nav {
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px #cbcbcb;
+}
+
+/* line 5, ../../sass/partical/nav.scss */
+.content_background .nav {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin-top: 25px;
+}
+/* line 14, ../../sass/partical/nav.scss */
+.content_background .nav .btn-toolbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-content: space-between;
+}

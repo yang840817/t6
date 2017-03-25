@@ -1,0 +1,23 @@
+@import "module/base";
+
+.content_background {
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        // @include partical_space(25px);
+        @extend %partical_area;
+
+        border: none;
+        margin-top: 25px;
+
+        .btn-toolbar {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-content: space-between;
+        }
+
+        .banner {}
+    }
+}

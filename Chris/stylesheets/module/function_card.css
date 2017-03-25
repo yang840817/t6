@@ -1,3 +1,8 @@
+/* line 16, ../../sass/module/_colors.scss */
+.transparent_background {
+  background-color: transparent;
+}
+
 /* line 6, ../../sass/module/function_card.scss */
 .function_card {
   width: 230px;
