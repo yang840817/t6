@@ -1,3 +1,4 @@
+@import "module/colors";
 
 $array_icon_size: 40px;
 
@@ -13,6 +14,6 @@ $array_icon_size: 40px;
     line-height: $array_icon_size;
     text-align: center;
     /*color*/
-    background-color: #cbcbcb;
+    background-color: $light_gray;
     color: white;
 }

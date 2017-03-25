@@ -2,40 +2,36 @@
 @import "module/colors";
 @import "module/talkbuble";
 
-.footer_background {
-    .footer {
-        @include partical_space(35px);
-        @extend %partical_area;
-        padding: 33px;
+.footer {
+    @include img_background("subbg.gif");
+
+    margin-top: 35px;
+    @extend %partical_area;
+    padding: 28px;
+    font-size: 9pt;
+    // height: 45vh;
+
+    //shadow
+    @extend %shadow;
+
+    h5 {
+        margin-bottom: 20px;
+    }
+
+    .talkbuble {
+        margin-bottom: 30px;
+        color: black;
         font-size: 9pt;
-        // height: 45vh;
+    }
 
-        //shadow
-        @extend %shadow;
+    .about_author {
+        display: flex;
+        flex-direction: row;
 
-        .row img {
-            padding-bottom: 8px;
-        }
-
-        h5 {
-            margin-bottom: 20px;
-        }
-
-        .talkbuble {
-            margin-bottom: 40px;
-            color: black;
-            font-size: 9pt;
-        }
-
-        .about_author {
-            display: flex;
-            flex-direction: row;
-
-            > div {
-                margin-left: 15px;
-                i {
-                    color: $light_green;
-                }
+        > div {
+            margin-left: 15px;
+            i {
+                color: $light_green;
             }
         }
     }
@@ -80,10 +76,32 @@
     }
 
     .clear_form_btn {
-        @include btn_color($dark_gray - #202020);
+        @include btn_color($dark_gray - $shift_color *2);
+        margin-right: 3px;
     }
 
     .send_btn {
         @include btn_color($light_green);
+    }
+}
+
+$img_side: 52px;
+$img_spacer: 1px;
+
+@mixin img_box($side) {
+    width: $side;
+    height: $side;
+}
+
+.flickr_imgs {
+    height: ($img_side + $img_spacer * 3) * 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+    img {
+        margin-right: $img_spacer;
+        @include img_box($img_side);
     }
 }

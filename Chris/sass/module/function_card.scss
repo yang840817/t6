@@ -1,7 +1,7 @@
-@import "base";
-@import "colors";
+@import "module/base";
+@import "module/colors";
 
-$shift_color: #222;
+$mid_color: #a3a3a3;
 
 .function_card {
     width: 230px;
@@ -9,7 +9,7 @@ $shift_color: #222;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: $light_gray + $shift_color;
+    background-color: $mid_color + $shift_color;
     padding: 25px 35px;
     text-align: center;
 
@@ -37,7 +37,7 @@ $shift_color: #222;
     }
 
     &:hover {
-        background-color: $light_gray - $shift_color;
+        background-color: $mid_color - $shift_color;
         opacity: 0.6;
         color: black;
         .card_title {

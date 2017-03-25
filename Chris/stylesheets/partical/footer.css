@@ -1,27 +1,29 @@
-/* line 16, ../../sass/module/_colors.scss */
-.transparent_background {
-  background-color: transparent;
+/* line 9, ../../sass/module/_base.scss */
+body {
+  background-image: url('../../images/bg.jpg?1490260139');
+  position: relative;
+  padding-top: 5px;
 }
 
-/* line 11, ../../sass/module/_base.scss */
-.footer_background .footer {
+/* line 22, ../../sass/module/_base.scss */
+.footer {
   max-width: 1060px;
   margin-left: auto;
   margin-right: auto;
-  border: solid 1px #cbcbcb;
+  border: solid 1px #cdcdcd;
 }
 
-/* line 21, ../../sass/module/_base.scss */
-.footer_background .footer {
-  box-shadow: 0 0 10px #959595;
+/* line 32, ../../sass/module/_base.scss */
+.footer {
+  box-shadow: 0 0 10px #9c9c9c;
 }
 
 /* line 27, ../../sass/module/talkbuble.scss */
 .talkbuble {
-  color: #cbcbcb;
+  color: #cdcdcd;
   position: relative;
   padding: 15px;
-  background-color: #cbcbcb;
+  background-color: #cdcdcd;
   font-size: 1rem;
 }
 /* line 36, ../../sass/module/talkbuble.scss */
@@ -30,82 +32,94 @@
   top: 100%;
   left: 0%;
   content: "";
-  border-top: 15px solid #cbcbcb;
+  border-top: 15px solid #cdcdcd;
   border-right: 15px solid transparent;
   z-index: 1;
 }
 
-/* line 6, ../../sass/partical/footer.scss */
-.footer_background .footer {
+/* line 5, ../../sass/partical/footer.scss */
+.footer {
+  background-image: url('../../images/subbg.gif?1490260139');
   margin-top: 35px;
-  margin-bottom: 35px;
-  padding: 33px;
+  padding: 28px;
   font-size: 9pt;
 }
-/* line 16, ../../sass/partical/footer.scss */
-.footer_background .footer .row img {
-  padding-bottom: 8px;
-}
-/* line 20, ../../sass/partical/footer.scss */
-.footer_background .footer h5 {
+/* line 17, ../../sass/partical/footer.scss */
+.footer h5 {
   margin-bottom: 20px;
 }
-/* line 24, ../../sass/partical/footer.scss */
-.footer_background .footer .talkbuble {
-  margin-bottom: 40px;
+/* line 21, ../../sass/partical/footer.scss */
+.footer .talkbuble {
+  margin-bottom: 30px;
   color: black;
   font-size: 9pt;
 }
-/* line 30, ../../sass/partical/footer.scss */
-.footer_background .footer .about_author {
+/* line 27, ../../sass/partical/footer.scss */
+.footer .about_author {
   display: flex;
   flex-direction: row;
 }
-/* line 34, ../../sass/partical/footer.scss */
-.footer_background .footer .about_author > div {
+/* line 31, ../../sass/partical/footer.scss */
+.footer .about_author > div {
   margin-left: 15px;
 }
-/* line 36, ../../sass/partical/footer.scss */
-.footer_background .footer .about_author > div i {
-  color: #8EBA26;
+/* line 33, ../../sass/partical/footer.scss */
+.footer .about_author > div i {
+  color: #80b600;
 }
 
-/* line 48, ../../sass/partical/footer.scss */
+/* line 44, ../../sass/partical/footer.scss */
 .get_it_touch .text_area input, .get_it_touch .text_area textarea, .get_it_touch .btn_area input {
   line-height: 22px;
   padding: 2px 10px;
-  border: solid 1px #cbcbcb;
+  border: solid 1px #cdcdcd;
 }
 
-/* line 54, ../../sass/partical/footer.scss */
+/* line 50, ../../sass/partical/footer.scss */
 .get_it_touch {
   font-size: 9pt;
 }
-/* line 58, ../../sass/partical/footer.scss */
+/* line 54, ../../sass/partical/footer.scss */
 .get_it_touch .text_area input {
   width: 100%;
   margin: 3px 0;
-  color: #959595;
+  color: #9c9c9c;
 }
-/* line 65, ../../sass/partical/footer.scss */
+/* line 61, ../../sass/partical/footer.scss */
 .get_it_touch .text_area textarea {
   width: 100%;
   height: 90px;
   vertical-align: top;
-  color: #959595;
+  color: #9c9c9c;
 }
-/* line 75, ../../sass/partical/footer.scss */
+/* line 71, ../../sass/partical/footer.scss */
 .get_it_touch .btn_area input {
   border: none;
   margin-top: 15px;
 }
-/* line 82, ../../sass/partical/footer.scss */
+/* line 78, ../../sass/partical/footer.scss */
 .get_it_touch .clear_form_btn {
-  background-color: #757575;
+  background-color: #141414;
+  color: white;
+  margin-right: 3px;
+}
+/* line 83, ../../sass/partical/footer.scss */
+.get_it_touch .send_btn {
+  background-color: #80b600;
   color: white;
 }
-/* line 86, ../../sass/partical/footer.scss */
-.get_it_touch .send_btn {
-  background-color: #8EBA26;
-  color: white;
+
+/* line 96, ../../sass/partical/footer.scss */
+.flickr_imgs {
+  height: 165px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+/* line 103, ../../sass/partical/footer.scss */
+.flickr_imgs img {
+  margin-right: 1px;
+  width: 52px;
+  height: 52px;
 }

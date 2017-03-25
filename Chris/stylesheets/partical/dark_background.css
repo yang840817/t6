@@ -1,0 +1,19 @@
+/* line 2, ../../sass/partical/dark_background.scss */
+.heading_background {
+  z-index: -1;
+  background-color: #1d1d1d;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* line 12, ../../sass/partical/dark_background.scss */
+.footer_background {
+  z-index: -1;
+  height: 195px;
+  background-color: #1d1d1d;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

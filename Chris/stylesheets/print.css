@@ -1,54 +1,96 @@
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
-/* line 16, ../sass/module/_colors.scss */
-.transparent_background {
-  background-color: transparent;
+/* line 2, ../sass/partical/dark_background.scss */
+.heading_background {
+  z-index: -1;
+  background-color: #1d1d1d;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
-/* line 11, ../sass/module/_base.scss */
-.heading_background .heading, .content_background .nav, .content_background .content, .footer_background .footer {
+/* line 12, ../sass/partical/dark_background.scss */
+.footer_background {
+  z-index: -1;
+  height: 195px;
+  background-color: #1d1d1d;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* line 9, ../sass/module/_base.scss */
+body {
+  background-image: url('../images/bg.jpg?1490260139');
+  position: relative;
+  padding-top: 5px;
+}
+
+/* line 22, ../sass/module/_base.scss */
+.heading, .nav, .content, .footer, .bottom_side {
   max-width: 1060px;
   margin-left: auto;
   margin-right: auto;
-  border: solid 1px #cbcbcb;
+  border: solid 1px #cdcdcd;
 }
 
-/* line 21, ../sass/module/_base.scss */
-.heading_background .heading, .content_background .content, .footer_background .footer {
-  box-shadow: 0 0 10px #959595;
+/* line 32, ../sass/module/_base.scss */
+.heading, .content, .footer {
+  box-shadow: 0 0 10px #9c9c9c;
 }
 
 /* line 4, ../sass/partical/heading.scss */
-.heading_background .heading {
-  margin-top: 5px;
-  margin-bottom: 5px;
+.heading {
+  background-image: url('../images/subbg.gif?1490260139');
   padding: 32px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 /* line 18, ../sass/partical/heading.scss */
-.heading_background .heading .call_us {
+.heading .call_us {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  font-size: 9pt;
+  font-size: 11pt;
+}
+/* line 26, ../sass/partical/heading.scss */
+.heading .call_us i {
+  font-size: 22pt;
+  margin: 0 6px;
 }
 
-/* line 5, ../sass/partical/nav.scss */
-.content_background .nav {
+/* line 3, ../sass/partical/nav.scss */
+.nav {
   display: flex;
   flex-direction: column;
   border: none;
   margin-top: 25px;
 }
-/* line 14, ../sass/partical/nav.scss */
-.content_background .nav .btn-toolbar {
+/* line 12, ../sass/partical/nav.scss */
+.nav .btn-toolbar {
   width: 100%;
   display: flex;
   justify-content: flex-start;
   align-content: space-between;
+}
+/* line 17, ../sass/partical/nav.scss */
+.nav .btn-toolbar .btn {
+  font-size: 9pt;
+  padding: 18px 23px;
+  border: none;
+}
+/* line 21, ../sass/partical/nav.scss */
+.nav .btn-toolbar .btn:hover {
+  background-color: #80b600 !important;
+  color: white;
+}
+/* line 26, ../sass/partical/nav.scss */
+.nav .btn-toolbar .form-inline {
+  padding: 6px;
+  background-color: white;
 }
 
 /* line 6, ../sass/module/function_card.scss */
@@ -58,7 +100,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #ededed;
+  background-color: #e7e7e7;
   padding: 25px 35px;
   text-align: center;
   transition: background-color 0.3s, opacity 0.3s;
@@ -69,7 +111,7 @@
 }
 /* line 22, ../sass/module/function_card.scss */
 .function_card .card_icon {
-  color: #cbcbcb;
+  color: #cdcdcd;
   transition: color 0.3s;
   font-size: 52px;
 }
@@ -80,7 +122,7 @@
 }
 /* line 31, ../sass/module/function_card.scss */
 .function_card .card_btn {
-  background: #cbcbcb;
+  background: #cdcdcd;
   border: none;
   font-size: 9pt;
   padding: 5px 10px;
@@ -88,7 +130,7 @@
 }
 /* line 39, ../sass/module/function_card.scss */
 .function_card:hover {
-  background-color: darkgray;
+  background-color: #5f5f5f;
   opacity: 0.6;
   color: black;
 }
@@ -101,7 +143,7 @@
   color: white;
 }
 
-/* line 4, ../sass/module/array_icon.scss */
+/* line 5, ../sass/module/array_icon.scss */
 .array_icon {
   font-size: 16pt;
   /*size*/
@@ -113,89 +155,97 @@
   line-height: 40px;
   text-align: center;
   /*color*/
-  background-color: #cbcbcb;
+  background-color: #cdcdcd;
   color: white;
 }
 
+/* line 7, ../sass/partical/content.scss */
+.content {
+  background-image: url('../images/subbg.gif?1490260139');
+}
 /* line 15, ../sass/partical/content.scss */
-.content_background .content .content_items {
+.content .content_items {
   padding: 24px;
 }
 /* line 17, ../sass/partical/content.scss */
-.content_background .content .content_items .function_card {
+.content .content_items .function_card {
   position: relative;
   bottom: 12vh;
 }
 /* line 22, ../sass/partical/content.scss */
-.content_background .content .content_items ul.why_choose_us_list {
+.content .content_items ul.why_choose_us_list {
   padding-left: 0;
 }
 /* line 25, ../sass/partical/content.scss */
-.content_background .content .content_items ul.why_choose_us_list li {
+.content .content_items ul.why_choose_us_list li {
   display: block;
-  border-bottom: 1px solid #cbcbcb;
+  border-bottom: 1px solid #e4e4e4;
   padding: 14px 0;
 }
 /* line 32, ../sass/partical/content.scss */
-.content_background .content .content_items .line {
-  border-top: solid 1px #cbcbcb;
+.content .content_items .line {
+  border-top: solid 1px #cdcdcd;
   border-bottom: none;
   margin-top: 62px;
   margin-bottom: 40px;
 }
 
-/* line 41, ../sass/partical/content.scss */
+/* line 40, ../sass/partical/content.scss */
 .content_unit {
   font-size: 9pt;
-  color: #cbcbcb;
+  color: #9c9c9c;
 }
-/* line 46, ../sass/partical/content.scss */
+/* line 44, ../sass/partical/content.scss */
+.content_unit h2 {
+  color: black;
+}
+/* line 48, ../sass/partical/content.scss */
 .content_unit p {
   padding-top: 15px;
   margin-bottom: 0;
 }
-/* line 51, ../sass/partical/content.scss */
+/* line 53, ../sass/partical/content.scss */
 .content_unit .read_more {
-  color: #959595;
+  color: #9c9c9c;
   padding-left: 2px;
 }
-/* line 55, ../sass/partical/content.scss */
+/* line 57, ../sass/partical/content.scss */
 .content_unit .read_more:hover {
   color: light_gray;
 }
 
-/* line 61, ../sass/partical/content.scss */
+/* line 63, ../sass/partical/content.scss */
 .news_item {
   display: flex;
   flex-direction: row;
 }
-/* line 65, ../sass/partical/content.scss */
+/* line 67, ../sass/partical/content.scss */
 .news_item > div, .news_item img {
   margin: 5px;
 }
-/* line 69, ../sass/partical/content.scss */
+/* line 71, ../sass/partical/content.scss */
 .news_item > div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-size: 9pt;
 }
-/* line 73, ../sass/partical/content.scss */
+/* line 75, ../sass/partical/content.scss */
 .news_item > div .news_date {
   font-size: 11pt;
   width: 76px;
   line-height: 28px;
   text-align: center;
   color: #FBFBFB;
-  background-color: #8EBA26;
+  background-color: #80b600;
 }
 
 /* line 27, ../sass/module/talkbuble.scss */
 .talkbuble {
-  color: #cbcbcb;
+  color: #cdcdcd;
   position: relative;
   padding: 15px;
-  background-color: #cbcbcb;
+  background-color: #cdcdcd;
   font-size: 1rem;
 }
 /* line 36, ../sass/module/talkbuble.scss */
@@ -204,82 +254,138 @@
   top: 100%;
   left: 0%;
   content: "";
-  border-top: 15px solid #cbcbcb;
+  border-top: 15px solid #cdcdcd;
   border-right: 15px solid transparent;
   z-index: 1;
 }
 
-/* line 6, ../sass/partical/footer.scss */
-.footer_background .footer {
+/* line 5, ../sass/partical/footer.scss */
+.footer {
+  background-image: url('../images/subbg.gif?1490260139');
   margin-top: 35px;
-  margin-bottom: 35px;
-  padding: 33px;
+  padding: 28px;
   font-size: 9pt;
 }
-/* line 16, ../sass/partical/footer.scss */
-.footer_background .footer .row img {
-  padding-bottom: 8px;
-}
-/* line 20, ../sass/partical/footer.scss */
-.footer_background .footer h5 {
+/* line 17, ../sass/partical/footer.scss */
+.footer h5 {
   margin-bottom: 20px;
 }
-/* line 24, ../sass/partical/footer.scss */
-.footer_background .footer .talkbuble {
-  margin-bottom: 40px;
+/* line 21, ../sass/partical/footer.scss */
+.footer .talkbuble {
+  margin-bottom: 30px;
   color: black;
   font-size: 9pt;
 }
-/* line 30, ../sass/partical/footer.scss */
-.footer_background .footer .about_author {
+/* line 27, ../sass/partical/footer.scss */
+.footer .about_author {
   display: flex;
   flex-direction: row;
 }
-/* line 34, ../sass/partical/footer.scss */
-.footer_background .footer .about_author > div {
+/* line 31, ../sass/partical/footer.scss */
+.footer .about_author > div {
   margin-left: 15px;
 }
-/* line 36, ../sass/partical/footer.scss */
-.footer_background .footer .about_author > div i {
-  color: #8EBA26;
+/* line 33, ../sass/partical/footer.scss */
+.footer .about_author > div i {
+  color: #80b600;
 }
 
-/* line 48, ../sass/partical/footer.scss */
+/* line 44, ../sass/partical/footer.scss */
 .get_it_touch .text_area input, .get_it_touch .text_area textarea, .get_it_touch .btn_area input {
   line-height: 22px;
   padding: 2px 10px;
-  border: solid 1px #cbcbcb;
+  border: solid 1px #cdcdcd;
 }
 
-/* line 54, ../sass/partical/footer.scss */
+/* line 50, ../sass/partical/footer.scss */
 .get_it_touch {
   font-size: 9pt;
 }
-/* line 58, ../sass/partical/footer.scss */
+/* line 54, ../sass/partical/footer.scss */
 .get_it_touch .text_area input {
   width: 100%;
   margin: 3px 0;
-  color: #959595;
+  color: #9c9c9c;
 }
-/* line 65, ../sass/partical/footer.scss */
+/* line 61, ../sass/partical/footer.scss */
 .get_it_touch .text_area textarea {
   width: 100%;
   height: 90px;
   vertical-align: top;
-  color: #959595;
+  color: #9c9c9c;
 }
-/* line 75, ../sass/partical/footer.scss */
+/* line 71, ../sass/partical/footer.scss */
 .get_it_touch .btn_area input {
   border: none;
   margin-top: 15px;
 }
-/* line 82, ../sass/partical/footer.scss */
+/* line 78, ../sass/partical/footer.scss */
 .get_it_touch .clear_form_btn {
-  background-color: #757575;
+  background-color: #141414;
+  color: white;
+  margin-right: 3px;
+}
+/* line 83, ../sass/partical/footer.scss */
+.get_it_touch .send_btn {
+  background-color: #80b600;
   color: white;
 }
-/* line 86, ../sass/partical/footer.scss */
-.get_it_touch .send_btn {
-  background-color: #8EBA26;
-  color: white;
+
+/* line 96, ../sass/partical/footer.scss */
+.flickr_imgs {
+  height: 165px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+/* line 103, ../sass/partical/footer.scss */
+.flickr_imgs img {
+  margin-right: 1px;
+  width: 52px;
+  height: 52px;
+}
+
+/* line 4, ../sass/partical/buttom_side.scss */
+.bottom_side {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+}
+/* line 12, ../sass/partical/buttom_side.scss */
+.bottom_side div {
+  font-size: 9pt;
+  color: #636363;
+  padding: 0 6px;
+}
+/* line 16, ../sass/partical/buttom_side.scss */
+.bottom_side div span {
+  color: #80b600;
+}
+/* line 21, ../sass/partical/buttom_side.scss */
+.bottom_side ul {
+  margin-bottom: 0;
+}
+/* line 23, ../sass/partical/buttom_side.scss */
+.bottom_side ul li {
+  padding: 0 6px;
+  display: inline;
+  border-right: 1px solid #cdcdcd;
+}
+/* line 27, ../sass/partical/buttom_side.scss */
+.bottom_side ul li a {
+  font-size: 9pt;
+  color: #636363;
+  transition: color speed_quick;
+}
+/* line 31, ../sass/partical/buttom_side.scss */
+.bottom_side ul li a:hover {
+  color: #80b600;
+  text-decoration: none;
+}
+/* line 38, ../sass/partical/buttom_side.scss */
+.bottom_side ul li.no_border {
+  border: none;
 }

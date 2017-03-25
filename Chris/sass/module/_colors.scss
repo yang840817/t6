@@ -1,8 +1,12 @@
 
-$light_green: #8EBA26;
-$light_gray: #cbcbcb;
-$dark_gray: #959595;
+$light_green: #80b600;
+$light_black: #636363;
+$dark_gray: #9c9c9c;
+$light_gray: #cdcdcd;
 $light_white: #FBFBFB;
+
+$shift_color: #444444;
+
 
 @mixin border($color: $light_gray) {
     border: solid 1px $color;
@@ -11,8 +15,4 @@ $light_white: #FBFBFB;
 @mixin line($color: $light_gray) {
     border-top: solid 1px $color;
     border-bottom: none;
-}
-
-.transparent_background {
-    background-color: transparent;
 }

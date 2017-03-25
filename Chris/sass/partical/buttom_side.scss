@@ -1,0 +1,42 @@
+@import "module/base";
+@import "module/colors";
+
+.bottom_side {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @extend %partical_area;
+    border: none;
+
+    div {
+        font-size: 9pt;
+        color: $light_black;
+        padding: 0 6px;
+        span {
+            color: $light_green;
+        }
+    }
+
+    ul {
+        margin-bottom: 0;
+        li {
+            padding: 0 6px;
+            display: inline;
+            border-right: 1px solid $light_gray;
+            a {
+                font-size: 9pt;
+                color: $light_black;
+                transition: color speed_quick;
+                &:hover {
+                    color: $light_green;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        li.no_border {
+            border: none;
+        }
+    }
+}

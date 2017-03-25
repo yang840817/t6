@@ -1,14 +1,9 @@
-/* line 16, ../../sass/module/_colors.scss */
-.transparent_background {
-  background-color: transparent;
-}
-
 /* line 27, ../../sass/module/talkbuble.scss */
 .talkbuble {
-  color: #cbcbcb;
+  color: #cdcdcd;
   position: relative;
   padding: 15px;
-  background-color: #cbcbcb;
+  background-color: #cdcdcd;
   font-size: 1rem;
 }
 /* line 36, ../../sass/module/talkbuble.scss */
@@ -17,7 +12,7 @@
   top: 100%;
   left: 0%;
   content: "";
-  border-top: 15px solid #cbcbcb;
+  border-top: 15px solid #cdcdcd;
   border-right: 15px solid transparent;
   z-index: 1;
 }

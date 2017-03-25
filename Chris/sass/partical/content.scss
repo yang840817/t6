@@ -3,45 +3,47 @@
 @import "module/function_card";
 @import "module/array_icon";
 
-.content_background {
-    .content {
-        @extend %partical_area;
 
-        //shadow
-        @extend %shadow;
+.content {
+    @include img_background("subbg.gif");
 
+    @extend %partical_area;
 
+    //shadow
+    @extend %shadow;
 
-        .content_items {
-            padding: 24px;
-            .function_card {
-                position: relative;
-                bottom: 12vh;
+    .content_items {
+        padding: 24px;
+        .function_card {
+            position: relative;
+            bottom: 12vh;
+        }
+
+        ul.why_choose_us_list {
+            padding-left: 0;
+
+            li {
+                display: block;
+                border-bottom: 1px solid $light_gray + ($shift_color /3);
+                padding: 14px 0;
             }
+        }
 
-            ul.why_choose_us_list {
-                padding-left: 0;
-
-                li {
-                    display: block;
-                    border-bottom: 1px solid $light_gray;
-                    padding: 14px 0;
-                }
-            }
-
-            .line {
-                @include line($light_gray);
-                margin-top: 62px;
-                margin-bottom: 40px;
-            }
+        .line {
+            @include line($light_gray);
+            margin-top: 62px;
+            margin-bottom: 40px;
         }
     }
 }
 
 .content_unit{
     font-size: 9pt;
-    color: $light_gray;
+    color: $dark_gray;
 
+    h2 {
+        color: black;
+    }
 
     p {
         padding-top: 15px;

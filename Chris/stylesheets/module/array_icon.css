@@ -1,4 +1,4 @@
-/* line 4, ../../sass/module/array_icon.scss */
+/* line 5, ../../sass/module/array_icon.scss */
 .array_icon {
   font-size: 16pt;
   /*size*/
@@ -10,6 +10,6 @@
   line-height: 40px;
   text-align: center;
   /*color*/
-  background-color: #cbcbcb;
+  background-color: #cdcdcd;
   color: white;
 }
