@@ -21,38 +21,38 @@ body {
   align-items: center;
   border: none;
 }
-/* line 12, ../../sass/partical/buttom_side.scss */
+/* line 15, ../../sass/partical/buttom_side.scss */
 .bottom_side div {
+  padding: 0 6px;
   font-size: 9pt;
   color: #636363;
-  padding: 0 6px;
 }
-/* line 16, ../../sass/partical/buttom_side.scss */
+/* line 22, ../../sass/partical/buttom_side.scss */
 .bottom_side div span {
   color: #80b600;
 }
-/* line 21, ../../sass/partical/buttom_side.scss */
+/* line 27, ../../sass/partical/buttom_side.scss */
 .bottom_side ul {
   margin-bottom: 0;
 }
-/* line 23, ../../sass/partical/buttom_side.scss */
+/* line 31, ../../sass/partical/buttom_side.scss */
 .bottom_side ul li {
   padding: 0 6px;
   display: inline;
   border-right: 1px solid #cdcdcd;
 }
-/* line 27, ../../sass/partical/buttom_side.scss */
+/* line 39, ../../sass/partical/buttom_side.scss */
+.bottom_side ul li li.no_border {
+  border: none;
+}
+/* line 43, ../../sass/partical/buttom_side.scss */
 .bottom_side ul li a {
   font-size: 9pt;
   color: #636363;
   transition: color speed_quick;
 }
-/* line 31, ../../sass/partical/buttom_side.scss */
+/* line 48, ../../sass/partical/buttom_side.scss */
 .bottom_side ul li a:hover {
   color: #80b600;
   text-decoration: none;
-}
-/* line 38, ../../sass/partical/buttom_side.scss */
-.bottom_side ul li.no_border {
-  border: none;
 }

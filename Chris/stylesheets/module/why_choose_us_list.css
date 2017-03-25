@@ -1,0 +1,9 @@
+/* line 3, ../../sass/module/why_choose_us_list.scss */
+ul.why_choose_us_list {
+  padding-left: 0;
+}
+/* line 6, ../../sass/module/why_choose_us_list.scss */
+ul.why_choose_us_list li {
+  display: block;
+  border-bottom: 1px solid black;
+}

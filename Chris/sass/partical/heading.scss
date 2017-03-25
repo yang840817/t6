@@ -1,28 +1,23 @@
 @import "module/base";
-
+@import "module/colors";
+@import "module/contact";
 
 .heading {
-    @include img_background("subbg.gif");
     // spacer
     @extend %partical_area;
     padding: 32px;
-
+    //back img
+    @include img_background("subbg.gif");
     // flex box
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
     //box shadow
     @extend %shadow;
 
-    .call_us{
-        // flex box
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+    .contact {
         // font
         font-size: 11pt;
-
         i {
             font-size: 22pt;
             margin: 0 6px;

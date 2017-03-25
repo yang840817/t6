@@ -1,24 +1,24 @@
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
-/* line 2, ../sass/partical/dark_background.scss */
+/* line 8, ../sass/partical/dark_background.scss */
 .heading_background {
-  z-index: -1;
   background-color: #1d1d1d;
+  z-index: -1;
+  width: 100%;
   height: 80px;
   position: absolute;
   top: 0;
-  width: 100%;
 }
 
-/* line 12, ../sass/partical/dark_background.scss */
+/* line 17, ../sass/partical/dark_background.scss */
 .footer_background {
-  z-index: -1;
-  height: 195px;
   background-color: #1d1d1d;
+  z-index: -1;
+  width: 100%;
+  height: 195px;
   position: absolute;
   bottom: 0;
-  width: 100%;
 }
 
 /* line 9, ../sass/module/_base.scss */
@@ -29,7 +29,7 @@ body {
 }
 
 /* line 22, ../sass/module/_base.scss */
-.heading, .nav, .content, .footer, .bottom_side {
+.heading, .navigate, .content, .footer, .bottom_side {
   max-width: 1060px;
   margin-left: auto;
   margin-right: auto;
@@ -41,54 +41,66 @@ body {
   box-shadow: 0 0 10px #9c9c9c;
 }
 
-/* line 4, ../sass/partical/heading.scss */
+/* line 3, ../sass/module/contact.scss */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+/* line 9, ../sass/module/contact.scss */
+.contact i {
+  transition: color 0.3s;
+}
+/* line 11, ../sass/module/contact.scss */
+.contact i:hover {
+  color: #80b600;
+}
+
+/* line 5, ../sass/partical/heading.scss */
 .heading {
-  background-image: url('../images/subbg.gif?1490260139');
   padding: 32px;
+  background-image: url('../images/subbg.gif?1490260139');
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 /* line 18, ../sass/partical/heading.scss */
-.heading .call_us {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+.heading .contact {
   font-size: 11pt;
 }
-/* line 26, ../sass/partical/heading.scss */
-.heading .call_us i {
+/* line 21, ../sass/partical/heading.scss */
+.heading .contact i {
   font-size: 22pt;
   margin: 0 6px;
 }
 
-/* line 3, ../sass/partical/nav.scss */
-.nav {
+/* line 3, ../sass/partical/navigate.scss */
+.navigate {
   display: flex;
   flex-direction: column;
-  border: none;
   margin-top: 25px;
+  border: none;
 }
-/* line 12, ../sass/partical/nav.scss */
-.nav .btn-toolbar {
+/* line 14, ../sass/partical/navigate.scss */
+.navigate .btn-toolbar {
   width: 100%;
   display: flex;
   justify-content: flex-start;
   align-content: space-between;
 }
-/* line 17, ../sass/partical/nav.scss */
-.nav .btn-toolbar .btn {
+/* line 19, ../sass/partical/navigate.scss */
+.navigate .btn-toolbar .btn {
   font-size: 9pt;
   padding: 18px 23px;
   border: none;
 }
-/* line 21, ../sass/partical/nav.scss */
-.nav .btn-toolbar .btn:hover {
+/* line 23, ../sass/partical/navigate.scss */
+.navigate .btn-toolbar .btn:hover {
   background-color: #80b600 !important;
   color: white;
 }
-/* line 26, ../sass/partical/nav.scss */
-.nav .btn-toolbar .form-inline {
+/* line 28, ../sass/partical/navigate.scss */
+.navigate .btn-toolbar .form-inline {
   padding: 6px;
   background-color: white;
 }
@@ -159,85 +171,100 @@ body {
   color: white;
 }
 
-/* line 7, ../sass/partical/content.scss */
-.content {
-  background-image: url('../images/subbg.gif?1490260139');
-}
-/* line 15, ../sass/partical/content.scss */
-.content .content_items {
-  padding: 24px;
-}
-/* line 17, ../sass/partical/content.scss */
-.content .content_items .function_card {
-  position: relative;
-  bottom: 12vh;
-}
-/* line 22, ../sass/partical/content.scss */
-.content .content_items ul.why_choose_us_list {
-  padding-left: 0;
-}
-/* line 25, ../sass/partical/content.scss */
-.content .content_items ul.why_choose_us_list li {
-  display: block;
-  border-bottom: 1px solid #e4e4e4;
-  padding: 14px 0;
-}
-/* line 32, ../sass/partical/content.scss */
-.content .content_items .line {
-  border-top: solid 1px #cdcdcd;
-  border-bottom: none;
-  margin-top: 62px;
-  margin-bottom: 40px;
-}
-
-/* line 40, ../sass/partical/content.scss */
+/* line 3, ../sass/module/content_unit.scss */
 .content_unit {
   font-size: 9pt;
-  color: #9c9c9c;
 }
-/* line 44, ../sass/partical/content.scss */
-.content_unit h2 {
-  color: black;
-}
-/* line 48, ../sass/partical/content.scss */
+/* line 6, ../sass/module/content_unit.scss */
 .content_unit p {
   padding-top: 15px;
   margin-bottom: 0;
 }
-/* line 53, ../sass/partical/content.scss */
+/* line 11, ../sass/module/content_unit.scss */
 .content_unit .read_more {
-  color: #9c9c9c;
   padding-left: 2px;
 }
-/* line 57, ../sass/partical/content.scss */
-.content_unit .read_more:hover {
-  color: light_gray;
+
+/* line 3, ../sass/module/why_choose_us_list.scss */
+ul.why_choose_us_list {
+  padding-left: 0;
+}
+/* line 6, ../sass/module/why_choose_us_list.scss */
+ul.why_choose_us_list li {
+  display: block;
+  border-bottom: 1px solid black;
 }
 
-/* line 63, ../sass/partical/content.scss */
+/* line 3, ../sass/module/news_item.scss */
 .news_item {
   display: flex;
   flex-direction: row;
 }
-/* line 67, ../sass/partical/content.scss */
-.news_item > div, .news_item img {
-  margin: 5px;
-}
-/* line 71, ../sass/partical/content.scss */
+/* line 8, ../sass/module/news_item.scss */
 .news_item > div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-size: 9pt;
 }
-/* line 75, ../sass/partical/content.scss */
+/* line 14, ../sass/module/news_item.scss */
 .news_item > div .news_date {
-  font-size: 11pt;
   width: 76px;
   line-height: 28px;
   text-align: center;
+}
+
+/* line 9, ../sass/partical/content.scss */
+.content {
+  background-image: url('../images/subbg.gif?1490260139');
+  padding: 24px;
+}
+/* line 17, ../sass/partical/content.scss */
+.content .function_card {
+  position: relative;
+  bottom: 12vh;
+}
+/* line 23, ../sass/partical/content.scss */
+.content .content_unit {
+  color: #9c9c9c;
+}
+/* line 26, ../sass/partical/content.scss */
+.content .content_unit h2 {
+  color: black;
+}
+/* line 30, ../sass/partical/content.scss */
+.content .content_unit .read_more {
+  color: #9c9c9c;
+}
+/* line 33, ../sass/partical/content.scss */
+.content .content_unit .read_more:hover {
+  color: light_gray;
+}
+/* line 38, ../sass/partical/content.scss */
+.content .content_unit .news_item {
+  font-size: 9pt;
+}
+/* line 39, ../sass/partical/content.scss */
+.content .content_unit .news_item > div,
+.content .content_unit .news_item img {
+  margin: 5px;
+}
+/* line 46, ../sass/partical/content.scss */
+.content .content_unit .news_item > div .news_date {
   color: #FBFBFB;
   background-color: #80b600;
+  font-size: 11pt;
+}
+/* line 58, ../sass/partical/content.scss */
+.content ul.why_choose_us_list li {
+  border-bottom: 1px solid #e4e4e4;
+  padding: 14px 0;
+}
+/* line 64, ../sass/partical/content.scss */
+.content .line {
+  border-top: solid 1px #cdcdcd;
+  border-bottom: none;
+  margin-top: 62px;
+  margin-bottom: 40px;
 }
 
 /* line 27, ../sass/module/talkbuble.scss */
@@ -259,91 +286,96 @@ body {
   z-index: 1;
 }
 
-/* line 5, ../sass/partical/footer.scss */
-.footer {
-  background-image: url('../images/subbg.gif?1490260139');
-  margin-top: 35px;
-  padding: 28px;
-  font-size: 9pt;
-}
-/* line 17, ../sass/partical/footer.scss */
-.footer h5 {
-  margin-bottom: 20px;
-}
-/* line 21, ../sass/partical/footer.scss */
-.footer .talkbuble {
-  margin-bottom: 30px;
-  color: black;
-  font-size: 9pt;
-}
-/* line 27, ../sass/partical/footer.scss */
-.footer .about_author {
+/* line 3, ../sass/module/about_author.scss */
+.about_author {
   display: flex;
   flex-direction: row;
 }
-/* line 31, ../sass/partical/footer.scss */
-.footer .about_author > div {
-  margin-left: 15px;
-}
-/* line 33, ../sass/partical/footer.scss */
-.footer .about_author > div i {
-  color: #80b600;
-}
 
-/* line 44, ../sass/partical/footer.scss */
+/* line 4, ../sass/module/get_it_touch.scss */
 .get_it_touch .text_area input, .get_it_touch .text_area textarea, .get_it_touch .btn_area input {
   line-height: 22px;
   padding: 2px 10px;
   border: solid 1px #cdcdcd;
 }
 
-/* line 50, ../sass/partical/footer.scss */
+/* line 11, ../sass/module/get_it_touch.scss */
 .get_it_touch {
   font-size: 9pt;
 }
-/* line 54, ../sass/partical/footer.scss */
+/* line 14, ../sass/module/get_it_touch.scss */
 .get_it_touch .text_area input {
   width: 100%;
   margin: 3px 0;
-  color: #9c9c9c;
 }
-/* line 61, ../sass/partical/footer.scss */
+/* line 20, ../sass/module/get_it_touch.scss */
 .get_it_touch .text_area textarea {
   width: 100%;
   height: 90px;
-  vertical-align: top;
-  color: #9c9c9c;
 }
-/* line 71, ../sass/partical/footer.scss */
+/* line 28, ../sass/module/get_it_touch.scss */
 .get_it_touch .btn_area input {
   border: none;
   margin-top: 15px;
 }
-/* line 78, ../sass/partical/footer.scss */
+/* line 35, ../sass/module/get_it_touch.scss */
 .get_it_touch .clear_form_btn {
   background-color: #141414;
   color: white;
   margin-right: 3px;
 }
-/* line 83, ../sass/partical/footer.scss */
+/* line 40, ../sass/module/get_it_touch.scss */
 .get_it_touch .send_btn {
   background-color: #80b600;
   color: white;
 }
 
-/* line 96, ../sass/partical/footer.scss */
+/* line 9, ../sass/module/flickr_imgs.scss */
 .flickr_imgs {
-  height: 165px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
 }
-/* line 103, ../sass/partical/footer.scss */
+/* line 17, ../sass/module/flickr_imgs.scss */
 .flickr_imgs img {
-  margin-right: 1px;
   width: 52px;
   height: 52px;
+}
+
+/* line 8, ../sass/partical/footer.scss */
+.footer {
+  background-image: url('../images/subbg.gif?1490260139');
+  margin-top: 35px;
+  padding: 28px;
+  font-size: 9pt;
+}
+/* line 18, ../sass/partical/footer.scss */
+.footer h5 {
+  margin-bottom: 20px;
+}
+/* line 22, ../sass/partical/footer.scss */
+.footer .talkbuble {
+  margin-bottom: 30px;
+  color: black;
+  font-size: 9pt;
+}
+/* line 29, ../sass/partical/footer.scss */
+.footer .about_author > div {
+  margin-left: 15px;
+}
+/* line 32, ../sass/partical/footer.scss */
+.footer .about_author > div i {
+  color: #80b600;
+}
+/* line 39, ../sass/partical/footer.scss */
+.footer .get_it_touch .text_area input, .footer .get_it_touch textarea {
+  color: #9c9c9c;
+}
+/* line 46, ../sass/partical/footer.scss */
+.footer .flickr_imgs {
+  margin-right: 1px;
+  height: 165px;
 }
 
 /* line 4, ../sass/partical/buttom_side.scss */
@@ -354,38 +386,38 @@ body {
   align-items: center;
   border: none;
 }
-/* line 12, ../sass/partical/buttom_side.scss */
+/* line 15, ../sass/partical/buttom_side.scss */
 .bottom_side div {
+  padding: 0 6px;
   font-size: 9pt;
   color: #636363;
-  padding: 0 6px;
 }
-/* line 16, ../sass/partical/buttom_side.scss */
+/* line 22, ../sass/partical/buttom_side.scss */
 .bottom_side div span {
   color: #80b600;
 }
-/* line 21, ../sass/partical/buttom_side.scss */
+/* line 27, ../sass/partical/buttom_side.scss */
 .bottom_side ul {
   margin-bottom: 0;
 }
-/* line 23, ../sass/partical/buttom_side.scss */
+/* line 31, ../sass/partical/buttom_side.scss */
 .bottom_side ul li {
   padding: 0 6px;
   display: inline;
   border-right: 1px solid #cdcdcd;
 }
-/* line 27, ../sass/partical/buttom_side.scss */
+/* line 39, ../sass/partical/buttom_side.scss */
+.bottom_side ul li li.no_border {
+  border: none;
+}
+/* line 43, ../sass/partical/buttom_side.scss */
 .bottom_side ul li a {
   font-size: 9pt;
   color: #636363;
   transition: color speed_quick;
 }
-/* line 31, ../sass/partical/buttom_side.scss */
+/* line 48, ../sass/partical/buttom_side.scss */
 .bottom_side ul li a:hover {
   color: #80b600;
   text-decoration: none;
-}
-/* line 38, ../sass/partical/buttom_side.scss */
-.bottom_side ul li.no_border {
-  border: none;
 }

@@ -1,13 +1,15 @@
 @import "module/base";
 
-.nav {
-    display: flex;
-    flex-direction: column;
-    // @include partical_space(25px);
+.navigate {
     @extend %partical_area;
 
-    border: none;
+    //flex box
+    display: flex;
+    flex-direction: column;
     margin-top: 25px;
+
+    //border
+    border: none;
 
     .btn-toolbar {
         width: 100%;
@@ -28,6 +30,4 @@
             background-color: white;
         }
     }
-
-    .banner {}
 }

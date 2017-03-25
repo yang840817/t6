@@ -37,89 +37,94 @@ body {
   z-index: 1;
 }
 
-/* line 5, ../../sass/partical/footer.scss */
-.footer {
-  background-image: url('../../images/subbg.gif?1490260139');
-  margin-top: 35px;
-  padding: 28px;
-  font-size: 9pt;
-}
-/* line 17, ../../sass/partical/footer.scss */
-.footer h5 {
-  margin-bottom: 20px;
-}
-/* line 21, ../../sass/partical/footer.scss */
-.footer .talkbuble {
-  margin-bottom: 30px;
-  color: black;
-  font-size: 9pt;
-}
-/* line 27, ../../sass/partical/footer.scss */
-.footer .about_author {
+/* line 3, ../../sass/module/about_author.scss */
+.about_author {
   display: flex;
   flex-direction: row;
 }
-/* line 31, ../../sass/partical/footer.scss */
-.footer .about_author > div {
-  margin-left: 15px;
-}
-/* line 33, ../../sass/partical/footer.scss */
-.footer .about_author > div i {
-  color: #80b600;
-}
 
-/* line 44, ../../sass/partical/footer.scss */
+/* line 4, ../../sass/module/get_it_touch.scss */
 .get_it_touch .text_area input, .get_it_touch .text_area textarea, .get_it_touch .btn_area input {
   line-height: 22px;
   padding: 2px 10px;
   border: solid 1px #cdcdcd;
 }
 
-/* line 50, ../../sass/partical/footer.scss */
+/* line 11, ../../sass/module/get_it_touch.scss */
 .get_it_touch {
   font-size: 9pt;
 }
-/* line 54, ../../sass/partical/footer.scss */
+/* line 14, ../../sass/module/get_it_touch.scss */
 .get_it_touch .text_area input {
   width: 100%;
   margin: 3px 0;
-  color: #9c9c9c;
 }
-/* line 61, ../../sass/partical/footer.scss */
+/* line 20, ../../sass/module/get_it_touch.scss */
 .get_it_touch .text_area textarea {
   width: 100%;
   height: 90px;
-  vertical-align: top;
-  color: #9c9c9c;
 }
-/* line 71, ../../sass/partical/footer.scss */
+/* line 28, ../../sass/module/get_it_touch.scss */
 .get_it_touch .btn_area input {
   border: none;
   margin-top: 15px;
 }
-/* line 78, ../../sass/partical/footer.scss */
+/* line 35, ../../sass/module/get_it_touch.scss */
 .get_it_touch .clear_form_btn {
   background-color: #141414;
   color: white;
   margin-right: 3px;
 }
-/* line 83, ../../sass/partical/footer.scss */
+/* line 40, ../../sass/module/get_it_touch.scss */
 .get_it_touch .send_btn {
   background-color: #80b600;
   color: white;
 }
 
-/* line 96, ../../sass/partical/footer.scss */
+/* line 9, ../../sass/module/flickr_imgs.scss */
 .flickr_imgs {
-  height: 165px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
 }
-/* line 103, ../../sass/partical/footer.scss */
+/* line 17, ../../sass/module/flickr_imgs.scss */
 .flickr_imgs img {
-  margin-right: 1px;
   width: 52px;
   height: 52px;
+}
+
+/* line 8, ../../sass/partical/footer.scss */
+.footer {
+  background-image: url('../../images/subbg.gif?1490260139');
+  margin-top: 35px;
+  padding: 28px;
+  font-size: 9pt;
+}
+/* line 18, ../../sass/partical/footer.scss */
+.footer h5 {
+  margin-bottom: 20px;
+}
+/* line 22, ../../sass/partical/footer.scss */
+.footer .talkbuble {
+  margin-bottom: 30px;
+  color: black;
+  font-size: 9pt;
+}
+/* line 29, ../../sass/partical/footer.scss */
+.footer .about_author > div {
+  margin-left: 15px;
+}
+/* line 32, ../../sass/partical/footer.scss */
+.footer .about_author > div i {
+  color: #80b600;
+}
+/* line 39, ../../sass/partical/footer.scss */
+.footer .get_it_touch .text_area input, .footer .get_it_touch textarea {
+  color: #9c9c9c;
+}
+/* line 46, ../../sass/partical/footer.scss */
+.footer .flickr_imgs {
+  margin-right: 1px;
+  height: 165px;
 }

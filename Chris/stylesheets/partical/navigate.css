@@ -1,0 +1,45 @@
+/* line 9, ../../sass/module/_base.scss */
+body {
+  background-image: url('../../images/bg.jpg?1490260139');
+  position: relative;
+  padding-top: 5px;
+}
+
+/* line 22, ../../sass/module/_base.scss */
+.navigate {
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px #cdcdcd;
+}
+
+/* line 3, ../../sass/partical/navigate.scss */
+.navigate {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  border: none;
+}
+/* line 14, ../../sass/partical/navigate.scss */
+.navigate .btn-toolbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-content: space-between;
+}
+/* line 19, ../../sass/partical/navigate.scss */
+.navigate .btn-toolbar .btn {
+  font-size: 9pt;
+  padding: 18px 23px;
+  border: none;
+}
+/* line 23, ../../sass/partical/navigate.scss */
+.navigate .btn-toolbar .btn:hover {
+  background-color: #80b600 !important;
+  color: white;
+}
+/* line 28, ../../sass/partical/navigate.scss */
+.navigate .btn-toolbar .form-inline {
+  padding: 6px;
+  background-color: white;
+}

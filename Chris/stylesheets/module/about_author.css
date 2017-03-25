@@ -1,0 +1,5 @@
+/* line 3, ../../sass/module/about_author.scss */
+.about_author {
+  display: flex;
+  flex-direction: row;
+}

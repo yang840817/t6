@@ -1,0 +1,20 @@
+
+$img_side: 52px;
+
+@mixin img_box($side) {
+    width: $side;
+    height: $side;
+}
+
+.flickr_imgs {
+
+    // flex box
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+    img {
+        @include img_box($img_side);
+    }
+}

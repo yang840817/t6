@@ -16,3 +16,8 @@ $shift_color: #444444;
     border-top: solid 1px $color;
     border-bottom: none;
 }
+
+@mixin btn_color($color: blue) {
+    background-color: $color;
+    color: white;
+}

@@ -1,0 +1,13 @@
+/* line 3, ../../sass/module/content_unit.scss */
+.content_unit {
+  font-size: 9pt;
+}
+/* line 6, ../../sass/module/content_unit.scss */
+.content_unit p {
+  padding-top: 15px;
+  margin-bottom: 0;
+}
+/* line 11, ../../sass/module/content_unit.scss */
+.content_unit .read_more {
+  padding-left: 2px;
+}

@@ -84,83 +84,98 @@ body {
   color: white;
 }
 
-/* line 7, ../../sass/partical/content.scss */
-.content {
-  background-image: url('../../images/subbg.gif?1490260139');
-}
-/* line 15, ../../sass/partical/content.scss */
-.content .content_items {
-  padding: 24px;
-}
-/* line 17, ../../sass/partical/content.scss */
-.content .content_items .function_card {
-  position: relative;
-  bottom: 12vh;
-}
-/* line 22, ../../sass/partical/content.scss */
-.content .content_items ul.why_choose_us_list {
-  padding-left: 0;
-}
-/* line 25, ../../sass/partical/content.scss */
-.content .content_items ul.why_choose_us_list li {
-  display: block;
-  border-bottom: 1px solid #e4e4e4;
-  padding: 14px 0;
-}
-/* line 32, ../../sass/partical/content.scss */
-.content .content_items .line {
-  border-top: solid 1px #cdcdcd;
-  border-bottom: none;
-  margin-top: 62px;
-  margin-bottom: 40px;
-}
-
-/* line 40, ../../sass/partical/content.scss */
+/* line 3, ../../sass/module/content_unit.scss */
 .content_unit {
   font-size: 9pt;
-  color: #9c9c9c;
 }
-/* line 44, ../../sass/partical/content.scss */
-.content_unit h2 {
-  color: black;
-}
-/* line 48, ../../sass/partical/content.scss */
+/* line 6, ../../sass/module/content_unit.scss */
 .content_unit p {
   padding-top: 15px;
   margin-bottom: 0;
 }
-/* line 53, ../../sass/partical/content.scss */
+/* line 11, ../../sass/module/content_unit.scss */
 .content_unit .read_more {
-  color: #9c9c9c;
   padding-left: 2px;
 }
-/* line 57, ../../sass/partical/content.scss */
-.content_unit .read_more:hover {
-  color: light_gray;
+
+/* line 3, ../../sass/module/why_choose_us_list.scss */
+ul.why_choose_us_list {
+  padding-left: 0;
+}
+/* line 6, ../../sass/module/why_choose_us_list.scss */
+ul.why_choose_us_list li {
+  display: block;
+  border-bottom: 1px solid black;
 }
 
-/* line 63, ../../sass/partical/content.scss */
+/* line 3, ../../sass/module/news_item.scss */
 .news_item {
   display: flex;
   flex-direction: row;
 }
-/* line 67, ../../sass/partical/content.scss */
-.news_item > div, .news_item img {
-  margin: 5px;
-}
-/* line 71, ../../sass/partical/content.scss */
+/* line 8, ../../sass/module/news_item.scss */
 .news_item > div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-size: 9pt;
 }
-/* line 75, ../../sass/partical/content.scss */
+/* line 14, ../../sass/module/news_item.scss */
 .news_item > div .news_date {
-  font-size: 11pt;
   width: 76px;
   line-height: 28px;
   text-align: center;
+}
+
+/* line 9, ../../sass/partical/content.scss */
+.content {
+  background-image: url('../../images/subbg.gif?1490260139');
+  padding: 24px;
+}
+/* line 17, ../../sass/partical/content.scss */
+.content .function_card {
+  position: relative;
+  bottom: 12vh;
+}
+/* line 23, ../../sass/partical/content.scss */
+.content .content_unit {
+  color: #9c9c9c;
+}
+/* line 26, ../../sass/partical/content.scss */
+.content .content_unit h2 {
+  color: black;
+}
+/* line 30, ../../sass/partical/content.scss */
+.content .content_unit .read_more {
+  color: #9c9c9c;
+}
+/* line 33, ../../sass/partical/content.scss */
+.content .content_unit .read_more:hover {
+  color: light_gray;
+}
+/* line 38, ../../sass/partical/content.scss */
+.content .content_unit .news_item {
+  font-size: 9pt;
+}
+/* line 39, ../../sass/partical/content.scss */
+.content .content_unit .news_item > div,
+.content .content_unit .news_item img {
+  margin: 5px;
+}
+/* line 46, ../../sass/partical/content.scss */
+.content .content_unit .news_item > div .news_date {
   color: #FBFBFB;
   background-color: #80b600;
+  font-size: 11pt;
+}
+/* line 58, ../../sass/partical/content.scss */
+.content ul.why_choose_us_list li {
+  border-bottom: 1px solid #e4e4e4;
+  padding: 14px 0;
+}
+/* line 64, ../../sass/partical/content.scss */
+.content .line {
+  border-top: solid 1px #cdcdcd;
+  border-bottom: none;
+  margin-top: 62px;
+  margin-bottom: 40px;
 }

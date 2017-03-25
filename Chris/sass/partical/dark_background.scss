@@ -1,19 +1,24 @@
 
-.heading_background {
-    z-index: -1;
+@mixin black_background {
     background-color: #1d1d1d;
+    z-index: -1;
+    width: 100%;
+}
+
+.heading_background {
+    @include black_background;
     height: 80px;
+
+    //align top
     position: absolute;
     top: 0;
-    width: 100%;
-
 }
 
 .footer_background {
-    z-index: -1;
+    @include black_background;
     height: 195px;
-    background-color: #1d1d1d;
+
+    //align bottom
     position: absolute;
     bottom: 0;
-    width: 100%;
 }
