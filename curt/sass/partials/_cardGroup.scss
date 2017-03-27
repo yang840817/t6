@@ -1,0 +1,27 @@
+.cardGroup{
+  margin-top: -35px;
+  .row{
+    margin: 0px;
+    .col-sm-3{
+      padding: 15px;
+      .card{
+        background: $colorBlock;
+        .cardTitle{
+          padding: 20px;
+        }
+        .cardText{
+          padding: 20px;
+        }
+        button{
+          font-family: sans-serif;
+          border: 0px;
+          background: #CDCDCD;
+          width: 70px;
+          height: 1.8em;
+          margin: 0 auto;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

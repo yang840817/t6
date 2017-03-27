@@ -70,7 +70,7 @@ body .topSec {
   top: 0px;
   left: 0px;
   width: 100%;
-  background: #1c1c1c;
+  background: #e7e7e7;
   padding: 25px;
   text-indent: -999px;
   z-index: 1;
@@ -81,7 +81,7 @@ body .downSec {
   top: 100%;
   left: 0px;
   width: 100%;
-  background: #1c1c1c;
+  background: #e7e7e7;
   padding: 25px;
   text-indent: -999px;
   z-index: 1;
@@ -185,7 +185,7 @@ body .downSec {
   font-size: 1em;
   padding: 20px;
   height: 100%;
-  border-right: 1px solid gray;
+  border-right: 1px solid #e7e7e7;
 }
 /* line 14, ../sass/partials/_nav.scss */
 .navbar .liFix li:hover {
@@ -211,4 +211,110 @@ body .downSec {
   margin: 0 10px;
   width: 100%;
   padding: 5px;
+}
+
+/* line 3, ../sass/partials/_banner.scss */
+.banner #carouselExampleControls .banner1 {
+  background-size: cover;
+  background-position: center;
+  background-image: url('../images/banner1.jpg?1490260818');
+  height: 500px;
+  width: 100%;
+}
+/* line 6, ../sass/partials/_banner.scss */
+.banner #carouselExampleControls .banner2 {
+  background-size: cover;
+  background-position: center;
+  background-image: url('../images/banner2.jpg?1490260818');
+  height: 500px;
+  width: 100%;
+}
+/* line 9, ../sass/partials/_banner.scss */
+.banner #carouselExampleControls .banner3 {
+  background-size: cover;
+  background-position: center;
+  background-image: url('../images/banner3.jpg?1490260818');
+  height: 500px;
+  width: 100%;
+}
+/* line 12, ../sass/partials/_banner.scss */
+.banner #carouselExampleControls a {
+  height: 100%;
+}
+
+/* line 1, ../sass/partials/_cardGroup.scss */
+.cardGroup {
+  margin-top: -35px;
+}
+/* line 3, ../sass/partials/_cardGroup.scss */
+.cardGroup .row {
+  margin: 0px;
+}
+/* line 5, ../sass/partials/_cardGroup.scss */
+.cardGroup .row .col-sm-3 {
+  padding: 15px;
+}
+/* line 7, ../sass/partials/_cardGroup.scss */
+.cardGroup .row .col-sm-3 .card {
+  background: #e7e7e7;
+}
+/* line 9, ../sass/partials/_cardGroup.scss */
+.cardGroup .row .col-sm-3 .card .cardTitle {
+  padding: 20px;
+}
+/* line 12, ../sass/partials/_cardGroup.scss */
+.cardGroup .row .col-sm-3 .card .cardText {
+  padding: 20px;
+}
+/* line 15, ../sass/partials/_cardGroup.scss */
+.cardGroup .row .col-sm-3 .card button {
+  font-family: sans-serif;
+  border: 0px;
+  background: #CDCDCD;
+  width: 70px;
+  height: 1.8em;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* line 2, ../sass/partials/_wwn.scss */
+.wwn .wwnTitle {
+  font-size: 2em;
+  padding: 0.5em 0;
+}
+/* line 6, ../sass/partials/_wwn.scss */
+.wwn img {
+  width: 100%;
+}
+/* line 9, ../sass/partials/_wwn.scss */
+.wwn .wwnText {
+  padding: 0.8em 0;
+}
+/* line 12, ../sass/partials/_wwn.scss */
+.wwn .wwnLi {
+  border-bottom: 1px solid #e7e7e7;
+}
+/* line 14, ../sass/partials/_wwn.scss */
+.wwn .wwnLi i {
+  margin: 10px;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  font-size: 24px;
+  background: #E7E7E7;
+  border-radius: 50%;
+}
+/* line 25, ../sass/partials/_wwn.scss */
+.wwn .picDateTextMarginTopFix {
+  margin-top: 40px;
+}
+/* line 29, ../sass/partials/_wwn.scss */
+.wwn .wwnDate {
+  color: #fff;
+  font-family: sans-serif;
+  line-height: 1.5em;
+  text-align: center;
+  width: 100px;
+  background: #62CD00;
 }

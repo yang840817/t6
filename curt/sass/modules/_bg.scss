@@ -2,6 +2,8 @@
   background-size: cover;
   background-position: center;
   background-image: image-url($banner-image);
+  height: 500px;
+  width: 100%;
 }
 @mixin background-image($banner-image) {
   background-size: cover;
