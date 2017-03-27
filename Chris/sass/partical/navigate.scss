@@ -1,33 +1,42 @@
 @import "module/base";
 
+@import "module/base";
+
 .navigate {
     @extend %partical_area;
-
+    font-size: 9pt;
     //flex box
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     margin-top: 25px;
-
     //border
     border: none;
-
-    .btn-toolbar {
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-content: space-between;
-        .btn {
-            font-size: 9pt;
-            padding: 18px 23px;
-            border: none;
-            &:hover {
-                background-color: $light_green!important;
-                color: white;
-            }
-        }
-        .form-inline{
-            padding: 6px;
+    .navbar {
+        background-color: transparent;
+        padding: 0;
+        .navbar-toggler {
+            position: static;
             background-color: white;
+            margin: 8px;
+        }
+        .btn{
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .banner {
+        img {
+            opacity: 0;
+        }
+        .banner_img1{
+            @include background_img("banner1.jpg");
+        }
+        .banner_img2{
+            @include background_img("banner2.jpg");
+        }
+        .banner_img3{
+            @include background_img("banner3.jpg");
         }
     }
 }

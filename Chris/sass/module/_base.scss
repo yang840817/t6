@@ -12,6 +12,12 @@ body {
     padding-top: 5px;
 }
 
+@mixin background_img($img_name) {
+    background-image: image-url($img_name);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 @mixin side_space{
     max-width: 1060px;

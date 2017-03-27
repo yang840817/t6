@@ -5,7 +5,7 @@ body {
   padding-top: 5px;
 }
 
-/* line 22, ../../sass/module/_base.scss */
+/* line 28, ../../sass/module/_base.scss */
 .content {
   max-width: 1060px;
   margin-left: auto;
@@ -13,7 +13,7 @@ body {
   border: solid 1px #cdcdcd;
 }
 
-/* line 32, ../../sass/module/_base.scss */
+/* line 38, ../../sass/module/_base.scss */
 .content {
   box-shadow: 0 0 10px #9c9c9c;
 }

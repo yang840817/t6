@@ -29,53 +29,61 @@
             </div>
         </div>
         <div class="navigate">
-            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                <button type="button" class="rounded-0 btn btn-secondary">HOME</button>
-                <button type="button" class="rounded-0 btn btn-secondary">ABOUT</button>
-                <div class="btn-group" role="group" aria-label="menu">
-                    <button id="features" type="button" class="rounded-0 btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        FEATURES
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="features">
-                        <a class="dropdown-item" href="#">FEATURES 1</a>
-                        <a class="dropdown-item" href="#">FEATURES 2</a>
+            <!-- new menu -->
+            <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <div class="navbar-nav">
+                        <button type="button" class="rounded-0 btn btn-secondary nav-item">HOME</button>
+                        <button type="button" class="rounded-0 btn btn-secondary nav-item">ABOUT</button>
+                        <div class="nav-item dropdown">
+                            <button type="button" class="rounded-0 btn btn-secondary dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                FEATURE
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <button class="dropdown-item btn btn-secondary" href="#">FEATURES 1</button>
+                                <button class="dropdown-item btn btn-secondary" href="#">FEATURES 2</button>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <button type="button" class="rounded-0 btn btn-secondary dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                PORTFOLIO
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="portfolio">
+                                <button class="dropdown-item btn btn-secondary" href="#">PORTFOLIO 1</button>
+                                <button class="dropdown-item btn btn-secondary" href="#">PORTFOLIO 2</button>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <button type="button" class="rounded-0 btn btn-secondary dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                BLOG
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <button class="dropdown-item" href="#">BLOG1</button>
+                                <button class="dropdown-item" href="#">BLOG2</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="btn-group" role="group" aria-label="menu">
-                    <button id="portfolio" type="button" class="rounded-0 btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        PORTFOLIO
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="portfolio">
-                        <a class="dropdown-item" href="#">PORTFOLIO 1</a>
-                        <a class="dropdown-item" href="#">PORTFOLIO 2</a>
-                    </div>
-                </div>
-                <div class="btn-group mr-auto" role="group" aria-label="menu">
-                    <button id="blog" type="button" class="rounded-0 btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        BLOG
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="blog">
-                        <a class="dropdown-item" href="#">BLOG 1</a>
-                        <a class="dropdown-item" href="#">BLOG 2</a>
-                    </div>
-                </div>
-                <div class="btn-group" role="group" aria-label="search group">
-                    <form class="form-inline my-2 my-lg-0">
+                    <form class="form-inline my-2 my-lg-0 ml-auto">
                         <input class="rounded-0 form-control" type="text" placeholder="Search">
+                        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
                     </form>
                 </div>
-            </div>
+            </nav>
+
             <div class="banner">
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
+                        <div class="carousel-item banner_img1 active">
                             <img class="d-block img-fluid" src="./images/banner1.jpg" alt="First slide">
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item banner_img2">
                             <img class="d-block img-fluid" src="./images/banner2.jpg" alt="Second slide">
                         </div>
-                        <div class="carousel-item">
-                            <img class="d-block img-fluid" src="./images/banner3.jpg" alt="Second slide">
+                        <div class="carousel-item banner_img1">
+                            <img class="d-block img-fluid" s3c="./images/banner3.jpg" alt="Second slide">
                         </div>
                     </div>
                 </div>
