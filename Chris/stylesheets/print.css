@@ -60,15 +60,12 @@ body {
 .heading {
   padding: 32px;
   background-image: url('../images/subbg.gif?1490260139');
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
-/* line 18, ../sass/partical/heading.scss */
+/* line 14, ../sass/partical/heading.scss */
 .heading .contact {
   font-size: 11pt;
 }
-/* line 21, ../sass/partical/heading.scss */
+/* line 17, ../sass/partical/heading.scss */
 .heading .contact i {
   font-size: 22pt;
   margin: 0 6px;
@@ -96,25 +93,29 @@ body {
   width: 100%;
   text-align: center;
 }
-/* line 29, ../sass/partical/navigate.scss */
+/* line 28, ../sass/partical/navigate.scss */
+.navigate .form-control {
+  width: 100%;
+}
+/* line 33, ../sass/partical/navigate.scss */
 .navigate .banner img {
   opacity: 0;
 }
-/* line 32, ../sass/partical/navigate.scss */
+/* line 36, ../sass/partical/navigate.scss */
 .navigate .banner .banner_img1 {
   background-image: url('../images/banner1.jpg?1490260139');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 35, ../sass/partical/navigate.scss */
+/* line 39, ../sass/partical/navigate.scss */
 .navigate .banner .banner_img2 {
   background-image: url('../images/banner2.jpg?1490260139');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 38, ../sass/partical/navigate.scss */
+/* line 42, ../sass/partical/navigate.scss */
 .navigate .banner .banner_img3 {
   background-image: url('../images/banner3.jpg?1490260139');
   background-position: center;
@@ -124,8 +125,6 @@ body {
 
 /* line 6, ../sass/module/function_card.scss */
 .function_card {
-  width: 230px;
-  height: 283px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -134,22 +133,22 @@ body {
   text-align: center;
   transition: background-color 0.3s, opacity 0.3s;
 }
-/* line 19, ../sass/module/function_card.scss */
+/* line 17, ../sass/module/function_card.scss */
 .function_card .card_title {
   font-size: 14px;
 }
-/* line 22, ../sass/module/function_card.scss */
+/* line 20, ../sass/module/function_card.scss */
 .function_card .card_icon {
   color: #cdcdcd;
   transition: color 0.3s;
   font-size: 52px;
 }
-/* line 27, ../sass/module/function_card.scss */
+/* line 25, ../sass/module/function_card.scss */
 .function_card .card_text {
   transition: color 0.3s;
   font-size: 9pt;
 }
-/* line 31, ../sass/module/function_card.scss */
+/* line 32, ../sass/module/function_card.scss */
 .function_card .card_btn {
   background: #cdcdcd;
   border: none;
@@ -157,17 +156,17 @@ body {
   padding: 5px 10px;
   align-self: center;
 }
-/* line 39, ../sass/module/function_card.scss */
+/* line 40, ../sass/module/function_card.scss */
 .function_card:hover {
   background-color: #5f5f5f;
   opacity: 0.6;
   color: black;
 }
-/* line 43, ../sass/module/function_card.scss */
+/* line 44, ../sass/module/function_card.scss */
 .function_card:hover .card_title {
   color: white;
 }
-/* line 46, ../sass/module/function_card.scss */
+/* line 47, ../sass/module/function_card.scss */
 .function_card:hover .card_text {
   color: white;
 }
@@ -237,46 +236,48 @@ ul.why_choose_us_list li {
 }
 /* line 17, ../sass/partical/content.scss */
 .content .function_card {
+  max-width: 230px;
+  min-height: 283px;
   position: relative;
   bottom: 12vh;
 }
-/* line 23, ../sass/partical/content.scss */
+/* line 25, ../sass/partical/content.scss */
 .content .content_unit {
   color: #9c9c9c;
 }
-/* line 26, ../sass/partical/content.scss */
+/* line 28, ../sass/partical/content.scss */
 .content .content_unit h2 {
   color: black;
 }
-/* line 30, ../sass/partical/content.scss */
+/* line 32, ../sass/partical/content.scss */
 .content .content_unit .read_more {
   color: #9c9c9c;
 }
-/* line 33, ../sass/partical/content.scss */
+/* line 35, ../sass/partical/content.scss */
 .content .content_unit .read_more:hover {
   color: light_gray;
 }
-/* line 38, ../sass/partical/content.scss */
+/* line 40, ../sass/partical/content.scss */
 .content .content_unit .news_item {
   font-size: 9pt;
 }
-/* line 39, ../sass/partical/content.scss */
+/* line 41, ../sass/partical/content.scss */
 .content .content_unit .news_item > div,
 .content .content_unit .news_item img {
   margin: 5px;
 }
-/* line 46, ../sass/partical/content.scss */
+/* line 48, ../sass/partical/content.scss */
 .content .content_unit .news_item > div .news_date {
   color: #FBFBFB;
   background-color: #80b600;
   font-size: 11pt;
 }
-/* line 58, ../sass/partical/content.scss */
+/* line 60, ../sass/partical/content.scss */
 .content ul.why_choose_us_list li {
   border-bottom: 1px solid #e4e4e4;
   padding: 14px 0;
 }
-/* line 64, ../sass/partical/content.scss */
+/* line 66, ../sass/partical/content.scss */
 .content .line {
   border-top: solid 1px #cdcdcd;
   border-bottom: none;

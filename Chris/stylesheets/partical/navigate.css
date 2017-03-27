@@ -35,25 +35,29 @@ body {
   width: 100%;
   text-align: center;
 }
-/* line 29, ../../sass/partical/navigate.scss */
+/* line 28, ../../sass/partical/navigate.scss */
+.navigate .form-control {
+  width: 100%;
+}
+/* line 33, ../../sass/partical/navigate.scss */
 .navigate .banner img {
   opacity: 0;
 }
-/* line 32, ../../sass/partical/navigate.scss */
+/* line 36, ../../sass/partical/navigate.scss */
 .navigate .banner .banner_img1 {
   background-image: url('../../images/banner1.jpg?1490260139');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 35, ../../sass/partical/navigate.scss */
+/* line 39, ../../sass/partical/navigate.scss */
 .navigate .banner .banner_img2 {
   background-image: url('../../images/banner2.jpg?1490260139');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 38, ../../sass/partical/navigate.scss */
+/* line 42, ../../sass/partical/navigate.scss */
 .navigate .banner .banner_img3 {
   background-image: url('../../images/banner3.jpg?1490260139');
   background-position: center;

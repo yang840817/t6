@@ -4,8 +4,6 @@
 $mid_color: #a3a3a3;
 
 .function_card {
-    width: 230px;
-    height: 283px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -25,6 +23,9 @@ $mid_color: #a3a3a3;
         font-size: 52px;
     }
     .card_text {
+        // text-overflow: ellipsis;
+        // white-space: nowrap;
+        // overflow: hidden;
         transition: color $speed_quick;
         font-size: 9pt;
     }

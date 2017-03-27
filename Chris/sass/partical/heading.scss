@@ -8,10 +8,6 @@
     padding: 32px;
     //back img
     @include img_background("subbg.gif");
-    // flex box
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     //box shadow
     @extend %shadow;
 
