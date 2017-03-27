@@ -1,0 +1,45 @@
+.header{
+  position: relative;
+  background-color: #fff;
+  z-index: 2;
+  padding: 20px;
+
+  .logo{
+    float: left;
+  }
+  .contact{
+    float: right;
+    line-height: 100%;
+    .socialIcon{
+      li{
+        display: inline-block;
+        &:nth-child(1){
+          a{
+            @include socialIcon(0px,0px);
+          }
+        }
+        &:nth-child(2){
+          a{
+            @include socialIcon(-37px,0px);
+          }
+        }
+        &:nth-child(3){
+          a{
+            @include socialIcon(-74px,0px);
+          }
+        }
+        &:nth-child(4){
+          a{
+            @include socialIcon(-111px,0px);
+          }
+        }
+        &:nth-child(5){
+          a{
+            @include socialIcon(right,top);
+            width: 29px;
+          }
+        }
+      }
+    }
+  }
+}
