@@ -12,13 +12,11 @@
 }
 
 
-@mixin colorBlock($top,$down) {
+@mixin colorBlock($padding) {
   position: absolute;
-  top: $top;
-  left: $down;
   width: 100%;
   background:$colorBlock;
-  padding: 25px;
+  padding: $padding;
   text-indent: -999px;
   z-index: 1;
 }

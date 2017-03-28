@@ -1,13 +1,19 @@
+html{
+  position: relative;
+}
 body{
   // @include banner-image("bg.jpg");
   background: url(../images/bg.jpg);
-  background-repeat: repeat-x;
-  position: relative;
+  background-repeat: repeat-x repeat-y;
   .topSec{
-    @include colorBlock(0px,0px);
+    @include colorBlock(25px);
+    top:0px;
+    left:0px;
   }
   .downSec{
-    @include colorBlock(100%,0px);
+    @include colorBlock(100px);
+    bottom:0px;
+    left:0px;
   }
 }
 
