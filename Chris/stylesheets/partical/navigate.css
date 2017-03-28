@@ -15,52 +15,59 @@ body {
 
 /* line 5, ../../sass/partical/navigate.scss */
 .navigate {
-  font-size: 9pt;
   margin-top: 25px;
   border: none;
 }
-/* line 14, ../../sass/partical/navigate.scss */
+/* line 10, ../../sass/partical/navigate.scss */
 .navigate .navbar {
   background-color: transparent;
   padding: 0;
 }
-/* line 17, ../../sass/partical/navigate.scss */
+/* line 13, ../../sass/partical/navigate.scss */
 .navigate .navbar .navbar-toggler {
   position: static;
   background-color: white;
   margin: 8px;
 }
-/* line 22, ../../sass/partical/navigate.scss */
+/* line 18, ../../sass/partical/navigate.scss */
 .navigate .navbar .btn {
   width: 100%;
   text-align: center;
 }
-/* line 28, ../../sass/partical/navigate.scss */
+/* line 24, ../../sass/partical/navigate.scss */
 .navigate .form-control {
   width: 100%;
 }
-/* line 33, ../../sass/partical/navigate.scss */
+/* line 29, ../../sass/partical/navigate.scss */
 .navigate .banner img {
   opacity: 0;
 }
-/* line 36, ../../sass/partical/navigate.scss */
+/* line 32, ../../sass/partical/navigate.scss */
 .navigate .banner .banner_img1 {
   background-image: url('../../images/banner1.jpg?1490260139');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 39, ../../sass/partical/navigate.scss */
+/* line 35, ../../sass/partical/navigate.scss */
 .navigate .banner .banner_img2 {
   background-image: url('../../images/banner2.jpg?1490260139');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 42, ../../sass/partical/navigate.scss */
+/* line 38, ../../sass/partical/navigate.scss */
 .navigate .banner .banner_img3 {
   background-image: url('../../images/banner3.jpg?1490260139');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+/* line 42, ../../sass/partical/navigate.scss */
+.navigate .banner .carousel-control-size {
+  width: 35px;
+  height: 100px;
+  background-color: #636363;
+  border-style: none;
+  margin: auto 0;
 }

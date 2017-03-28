@@ -4,10 +4,6 @@
 
 .navigate {
     @extend %partical_area;
-    font-size: 9pt;
-    //flex box
-    // display: flex;
-    // flex-direction: column;
     margin-top: 25px;
     //border
     border: none;
@@ -41,6 +37,14 @@
         }
         .banner_img3{
             @include background_img("banner3.jpg");
+        }
+
+        .carousel-control-size {
+            width: 35px;
+            height: 100px;
+            background-color: $light_black;
+            border-style: none;
+            margin: auto 0;
         }
     }
 }
