@@ -1,0 +1,55 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* line 3, ../sass/_header.scss */
+header {
+  height: 25vh;
+}
+/* line 21, ../sass/_header.scss */
+header .header_box {
+  background-color: black;
+  width: 100%;
+  height: 60%;
+}
+/* line 27, ../sass/_header.scss */
+header .header_box2 {
+  /* width: 90%; */
+  height: 40%;
+  background: url("../images/bg.jpg");
+}
+/* line 37, ../sass/_header.scss */
+header i {
+  padding-left: 10%;
+  padding-bottom: 1%;
+}
+/* line 42, ../sass/_header.scss */
+header .header_black {
+  background-color: white;
+  width: 90%;
+  height: 130px;
+  padding: 3%;
+  margin-top: 10px;
+}
+
+/* line 2, ../sass/_section.scss */
+section {
+  z-index: -1;
+  height: 500px;
+  background: url("../images/bg.jpg");
+}
+/* line 11, ../sass/_section.scss */
+section .container {
+  width: 90%;
+  background-color: red;
+}
+
+/* line 4, ../sass/_footer.scss */
+footer {
+  z-index: -1;
+  background-color: black;
+}
+
+/* line 11, ../sass/print.scss */
+body {
+  padding: 0;
+}
