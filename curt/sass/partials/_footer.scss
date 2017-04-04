@@ -1,0 +1,67 @@
+.footer{
+  padding: 0px 1em;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  background: #fff;
+  .footerTitle{
+    font-size: 1.5em;
+    padding:1.5em 0px;
+  }
+  .footerDial{
+    position: relative;
+    padding: 15px;
+    border: 1px solid #e7e7e7;
+    background: #e7e7e7;
+    margin-bottom: 30px;
+    &::after{
+      position: absolute;
+      left:0;
+      top:100%;
+      content: '';
+      border-style:solid;
+      border-width:15px 15px 15px 0px;
+      border-color: #e7e7e7 transparent transparent transparent;
+    }
+  }
+  .footerForm{
+    input{
+      margin-bottom: 5px;
+      background: #e7e7e7;
+      width: 100%;
+      border: 0px;
+    }
+    textarea{
+      background: #e7e7e7;
+      width: 100%;
+      border: 0px;
+    }
+    .buttonC{
+      margin-top: 20px;
+      border: 0px;
+      width: 120px;
+      height: 25px;
+      color: #fff;
+      background: #000;
+    }
+    .buttonS{
+      margin-top: 20px;
+      border: 0px;
+      width: 100px;
+      height: 25px;
+      color: #fff;
+      background: #62CD00;
+    }
+  }
+  .triangle{
+
+  }
+  .footerPic{
+    .col-lg-3{
+      padding:5px;
+    }
+    img{
+      height: 50px;
+      width: 50px;
+    }
+  }
+}

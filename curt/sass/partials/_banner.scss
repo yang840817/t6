@@ -1,0 +1,16 @@
+.banner{
+  #carouselExampleControls{
+    .banner1{
+      @include banner-image("banner1.jpg");
+    }
+    .banner2{
+      @include banner-image("banner2.jpg");
+    }
+    .banner3{
+      @include banner-image("banner3.jpg");
+    }
+    a{
+      height: 100%;
+    }
+  }
+}

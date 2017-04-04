@@ -1,0 +1,22 @@
+@mixin banner-image($banner-image) {
+  background-size: cover;
+  background-position: center;
+  background-image: image-url($banner-image);
+  height: 500px;
+  width: 100%;
+}
+@mixin background-image($banner-image) {
+  background-size: cover;
+  background-position: center;
+  background-image: image-url($banner-image);
+}
+
+
+@mixin colorBlock($padding) {
+  position: absolute;
+  width: 100%;
+  background:$colorBlock;
+  padding: $padding;
+  text-indent: -999px;
+  z-index: 1;
+}

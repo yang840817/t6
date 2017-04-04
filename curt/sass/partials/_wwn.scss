@@ -1,0 +1,41 @@
+.wwn{
+  .wwnTitle{
+    font-size: 2em;
+    padding: 0.5em 0;
+  }
+  img{
+    width: 100%;
+  }
+  .wwnText{
+    padding: 0.8em 0;
+  }
+  .wwnLi{
+    border-bottom: 1px solid #e7e7e7;
+    i{
+      margin: 10px;
+      width: 48px;
+      height: 48px;
+      line-height: 48px;
+      text-align: center;
+      font-size: 24px;
+      background: #E7E7E7;
+      border-radius: 50%;
+    }
+    .alignCenter{
+      display: flex;
+      align-items: center;
+    }
+  }
+  .picDateTextMarginTopFix{
+    margin-top: 40px;
+
+  }
+  .wwnDate{
+    color: #fff;
+    font-family: sans-serif;
+    line-height: 1.5em;
+    text-align: center;
+    width: 100px;
+    background: #62CD00;
+  }
+}
