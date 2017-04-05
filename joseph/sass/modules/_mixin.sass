@@ -1,0 +1,47 @@
+@mixin icon-word
+	font-family: sans-serif
+	letter-spacing: 2px
+	line-height: 1.5
+
+@mixin a-style
+	text-decoration: none
+	text-align: center
+
+@mixin menu-grid
+	list-style-type: none
+	font-weight: bold
+
+@mixin card-item
+	background: $mod-color
+	h3
+		font-family: $font-style
+		font-size: $font-l
+		margin-bottom: 10px
+	img
+		text-align: center
+		margin: 10px 0
+	p
+		font-family: $font-style-s
+		font-size: $font-m
+		line-height: 1.5
+@mixin card-button
+	display: block
+	color: #000
+	background: $btn-card-color
+	padding: 5px
+	width: 100px
+	text-decoration: none
+	transition: all .5s
+	&:hover
+		background: $font-color
+		color: $bg-color
+		text-decoration: none
+
+@mixin bubble
+	width: 250px
+	height: 80px
+	border-radius: 2px
+	border: 1px solid $tab-color
+	background: $mod-color
+
+
