@@ -1,0 +1,183 @@
+/* line 9, ../../sass/module/_base.scss */
+body {
+  background-image: url('../../images/bg.jpg?1490260139');
+  position: relative;
+  padding-top: 5px;
+}
+
+/* line 28, ../../sass/module/_base.scss */
+.content {
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px #cdcdcd;
+}
+
+/* line 38, ../../sass/module/_base.scss */
+.content {
+  box-shadow: 0 0 10px #9c9c9c;
+}
+
+/* line 6, ../../sass/module/function_card.scss */
+.function_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #e7e7e7;
+  padding: 25px 35px;
+  text-align: center;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+/* line 17, ../../sass/module/function_card.scss */
+.function_card .card_title {
+  font-size: 14px;
+}
+/* line 20, ../../sass/module/function_card.scss */
+.function_card .card_icon {
+  color: #cdcdcd;
+  transition: color 0.3s;
+  font-size: 52px;
+}
+/* line 25, ../../sass/module/function_card.scss */
+.function_card .card_text {
+  transition: color 0.3s;
+  font-size: 9pt;
+}
+/* line 29, ../../sass/module/function_card.scss */
+.function_card .card_btn {
+  background: #cdcdcd;
+  border: none;
+  font-size: 9pt;
+  padding: 5px 10px;
+  align-self: center;
+}
+/* line 37, ../../sass/module/function_card.scss */
+.function_card:hover {
+  background-color: #5f5f5f;
+  opacity: 0.6;
+  color: black;
+}
+/* line 41, ../../sass/module/function_card.scss */
+.function_card:hover .card_title {
+  color: white;
+}
+/* line 44, ../../sass/module/function_card.scss */
+.function_card:hover .card_text {
+  color: white;
+}
+
+/* line 5, ../../sass/module/array_icon.scss */
+.array_icon {
+  font-size: 16pt;
+  /*size*/
+  width: 40px;
+  height: 40px;
+  /*circle*/
+  border-radius: 50%;
+  /*align & justify*/
+  line-height: 40px;
+  text-align: center;
+  /*color*/
+  background-color: #cdcdcd;
+  color: white;
+}
+
+/* line 3, ../../sass/module/content_unit.scss */
+.content_unit {
+  font-size: 9pt;
+}
+/* line 6, ../../sass/module/content_unit.scss */
+.content_unit p {
+  padding-top: 15px;
+  margin-bottom: 0;
+}
+/* line 11, ../../sass/module/content_unit.scss */
+.content_unit .read_more {
+  padding-left: 2px;
+}
+
+/* line 3, ../../sass/module/why_choose_us_list.scss */
+ul.why_choose_us_list {
+  padding-left: 0;
+}
+/* line 6, ../../sass/module/why_choose_us_list.scss */
+ul.why_choose_us_list li {
+  display: block;
+  border-bottom: 1px solid black;
+}
+
+/* line 3, ../../sass/module/news_item.scss */
+.news_item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/* line 9, ../../sass/module/news_item.scss */
+.news_item > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* line 15, ../../sass/module/news_item.scss */
+.news_item > div .news_date {
+  width: 76px;
+  line-height: 28px;
+  text-align: center;
+}
+
+/* line 9, ../../sass/partical/content.scss */
+.content {
+  background-image: url('../../images/subbg.gif?1490260139');
+  padding: 24px;
+}
+/* line 17, ../../sass/partical/content.scss */
+.content .function_card {
+  max-width: 230px;
+  min-height: 283px;
+  position: relative;
+  bottom: 12vh;
+}
+/* line 25, ../../sass/partical/content.scss */
+.content .content_unit {
+  color: #9c9c9c;
+}
+/* line 28, ../../sass/partical/content.scss */
+.content .content_unit h2 {
+  color: black;
+}
+/* line 32, ../../sass/partical/content.scss */
+.content .content_unit .read_more {
+  color: #9c9c9c;
+}
+/* line 35, ../../sass/partical/content.scss */
+.content .content_unit .read_more:hover {
+  color: light_gray;
+}
+/* line 40, ../../sass/partical/content.scss */
+.content .content_unit .news_item {
+  font-size: 9pt;
+}
+/* line 41, ../../sass/partical/content.scss */
+.content .content_unit .news_item > div,
+.content .content_unit .news_item img {
+  margin: 5px;
+  width: 142px;
+}
+/* line 49, ../../sass/partical/content.scss */
+.content .content_unit .news_item > div .news_date {
+  color: #FBFBFB;
+  background-color: #80b600;
+  font-size: 11pt;
+}
+/* line 61, ../../sass/partical/content.scss */
+.content ul.why_choose_us_list li {
+  border-bottom: 1px solid #e4e4e4;
+  padding: 14px 0;
+}
+/* line 67, ../../sass/partical/content.scss */
+.content .line {
+  border-top: solid 1px #cdcdcd;
+  border-bottom: none;
+  margin-top: 62px;
+  margin-bottom: 40px;
+}

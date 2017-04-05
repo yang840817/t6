@@ -1,0 +1,19 @@
+@import "module/colors";
+
+$array_icon_size: 40px;
+
+.array_icon {
+    // font
+    font-size: 16pt;
+    /*size*/
+    width: $array_icon_size;
+    height: $array_icon_size;
+    /*circle*/
+    border-radius: 50%;
+    /*align & justify*/
+    line-height: $array_icon_size;
+    text-align: center;
+    /*color*/
+    background-color: $light_gray;
+    color: white;
+}

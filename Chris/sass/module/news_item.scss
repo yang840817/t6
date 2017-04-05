@@ -1,0 +1,23 @@
+@import "module/colors";
+
+.news_item {
+    //flex box
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    > div {
+        //flex box
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .news_date {
+            // size
+            width: 76px;
+            line-height: 28px;
+            // align & justify
+            text-align: center;
+        }
+    }
+}

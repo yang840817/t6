@@ -1,0 +1,50 @@
+/* line 9, ../../sass/module/_base.scss */
+body {
+  background-image: url('../../images/bg.jpg?1490260139');
+  position: relative;
+  padding-top: 5px;
+}
+
+/* line 28, ../../sass/module/_base.scss */
+.heading {
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px #cdcdcd;
+}
+
+/* line 38, ../../sass/module/_base.scss */
+.heading {
+  box-shadow: 0 0 10px #9c9c9c;
+}
+
+/* line 3, ../../sass/module/contact.scss */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+/* line 9, ../../sass/module/contact.scss */
+.contact i {
+  transition: color 0.3s;
+}
+/* line 11, ../../sass/module/contact.scss */
+.contact i:hover {
+  color: #80b600;
+}
+
+/* line 5, ../../sass/partical/heading.scss */
+.heading {
+  background-color: #FBFBFB;
+  padding: 32px;
+  background-image: url('../../images/subbg.gif?1490260139');
+}
+/* line 15, ../../sass/partical/heading.scss */
+.heading .contact {
+  font-size: 11pt;
+}
+/* line 18, ../../sass/partical/heading.scss */
+.heading .contact i {
+  font-size: 22pt;
+  margin: 0 6px;
+}

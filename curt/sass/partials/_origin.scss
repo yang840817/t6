@@ -1,0 +1,21 @@
+.origin{
+  color:#fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top:15px;
+  padding-bottom: 15px;
+  .originR{
+    li{
+      display: inline-block;
+
+      border-right: 1px solid #fff;
+      margin-right: 8px;
+      padding-right: 8px;
+      &:hover{
+        color:#62CD00;
+      }
+    }
+
+  }
+}

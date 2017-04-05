@@ -1,0 +1,12 @@
+/* line 9, ../../sass/module/flickr_imgs.scss */
+.flickr_imgs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+/* line 17, ../../sass/module/flickr_imgs.scss */
+.flickr_imgs img {
+  width: 52px;
+  height: 52px;
+}

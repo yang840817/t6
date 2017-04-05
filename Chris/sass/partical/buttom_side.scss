@@ -1,0 +1,55 @@
+@import "module/base";
+@import "module/colors";
+
+.bottom_side {
+    //size
+    min-height: 40px;
+    //flex box
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @extend %partical_area;
+    //border
+    border: none;
+
+    div {
+        //spacer
+        padding: 0 6px;
+        // font
+        font-size: 9pt;
+        color: $light_black;
+
+        span {
+            color: $light_green;
+        }
+    }
+
+    ul {
+        // spacer
+        margin-bottom: 0;
+
+        li {
+            // spacer
+            padding: 0 6px;
+            //menu mode
+            display: inline;
+            // border
+            border-right: 1px solid $light_gray;
+
+            li.no_border {
+                border: none;
+            }
+            //font
+            a {
+                font-size: 9pt;
+                color: $light_black;
+                transition: color speed_quick;
+
+                &:hover {
+                    color: $light_green;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

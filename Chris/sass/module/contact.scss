@@ -1,0 +1,15 @@
+@import "module/base";
+
+.contact{
+    // flex box
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    i {
+        transition: color $speed_quick;
+        &:hover {
+            color: $light_green;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@import "module/colors";
+
+ul.why_choose_us_list {
+    padding-left: 0;
+
+    li {
+        display: block;
+        border-bottom: 1px solid black;
+    }
+}

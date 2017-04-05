@@ -1,0 +1,74 @@
+/* line 9, ../../sass/module/_base.scss */
+body {
+  background-image: url('../../images/bg.jpg?1490260139');
+  position: relative;
+  padding-top: 5px;
+}
+
+/* line 28, ../../sass/module/_base.scss */
+.navigate {
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px #cdcdcd;
+}
+
+/* line 3, ../../sass/partical/navigate.scss */
+.navigate {
+  margin-top: 25px;
+  border: none;
+}
+/* line 8, ../../sass/partical/navigate.scss */
+.navigate .navbar {
+  background-color: transparent;
+  padding: 0;
+}
+/* line 11, ../../sass/partical/navigate.scss */
+.navigate .navbar .navbar-toggler {
+  position: static;
+  background-color: white;
+  margin: 8px;
+}
+/* line 16, ../../sass/partical/navigate.scss */
+.navigate .navbar .btn {
+  width: 100%;
+  text-align: center;
+}
+/* line 22, ../../sass/partical/navigate.scss */
+.navigate .form-control {
+  width: 100%;
+}
+/* line 27, ../../sass/partical/navigate.scss */
+.navigate .banner img {
+  opacity: 0;
+}
+/* line 30, ../../sass/partical/navigate.scss */
+.navigate .banner .banner_img1 {
+  background-image: url('../../images/banner1.jpg?1490260139');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 33, ../../sass/partical/navigate.scss */
+.navigate .banner .banner_img2 {
+  background-image: url('../../images/banner2.jpg?1490260139');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 36, ../../sass/partical/navigate.scss */
+.navigate .banner .banner_img3 {
+  background-image: url('../../images/banner3.jpg?1490260139');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 40, ../../sass/partical/navigate.scss */
+.navigate .banner .carousel-control-size {
+  font-size: 20pt;
+  width: 35px;
+  height: 100px;
+  background-color: #636363;
+  border-style: none;
+  margin: auto 0;
+}

@@ -1,0 +1,23 @@
+@import "module/base";
+@import "module/colors";
+@import "module/contact";
+
+.heading {
+    background-color: $light_white;
+    // spacer
+    @extend %partical_area;
+    padding: 32px;
+    //back img
+    @include img_background("subbg.gif");
+    //box shadow
+    @extend %shadow;
+
+    .contact {
+        // font
+        font-size: 11pt;
+        i {
+            font-size: 22pt;
+            margin: 0 6px;
+        }
+    }
+}

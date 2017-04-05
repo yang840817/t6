@@ -1,0 +1,457 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* line 8, ../sass/partical/dark_background.scss */
+.heading_background {
+  background-color: #1d1d1d;
+  z-index: -1;
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  top: 0;
+}
+
+/* line 17, ../sass/partical/dark_background.scss */
+.footer_background {
+  background-color: #1d1d1d;
+  z-index: -1;
+  width: 100%;
+  height: 195px;
+  position: absolute;
+  bottom: 0;
+}
+
+/* line 9, ../sass/module/_base.scss */
+body {
+  background-image: url('../images/bg.jpg?1490260139');
+  position: relative;
+  padding-top: 5px;
+}
+
+/* line 28, ../sass/module/_base.scss */
+.heading, .navigate, .content, .footer, .bottom_side {
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px #cdcdcd;
+}
+
+/* line 38, ../sass/module/_base.scss */
+.heading, .content, .footer {
+  box-shadow: 0 0 10px #9c9c9c;
+}
+
+/* line 3, ../sass/module/contact.scss */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+/* line 9, ../sass/module/contact.scss */
+.contact i {
+  transition: color 0.3s;
+}
+/* line 11, ../sass/module/contact.scss */
+.contact i:hover {
+  color: #80b600;
+}
+
+/* line 5, ../sass/partical/heading.scss */
+.heading {
+  background-color: #FBFBFB;
+  padding: 32px;
+  background-image: url('../images/subbg.gif?1490260139');
+}
+/* line 15, ../sass/partical/heading.scss */
+.heading .contact {
+  font-size: 11pt;
+}
+/* line 18, ../sass/partical/heading.scss */
+.heading .contact i {
+  font-size: 22pt;
+  margin: 0 6px;
+}
+
+/* line 3, ../sass/partical/navigate.scss */
+.navigate {
+  margin-top: 25px;
+  border: none;
+}
+/* line 8, ../sass/partical/navigate.scss */
+.navigate .navbar {
+  background-color: transparent;
+  padding: 0;
+}
+/* line 11, ../sass/partical/navigate.scss */
+.navigate .navbar .navbar-toggler {
+  position: static;
+  background-color: white;
+  margin: 8px;
+}
+/* line 16, ../sass/partical/navigate.scss */
+.navigate .navbar .btn {
+  width: 100%;
+  text-align: center;
+}
+/* line 22, ../sass/partical/navigate.scss */
+.navigate .form-control {
+  width: 100%;
+}
+/* line 27, ../sass/partical/navigate.scss */
+.navigate .banner img {
+  opacity: 0;
+}
+/* line 30, ../sass/partical/navigate.scss */
+.navigate .banner .banner_img1 {
+  background-image: url('../images/banner1.jpg?1490260139');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 33, ../sass/partical/navigate.scss */
+.navigate .banner .banner_img2 {
+  background-image: url('../images/banner2.jpg?1490260139');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 36, ../sass/partical/navigate.scss */
+.navigate .banner .banner_img3 {
+  background-image: url('../images/banner3.jpg?1490260139');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 40, ../sass/partical/navigate.scss */
+.navigate .banner .carousel-control-size {
+  font-size: 20pt;
+  width: 35px;
+  height: 100px;
+  background-color: #636363;
+  border-style: none;
+  margin: auto 0;
+}
+
+/* line 6, ../sass/module/function_card.scss */
+.function_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #e7e7e7;
+  padding: 25px 35px;
+  text-align: center;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+/* line 17, ../sass/module/function_card.scss */
+.function_card .card_title {
+  font-size: 14px;
+}
+/* line 20, ../sass/module/function_card.scss */
+.function_card .card_icon {
+  color: #cdcdcd;
+  transition: color 0.3s;
+  font-size: 52px;
+}
+/* line 25, ../sass/module/function_card.scss */
+.function_card .card_text {
+  transition: color 0.3s;
+  font-size: 9pt;
+}
+/* line 29, ../sass/module/function_card.scss */
+.function_card .card_btn {
+  background: #cdcdcd;
+  border: none;
+  font-size: 9pt;
+  padding: 5px 10px;
+  align-self: center;
+}
+/* line 37, ../sass/module/function_card.scss */
+.function_card:hover {
+  background-color: #5f5f5f;
+  opacity: 0.6;
+  color: black;
+}
+/* line 41, ../sass/module/function_card.scss */
+.function_card:hover .card_title {
+  color: white;
+}
+/* line 44, ../sass/module/function_card.scss */
+.function_card:hover .card_text {
+  color: white;
+}
+
+/* line 5, ../sass/module/array_icon.scss */
+.array_icon {
+  font-size: 16pt;
+  /*size*/
+  width: 40px;
+  height: 40px;
+  /*circle*/
+  border-radius: 50%;
+  /*align & justify*/
+  line-height: 40px;
+  text-align: center;
+  /*color*/
+  background-color: #cdcdcd;
+  color: white;
+}
+
+/* line 3, ../sass/module/content_unit.scss */
+.content_unit {
+  font-size: 9pt;
+}
+/* line 6, ../sass/module/content_unit.scss */
+.content_unit p {
+  padding-top: 15px;
+  margin-bottom: 0;
+}
+/* line 11, ../sass/module/content_unit.scss */
+.content_unit .read_more {
+  padding-left: 2px;
+}
+
+/* line 3, ../sass/module/why_choose_us_list.scss */
+ul.why_choose_us_list {
+  padding-left: 0;
+}
+/* line 6, ../sass/module/why_choose_us_list.scss */
+ul.why_choose_us_list li {
+  display: block;
+  border-bottom: 1px solid black;
+}
+
+/* line 3, ../sass/module/news_item.scss */
+.news_item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/* line 9, ../sass/module/news_item.scss */
+.news_item > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* line 15, ../sass/module/news_item.scss */
+.news_item > div .news_date {
+  width: 76px;
+  line-height: 28px;
+  text-align: center;
+}
+
+/* line 9, ../sass/partical/content.scss */
+.content {
+  background-image: url('../images/subbg.gif?1490260139');
+  padding: 24px;
+}
+/* line 17, ../sass/partical/content.scss */
+.content .function_card {
+  max-width: 230px;
+  min-height: 283px;
+  position: relative;
+  bottom: 12vh;
+}
+/* line 25, ../sass/partical/content.scss */
+.content .content_unit {
+  color: #9c9c9c;
+}
+/* line 28, ../sass/partical/content.scss */
+.content .content_unit h2 {
+  color: black;
+}
+/* line 32, ../sass/partical/content.scss */
+.content .content_unit .read_more {
+  color: #9c9c9c;
+}
+/* line 35, ../sass/partical/content.scss */
+.content .content_unit .read_more:hover {
+  color: light_gray;
+}
+/* line 40, ../sass/partical/content.scss */
+.content .content_unit .news_item {
+  font-size: 9pt;
+}
+/* line 41, ../sass/partical/content.scss */
+.content .content_unit .news_item > div,
+.content .content_unit .news_item img {
+  margin: 5px;
+  width: 142px;
+}
+/* line 49, ../sass/partical/content.scss */
+.content .content_unit .news_item > div .news_date {
+  color: #FBFBFB;
+  background-color: #80b600;
+  font-size: 11pt;
+}
+/* line 61, ../sass/partical/content.scss */
+.content ul.why_choose_us_list li {
+  border-bottom: 1px solid #e4e4e4;
+  padding: 14px 0;
+}
+/* line 67, ../sass/partical/content.scss */
+.content .line {
+  border-top: solid 1px #cdcdcd;
+  border-bottom: none;
+  margin-top: 62px;
+  margin-bottom: 40px;
+}
+
+/* line 27, ../sass/module/talkbuble.scss */
+.talkbuble {
+  color: #cdcdcd;
+  position: relative;
+  padding: 15px;
+  background-color: #cdcdcd;
+  font-size: 1rem;
+}
+/* line 36, ../sass/module/talkbuble.scss */
+.talkbuble::before {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  content: "";
+  border-top: 15px solid #cdcdcd;
+  border-right: 15px solid transparent;
+  z-index: 1;
+}
+
+/* line 3, ../sass/module/about_author.scss */
+.about_author {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 4, ../sass/module/get_it_touch.scss */
+.get_it_touch .text_area input, .get_it_touch .text_area textarea, .get_it_touch .btn_area input {
+  line-height: 22px;
+  padding: 2px 10px;
+  border: solid 1px #cdcdcd;
+}
+
+/* line 11, ../sass/module/get_it_touch.scss */
+.get_it_touch {
+  font-size: 9pt;
+}
+/* line 14, ../sass/module/get_it_touch.scss */
+.get_it_touch .text_area input {
+  width: 100%;
+  margin: 3px 0;
+}
+/* line 20, ../sass/module/get_it_touch.scss */
+.get_it_touch .text_area textarea {
+  width: 100%;
+  height: 90px;
+}
+/* line 28, ../sass/module/get_it_touch.scss */
+.get_it_touch .btn_area input {
+  border: none;
+  margin-top: 15px;
+}
+/* line 35, ../sass/module/get_it_touch.scss */
+.get_it_touch .clear_form_btn {
+  background-color: #141414;
+  color: white;
+  margin-right: 3px;
+}
+/* line 40, ../sass/module/get_it_touch.scss */
+.get_it_touch .send_btn {
+  background-color: #80b600;
+  color: white;
+}
+
+/* line 9, ../sass/module/flickr_imgs.scss */
+.flickr_imgs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+/* line 17, ../sass/module/flickr_imgs.scss */
+.flickr_imgs img {
+  width: 52px;
+  height: 52px;
+}
+
+/* line 8, ../sass/partical/footer.scss */
+.footer {
+  background-color: #FBFBFB;
+  background-image: url('../images/subbg.gif?1490260139');
+  margin-top: 35px;
+  padding: 28px;
+  font-size: 9pt;
+}
+/* line 19, ../sass/partical/footer.scss */
+.footer h5 {
+  margin-bottom: 20px;
+}
+/* line 23, ../sass/partical/footer.scss */
+.footer .talkbuble {
+  margin-bottom: 30px;
+  color: black;
+  font-size: 9pt;
+}
+/* line 30, ../sass/partical/footer.scss */
+.footer .about_author > div {
+  margin-left: 15px;
+}
+/* line 33, ../sass/partical/footer.scss */
+.footer .about_author > div i {
+  color: #80b600;
+}
+/* line 40, ../sass/partical/footer.scss */
+.footer .get_it_touch .text_area input, .footer .get_it_touch textarea {
+  color: #9c9c9c;
+}
+/* line 47, ../sass/partical/footer.scss */
+.footer .flickr_imgs {
+  margin-right: 1px;
+  min-height: 165px;
+}
+/* line 50, ../sass/partical/footer.scss */
+.footer .flickr_imgs img {
+  margin: 5px;
+}
+
+/* line 4, ../sass/partical/buttom_side.scss */
+.bottom_side {
+  min-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+}
+/* line 15, ../sass/partical/buttom_side.scss */
+.bottom_side div {
+  padding: 0 6px;
+  font-size: 9pt;
+  color: #636363;
+}
+/* line 22, ../sass/partical/buttom_side.scss */
+.bottom_side div span {
+  color: #80b600;
+}
+/* line 27, ../sass/partical/buttom_side.scss */
+.bottom_side ul {
+  margin-bottom: 0;
+}
+/* line 31, ../sass/partical/buttom_side.scss */
+.bottom_side ul li {
+  padding: 0 6px;
+  display: inline;
+  border-right: 1px solid #cdcdcd;
+}
+/* line 39, ../sass/partical/buttom_side.scss */
+.bottom_side ul li li.no_border {
+  border: none;
+}
+/* line 43, ../sass/partical/buttom_side.scss */
+.bottom_side ul li a {
+  font-size: 9pt;
+  color: #636363;
+  transition: color speed_quick;
+}
+/* line 48, ../sass/partical/buttom_side.scss */
+.bottom_side ul li a:hover {
+  color: #80b600;
+  text-decoration: none;
+}

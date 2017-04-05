@@ -1,0 +1,48 @@
+@import "module/base";
+@import "module/colors";
+
+$mid_color: #a3a3a3;
+
+.function_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $mid_color + $shift_color;
+    padding: 25px 35px;
+    text-align: center;
+
+    transition:
+        background-color $speed_quick,
+        opacity $speed_quick;
+    .card_title {
+        font-size: 14px;
+    }
+    .card_icon {
+        color: $light_gray;
+        transition: color $speed_quick;
+        font-size: 52px;
+    }
+    .card_text {
+        transition: color $speed_quick;
+        font-size: 9pt;
+    }
+    .card_btn {
+        background: $light_gray;
+        border: none;
+        font-size: 9pt;
+        padding: 5px 10px;
+        align-self: center;
+    }
+
+    &:hover {
+        background-color: $mid_color - $shift_color;
+        opacity: 0.6;
+        color: black;
+        .card_title {
+            color: white;
+        }
+        .card_text {
+            color: white;
+        }
+    }
+}

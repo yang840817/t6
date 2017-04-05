@@ -1,0 +1,54 @@
+@import "module/base";
+@import "module/colors";
+@import "module/talkbuble";
+@import "module/about_author";
+@import "module/get_it_touch";
+@import "module/flickr_imgs";
+
+.footer {
+    background-color: $light_white;
+    @include img_background("subbg.gif");
+    @extend %partical_area;
+    margin-top: 35px;
+    padding: 28px;
+    // font
+    font-size: 9pt;
+    //shadow
+    @extend %shadow;
+
+    h5 {
+        margin-bottom: 20px;
+    }
+
+    .talkbuble {
+        margin-bottom: 30px;
+        color: black;
+        font-size: 9pt;
+    }
+
+    .about_author {
+        > div {
+            margin-left: 15px;
+
+            i {
+                color: $light_green;
+            }
+        }
+    }
+
+    .get_it_touch {
+        .text_area input, textarea {
+            color: $dark_gray;
+        }
+    }
+
+    $img_spacer: 1px;
+
+    .flickr_imgs {
+        margin-right: $img_spacer;
+        min-height: ($img_side + $img_spacer * 3) * 3;
+        img {
+            margin: 5px;
+        }
+    }
+}

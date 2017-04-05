@@ -1,0 +1,40 @@
+@import "colors";
+
+$speed_quick: 0.3s;
+
+@mixin img_background($file_name) {
+    background-image: image-url($file_name);
+}
+
+body {
+    @include img_background("bg.jpg");
+    position: relative;
+    padding-top: 5px;
+}
+
+@mixin background_img($img_name) {
+    background-image: image-url($img_name);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin side_space{
+    max-width: 1060px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+%partical_area {
+    @include side_space;
+    @include border($light_gray);
+}
+
+@mixin partical_space($spacer: 5px) {
+    margin-top: $spacer;
+    margin-bottom: $spacer;
+}
+
+%shadow {
+    box-shadow: 0 0 10px $dark_gray;
+}

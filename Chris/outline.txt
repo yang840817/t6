@@ -1,0 +1,68 @@
+heading
+背景: 黑底
+    元素：
+        背景: 底圖
+        影子
+            logo
+            icon
+                黑色
+            黑字
+content
+背景：底圖
+    元素:
+        menu:
+            白底
+            黑字
+            &:hover
+                綠底
+                白字
+        搜尋列:
+            灰底
+            icon
+        輪轉圖片
+        功能(四張卡片)
+            淺灰底
+            深灰icon
+            黑字
+            Button
+                深灰底
+                黑字
+            &:hover
+                深灰底
+                白字
+        內容區塊
+            黑色標題
+            灰字
+            透明底
+            welcome
+                黑色的More
+            why choose us
+                淺灰圓
+                    白字
+            news & events
+                綠方塊
+                    白字
+                黑色的More
+            深灰線
+            featured works
+                方向鍵
+                    灰字
+                    透明底
+footer
+    黑色標題
+    灰色字
+    latest tweets
+        黑色字
+    testimonials
+        對話框
+            灰底
+            黑字
+        人名片
+            照片
+            黑字 綠字
+    get in touch
+        form
+        黑色input
+        綠色input
+    flickr
+        12張圖片排列

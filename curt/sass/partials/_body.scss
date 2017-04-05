@@ -1,0 +1,23 @@
+html{
+  position: relative;
+}
+body{
+  // @include banner-image("bg.jpg");
+  background: url(../images/bg.jpg);
+  background-repeat: repeat-x repeat-y;
+  .topSec{
+    @include colorBlock(25px);
+    top:0px;
+    left:0px;
+  }
+  .downSec{
+    @include colorBlock(100px);
+    bottom:0px;
+    left:0px;
+  }
+}
+
+
+.clearFloat{
+  clear: both;
+}

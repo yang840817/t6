@@ -1,0 +1,54 @@
+/* line 9, ../../sass/module/_base.scss */
+body {
+  background-image: url('../../images/bg.jpg?1490260139');
+  position: relative;
+  padding-top: 5px;
+}
+
+/* line 6, ../../sass/module/function_card.scss */
+.function_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #e7e7e7;
+  padding: 25px 35px;
+  text-align: center;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+/* line 17, ../../sass/module/function_card.scss */
+.function_card .card_title {
+  font-size: 14px;
+}
+/* line 20, ../../sass/module/function_card.scss */
+.function_card .card_icon {
+  color: #cdcdcd;
+  transition: color 0.3s;
+  font-size: 52px;
+}
+/* line 25, ../../sass/module/function_card.scss */
+.function_card .card_text {
+  transition: color 0.3s;
+  font-size: 9pt;
+}
+/* line 29, ../../sass/module/function_card.scss */
+.function_card .card_btn {
+  background: #cdcdcd;
+  border: none;
+  font-size: 9pt;
+  padding: 5px 10px;
+  align-self: center;
+}
+/* line 37, ../../sass/module/function_card.scss */
+.function_card:hover {
+  background-color: #5f5f5f;
+  opacity: 0.6;
+  color: black;
+}
+/* line 41, ../../sass/module/function_card.scss */
+.function_card:hover .card_title {
+  color: white;
+}
+/* line 44, ../../sass/module/function_card.scss */
+.function_card:hover .card_text {
+  color: white;
+}

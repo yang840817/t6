@@ -1,0 +1,7 @@
+@mixin socialIcon($left,$top) {
+  display: block;
+  background: url(../images/social.png);
+  background-position:$left $top;
+  width: 37px;
+  height: 27px;
+}

@@ -1,0 +1,49 @@
+@import "module/base";
+
+.navigate {
+    @extend %partical_area;
+    margin-top: 25px;
+    //border
+    border: none;
+    .navbar {
+        background-color: transparent;
+        padding: 0;
+        .navbar-toggler {
+            position: static;
+            background-color: white;
+            margin: 8px;
+        }
+        .btn{
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+    .banner {
+        img {
+            opacity: 0;
+        }
+        .banner_img1{
+            @include background_img("banner1.jpg");
+        }
+        .banner_img2{
+            @include background_img("banner2.jpg");
+        }
+        .banner_img3{
+            @include background_img("banner3.jpg");
+        }
+
+        .carousel-control-size {
+            font-size: 20pt;
+            width: 35px;
+            height: 100px;
+            background-color: $light_black;
+            border-style: none;
+            margin: auto 0;
+        }
+    }
+}

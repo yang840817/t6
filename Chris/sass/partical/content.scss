@@ -1,0 +1,72 @@
+@import "module/colors";
+@import "module/base";
+@import "module/function_card";
+@import "module/array_icon";
+@import "module/content_unit";
+@import "module/why_choose_us_list";
+@import "module/news_item";
+
+.content {
+    @include img_background("subbg.gif");
+    //spacer
+    @extend %partical_area;
+    padding: 24px;
+    //shadow
+    @extend %shadow;
+
+    .function_card {
+        max-width: 230px;
+        min-height: 283px;
+        //position
+        position: relative;
+        bottom: 12vh;
+    }
+
+    .content_unit {
+        color: $dark_gray;
+
+        h2 {
+            color: black;
+        }
+
+        .read_more {
+            color: $dark_gray;
+
+            &:hover {
+                color: light_gray;
+            }
+        }
+
+        .news_item {
+            > div,
+            img {
+                margin: 5px;
+                width: 142px;
+            }
+
+            font-size: 9pt;
+            > div {
+                .news_date {
+                    //color
+                    color: $light_white;
+                    background-color: $light_green;
+                    //font
+                    font-size: 11pt;
+                }
+            }
+        }
+    }
+
+    ul.why_choose_us_list {
+        li {
+            border-bottom: 1px solid $light_gray + ($shift_color /3);
+            padding: 14px 0;
+        }
+    }
+
+    .line {
+        @include line($light_gray);
+        margin-top: 62px;
+        margin-bottom: 40px;
+    }
+}
