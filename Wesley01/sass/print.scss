@@ -2,12 +2,13 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
 
+ body {
+   padding: 0;
+   height: 1000px;
+ }
+
  @import "modules/_variable.scss";
  @import "_header.scss";
  @import "_section.scss";
 
  @import "_footer.scss";
-
-body {
-  padding: 0;
-}

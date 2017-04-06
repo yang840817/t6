@@ -1,18 +1,116 @@
-
 section {
-  z-index: -1;
-  height: 500px;
+  // z-index: -1;
+  // height: 500px;
   background: url('../images/bg.jpg');
 
-
-
-
-
   .container {
-    width: 90%;
-    background-color: red;
-    // height: 200px;
-    // z-index: 1;
-    // left: 200px;
+    width: 91%;
+
+    .form-inline{
+      position: relative;
+
+     .form-control{
+       width: 81%;
+        @media screen and (max-width: 480px) {
+          width: 64%;
+        }
+     }
+     button{
+      position: absolute;
+      padding:6px 9px 6px;
+      left: 64.7%;
+       @media screen and (max-width: 480px) {
+         top:-8px;
+       }
+     }
+    }
+
+  }
+
+  #carouselExampleControls {
+
+  @media screen and (max-width: 480px) {
+    .carousel-inner {
+    //  height: 120px;
+
+    .carousel-item{
+      height: 120px;
+    }
+     .bg1 {
+      //  height: 200px;
+      background: url('../images/banner1.jpg');
+      background-size: cover;
+      // background-position: center;
+      // background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0;
+     }
+     .bg2 {
+      //  height: 200px;
+      background: url('../images/banner2.jpg');
+      background-size: cover;
+      // background-position: center;
+      // background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0;
+
+     }
+     .bg3 {
+      //  height: 200px;
+      background: url('../images/banner3.jpg');
+      background-size: cover;
+      // background-position: center;
+      // background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0;
+
+     }
+
+
+     }
+   }
+  }
+
+  //   .carousel-item {
+  //     height: 500px;
+  //     // height: 70vh;
+  //     // background-size: contain;
+  //   }
+  //   .bg1 {
+  //     background: url('../images/banner1.jpg');
+  //     background-size: cover;
+  //     // background-size: contain;
+  //     // background-position: center;
+  //     // background-repeat: no-repeat;
+  //      img {
+  //        opacity:0;
+  //      }
+  //   }
+  //   .bg2 {
+  //     background: url('../images/banner2.jpg');
+  //     background-size: cover;
+  //     // background-size: contain;
+  //     // background-position: center;
+  //     // background-repeat: no-repeat;
+  //      img {
+  //        opacity:0;
+  //      }
+  //   }
+    // .bg3 {
+    //   background: url('../images/banner3.jpg');
+    //   background-size: cover;
+    //   // background-size: contain;
+    //   // background-position: center;
+    //   // background-repeat: no-repeat;
+    //    img {
+    //      opacity:0;
+    //    }
+    // }
+
+
+  .Content_block {
+    width: 88.7%;
+    background: url('../images/subbg.gif');
+
   }
 }
