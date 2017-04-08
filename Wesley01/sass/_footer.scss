@@ -2,6 +2,46 @@
 
 
 footer {
-  z-index: -1;
-background-color:$Main-color-1;
+  // z-index: -1;
+// background-color:$Main-color-1;
+  height: 330px;
+  padding-top: 70px;
+  background: url('../images/bg.jpg');
+
+    .footer_Card_bar_bg {
+      height: 80%;
+
+    }
+
+
+    .footer_Card_bar{
+      background-color: $Main-color-2;
+      width: 100%;
+      max-width: 90%;
+      // height: 350px;
+      z-index: 50;
+      background: url('../images/subbg.gif');
+
+      // &:before {
+      //   content: "51515151515";
+      //   width: 100%;
+      //   height: 200px;
+      //   z-index: -1;
+      //   background-color: $Main-color-1;
+      // }
+
+    }
+
+    .footer_block1 {
+      // z-index: -10;
+      height: 56%;
+      background-color: $Main-color-1;
+
+
+    }
+    .footer_block2 {
+      background-color: $Main-color-1;
+
+    }
+
 }

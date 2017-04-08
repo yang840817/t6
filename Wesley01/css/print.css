@@ -4,7 +4,10 @@
 /* line 5, ../sass/print.scss */
 body {
   padding: 0;
-  height: 1000px;
+}
+/* line 8, ../sass/print.scss */
+body div {
+  border: 1px red solid;
 }
 
 /* line 3, ../sass/_header.scss */
@@ -25,91 +28,92 @@ header .header_bg .header_box {
   padding: 2.5% 3% 2.5%;
   z-index: 50;
 }
-/* line 18, ../sass/_header.scss */
+/* line 19, ../sass/_header.scss */
 header .header_bg .header_box .row {
   width: 100%;
   margin: 0;
 }
-/* line 23, ../sass/_header.scss */
+@media screen and (max-width: 320px) {
+  /* line 23, ../sass/_header.scss */
+  header .header_bg .header_box .row .logo {
+    padding: 2%;
+  }
+}
+/* line 27, ../sass/_header.scss */
 header .header_bg .header_box .row .logo img {
   max-width: 100%;
   padding-bottom: 10px;
 }
-/* line 31, ../sass/_header.scss */
+/* line 35, ../sass/_header.scss */
 header .header_bg .header_box .row .icon_box i {
   padding-left: 4%;
-  padding-bottom: 1%;
+  font-size: 30px;
 }
-/* line 36, ../sass/_header.scss */
+/* line 40, ../sass/_header.scss */
+header .header_bg .header_box .row .icon_box i:hover {
+  color: #80b600;
+}
+/* line 45, ../sass/_header.scss */
 header .header_bg .header_box .row .icon_box .TEL {
-  font-size: 18px;
+  font-size: 17px;
 }
 @media screen and (max-width: 480px) {
-  /* line 36, ../sass/_header.scss */
+  /* line 45, ../sass/_header.scss */
   header .header_bg .header_box .row .icon_box .TEL {
     font-size: 10px;
   }
 }
-/* line 51, ../sass/_header.scss */
+/* line 60, ../sass/_header.scss */
 header .header_box2 {
   height: 40%;
   background: url("../images/bg.jpg");
 }
 
-/* line 1, ../sass/_section.scss */
+/* line 5, ../sass/_section.scss */
 section {
   background: url("../images/bg.jpg");
 }
-/* line 6, ../sass/_section.scss */
+/* line 11, ../sass/_section.scss */
 section .container {
-  width: 91%;
+  width: 100%;
+  max-width: 90%;
 }
-/* line 9, ../sass/_section.scss */
-section .container .form-inline {
-  position: relative;
-}
-/* line 12, ../sass/_section.scss */
+/* line 17, ../sass/_section.scss */
 section .container .form-inline .form-control {
-  width: 81%;
+  position: relative;
+  width: 100%;
 }
 @media screen and (max-width: 480px) {
-  /* line 12, ../sass/_section.scss */
+  /* line 17, ../sass/_section.scss */
   section .container .form-inline .form-control {
     width: 64%;
   }
 }
-/* line 18, ../sass/_section.scss */
+/* line 30, ../sass/_section.scss */
 section .container .form-inline button {
   position: absolute;
   padding: 6px 9px 6px;
-  left: 64.7%;
 }
 @media screen and (max-width: 480px) {
-  /* line 18, ../sass/_section.scss */
-  section .container .form-inline button {
-    top: -8px;
-  }
-}
-@media screen and (max-width: 480px) {
-  /* line 36, ../sass/_section.scss */
+  /* line 47, ../sass/_section.scss */
   section #carouselExampleControls .carousel-inner .carousel-item {
     height: 120px;
   }
-  /* line 39, ../sass/_section.scss */
+  /* line 50, ../sass/_section.scss */
   section #carouselExampleControls .carousel-inner .bg1 {
     background: url("../images/banner1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0;
   }
-  /* line 48, ../sass/_section.scss */
+  /* line 59, ../sass/_section.scss */
   section #carouselExampleControls .carousel-inner .bg2 {
     background: url("../images/banner2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0;
   }
-  /* line 58, ../sass/_section.scss */
+  /* line 69, ../sass/_section.scss */
   section #carouselExampleControls .carousel-inner .bg3 {
     background: url("../images/banner3.jpg");
     background-size: cover;
@@ -117,14 +121,68 @@ section .container .form-inline button {
     opacity: 0;
   }
 }
-/* line 111, ../sass/_section.scss */
+/* line 122, ../sass/_section.scss */
 section .Content_block {
   width: 88.7%;
   background: url("../images/subbg.gif");
 }
+/* line 126, ../sass/_section.scss */
+section .Content_block span {
+  font-size: 15px;
+}
+/* line 136, ../sass/_section.scss */
+section .Content_block .Introduce_block #More {
+  text-decoration: none;
+}
+/* line 141, ../sass/_section.scss */
+section .Content_block .Introduce_block .Option #Roun {
+  width: 50px;
+  height: 50px;
+  border-radius: 99em;
+  background-color: lightgray;
+}
+/* line 13, ../sass/modules/_Roun.scss */
+section .Content_block .Introduce_block .Option #Roun div {
+  border: 1px red solid;
+}
+/* line 145, ../sass/_section.scss */
+section .Content_block .Introduce_block .Option #Roun i {
+  color: white;
+  font-size: 30px;
+}
+/* line 150, ../sass/_section.scss */
+section .Content_block .Introduce_block .Option #Roun:hover {
+  background-color: black;
+}
+/* line 159, ../sass/_section.scss */
+section .Content_block .Introduce_block .Option span {
+  line-height: 50px;
+}
 
 /* line 4, ../sass/_footer.scss */
 footer {
-  z-index: -1;
+  height: 330px;
+  padding-top: 70px;
+  background: url("../images/bg.jpg");
+}
+/* line 11, ../sass/_footer.scss */
+footer .footer_Card_bar_bg {
+  height: 80%;
+}
+/* line 17, ../sass/_footer.scss */
+footer .footer_Card_bar {
+  background-color: white;
+  width: 100%;
+  max-width: 90%;
+  z-index: 50;
+  background: url("../images/subbg.gif");
+}
+/* line 35, ../sass/_footer.scss */
+footer .footer_block1 {
+  height: 56%;
+  background-color: black;
+}
+/* line 42, ../sass/_footer.scss */
+footer .footer_block2 {
   background-color: black;
 }
