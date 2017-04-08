@@ -2,14 +2,15 @@
 .news_item {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
-/* line 8, ../../sass/module/news_item.scss */
+/* line 9, ../../sass/module/news_item.scss */
 .news_item > div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-/* line 14, ../../sass/module/news_item.scss */
+/* line 15, ../../sass/module/news_item.scss */
 .news_item > div .news_date {
   width: 76px;
   line-height: 28px;

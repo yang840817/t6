@@ -1,0 +1,26 @@
+.bubble
+	+bubble
+	position: relative
+	z-index: 2
+	&:before
+	    content: ""
+	    width: 0px
+	    height: 0px
+	    border-style: solid
+	    border-width: 20px 20px 0 0
+	    border-color: $mod-color transparent transparent transparent
+	    position: absolute
+	    bottom: -15px
+	    left: 0px
+	    z-index: 1
+	
+	&:after
+		content: ""
+		width: 0px
+		height: 0px
+		border-style: solid
+		border-width: 19px 19px 0 0
+		border-color: $tab-color transparent transparent transparent
+		position: absolute
+		bottom: -19px
+		left: -1px

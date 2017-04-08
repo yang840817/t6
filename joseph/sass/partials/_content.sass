@@ -1,0 +1,182 @@
+body
+	background: url(../img/bg.jpg)
+	position: relative
+	z-index: -3
+	.cv
+		position: absolute
+		top: 0
+		left: 0
+		background: #000
+		width: 100%
+		height: 80px
+		z-index: -2
+	.cv2
+		position: absolute
+		bottom: -60px
+		left: 0
+		background: #000
+		width: 100%
+		height: 120px
+		z-index: -2
+		@media(max-width: 768px)
+			bottom: -80px
+			height: 160px 
+	
+
+//topbar start
+.content
+	@extend %div-center
+	background: url(../img/subbg.gif)
+	.m-bar
+		display: flex
+		justify-content: space-between
+		@media(max-width: 768px)
+			display: block
+		.menu
+			+menu-grid
+			@extend %text-center
+			display: flex
+			justify-content:flex-start
+			width: 70%
+			background: $bg-color
+			font-size: $font-m
+			@media(max-width: 768px)
+				display: block
+				width: 100%
+				li
+					max-width: 100%
+			li + li
+				border-left: solid #eaeaea 0.5px
+			li
+				&:first-child
+					border-left: solid #eaeaea 0.5px
+			li
+				&:last-child
+					border-right: solid #eaeaea 0.5px
+			li
+				padding: 10px 20px
+				transition: all .5s
+				&:hover
+					background: rgba(128,182,0,0.5)
+					color: $bg-color
+					cursor: pointer
+.bar-bg
+	width: 25%
+	float: right
+	background: $bg-color
+	padding: 5px 0
+	@extend %text-center
+	@media(max-width: 768px)
+		float: none
+		width: 90%
+		margin-left: 0
+		margin: 0 auto
+	.search-submit
+		@media(max-width: 768px)
+			right: 30px	
+
+
+
+//banner start
+
+.slideshow
+	height: 456px
+
+.card-item
+	@extend %text-center
+	height: 320px
+	padding: 5px
+	@media(max-width: 768px)
+		margin-top: 10px
+	.card-button
+		margin: 20px auto 0 auto
+
+.service
+	position: relative
+	top: -20px
+	@media(max-width: 768px)
+		top: -280px
+	div
+		&:nth-child(2n)
+			h3
+				margin-top: 30px
+				margin-bottom: 25px
+
+.about
+	margin-bottom: 20px
+	div
+		text-align: left
+		h2
+			@extend %h2-style
+			margin-bottom: 20px
+		p
+			font-size: $font-m
+			color: $font-color
+		&:nth-child(1)
+			line-height: 1.5
+			img
+				margin-bottom: 20px
+			@media(max-width: 768px)
+				img
+					width: 100%
+
+		&:nth-child(2)
+			ul
+				padding: 0
+				li 
+					@extend %li-nostyle
+					border-bottom: $btn-card-color 1px solid
+					color: $tab-color
+					padding: 3px 0 5px 0
+					font-size: $font-m
+					text-align: left
+					display: flex
+					flex-direction: row
+					align-items: center
+					cursor: pointer
+					transition: all .5s
+					a
+						i
+							margin-right: 10px
+							width: 50px
+							height: 50px
+							border-radius: 50%
+							line-height: 50px
+							background: $btn-card-color
+							color: $bg-color
+							transition: all .5s
+							@extend %text-center
+					&:hover
+						color: #000
+						i			
+							background: $font-color
+
+.news
+	div
+		display: flex
+		flex-direction: row
+		margin-bottom: 20px
+		img
+			margin-right: 10px
+		span
+			padding: 0 10px
+			color: $font-color
+			p
+				display: block
+				width: 80px
+				background: $btn-color
+				color: $bg-color
+				padding: 5px 10px 
+		
+.line
+	height: 1px
+	width: 100%
+	background: $tab-color
+	margin: 20px auto
+						
+.works
+	margin-bottom: 60px
+	h2
+		@extend %h2-style
+		padding-left: 15px
+		margin-bottom: 20px

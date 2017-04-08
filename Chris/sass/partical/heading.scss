@@ -3,6 +3,7 @@
 @import "module/contact";
 
 .heading {
+    background-color: $light_white;
     // spacer
     @extend %partical_area;
     padding: 32px;

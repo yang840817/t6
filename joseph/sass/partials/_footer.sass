@@ -1,0 +1,84 @@
+.footer
+	margin-top: 40px
+	background: $bg-color
+
+.contact
+	margin-bottom: 20px
+	h2
+		@extend %h2-style
+		margin-bottom: 20px
+	.bubble
+		padding: 10px 20px
+
+	.bubble-photo
+		margin-top: 40px
+		img
+			float: left
+		span
+			text-align: left
+			padding-left: 20px
+			line-height: 1.5
+			p
+				padding: 0
+				margin: 0
+				margin-left: 70px
+				color: $btn-color
+				font-weight: bold
+				font-style: italic
+
+.message
+	input
+		@extend %form-bg
+		margin-bottom: 10px
+	textarea
+		@extend %form-bg	
+
+.btn-clear
+	@extend %btn-mt
+	background: #000
+	color: $bg-color
+	&:hover
+		background: rgba(0,0,0,0.3)
+.btn-send
+	@extend %btn-mt
+	background: $btn-color
+	color: $bg-color
+	&:hover
+		background: rgba(128, 182, 0, 0.5)
+
+.flickr
+	div
+		padding: 0 1px
+		text-align: center
+		@media(max-width: 768px)
+			padding: 0
+
+.copyright
+	margin: 80px 20px 0 20px
+	text-align: left
+	background: #000
+	color: $bg-color
+	strong
+		color: $btn-color
+	@media(max-width: 768px)
+		text-align: center
+		line-height: 1.5
+		margin: 90px auto 0 auto
+
+.footer-bar
+	float: right
+	li
+		float: left
+		@extend %li-nostyle
+		@media(max-width: 768px)
+			float: none
+			display: inline-block
+			text-align: center
+
+	li + li:before
+		content: "∣"
+		padding: 0 5px
+		color: $bg-color
+	a
+		color: $bg-color
+		text-decoration: none

@@ -15,7 +15,7 @@ body {
 
 /* line 4, ../../sass/partical/buttom_side.scss */
 .bottom_side {
-  height: 40px;
+  min-height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;

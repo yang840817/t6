@@ -6,6 +6,7 @@
 @import "module/flickr_imgs";
 
 .footer {
+    background-color: $light_white;
     @include img_background("subbg.gif");
     @extend %partical_area;
     margin-top: 35px;
@@ -45,6 +46,9 @@
 
     .flickr_imgs {
         margin-right: $img_spacer;
-        height: ($img_side + $img_spacer * 3) * 3;
+        min-height: ($img_side + $img_spacer * 3) * 3;
+        img {
+            margin: 5px;
+        }
     }
 }

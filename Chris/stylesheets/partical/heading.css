@@ -35,14 +35,15 @@ body {
 
 /* line 5, ../../sass/partical/heading.scss */
 .heading {
+  background-color: #FBFBFB;
   padding: 32px;
   background-image: url('../../images/subbg.gif?1490260139');
 }
-/* line 14, ../../sass/partical/heading.scss */
+/* line 15, ../../sass/partical/heading.scss */
 .heading .contact {
   font-size: 11pt;
 }
-/* line 17, ../../sass/partical/heading.scss */
+/* line 18, ../../sass/partical/heading.scss */
 .heading .contact i {
   font-size: 22pt;
   margin: 0 6px;
