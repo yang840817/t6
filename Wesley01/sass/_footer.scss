@@ -2,11 +2,25 @@
 
 
 footer {
-  // z-index: -1;
-// background-color:$Main-color-1;
-  height: 330px;
+  position: relative;
+  z-index: 10;
+  // height: 330px;
   padding-top: 70px;
   background: url('../images/bg.jpg');
+
+#ADD {
+
+p:empty {
+      width: 100px;
+      height: 20px;
+      background: green;
+  }
+
+}
+
+
+
+
 
     .footer_Card_bar_bg {
       height: 80%;
@@ -15,11 +29,10 @@ footer {
 
 
     .footer_Card_bar{
-      background-color: $Main-color-2;
+      position: relative;
+      z-index: 1;
       width: 100%;
       max-width: 90%;
-      // height: 350px;
-      z-index: 50;
       background: url('../images/subbg.gif');
 
       // &:before {
@@ -29,18 +42,201 @@ footer {
       //   z-index: -1;
       //   background-color: $Main-color-1;
       // }
+      #cards {
+       padding: 20px;
+         h6 ~ div {
+           font-size: 13px;
+         }
+
+
+      .dialog_box {
+       position: relative;
+       background-color: rgb(229, 229, 229);
+       padding: 20px;
+       margin-bottom: 30px;
+       font-size: 13px;
+      }
+      .dialog_box:before {
+        position: absolute;
+        content: "";
+        bottom: -20px;
+        left: 0;
+        border-width: 25px 25px 0 0;
+        border-style: solid;
+        border-color: #E5E5E5 transparent transparent;
+      }
+
+      .avatar {
+        // display: inline-block;
+        margin-right: 30px;
+        float: left;
+      }
+
+      .avatar + span {
+      // float: left;
+      a{
+        color: rgb(128, 182, 0);
+        text-decoration:none;
+        font-style:oblique;
+      }
+
+      }
+      .text {
+        // display: inline-block;
+        // width: 70%;
+      }
+
+     #input {
+       padding-left: 5px;
+       border: 0;
+       border-radius: 3px;
+       margin-bottom: 10px;
+       width: 100%;
+       background-color: rgb(230, 230, 230);
+     }
+       #textarea {
+         padding-left: 5px;
+         border: 0;
+         resize: none;
+         height: 100px;
+         max-height: 150px;
+         width: 100%;
+         overflow:scroll;
+         background-color: rgb(230, 230, 230);
+         color: rgb(117, 117, 138);
+       }
+       #textarea + div {
+         width: 100%;
+       }
+      #GET_b1 {
+      //  width: 40%;
+      //  height: 35px;
+      // float: left;
+      padding: 10px;
+      color: white;
+      font-size: 18px;
+      background-color: black;
+      text-decoration: none;
+      cursor: pointer;
+      border: 0;
+      left: 0;
+      top:0;
+      // margin-right: 15px;
+       &:hover {
+        //  font-size: 20px;
+        // padding: 15px 15px 10 15px;
+
+        //  width:calc(100% + 5%);
+       }
+      }
+
+      #GET_b2 {
+        // float: right;
+        padding: 10px;
+        color: white;
+        font-size: 18px;
+        background-color: rgb(128, 182, 0);
+        text-decoration: none;
+        cursor: pointer;
+        border:0;
+
+        &:hover {
+          // font-size: 20px;
+          // padding: 15px 15px 10 15px;
+        //  width:calc(100% + 5%);
+
+        }
+      }
+
+
+     #Flickr {
+       padding: 0;
+       a {
+         position: relative;
+         overflow: hidden;
+         display: inline-block;
+         width: calc(100% / 4.5);
+         text-decoration: none;
+         &:nth-child(n + 5){
+           margin-top: 6px;
+         }
+
+         img {
+           width: 57.5px;
+           height: 57.5px;
+         }
+
+         &:hover .cover {
+           position: absolute;
+           opacity: 1;
+           left: 0;
+           top: 0;
+           width: 57.5px;
+           height: 57.5px;
+           background: rgba(0,0,0,0.5);
+           transition: opacity ease-out 1.5s;
+         }
+       }
+     }
+   }
+
+
 
     }
 
     .footer_block1 {
       // z-index: -10;
-      height: 56%;
+      // height: 56%;
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      bottom: -100px;
+      height: 50%;
       background-color: $Main-color-1;
 
 
     }
     .footer_block2 {
+      max-width: 90%;
+      width: 100%;
       background-color: $Main-color-1;
+      color: gray;
+      line-height: 50px;
+      font-size: 13px;
+      // height: 65px;
+
+     .row ~ span {
+       padding: 0;
+
+     }
+
+    //  .text-right
+
+
+    span:nth-child(odd) {
+        a {
+          color: rgb(128, 182, 0);
+          text-decoration:none;
+          &:hover {
+            color: rgb(128, 255, 0);
+          }
+        }
+      }
+
+      span:nth-child(even) {
+         a {
+            padding:0 10px;
+            color: gray;
+            text-decoration:none;
+            &:hover {
+              color: rgb(128, 255, 0);
+            }
+
+         }
+
+      }
+
+
 
     }
 

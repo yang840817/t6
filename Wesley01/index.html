@@ -6,7 +6,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <!-- <title>T6</title> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh6HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh5HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/print.css">
         <link rel="stylesheet" href="./css/bootstrap.css">
         <link rel="stylesheet" href="./javascripts/bootstrap.js`">
@@ -41,7 +41,7 @@
             </div>
             <div class="header_box2 container-fluid"></div>
         </header>
-        <section>
+        <section class="container-fluid">
             <!-- ---------------------------------------------- -->
             <div class="container">
                 <div class="row">
@@ -123,48 +123,56 @@
             <div class="Content_block container">
                 <div class="row">
                     <div class="col-md-3">
-                        <h6>GROWTH STRATEGIES</h6>
-                        <img src="./images/p1.png" alt="">
-                        <br/>
-                        <span>Vestibulum dignissim, dui ac hendrerit blandit, sapien orci dictum nibh, vel suscipit augue nibh in enim. Nullam dignissim euismodnunc at</span>
-                        <div class="">
-                            More
+                        <div class="cards d-flex align-items-center  flex-column">
+                            <h6>GROWTH STRATEGIES</h6>
+                            <img src="./images/p1.png" alt="">
+                            <br/>
+                            <p class="text-center">Vestibulum dignissim, dui ac hendrerit blandit, sapien orci dictum nibh, vel suscipit augue nibh in enim. Nullam dignissim euismodnunc at</p>
+                            <div class="more">
+                                More
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <h6>PERFECT SUPPORT</h6>
-                        <img src="./images/p2.png" alt="">
-                        <br/>
-                        <span>Donec semper, dolor eu iaculis laoreet, erat diam interdum nisi, vel consequat leo neque in ante. Curabitur fringilla tristique nisl ut</span>
-                        <div class="">
-                            More
+                        <div class="cards d-flex align-items-center flex-column">
+                            <h6>PERFECT SUPPORT</h6>
+                            <img src="./images/p2.png" alt="">
+                            <br/>
+                            <p class="text-center">Donec semper, dolor eu iaculis laoreet, erat diam interdum nisi, vel consequat leo neque in ante. Curabitur fringilla tristique nisl ut</p>
+                            <div class="more">
+                                More
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <h6>PARTNERS PROGRAMS</h6>
-                        <img src="./images/p3.png" alt="">
-                        <br/>
-                        <span>Nunc pellentesque malesuada enim utdignissim. Etiam aliquam malesuada magna, vel scelerisque lectus pharetra quis. Cras</span>
-                        <div class="">
-                            More
+                        <div class="cards d-flex align-items-center flex-column">
+                            <h6>PARTNERS PROGRAMS</h6>
+                            <img src="./images/p3.png" alt="">
+                            <br/>
+                            <p class="text-center">Nunc pellentesque malesuada enim utdignissim. Etiam aliquam malesuada magna, vel scelerisque lectus pharetra quis. Cras</p>
+                            <div class="more">
+                                More
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <h6>PREMIUM SERVICES</h6>
-                        <img src="./images/p4.png" alt="">
-                        <br/>
-                        <span>Duis molestie commodo sapien, non mollis diam consequat in. Nulla blandit viverra sodales. Donec sit amet diam neque</span>
-                        <div class="">
-                            More
+                        <div class="cards d-flex align-items-center flex-column">
+                            <h6>PREMIUM SERVICES</h6>
+                            <img src="./images/p4.png" alt="">
+                            <br/>
+                            <p class="text-center">Duis molestie commodo sapien, non mollis diam consequat in. Nulla blandit viverra sodales. Donec sit amet diam neque</p>
+                            <div class="more">
+                                More
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- ---------------------------------------------- -->
                 <div class="Introduce_block row">
                     <div class="col-md-4">
-                        <h4>WELCOME</h4>
+                        <h5>WELCOME</h5>
                         <figure>
-                            <img src="http://placehold.it/360x230" alt="">
+                            <img src="./images/welcome.jpg" alt="">
                             <figcaption>
                                 Curabitur velit nisl, porttitor viverra molestie quis, lacinia eget purus. Suspendisse ipsum massa, rutrum in hendrerit malesuada, fermentum id erat...
                                 <a id="More" href="#">More</a>
@@ -172,7 +180,7 @@
                         </figure>
                     </div>
                     <div class="col-md-4">
-                        <h4>WHY CHOOSE US?</h4>
+                        <h5>WHY CHOOSE US?</h5>
                         <div class="d-flex flex-row Option">
                             <div id="Roun" class="choose_block d-flex justify-content-center align-items-center">
                                 <i class="fa fa-angle-right"></i>
@@ -201,30 +209,30 @@
                                 Vestibulum vitae urna quis eros convallis</span>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <h4>NEWS & EVENTS</h4>
+                    <div class="NEWS_EVENTS col-md-4 d-flex align-content-between flex-wrap">
+                        <h5>NEWS & EVENTS</h5>
                         <div class="row">
                             <div class="col-md-5 d-flex justify-content-center align-items-center">
-                                <img src="http://placehold.it/150x140" alt="">
+                                <img src="./images/news1.jpg" alt="">
                             </div>
                             <div class=" col-md-7">
-                                <div class="green_black">
+                                <div class="green_black text-center">
                                     12.12.12
                                 </div>
-                                <span>Aliquam ac diam in lorem vulputate auctor. Aliquam rhoncus nunc et justo imperdiet blandit...<a href="#">More</a>
-                                </span>
+                                <p>Aliquam ac diam in lorem vulputate auctor. Aliquam rhoncus nunc et justo imperdiet blandit...<a href="#">More</a>
+                                </p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-5 d-flex justify-content-center align-items-center">
-                                <img src="http://placehold.it/150x140" alt="">
+                                <img src="./images/news2.jpg" alt="">
                             </div>
                             <div class=" col-md-7">
-                                <div class="green_black">
+                                <div class="green_black text-center">
                                     12.12.12
                                 </div>
-                                <span>Aliquam ac diam in lorem vulputate auctor. Aliquam rhoncus nunc et justo imperdiet blandit...<a href="#">More</a>
-                                </span>
+                                <p>Aliquam ac diam in lorem vulputate auctor. Aliquam rhoncus nunc et justo imperdiet blandit...<a href="#">More</a>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -251,19 +259,134 @@
             </div>
         </section>
         <footer class="">
-            <div class="footer_Card_bar_bg">
-                <div class="footer_Card_bar container">
-                    <div class="row">
-                        <img src="http://placehold.it/260x350" alt="">
+            <div id="ADD">
+                <p></p>
+                <p>A paragraph.</p>
+                <p>Another paragraph.</p>
+            </div>
+            <!-- <div class="footer_Card_bar_bg"> -->
+            <div class="footer_Card_bar container">
+                <div id="cards" class="row">
+                    <!-- <img src="http://placehold.it/260x350" alt=""> -->
+                    <div class="col-md-3">
+                        <h5>LATEST TWEETS</h5>
+                        <div class="">
+                            loading tweets...
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>TESTIMONIALS</h5>
+                        <div class="dialog_box">
+                            <span>Sed dapibus molestie interdum. Fusce nec est ante, sit amet lacinia lorem. Maecenas nec eros ut mauris pulvinar suscipit. Aliquam erat</apsn>
+                        </div>
+                        <div class="">
+                            <div class="avatar">
+                                <img src="./images/men.jpg" alt="">
+                                <!-- <div class="text "> -->
+                            </div>
+                            <span class="text-left">Stephen Bingham
+                                <br/>
+                                <a href="#">
+                                    demolink.org</a>
+                            </span>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>GET IN TOUCH!</h5>
+                        <from>
+                            <input id="input" type="text" placeholder="Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'"/>
+                            <input id="input" type="text" placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'"/>
+                            <textarea id="textarea" name="area1" onFocus="if(this.value==this.defaultValue) this.value=''" onBlur="if(this.value=='') this.value=this.defaultValue">Message</textarea>
+                            <div class="d-flex justify-content-between">
+                                <button id="GET_b1" type="button" name="button">CLEAR FORM</button>
+                                <button id="GET_b2" type="button" name="button">SEND!</button>
+                            </div>
+                        </from>
+                    </div>
+                    <div id="Flickr" class="col-md-3">
+                        <h5>FLICKR</h5>
+                        <a href="https://www.flickr.com/">
+                            <img src="./images/f1.jpg" alt="">
+                            <div class="cover"></div>
+                        </a>
+                        <a href="https://www.flickr.com/">
+                            <img src="./images/f2.jpg" alt="">
+                            <div class="cover"></div>
+                        </a>
+                        <a href="https://www.flickr.com/">
+                            <img src="./images/f3.jpg" alt="">
+                            <div class="cover"></div>
+                        </a>
+                        <a href="https://www.flickr.com/">
+                            <img src="./images/f4.jpg" alt="">
+                            <div class="cover"></div>
+                        </a>
+                        <a href="https://www.flickr.com/">
+                            <img src="./images/f5.jpg" alt="">
+                            <div class="cover"></div>
+                        </a>
+                        <a href="https://www.flickr.com/">
+                            <img src="./images/f6.jpg" alt="">
+                            <div class="cover"></div>
+                        </a>
+                        <a href="https://www.flickr.com/">
+                            <img src="./images/f7.jpg" alt="">
+                            <div class="cover"></div>
+                        </a>
+                        <a href="https://www.flickr.com/">
+                            <img src="./images/f8.jpg" alt="">
+                            <div class="cover"></div>
+                        </a>
+                        <a href="https://www.flickr.com/">
+                            <img src="./images/f9.jpg" alt="">
+                            <div class="cover"></div>
+                        </a>
+                        <a href="https://www.flickr.com/">
+                            <img src="./images/f10.jpg" alt="">
+                            <div class="cover"></div>
+                        </a>
+                        <a href="https://www.flickr.com/">
+                            <img src="./images/f11.jpg" alt="">
+                            <div class="cover"></div>
+                        </a>
+                        <a href="https://www.flickr.com/">
+                            <img src="./images/f12.jpg" alt="">
+                            <div class="cover"></div>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="footer_block1"></div>
-            <div class="footer_block2 container-fluid">
-                <p>
-                    BUSINESS PLANET © 2020 | Privacy Policy
-                </p>
-                HOME ABOUT FEATURES PORTFOLIO BLOG CONTACTS
+            <!-- </div> -->
+            <div class="footer_block1 d-flex align-items-end">
+                <div class="footer_block2 container">
+                    <div class="row d-flex justify-content-md-between">
+                        <span class="col-12 col-md-6">
+                            BUSINESS PLANET © 2020 |
+                            <a href="#">Privacy Policy</a>
+                        </span>
+                        <span class="col-12 col-md-6 text-right">
+                            <a href="#">
+                                HOME
+                            </a>
+                            <a href="#">
+                                ABOUT
+                            </a>
+                            <a href="#">
+                                FEATURES
+                            </a>
+                            <a href="#">
+                                PORTFOLIO
+                            </a>
+                            <a href="#">
+                                BLOG
+                            </a>
+                            <a href="#">
+                                CONTACTS
+                            </a>
+                        </span>
+                    </div>
+                </div>
             </div>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

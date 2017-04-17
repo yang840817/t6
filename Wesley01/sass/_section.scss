@@ -1,6 +1,6 @@
 @import "modules/_variable.scss";
 @import "modules/_Roun.scss";
-
+@import "modules/_range-width.scss";
 
 section {
   // z-index: -1;
@@ -10,7 +10,7 @@ section {
 
   .container {
     width: 100%;
-    max-width: 90%;
+    max-width: 91%;
 
     .form-inline{
 
@@ -123,21 +123,74 @@ section {
     width: 88.7%;
     background: url('../images/subbg.gif');
 
-    span {
+    .row {
+      //  @include range-width(0,400px){
+        // margin-bottom: 20px;
+      //  }
+      .col-md-3 {
+        @include range-width(0,400px){
+          padding-bottom: 10px;
 
-      font-size: 15px;
+        }
+        h6 {
+          padding-bottom: 20px;
+        }
 
+       .cards {
+         position: relative;
+         bottom: 30px;
+         padding:30px 10px 50px;
+         background-color: rgb(231, 231, 231);
+         border: 1px white solid;
+         box-shadow:1px 4px 15px #646464;
+          p {
+            width: 200px;
+            font-size: 15px;
+          }
 
+          .more{
+            font-size: 17px;
+            padding:5px 10px;
+            background-color: rgb(205, 205, 205);
+           &:hover {
+             background-color: rgb(57, 57, 57);
+             color: white;
+           }
+          }
+          &:hover {
+           background-color: rgba(100, 100, 100, 0.4);
+           border: 1px gray solid;
+           .more{
+             background-color: rgb(100, 100, 100);
+           }
+          }
+
+        }
+      }
     }
 
+// ------------------------
 
   .Introduce_block {
+div {
+  border: 1px red solid;
+}
+   margin: 80px 0 80px;
+   font-size: 10px;
+
+    figure {
+      img {
+        width: 100%;
+        padding-bottom: 30px;
+      }
+    }
 
     #More{
       text-decoration:none;
     }
     .Option{
-
+      padding:5px 0;
+      border-bottom: 1px lightgray solid;
       #Roun {
         @include border-radius(50px);
         background-color: lightgray;
@@ -163,8 +216,16 @@ section {
 
     }
 
+   .NEWS_EVENTS{
+
+
    .green_black {
+     width: 50%;
+     padding: 5px 8px;
+     margin-bottom: 15px;
+     background-color: rgb(128, 182, 0);
    }
+ }
 
   }
 }
