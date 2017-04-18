@@ -7,6 +7,10 @@ body {
   padding: 0;
   background: url("../images/bg.jpg");
 }
+/* line 10, ../sass/print.scss */
+body div {
+  border: 1px red solid;
+}
 
 /* line 3, ../sass/_header.scss */
 header {
@@ -71,47 +75,51 @@ header .header_box2 {
 section {
   background: url("../images/bg.jpg");
 }
-/* line 11, ../sass/_section.scss */
+/* line 9, ../sass/_section.scss */
 section .container {
   width: 100%;
   max-width: 91%;
 }
-/* line 17, ../sass/_section.scss */
+/* line 13, ../sass/_section.scss */
 section .container .form-inline .form-control {
   position: relative;
   width: 100%;
 }
 @media screen and (max-width: 480px) {
-  /* line 17, ../sass/_section.scss */
+  /* line 13, ../sass/_section.scss */
   section .container .form-inline .form-control {
     width: 64%;
   }
 }
-/* line 30, ../sass/_section.scss */
+/* line 25, ../sass/_section.scss */
 section .container .form-inline button {
   position: absolute;
   padding: 6px 9px 6px;
 }
-@media screen and (max-width: 480px) {
-  /* line 47, ../sass/_section.scss */
+/* line 35, ../sass/_section.scss */
+section #carouselExampleControls {
+  /* 寬度在$min $max之間 */
+}
+@media screen and (max-width: 399px) and (min-width: 0) {
+  /* line 39, ../sass/_section.scss */
   section #carouselExampleControls .carousel-inner .carousel-item {
     height: 120px;
   }
-  /* line 50, ../sass/_section.scss */
+  /* line 42, ../sass/_section.scss */
   section #carouselExampleControls .carousel-inner .bg1 {
     background: url("../images/banner1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0;
   }
-  /* line 59, ../sass/_section.scss */
+  /* line 51, ../sass/_section.scss */
   section #carouselExampleControls .carousel-inner .bg2 {
     background: url("../images/banner2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0;
   }
-  /* line 69, ../sass/_section.scss */
+  /* line 60, ../sass/_section.scss */
   section #carouselExampleControls .carousel-inner .bg3 {
     background: url("../images/banner3.jpg");
     background-size: cover;
@@ -119,27 +127,39 @@ section .container .form-inline button {
     opacity: 0;
   }
 }
-/* line 122, ../sass/_section.scss */
+/* line 108, ../sass/_section.scss */
 section .Content_block {
   width: 88.7%;
+  padding: 0 25px 35px;
   background: url("../images/subbg.gif");
 }
-/* line 130, ../sass/_section.scss */
-section .Content_block .row .col-md-3 {
+/* line 112, ../sass/_section.scss */
+section .Content_block .cards_block {
+  padding: 0 15px 0;
+}
+/* line 114, ../sass/_section.scss */
+section .Content_block .cards_block .col-md-3 {
   /* 寬度在$min $max之間 */
 }
 @media screen and (max-width: 399px) and (min-width: 0) {
-  /* line 130, ../sass/_section.scss */
-  section .Content_block .row .col-md-3 {
+  /* line 114, ../sass/_section.scss */
+  section .Content_block .cards_block .col-md-3 {
     padding-bottom: 10px;
   }
 }
-/* line 135, ../sass/_section.scss */
-section .Content_block .row .col-md-3 h6 {
+/* line 119, ../sass/_section.scss */
+section .Content_block .cards_block .col-md-3 h6 {
   padding-bottom: 20px;
+  /* 寬度在$min $max之間 */
 }
-/* line 139, ../sass/_section.scss */
-section .Content_block .row .col-md-3 .cards {
+@media screen and (max-width: 399px) and (min-width: 0) {
+  /* line 119, ../sass/_section.scss */
+  section .Content_block .cards_block .col-md-3 h6 {
+    font-size: 18px;
+  }
+}
+/* line 126, ../sass/_section.scss */
+section .Content_block .cards_block .col-md-3 .cards {
   position: relative;
   bottom: 30px;
   padding: 30px 10px 50px;
@@ -147,84 +167,110 @@ section .Content_block .row .col-md-3 .cards {
   border: 1px white solid;
   box-shadow: 1px 4px 15px #646464;
 }
-/* line 146, ../sass/_section.scss */
-section .Content_block .row .col-md-3 .cards p {
+/* line 133, ../sass/_section.scss */
+section .Content_block .cards_block .col-md-3 .cards:hover {
+  background-color: rgba(100, 100, 100, 0.4);
+  border: 1px gray solid;
+}
+/* line 136, ../sass/_section.scss */
+section .Content_block .cards_block .col-md-3 .cards:hover .more {
+  background-color: #646464;
+}
+/* line 141, ../sass/_section.scss */
+section .Content_block .cards_block .col-md-3 .cards p {
   width: 200px;
   font-size: 15px;
 }
-/* line 151, ../sass/_section.scss */
-section .Content_block .row .col-md-3 .cards .more {
+/* line 146, ../sass/_section.scss */
+section .Content_block .cards_block .col-md-3 .cards .more {
   font-size: 17px;
   padding: 5px 10px;
   background-color: #cdcdcd;
 }
-/* line 155, ../sass/_section.scss */
-section .Content_block .row .col-md-3 .cards .more:hover {
+/* line 150, ../sass/_section.scss */
+section .Content_block .cards_block .col-md-3 .cards .more:hover {
   background-color: #393939;
   color: white;
 }
 /* line 160, ../sass/_section.scss */
-section .Content_block .row .col-md-3 .cards:hover {
-  background-color: rgba(100, 100, 100, 0.4);
-  border: 1px gray solid;
-}
-/* line 163, ../sass/_section.scss */
-section .Content_block .row .col-md-3 .cards:hover .more {
-  background-color: #646464;
-}
-/* line 174, ../sass/_section.scss */
 section .Content_block .Introduce_block {
   margin: 80px 0 80px;
   font-size: 10px;
 }
-/* line 175, ../sass/_section.scss */
-section .Content_block .Introduce_block div {
-  border: 1px red solid;
-}
-/* line 182, ../sass/_section.scss */
-section .Content_block .Introduce_block figure img {
+/* line 166, ../sass/_section.scss */
+section .Content_block .Introduce_block .col-md-4:nth-child(1) figure img {
   width: 100%;
   padding-bottom: 30px;
 }
-/* line 188, ../sass/_section.scss */
-section .Content_block .Introduce_block #More {
+/* line 170, ../sass/_section.scss */
+section .Content_block .Introduce_block .col-md-4:nth-child(1) figure a {
   text-decoration: none;
 }
-/* line 191, ../sass/_section.scss */
-section .Content_block .Introduce_block .Option {
-  padding: 5px 0;
+/* line 177, ../sass/_section.scss */
+section .Content_block .Introduce_block .col-md-4:nth-child(2) .Option {
+  padding: 7px 0;
   border-bottom: 1px lightgray solid;
 }
-/* line 194, ../sass/_section.scss */
-section .Content_block .Introduce_block .Option #Roun {
+/* line 181, ../sass/_section.scss */
+section .Content_block .Introduce_block .col-md-4:nth-child(2) .Option:hover #Roun {
+  background-color: black;
+}
+/* line 184, ../sass/_section.scss */
+section .Content_block .Introduce_block .col-md-4:nth-child(2) .Option:hover #Roun ~ span {
+  color: black;
+  padding-left: 10px;
+  line-height: 50px;
+}
+/* line 190, ../sass/_section.scss */
+section .Content_block .Introduce_block .col-md-4:nth-child(2) .Option:hover #Option_text {
+  display: block;
+}
+/* line 195, ../sass/_section.scss */
+section .Content_block .Introduce_block .col-md-4:nth-child(2) .Option #Roun {
   width: 50px;
   height: 50px;
   border-radius: 99em;
   background-color: lightgray;
 }
 /* line 13, ../sass/modules/_Roun.scss */
-section .Content_block .Introduce_block .Option #Roun div {
+section .Content_block .Introduce_block .col-md-4:nth-child(2) .Option #Roun div {
   border: 1px red solid;
 }
 /* line 198, ../sass/_section.scss */
-section .Content_block .Introduce_block .Option #Roun i {
+section .Content_block .Introduce_block .col-md-4:nth-child(2) .Option #Roun i {
   color: white;
   font-size: 30px;
 }
-/* line 203, ../sass/_section.scss */
-section .Content_block .Introduce_block .Option #Roun:hover {
-  background-color: black;
-}
-/* line 212, ../sass/_section.scss */
-section .Content_block .Introduce_block .Option span {
+/* line 204, ../sass/_section.scss */
+section .Content_block .Introduce_block .col-md-4:nth-child(2) .Option #Roun ~ span {
+  padding-left: 10px;
   line-height: 50px;
+  color: gray;
 }
-/* line 222, ../sass/_section.scss */
-section .Content_block .Introduce_block .NEWS_EVENTS .green_black {
+/* line 211, ../sass/_section.scss */
+section .Content_block .Introduce_block .col-md-4:nth-child(2) .Option #Option_text {
+  display: none;
+  padding: 0 5px 0 60px;
+}
+/* line 221, ../sass/_section.scss */
+section .Content_block .Introduce_block .col-md-4:nth-child(3) .green_black {
+  margin-top: 15px;
   width: 50%;
   padding: 5px 8px;
   margin-bottom: 15px;
   background-color: #80b600;
+}
+/* line 228, ../sass/_section.scss */
+section .Content_block .Introduce_block .col-md-4:nth-child(3) p a {
+  text-decoration: none;
+}
+/* line 234, ../sass/_section.scss */
+section .Content_block .FEATURED_WORKS {
+  padding: 0 25px;
+}
+/* line 236, ../sass/_section.scss */
+section .Content_block .FEATURED_WORKS .col-md-3 img {
+  width: 100%;
 }
 
 /* line 4, ../sass/_footer.scss */
@@ -234,33 +280,27 @@ footer {
   padding-top: 70px;
   background: url("../images/bg.jpg");
 }
-/* line 13, ../sass/_footer.scss */
-footer #ADD p:empty {
-  width: 100px;
-  height: 20px;
-  background: green;
-}
-/* line 25, ../sass/_footer.scss */
+/* line 11, ../sass/_footer.scss */
 footer .footer_Card_bar_bg {
   height: 80%;
 }
-/* line 31, ../sass/_footer.scss */
+/* line 17, ../sass/_footer.scss */
 footer .footer_Card_bar {
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: 90%;
+  max-width: 87%;
   background: url("../images/subbg.gif");
 }
-/* line 45, ../sass/_footer.scss */
+/* line 31, ../sass/_footer.scss */
 footer .footer_Card_bar #cards {
   padding: 20px;
 }
-/* line 47, ../sass/_footer.scss */
+/* line 33, ../sass/_footer.scss */
 footer .footer_Card_bar #cards h6 ~ div {
   font-size: 13px;
 }
-/* line 52, ../sass/_footer.scss */
+/* line 38, ../sass/_footer.scss */
 footer .footer_Card_bar #cards .dialog_box {
   position: relative;
   background-color: #e5e5e5;
@@ -268,7 +308,7 @@ footer .footer_Card_bar #cards .dialog_box {
   margin-bottom: 30px;
   font-size: 13px;
 }
-/* line 59, ../sass/_footer.scss */
+/* line 45, ../sass/_footer.scss */
 footer .footer_Card_bar #cards .dialog_box:before {
   position: absolute;
   content: "";
@@ -278,18 +318,18 @@ footer .footer_Card_bar #cards .dialog_box:before {
   border-style: solid;
   border-color: #E5E5E5 transparent transparent;
 }
-/* line 69, ../sass/_footer.scss */
+/* line 55, ../sass/_footer.scss */
 footer .footer_Card_bar #cards .avatar {
   margin-right: 30px;
   float: left;
 }
-/* line 77, ../sass/_footer.scss */
+/* line 63, ../sass/_footer.scss */
 footer .footer_Card_bar #cards .avatar + span a {
   color: #80b600;
   text-decoration: none;
   font-style: oblique;
 }
-/* line 89, ../sass/_footer.scss */
+/* line 75, ../sass/_footer.scss */
 footer .footer_Card_bar #cards #input {
   padding-left: 5px;
   border: 0;
@@ -298,7 +338,7 @@ footer .footer_Card_bar #cards #input {
   width: 100%;
   background-color: #e6e6e6;
 }
-/* line 97, ../sass/_footer.scss */
+/* line 83, ../sass/_footer.scss */
 footer .footer_Card_bar #cards #textarea {
   padding-left: 5px;
   border: 0;
@@ -310,11 +350,11 @@ footer .footer_Card_bar #cards #textarea {
   background-color: #e6e6e6;
   color: #75758a;
 }
-/* line 108, ../sass/_footer.scss */
+/* line 94, ../sass/_footer.scss */
 footer .footer_Card_bar #cards #textarea + div {
   width: 100%;
 }
-/* line 111, ../sass/_footer.scss */
+/* line 97, ../sass/_footer.scss */
 footer .footer_Card_bar #cards #GET_b1 {
   padding: 10px;
   color: white;
@@ -326,7 +366,7 @@ footer .footer_Card_bar #cards #GET_b1 {
   left: 0;
   top: 0;
 }
-/* line 133, ../sass/_footer.scss */
+/* line 119, ../sass/_footer.scss */
 footer .footer_Card_bar #cards #GET_b2 {
   padding: 10px;
   color: white;
@@ -336,11 +376,11 @@ footer .footer_Card_bar #cards #GET_b2 {
   cursor: pointer;
   border: 0;
 }
-/* line 152, ../sass/_footer.scss */
+/* line 138, ../sass/_footer.scss */
 footer .footer_Card_bar #cards #Flickr {
   padding: 0;
 }
-/* line 154, ../sass/_footer.scss */
+/* line 140, ../sass/_footer.scss */
 footer .footer_Card_bar #cards #Flickr a {
   position: relative;
   overflow: hidden;
@@ -348,16 +388,16 @@ footer .footer_Card_bar #cards #Flickr a {
   width: calc(100% / 4.5);
   text-decoration: none;
 }
-/* line 160, ../sass/_footer.scss */
+/* line 146, ../sass/_footer.scss */
 footer .footer_Card_bar #cards #Flickr a:nth-child(n + 5) {
   margin-top: 6px;
 }
-/* line 164, ../sass/_footer.scss */
+/* line 150, ../sass/_footer.scss */
 footer .footer_Card_bar #cards #Flickr a img {
   width: 57.5px;
   height: 57.5px;
 }
-/* line 169, ../sass/_footer.scss */
+/* line 155, ../sass/_footer.scss */
 footer .footer_Card_bar #cards #Flickr a:hover .cover {
   position: absolute;
   opacity: 1;
@@ -368,7 +408,7 @@ footer .footer_Card_bar #cards #Flickr a:hover .cover {
   background: rgba(0, 0, 0, 0.5);
   transition: opacity ease-out 1.5s;
 }
-/* line 187, ../sass/_footer.scss */
+/* line 173, ../sass/_footer.scss */
 footer .footer_block1 {
   position: absolute;
   z-index: -1;
@@ -377,7 +417,7 @@ footer .footer_block1 {
   height: 50%;
   background-color: black;
 }
-/* line 199, ../sass/_footer.scss */
+/* line 185, ../sass/_footer.scss */
 footer .footer_block2 {
   max-width: 90%;
   width: 100%;
@@ -386,26 +426,26 @@ footer .footer_block2 {
   line-height: 50px;
   font-size: 13px;
 }
-/* line 208, ../sass/_footer.scss */
+/* line 194, ../sass/_footer.scss */
 footer .footer_block2 .row ~ span {
   padding: 0;
 }
-/* line 217, ../sass/_footer.scss */
+/* line 203, ../sass/_footer.scss */
 footer .footer_block2 span:nth-child(odd) a {
   color: #80b600;
   text-decoration: none;
 }
-/* line 220, ../sass/_footer.scss */
+/* line 206, ../sass/_footer.scss */
 footer .footer_block2 span:nth-child(odd) a:hover {
   color: #80ff00;
 }
-/* line 227, ../sass/_footer.scss */
+/* line 213, ../sass/_footer.scss */
 footer .footer_block2 span:nth-child(even) a {
   padding: 0 10px;
   color: gray;
   text-decoration: none;
 }
-/* line 231, ../sass/_footer.scss */
+/* line 217, ../sass/_footer.scss */
 footer .footer_block2 span:nth-child(even) a:hover {
   color: #80ff00;
 }

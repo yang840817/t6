@@ -4,22 +4,8 @@
 footer {
   position: relative;
   z-index: 10;
-  // height: 330px;
   padding-top: 70px;
   background: url('../images/bg.jpg');
-
-#ADD {
-
-p:empty {
-      width: 100px;
-      height: 20px;
-      background: green;
-  }
-
-}
-
-
-
 
 
     .footer_Card_bar_bg {
@@ -32,7 +18,7 @@ p:empty {
       position: relative;
       z-index: 1;
       width: 100%;
-      max-width: 90%;
+      max-width: 87%;
       background: url('../images/subbg.gif');
 
       // &:before {

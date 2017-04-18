@@ -3,110 +3,97 @@
 @import "modules/_range-width.scss";
 
 section {
+  background: url('../images/bg.jpg');
   // z-index: -1;
   // height: 500px;
-  background: url('../images/bg.jpg');
-
-
   .container {
     width: 100%;
     max-width: 91%;
-
-    .form-inline{
-
-     .form-control{
-       position: relative;
-       width: 100%;
-      //  .fa-search {
-      //    position: absolute;
-      //    left: 100%;
-       //
-      //  }
+    .form-inline {
+      .form-control {
+        position: relative;
+        width: 100%;
+        //  .fa-search {
+        //    position: absolute;
+        //    left: 100%;
+        //
+        //  }
         @media screen and (max-width: 480px) {
-          width: 64%;
+            width: 64%;
         }
       }
-
-     button{
-      position: absolute;
-      padding:6px 9px 6px;
-      //  @media screen and (max-width: 480px) {
-      //    top:-8px;
-      //  }
-     }
+      button {
+        position: absolute;
+        padding: 6px 9px 6px;
+        //  @media screen and (max-width: 480px) {
+        //    top:-8px;
+        //  }
+      }
     }
-
   }
 
   #carouselExampleControls {
-
-  @media screen and (max-width: 480px) {
-    .carousel-inner {
-    //  height: 120px;
-
-    .carousel-item{
-      height: 120px;
+    @include range-width(0, 400px) {
+      .carousel-inner {
+       //  height: 120px;
+        .carousel-item {
+          height: 120px;
+        }
+        .bg1 {
+          //  height: 200px;
+          background: url('../images/banner1.jpg');
+          background-size: cover;
+          // background-position: center;
+          // background-size: contain;
+          background-repeat: no-repeat;
+          opacity: 0;
+        }
+        .bg2 {
+          //  height: 200px;
+          background: url('../images/banner2.jpg');
+          background-size: cover;
+          // background-position: center;
+          // background-size: contain;
+          background-repeat: no-repeat;
+          opacity: 0;
+        }
+        .bg3 {
+          //  height: 200px;
+          background: url('../images/banner3.jpg');
+          background-size: cover;
+          // background-position: center;
+          // background-size: contain;
+          background-repeat: no-repeat;
+          opacity: 0;
+        }
+      }
     }
-     .bg1 {
-      //  height: 200px;
-      background: url('../images/banner1.jpg');
-      background-size: cover;
-      // background-position: center;
-      // background-size: contain;
-      background-repeat: no-repeat;
-      opacity: 0;
-     }
-     .bg2 {
-      //  height: 200px;
-      background: url('../images/banner2.jpg');
-      background-size: cover;
-      // background-position: center;
-      // background-size: contain;
-      background-repeat: no-repeat;
-      opacity: 0;
-
-     }
-     .bg3 {
-      //  height: 200px;
-      background: url('../images/banner3.jpg');
-      background-size: cover;
-      // background-position: center;
-      // background-size: contain;
-      background-repeat: no-repeat;
-      opacity: 0;
-
-     }
-
-
-     }
-   }
   }
-
-  //   .carousel-item {
-  //     height: 500px;
-  //     // height: 70vh;
-  //     // background-size: contain;
-  //   }
-  //   .bg1 {
-  //     background: url('../images/banner1.jpg');
-  //     background-size: cover;
-  //     // background-size: contain;
-  //     // background-position: center;
-  //     // background-repeat: no-repeat;
-  //      img {
-  //        opacity:0;
-  //      }
-  //   }
-  //   .bg2 {
-  //     background: url('../images/banner2.jpg');
-  //     background-size: cover;
-  //     // background-size: contain;
-  //     // background-position: center;
-  //     // background-repeat: no-repeat;
-  //      img {
-  //        opacity:0;
-  //      }
-  //   }
+    //   .carousel-item {
+    //     height: 500px;
+    //     // height: 70vh;
+    //     // background-size: contain;
+    //   }
+    //   .bg1 {
+    //     background: url('../images/banner1.jpg');
+    //     background-size: cover;
+    //     // background-size: contain;
+    //     // background-position: center;
+    //     // background-repeat: no-repeat;
+    //      img {
+    //        opacity:0;
+    //      }
+    //   }
+    //   .bg2 {
+    //     background: url('../images/banner2.jpg');
+    //     background-size: cover;
+    //     // background-size: contain;
+    //     // background-position: center;
+    //     // background-repeat: no-repeat;
+    //      img {
+    //        opacity:0;
+    //      }
+    //   }
     // .bg3 {
     //   background: url('../images/banner3.jpg');
     //   background-size: cover;
@@ -117,117 +104,138 @@ section {
     //      opacity:0;
     //    }
     // }
-
-// -------------------------
+    // -------------------------
   .Content_block {
     width: 88.7%;
+    padding:0 25px 35px;
     background: url('../images/subbg.gif');
-
-    .row {
-      //  @include range-width(0,400px){
-        // margin-bottom: 20px;
-      //  }
+    .cards_block {
+      padding: 0 15px 0;  
       .col-md-3 {
-        @include range-width(0,400px){
+        @include range-width(0, 400px) {
           padding-bottom: 10px;
-
         }
+
         h6 {
           padding-bottom: 20px;
+          @include range-width(0, 400px) {
+              font-size: 18px;
+          }
         }
 
-       .cards {
-         position: relative;
-         bottom: 30px;
-         padding:30px 10px 50px;
-         background-color: rgb(231, 231, 231);
-         border: 1px white solid;
-         box-shadow:1px 4px 15px #646464;
-          p {
-            width: 200px;
-            font-size: 15px;
-          }
-
-          .more{
-            font-size: 17px;
-            padding:5px 10px;
-            background-color: rgb(205, 205, 205);
-           &:hover {
-             background-color: rgb(57, 57, 57);
-             color: white;
-           }
-          }
+        .cards {
+          position: relative;
+          bottom: 30px;
+          padding: 30px 10px 50px;
+          background-color: rgb(231, 231, 231);
+          border: 1px white solid;
+          box-shadow: 1px 4px 15px #646464;
           &:hover {
-           background-color: rgba(100, 100, 100, 0.4);
-           border: 1px gray solid;
-           .more{
-             background-color: rgb(100, 100, 100);
+            background-color: rgba(100, 100, 100, 0.4);
+            border: 1px gray solid;
+            .more {
+              background-color: rgb(100, 100, 100);
+            }
+          }
+
+          p {
+          width: 200px;
+          font-size: 15px;
+        }
+
+          .more {
+          font-size: 17px;
+          padding: 5px 10px;
+          background-color: rgb(205, 205, 205);
+          &:hover {
+            background-color: rgb(57, 57, 57);
+            color: white;
+          }
+        }
+        }
+      }
+    }
+
+   // ------------------------
+    .Introduce_block {
+      margin: 80px 0 80px;
+      font-size: 10px;
+
+      .col-md-4:nth-child(1){
+        figure {
+          img {
+            width: 100%;
+            padding-bottom: 30px;
+          }
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+
+      .col-md-4:nth-child(2){
+        .Option {
+          padding: 7px 0;
+          border-bottom: 1px lightgray solid;
+          &:hover {
+           #Roun {
+             background-color: black;
+           }
+           #Roun ~ span {
+             color: black;
+             padding-left: 10px;
+             line-height: 50px;
+            //  color: gray;
+           }
+           #Option_text {
+             display: block;
            }
           }
 
-        }
-      }
-    }
+          #Roun {
+            @include border-radius(50px);
+            background-color: lightgray;
+            i {
+              color: white;
+              font-size: 30px
+            }
+          }
 
-// ------------------------
+          #Roun~span {
+           // font-size: 15px;
+            padding-left: 10px;
+            line-height: 50px;
+            color: gray;
+          }
 
-  .Introduce_block {
-div {
-  border: 1px red solid;
-}
-   margin: 80px 0 80px;
-   font-size: 10px;
-
-    figure {
-      img {
-        width: 100%;
-        padding-bottom: 30px;
-      }
-    }
-
-    #More{
-      text-decoration:none;
-    }
-    .Option{
-      padding:5px 0;
-      border-bottom: 1px lightgray solid;
-      #Roun {
-        @include border-radius(50px);
-        background-color: lightgray;
-
-        i {
-          color:white;
-          font-size:30px
-        }
-
-        &:hover {
-          background-color: black;
-          i{
-
+          #Option_text {
+            display: none;
+            // transition: display
+            // visibility: hidden;
+            padding:0 5px 0 60px;
           }
         }
-
       }
 
-      span {
-        // font-size: 15px;
-        line-height: 50px;
+      .col-md-4:nth-child(3){
+        .green_black {
+          margin-top: 15px;
+          width: 50%;
+          padding: 5px 8px;
+          margin-bottom: 15px;
+          background-color: rgb(128, 182, 0);
+        }
+        p a {
+          text-decoration: none;
+        }
       }
-
     }
 
-   .NEWS_EVENTS{
-
-
-   .green_black {
-     width: 50%;
-     padding: 5px 8px;
-     margin-bottom: 15px;
-     background-color: rgb(128, 182, 0);
-   }
- }
-
+    .FEATURED_WORKS {
+      padding: 0 25px;
+      .col-md-3 img {
+        width: 100%;
+      }
+    }
   }
-}
-
 }
