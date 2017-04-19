@@ -9,6 +9,9 @@ section {
   .container {
     width: 100%;
     max-width: 91%;
+    @include range-width(0, 400px) {
+     max-width: 100%;
+    }
     .form-inline {
       .form-control {
         position: relative;
@@ -33,41 +36,59 @@ section {
   }
 
   #carouselExampleControls {
-    @include range-width(0, 400px) {
-      .carousel-inner {
-       //  height: 120px;
-        .carousel-item {
-          height: 120px;
-        }
-        .bg1 {
-          //  height: 200px;
-          background: url('../images/banner1.jpg');
-          background-size: cover;
-          // background-position: center;
-          // background-size: contain;
-          background-repeat: no-repeat;
-          opacity: 0;
-        }
-        .bg2 {
-          //  height: 200px;
-          background: url('../images/banner2.jpg');
-          background-size: cover;
-          // background-position: center;
-          // background-size: contain;
-          background-repeat: no-repeat;
-          opacity: 0;
-        }
-        .bg3 {
-          //  height: 200px;
-          background: url('../images/banner3.jpg');
-          background-size: cover;
-          // background-position: center;
-          // background-size: contain;
-          background-repeat: no-repeat;
-          opacity: 0;
-        }
-      }
+    // width: 100%;
+    // .active {
+    //   width: 100%;
+    // }
+    .carousel-inner > .carousel-item > img{
+      max-width: 80%;
+      margin:0 auto;
     }
+    @include range-width(550px, 1500px) {
+
+      width: 100%;
+      max-width: 91%;
+     }
+    // @include range-width(0, 350px) {
+    //   width: 100%;
+    //   .carousel-inner {
+    //    //  height: 120px;
+    //    position: relative;
+    //    width: 111%;
+    //    right: 14px;
+    //    overflow: hidden;
+    //     .carousel-item {
+    //       height: 120px;
+    //     }
+        // .bg1 {
+        //   //  height: 200px;
+        //   background: url('../images/banner1.jpg');
+        //   background-size: cover;
+        //   // background-position: center;
+        //   // background-size: contain;
+        //   background-repeat: no-repeat;
+        //   // opacity: 0;
+        // }
+        // .bg2 {
+        //   //  height: 200px;
+        //   background: url('../images/banner2.jpg');
+        //   background-size: cover;
+        //   // background-position: center;
+        //   // background-size: contain;
+        //   background-repeat: no-repeat;
+        //   // opacity: 0;
+        // }
+        // .bg3 {
+        //   //  height: 200px;
+        //   background: url('../images/banner3.jpg');
+        //   background-size: cover;
+        //   // background-position: center;
+        //   // background-size: contain;
+        //   background-repeat: no-repeat;
+        //   // opacity: 0;
+        // }
+    //   }
+    // }
   }
     //   .carousel-item {
     //     height: 500px;
@@ -107,10 +128,19 @@ section {
     // -------------------------
   .Content_block {
     width: 88.7%;
+    @include range-width(0, 400px) {
+     width: 100%;
+    }
     padding:0 25px 35px;
     background: url('../images/subbg.gif');
+    @include range-width(0, 400px) {
+     padding: 0;
+    }
     .cards_block {
-      padding: 0 15px 0;  
+      padding: 0 15px 0;
+      @include range-width(0, 400px) {
+       padding: 0;
+      }
       .col-md-3 {
         @include range-width(0, 400px) {
           padding-bottom: 10px;
@@ -119,17 +149,22 @@ section {
         h6 {
           padding-bottom: 20px;
           @include range-width(0, 400px) {
-              font-size: 18px;
+              font-size: 15px;
           }
         }
 
         .cards {
           position: relative;
           bottom: 30px;
+          @include range-width(0, 400px) {
+            bottom: 15px;
+            }
           padding: 30px 10px 50px;
           background-color: rgb(231, 231, 231);
           border: 1px white solid;
           box-shadow: 1px 4px 15px #646464;
+          height: 400px;
+
           &:hover {
             background-color: rgba(100, 100, 100, 0.4);
             border: 1px gray solid;
@@ -139,14 +174,19 @@ section {
           }
 
           p {
-          width: 200px;
-          font-size: 15px;
+          // width: 200px;
+          // height: 100px;
+          font-size: 13px;
         }
 
           .more {
           font-size: 17px;
           padding: 5px 10px;
           background-color: rgb(205, 205, 205);
+          @include range-width(0, 400px) {
+            position: relative;
+            bottom:0px;
+          }
           &:hover {
             background-color: rgb(57, 57, 57);
             color: white;
@@ -160,6 +200,13 @@ section {
     .Introduce_block {
       margin: 80px 0 80px;
       font-size: 10px;
+
+      @include range-width(0,400px){
+        margin: 25px 0 25px;
+
+      }
+
+
 
       .col-md-4:nth-child(1){
         figure {
@@ -183,8 +230,8 @@ section {
            }
            #Roun ~ span {
              color: black;
-             padding-left: 10px;
-             line-height: 50px;
+            //  padding-left: 10px;
+            //  line-height: 50px;
             //  color: gray;
            }
            #Option_text {
@@ -194,6 +241,7 @@ section {
 
           #Roun {
             @include border-radius(50px);
+            // width: 50%;
             background-color: lightgray;
             i {
               color: white;
@@ -201,11 +249,17 @@ section {
             }
           }
 
-          #Roun~span {
-           // font-size: 15px;
+          #Roun ~ span {
+            width: 70%;
+           font-size: 15px;
             padding-left: 10px;
-            line-height: 50px;
+            // line-height: 50px;
+            padding-top: 10px;
             color: gray;
+            @include range-width(0,400px){
+              // padding-left: 10px;
+              color: gray;
+            }
           }
 
           #Option_text {
@@ -218,6 +272,11 @@ section {
       }
 
       .col-md-4:nth-child(3){
+         div > img {
+           @include range-width(0,400px){
+            width: 100%;
+          }
+         }
         .green_black {
           margin-top: 15px;
           width: 50%;
@@ -232,9 +291,17 @@ section {
     }
 
     .FEATURED_WORKS {
+      h6 {
+        @include range-width(400px,1500px){
+         font-size: 28px;
+        }
+      }
       padding: 0 25px;
       .col-md-3 img {
         width: 100%;
+        @include range-width(0,400px){
+          margin-bottom: 10px;
+        }
       }
     }
   }

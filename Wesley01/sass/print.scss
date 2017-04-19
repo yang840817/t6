@@ -8,12 +8,11 @@
   background: url('../images/bg.jpg');
 
   div {
-    border: 1px red solid;
+    // border: 1px red solid;
   }
  }
 
  @import "modules/_variable.scss";
  @import "_header.scss";
  @import "_section.scss";
-
  @import "_footer.scss";

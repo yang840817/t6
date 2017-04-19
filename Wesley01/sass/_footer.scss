@@ -1,7 +1,7 @@
 @import "modules/_variable.scss";
+@import "modules/_range-width.scss";
 
-
-footer {
+#footer {
   position: relative;
   z-index: 10;
   padding-top: 70px;
@@ -21,6 +21,12 @@ footer {
       max-width: 87%;
       background: url('../images/subbg.gif');
 
+      .col-md-3 {
+         @include range-width(0,400px){
+           padding-right: 0;
+           padding-left: 0;
+         }
+       }
       // &:before {
       //   content: "51515151515";
       //   width: 100%;
@@ -34,7 +40,7 @@ footer {
            font-size: 13px;
          }
 
-
+    .col-md-3:nth-child(2){
       .dialog_box {
        position: relative;
        background-color: rgb(229, 229, 229);
@@ -53,24 +59,19 @@ footer {
       }
 
       .avatar {
-        // display: inline-block;
         margin-right: 30px;
         float: left;
       }
 
       .avatar + span {
-      // float: left;
-      a{
-        color: rgb(128, 182, 0);
-        text-decoration:none;
-        font-style:oblique;
+        a{
+          color: rgb(128, 182, 0);
+          text-decoration:none;
+          font-style:oblique;
+        }
       }
+    }
 
-      }
-      .text {
-        // display: inline-block;
-        // width: 70%;
-      }
 
      #input {
        padding-left: 5px;
@@ -94,31 +95,48 @@ footer {
        #textarea + div {
          width: 100%;
        }
+  //  #from {
+    //  position: relative;
+    //  bottom: -15px;
+
       #GET_b1 {
       //  width: 40%;
       //  height: 35px;
-      // float: left;
-      padding: 10px;
+      float: left;
+      padding: 8px;
       color: white;
       font-size: 18px;
       background-color: black;
       text-decoration: none;
       cursor: pointer;
       border: 0;
-      left: 0;
-      top:0;
-      // margin-right: 15px;
        &:hover {
-        //  font-size: 20px;
-        // padding: 15px 15px 10 15px;
-
-        //  width:calc(100% + 5%);
+        padding:12px;
+        border-radius: 5px;
+        position: relative;
+        top:0px;
+       }
+       @include range-width(0,400px){
+         float: left;
+         padding: 3px;
+         color: white;
+         font-size: 18px;
+         background-color: black;
+         text-decoration: none;
+         cursor: pointer;
+         border: 0;
+         &:hover {
+           padding:5px;
+           border-radius: 5px;
+           position: relative;
+           top:0px;
+         }
        }
       }
 
       #GET_b2 {
-        // float: right;
-        padding: 10px;
+        float: right;
+        padding: 8px;
         color: white;
         font-size: 18px;
         background-color: rgb(128, 182, 0);
@@ -127,29 +145,47 @@ footer {
         border:0;
 
         &:hover {
-          // font-size: 20px;
-          // padding: 15px 15px 10 15px;
-        //  width:calc(100% + 5%);
-
+          padding:12px;
+          border-radius: 5px;
+          position: relative;
+          top:0px;
+        }
+        @include range-width(0,400px){
+          float: right;
+          padding: 3px;
+          color: white;
+          font-size: 18px;
+          background-color: rgb(128, 182, 0);
+          text-decoration: none;
+          cursor: pointer;
+          border:0;
+          &:hover {
+            padding:5px;
+            border-radius: 5px;
+            position: relative;
+            top:0px;
+          }
         }
       }
 
 
      #Flickr {
-       padding: 0;
+      //  padding: 0;
+      padding-right: 0;
+
        a {
          position: relative;
          overflow: hidden;
          display: inline-block;
-         width: calc(100% / 4.5);
+         width: calc(100% / 4.3);
          text-decoration: none;
          &:nth-child(n + 5){
            margin-top: 6px;
          }
 
          img {
-           width: 57.5px;
-           height: 57.5px;
+           width: 100%;
+           height: 100;
          }
 
          &:hover .cover {
@@ -157,8 +193,8 @@ footer {
            opacity: 1;
            left: 0;
            top: 0;
-           width: 57.5px;
-           height: 57.5px;
+           width: 100%;
+           height: 100%;
            background: rgba(0,0,0,0.5);
            transition: opacity ease-out 1.5s;
          }
