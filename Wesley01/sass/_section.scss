@@ -6,125 +6,47 @@ section {
   background: url('../images/bg.jpg');
   // z-index: -1;
   // height: 500px;
-  .container {
-    width: 100%;
-    max-width: 91%;
-    @include range-width(0, 400px) {
-     max-width: 100%;
-    }
-    .form-inline {
-      .form-control {
-        position: relative;
-        width: 100%;
-        //  .fa-search {
-        //    position: absolute;
-        //    left: 100%;
-        //
-        //  }
-        @media screen and (max-width: 480px) {
-            width: 64%;
-        }
-      }
-      button {
-        position: absolute;
-        padding: 6px 9px 6px;
-        //  @media screen and (max-width: 480px) {
-        //    top:-8px;
-        //  }
-      }
-    }
-  }
+  // .container {
+  //   width: 100%;
+  //   max-width: 91%;
+  //   @include range-width(0, 400px) {
+  //    max-width: 100%;
+  //   }
+  //   .form-inline {
+  //     .form-control {
+  //       position: relative;
+  //       width: 100%;
+  //       //  .fa-search {
+  //       //    position: absolute;
+  //       //    left: 100%;
+  //       //
+  //       //  }
+  //       @media screen and (max-width: 480px) {
+  //           width: 64%;
+  //       }
+  //     }
+  //     button {
+  //       position: absolute;
+  //       padding: 6px 9px 6px;
+  //       //  @media screen and (max-width: 480px) {
+  //       //    top:-8px;
+  //       //  }
+  //     }
+  //   }
+  // }
 
   #carouselExampleControls {
-    // width: 100%;
-    // .active {
-    //   width: 100%;
-    // }
-    .carousel-inner > .carousel-item > img{
-      max-width: 80%;
-      margin:0 auto;
-    }
-    @include range-width(550px, 1500px) {
 
+    @include range-width(0px, 400px) {
       width: 100%;
-      max-width: 91%;
-     }
-    // @include range-width(0, 350px) {
-    //   width: 100%;
-    //   .carousel-inner {
-    //    //  height: 120px;
-    //    position: relative;
-    //    width: 111%;
-    //    right: 14px;
-    //    overflow: hidden;
-    //     .carousel-item {
-    //       height: 120px;
-    //     }
-        // .bg1 {
-        //   //  height: 200px;
-        //   background: url('../images/banner1.jpg');
-        //   background-size: cover;
-        //   // background-position: center;
-        //   // background-size: contain;
-        //   background-repeat: no-repeat;
-        //   // opacity: 0;
-        // }
-        // .bg2 {
-        //   //  height: 200px;
-        //   background: url('../images/banner2.jpg');
-        //   background-size: cover;
-        //   // background-position: center;
-        //   // background-size: contain;
-        //   background-repeat: no-repeat;
-        //   // opacity: 0;
-        // }
-        // .bg3 {
-        //   //  height: 200px;
-        //   background: url('../images/banner3.jpg');
-        //   background-size: cover;
-        //   // background-position: center;
-        //   // background-size: contain;
-        //   background-repeat: no-repeat;
-        //   // opacity: 0;
-        // }
-    //   }
-    // }
+      padding: 0;
+    }
+
+    @include range-width(550px, 1500px) {
+      width: 100%;
+      max-width: 89vw;
+    }
   }
-    //   .carousel-item {
-    //     height: 500px;
-    //     // height: 70vh;
-    //     // background-size: contain;
-    //   }
-    //   .bg1 {
-    //     background: url('../images/banner1.jpg');
-    //     background-size: cover;
-    //     // background-size: contain;
-    //     // background-position: center;
-    //     // background-repeat: no-repeat;
-    //      img {
-    //        opacity:0;
-    //      }
-    //   }
-    //   .bg2 {
-    //     background: url('../images/banner2.jpg');
-    //     background-size: cover;
-    //     // background-size: contain;
-    //     // background-position: center;
-    //     // background-repeat: no-repeat;
-    //      img {
-    //        opacity:0;
-    //      }
-    //   }
-    // .bg3 {
-    //   background: url('../images/banner3.jpg');
-    //   background-size: cover;
-    //   // background-size: contain;
-    //   // background-position: center;
-    //   // background-repeat: no-repeat;
-    //    img {
-    //      opacity:0;
-    //    }
-    // }
     // -------------------------
   .Content_block {
     width: 88.7%;
@@ -200,7 +122,6 @@ section {
     .Introduce_block {
       margin: 80px 0 80px;
       font-size: 10px;
-
       @include range-width(0,400px){
         margin: 25px 0 25px;
 
@@ -209,6 +130,12 @@ section {
 
 
       .col-md-4:nth-child(1){
+        h5 + div {
+          height: 30px;
+          @include range-width(0,400px){
+           display: none;
+          }
+        }
         figure {
           img {
             width: 100%;
@@ -221,6 +148,18 @@ section {
       }
 
       .col-md-4:nth-child(2){
+        h5 + div {
+          height: 30px;
+          @include range-width(0,400px){
+           display: none;
+          }
+        }
+
+        h5 + div ~ div {
+          @include range-width(0,400px){
+           margin-bottom: 20px;
+          }
+        }
         .Option {
           padding: 7px 0;
           border-bottom: 1px lightgray solid;
@@ -272,11 +211,13 @@ section {
       }
 
       .col-md-4:nth-child(3){
-         div > img {
-           @include range-width(0,400px){
-            width: 100%;
+
+          div > img {
+            @include range-width(0,400px){
+             width: 100%;
+             height: 100%;
+            }
           }
-         }
         .green_black {
           margin-top: 15px;
           width: 50%;
@@ -291,7 +232,7 @@ section {
     }
 
     .FEATURED_WORKS {
-      h6 {
+      h5 {
         @include range-width(400px,1500px){
          font-size: 28px;
         }
