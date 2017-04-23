@@ -20,6 +20,18 @@
         //position
         position: relative;
         bottom: 12vh;
+
+        .card_title {
+          height: 2rem;
+        }
+
+        .card_text {
+          p {
+            height: 106px;
+            display: block;
+            overflow: hidden;
+          }
+        }
     }
 
     .content_unit {
@@ -60,7 +72,8 @@
     ul.why_choose_us_list {
         li {
             border-bottom: 1px solid $light_gray + ($shift_color /3);
-            padding: 14px 0;
+            padding-top: 14px;
+            padding-bottom: 14px;
         }
     }
 

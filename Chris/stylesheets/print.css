@@ -98,31 +98,31 @@ body {
   width: 100%;
 }
 /* line 27, ../sass/partical/navigate.scss */
-.navigate .banner img {
-  opacity: 0;
+.navigate .banner .carousel-item {
+  height: 80vh;
 }
-/* line 30, ../sass/partical/navigate.scss */
+/* line 31, ../sass/partical/navigate.scss */
 .navigate .banner .banner_img1 {
   background-image: url('../images/banner1.jpg?1490260139');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 33, ../sass/partical/navigate.scss */
+/* line 34, ../sass/partical/navigate.scss */
 .navigate .banner .banner_img2 {
   background-image: url('../images/banner2.jpg?1490260139');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 36, ../sass/partical/navigate.scss */
+/* line 37, ../sass/partical/navigate.scss */
 .navigate .banner .banner_img3 {
   background-image: url('../images/banner3.jpg?1490260139');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 40, ../sass/partical/navigate.scss */
+/* line 41, ../sass/partical/navigate.scss */
 .navigate .banner .carousel-control-size {
   font-size: 20pt;
   width: 35px;
@@ -216,7 +216,7 @@ ul.why_choose_us_list {
 }
 /* line 6, ../sass/module/why_choose_us_list.scss */
 ul.why_choose_us_list li {
-  display: block;
+  display: flex;
   border-bottom: 1px solid black;
 }
 
@@ -251,44 +251,55 @@ ul.why_choose_us_list li {
   position: relative;
   bottom: 12vh;
 }
-/* line 25, ../sass/partical/content.scss */
+/* line 24, ../sass/partical/content.scss */
+.content .function_card .card_title {
+  height: 2rem;
+}
+/* line 29, ../sass/partical/content.scss */
+.content .function_card .card_text p {
+  height: 106px;
+  display: block;
+  overflow: hidden;
+}
+/* line 37, ../sass/partical/content.scss */
 .content .content_unit {
   color: #9c9c9c;
 }
-/* line 28, ../sass/partical/content.scss */
+/* line 40, ../sass/partical/content.scss */
 .content .content_unit h2 {
   color: black;
 }
-/* line 32, ../sass/partical/content.scss */
+/* line 44, ../sass/partical/content.scss */
 .content .content_unit .read_more {
   color: #9c9c9c;
 }
-/* line 35, ../sass/partical/content.scss */
+/* line 47, ../sass/partical/content.scss */
 .content .content_unit .read_more:hover {
   color: light_gray;
 }
-/* line 40, ../sass/partical/content.scss */
+/* line 52, ../sass/partical/content.scss */
 .content .content_unit .news_item {
   font-size: 9pt;
 }
-/* line 41, ../sass/partical/content.scss */
+/* line 53, ../sass/partical/content.scss */
 .content .content_unit .news_item > div,
 .content .content_unit .news_item img {
   margin: 5px;
   width: 142px;
 }
-/* line 49, ../sass/partical/content.scss */
+/* line 61, ../sass/partical/content.scss */
 .content .content_unit .news_item > div .news_date {
   color: #FBFBFB;
   background-color: #80b600;
   font-size: 11pt;
 }
-/* line 61, ../sass/partical/content.scss */
+/* line 73, ../sass/partical/content.scss */
 .content ul.why_choose_us_list li {
   border-bottom: 1px solid #e4e4e4;
-  padding: 14px 0;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
-/* line 67, ../sass/partical/content.scss */
+/* line 80, ../sass/partical/content.scss */
 .content .line {
   border-top: solid 1px #cdcdcd;
   border-bottom: none;

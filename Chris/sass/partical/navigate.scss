@@ -24,9 +24,10 @@
     }
 
     .banner {
-        img {
-            opacity: 0;
-        }
+      .carousel-item {
+        height: 80vh;
+      }
+
         .banner_img1{
             @include background_img("banner1.jpg");
         }
