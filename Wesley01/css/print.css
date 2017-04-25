@@ -8,142 +8,233 @@ body {
   background: url("../images/bg.jpg");
 }
 
-/* line 3, ../sass/_header.scss */
+/* line 4, ../sass/_header.scss */
 header {
-  height: 160px;
+  height: 21vh;
+  /* 寬度在$min $max之間 */
 }
-/* line 6, ../sass/_header.scss */
+@media screen and (max-width: 449px) and (min-width: 0px) {
+  /* line 4, ../sass/_header.scss */
+  header {
+    height: 35vh;
+  }
+}
+/* line 10, ../sass/_header.scss */
 header .header_bg {
   background-color: black;
   height: 65%;
   padding-top: 10px;
 }
-/* line 11, ../sass/_header.scss */
+/* line 15, ../sass/_header.scss */
 header .header_bg .header_box {
+  max-width: 87vw;
+  /* 寬度在$min $max之間 */
   width: 100%;
-  max-width: 90%;
   background: url("../images/subbg.gif");
   padding: 2.5% 3% 2.5%;
   z-index: 50;
 }
-/* line 19, ../sass/_header.scss */
+@media screen and (max-width: 449px) and (min-width: 0px) {
+  /* line 15, ../sass/_header.scss */
+  header .header_bg .header_box {
+    max-width: 82vw;
+  }
+}
+/* line 25, ../sass/_header.scss */
 header .header_bg .header_box .row {
   width: 100%;
   margin: 0;
 }
 @media screen and (max-width: 320px) {
-  /* line 23, ../sass/_header.scss */
+  /* line 29, ../sass/_header.scss */
   header .header_bg .header_box .row .logo {
     padding: 2%;
   }
 }
-/* line 27, ../sass/_header.scss */
+/* line 33, ../sass/_header.scss */
 header .header_bg .header_box .row .logo img {
   max-width: 100%;
   padding-bottom: 10px;
 }
-/* line 35, ../sass/_header.scss */
+/* line 41, ../sass/_header.scss */
 header .header_bg .header_box .row .icon_box i {
   padding-left: 4%;
   font-size: 30px;
 }
-/* line 40, ../sass/_header.scss */
+/* line 45, ../sass/_header.scss */
 header .header_bg .header_box .row .icon_box i:hover {
   color: #80b600;
 }
-/* line 45, ../sass/_header.scss */
+/* line 50, ../sass/_header.scss */
 header .header_bg .header_box .row .icon_box .TEL {
   font-size: 17px;
 }
 @media screen and (max-width: 480px) {
-  /* line 45, ../sass/_header.scss */
+  /* line 50, ../sass/_header.scss */
   header .header_bg .header_box .row .icon_box .TEL {
     font-size: 10px;
   }
 }
-/* line 60, ../sass/_header.scss */
+/* line 62, ../sass/_header.scss */
 header .header_box2 {
   height: 40%;
   background: url("../images/bg.jpg");
 }
 
 /* line 5, ../sass/_section.scss */
+#nav_block {
+  padding-top: 40px;
+  width: 100%;
+  max-width: 89vw;
+  /* 寬度在$min $max之間 */
+}
+@media screen and (max-width: 767px) and (min-width: 0) {
+  /* line 5, ../sass/_section.scss */
+  #nav_block {
+    padding-top: 10px;
+  }
+}
+/* line 13, ../sass/_section.scss */
+#nav_block .navbar-toggleable-md {
+  width: 100%;
+  max-width: 88vw;
+}
+/* line 18, ../sass/_section.scss */
+#nav_block #interval {
+  /* 寬度在$min $max之間 */
+}
+@media screen and (max-width: 768px) and (min-width: 0) {
+  /* line 18, ../sass/_section.scss */
+  #nav_block #interval {
+    display: none;
+  }
+}
+/* line 24, ../sass/_section.scss */
+#nav_block #search-1 {
+  width: 100%;
+  max-width: 80%;
+  padding: 0;
+  /* 寬度在$min $max之間 */
+  /* 寬度在$min $max之間 */
+}
+@media screen and (max-width: 1499px) and (min-width: 769px) {
+  /* line 24, ../sass/_section.scss */
+  #nav_block #search-1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 449px) and (min-width: 0px) {
+  /* line 32, ../sass/_section.scss */
+  #nav_block #search-1 form {
+    width: 81%;
+    position: relative;
+  }
+  /* line 37, ../sass/_section.scss */
+  #nav_block #search-1 button {
+    position: absolute;
+    right: 0;
+    top: -10px;
+  }
+}
+
+/* line 46, ../sass/_section.scss */
+#search-2 {
+  /* 寬度在$min $max之間 */
+}
+@media screen and (max-width: 779px) and (min-width: 0) {
+  /* line 46, ../sass/_section.scss */
+  #search-2 {
+    display: none;
+  }
+}
+/* line 51, ../sass/_section.scss */
+#search-2 .form-inline > input {
+  position: relative;
+  width: 100%;
+}
+/* line 56, ../sass/_section.scss */
+#search-2 .form-inline > button {
+  position: absolute;
+  right: 30px;
+}
+
+/* line 62, ../sass/_section.scss */
 section {
   background: url("../images/bg.jpg");
 }
-/* line 38, ../sass/_section.scss */
+/* line 66, ../sass/_section.scss */
 section #carouselExampleControls {
   /* 寬度在$min $max之間 */
   /* 寬度在$min $max之間 */
 }
-@media screen and (max-width: 399px) and (min-width: 0px) {
-  /* line 38, ../sass/_section.scss */
+@media screen and (max-width: 449px) and (min-width: 0px) {
+  /* line 66, ../sass/_section.scss */
   section #carouselExampleControls {
     width: 100%;
     padding: 0;
+    max-width: 82vw;
   }
 }
 @media screen and (max-width: 1499px) and (min-width: 550px) {
-  /* line 38, ../sass/_section.scss */
+  /* line 66, ../sass/_section.scss */
   section #carouselExampleControls {
     width: 100%;
     max-width: 89vw;
   }
 }
-/* line 51, ../sass/_section.scss */
+/* line 79, ../sass/_section.scss */
 section .Content_block {
   width: 88.7%;
   /* 寬度在$min $max之間 */
-  padding: 0 25px 35px;
+  padding: 0 25px 10px;
   background: url("../images/subbg.gif");
-  /* 寬度在$min $max之間 */
 }
-@media screen and (max-width: 399px) and (min-width: 0) {
-  /* line 51, ../sass/_section.scss */
+@media screen and (max-width: 449px) and (min-width: 0) {
+  /* line 79, ../sass/_section.scss */
   section .Content_block {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 399px) and (min-width: 0) {
-  /* line 51, ../sass/_section.scss */
-  section .Content_block {
+    width: 90%;
     padding: 0;
   }
 }
-/* line 61, ../sass/_section.scss */
+/* line 87, ../sass/_section.scss */
 section .Content_block .cards_block {
   padding: 0 15px 0;
   /* 寬度在$min $max之間 */
 }
-@media screen and (max-width: 399px) and (min-width: 0) {
-  /* line 61, ../sass/_section.scss */
+@media screen and (max-width: 449px) and (min-width: 0) {
+  /* line 87, ../sass/_section.scss */
   section .Content_block .cards_block {
     padding: 0;
   }
 }
-/* line 66, ../sass/_section.scss */
-section .Content_block .cards_block .col-md-3 {
+/* line 92, ../sass/_section.scss */
+section .Content_block .cards_block div > div {
+  margin-bottom: 10px;
+}
+/* line 95, ../sass/_section.scss */
+section .Content_block .cards_block #card {
   /* 寬度在$min $max之間 */
 }
 @media screen and (max-width: 399px) and (min-width: 0) {
-  /* line 66, ../sass/_section.scss */
-  section .Content_block .cards_block .col-md-3 {
+  /* line 95, ../sass/_section.scss */
+  section .Content_block .cards_block #card {
     padding-bottom: 10px;
   }
 }
-/* line 71, ../sass/_section.scss */
-section .Content_block .cards_block .col-md-3 h6 {
+/* line 100, ../sass/_section.scss */
+section .Content_block .cards_block #card h6 {
+  font-size: 20px;
   padding-bottom: 20px;
   /* 寬度在$min $max之間 */
 }
-@media screen and (max-width: 399px) and (min-width: 0) {
-  /* line 71, ../sass/_section.scss */
-  section .Content_block .cards_block .col-md-3 h6 {
-    font-size: 15px;
+@media screen and (max-width: 449px) and (min-width: 0) {
+  /* line 100, ../sass/_section.scss */
+  section .Content_block .cards_block #card h6 {
+    font-size: 25px;
   }
 }
-/* line 78, ../sass/_section.scss */
-section .Content_block .cards_block .col-md-3 .cards {
+/* line 108, ../sass/_section.scss */
+section .Content_block .cards_block #card .cards {
   position: relative;
   bottom: 30px;
   /* 寬度在$min $max之間 */
@@ -151,134 +242,144 @@ section .Content_block .cards_block .col-md-3 .cards {
   background-color: #e7e7e7;
   border: 1px white solid;
   box-shadow: 1px 4px 15px #646464;
-  height: 400px;
 }
 @media screen and (max-width: 399px) and (min-width: 0) {
-  /* line 78, ../sass/_section.scss */
-  section .Content_block .cards_block .col-md-3 .cards {
+  /* line 108, ../sass/_section.scss */
+  section .Content_block .cards_block #card .cards {
     bottom: 15px;
   }
 }
-/* line 90, ../sass/_section.scss */
-section .Content_block .cards_block .col-md-3 .cards:hover {
+/* line 119, ../sass/_section.scss */
+section .Content_block .cards_block #card .cards:hover {
   background-color: rgba(100, 100, 100, 0.4);
   border: 1px gray solid;
 }
-/* line 93, ../sass/_section.scss */
-section .Content_block .cards_block .col-md-3 .cards:hover .more {
+/* line 122, ../sass/_section.scss */
+section .Content_block .cards_block #card .cards:hover #more {
   background-color: #646464;
 }
-/* line 98, ../sass/_section.scss */
-section .Content_block .cards_block .col-md-3 .cards p {
+/* line 127, ../sass/_section.scss */
+section .Content_block .cards_block #card .cards span {
   font-size: 13px;
+  height: 30%;
+  margin-bottom: 30px;
 }
-/* line 104, ../sass/_section.scss */
-section .Content_block .cards_block .col-md-3 .cards .more {
+/* line 133, ../sass/_section.scss */
+section .Content_block .cards_block #card .cards span + a {
+  text-decoration: none;
+  color: gray;
+}
+/* line 138, ../sass/_section.scss */
+section .Content_block .cards_block #card .cards #more {
   font-size: 17px;
   padding: 5px 10px;
   background-color: #cdcdcd;
   /* 寬度在$min $max之間 */
 }
 @media screen and (max-width: 399px) and (min-width: 0) {
-  /* line 104, ../sass/_section.scss */
-  section .Content_block .cards_block .col-md-3 .cards .more {
+  /* line 138, ../sass/_section.scss */
+  section .Content_block .cards_block #card .cards #more {
     position: relative;
     bottom: 0px;
   }
 }
-/* line 112, ../sass/_section.scss */
-section .Content_block .cards_block .col-md-3 .cards .more:hover {
+/* line 146, ../sass/_section.scss */
+section .Content_block .cards_block #card .cards #more:hover {
   background-color: #393939;
   color: white;
 }
-/* line 122, ../sass/_section.scss */
+/* line 155, ../sass/_section.scss */
 section .Content_block .Introduce_block {
-  margin: 80px 0 80px;
+  margin: 30px 0 30px;
   font-size: 10px;
   /* 寬度在$min $max之間 */
 }
 @media screen and (max-width: 399px) and (min-width: 0) {
-  /* line 122, ../sass/_section.scss */
+  /* line 155, ../sass/_section.scss */
   section .Content_block .Introduce_block {
     margin: 25px 0 25px;
   }
 }
-/* line 133, ../sass/_section.scss */
-section .Content_block .Introduce_block .col-md-4:nth-child(1) h5 + div {
+/* line 161, ../sass/_section.scss */
+section .Content_block .Introduce_block > div {
+  padding-bottom: 40px;
+}
+/* line 165, ../sass/_section.scss */
+section .Content_block .Introduce_block .I_block1 h5 + div {
   height: 30px;
   /* 寬度在$min $max之間 */
 }
 @media screen and (max-width: 399px) and (min-width: 0) {
-  /* line 133, ../sass/_section.scss */
-  section .Content_block .Introduce_block .col-md-4:nth-child(1) h5 + div {
+  /* line 165, ../sass/_section.scss */
+  section .Content_block .Introduce_block .I_block1 h5 + div {
     display: none;
   }
 }
-/* line 140, ../sass/_section.scss */
-section .Content_block .Introduce_block .col-md-4:nth-child(1) figure img {
+/* line 172, ../sass/_section.scss */
+section .Content_block .Introduce_block .I_block1 figure img {
   width: 100%;
   padding-bottom: 30px;
 }
-/* line 144, ../sass/_section.scss */
-section .Content_block .Introduce_block .col-md-4:nth-child(1) figure a {
+/* line 176, ../sass/_section.scss */
+section .Content_block .Introduce_block .I_block1 figure a {
   text-decoration: none;
 }
-/* line 151, ../sass/_section.scss */
-section .Content_block .Introduce_block .col-md-4:nth-child(2) h5 + div {
+/* line 183, ../sass/_section.scss */
+section .Content_block .Introduce_block .I_block2 h5 + div {
   height: 30px;
   /* 寬度在$min $max之間 */
 }
 @media screen and (max-width: 399px) and (min-width: 0) {
-  /* line 151, ../sass/_section.scss */
-  section .Content_block .Introduce_block .col-md-4:nth-child(2) h5 + div {
+  /* line 183, ../sass/_section.scss */
+  section .Content_block .Introduce_block .I_block2 h5 + div {
     display: none;
   }
 }
-/* line 158, ../sass/_section.scss */
-section .Content_block .Introduce_block .col-md-4:nth-child(2) h5 + div ~ div {
+/* line 190, ../sass/_section.scss */
+section .Content_block .Introduce_block .I_block2 h5 + div ~ div {
   /* 寬度在$min $max之間 */
 }
 @media screen and (max-width: 399px) and (min-width: 0) {
-  /* line 158, ../sass/_section.scss */
-  section .Content_block .Introduce_block .col-md-4:nth-child(2) h5 + div ~ div {
+  /* line 190, ../sass/_section.scss */
+  section .Content_block .Introduce_block .I_block2 h5 + div ~ div {
     margin-bottom: 20px;
   }
 }
-/* line 163, ../sass/_section.scss */
-section .Content_block .Introduce_block .col-md-4:nth-child(2) .Option {
+/* line 196, ../sass/_section.scss */
+section .Content_block .Introduce_block .I_block2 .Option {
   padding: 7px 0;
   border-bottom: 1px lightgray solid;
 }
-/* line 167, ../sass/_section.scss */
-section .Content_block .Introduce_block .col-md-4:nth-child(2) .Option:hover #Roun {
+/* line 200, ../sass/_section.scss */
+section .Content_block .Introduce_block .I_block2 .Option:hover #Roun {
   background-color: black;
 }
-/* line 170, ../sass/_section.scss */
-section .Content_block .Introduce_block .col-md-4:nth-child(2) .Option:hover #Roun ~ span {
+/* line 203, ../sass/_section.scss */
+section .Content_block .Introduce_block .I_block2 .Option:hover #Roun ~ span {
   color: black;
 }
-/* line 176, ../sass/_section.scss */
-section .Content_block .Introduce_block .col-md-4:nth-child(2) .Option:hover #Option_text {
+/* line 206, ../sass/_section.scss */
+section .Content_block .Introduce_block .I_block2 .Option:hover #Option_text {
   display: block;
 }
-/* line 181, ../sass/_section.scss */
-section .Content_block .Introduce_block .col-md-4:nth-child(2) .Option #Roun {
+/* line 211, ../sass/_section.scss */
+section .Content_block .Introduce_block .I_block2 .Option #Roun {
   width: 50px;
   height: 50px;
   border-radius: 99em;
   background-color: lightgray;
 }
 /* line 13, ../sass/modules/_Roun.scss */
-section .Content_block .Introduce_block .col-md-4:nth-child(2) .Option #Roun div {
+section .Content_block .Introduce_block .I_block2 .Option #Roun div {
   border: 1px red solid;
 }
-/* line 185, ../sass/_section.scss */
-section .Content_block .Introduce_block .col-md-4:nth-child(2) .Option #Roun i {
+/* line 214, ../sass/_section.scss */
+section .Content_block .Introduce_block .I_block2 .Option #Roun i {
   color: white;
   font-size: 30px;
 }
-/* line 191, ../sass/_section.scss */
-section .Content_block .Introduce_block .col-md-4:nth-child(2) .Option #Roun ~ span {
+/* line 220, ../sass/_section.scss */
+section .Content_block .Introduce_block .I_block2 .Option #Roun ~ span {
   width: 70%;
   font-size: 15px;
   padding-left: 10px;
@@ -287,61 +388,73 @@ section .Content_block .Introduce_block .col-md-4:nth-child(2) .Option #Roun ~ s
   /* 寬度在$min $max之間 */
 }
 @media screen and (max-width: 399px) and (min-width: 0) {
-  /* line 191, ../sass/_section.scss */
-  section .Content_block .Introduce_block .col-md-4:nth-child(2) .Option #Roun ~ span {
+  /* line 220, ../sass/_section.scss */
+  section .Content_block .Introduce_block .I_block2 .Option #Roun ~ span {
     color: gray;
   }
 }
-/* line 204, ../sass/_section.scss */
-section .Content_block .Introduce_block .col-md-4:nth-child(2) .Option #Option_text {
+/* line 231, ../sass/_section.scss */
+section .Content_block .Introduce_block .I_block2 .Option #Option_text {
   display: none;
   padding: 0 5px 0 60px;
 }
-/* line 215, ../sass/_section.scss */
-section .Content_block .Introduce_block .col-md-4:nth-child(3) div > img {
+/* line 239, ../sass/_section.scss */
+section .Content_block .Introduce_block .I_block3 div > img {
+  /* 寬度在$min $max之間 */
   /* 寬度在$min $max之間 */
 }
-@media screen and (max-width: 399px) and (min-width: 0) {
-  /* line 215, ../sass/_section.scss */
-  section .Content_block .Introduce_block .col-md-4:nth-child(3) div > img {
+@media screen and (max-width: 1499px) and (min-width: 1050) {
+  /* line 239, ../sass/_section.scss */
+  section .Content_block .Introduce_block .I_block3 div > img {
     width: 100%;
-    height: 100%;
+    height: 80%;
   }
 }
-/* line 221, ../sass/_section.scss */
-section .Content_block .Introduce_block .col-md-4:nth-child(3) .green_black {
+@media screen and (max-width: 1049px) and (min-width: 0) {
+  /* line 239, ../sass/_section.scss */
+  section .Content_block .Introduce_block .I_block3 div > img {
+    width: 100%;
+    height: 90%;
+  }
+}
+/* line 252, ../sass/_section.scss */
+section .Content_block .Introduce_block .I_block3 .green_black {
   margin-top: 15px;
-  width: 50%;
+  width: 60%;
   padding: 5px 8px;
   margin-bottom: 15px;
   background-color: #80b600;
 }
-/* line 228, ../sass/_section.scss */
-section .Content_block .Introduce_block .col-md-4:nth-child(3) p a {
+/* line 259, ../sass/_section.scss */
+section .Content_block .Introduce_block .I_block3 p a {
   text-decoration: none;
 }
-/* line 234, ../sass/_section.scss */
+/* line 265, ../sass/_section.scss */
 section .Content_block .FEATURED_WORKS {
-  padding: 0 25px;
+  padding: 0 25px 10px;
 }
-/* line 235, ../sass/_section.scss */
+/* line 266, ../sass/_section.scss */
 section .Content_block .FEATURED_WORKS h5 {
   /* 寬度在$min $max之間 */
 }
 @media screen and (max-width: 1499px) and (min-width: 400px) {
-  /* line 235, ../sass/_section.scss */
+  /* line 266, ../sass/_section.scss */
   section .Content_block .FEATURED_WORKS h5 {
     font-size: 28px;
   }
 }
-/* line 241, ../sass/_section.scss */
-section .Content_block .FEATURED_WORKS .col-md-3 img {
+/* line 273, ../sass/_section.scss */
+section .Content_block .FEATURED_WORKS .row > div + div {
+  padding-bottom: 10px;
+}
+/* line 276, ../sass/_section.scss */
+section .Content_block .FEATURED_WORKS .row div > img {
   width: 100%;
   /* 寬度在$min $max之間 */
 }
 @media screen and (max-width: 399px) and (min-width: 0) {
-  /* line 241, ../sass/_section.scss */
-  section .Content_block .FEATURED_WORKS .col-md-3 img {
+  /* line 276, ../sass/_section.scss */
+  section .Content_block .FEATURED_WORKS .row div > img {
     margin-bottom: 10px;
   }
 }
@@ -353,47 +466,57 @@ section .Content_block .FEATURED_WORKS .col-md-3 img {
   padding-top: 70px;
   background: url("../images/bg.jpg");
 }
-/* line 11, ../sass/_footer.scss */
-#footer .footer_Card_bar_bg {
-  height: 80%;
-}
-/* line 17, ../sass/_footer.scss */
+/* line 10, ../sass/_footer.scss */
 #footer .footer_Card_bar {
   position: relative;
   z-index: 1;
   width: 100%;
   max-width: 87%;
+  /* 寬度在$min $max之間 */
   background: url("../images/subbg.gif");
 }
-/* line 24, ../sass/_footer.scss */
-#footer .footer_Card_bar .col-md-3 {
+@media screen and (max-width: 399px) and (min-width: 0) {
+  /* line 10, ../sass/_footer.scss */
+  #footer .footer_Card_bar {
+    max-width: 83%;
+  }
+}
+/* line 20, ../sass/_footer.scss */
+#footer .footer_Card_bar #cards {
+  padding: 20px;
+}
+/* line 23, ../sass/_footer.scss */
+#footer .footer_Card_bar #cards h5 ~ div {
+  font-size: 13px;
+}
+/* line 26, ../sass/_footer.scss */
+#footer .footer_Card_bar #cards .col-md-6 {
+  /* 寬度在$min $max之間 */
   /* 寬度在$min $max之間 */
 }
 @media screen and (max-width: 399px) and (min-width: 0) {
-  /* line 24, ../sass/_footer.scss */
-  #footer .footer_Card_bar .col-md-3 {
+  /* line 26, ../sass/_footer.scss */
+  #footer .footer_Card_bar #cards .col-md-6 {
     padding-right: 0;
     padding-left: 0;
   }
 }
-/* line 37, ../sass/_footer.scss */
-#footer .footer_Card_bar #cards {
-  padding: 20px;
+@media screen and (max-width: 768px) and (min-width: 0) {
+  /* line 26, ../sass/_footer.scss */
+  #footer .footer_Card_bar #cards .col-md-6 {
+    padding-bottom: 30px;
+  }
 }
-/* line 39, ../sass/_footer.scss */
-#footer .footer_Card_bar #cards h6 ~ div {
-  font-size: 13px;
-}
-/* line 44, ../sass/_footer.scss */
-#footer .footer_Card_bar #cards .col-md-3:nth-child(2) .dialog_box {
+/* line 38, ../sass/_footer.scss */
+#footer .footer_Card_bar #cards .col-md-6:nth-child(2) .dialog_box {
   position: relative;
   background-color: #e5e5e5;
   padding: 20px;
   margin-bottom: 30px;
   font-size: 13px;
 }
-/* line 51, ../sass/_footer.scss */
-#footer .footer_Card_bar #cards .col-md-3:nth-child(2) .dialog_box:before {
+/* line 45, ../sass/_footer.scss */
+#footer .footer_Card_bar #cards .col-md-6:nth-child(2) .dialog_box:before {
   position: absolute;
   content: "";
   bottom: -20px;
@@ -402,19 +525,19 @@ section .Content_block .FEATURED_WORKS .col-md-3 img {
   border-style: solid;
   border-color: #E5E5E5 transparent transparent;
 }
-/* line 61, ../sass/_footer.scss */
-#footer .footer_Card_bar #cards .col-md-3:nth-child(2) .avatar {
+/* line 55, ../sass/_footer.scss */
+#footer .footer_Card_bar #cards .col-md-6:nth-child(2) .avatar {
   margin-right: 30px;
   float: left;
 }
-/* line 67, ../sass/_footer.scss */
-#footer .footer_Card_bar #cards .col-md-3:nth-child(2) .avatar + span a {
+/* line 61, ../sass/_footer.scss */
+#footer .footer_Card_bar #cards .col-md-6:nth-child(2) .avatar + span a {
   color: #80b600;
   text-decoration: none;
   font-style: oblique;
 }
-/* line 76, ../sass/_footer.scss */
-#footer .footer_Card_bar #cards #input {
+/* line 71, ../sass/_footer.scss */
+#footer .footer_Card_bar #cards .col-md-6:nth-child(3) #input {
   padding-left: 5px;
   border: 0;
   border-radius: 3px;
@@ -422,8 +545,8 @@ section .Content_block .FEATURED_WORKS .col-md-3 img {
   width: 100%;
   background-color: #e6e6e6;
 }
-/* line 84, ../sass/_footer.scss */
-#footer .footer_Card_bar #cards #textarea {
+/* line 80, ../sass/_footer.scss */
+#footer .footer_Card_bar #cards .col-md-6:nth-child(3) #textarea {
   padding-left: 5px;
   border: 0;
   resize: none;
@@ -434,13 +557,11 @@ section .Content_block .FEATURED_WORKS .col-md-3 img {
   background-color: #e6e6e6;
   color: #75758a;
 }
-/* line 95, ../sass/_footer.scss */
-#footer .footer_Card_bar #cards #textarea + div {
-  width: 100%;
-}
-/* line 102, ../sass/_footer.scss */
-#footer .footer_Card_bar #cards #GET_b1 {
+/* line 92, ../sass/_footer.scss */
+#footer .footer_Card_bar #cards .col-md-6:nth-child(3) #GET_b1 {
   float: left;
+  width: 60%;
+  /* 寬度在$min $max之間 */
   padding: 8px;
   color: white;
   font-size: 18px;
@@ -450,16 +571,22 @@ section .Content_block .FEATURED_WORKS .col-md-3 img {
   border: 0;
   /* 寬度在$min $max之間 */
 }
-/* line 113, ../sass/_footer.scss */
-#footer .footer_Card_bar #cards #GET_b1:hover {
-  padding: 12px;
+@media screen and (max-width: 1214px) and (min-width: 991px) {
+  /* line 92, ../sass/_footer.scss */
+  #footer .footer_Card_bar #cards .col-md-6:nth-child(3) #GET_b1 {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+/* line 106, ../sass/_footer.scss */
+#footer .footer_Card_bar #cards .col-md-6:nth-child(3) #GET_b1:hover {
   border-radius: 5px;
   position: relative;
   top: 0px;
 }
 @media screen and (max-width: 399px) and (min-width: 0) {
-  /* line 102, ../sass/_footer.scss */
-  #footer .footer_Card_bar #cards #GET_b1 {
+  /* line 92, ../sass/_footer.scss */
+  #footer .footer_Card_bar #cards .col-md-6:nth-child(3) #GET_b1 {
     float: left;
     padding: 3px;
     color: white;
@@ -469,17 +596,19 @@ section .Content_block .FEATURED_WORKS .col-md-3 img {
     cursor: pointer;
     border: 0;
   }
-  /* line 128, ../sass/_footer.scss */
-  #footer .footer_Card_bar #cards #GET_b1:hover {
+  /* line 120, ../sass/_footer.scss */
+  #footer .footer_Card_bar #cards .col-md-6:nth-child(3) #GET_b1:hover {
     padding: 5px;
     border-radius: 5px;
     position: relative;
     top: 0px;
   }
 }
-/* line 137, ../sass/_footer.scss */
-#footer .footer_Card_bar #cards #GET_b2 {
+/* line 129, ../sass/_footer.scss */
+#footer .footer_Card_bar #cards .col-md-6:nth-child(3) #GET_b2 {
   float: right;
+  width: 30%;
+  /* 寬度在$min $max之間 */
   padding: 8px;
   color: white;
   font-size: 18px;
@@ -489,16 +618,23 @@ section .Content_block .FEATURED_WORKS .col-md-3 img {
   border: 0;
   /* 寬度在$min $max之間 */
 }
-/* line 147, ../sass/_footer.scss */
-#footer .footer_Card_bar #cards #GET_b2:hover {
+@media screen and (max-width: 1214px) and (min-width: 991px) {
+  /* line 129, ../sass/_footer.scss */
+  #footer .footer_Card_bar #cards .col-md-6:nth-child(3) #GET_b2 {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
+/* line 144, ../sass/_footer.scss */
+#footer .footer_Card_bar #cards .col-md-6:nth-child(3) #GET_b2:hover {
   padding: 12px;
   border-radius: 5px;
   position: relative;
   top: 0px;
 }
 @media screen and (max-width: 399px) and (min-width: 0) {
-  /* line 137, ../sass/_footer.scss */
-  #footer .footer_Card_bar #cards #GET_b2 {
+  /* line 129, ../sass/_footer.scss */
+  #footer .footer_Card_bar #cards .col-md-6:nth-child(3) #GET_b2 {
     float: right;
     padding: 3px;
     color: white;
@@ -508,19 +644,26 @@ section .Content_block .FEATURED_WORKS .col-md-3 img {
     cursor: pointer;
     border: 0;
   }
-  /* line 162, ../sass/_footer.scss */
-  #footer .footer_Card_bar #cards #GET_b2:hover {
+  /* line 159, ../sass/_footer.scss */
+  #footer .footer_Card_bar #cards .col-md-6:nth-child(3) #GET_b2:hover {
     padding: 5px;
     border-radius: 5px;
     position: relative;
     top: 0px;
   }
 }
-/* line 172, ../sass/_footer.scss */
+/* line 170, ../sass/_footer.scss */
 #footer .footer_Card_bar #cards #Flickr {
   padding-right: 0;
+  /* 寬度在$min $max之間 */
 }
-/* line 176, ../sass/_footer.scss */
+@media screen and (max-width: 449px) and (min-width: 0) {
+  /* line 170, ../sass/_footer.scss */
+  #footer .footer_Card_bar #cards #Flickr {
+    padding-bottom: 0px;
+  }
+}
+/* line 175, ../sass/_footer.scss */
 #footer .footer_Card_bar #cards #Flickr a {
   position: relative;
   overflow: hidden;
@@ -529,15 +672,11 @@ section .Content_block .FEATURED_WORKS .col-md-3 img {
   text-decoration: none;
 }
 /* line 182, ../sass/_footer.scss */
-#footer .footer_Card_bar #cards #Flickr a:nth-child(n + 5) {
-  margin-top: 6px;
-}
-/* line 186, ../sass/_footer.scss */
 #footer .footer_Card_bar #cards #Flickr a img {
   width: 100%;
   height: 100;
 }
-/* line 191, ../sass/_footer.scss */
+/* line 187, ../sass/_footer.scss */
 #footer .footer_Card_bar #cards #Flickr a:hover .cover {
   position: absolute;
   opacity: 1;
@@ -548,7 +687,7 @@ section .Content_block .FEATURED_WORKS .col-md-3 img {
   background: rgba(0, 0, 0, 0.5);
   transition: opacity ease-out 1.5s;
 }
-/* line 209, ../sass/_footer.scss */
+/* line 203, ../sass/_footer.scss */
 #footer .footer_block1 {
   position: absolute;
   z-index: -1;
@@ -557,7 +696,7 @@ section .Content_block .FEATURED_WORKS .col-md-3 img {
   height: 50%;
   background-color: black;
 }
-/* line 221, ../sass/_footer.scss */
+/* line 212, ../sass/_footer.scss */
 #footer .footer_block2 {
   max-width: 90%;
   width: 100%;
@@ -565,27 +704,55 @@ section .Content_block .FEATURED_WORKS .col-md-3 img {
   color: gray;
   line-height: 50px;
   font-size: 13px;
+  /* 寬度在$min $max之間 */
+  /* 寬度在$min $max之間 */
 }
-/* line 230, ../sass/_footer.scss */
-#footer .footer_block2 .row ~ span {
-  padding: 0;
+@media screen and (max-width: 768px) and (min-width: 0) {
+  /* line 212, ../sass/_footer.scss */
+  #footer .footer_block2 {
+    line-height: 20px;
+  }
 }
-/* line 239, ../sass/_footer.scss */
+@media screen and (max-width: 399px) and (min-width: 0) {
+  /* line 212, ../sass/_footer.scss */
+  #footer .footer_block2 {
+    padding: 0;
+  }
+}
+/* line 225, ../sass/_footer.scss */
+#footer .footer_block2 .AA {
+  /* 寬度在$min $max之間 */
+}
+@media screen and (max-width: 768px) and (min-width: 0) {
+  /* line 225, ../sass/_footer.scss */
+  #footer .footer_block2 .AA {
+    height: 1px;
+  }
+}
+/* line 231, ../sass/_footer.scss */
+#footer .footer_block2 .row {
+  padding-bottom: 15px;
+}
+/* line 236, ../sass/_footer.scss */
+#footer .footer_block2 span:nth-child(odd) {
+  padding-bottom: 10px;
+}
+/* line 237, ../sass/_footer.scss */
 #footer .footer_block2 span:nth-child(odd) a {
   color: #80b600;
   text-decoration: none;
 }
-/* line 242, ../sass/_footer.scss */
+/* line 240, ../sass/_footer.scss */
 #footer .footer_block2 span:nth-child(odd) a:hover {
   color: #80ff00;
 }
-/* line 249, ../sass/_footer.scss */
+/* line 248, ../sass/_footer.scss */
 #footer .footer_block2 span:nth-child(even) a {
   padding: 0 10px;
   color: gray;
   text-decoration: none;
 }
-/* line 253, ../sass/_footer.scss */
+/* line 252, ../sass/_footer.scss */
 #footer .footer_block2 span:nth-child(even) a:hover {
   color: #80ff00;
 }

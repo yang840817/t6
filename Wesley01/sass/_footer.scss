@@ -7,259 +7,255 @@
   padding-top: 70px;
   background: url('../images/bg.jpg');
 
-
-    .footer_Card_bar_bg {
-      height: 80%;
-
+  .footer_Card_bar{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 87%;
+    @include range-width(0,400px){
+      max-width: 83%;
     }
+    background: url('../images/subbg.gif');
 
+    #cards {
+      padding: 20px;
 
-    .footer_Card_bar{
-      position: relative;
-      z-index: 1;
-      width: 100%;
-      max-width: 87%;
-      background: url('../images/subbg.gif');
-
-      .col-md-3 {
-         @include range-width(0,400px){
-           padding-right: 0;
-           padding-left: 0;
-         }
-       }
-      // &:before {
-      //   content: "51515151515";
-      //   width: 100%;
-      //   height: 200px;
-      //   z-index: -1;
-      //   background-color: $Main-color-1;
-      // }
-      #cards {
-       padding: 20px;
-         h6 ~ div {
-           font-size: 13px;
-         }
-
-    .col-md-3:nth-child(2){
-      .dialog_box {
-       position: relative;
-       background-color: rgb(229, 229, 229);
-       padding: 20px;
-       margin-bottom: 30px;
-       font-size: 13px;
-      }
-      .dialog_box:before {
-        position: absolute;
-        content: "";
-        bottom: -20px;
-        left: 0;
-        border-width: 25px 25px 0 0;
-        border-style: solid;
-        border-color: #E5E5E5 transparent transparent;
-      }
-
-      .avatar {
-        margin-right: 30px;
-        float: left;
-      }
-
-      .avatar + span {
-        a{
-          color: rgb(128, 182, 0);
-          text-decoration:none;
-          font-style:oblique;
+      h5 ~ div {
+          font-size: 13px;
         }
-      }
-    }
+      .col-md-6 {
+          @include range-width(0,400px){
+            padding-right: 0;
+            padding-left: 0;
+          }
+          @include range-width(0,769px){
+            padding-bottom: 30px;
+          }
+        }
 
-
-     #input {
-       padding-left: 5px;
-       border: 0;
-       border-radius: 3px;
-       margin-bottom: 10px;
-       width: 100%;
-       background-color: rgb(230, 230, 230);
-     }
-       #textarea {
-         padding-left: 5px;
-         border: 0;
-         resize: none;
-         height: 100px;
-         max-height: 150px;
-         width: 100%;
-         overflow:scroll;
-         background-color: rgb(230, 230, 230);
-         color: rgb(117, 117, 138);
-       }
-       #textarea + div {
-         width: 100%;
-       }
-  //  #from {
-    //  position: relative;
-    //  bottom: -15px;
-
-      #GET_b1 {
-      //  width: 40%;
-      //  height: 35px;
-      float: left;
-      padding: 8px;
-      color: white;
-      font-size: 18px;
-      background-color: black;
-      text-decoration: none;
-      cursor: pointer;
-      border: 0;
-       &:hover {
-        padding:12px;
-        border-radius: 5px;
-        position: relative;
-        top:0px;
-       }
-       @include range-width(0,400px){
-         float: left;
-         padding: 3px;
-         color: white;
-         font-size: 18px;
-         background-color: black;
-         text-decoration: none;
-         cursor: pointer;
-         border: 0;
-         &:hover {
-           padding:5px;
-           border-radius: 5px;
+  // -----------2-------------
+      .col-md-6:nth-child(2){
+        .dialog_box {
            position: relative;
-           top:0px;
-         }
-       }
+           background-color: rgb(229, 229, 229);
+           padding: 20px;
+           margin-bottom: 30px;
+           font-size: 13px;
+          }
+        .dialog_box:before {
+            position: absolute;
+            content: "";
+            bottom: -20px;
+            left: 0;
+            border-width: 25px 25px 0 0;
+            border-style: solid;
+            border-color: #E5E5E5 transparent transparent;
+          }
+
+        .avatar {
+            margin-right: 30px;
+            float: left;
+          }
+
+        .avatar + span {
+            a{
+              color: rgb(128, 182, 0);
+              text-decoration:none;
+              font-style:oblique;
+            }
+          }
       }
 
-      #GET_b2 {
-        float: right;
-        padding: 8px;
-        color: white;
-        font-size: 18px;
-        background-color: rgb(128, 182, 0);
-        text-decoration: none;
-        cursor: pointer;
-        border:0;
-
-        &:hover {
-          padding:12px;
-          border-radius: 5px;
-          position: relative;
-          top:0px;
+  // -----------3-------------
+      .col-md-6:nth-child(3){
+        #input {
+          padding-left: 5px;
+          border: 0;
+          border-radius: 3px;
+          margin-bottom: 10px;
+          width: 100%;
+          background-color: rgb(230, 230, 230);
         }
-        @include range-width(0,400px){
+
+        #textarea {
+          padding-left: 5px;
+          border: 0;
+          resize: none;
+          height: 100px;
+          max-height: 150px;
+          width: 100%;
+          overflow:scroll;
+          background-color: rgb(230, 230, 230);
+          color: rgb(117, 117, 138);
+        }
+
+        #GET_b1 {
+          float: left;
+          width: 60%;
+          @include range-width(991px,1215px){
+            width: 100%;
+            margin-bottom: 5px;
+          }
+          padding: 8px;
+          color: white;
+          font-size: 18px;
+          background-color: black;
+          text-decoration: none;
+          cursor: pointer;
+          border: 0;
+          &:hover {
+            border-radius: 5px;
+            position: relative;
+            top:0px;
+          }
+          @include range-width(0,400px){
+            float: left;
+            padding: 3px;
+            color: white;
+            font-size: 18px;
+            background-color: black;
+            text-decoration: none;
+            cursor: pointer;
+            border: 0;
+            &:hover {
+              padding:5px;
+              border-radius: 5px;
+              position: relative;
+              top:0px;
+            }
+          }
+        }
+
+        #GET_b2 {
           float: right;
-          padding: 3px;
+          width: 30%;
+          @include range-width(991px,1215px){
+            width: 100%;
+            margin-top: 5px;
+          }
+          padding: 8px;
           color: white;
           font-size: 18px;
           background-color: rgb(128, 182, 0);
           text-decoration: none;
           cursor: pointer;
           border:0;
+
           &:hover {
-            padding:5px;
+            padding:12px;
             border-radius: 5px;
             position: relative;
             top:0px;
           }
+          @include range-width(0,400px){
+            float: right;
+            padding: 3px;
+            color: white;
+            font-size: 18px;
+            background-color: rgb(128, 182, 0);
+            text-decoration: none;
+            cursor: pointer;
+            border:0;
+            &:hover {
+              padding:5px;
+              border-radius: 5px;
+              position: relative;
+              top:0px;
+            }
         }
       }
-
-
-     #Flickr {
-      //  padding: 0;
-      padding-right: 0;
-
-       a {
-         position: relative;
-         overflow: hidden;
-         display: inline-block;
-         width: calc(100% / 4.3);
-         text-decoration: none;
-         &:nth-child(n + 5){
-           margin-top: 6px;
-         }
-
-         img {
-           width: 100%;
-           height: 100;
-         }
-
-         &:hover .cover {
-           position: absolute;
-           opacity: 1;
-           left: 0;
-           top: 0;
-           width: 100%;
-           height: 100%;
-           background: rgba(0,0,0,0.5);
-           transition: opacity ease-out 1.5s;
-         }
-       }
-     }
-   }
-
-
-
     }
 
-    .footer_block1 {
-      // z-index: -10;
-      // height: 56%;
-      position: absolute;
-      z-index: -1;
-      width: 100%;
-      bottom: -100px;
-      height: 50%;
-      background-color: $Main-color-1;
+    // -----------4-------------
+      #Flickr {
+          padding-right: 0;
+          @include range-width(0,450px){
+            padding-bottom: 0px;
+          }
+          a {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            width: calc(100% / 4.3);
+            text-decoration: none;
 
+            img {
+              width: 100%;
+              height: 100;
+            }
 
+            &:hover .cover {
+              position: absolute;
+              opacity: 1;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              background: rgba(0,0,0,0.5);
+              transition: opacity ease-out 1.5s;
+            }
+          }
+        }
     }
-    .footer_block2 {
+
+  }
+// ------------------------
+  .footer_block1 {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    bottom: -100px;
+    height: 50%;
+    background-color: $Main-color-1;
+  }
+
+  .footer_block2 {
       max-width: 90%;
       width: 100%;
       background-color: $Main-color-1;
       color: gray;
       line-height: 50px;
       font-size: 13px;
-      // height: 65px;
-
-     .row ~ span {
-       padding: 0;
-
-     }
-
-    //  .text-right
-
-
-    span:nth-child(odd) {
-        a {
-          color: rgb(128, 182, 0);
-          text-decoration:none;
-          &:hover {
-            color: rgb(128, 255, 0);
-          }
-        }
+      @include range-width(0,769px){
+        line-height: 20px;
       }
+      @include range-width(0,400px){
+        padding: 0;
+      }
+      .AA {
+        @include range-width(0,769px){
+          height: 1px;
+        }
+
+      }
+      .row {
+        padding-bottom: 15px;
+          // padding: 0;
+        }
+
+      span:nth-child(odd) {
+          a {
+            color: rgb(128, 182, 0);
+            text-decoration:none;
+            &:hover {
+              color: rgb(128, 255, 0);
+            }
+          }
+          padding-bottom: 10px;
+        }
 
       span:nth-child(even) {
-         a {
+          a {
             padding:0 10px;
             color: gray;
             text-decoration:none;
             &:hover {
               color: rgb(128, 255, 0);
             }
-
-         }
-
-      }
-
-
+          }
+        }
 
     }
+
 
 }

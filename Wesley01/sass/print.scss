@@ -3,14 +3,9 @@
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
 
  body {
-   padding: 0;
-  //  height: 1000px;
-  background: url('../images/bg.jpg');
-
-  div {
-    // border: 1px red solid;
-  }
- }
+    padding: 0;
+    background: url('../images/bg.jpg');
+}
 
  @import "modules/_variable.scss";
  @import "_header.scss";
