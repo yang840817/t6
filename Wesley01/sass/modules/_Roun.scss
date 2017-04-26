@@ -1,0 +1,18 @@
+@mixin border-radius($size){
+
+width:$size;
+
+height:$size;
+
+ //正圓形，所以寬與高都設一樣
+
+border-radius:99em;
+
+// background-color:$bg_Colour;
+
+div {
+  border: 1px red solid;
+}
+
+
+}
