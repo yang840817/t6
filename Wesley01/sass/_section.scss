@@ -3,6 +3,11 @@
 @import "modules/_range-width.scss";
 
 #nav_block {
+  nav {
+    @include range-width(1024px, 2000px) {
+      box-shadow:4px -2px 12px rgba(0, 0, 0, 0.4);
+    }
+  }
   padding-top: 40px;
   width: 100%;
   max-width: 89vw;
@@ -11,11 +16,19 @@
   }
 
   .navbar-toggleable-md{
+    @include range-width(0px, 770px) {
+      box-shadow:4px -2px 12px rgba(0, 0, 0, 0.4);
+    }
     width: 100%;
     max-width: 88vw;
   }
 
   #navbarNavDropdown {
+    @include range-width(1025px, 2000px) {
+      li {
+        border-right: 1.5px lightgray solid;
+      }
+    }
     .nav-link:hover {
        color: rgb(128, 182, 0);
      }
