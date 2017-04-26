@@ -4,6 +4,6 @@ ul.why_choose_us_list {
 }
 /* line 6, ../../sass/module/why_choose_us_list.scss */
 ul.why_choose_us_list li {
-  display: block;
+  display: flex;
   border-bottom: 1px solid black;
 }

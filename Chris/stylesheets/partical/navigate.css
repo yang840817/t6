@@ -39,31 +39,31 @@ body {
   width: 100%;
 }
 /* line 27, ../../sass/partical/navigate.scss */
-.navigate .banner img {
-  opacity: 0;
+.navigate .banner .carousel-item {
+  height: 80vh;
 }
-/* line 30, ../../sass/partical/navigate.scss */
+/* line 31, ../../sass/partical/navigate.scss */
 .navigate .banner .banner_img1 {
   background-image: url('../../images/banner1.jpg?1490260139');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 33, ../../sass/partical/navigate.scss */
+/* line 34, ../../sass/partical/navigate.scss */
 .navigate .banner .banner_img2 {
   background-image: url('../../images/banner2.jpg?1490260139');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 36, ../../sass/partical/navigate.scss */
+/* line 37, ../../sass/partical/navigate.scss */
 .navigate .banner .banner_img3 {
   background-image: url('../../images/banner3.jpg?1490260139');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 40, ../../sass/partical/navigate.scss */
+/* line 41, ../../sass/partical/navigate.scss */
 .navigate .banner .carousel-control-size {
   font-size: 20pt;
   width: 35px;

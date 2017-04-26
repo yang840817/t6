@@ -255,7 +255,6 @@ section {
            height: 90%;
           }
         }
-
         .green_black {
           margin-top: 15px;
           width: 60%;
@@ -269,8 +268,8 @@ section {
       }
     }
   // ----------------------------
-    .FEATURED_WORKS {
-      padding: 0 25px 10px;
+.FEATURED_WORKS {
+    padding: 0 25px 10px;
       h5 {
         @include range-width(400px,1500px){
          font-size: 28px;
