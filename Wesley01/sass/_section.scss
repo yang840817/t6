@@ -15,6 +15,15 @@
     max-width: 88vw;
   }
 
+  #navbarNavDropdown {
+    .nav-link:hover {
+       color: rgb(128, 182, 0);
+     }
+
+    .dropdown-menu {
+      background-color: rgb(128, 182, 0);
+    }
+  }
   #interval {
     @include range-width(0, 769px) {
       display: none;
@@ -45,7 +54,7 @@
 
 #search-2 {
     @include range-width(0, 780px) {
-        display: none;
+      display: none;
     }
 
     .form-inline > input {
@@ -87,7 +96,7 @@ section {
     .cards_block {
       padding: 0 15px 0;
       @include range-width(0, 450px) {
-       padding: 0;
+        padding: 0;
       }
       div > div {
         margin-bottom: 10px;
@@ -246,9 +255,7 @@ section {
            height: 90%;
           }
         }
-        .row > .d-flex {
-          // padding-right: 0;
-        }
+
         .green_black {
           margin-top: 15px;
           width: 60%;
@@ -262,13 +269,13 @@ section {
       }
     }
   // ----------------------------
-  .FEATURED_WORKS {
+    .FEATURED_WORKS {
+      padding: 0 25px 10px;
       h5 {
         @include range-width(400px,1500px){
          font-size: 28px;
         }
       }
-      padding: 0 25px 10px;
       .row {
         & > div +div {
           padding-bottom: 10px;
@@ -277,7 +284,7 @@ section {
           width: 100%;
           @include range-width(0,400px){
             margin-bottom: 10px;
-         }
+          }
         }
       }
     }
