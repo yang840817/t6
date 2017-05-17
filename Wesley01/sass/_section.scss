@@ -8,11 +8,14 @@
       box-shadow:4px -2px 12px rgba(0, 0, 0, 0.4);
     }
   }
-  padding-top: 40px;
+  padding-top: 60px;
   width: 100%;
   max-width: 89vw;
   @include range-width(0, 768px) {
-    padding-top: 10px;
+    padding-top: 60px;
+  }
+  @include range-width(0, 350px) {
+  max-width: 91vw;
   }
 
   .navbar-toggleable-md{
