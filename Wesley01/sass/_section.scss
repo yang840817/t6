@@ -11,9 +11,7 @@
   padding-top: 60px;
   width: 100%;
   max-width: 89vw;
-  @include range-width(0, 768px) {
-    padding-top: 60px;
-  }
+  padding-top: 100px;
   @include range-width(0, 350px) {
   max-width: 91vw;
   }
@@ -55,7 +53,7 @@
     }
     @include range-width(0px, 450px) {
       form {
-            width: 81%;
+        width: 81%;
         position: relative;
       }
 
