@@ -84,7 +84,7 @@ $main-color: white;
         }
         .Carousel {
           background-color: white;
-          height: 1500px;
+          height: 1630px;
           img {
             margin-top: 28px;
             width: auto;
@@ -114,8 +114,10 @@ $main-color: white;
             }
           }
           .more_info {
+
             .more_info_left, .more_info_center, .more_info_right {
               padding-top: 40px;
+              padding-bottom: 45px;
             }
             .more_info_left {
               p {
@@ -129,10 +131,24 @@ $main-color: white;
             }
             .more_info_center {
               ul {
+                padding: 0px;
+                list-style-type: none;
                 li {
-                  div {
-                    display: inline;
+                  margin: 10px;
+                  padding-top: 5px;
+                  padding-bottom: 15px;
+                  display: flex;
+                  border-bottom: solid 1px rgb(225, 225, 225);
+                  p, img{
+                    margin: 0px;
+                    align-self: center;
                   }
+                  p {
+                    margin-left: 15px;
+                  }
+                }
+                li:nth-child(1) {
+                  padding-top: 20px;
                 }
               }
             }
@@ -145,6 +161,21 @@ $main-color: white;
               }
               font-size: 13px;
             }
+          }
+          .content_footer {
+            padding-top: 30px;
+            border-top: solid 1px rgb(225, 225, 225);
+            img {
+              margin-top: 15px;
+            }
+          }
+        }
+        .footer {
+          margin-top: 100px;
+          background-color: white;
+          h4 {
+            margin: 25px;
+            margin-left: 0px;
           }
         }
       }
