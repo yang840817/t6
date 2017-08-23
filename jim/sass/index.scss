@@ -1,6 +1,11 @@
 
 $main-color: white;
-
+.clear-padding {
+  padding: 0px;
+}
+#clear-padding-left {
+  padding-left: 0px;
+}
   body {
     background-image: url("../images/bg.jpg");
     header {
@@ -47,7 +52,7 @@ $main-color: white;
           li {
             background-color: white;
             font-size: 15px;
-            padding: 15px;
+            padding: 10px;
             border: 0.5px solid rgb(237, 237, 237);
           }
           .active {
@@ -60,12 +65,12 @@ $main-color: white;
       #search {
         .search_input {
           margin-top: -30px;
-          padding: 14px;
+          padding: 9px;
           box-shadow: -1px -1px 10px rgb(100, 100, 100);
           background-color: rgb(240, 240, 240);
           input {
             height: 40px;
-            width: 240px;
+            width: 265px;
           }
         }
       }
@@ -187,14 +192,135 @@ $main-color: white;
       .info_on_footer_left, .info_on_footer_middle_left, .info_on_footer_middle_right, .info_on_footer_right {
         margin: 30px;
       }
+      .info_on_footer_middle_left {
+        .dialog-bottom {
+          margin-bottom: 40px;
+          width: 250px;
+          height: 100px;
+          background: rgb(197, 197, 197);
+          border-radius: 3px;
+          position: relative;
+          p {
+            padding: 15px;
+          }
+      }
+      .dialog-bottom:after {
+          border-color: rgb(197, 197, 197) transparent transparent rgb(197, 197, 197);
+          border-style: solid solid solid solid;
+
+          /* 設定邊框大小可拼湊出任意形狀的三角形 */
+          border-width: 15px 10px 15px 10px;
+
+          bottom: -29px;
+
+          /* 必須指定，才能顯示內容 */
+          content: "";
+
+          height: 0px;
+          left: 0px;
+
+          /* 必須指定，否則會變梯形 */
+          position: absolute;
+
+          width: 0px;
+      }
+        .info_on_footer_middle_left_content {
+          display: flex;
+          img, p {
+            margin: 0px;
+            align-self: center;
+          }
+          p {
+            margin: 0px;
+            margin-left: 10px;
+          }
+          p:nth-child(1) {
+            color: rgb(116, 176, 0);
+          }
+        }
+      }
+      .info_on_footer_middle_right {
+        input {
+          margin: 3px;
+          font-size: 10px;
+          width: 250px;
+        }
+        .info_on_footer_middle_right_upside {
+          input {
+            padding: 0 5px;
+            background: rgb(224, 224, 224);
+            border-style: none;
+            border-radius: 3px;
+            border: 1px solid rgb(197, 197, 197);
+          }
+          input:nth-child(3) {
+            height: 105px;
+            padding: 0 5px 80px;
+          }
+        }
+        .info_on_footer_middle_right_downside {
+          input {
+            color: white;
+            border-style: none;
+          }
+          input:nth-child(1) {
+            margin-top: 8px;
+            background: black;
+            width: 80px;
+          }
+          input:nth-child(2) {
+            background: rgb(116, 176, 0);
+            width: 50px;
+          }
+        }
+      }
+      .info_on_footer_right {
+        .info_on_footer_right_pic_list_level1, .info_on_footer_right_pic_list_level2, .info_on_footer_right_pic_list_level3 {
+          ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            li {
+              padding: 0px;
+              margin: 1px;
+              padding-bottom: 4px;
+              display: inline-block;
+              width: 46px;
+              img {
+                height: 55px;
+              }
+            }
+          }
+        }
+      }
     }
     footer {
-      h1 {
-        margin: 0px;
-      }
+      color: white;
       position: relative;
       z-index: -1;
-      margin-top: -30px;
+      margin-top: -140px;
+      padding-top: 150px;
       background-color: black;
+      .footer_left {
+        font-size: 13px;
+        padding-left: 65px;
+        p::after {
+          content: "Privacy Policy";
+          color: rgb(116, 176, 0);
+        }
+      }
+      .footer_right {
+        font-size: 13px;
+        padding-right: 65px;
+        text-align: right;
+        ul {
+          li {
+            display: inline-block;
+          }
+          li:nth-child(1) {
+            color: rgb(116, 176, 0);
+          }
+        }
+      }
     }
   }
