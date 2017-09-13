@@ -102,6 +102,10 @@ $main-color: white;
             }
           }
         }
+        .content_right {
+          background-color: rgba(0, 0, 0, 0.7);
+          color: white;
+        }
       }
       .more_info {
         margin-left: 30px;
@@ -234,8 +238,9 @@ $main-color: white;
             margin: 0px;
             margin-left: 10px;
           }
-          p:nth-child(1) {
+          p:nth-child(2) {
             color: rgb(116, 176, 0);
+            font-style: italic;
           }
         }
       }
@@ -295,7 +300,7 @@ $main-color: white;
       }
     }
     footer {
-      color: white;
+      color: #666666;
       position: relative;
       z-index: -1;
       margin-top: -140px;
