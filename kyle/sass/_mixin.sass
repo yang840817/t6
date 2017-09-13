@@ -1,0 +1,19 @@
+$imgname:a
+$nameext:b
+$imgpath:"./images/#{$imgname}.#{$nameext}"
+
+@mixin img($imgname,$nameext)
+	background-image: url("../images/#{$imgname}.#{$nameext}")
+
+%bg-cover
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+
+%icon
+	+img(social,png)
+	height: 30px
+	width: 30px
+	display: inline-block
+	background-repeat: no-repeat
+

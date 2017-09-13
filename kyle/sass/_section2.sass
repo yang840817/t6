@@ -1,0 +1,72 @@
+.section2
+	padding-top: 100px
+	.nav
+		width: 100%
+		height: auto
+		.menuSix
+			background-color: white
+			margin-right: 10px
+			.menuSixBtn
+				border-right: 1px solid #e7e7e7
+
+.section2
+	.search
+		background-color: white
+.section2
+	.banner
+		.carousel-inner
+			.bannerImg1
+				+img(banner1,jpg)
+				@extend %bg-cover
+			.bannerImg2
+				+img(banner2,jpg)
+				@extend %bg-cover
+			.bannerImg3
+				+img(banner3,jpg)
+				@extend %bg-cover
+			.carousel-item
+				height: 500px
+				width: 100%
+.section2
+	.banner
+		.carousel
+			.carousel-control-size
+				.prevAndNextBg
+					font-size: 72px
+					background-color: rgba(black,0.9)
+				
+li
+	border-right: 1px solid #e7e7e7
+
+@media (max-width: 1024px) and (min-width: 769px)
+	.section2
+		padding-top: 70px
+		.banner
+			.carousel-inner
+				.bannerImg1
+					background-position: top
+				.carousel-item
+					height: 370px
+					width: 100%
+
+@media (max-width: 768px) and (min-width: 500px)
+	.section2
+		padding-top: 20px
+		.banner
+			.carousel-inner
+				.bannerImg1
+					background-position: top
+				.carousel-item
+					height: 275px
+					width: 100%
+
+@media (max-width: 499px)
+	.section2
+		padding-top: 70px
+		.banner
+			.carousel-inner
+				.bannerImg1
+					background-position: top
+				.carousel-item
+					height: 150px
+					width: 100%
