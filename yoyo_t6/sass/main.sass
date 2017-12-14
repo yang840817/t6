@@ -1,0 +1,402 @@
+$main-color: #80b600
+$font-color: #393939
+$black: #1d1d1d
+$title-size: 1.4em
+$font-size: 0.88em
+
+@mixin input_style
+	background: #e6e6e6
+	border: 1px solid #dbdbdb
+	border-radius: 4px
+@mixin dombg
+	background-image: url(../image/subbg.gif)
+	background-repeat: repeat
+	box-shadow: 0px 0px 4px #6b6b6b
+@mixin blockcenter($topbottom)
+	margin: #{$topbottom} auto
+	left: 0
+	right: 0
+@mixin inlineblock
+	display: inline-block
+@mixin title
+	font-size: $title-size
+	color: $black
+	font-weight: 700
+	margin: 15px 0
+@mixin triangle
+	content: ""
+	position: absolute
+	width: 0
+	height: 0
+	left: -2px
+	right: 0
+	bottom: -18px
+	border-width: 20px 35px 0px 0px
+	border-style: solid
+	border-color: #e6e6e6 transparent transparent transparent 	
+body 
+	background-image: url(../image/bg.jpg)
+
+
+#blackdom, #blackdom2
+	background: $black
+	width: 100%
+	position: absolute
+	height: 98px
+	z-index: 1
+#blackdom2
+	height: 230px
+	margin-top: -160px
+	display: flex
+	justify-content: center
+.container
+	width: 85%
+	position: relative
+	top: 8px
+	z-index: 2
+	+blockcenter(0)
+.topbar
+	+dombg
+	padding: 40px 40px 35px 50px
+	display: flex
+	justify-content: space-between
+	img
+		width: 100%
+.social-icon
+	text-align: right
+.icon
+	display: inline-block
+	width: 27px
+	height: 27px
+	margin: 10px 4px
+	background: url(../image/social.png)
+	transition: all 0.3s
+.f-icon
+	&:hover
+		background-position: 0px 27px 
+.t-icon
+	background-position: 140px 0px
+	&:hover
+		background-position: 140px 27px 
+.d-icon
+	background-position: 103px 0px
+	&:hover
+		background-position: 103px 27px 
+.g-icon
+	background-position: 66px 0px
+	&:hover
+		background-position: 66px 27px 
+.w-icon
+	background-position: 27px 0px
+	&:hover
+		background-position: 27px 27px 
+.menubar
+	margin-top: 33px
+	display: flex
+	-webkit-flex-direction: row
+	-ms-flex-direction: row
+	flex-direction: row
+	justify-content: space-between
+.menu 
+	
+	// -webkit-flex-direction: row
+	// -ms-flex-direction: row
+	// flex-direction: row
+	width: 75%
+	box-shadow: 0px 0px 4px #6b6b6b
+	background: #fff
+	div
+		display: inline-block
+		padding: 22px 28px
+		background: #fff
+		border-right: 1px solid #eaeaea
+		font-weight: 800
+		font-size: 14px
+		transition: all 0.3s
+		&:hover
+			background: $main-color
+			color: #fff
+.search
+	width: 22%
+	background: #fff
+	padding: 10px
+	box-shadow: 0px 0px 4px #6b6b6b
+	input
+		&[type="text"]
+			background: #f3f3f3
+			border: 1px solid #e5e5e5
+			padding: 13px
+			width: 90%
+			background-image: url(../image/search.png)
+			background-repeat: no-repeat
+			background-position: 95% center
+.banner
+	position: relative
+	img
+		width: 100%
+.slider
+	width: 40px
+	height: 119px
+	position: absolute
+	top: 0
+	bottom: 0
+	margin: auto
+	&.next
+		right: 0
+		background-image: url(../image/slider_next.gif)
+		transition: all 0.3s
+		&:hover
+			background-position: bottom
+	&.prex
+		left: 0
+		background-image: url(../image/slider_prev.gif)
+		transition: all 0.3s
+		&:hover
+			background-position: bottom
+.index-content
+	+dombg
+	padding: 40px
+	position: relative
+	min-height: 500px
+.service-block
+	position: absolute
+	top: -30px
+	left: 0
+	right: 0
+	margin: 0 auto
+	width: 95%
+	text-align: center
+.service
+	vertical-align: top
+	width: 23%
+	height: 333px
+	background: #e7e7e7
+	border: 1px solid #dbdbdb
+	display: inline-block
+	margin: 4px
+	transition: all 0.3s
+	text-align: center
+	padding: 30px 0px
+	position: relative
+	button
+		color: $black
+		background: #cdcdcd
+		border-radius: 0px
+		padding: 8px 18px 
+		margin: 20px
+	img
+		width: 63px
+		height: 63px
+		margin: 30px
+	p
+		width: 195px
+		height: 130px
+		margin: 0 auto
+		font-size: $font-size
+
+	h3
+		color: #646464
+		font-weight: 800
+	&:hover
+		background: rgba(10,10,10,0.6)
+		border: 1px solid #000
+		color: #fff
+		h3
+			color: #fff
+.about-block
+	margin-top: 380px
+	display: flex
+	flex-flow: row wrap 
+	justify-content: space-around
+	padding-bottom: 30px
+.about
+	width: 31%
+	margin-top: 15px
+	h3
+		+title
+	img
+		width: 100%
+	p
+		font-size: $font-size
+		color: #8f8f8f
+		margin: 20px 0
+	span
+		color: $black
+.reason
+	li
+		border-bottom: 1px solid #e3e3e3
+		padding: 13px 0px
+	img
+		width: 48px 
+		vertical-align: middle
+	span
+		margin-left: 10px
+		font-size: $font-size
+		color: #8f8f8f
+.event
+	width: 100%
+	margin-bottom: 30px 
+	img
+		width: 40%
+		vertical-align: top
+	ul
+		display: inline-block
+		width: 50%
+		margin-left: 10px
+	li
+		color: #8f8f8f
+		line-height: 20px
+		font-size: $font-size
+	p
+		background: $main-color
+		color: #fff
+		font-weight: 700
+		padding: 10px
+		margin-top: 0px
+		width: 60px
+		text-align: center
+		font-size: 1.2em
+.work-block
+	border-top: 1px solid #c6c6c6
+	padding-top: 30px
+	h3
+		+title
+.work
+	display: flex
+	flex-flow: row wrap 
+	justify-content: space-around
+.work
+	img
+		max-width: 270px 
+.footer
+	+dombg
+	min-height: 300px
+	margin-top: 70px
+	display: flex
+	flex-flow: row wrap 
+	justify-content: space-around
+	h3
+		+title
+		margin-bottom: 30px
+		font-size: 1.2em
+.chat-block
+	width: 90%
+	+input_style
+	color: #6a6560
+	padding: 20px
+	position: relative
+	&:before
+		+triangle
+.infor-block
+	width: 25%
+	box-sizing: border-box
+	padding: 30px
+	input
+		+input_style
+		width: 100%
+		padding: 8px
+		margin: 4px 0px
+.Message 
+	height: 150px
+	+input_style
+	width: 100%
+	padding: 8px
+	margin: 4px 0px
+	margin-bottom: 20px
+.man
+	margin: 40px 0px
+	img
+		vertical-align: middle
+	ul
+		display: inline-block
+		margin: 0 7px
+		font-size: $font-size
+.net
+	color: $main-color
+	font-weight: 700
+	font-style: italic
+.flicker 
+	display: flex
+	flex-flow: row wrap 
+	justify-content: space-around
+	img
+		width: 50px
+		height: 50px
+		margin: 5px
+.clean 
+	color: #fff
+	background: #000
+	border-radius: 0px
+	border: 0px
+	padding: 10px 15px
+	font-weight: 700
+.send
+	color: #fff
+	background: $main-color
+	border-radius: 0px
+	border: 0px
+	padding: 10px 15px
+	font-weight: 700
+	margin-left: 10px
+.main-color
+	color: $main-color
+.copyright
+	display: flex
+	justify-content: space-between
+	align-items: flex-end
+	padding-bottom: 20px
+	top: 0
+	color: #5c5c5c
+	font-size: 12px
+.footer-menu
+	span
+		padding: 0px 4px
+		border-right: 1px solid #5c5c5c
+		&:hover
+			color: $main-color
+		&:last-child
+			border-right: 0px
+@media (max-width: 768px)
+	.container
+		width: 90%
+	.topbar
+		flex-direction: column
+@media (max-width:1024px)
+	.service
+		width: 47%
+	.service-block
+		position: inherit
+	.about-block
+		margin-top: 10px
+	.about
+		width: 47%
+	.infor-block
+		width: 47%
+@media (max-width:1146px)
+	.menu 
+		width: auto
+	.search
+		width: auto
+		margin-top: 10px
+	.menubar
+		flex-direction: column
+
+@media (max-width: 600px)
+	.service-block
+		width: 88%
+	.service
+		width: 95%
+	.topbar
+		padding: 15px
+	.slider
+		width: 23px
+		height: 68px
+		&.next,&.prex
+			background-size: cover
+	.about-block
+		width: 88%
+		+blockcenter(0)
+	.about
+		width: 95%
+	.infor-block
+		width: 95%
