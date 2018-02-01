@@ -1,0 +1,123 @@
+.bg-top {
+  background-color: black;
+  height: 92px;
+  padding: 0 120px;
+  margin: 0 -15px; }
+@media(max-width : 768px) {
+  .bg-top {
+    padding: 0 15px; } }
+.header {
+  background-image: url("../img/subbg.gif");
+  background-size: auto;
+  padding: 40px;
+  position: relative;
+  margin: 0;
+  top: 10px; }
+@media(max-width : 992px) {
+  .header {
+    padding: 20px; } }
+.logo {
+  padding: 0; }
+@media(max-width : 992px) {
+  .logo {
+    text-align: center; } }
+  .logo img {
+    max-width: 100%;
+    height: 100%; }
+
+.logo-phone {
+  padding: 5px 0 0;
+  text-align: right; }
+  .logo-phone p {
+    margin-bottom: 0; }
+@media(max-width : 992px) {
+  .logo-phone {
+    text-align: center;
+    padding-top: 5px; } }
+.logo-icons1, .logo-icons2, .logo-icons3, .logo-icons4, .logo-icons5 {
+  height: 27px;
+  width: 27px;
+  background-image: url("../img/social.png");
+  display: inline-block;
+  margin-left: 10px; }
+  .logo-icons1:hover, .logo-icons2:hover, .logo-icons3:hover, .logo-icons4:hover, .logo-icons5:hover {
+    background-image: url("../img/social.png");
+    background-position: 0 100%; }
+
+.logo-icons2 {
+  background-position: 27px 0; }
+  .logo-icons2:hover {
+    background-position: 27px 100%; }
+
+.logo-icons3 {
+  background-position: 66px 0; }
+  .logo-icons3:hover {
+    background-position: 66px 100%; }
+
+.logo-icons4 {
+  background-position: 103px 0; }
+  .logo-icons4:hover {
+    background-position: 103px 100%; }
+
+.logo-icons5 {
+  background-position: 100% 0; }
+  .logo-icons5:hover {
+    background-position: 100% 100%; }
+
+.bg-center {
+  background-image: url("../img/bg.jpg");
+  background-size: auto;
+  padding: 100px 120px 0px;
+  margin: 0 -15px -160px; }
+@media(max-width : 768px) {
+  .bg-center {
+    padding: 120px 15px 70px;
+    margin: 0 -15px -230px; } }
+.guid-bar {
+  margin: 0; }
+
+.content {
+  background-color: #fff;
+  color: #000;
+  font-size: 0;
+  padding: 0;
+  margin-right: 2%;
+  flex: 0 0 68%;
+  max-width: 68%; }
+@media(max-width : 960px) {
+  .content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-right: 0; } }
+.items {
+  padding: 20px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border-right: 1px #efefef solid; }
+  .items:hover {
+    background-color: #81b732;
+    color: #fff; }
+
+.searching {
+  padding: 10px 20px;
+  background-color: #FFF;
+  margin: 0;
+  flex: 0 0 30%;
+  max-width: 30%; }
+@media(max-width : 960px) {
+  .searching {
+    flex: 0 0 100%;
+    max-width: 100%; } }
+  .searching input {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 40px;
+    background-color: #f3f3f3;
+    background-image: url("../img/search.png");
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: 95% 5px; }
+
+/*# sourceMappingURL=header.css.map */
