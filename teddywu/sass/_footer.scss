@@ -1,0 +1,149 @@
+footer{
+	section{
+		@include padding_x(10px, 10px);
+		box-shadow: 0px 0px 10px #929292;
+
+		.box-style{
+			margin: 30px 0;
+		}
+		
+		h2{
+			@include font_style(22px, 400, 1px, Tahoma);
+			margin-bottom: 20px;
+		}
+
+		p{
+			font-size: 14px;
+			margin-bottom: 0;
+		}
+
+		.box-2nd{
+			.box-arrow{
+				font-size: 12px;
+				font-weight: 500;
+				padding: 15px 10px 15px 24px;
+				margin-bottom: 35px;
+				position: relative;
+				@include box_style;
+
+				&:before{
+					@include arrow_style(20px, 31px, #dfdfdf, -1px, -19px);
+				}
+
+				&:after{
+					@include arrow_style(23px, 36px, #e7e7e7, 0px, -17px);
+				}
+			}
+
+			img{
+				margin-right: 10px;
+			}
+
+			.name{
+				display: inline-block;
+				vertical-align: middle;
+				line-height: 1;
+
+				span{
+					color: $color_green;
+					font-style: italic;
+				}
+			}
+		}
+
+		.box-3rd{
+			form{
+				font-size: 13px;
+
+				input{
+					width: 100%;
+					margin-bottom: 5px;
+					padding: 5px;
+					@include box_style;
+					@include blue_outline_none;
+				}
+
+				textarea{
+					width: 100%;
+					height: 110px;
+					padding: 5px;
+					margin-bottom: 15px;
+					@include box_style;
+					@include blue_outline_none;
+				}
+
+				button{
+					border: 0;
+					padding: 5px 12px;
+					color: #fff;
+					background: $black_color;
+					@include blue_outline_none;
+
+					&:hover{
+						background: $color_green;
+					}
+				}
+			}
+			
+		}
+
+		.box-4th{
+			.img-box{
+				@include margin_x(-2.5px, -2.5px);
+				@include flex_box;
+
+				.col-3{
+					@include padding_x(2.5px, 2.5px);
+					margin-bottom: 5px;
+				}
+
+			}
+		}
+	}
+
+	> div.row{
+		font-size: 1vw;
+		padding: 15px 0;
+
+		.footer-bl{
+			p{
+				margin-bottom: 0;
+				color: #4c4c4c;
+
+				span{
+					color: $color_green;
+				}
+			}
+		}
+
+		.footer-br{
+			ul{
+				padding: 0;
+				margin: 0;
+
+				li{
+					display: inline-block;
+
+					a{
+						color: #4c4c4c;
+						letter-spacing: -1px;
+						border-right: 2px solid #8f8e8e;
+						padding: 0 0.6vw;
+
+
+						&:hover{
+							color: $color_green;
+							text-decoration: none;
+						}
+					}
+
+					&:last-child{
+						a{
+							border-right: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}

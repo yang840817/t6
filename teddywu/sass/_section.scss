@@ -1,0 +1,298 @@
+.control-style{
+	@include margin_x(-15px, -15px);
+
+	a{
+		width: 30px;
+		height: 90px;
+		background-color: $black_color;
+		font-size: 20px;
+		margin: auto 0;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.control-style{
+		a{
+			width: 20px;
+			height: 60px;
+			font-size: 15px;
+		}
+	}
+}
+
+article{
+	box-shadow: 0px 0px 10px #929292;
+	margin-bottom: 60px;
+
+	.move-up{
+		position: relative;
+		top: -20px;
+	}
+
+	section{
+		.padding-y{
+			@include padding_x(10px, 10px);
+		}
+
+		@include padding_x(15px, 15px);
+		@include flex_box;
+		margin-bottom: 15px;
+		width: 100%;
+
+		.content-style{
+			background-color: #e8e8e8;
+			padding: 30px 0px 25px 0px;
+			border: 1px solid #ddd;
+
+			h4{
+				@include font_style(12px, 600, 0px, sans-serif);
+				margin-bottom: 20px;
+			}
+
+			img{
+				width: 50px;
+				margin-bottom: 20px;
+			}
+
+			p{
+				@include font_style(10px, 600, 0px, sans-serif);
+				margin-bottom: 12px;
+			}
+
+			a{
+				color: $black_color;
+				font-size: 12px;
+				background-color: #cecece;
+				padding: 5px 10px;
+				
+				&:hover{
+					text-decoration: none;
+				}
+			}
+
+			&:hover{
+				background-color: rgba(23, 23, 23, 0.6);
+				border: 1px solid #242424;
+				color: #fff;
+			}
+		}
+	}
+
+	.some-thing{
+		@include flex_box;
+		@include margin_x(25px, 25px);
+		padding-bottom: 24px;
+		margin-bottom: 40px;
+		border-bottom: 1px solid #d0d0d0;
+
+		h5{
+			@include font_style($article_title_size, 400, 1px, Tahoma);
+			margin-bottom: 20px;
+		}
+
+		p{
+			@include font_style(14px, 400, 0px, Tahoma);
+			color: $something_font_color;
+			margin-bottom: 24px;
+		}
+
+		a{
+			color: $black_color;
+		}
+
+		.box-1{
+			@include padding_x(0px, 0px);
+
+			img{
+				margin-bottom: 15px;
+			}
+		}
+
+		.box-2{
+			@include padding_x(0px, 0px);
+			margin-bottom: 24px;
+
+
+			
+			.arrow-item{
+				border-bottom: 1px solid #ebebeb;
+				@include flex_box;
+				margin-bottom: 12px;
+
+				i{
+					@include flex_style(0, 0, 38px, 38px);
+					color: #fff;
+					background-color: $arrowhead_color;
+					padding: 6px 13px 8px 18px;
+					border-radius: 50%;
+					margin-left: 15px;
+					margin-bottom: 20px;
+				}
+
+				p{
+					@include flex_style(0, 0, 77%, 77%);
+					font-size: 15px;
+					margin: 10px 0px 0px 8px;
+				}
+
+				&:hover{
+					i{
+						background-color: #868686;
+					}
+					p{
+						color: $black_color;
+					}
+				}
+			}
+		}
+
+		.box-right{
+			.box-event{
+				margin-bottom: 12px;
+			}
+
+			.right-title{
+				@include padding_x(0px, 0px);
+			}
+
+			h6{
+				width: 86px;
+				padding: 5px 0px;
+				margin-bottom: 12px;
+				font-size: 16px;
+				text-align: center;
+				color: #fff;
+				background: $color_green;
+			}
+
+			.box-img{
+				@include padding_x(0px, 15px);
+			}
+
+			.box-content{
+				@include padding_x(15px, 0px);
+
+				p{
+					font-size: 12px;
+				}
+			}
+		}
+	}
+
+	.box-featured{
+		@include padding_x(10px, 10px);
+		margin-bottom: 50px;
+
+		h5{
+			padding-left: 15px;
+			@include font_style($article_title_size, 400, 1px, Tahoma);
+			margin-bottom: 25px;
+		}
+
+		img{
+			box-shadow: 0px 0px 5px #d8d8d8;
+		}
+
+		.carousel{
+			.control-arrow{
+				a{
+					z-index: 1;
+					color: #a7a7a7;
+				}
+			}
+
+			.carousel-item{
+				@include padding_x(15px, 15px);
+			}
+
+			.set-img{
+				display: none;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 991px){
+	article{
+		section{
+			.content-style{
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px){
+	article{
+		.some-thing{
+			.box-1{
+				@include padding_x(0px, 15px);
+			}
+
+			.box-2{
+				@include padding_x(15px, 0px);
+			}
+
+			.box-right{
+				.box-content{
+					p{
+						font-size: 13px;
+					}
+				}
+			}
+		}
+
+		.box-featured{
+			.carousel{
+				.control-arrow{
+					@include padding_x(15px, 15px);
+					position: absolute;
+					right: 0;
+					top: -40px;
+
+					a{
+						display: inline;
+						position: relative;
+					}
+
+					.carousel-control-prev{
+						margin-right: 8px;
+					}
+				}
+
+				.carousel-inner{
+					display: none;
+				}
+				.set-img{
+					@include flex_box;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 992px){
+	article{
+		.some-thing{
+			.box-2{
+				@include padding_x(15px, 15px);
+			}
+
+			.box-right{
+				.right-title{
+					@include padding_x(15px, 0px);
+				}
+
+				.box-img{
+					@include padding_x(15px, 15px);
+				}
+
+				.box-content{
+					p{
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+}

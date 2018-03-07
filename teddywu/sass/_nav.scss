@@ -1,0 +1,141 @@
+nav{
+	margin-top: 24px;
+
+	.nav-button-style{
+		background-color: $nav_background_color;
+		border-radius: 0;
+		padding: 0;
+		box-shadow: 1px -2px 10px $shadow_color;
+		@include blue_outline_none;
+	}
+
+	ul{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+	.drop-down-menu{
+		@include flex_style(1, 0, 76%, 76%);
+		order: 1;
+		box-shadow: 1px -2px 10px $shadow_color;
+		background-color: $nav_background_color;
+		@include font_style(12px, 500, -0.5px, sans-serif);
+
+		li{
+			position: relative;
+
+			a{
+				display: block;
+				padding: 15px 18px;
+				color: $black_color;
+			}
+
+			&:hover > a{
+				background-color: $hover_background_color;
+				color: $hover_font_color;
+				text-decoration: none;
+			}/*滑鼠移入次選單上層按鈕保持變色*/
+		}
+
+		> li{
+			display: inline-block;
+			
+			> a{
+				border-right: 1px solid #eee;
+			}
+		}
+
+		ul{
+			position: absolute;
+			z-index: 1;
+			display:none;
+			width: 140px;
+
+			a{
+				background-color: #f3f3f3;
+				border: 1px solid #9f9f9f;
+			}
+
+			li{
+				&:hover > a{
+					background-color: #a9ad0f;
+				}
+			}
+		}
+		
+		li:hover > ul{
+			display: block;
+		}
+	}
+
+	.search{
+		@include flex_style(0, 0, 23%, 23%);
+		order: 2;
+		box-shadow: -1px -2px 10px $shadow_color;
+		background-color: $nav_background_color;
+
+		form{
+			line-height: 0px;
+			background-color: #f3f3f3;
+			border: 1px solid #eaeaea;
+			padding: 7px 10px;
+			margin: 7px 10px;
+
+			input{
+				font-size: 12px;
+				@include none_style;
+				@include blue_outline_none;
+			}
+
+			button{
+				padding: 0;
+				@include none_style;
+				@include blue_outline_none;
+
+				img{
+					width: 18px;
+					height: 18px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px){
+	nav{
+		.nav-button-style{
+		@include flex_style(0, 0, 15%, 15%);
+		}
+
+		.drop-down-menu{
+			@include flex_style(0, 0, 100%, 100%);
+			order: 2;
+			box-shadow: none;
+			border: 1px solid #eee;
+			text-align: center;
+
+			> li{
+				display: block;
+
+				> a{
+					border-right: none;
+				}
+			}
+
+			ul{
+				position: static;
+				width: 100%;
+
+				a{
+					border: none;
+				}
+			}
+		}
+
+		.search{
+			@include flex_style(0, 0, 83%, 83%);
+			order: 1;
+		}
+	}
+}

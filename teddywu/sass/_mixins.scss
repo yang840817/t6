@@ -1,0 +1,75 @@
+@mixin font_style($size, $weight, $space, $family){
+	font-size: $size;
+	font-weight:$weight;
+	letter-spacing:$space;
+	font-family: $family;
+}
+
+@mixin blue_outline_none{
+	&:focus{
+		outline:none;
+	}
+}
+
+@mixin flex_box{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@mixin flex_style($grow, $shrink, $basis, $max-w){
+	flex: $grow $shrink $basis;
+	max-width: $max-w;
+}
+
+@mixin margin_x($left, $right){
+	margin-left: $left;
+	margin-right: $right;
+}
+
+@mixin padding_x($left, $right){
+	padding-left: $left;
+	padding-right: $right;
+}
+
+//background
+@mixin black_background{
+	background-color: $black_color;
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+}
+
+//header
+@mixin icon_style($x, $y, $hover-x, $hover-y){
+	height: 27px;
+	width: 28px;
+	background: url(../images/social.png);
+	background-position: $x $y;
+	&:hover{
+		background-position: $hover-x $hover-y;
+	} 
+}
+
+//nav
+@mixin none_style{
+	background: none;
+	border: none;
+}
+
+//footer
+@mixin arrow_style($bt, $br, $b-color, $left, $bottom){
+	content: "";
+	border-top: $bt solid $b-color;
+	border-right: $br solid transparent;
+	position: absolute;
+	left: $left;
+	bottom: $bottom;
+}
+
+@mixin box_style{
+	border: 1px solid #dfdfdf;
+	border-radius: 3px;
+	background: #e7e7e7;
+}
+
+

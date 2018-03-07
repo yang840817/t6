@@ -1,0 +1,37 @@
+header{
+	box-shadow: 0px 0px 10px $shadow_color;
+	padding: 36px 12px 24px 12px;
+
+	li{
+		display: inline-block;
+		.icon-1{
+			@include icon_style(left, top, left, -27px);
+		}
+		.icon-2{
+			@include icon_style(-37px, top, -37px, -26.5px);
+		}
+		.icon-3{
+			@include icon_style(-74px, top, -74px, -26.5px);
+		}
+		.icon-4{
+			@include icon_style(66px, top, 66px, -26.5px);
+		}
+		.icon-5{
+			@include icon_style(28px, top, 28px, -26.5px);
+		}
+	}
+	p{
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	header{
+		.logo{
+			text-align: center;
+		}
+		ul{
+			margin-top: 10px;
+		}
+	}
+}

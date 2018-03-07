@@ -1,0 +1,35 @@
+body{
+	background: url(../images/bg.jpg);
+	position: relative;
+
+	.top-black{
+		@include black_background;
+		height: 80px;
+		top: 0;
+	}
+
+	.container{
+		padding-top: 10px;
+
+		header{
+			background: $background_subbg;
+		}
+		
+		article{
+			background: $background_subbg;
+		}
+
+		footer{
+			section{
+				background: $background_subbg;
+			}
+		}
+	}
+
+	.bottom-black{
+		@include black_background;
+		height: 220px;
+		bottom: 0;
+	}
+}
+
