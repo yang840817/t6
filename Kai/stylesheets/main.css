@@ -139,3 +139,19 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* line 1, ../sass/_body_background.scss */
+body,
+html {
+  height: 100%;
+}
+
+/* line 6, ../sass/_body_background.scss */
+.body_background {
+  height: 100%;
+  background-color: #000;
+  background-image: url("../image/bg.jpg");
+  background-size: auto 85%;
+  background-repeat: repeat-x;
+  background-position: 0 33.333%;
+}
