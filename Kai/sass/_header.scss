@@ -1,9 +1,8 @@
 .header {
   @include background_style_in_center;
-  padding: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 20px;
 
   .logo {
     display: inline-block;
