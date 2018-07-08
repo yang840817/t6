@@ -387,4 +387,51 @@ html {
   margin-left: 5%;
   margin-right: 5%;
   height: 1000px;
+  position: relative;
+}
+/* line 6, ../sass/_content_top.scss */
+.content .content_top {
+  display: inline-flex;
+  position: absolute;
+  top: -5%;
+  margin: 30px;
+}
+/* line 12, ../sass/_content_top.scss */
+.content .content_top .content_top_info {
+  padding: 20px;
+  margin: 0 10px;
+  display: inline-block;
+  width: 20%;
+  background-color: #d7d7d7;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  font-family: sans-serif;
+  overflow: auto;
+}
+/* line 23, ../sass/_content_top.scss */
+.content .content_top .content_top_info:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  cursor: pointer;
+}
+/* line 29, ../sass/_content_top.scss */
+.content .content_top .content_top_info .info_title {
+  margin: 10px;
+  font-size: 16px;
+}
+/* line 34, ../sass/_content_top.scss */
+.content .content_top .content_top_info .info_img {
+  margin: 10px;
+}
+/* line 38, ../sass/_content_top.scss */
+.content .content_top .content_top_info .info_content {
+  margin: 10px;
+}
+/* line 42, ../sass/_content_top.scss */
+.content .content_top .content_top_info .info_button {
+  background-color: #b4b4b4;
+  width: 20%;
+  padding: 5px 10px;
+  margin: 10px auto;
+  color: #000;
 }
