@@ -155,3 +155,131 @@ html {
   background-repeat: repeat-x;
   background-position: 0 33.333%;
 }
+
+/* line 1, ../sass/_header.scss */
+.header {
+  background-image: url("../image/subbg.gif");
+  background-repeat: repeat;
+  background-size: contain;
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 8, ../sass/_header.scss */
+.header .logo {
+  display: inline-block;
+}
+/* line 11, ../sass/_header.scss */
+.header .logo:hover {
+  cursor: pointer;
+}
+/* line 16, ../sass/_header.scss */
+.header .icon_tag {
+  font-size: 0;
+  text-align: right;
+}
+/* line 20, ../sass/_header.scss */
+.header .icon_tag .facebook_icon {
+  display: inline-block;
+  background-image: url("../image/social.png");
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 27px;
+  margin-left: 10px;
+}
+/* line 23, ../sass/_header.scss */
+.header .icon_tag .facebook_icon:hover {
+  background-image: url("../image/social.png");
+  background-position: 0px -27px;
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+}
+/* line 28, ../sass/_header.scss */
+.header .icon_tag .twittwr_icon {
+  display: inline-block;
+  background-image: url("../image/social.png");
+  background-position: -37px 0px;
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 27px;
+  margin-left: 10px;
+}
+/* line 31, ../sass/_header.scss */
+.header .icon_tag .twittwr_icon:hover {
+  background-image: url("../image/social.png");
+  background-position: -37px -27px;
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+}
+/* line 36, ../sass/_header.scss */
+.header .icon_tag .center_icon {
+  display: inline-block;
+  background-image: url("../image/social.png");
+  background-position: -74px 0px;
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 27px;
+  margin-left: 10px;
+}
+/* line 39, ../sass/_header.scss */
+.header .icon_tag .center_icon:hover {
+  background-image: url("../image/social.png");
+  background-position: -74px -27px;
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+}
+/* line 44, ../sass/_header.scss */
+.header .icon_tag .backetball_icon {
+  display: inline-block;
+  background-image: url("../image/social.png");
+  background-position: -111px 0px;
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 27px;
+  margin-left: 10px;
+}
+/* line 47, ../sass/_header.scss */
+.header .icon_tag .backetball_icon:hover {
+  background-image: url("../image/social.png");
+  background-position: -111px -27px;
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+}
+/* line 52, ../sass/_header.scss */
+.header .icon_tag .wifi_icon {
+  display: inline-block;
+  background-image: url("../image/social.png");
+  background-position: -150px 0px;
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 27px;
+  margin-left: 10px;
+}
+/* line 55, ../sass/_header.scss */
+.header .icon_tag .wifi_icon:hover {
+  background-image: url("../image/social.png");
+  background-position: -150px -27px;
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+}
+/* line 60, ../sass/_header.scss */
+.header .icon_tag p {
+  font-size: 16px;
+  font-family: sans-serif;
+  line-height: 2;
+}

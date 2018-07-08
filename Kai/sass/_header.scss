@@ -1,0 +1,66 @@
+.header {
+  @include background_style_in_center;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    display: inline-block;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .icon_tag {
+    font-size: 0;
+    text-align: right;
+
+    .facebook_icon {
+      @include icon_postition($x:0px);
+
+      &:hover {
+        @include icon_hover($x:0px);
+      }
+    }
+
+    .twittwr_icon {
+      @include icon_postition($x:-37px);
+
+      &:hover {
+        @include icon_hover($x:-37px);
+      }
+    }
+
+    .center_icon {
+      @include icon_postition($x:-74px);
+
+      &:hover {
+        @include icon_hover($x:-74px);
+      }
+    }
+
+    .backetball_icon {
+      @include icon_postition($x:-111px);
+
+      &:hover {
+        @include icon_hover($x:-111px);
+      }
+    }
+
+    .wifi_icon {
+      @include icon_postition($x:-150px);
+
+      &:hover {
+        @include icon_hover($x:-150px);
+      }
+    }
+
+    p {
+      font-size: 16px;
+      font-family: sans-serif;
+      line-height: 2;
+    }
+  }
+}
