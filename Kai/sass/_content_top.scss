@@ -1,7 +1,6 @@
 .content {
-  @include background_style_in_center;
   position: relative;
-  // padding: 30px;
+
   .content_top {
     display: inline-flex;
     z-index: 1px;
