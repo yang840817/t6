@@ -11,28 +11,26 @@
       font-family: sans-serif;
 
       &:hover {
-        background-color: #7fb61e;
-        cursor: pointer;
-        color: #fff;
-      }
-    }
-
-    .nav_search {
-      background-image: url("../image/search.png");
-      background-repeat: no-repeat;
-      background-position: right;
-      background-color: rgba(gray,0.2);
-      padding: 5px;
-
-      &:focus {
-        background-color: #fff;
-        background-image: none;
+        @include hover_in_button;
       }
     }
   }
-  // .nav_search_background {
-  //   @include background_style_in_center;
-  //   margin: auto;
-  //   display: inline-block;
-  // }
+
+  .nav_search {
+    background-image: url("../image/search.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: rgba(gray,0.2);
+    padding: 5px;
+
+    &:focus {
+      background-color: #fff;
+      background-image: none;
+    }
+  }
 }
+// .nav_search_background {
+//   @include background_style_in_center;
+//   margin: auto;
+//   display: inline-block;
+// }
