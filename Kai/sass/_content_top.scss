@@ -34,6 +34,7 @@
 
       .info_content {
         margin: 10px;
+        @include text_hidden($clamp:7);
       }
 
       .info_button {

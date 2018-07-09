@@ -11,7 +11,7 @@
 
     .content_arrow {
       float: right;
-      padding: 1.5% 2% 0 0;
+      padding: 1% 2% 0 0;
     }
 
     .content_left_arrow {
@@ -28,9 +28,12 @@
     }
 
     .content_bottom_img {
+      display: inline-flex;
+      flex-wrap: wrap;
+
       img {
-        display: inline-block;
         width: 22%;
+        height: 50%;
         margin: 1.25%;
       }
     }

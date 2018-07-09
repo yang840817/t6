@@ -13,7 +13,10 @@
 
       .footer_title {
         margin-bottom: 20px;
-        font-size: 24px;
+        font-size: 22px;
+        @media screen and (max-width:960px) {
+          font-size: 18px;
+        }
       }
 
       .footer_message_style {
@@ -69,6 +72,10 @@
         margin-top: 5%;
         @include button($width: auto);
         display: inline-block;
+        font-size: 16px;
+        @media screen and (max-width: 1120px) {
+          font-size: 12px;
+        }
 
         &:hover {
           @include hover_in_button;
@@ -78,6 +85,10 @@
       .footer_img_list {
         img {
           width: 23%;
+          align-items: center;
+          @media screen and (max-width:960px) {
+            width: 30%;
+          }
         }
       }
     }
@@ -88,6 +99,10 @@
     display: flex;
     justify-content: space-between;
     padding: 1% 0;
+    @media screen and (max-width:960px) {
+      display: block;
+      text-align: center;
+    }
 
     p {
       color: gray;
