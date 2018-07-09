@@ -738,12 +738,19 @@ table {
   font-family: sans-serif;
   margin: 1.25%;
 }
-/* line 12, ../sass/_content_bottom.scss */
+@media screen and (max-width: 650px) {
+  /* line 5, ../sass/_content_bottom.scss */
+  .content .content_bottom .content_bottom_title {
+    font-size: 22px;
+  }
+}
+/* line 15, ../sass/_content_bottom.scss */
 .content .content_bottom .content_arrow {
-  float: right;
+  display: flex;
+  justify-content: space-between;
   padding: 1% 2% 0 0;
 }
-/* line 17, ../sass/_content_bottom.scss */
+/* line 21, ../sass/_content_bottom.scss */
 .content .content_bottom .content_left_arrow {
   display: inline-block;
   display: inline-block;
@@ -758,7 +765,7 @@ table {
   border-color: #d7d7d7;
   border-width: 0 0 2px 2px;
 }
-/* line 24, ../sass/_content_bottom.scss */
+/* line 28, ../sass/_content_bottom.scss */
 .content .content_bottom .content_right_arrow {
   display: inline-block;
   display: inline-block;
@@ -772,16 +779,22 @@ table {
   margin: 14px;
   border-color: #d7d7d7;
 }
-/* line 30, ../sass/_content_bottom.scss */
+/* line 34, ../sass/_content_bottom.scss */
 .content .content_bottom .content_bottom_img {
   display: inline-flex;
   flex-wrap: wrap;
 }
-/* line 34, ../sass/_content_bottom.scss */
+/* line 38, ../sass/_content_bottom.scss */
 .content .content_bottom .content_bottom_img img {
   width: 22%;
   height: 50%;
   margin: 1.25%;
+}
+@media screen and (max-width: 650px) {
+  /* line 38, ../sass/_content_bottom.scss */
+  .content .content_bottom .content_bottom_img img {
+    width: 47%;
+  }
 }
 
 /* line 1, ../sass/_footer.scss */
