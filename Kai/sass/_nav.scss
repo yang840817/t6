@@ -5,11 +5,57 @@
 
   .nav_tag {
     display: inline-flex;
+    @media screen and (max-width:740px) {
+      display: block;
+    }
+
+    label {
+      &:hover {
+        @include hover_in_button;
+      }
+    }
+
+    img {
+      display: none;
+      @media screen and (max-width: 740px) {
+        padding: 2%;
+        display: block;
+        margin: 0 auto;
+      }
+
+      &:hover {
+        // @include hover_in_button;
+      }
+    }
+
+    #toggle_menu {
+      display: none;
+    }
+
+    #toggle_menu:checked~.nav_tag_style {
+      display: block;
+    }
 
     .nav_tag_style {
       padding: 20px;
       border-right: 1px solid rgba(0,0,0,0.2);
       font-family: sans-serif;
+      @media screen and (max-width: 740px) {
+        padding: 2%;
+      }
+
+      &:first-child {
+        display: none;
+        @media screen and (max-width: 740px) {
+          display: block;
+        }
+      }
+
+      &:not(first-child) {
+        @media screen and (max-width: 740px) {
+          display: none;
+        }
+      }
 
       &:hover {
         @include hover_in_button;

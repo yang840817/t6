@@ -159,20 +159,38 @@ table {
   justify-content: space-between;
   padding: 1.5%;
 }
-/* line 7, ../sass/_header.scss */
+@media screen and (max-width: 620px) {
+  /* line 1, ../sass/_header.scss */
+  .header {
+    display: block;
+    text-align: center;
+  }
+}
+/* line 11, ../sass/_header.scss */
 .header .logo {
   display: inline-block;
 }
-/* line 10, ../sass/_header.scss */
+/* line 14, ../sass/_header.scss */
+.header .logo img {
+  width: 100%;
+}
+/* line 18, ../sass/_header.scss */
 .header .logo:hover {
   cursor: pointer;
 }
-/* line 15, ../sass/_header.scss */
+/* line 23, ../sass/_header.scss */
 .header .icon_tag {
   font-size: 0;
   text-align: right;
 }
-/* line 19, ../sass/_header.scss */
+@media screen and (max-width: 620px) {
+  /* line 23, ../sass/_header.scss */
+  .header .icon_tag {
+    display: block;
+    text-align: center;
+  }
+}
+/* line 31, ../sass/_header.scss */
 .header .icon_tag .facebook_icon {
   display: inline-block;
   background-image: url("../image/social.png");
@@ -182,7 +200,7 @@ table {
   height: 27px;
   margin-left: 10px;
 }
-/* line 22, ../sass/_header.scss */
+/* line 34, ../sass/_header.scss */
 .header .icon_tag .facebook_icon:hover {
   background-image: url("../image/social.png");
   background-position: 0px -27px;
@@ -191,7 +209,7 @@ table {
   height: 27px;
   cursor: pointer;
 }
-/* line 27, ../sass/_header.scss */
+/* line 39, ../sass/_header.scss */
 .header .icon_tag .twittwr_icon {
   display: inline-block;
   background-image: url("../image/social.png");
@@ -201,7 +219,7 @@ table {
   height: 27px;
   margin-left: 10px;
 }
-/* line 30, ../sass/_header.scss */
+/* line 42, ../sass/_header.scss */
 .header .icon_tag .twittwr_icon:hover {
   background-image: url("../image/social.png");
   background-position: -37px -27px;
@@ -210,7 +228,7 @@ table {
   height: 27px;
   cursor: pointer;
 }
-/* line 35, ../sass/_header.scss */
+/* line 47, ../sass/_header.scss */
 .header .icon_tag .center_icon {
   display: inline-block;
   background-image: url("../image/social.png");
@@ -220,7 +238,7 @@ table {
   height: 27px;
   margin-left: 10px;
 }
-/* line 38, ../sass/_header.scss */
+/* line 50, ../sass/_header.scss */
 .header .icon_tag .center_icon:hover {
   background-image: url("../image/social.png");
   background-position: -74px -27px;
@@ -229,7 +247,7 @@ table {
   height: 27px;
   cursor: pointer;
 }
-/* line 43, ../sass/_header.scss */
+/* line 55, ../sass/_header.scss */
 .header .icon_tag .backetball_icon {
   display: inline-block;
   background-image: url("../image/social.png");
@@ -239,7 +257,7 @@ table {
   height: 27px;
   margin-left: 10px;
 }
-/* line 46, ../sass/_header.scss */
+/* line 58, ../sass/_header.scss */
 .header .icon_tag .backetball_icon:hover {
   background-image: url("../image/social.png");
   background-position: -111px -27px;
@@ -248,7 +266,7 @@ table {
   height: 27px;
   cursor: pointer;
 }
-/* line 51, ../sass/_header.scss */
+/* line 63, ../sass/_header.scss */
 .header .icon_tag .wifi_icon {
   display: inline-block;
   background-image: url("../image/social.png");
@@ -258,7 +276,7 @@ table {
   height: 27px;
   margin-left: 10px;
 }
-/* line 54, ../sass/_header.scss */
+/* line 66, ../sass/_header.scss */
 .header .icon_tag .wifi_icon:hover {
   background-image: url("../image/social.png");
   background-position: -150px -27px;
@@ -267,7 +285,7 @@ table {
   height: 27px;
   cursor: pointer;
 }
-/* line 59, ../sass/_header.scss */
+/* line 71, ../sass/_header.scss */
 .header .icon_tag p {
   font-size: 16px;
   font-family: sans-serif;
@@ -293,19 +311,73 @@ table {
 .nav .nav_tag {
   display: inline-flex;
 }
-/* line 9, ../sass/_nav.scss */
+@media screen and (max-width: 740px) {
+  /* line 6, ../sass/_nav.scss */
+  .nav .nav_tag {
+    display: block;
+  }
+}
+/* line 13, ../sass/_nav.scss */
+.nav .nav_tag label:hover {
+  background-color: #7fb61e;
+  cursor: pointer;
+  color: #fff;
+}
+/* line 18, ../sass/_nav.scss */
+.nav .nav_tag img {
+  display: none;
+}
+@media screen and (max-width: 740px) {
+  /* line 18, ../sass/_nav.scss */
+  .nav .nav_tag img {
+    padding: 2%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+/* line 31, ../sass/_nav.scss */
+.nav .nav_tag #toggle_menu {
+  display: none;
+}
+/* line 35, ../sass/_nav.scss */
+.nav .nav_tag #toggle_menu:checked ~ .nav_tag_style {
+  display: block;
+}
+/* line 39, ../sass/_nav.scss */
 .nav .nav_tag .nav_tag_style {
   padding: 20px;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
   font-family: sans-serif;
 }
-/* line 14, ../sass/_nav.scss */
+@media screen and (max-width: 740px) {
+  /* line 39, ../sass/_nav.scss */
+  .nav .nav_tag .nav_tag_style {
+    padding: 2%;
+  }
+}
+/* line 47, ../sass/_nav.scss */
+.nav .nav_tag .nav_tag_style:first-child {
+  display: none;
+}
+@media screen and (max-width: 740px) {
+  /* line 47, ../sass/_nav.scss */
+  .nav .nav_tag .nav_tag_style:first-child {
+    display: block;
+  }
+}
+@media screen and (max-width: 740px) {
+  /* line 54, ../sass/_nav.scss */
+  .nav .nav_tag .nav_tag_style:not(first-child) {
+    display: none;
+  }
+}
+/* line 60, ../sass/_nav.scss */
 .nav .nav_tag .nav_tag_style:hover {
   background-color: #7fb61e;
   cursor: pointer;
   color: #fff;
 }
-/* line 20, ../sass/_nav.scss */
+/* line 66, ../sass/_nav.scss */
 .nav .nav_search {
   float: right;
   margin: 1%;
@@ -315,17 +387,17 @@ table {
   background-color: rgba(128, 128, 128, 0.2);
   padding: 5px;
 }
-/* line 29, ../sass/_nav.scss */
+/* line 75, ../sass/_nav.scss */
 .nav .nav_search:focus {
   background-color: #fff;
   background-image: none;
 }
-/* line 34, ../sass/_nav.scss */
+/* line 80, ../sass/_nav.scss */
 .nav .nav_search::after {
   clear: both;
 }
 @media screen and (max-width: 980px) {
-  /* line 20, ../sass/_nav.scss */
+  /* line 66, ../sass/_nav.scss */
   .nav .nav_search {
     float: none;
     width: 95%;

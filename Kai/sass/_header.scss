@@ -3,9 +3,17 @@
   display: flex;
   justify-content: space-between;
   padding: 1.5%;
+  @media screen and (max-width: 620px) {
+    display: block;
+    text-align: center;
+  }
 
   .logo {
     display: inline-block;
+
+    img {
+      width: 100%;
+    }
 
     &:hover {
       cursor: pointer;
@@ -15,6 +23,10 @@
   .icon_tag {
     font-size: 0;
     text-align: right;
+    @media screen and (max-width: 620px) {
+      display: block;
+      text-align: center;
+    }
 
     .facebook_icon {
       @include icon_postition($x:0px);
