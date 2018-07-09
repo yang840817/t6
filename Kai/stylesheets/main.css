@@ -159,7 +159,7 @@ table {
   justify-content: space-between;
   padding: 1.5%;
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 635px) {
   /* line 1, ../sass/_header.scss */
   .header {
     display: block;
@@ -183,7 +183,7 @@ table {
   font-size: 0;
   text-align: right;
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 635px) {
   /* line 23, ../sass/_header.scss */
   .header .icon_tag {
     display: block;
@@ -430,7 +430,16 @@ table {
   margin-top: -60px;
   left: 0;
 }
-/* line 23, ../sass/_slide.scss */
+@media screen and (max-width: 740px) {
+  /* line 17, ../sass/_slide.scss */
+  .slide .slide_arrow_left {
+    height: 60px;
+    width: 20px;
+    background-size: 100%;
+    margin-top: -30px;
+  }
+}
+/* line 25, ../sass/_slide.scss */
 .slide .slide_arrow_left:hover {
   background-position: 0 -119px;
   height: 119px;
@@ -441,7 +450,17 @@ table {
   margin-top: -60px;
   cursor: pointer;
 }
-/* line 28, ../sass/_slide.scss */
+@media screen and (max-width: 740px) {
+  /* line 25, ../sass/_slide.scss */
+  .slide .slide_arrow_left:hover {
+    background-position: 0 -60px;
+    height: 60px;
+    width: 20px;
+    background-size: 100%;
+    margin-top: -30px;
+  }
+}
+/* line 33, ../sass/_slide.scss */
 .slide .slide_arrow_right {
   background-image: url("../image/slider_next.gif");
   background-position: 0 0;
@@ -453,7 +472,16 @@ table {
   margin-top: -60px;
   right: 0;
 }
-/* line 33, ../sass/_slide.scss */
+@media screen and (max-width: 740px) {
+  /* line 33, ../sass/_slide.scss */
+  .slide .slide_arrow_right {
+    height: 60px;
+    width: 20px;
+    background-size: 100%;
+    margin-top: -30px;
+  }
+}
+/* line 41, ../sass/_slide.scss */
 .slide .slide_arrow_right:hover {
   background-position: 0 -119px;
   height: 119px;
@@ -463,6 +491,16 @@ table {
   top: 50%;
   margin-top: -60px;
   cursor: pointer;
+}
+@media screen and (max-width: 740px) {
+  /* line 41, ../sass/_slide.scss */
+  .slide .slide_arrow_right:hover {
+    background-position: 0 -60px;
+    height: 60px;
+    width: 20px;
+    background-size: 100%;
+    margin-top: -30px;
+  }
 }
 
 /* line 1, ../sass/_content_top.scss */
@@ -584,7 +622,7 @@ table {
   background-color: #c7c7c7;
   border-radius: 50%;
 }
-/* line 71, ../sass/_mixin.scss */
+/* line 84, ../sass/_mixin.scss */
 .content .content_middle .content_middle_info .middle_middle_list .middle_middle_info .right_arrow::after {
   display: inline-block;
   content: " ";

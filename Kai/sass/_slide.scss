@@ -16,12 +16,17 @@
 
   .slide_arrow_left {
     background-image: url("../image/slider_prev.gif");
-    // background-position: 0 -120px;
     @include slide_img;
     left: 0;
+    @media screen and (max-width: 740px) {
+      @include slide_img_rwd;
+    }
 
     &:hover {
       @include slide_img_hover;
+      @media screen and (max-width: 740px) {
+        @include slide_img_hover_rwd;
+      }
     }
   }
 
@@ -29,9 +34,15 @@
     background-image: url("../image/slider_next.gif");
     @include slide_img;
     right: 0;
+    @media screen and (max-width: 740px) {
+      @include slide_img_rwd;
+    }
 
     &:hover {
       @include slide_img_hover;
+      @media screen and (max-width: 740px) {
+        @include slide_img_hover_rwd;
+      }
     }
   }
 }
