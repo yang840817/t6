@@ -16,6 +16,38 @@
         font-size: 24px;
       }
 
+      .footer_message_style {
+        background-color: rgb(215,215,215);
+        padding: 20px;
+        position: relative;
+
+        &::after {
+          position: absolute;
+          left: 0;
+          bottom: -15px;
+          content: '';
+          border-top: 15px solid rgb(215,215,215);
+          border-right: 24px solid transparent;
+          z-index: 1;
+        }
+      }
+
+      .footer_second_info {
+        margin-top: 10%;
+        display: inline-flex;
+        align-items: center;
+
+        img {}
+
+        p {
+          margin-left: 10px;
+        }
+
+        span {
+          color: #7fb61e;
+        }
+      }
+
       .footer_input {
         background-color: rgb(215,215,215);
         padding: 5px;
