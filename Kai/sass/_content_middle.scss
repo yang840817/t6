@@ -1,11 +1,13 @@
 .content {
   .content_middle {
     display: flex;
-    padding: 30px;
+    margin: 0 3%;
+    padding: 3% 0;
+    border-bottom: 1px solid rgba(199,199,199,0.5);
 
     .content_middle_info {
       width: 33%;
-      margin: 0 20px;
+      margin: 0 1%;
       font-family: sans-serif;
 
       &.middle_middle_info:first-child {
@@ -36,7 +38,7 @@
           display: inline-flex;
           align-items: center;
           padding: 5% 0;
-          border-bottom: 1px solid rgb(199,199,199);
+          border-bottom: 1px solid rgba(199,199,199,0.5);
           width: 100%;
 
           .right_arrow {
@@ -78,7 +80,7 @@
             }
 
             p {
-              margin-top: 30px;
+              margin-top: 10%;
               @include text_hidden($clamp:4);
             }
           }

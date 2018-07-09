@@ -1,0 +1,19 @@
+.content {
+  .content_bottom {
+    padding: 3%;
+
+    .content_bottom_title {
+      font-size: 30px;
+      font-family: sans-serif;
+      margin: 1.25%;
+    }
+
+    .content_bottom_img {
+      img {
+        display: inline-block;
+        width: 22%;
+        margin: 1.25%;
+      }
+    }
+  }
+}
