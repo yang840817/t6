@@ -6,16 +6,26 @@
   .footer_top {
     display: flex;
     padding: 3%;
+    @media screen and (max-width: 650px) {
+      display: block;
+    }
 
     .footer_content {
       width: 22%;
       margin: 1.25%;
+      @media screen and (max-width: 650px) {
+        width: 100%;
+      }
 
       .footer_title {
         margin-bottom: 20px;
         font-size: 22px;
         @media screen and (max-width:960px) {
           font-size: 17px;
+        }
+        @media screen and (max-width: 650px) {
+          font-size: 24px;
+          text-align: center;
         }
       }
 
@@ -39,6 +49,9 @@
         margin-top: 10%;
         display: inline-flex;
         align-items: center;
+        @media screen and (max-width: 650px) {
+          margin-top: 5%;
+        }
 
         img {}
 
@@ -57,6 +70,10 @@
         width: 100%;
         border: none;
         margin-bottom: 5%;
+        @media screen and (max-width: 650px) {
+          margin-bottom: 2%;
+          width: 90%;
+        }
 
         &:focus {
           background-color: rgb(255,255,255);
@@ -76,6 +93,9 @@
         @media screen and (max-width: 1120px) {
           font-size: 12px;
         }
+        @media screen and (max-width: 650px) {
+          margin-top: 1%;
+        }
 
         &:hover {
           @include hover_in_button;
@@ -88,6 +108,9 @@
           align-items: center;
           @media screen and (max-width:960px) {
             width: 30%;
+          }
+          @media screen and (max-width: 650px) {
+            width: 15%;
           }
         }
       }
