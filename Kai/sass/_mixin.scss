@@ -40,6 +40,12 @@
   margin-top: -60px;
   cursor: pointer;
 }
+@mixin button($width) {
+  background-color: #000;
+  color: #fff;
+  width: $width;
+  padding: 5px 10px;
+}
 @mixin hover_in_button {
   background-color: #7fb61e;
   cursor: pointer;

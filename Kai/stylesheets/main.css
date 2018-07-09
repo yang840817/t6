@@ -398,8 +398,8 @@ html {
 }
 /* line 11, ../sass/_content_top.scss */
 .content .content_top .content_top_info {
-  padding: 20px;
-  margin: 0 10px;
+  padding: 2%;
+  margin: 0 1%;
   display: inline-block;
   width: 20%;
   background-color: #d7d7d7;
@@ -491,7 +491,7 @@ html {
   background-color: #c7c7c7;
   border-radius: 50%;
 }
-/* line 65, ../sass/_mixin.scss */
+/* line 71, ../sass/_mixin.scss */
 .content .content_middle .content_middle_info .middle_middle_list .middle_middle_info .right_arrow::after {
   display: inline-block;
   content: " ";
@@ -505,5 +505,50 @@ html {
 }
 /* line 46, ../sass/_content_middle.scss */
 .content .content_middle .content_middle_info .middle_middle_list .middle_middle_info p {
+  color: #878787;
+}
+/* line 52, ../sass/_content_middle.scss */
+.content .content_middle .content_middle_info .middle_right {
+  margin-top: 20px;
+}
+/* line 55, ../sass/_content_middle.scss */
+.content .content_middle .content_middle_info .middle_right .middle_right_content {
+  display: flex;
+  margin-top: 20px;
+}
+/* line 59, ../sass/_content_middle.scss */
+.content .content_middle .content_middle_info .middle_right .middle_right_content .middle_right_img {
+  width: 50%;
+}
+/* line 62, ../sass/_content_middle.scss */
+.content .content_middle .content_middle_info .middle_right .middle_right_content .middle_right_img img {
+  width: 100%;
+}
+/* line 67, ../sass/_content_middle.scss */
+.content .content_middle .content_middle_info .middle_right .middle_right_content .middle_right_info {
+  width: 50%;
+  margin-left: 20px;
+}
+/* line 71, ../sass/_content_middle.scss */
+.content .content_middle .content_middle_info .middle_right .middle_right_content .middle_right_info .middle_right_button {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  width: 50%;
+  padding: 5px 10px;
+}
+/* line 75, ../sass/_content_middle.scss */
+.content .content_middle .content_middle_info .middle_right .middle_right_content .middle_right_info .middle_right_button:hover {
+  background-color: #7fb61e;
+  cursor: pointer;
+  color: #fff;
+}
+/* line 80, ../sass/_content_middle.scss */
+.content .content_middle .content_middle_info .middle_right .middle_right_content .middle_right_info p {
+  margin-top: 30px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
   color: #878787;
 }

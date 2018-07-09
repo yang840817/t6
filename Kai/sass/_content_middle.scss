@@ -48,6 +48,42 @@
           }
         }
       }
+
+      .middle_right {
+        margin-top: 20px;
+
+        .middle_right_content {
+          display: flex;
+          margin-top: 20px;
+
+          .middle_right_img {
+            width: 50%;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          .middle_right_info {
+            width: 50%;
+            margin-left: 20px;
+
+            .middle_right_button {
+              text-align: center;
+              @include button($width: 50%);
+
+              &:hover {
+                @include hover_in_button;
+              }
+            }
+
+            p {
+              margin-top: 30px;
+              @include text_hidden($clamp:4);
+            }
+          }
+        }
+      }
     }
   }
 }
