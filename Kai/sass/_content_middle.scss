@@ -4,11 +4,17 @@
     margin: 0 3%;
     padding: 3% 0;
     border-bottom: 1px solid rgba(199,199,199,0.5);
+    @media screen and (max-width:650px) {
+      display: block;
+    }
 
     .content_middle_info {
       width: 33%;
       margin: 0 1%;
       font-family: sans-serif;
+      @media screen and (max-width:650px) {
+        width: 100%;
+      }
 
       &.middle_middle_info:first-child {
         padding-top: 20px;
@@ -76,6 +82,9 @@
             .middle_right_button {
               text-align: center;
               @include button($width: 50%);
+              @media screen and (max-width: 800px) {
+                @include button($width: 90%);
+              }
 
               &:hover {
                 @include hover_in_button;
