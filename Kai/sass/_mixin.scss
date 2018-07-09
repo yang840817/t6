@@ -69,14 +69,17 @@
   border-radius: 50%;
 
   &::after {
-    display: inline-block;
-    content: " ";
-    height: 8px;
-    width: 8px;
-    border-width: 2px 2px 0 0;
-    border-color: #fff;
-    border-style: solid;
-    transform: matrix(0.70, 0.70, -0.70, 0.70, 0, 0);
-    margin: 14px;
+    @include right_arrow_display;
   }
+}
+@mixin right_arrow_display {
+  display: inline-block;
+  content: " ";
+  height: 8px;
+  width: 8px;
+  border-width: 2px 2px 0 0;
+  border-color: #fff;
+  border-style: solid;
+  transform: matrix(0.70, 0.70, -0.70, 0.70, 0, 0);
+  margin: 14px;
 }

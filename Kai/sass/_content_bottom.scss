@@ -3,9 +3,28 @@
     padding: 3%;
 
     .content_bottom_title {
+      display: inline-block;
       font-size: 30px;
       font-family: sans-serif;
       margin: 1.25%;
+    }
+
+    .content_arrow {
+      float: right;
+      padding: 1.5% 2% 0 0;
+    }
+
+    .content_left_arrow {
+      display: inline-block;
+      @include right_arrow_display;
+      border-color: rgb(215,215,215);
+      border-width: 0 0 2px 2px;
+    }
+
+    .content_right_arrow {
+      display: inline-block;
+      @include right_arrow_display;
+      border-color: rgb(215,215,215);
     }
 
     .content_bottom_img {

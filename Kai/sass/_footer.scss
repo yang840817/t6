@@ -12,7 +12,41 @@
       margin: 1.25%;
 
       .footer_title {
+        margin-bottom: 20px;
         font-size: 24px;
+      }
+
+      .footer_input {
+        background-color: rgb(215,215,215);
+        padding: 5px;
+        width: 100%;
+        border: none;
+        margin-bottom: 5%;
+
+        &:focus {
+          background-color: rgb(255,255,255);
+        }
+      }
+
+      .input_fix_height {
+        height: 30%;
+        padding-top: 0;
+      }
+
+      .footer_button {
+        margin-top: 5%;
+        @include button($width: auto);
+        display: inline-block;
+
+        &:hover {
+          @include hover_in_button;
+        }
+      }
+
+      .footer_img_list {
+        img {
+          width: 23%;
+        }
       }
     }
   }
