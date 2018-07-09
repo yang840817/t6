@@ -5,6 +5,9 @@
     display: inline-flex;
     z-index: 1;
     margin: -5% 3% 3%;
+    @media screen and (max-width:650px) {
+      display: block;
+    }
 
     .content_top_info {
       padding: 2%;
@@ -16,6 +19,9 @@
       text-align: center;
       font-family: sans-serif;
       overflow: auto;
+      @media screen and (max-width:650px) {
+        width: auto;
+      }
 
       &:hover {
         background-color: rgba(#000,0.7);
@@ -35,6 +41,9 @@
       .info_content {
         margin: 10px;
         @include text_hidden($clamp:7);
+        @media screen and (max-width:650px) {
+          @include text_hidden($clamp:3);
+        }
       }
 
       .info_button {

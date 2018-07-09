@@ -114,6 +114,9 @@
 
     ul {
       display: inline-flex;
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
 
       li {
         border-right: 1px solid gray;
