@@ -144,7 +144,7 @@ table {
 .body_background {
   background-color: #000;
   background-image: url("../image/bg.jpg");
-  background-size: auto 85%;
+  background-size: 25% 85%;
   background-repeat: repeat-x;
   background-position: 0 33.333%;
 }
@@ -301,16 +301,22 @@ table {
 }
 /* line 16, ../sass/_nav.scss */
 .nav .nav_search {
+  float: right;
+  margin: 1%;
   background-image: url("../image/search.png");
   background-repeat: no-repeat;
   background-position: right;
   background-color: rgba(128, 128, 128, 0.2);
   padding: 5px;
 }
-/* line 23, ../sass/_nav.scss */
+/* line 25, ../sass/_nav.scss */
 .nav .nav_search:focus {
   background-color: #fff;
   background-image: none;
+}
+/* line 30, ../sass/_nav.scss */
+.nav .nav_search::after {
+  clear: both;
 }
 
 /* line 1, ../sass/_slide.scss */
@@ -381,7 +387,7 @@ table {
 /* line 4, ../sass/_content_top.scss */
 .content .content_top {
   display: inline-flex;
-  z-index: 1px;
+  z-index: 1;
   margin: -5% 3% 3%;
 }
 /* line 9, ../sass/_content_top.scss */
@@ -559,4 +565,61 @@ table {
   display: inline-block;
   width: 22%;
   margin: 1.25%;
+}
+
+/* line 1, ../sass/_footer.scss */
+.footer {
+  margin-top: 5%;
+  background-image: url("../image/subbg.gif");
+  background-repeat: repeat;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: sans-serif;
+}
+/* line 6, ../sass/_footer.scss */
+.footer .footer_top {
+  display: flex;
+  padding: 3%;
+}
+/* line 10, ../sass/_footer.scss */
+.footer .footer_top .footer_content {
+  width: 22%;
+  margin: 1.25%;
+}
+/* line 14, ../sass/_footer.scss */
+.footer .footer_top .footer_content .footer_title {
+  font-size: 24px;
+}
+/* line 20, ../sass/_footer.scss */
+.footer .footer_bottom {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 0;
+}
+/* line 26, ../sass/_footer.scss */
+.footer .footer_bottom p {
+  color: gray;
+}
+/* line 29, ../sass/_footer.scss */
+.footer .footer_bottom p span {
+  color: #7fb61e;
+}
+/* line 34, ../sass/_footer.scss */
+.footer .footer_bottom ul {
+  display: inline-flex;
+}
+/* line 37, ../sass/_footer.scss */
+.footer .footer_bottom ul li {
+  border-right: 1px solid gray;
+}
+/* line 40, ../sass/_footer.scss */
+.footer .footer_bottom ul li a {
+  padding: 0 10px;
+  color: gray;
+  text-decoration: none;
+}
+/* line 45, ../sass/_footer.scss */
+.footer .footer_bottom ul li a:hover {
+  color: #7fb61e;
 }

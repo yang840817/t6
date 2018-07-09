@@ -14,6 +14,8 @@
   }
 
   .nav_search {
+    float: right;
+    margin: 1%;
     background-image: url("../image/search.png");
     background-repeat: no-repeat;
     background-position: right;
@@ -24,10 +26,9 @@
       background-color: #fff;
       background-image: none;
     }
+
+    &::after {
+      clear: both;
+    }
   }
 }
-// .nav_search_background {
-//   @include background_style_in_center;
-//   margin: auto;
-//   display: inline-block;
-// }
