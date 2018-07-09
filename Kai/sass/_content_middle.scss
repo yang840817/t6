@@ -17,6 +17,9 @@
       .middle_title {
         font-size: 30px;
         margin-top: 20px;
+        @media screen and (max-width: 768px) {
+          font-size: 22px;
+        }
       }
 
       .middle_left_img {
