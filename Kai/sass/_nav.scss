@@ -1,12 +1,24 @@
 .nav {
-  @media screen and (max-width: 980px) {
+  font-size: 0;
+  margin: 2.5% auto 0;
+  @media screen and (max-width:980px) {
     text-align: center;
   }
 
   .nav_tag {
+    font-size: 16px;
+    @include background_style_in_center;
+    margin-right: 0;
     display: inline-flex;
+    // padding-right: 42%;
+    @media screen and (max-width: 980px) {
+      width: 90%;
+      margin-left: 0;
+      // margin-right: 5%;
+    }
     @media screen and (max-width:740px) {
       display: block;
+      margin-left: 5%;
     }
 
     label {
@@ -63,26 +75,36 @@
     }
   }
 
-  .nav_search {
+  .nav_search_background {
+    // font-size: 0;
+    padding: 13px;
     float: right;
-    margin: 1%;
-    background-image: url("../image/search.png");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-color: rgba(gray,0.2);
-    padding: 5px;
-
-    &:focus {
-      background-color: #fff;
-      background-image: none;
-    }
-
-    &::after {
-      clear: both;
-    }
+    @include background_style_in_center;
+    margin-left: 0;
     @media screen and (max-width: 980px) {
       float: none;
-      width: 95%;
+      margin-left: 5%;
+    }
+
+    .nav_search {
+      // margin: 0;
+      background-image: url("../image/search.png");
+      background-repeat: no-repeat;
+      background-position: right;
+      background-color: rgba(gray,0.2);
+      padding: 5px;
+
+      &:focus {
+        background-color: #fff;
+        background-image: none;
+      }
+
+      &::after {
+        clear: both;
+      }
+      @media screen and (max-width: 980px) {
+        width: 95%;
+      }
     }
   }
 }

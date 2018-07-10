@@ -129,6 +129,9 @@
 
     p {
       color: gray;
+      @media screen and (max-width:370px) {
+        font-size: 12px;
+      }
 
       span {
         color: #7fb61e;
