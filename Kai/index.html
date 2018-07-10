@@ -41,13 +41,17 @@
         <input class="nav_search" type="text" placeholder="Search The Site..">
       </div>
       <div class="slide">
-        <img class="img3" src="image/banner3.jpg" alt="">
-        <input type="button" id="slide_change">
+        <input type="checkbox" id="slide_change">
         <label for="slide_change" class="slide_arrow_left">
-        <div class="slide_arrow_left"></div>
-      </label>
+          <div class="slide_arrow_left"></div>
+        </label>
         <div class="slide_arrow_right"></div>
+        <div class="slide_img">
+          <img src="image/banner3.jpg" alt="">
+          <img src="image/banner2.jpg" alt="">
+        </div>
       </div>
+
       <div class="content">
         <div class="content_top">
           <div class="content_top_info">
@@ -198,7 +202,7 @@
           <div class="footer_title">GET IN TOUCH!</div>
           <input class="footer_input" type="text" placeholder="Name">
           <input class="footer_input" type="text" placeholder="Email">
-          <input class="footer_input input_fix_height" type="text" placeholder="Message">
+          <textarea class="footer_input" rows="8" cols="40" placeholder="Message"></textarea>
           <div class="footer_button">CLEAR FORMS</div>
           <div class="footer_button">SEND!</div>
         </div>
