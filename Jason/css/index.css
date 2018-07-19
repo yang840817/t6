@@ -203,7 +203,16 @@ body .main-bg {
   background-image: url(../images/slider_next.gif);
 }
 
+#services .card-body {
+  text-align: center;
+}
+#services .card-body .card-title {
+  text-transform: uppercase;
+}
 @media (min-width: 768px) {
+  #services {
+    margin-top: -30px;
+  }
   #services .card-group {
     padding: 0 15px;
   }
@@ -213,10 +222,6 @@ body .main-bg {
   }
   #services .card-group .card .card-body {
     padding: 40px 30px;
-    text-align: center;
-  }
-  #services .card-group .card .card-body .card-title {
-    text-transform: uppercase;
   }
 }
 
