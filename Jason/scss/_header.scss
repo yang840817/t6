@@ -2,13 +2,18 @@
     margin-top: 6px;
     background: url(../images/subbg.gif);
     padding: 30px;
-    // line-height: 80px;
     @extend %contain-rwd;
     @media (min-width: 768px) {
         margin-top: 6px;
     }
     .logo {
-        height: 100%;
+        text-align: center;
+        @media (min-width: 768px) {
+            text-align: left;
+        }
+        img {
+            height: 100%;
+        }
     }
     .header-contact{
         text-align: center;

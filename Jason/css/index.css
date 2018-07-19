@@ -60,6 +60,14 @@ body .footer-bg {
   }
 }
 #header .logo {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #header .logo {
+    text-align: left;
+  }
+}
+#header .logo img {
   height: 100%;
 }
 #header .header-contact {
@@ -114,6 +122,20 @@ body .footer-bg {
 }
 #header .header-contact .contact-icon .rss:hover {
   background-position-y: -27px;
+}
+
+#navigation {
+  margin: 30px 0;
+}
+#navigation .navigation {
+  width: 66%;
+  background-color: #ffffff;
+  margin-right: 2%;
+  padding: 0;
+}
+#navigation .search {
+  width: 32%;
+  background-color: #ffffff;
 }
 
 /*# sourceMappingURL=index.css.map */
