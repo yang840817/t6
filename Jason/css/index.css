@@ -206,10 +206,20 @@ body .main-bg {
 #main {
   padding: 0 30px;
 }
+#main #services {
+  margin-bottom: 30px;
+}
 @media (min-width: 768px) {
   #main #services {
     margin-top: -30px;
   }
+}
+#main #services .card {
+  background-color: #e7e7e7;
+}
+#main #services .card:hover {
+  color: white;
+  background-color: #646464;
 }
 @media (min-width: 768px) {
   #main #services .card {
