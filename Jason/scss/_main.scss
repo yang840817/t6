@@ -1,21 +1,40 @@
-#services {
-    .card-body {
-        text-align: center;
-        .card-title {
-            text-transform: uppercase;
+#main{
+    padding: 0 30px;
+    #services {
+        @media (min-width:768px) {
+            margin-top: -30px;
         }
-    }
-    @media (min-width:768px) {
-        margin-top: -30px;
-        .card-group{
-            padding: 0 15px;
-            .card {
-                margin: 0 15px;
+        .card {
+            @media (min-width:768px) {
                 height: 100%;
+            }
+            .card-body {
+                text-align: center;
+                .card-title {
+                    text-transform: uppercase;
+                }
+            }
+            @media (min-width:768px) {
                 .card-body {
                     padding: 40px 30px;
                 }
             }
         }
+        @media (min-width: 768px) {
+            .growth-strategies {
+                margin-right: 30px;
+            }
+            .partners-programs {
+                margin-right: 30px;
+            }
+        }
+        @media (min-width: 992px) {
+            .perfect-support {
+                margin-right: 30px;
+            }
+        }
     }
 }
+    /* #info {
+
+    } */

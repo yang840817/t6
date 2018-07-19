@@ -203,26 +203,46 @@ body .main-bg {
   background-image: url(../images/slider_next.gif);
 }
 
-#services .card-body {
+#main {
+  padding: 0 30px;
+}
+@media (min-width: 768px) {
+  #main #services {
+    margin-top: -30px;
+  }
+}
+@media (min-width: 768px) {
+  #main #services .card {
+    height: 100%;
+  }
+}
+#main #services .card .card-body {
   text-align: center;
 }
-#services .card-body .card-title {
+#main #services .card .card-body .card-title {
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  #services {
-    margin-top: -30px;
-  }
-  #services .card-group {
-    padding: 0 15px;
-  }
-  #services .card-group .card {
-    margin: 0 15px;
-    height: 100%;
-  }
-  #services .card-group .card .card-body {
+  #main #services .card .card-body {
     padding: 40px 30px;
   }
 }
+@media (min-width: 768px) {
+  #main #services .growth-strategies {
+    margin-right: 30px;
+  }
+  #main #services .partners-programs {
+    margin-right: 30px;
+  }
+}
+@media (min-width: 992px) {
+  #main #services .perfect-support {
+    margin-right: 30px;
+  }
+}
+
+    /* #info {
+
+    } */
 
 /*# sourceMappingURL=index.css.map */
