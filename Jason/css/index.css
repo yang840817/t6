@@ -49,6 +49,9 @@ body .header-bg {
   top: 0;
   height: 70px;
 }
+body .main-bg {
+  background: url(../images/subbg.gif);
+}
 
 #header {
   margin-top: 6px;
@@ -198,6 +201,23 @@ body .header-bg {
 }
 #banner .carousel-control-next {
   background-image: url(../images/slider_next.gif);
+}
+
+@media (min-width: 768px) {
+  #services .card-group {
+    padding: 0 15px;
+  }
+  #services .card-group .card {
+    margin: 0 15px;
+    height: 100%;
+  }
+  #services .card-group .card .card-body {
+    padding: 40px 30px;
+    text-align: center;
+  }
+  #services .card-group .card .card-body .card-title {
+    text-transform: uppercase;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

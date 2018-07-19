@@ -1,0 +1,18 @@
+#services {
+    @media (min-width:768px) {
+        .card-group{
+            padding: 0 15px;
+            .card {
+                margin: 0 15px;
+                height: 100%;
+                .card-body {
+                    padding: 40px 30px;
+                    text-align: center;
+                    .card-title {
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
