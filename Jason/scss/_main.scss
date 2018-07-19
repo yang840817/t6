@@ -45,15 +45,32 @@
 }
 
 
+%more {
+    color: black;
+        opacity: .7;
+    &:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+}
+
     #info {
+        color: gray;
         .welcome {
             @media (min-width: 768px) {
                 margin-right: 30px;
-                
+            }
+            .info-title {
+                color: black;
             }
             img {
                 width: 100%;
                 padding: 20px 0;
+            }
+            p {
+                a{
+                    @extend %more;
+                }
             }
         }
         .choose {
@@ -63,6 +80,9 @@
             }
             @media (min-width: 1200px) {
                 margin-right: 30px;
+            }
+            .info-title {
+                color: black;
             }
             .choose-content {
                 padding: 20px;
@@ -84,7 +104,7 @@
                     display: block;
                 }
                 p {
-                    margin-left: 53px;
+                    margin-left: 60px;
                 }
             }
         }
@@ -92,6 +112,9 @@
             margin-top: 30px;
             @media (min-width: 1200px) {
                 margin-top: 0;
+            }
+            .info-title {
+                color: black;
             }
             .news-content {
                 .news-img-container {
@@ -102,10 +125,18 @@
                         height: 142px;
                     }
                     .news-date {
-                        margin-left: 150px;
+                        margin-left: 160px;
+                        color: #ffffff;
+                        background-color: rgb(140, 180, 55);
+                        width: 66px;
+                        text-align: center;
+                        margin-bottom: 20px;
                     }
                     .news-text {
-                        margin-left: 150px;
+                        margin-left: 160px;
+                        a {
+                            @extend %more;
+                        }
                     }
                     &::after {
                         content: "";
