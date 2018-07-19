@@ -126,7 +126,7 @@ body .header-bg {
 }
 
 #navigation {
-  margin: 30px 0;
+  margin-top: 30px;
 }
 #navigation .navbar-light .navbar-toggler {
   border: none;
@@ -159,6 +159,13 @@ body .header-bg {
     border-right: solid rgba(128, 128, 128, 0.5) 1px;
   }
 }
+#navigation .navigation .nav-item .dropdown-item {
+  color: black;
+}
+#navigation .navigation .nav-item .dropdown-item:hover {
+  color: white;
+  background-color: #8cb437;
+}
 #navigation .search {
   width: 100%;
   background-color: #ffffff;
@@ -171,7 +178,26 @@ body .header-bg {
 }
 #navigation .search input {
   width: 100%;
-  background: url(../images/search.png) right 10px center no-repeat;
+  background: rgba(165, 164, 164, 0.466) url(../images/search.png) right 10px center no-repeat;
+  border: 1px solid rgba(128, 128, 128, 0.562);
+}
+
+#banner .carousel-control-prev, #banner .carousel-control-next {
+  width: 40px;
+  height: 119px;
+  background: 0 0 no-repeat;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#banner .carousel-control-prev:hover, #banner .carousel-control-next:hover {
+  background-position-y: -119px;
+}
+
+#banner .carousel-control-prev {
+  background-image: url(../images/slider_prev.gif);
+}
+#banner .carousel-control-next {
+  background-image: url(../images/slider_next.gif);
 }
 
 /*# sourceMappingURL=index.css.map */
