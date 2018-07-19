@@ -245,14 +245,33 @@ body .main-bg {
     margin-right: 30px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #main #services .perfect-support {
     margin-right: 30px;
   }
 }
 
-    /* #info {
-
-    } */
+#info .welcome img {
+  width: 100%;
+}
+#info .content {
+  padding: 20px;
+  border-bottom: 1px solid #c1c1c1;
+}
+#info .content .more-icon {
+  float: left;
+  margin-right: 5px;
+  width: 48px;
+  height: 48px;
+  background: url(../images/h3_plus.png) no-repeat;
+}
+#info .content .more-icon:hover {
+  background-image: url(../images/h3_minus.png);
+}
+#info .content::after {
+  content: "";
+  clear: left;
+  display: block;
+}
 
 /*# sourceMappingURL=index.css.map */
