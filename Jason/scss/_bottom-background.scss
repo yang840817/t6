@@ -1,0 +1,21 @@
+%body-bg-style {
+    background-color: #000000;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+
+}
+
+body {
+    background-image: url(../images/bg.jpg);
+    .header-bg {
+        @extend %body-bg-style;
+        top: 0;
+        height: 70px;
+    }
+    .footer-bg {
+        @extend %body-bg-style;
+        bottom: 0;
+        height: 140px;        
+    }
+}

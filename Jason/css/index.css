@@ -24,4 +24,96 @@ button {
   background-color: white;
 }
 
+@media (min-width: 768px) {
+  #header {
+    margin: 0 auto;
+  }
+}
+
+body .header-bg, body .footer-bg {
+  background-color: #000000;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+body {
+  background-image: url(../images/bg.jpg);
+}
+body .header-bg {
+  top: 0;
+  height: 70px;
+}
+body .footer-bg {
+  bottom: 0;
+  height: 140px;
+}
+
+#header {
+  margin-top: 6px;
+  background: url(../images/subbg.gif);
+  padding: 30px;
+}
+@media (min-width: 768px) {
+  #header {
+    margin-top: 6px;
+  }
+}
+#header .logo {
+  height: 100%;
+}
+#header .header-contact {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #header .header-contact {
+    text-align: right;
+  }
+}
+#header .header-contact .contact-icon .facebook {
+  background: url(../images/social.png) 0 0 no-repeat;
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+}
+#header .header-contact .contact-icon .facebook:hover {
+  background-position-y: -27px;
+}
+#header .header-contact .contact-icon .tumblr {
+  background: url(../images/social.png) -37px 0 no-repeat;
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+}
+#header .header-contact .contact-icon .tumblr:hover {
+  background-position-y: -27px;
+}
+#header .header-contact .contact-icon .flicker {
+  background: url(../images/social.png) -74px 0 no-repeat;
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+}
+#header .header-contact .contact-icon .flicker:hover {
+  background-position-y: -27px;
+}
+#header .header-contact .contact-icon .dribbble {
+  background: url(../images/social.png) -111px 0 no-repeat;
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+}
+#header .header-contact .contact-icon .dribbble:hover {
+  background-position-y: -27px;
+}
+#header .header-contact .contact-icon .rss {
+  background: url(../images/social.png) -150px 0 no-repeat;
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+}
+#header .header-contact .contact-icon .rss:hover {
+  background-position-y: -27px;
+}
+
 /*# sourceMappingURL=index.css.map */
