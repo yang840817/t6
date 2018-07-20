@@ -1,6 +1,6 @@
 #footer {
     background: url(../images/subbg.gif);
-    padding: 0 15px 30px;
+    padding: 0 15px;
         .footer-content {
         padding: 15px;
         .footer-title {
@@ -86,6 +86,42 @@
                 "f1 f2 f3 f4"
                 "f5 f6 f7 f8"
                 "f9 f10 f11 f12";
+            }
+        }
+    }
+    .after-footer {
+        text-align: center;
+        font-size: 12px;
+        color: gray;
+        background-color: black;
+        margin: 0 -15px;
+        padding: 10px 0;
+        @media (min-width: 992px) {
+            text-align: left;
+        }
+        a {
+            color: rgb(140, 180, 55);
+            opacity: .6;
+            &:hover {
+                opacity: 1;
+            }
+        }
+        .footer-nav {
+            display: none;
+            justify-content: space-between;
+            text-align: center;
+            @media (min-width:576px) {
+                display: flex;
+            }
+            @media (min-width: 1200px) {
+                margin-left: 150px;
+            }
+            li {
+                border-left: solid 1px gray;
+                flex: 1 1 0;
+                &:first-child {
+                    border-left: none;
+                }
             }
         }
     }
