@@ -424,7 +424,7 @@ body .main-bg {
 
 #footer {
   background: url(../images/subbg.gif);
-  padding: 0 15px;
+  padding: 0 15px 30px;
 }
 #footer .footer-content {
   padding: 15px;
@@ -473,8 +473,11 @@ body .main-bg {
   border: 1px solid rgba(128, 128, 128, 0.562);
   margin-bottom: 5px;
 }
-#footer .touch input:nth-of-type(3) {
-  height: 100px;
+#footer .touch textarea {
+  width: 100%;
+  background: rgba(165, 164, 164, 0.466);
+  border: 1px solid rgba(128, 128, 128, 0.562);
+  resize: none;
   margin-bottom: 30px;
 }
 #footer .touch .clear-form {
