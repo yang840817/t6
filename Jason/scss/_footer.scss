@@ -7,7 +7,9 @@
             text-transform: uppercase;
             padding: 20px 0;
         }
-        .testimonials {
+    }
+    .testimonials {
+        .content {
             background-color: rgb(230, 230, 230);
             padding: 10px 20px;
             position: relative;
@@ -37,8 +39,51 @@
                 color: rgb(140, 180, 55);
                 opacity: .6;
                 &:hover {
-                opacity: 1;
+                    opacity: 1;
                 }
+            }
+        }
+    }
+    .touch {
+        input {
+            width: 100%;
+            background: rgba(165, 164, 164, 0.466);
+            border: 1px solid rgba(128, 128, 128, 0.562);
+            margin-bottom: 5px;
+            &:nth-of-type(3) {
+                height: 100px;
+                margin-bottom: 30px;
+            }
+        }
+        .clear-form {
+            background-color: black;
+            color: white;
+        }
+        .send {
+            background-color: rgb(140, 180, 55);
+            color: white;
+        }
+    }
+    .flicker {
+        .flicker-grid {
+            display: grid;
+
+            grid-template-areas : 
+            "f1 f2 f3 f4" 
+            "f5 f6 f7 f8" 
+            "f9 f10 f11 f12";
+            
+            grid-gap: 5px 5px;
+            @media (min-width: 376px) {
+                grid-template-areas: 
+                "f1 f2 f3 f4 f5 f6"
+                "f7 f8 f9 f10 f11 f12";
+            }
+            @media (min-width: 768px) {
+                grid-template-areas : 
+                "f1 f2 f3 f4"
+                "f5 f6 f7 f8"
+                "f9 f10 f11 f12";
             }
         }
     }

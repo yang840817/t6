@@ -73,7 +73,7 @@ body .main-bg {
   }
 }
 #header .logo img {
-  height: 100%;
+  width: 100%;
 }
 #header .header-contact {
   text-align: center;
@@ -433,12 +433,12 @@ body .main-bg {
   text-transform: uppercase;
   padding: 20px 0;
 }
-#footer .footer-content .testimonials {
+#footer .testimonials .content {
   background-color: #e6e6e6;
   padding: 10px 20px;
   position: relative;
 }
-#footer .footer-content .testimonials::after {
+#footer .testimonials .content::after {
   content: "";
   /* 定位 */
   position: absolute;
@@ -448,24 +448,57 @@ body .main-bg {
   border-left: 40px solid #e6e6e6;
   border-bottom: 24px solid transparent;
 }
-#footer .footer-content .commissioner {
+#footer .testimonials .commissioner {
   margin-top: 40px;
   display: flex;
 }
-#footer .footer-content .commissioner img {
+#footer .testimonials .commissioner img {
   margin-right: 10px;
   flex-basis: 0;
 }
-#footer .footer-content .commissioner div {
+#footer .testimonials .commissioner div {
   flex-basis: 0;
   flex-grow: 1;
 }
-#footer .footer-content .commissioner a {
+#footer .testimonials .commissioner a {
   color: #8cb437;
   opacity: .6;
 }
-#footer .footer-content .commissioner a:hover {
+#footer .testimonials .commissioner a:hover {
   opacity: 1;
+}
+#footer .touch input {
+  width: 100%;
+  background: rgba(165, 164, 164, 0.466);
+  border: 1px solid rgba(128, 128, 128, 0.562);
+  margin-bottom: 5px;
+}
+#footer .touch input:nth-of-type(3) {
+  height: 100px;
+  margin-bottom: 30px;
+}
+#footer .touch .clear-form {
+  background-color: black;
+  color: white;
+}
+#footer .touch .send {
+  background-color: #8cb437;
+  color: white;
+}
+#footer .flicker .flicker-grid {
+  display: grid;
+  grid-template-areas: "f1 f2 f3 f4"  "f5 f6 f7 f8"  "f9 f10 f11 f12";
+  grid-gap: 5px 5px;
+}
+@media (min-width: 376px) {
+  #footer .flicker .flicker-grid {
+    grid-template-areas: "f1 f2 f3 f4 f5 f6" "f7 f8 f9 f10 f11 f12";
+  }
+}
+@media (min-width: 768px) {
+  #footer .flicker .flicker-grid {
+    grid-template-areas: "f1 f2 f3 f4" "f5 f6 f7 f8" "f9 f10 f11 f12";
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
