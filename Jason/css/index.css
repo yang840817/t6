@@ -1,3 +1,4 @@
+@charset "UTF-8";
 ul {
   margin: 0;
   padding: 0;
@@ -205,6 +206,7 @@ body .main-bg {
 
 #main {
   padding: 0 30px;
+  margin-bottom: 60px;
 }
 #main #services {
   padding-top: 20px;
@@ -229,11 +231,12 @@ body .main-bg {
   }
 }
 #main #services .card .card-body {
+  padding-bottom: 67px;
   text-align: center;
 }
 @media (min-width: 768px) {
   #main #services .card .card-body {
-    padding: 40px 30px;
+    padding: 40px 30px 67px;
   }
 }
 #main #services .card .card-body .card-title {
@@ -241,7 +244,10 @@ body .main-bg {
 }
 #main #services .card .card-body button {
   background-color: #acacac;
-  margin-top: 20px;
+  width: 60px;
+  position: absolute;
+  left: calc(50% - 30px);
+  bottom: 20px;
 }
 @media (min-width: 768px) {
   #main #services .growth-strategies {
@@ -363,12 +369,14 @@ body .main-bg {
 #feature-works h5 {
   margin-bottom: 30px;
 }
-#feature-works img {
-  padding: 0 15px;
-  width: 100%;
-}
 #feature-works .pic1 {
   margin-bottom: 20px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #feature-works .pic1 {
+    padding-right: 15px;
+  }
 }
 @media (min-width: 992px) {
   #feature-works .pic1 {
@@ -377,19 +385,87 @@ body .main-bg {
 }
 #feature-works .pic2 {
   margin-bottom: 20px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #feature-works .pic2 {
+    padding-left: 15px;
+  }
 }
 @media (min-width: 992px) {
   #feature-works .pic2 {
     margin-bottom: 0;
+    padding-right: 15px;
   }
 }
 #feature-works .pic3 {
   margin-bottom: 20px;
+  width: 100%;
 }
 @media (min-width: 768px) {
   #feature-works .pic3 {
     margin-bottom: 0;
+    padding-right: 15px;
   }
+}
+@media (min-width: 992px) {
+  #feature-works .pic3 {
+    padding-left: 15px;
+  }
+}
+#feature-works .pic4 {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #feature-works .pic4 {
+    padding-left: 15px;
+  }
+}
+
+#footer {
+  background: url(../images/subbg.gif);
+  padding: 0 15px;
+}
+#footer .footer-content {
+  padding: 15px;
+}
+#footer .footer-content .footer-title {
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+#footer .footer-content .testimonials {
+  background-color: #e6e6e6;
+  padding: 10px 20px;
+  position: relative;
+}
+#footer .footer-content .testimonials::after {
+  content: "";
+  /* 定位 */
+  position: absolute;
+  bottom: -24px;
+  left: 0px;
+  /* 三角形 */
+  border-left: 40px solid #e6e6e6;
+  border-bottom: 24px solid transparent;
+}
+#footer .footer-content .commissioner {
+  margin-top: 40px;
+  display: flex;
+}
+#footer .footer-content .commissioner img {
+  margin-right: 10px;
+  flex-basis: 0;
+}
+#footer .footer-content .commissioner div {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+#footer .footer-content .commissioner a {
+  color: #8cb437;
+  opacity: .6;
+}
+#footer .footer-content .commissioner a:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=index.css.map */
