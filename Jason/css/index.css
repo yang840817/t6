@@ -31,27 +31,28 @@ button {
   }
 }
 
-body .header-bg {
+body .header-bg, body .footer-bg {
   background-color: #000000;
   width: 100%;
-  position: absolute;
   z-index: -1;
 }
 
 body {
   background-image: url(../images/bg.jpg);
-  /* .footer-bg {
-      @extend %body-bg-style;
-      bottom: 0;
-      height: 140px;        
-  } */
 }
 body .header-bg {
   top: 0;
   height: 70px;
+  position: absolute;
 }
 body .main-bg {
   background: url(../images/subbg.gif);
+}
+body .footer-bg {
+  bottom: 0;
+  height: 140px;
+  position: relative;
+  margin-top: -80px;
 }
 
 #header {
@@ -340,22 +341,34 @@ body .main-bg {
 }
 #info .news .news-content .news-img-container {
   padding: 20px 0;
+  text-align: center;
 }
-#info .news .news-content .news-img-container img {
-  float: left;
-  width: 145px;
-  height: 142px;
+@media (min-width: 350px) {
+  #info .news .news-content .news-img-container {
+    text-align: left;
+  }
+}
+@media (min-width: 350px) {
+  #info .news .news-content .news-img-container img {
+    float: left;
+  }
 }
 #info .news .news-content .news-img-container .news-date {
-  margin-left: 160px;
   color: #ffffff;
   background-color: #8cb437;
   width: 66px;
   text-align: center;
-  margin-bottom: 20px;
+  margin: 20px auto;
 }
-#info .news .news-content .news-img-container .news-text {
-  margin-left: 160px;
+@media (min-width: 350px) {
+  #info .news .news-content .news-img-container .news-date {
+    margin: 0 0 20px 160px;
+  }
+}
+@media (min-width: 350px) {
+  #info .news .news-content .news-img-container .news-text {
+    margin-left: 160px;
+  }
 }
 #info .news .news-content .news-img-container::after {
   content: "";

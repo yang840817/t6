@@ -1,7 +1,6 @@
 %body-bg-style {
     background-color: #000000;
     width: 100%;
-    position: absolute;
     z-index: -1;
 
 }
@@ -12,13 +11,16 @@ body {
         @extend %body-bg-style;
         top: 0;
         height: 70px;
+        position: absolute;
     }
     .main-bg {
         background: url(../images/subbg.gif);
     }
-    /* .footer-bg {
+    .footer-bg {
         @extend %body-bg-style;
         bottom: 0;
-        height: 140px;        
-    } */
+        height: 140px;
+        position: relative;
+        margin-top: -80px;
+    }
 }

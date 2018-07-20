@@ -129,21 +129,31 @@
         .news-content {
             .news-img-container {
                 padding: 20px 0;
-                img {
-                    float: left;
-                    width: 145px;
-                    height: 142px;
+                text-align: center;
+                @media (min-width: 350px) {
+                    text-align: left;
                 }
+                img {
+                    @media (min-width: 350px) {
+                        float: left;
+                    }
+                }
+                
                 .news-date {
-                    margin-left: 160px;
                     color: #ffffff;
                     background-color: rgb(140, 180, 55);
                     width: 66px;
                     text-align: center;
-                    margin-bottom: 20px;
+                    margin: 20px auto;
+                    @media (min-width: 350px) {
+                        margin: 0 0 20px 160px;
+                        
+                    }
                 }
                 .news-text {
-                    margin-left: 160px;
+                    @media (min-width: 350px) {
+                        margin-left: 160px;
+                    }
                     a {
                         @extend %more;
                     }

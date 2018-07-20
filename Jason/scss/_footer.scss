@@ -1,7 +1,7 @@
 #footer {
     background: url(../images/subbg.gif);
     padding: 0 15px 30px;
-    .footer-content {
+        .footer-content {
         padding: 15px;
         .footer-title {
             text-transform: uppercase;
@@ -70,7 +70,6 @@
     .flicker {
         .flicker-grid {
             display: grid;
-
             grid-template-areas : 
             "f1 f2 f3 f4" 
             "f5 f6 f7 f8" 
