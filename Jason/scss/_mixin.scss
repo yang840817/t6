@@ -1,0 +1,16 @@
+%contain-rwd {
+    @media(min-width: 768px) {
+        margin: 0 auto;
+    }
+}
+
+@mixin contact-icon ($position-x) {
+    background: url(../images/social.png) $position-x 0 no-repeat;
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    &:hover {
+        background-position-y: -27px;
+    }
+}
+

@@ -1,0 +1,42 @@
+#header {
+    margin-top: 6px;
+    background: url(../images/subbg.gif);
+    padding: 30px;
+    @extend %contain-rwd;
+    @media (min-width: 768px) {
+        margin-top: 6px;
+    }
+    .logo {
+        text-align: center;
+        @media (min-width: 768px) {
+            text-align: left
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .header-contact{
+        text-align: center;
+        @media (min-width:768px){
+            text-align: right;
+        }
+        .contact-icon {
+            .facebook {
+                @include contact-icon(0);
+            }
+            .tumblr {
+                @include contact-icon(-37px);
+            }
+            .flicker {
+                @include contact-icon(-74px);
+            }
+            .dribbble {
+                @include contact-icon(-111px);
+            }
+            .rss {
+                @include contact-icon(-150px);
+            }
+        }
+    }
+}
+

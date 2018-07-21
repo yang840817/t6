@@ -1,0 +1,128 @@
+#footer {
+    background: url(../images/subbg.gif);
+    padding: 0 15px;
+        .footer-content {
+        padding: 15px;
+        .footer-title {
+            text-transform: uppercase;
+            padding: 20px 0;
+        }
+    }
+    .testimonials {
+        .content {
+            background-color: rgb(230, 230, 230);
+            padding: 10px 20px;
+            position: relative;
+            &::after {
+                content: "";
+                /* 定位 */
+                position: absolute;
+                bottom: -24px;
+                left: 0px;
+                /* 三角形 */
+                border-left: 40px solid rgb(230, 230, 230);
+                border-bottom: 24px solid transparent;
+            }
+        }
+        .commissioner {
+            margin-top: 40px;
+            display: flex;
+            img {
+                margin-right: 10px;
+                flex-basis: 0;
+            }
+            div {
+                flex-basis: 0;
+                flex-grow: 1;
+            }
+            a {
+                color: rgb(140, 180, 55);
+                opacity: .6;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .touch {
+        input {
+            width: 100%;
+            background: rgba(165, 164, 164, 0.466);
+            border: 1px solid rgba(128, 128, 128, 0.562);
+            margin-bottom: 5px;
+        }
+        textarea {
+            width: 100%;
+            background: rgba(165, 164, 164, 0.466);
+            border: 1px solid rgba(128, 128, 128, 0.562);
+            resize: none;
+            margin-bottom: 30px;
+        }
+        .clear-form {
+            background-color: black;
+            color: white;
+        }
+        .send {
+            background-color: rgb(140, 180, 55);
+            color: white;
+        }
+    }
+    .flicker {
+        .flicker-grid {
+            display: grid;
+            grid-template-areas : 
+            "f1 f2 f3 f4" 
+            "f5 f6 f7 f8" 
+            "f9 f10 f11 f12";
+            
+            grid-gap: 5px 5px;
+            @media (min-width: 376px) {
+                grid-template-areas: 
+                "f1 f2 f3 f4 f5 f6"
+                "f7 f8 f9 f10 f11 f12";
+            }
+            @media (min-width: 768px) {
+                grid-template-areas : 
+                "f1 f2 f3 f4"
+                "f5 f6 f7 f8"
+                "f9 f10 f11 f12";
+            }
+        }
+    }
+    .after-footer {
+        text-align: center;
+        font-size: 12px;
+        color: gray;
+        background-color: black;
+        margin: 0 -15px;
+        padding: 10px 0;
+        @media (min-width: 992px) {
+            text-align: left;
+        }
+        a {
+            color: rgb(140, 180, 55);
+            opacity: .6;
+            &:hover {
+                opacity: 1;
+            }
+        }
+        .footer-nav {
+            display: none;
+            justify-content: space-between;
+            text-align: center;
+            @media (min-width:576px) {
+                display: flex;
+            }
+            @media (min-width: 1200px) {
+                margin-left: 150px;
+            }
+            li {
+                border-left: solid 1px gray;
+                flex: 1 1 0;
+                &:first-child {
+                    border-left: none;
+                }
+            }
+        }
+    }
+}
