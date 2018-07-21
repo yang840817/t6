@@ -1,0 +1,62 @@
+@mixin size($species)
+  @if $species == pad
+    @media screen and (min-width: 768px) and (max-width:1024px)
+      @content
+  @else if $species == mobile
+    @media screen and (min-width:300px) and (max-width: 767px)
+      @content
+.clear
+  clear: both
+#nav-bar
+  width: 84%
+  margin: 27px auto 0
+  // background-color: white
+
+#nav-list
+  padding: 0
+  margin: 0
+  display: flex
+  flex-wrap: wrap
+  background-color: white
+  flex: 0 0 73%
+  box-shadow: inset -1px 1px 3px gray
+  margin-right: 2%
+  font-size: 0
+  +size(mobile)
+    flex: 0 0 100%
+    margin-right: 0
+  +size(pad)
+    flex: 0 0 100%
+#nav-list li
+  // display: inline-block
+  flex: 0 0 16.66666%
+  list-style-type: none
+  padding: 0 26px
+  line-height: 52px
+  font-size: 13px
+  text-align: center
+  border-left: 1px solid #ECECEC
+  border-right: 1px solid #ECECEC
+  +size(mobile)
+    flex: 0 0 16.66666%
+#nav-list :hover:nth-child(n)
+  background-color: #6AC100
+  color: white
+#nav-search
+  display: flex
+  padding: 6px
+  background-color: white
+  justify-content: center
+  box-shadow: inset 1px 1px 3px gray
+  flex: 0 0 25%
+  +size(mobile)
+    flex: 0 0 100%
+  +size(pad)
+    flex: 0 0 50%
+#nav-search input
+  background-image: url("../images/search.png")
+  background-repeat: no-repeat
+  background-position: right
+  background-color: #F3F3F3
+  width: 90%
+  color: #9F9F9F

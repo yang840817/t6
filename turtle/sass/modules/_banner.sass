@@ -1,0 +1,20 @@
+@mixin size($species)
+  @if $species == pad
+    @media screen and (min-width: 768px) and (max-width:1024px)
+      @content
+  @else if $species == mobile
+    @media screen and (min-width:300px) and (max-width: 767px)
+      @content
+
+#banner
+  @extend .mainWidth
+  padding: 0
+  img
+    +size(mobile)
+      height: 50vh
+.carousel-control-size
+  width: 3% !important
+.carousel-control-size :nth-child(1)
+  padding: 55px 0
+  width: 100%
+  background-color: black

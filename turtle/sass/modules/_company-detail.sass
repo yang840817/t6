@@ -1,0 +1,56 @@
+@mixin size($species)
+  @if $species == pad
+    @media screen and (min-width: 768px) and (max-width:1024px)
+      @content
+  @else if $species == mobile
+    @media screen and (min-width:300px) and (max-width: 767px)
+      @content
+
+#company-detail
+  @extend .mainWidth
+#detail-list
+  @extend #card-list
+
+#border-line
+  padding-bottom: 60px
+  border-bottom: 1px solid #DADADA
+.why-choose-list
+  display: flex
+  border-bottom: 1px solid #DADADA
+  color: #B5B5B5
+  padding: 14px 0px
+  align-items: center
+.why-choose-list-icon
+  
+  background-color: #DADADA
+  border-radius: 50%
+  color: white
+  font-size: 20px
+  text-align: center
+  line-height: 45px
+  flex: 0 0 45px
+  // +size(mobile)
+  //   width: 25px
+  //   height: 25px
+  //   line-height: 25px
+.why-choose-list-text
+  padding-left: 14px
+
+.news-list
+  display: flex
+  button
+    color: white
+    background-color: #6AC100
+    padding: 3px 12px
+    margin-bottom: 20px
+  p
+    line-height: 1
+.news-list:nth-child(2)
+  margin-top: 17px
+.news-img
+  width: 40%
+  margin-top: 14px
+.news-text
+  width: 60%
+  margin-top: 14px
+  padding-left: 23px

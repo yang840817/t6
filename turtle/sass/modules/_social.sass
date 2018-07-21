@@ -1,0 +1,64 @@
+#social
+  @extend .mainWidth
+  margin-top: 80px
+#social-detail
+  @extend #card-list
+  padding-top: 30px
+  padding-bottom: 35px
+  h4
+    padding-bottom: 15px
+
+.get-in-touch-input
+  background-color: #E7E7E7
+  color: #A2A2A2
+  border-radius: 5px
+  border: 1px solid #A2A2A2
+  font-size: 13px
+  width: 100%
+  padding: 2px 0 2px 3px
+  margin-bottom: 6px
+#TESTIMONIALS
+  p
+    background-color: #E7E7E7
+    font-size: 12px
+    padding: 10px 26px
+    border-radius: 5px 5px 5px 0
+    position: relative
+  p::after
+    content: " "
+    position: absolute
+    top: 99%
+    left: 0
+    z-index: 1
+    // border-top: 20px solid transparent
+    border-left: 20px solid #E7E7E7
+    // border-right: 20px solid transparent
+    border-bottom: 20px solid transparent
+#who-say-it
+  display: flex
+  margin-top: 35px
+  span
+    font-size: 13px
+    padding: 5px 10px 0 12px
+  a
+    color: #6AC100
+#get-in-touch
+  input
+    @extend .get-in-touch-input
+  textarea
+    @extend .get-in-touch-input
+    height: 100px
+    resize: none
+  button
+    background-color: black
+    color: white
+    margin-top: 15px
+    font-size: 14px
+    padding: 4px 8px
+  button:hover
+    background-color: #6AC100
+
+#flicker-pic img
+  width: 60px
+  height: 65px
+  margin-bottom: 3px

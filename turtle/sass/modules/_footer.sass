@@ -1,0 +1,38 @@
+@mixin size($species)
+  @if $species == pad
+    @media screen and (min-width: 768px) and (max-width:1024px)
+      @content
+  @else if $species == mobile
+    @media screen and (min-width:300px) and (max-width: 767px)
+      @content
+#footer
+  @extend .mainWidth
+#footer-detail
+  color: #545454
+  display: flex
+  justify-content: space-between
+  margin-top: 15px
+  font-size: 15px
+  span
+    color: #6AC100
+  +size(mobile)
+    display: block
+  +size(pad)
+    display: block
+#copyright
+  +size(mobile)
+    padding-left: 8px
+  +size(pad)
+    padding-left: 8px
+#footer-nav
+  ul
+    margin-bottom: 0
+    padding: 0
+  li
+    display: inline-block
+    list-style-type: none
+    padding: 0 8px
+    border-right: 1px solid #545454
+    line-height: 1
+  li:hover
+    color: #6AC100

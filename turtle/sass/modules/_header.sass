@@ -1,0 +1,27 @@
+@mixin size($species)
+  @if $species == pad
+    @media screen and (min-width: 768px) and (max-width:1024px)
+      @content
+  @else if $species == mobile
+    @media screen and (min-width:300px) and (max-width: 767px)
+      @content
+
+.mainWidth
+  width: 84%
+  margin: 0 auto
+
+#header
+  background-image: url("../images/subbg.gif")
+  @extend .mainWidth
+  padding: 33px 23px
+#contact
+  text-align: right
+  +size(pad)
+    text-align: left
+    margin-top: 20px
+  +size(mobile)
+    margin-top: 20px
+    text-align: left
+  #contact-icon
+    font-size: 25px
+    letter-spacing: 3px
