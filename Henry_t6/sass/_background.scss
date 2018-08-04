@@ -1,0 +1,22 @@
+body {
+    background-image: url(../images/bg.jpg);
+}
+
+.bg-header, .bg-footer {
+    background-color: #171717;
+    width: 100%;
+    z-index: -1;
+}
+
+.bg-header {
+    position: absolute;
+    top: 0;
+    height: 72px;
+}
+
+body .bg-footer {
+    position: relative;
+    bottom: 0;
+    height: 190px;
+    margin-top: -190px;
+}

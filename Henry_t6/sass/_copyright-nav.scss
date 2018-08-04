@@ -1,0 +1,44 @@
+@import 'variable';
+@import 'extends';
+
+#copyright-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 15px 0;
+
+    @media (max-width: 991.98px) {
+        display: block;
+        text-align: center;
+    }
+}
+
+.copyright {
+    color: $gray;
+
+    a {
+        color: $green;
+    }
+}
+
+.footer-nav {
+    justify-self: end;
+
+    @extend %clearfix;
+
+    li {
+        float: left;
+
+        a {
+            color: $gray;
+            padding: 0 10px;
+            border-right: 1px solid #ccc;
+            &:hover {
+                color: $green;
+            } 
+        }
+    }
+
+    @media (max-width: 991.98px) {
+        display: none;
+    }
+}

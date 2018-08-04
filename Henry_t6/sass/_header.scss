@@ -1,0 +1,94 @@
+#header {
+  background-image: url(../images/subbg.gif);
+  background-repeat: repeat;
+  padding: 35px 0;
+}
+
+#social {
+  justify-content: flex-end;
+
+  li {
+    padding-right: 10px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &:nth-child(1) a {
+      width: 27px;
+      height: 27px;
+      background: url(../images/social.png);
+    }
+
+    &:nth-child(1) a:hover {
+      width: 27px;
+      height: 27px;
+      background: url(../images/social.png) 0 27px;
+    }
+
+    &:nth-child(2) a {
+      width: 27px;
+      height: 27px;
+      background: url(../images/social.png) -37px 0px;
+    }
+
+    &:nth-child(2) a:hover {
+      width: 27px;
+      height: 27px;
+      background: url(../images/social.png) -37px 27px;
+    }
+
+    &:nth-child(3) a {
+      width: 27px;
+      height: 27px;
+      background: url(../images/social.png) -74px 0px;
+    }
+
+    &:nth-child(3) a:hover {
+      width: 27px;
+      height: 27px;
+      background: url(../images/social.png) -74px 27px;
+    }
+
+    &:nth-child(4) a {
+      width: 27px;
+      height: 27px;
+      background: url(../images/social.png) -111px 0px;
+    }
+
+    &:nth-child(4) a:hover {
+      width: 27px;
+      height: 27px;
+      background: url(../images/social.png) -111px 27px;
+    }
+
+    &:nth-child(5) a {
+      width: 27px;
+      height: 27px;
+      background: url(../images/social.png) -150px 0px;
+    }
+
+    &:nth-child(5) a:hover {
+      width: 27px;
+      height: 27px;
+      background: url(../images/social.png) -150px 27px;
+    }
+
+    a {
+      display: block;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    justify-content: start;
+  }
+}
+
+#contact {
+  text-align: right;
+
+  @media (max-width: 767.98px) {
+    text-align: left;
+    font-size: 0.85rem;
+  }
+}

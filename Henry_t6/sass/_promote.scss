@@ -1,0 +1,39 @@
+@import 'variable';
+
+#promote {
+    padding-bottom: 50px;
+    margin-top: -25px;
+}
+
+.promote-item {
+    background-color: $gray;
+    padding: 25px 35px;
+    text-align: center;
+
+    h5 {
+        text-transform: uppercase;
+        font-size: 1rem;
+        padding-bottom: 25px;
+    }
+
+    img {
+        padding-bottom: 25px;
+        width: 50px;
+    }
+
+    p {
+        margin-bottom: 25px;
+    }
+
+    button {
+        background-color: #CECECE;
+        border: 1px solid transparent;
+        font-size: 14px;
+        padding: 2px 15px;
+    }
+
+    &:hover {
+        background-color: rgba(0,0,0,0.6);
+        color: white;
+    }
+}

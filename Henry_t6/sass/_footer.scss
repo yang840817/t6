@@ -1,0 +1,91 @@
+@import 'variable';
+@import 'mixin';
+
+#footer {
+    background-image: url(../images/subbg.gif);
+    padding: 35px 0;
+}
+
+// TESTIMONY
+.dialogue {
+    background-color: $gray;
+    padding: 20px; 
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-top: 15px solid $gray;
+        border-left: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 15px solid transparent;
+        transform: rotate(135deg);
+        position: absolute;
+        left: -15px;
+    }
+}
+
+.witness {
+    margin-top: 30px;
+    display: flex;
+
+    img {
+        margin-right: 15px;
+    }
+
+    a {
+        color: $green;
+        font-style: italic;
+    }
+}
+
+// GET IN TOUCH
+.touch {
+    input, textarea {
+        background-color: $gray;
+        border: 1px solid #ccc;
+        width: 100%;
+        padding: 5px;
+    }
+
+    input {
+        margin-bottom: 10px;
+    }
+
+    textarea {
+        height: 80px;
+        margin-bottom: 15px;
+        resize: none;
+    }
+
+    .clear {
+        @include button(#000);
+    }
+
+    .send {
+        @include button($green);
+    }
+}
+
+.flickr {
+    .flickr-images {
+        display: grid;
+        // grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 5px;
+
+        @media (max-width: 767.98px) {
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        @media (max-width: 445px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    
+    img {
+        display: block;
+    }
+}

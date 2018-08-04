@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+body {
+    font-size: 14px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container-small {
+    padding: 0 35px;
+    margin: 0 auto;
+    background-image: url(../images/subbg.gif);
+}
+
+.title {
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
