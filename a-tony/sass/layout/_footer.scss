@@ -1,0 +1,136 @@
+footer {
+  margin-top: 40px;
+  h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: gray;
+    font-size: 10px;
+  }
+
+  #connect {
+    background-color: white;
+    box-shadow: 0 0 1px 1px gray;
+    padding-top: 30px;
+
+    .testimonials {
+      .speak {
+        position: relative;
+        background-color: #e7e7e7;
+        border-radius: 5px;
+        border-bottom-left-radius: 0px;
+        padding: 10px;
+        margin-bottom: 30px;
+        .half-triangle {
+          position: absolute;
+          left: 0;
+          bottom: -15px;
+          @include half-triangle($width:30px,$height: 15px,$border-top-color:#e7e7e7,$border-right-color:transparent);
+        }
+      }
+      .media {
+        p {
+          color: #82b622;
+          font-style: italic;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .touch {
+      font-size: 12px;
+      
+      input {
+        width: 100%;
+        background: #e7e7e7;
+        border: none;
+        border-radius: 3px;
+        margin-bottom: 3px;
+        padding: 5px 10px;
+      }
+      textarea {
+        height: 150px;
+        width: 100%;
+        background: #e7e7e7;
+        border: none;
+        border-radius: 3px;
+        padding: 5px 10px;
+        margin-bottom: 20px;
+        resize: none;
+      }
+
+      button {
+        border: none;
+        border-radius: 0px;
+        padding: 10px 12px;
+        margin-bottom: 20px;
+        color : white;
+      }
+      .clearForm{
+        background: #000;
+      }
+
+      .send {
+        background: #82b622;
+      }
+    }
+
+    .flicker {
+      img {
+        width: 23%;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .footer-copyright-navbar {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:800px) {
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+
+    .copyright {
+      font-size: 12px;
+      color: gray;
+      line-height: 40px;
+      span {
+        color: #82b622;
+      }
+      @media (max-width:800px) {
+        margin-bottom: 0;
+      }
+    }
+
+    ul {
+      text-align: right;
+      color: gray;
+      padding-left: 0;
+      
+      li {
+        display: inline-block;
+        font-size: 12px;
+        a {
+          color: gray;
+          text-decoration: none;
+          line-height: 40px;
+          &:hover {
+            text-decoration: none;
+            color: inherit;
+          }
+          strong:hover{
+            text-decoration: none;
+            color:#82b622;
+          }
+        }
+        
+      }
+    }
+  }
+}

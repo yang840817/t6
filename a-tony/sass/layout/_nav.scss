@@ -1,0 +1,64 @@
+
+#nav {
+  position: relative;
+  top: 30px;
+  padding: 0px; //remove container padding
+  @include collapse-nav-btn($border-color:none, $toggle-color: $color-font);
+  .navbar {
+    @media (max-width:1000px){
+      #navbarsCollapse {
+        position: absolute;
+        background: white;
+        width: 200px;
+        z-index: 100;
+        margin-left: -20px;
+      }
+    }
+    button{
+      padding:13px 0px;
+    }
+    width: calc(100% - 216px);
+    min-width: 70px;
+    padding: 0px; //reset navber padding
+    @media (max-width:960px) {
+      padding-left: 20px;
+    }
+    margin-right: 10px; //space between navbar & search
+    height: 100%;
+    background: $bg-default;
+    box-shadow: 0 0 1px 1px $color-shadow;
+    a {
+      padding: 20px; //expand button
+      border-right: 1px solid $color-light; //line of separate botton
+      color: $color-shadow;
+      font-size: 12px;
+      &:hover {
+        background: $color-hot;
+        color: $color-default;
+      }
+    }
+  }
+  .search {
+    width: 200px;
+    position: relative;
+    padding: 10px 16px;  
+    background: $color-default;
+    box-shadow: 0 0 1px 1px $color-shadow;
+    float: right;
+    input {
+      width: 100%;
+      border-radius: 0px;
+      background-color: $bg-light;
+      &::placeholder {
+        font-size: 12px;
+      }
+    }
+    img {
+      position: absolute;
+      right: 20px;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+    }
+  }
+}

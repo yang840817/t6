@@ -1,0 +1,57 @@
+#solutions {
+  background-color: #fff;
+  .row{
+    overflow: hidden; 
+    [class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+    }
+  }
+  .card {
+    height: 100%;
+    @media (max-width: 1000px){
+      height:99%;
+    }
+    border:none;
+    border-radius: 0;
+    background-color: #e8e8e8;
+    text-align: center;
+    padding: 34px 0px 0px;
+    margin-bottom: 10px;
+    &-body {
+      border: 0 solid #000;
+      h2 {
+      font-size: 16px;
+      }
+      img {
+        width: 54px;
+        height: 54px;
+        margin: 26px auto;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+
+    &-footer{
+      background-color: inherit;
+      border: 0 solid #000;
+      text-align: center;
+      padding: 24px;
+      button {
+        padding: 10px 16px;
+        border: 0px solid #000;
+        background-color:#cecece;
+        color: black;
+      }
+    }
+
+    &:hover {
+      background-color: #646464;
+      opacity: 0.8;
+      h2,p {
+        color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,142 @@
+@mixin header-icons($X-position) {
+  display: inline-block;
+  background: url(../images/social.png) no-repeat $X-position top;
+  width: 27px;
+  height: 27px;
+  &:hover {
+    background: url(../images/social.png) no-repeat $X-position bottom;
+  }
+}
+
+@mixin collapse-nav-btn($border-color: $color-default, $toggle-color: $color-default) {
+  button {
+    border: 1px solid $border-color;
+    span {
+      background: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$toggle-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") no-repeat center;
+    }
+  }
+}
+
+%vertical-align-center{
+  top: 50%;
+  transform: translateY(-44%);
+  height: 119px;
+  width: 100px;
+}
+
+@mixin font($color:$color-default, $ff:$font-family-default, $tt:capitalize ,$fs:normal) {
+  color: $color;
+  font-family: $ff;
+  text-transform: $tt;
+  font-style: $fs;
+}
+
+@mixin hover($color,$color-bg:transparent,$opacity:1){
+  &:hover {
+    opacity: $opacity;
+    background-color: $color-bg;
+    color: $color;
+    transition:1s;
+    cursor: pointer;
+  }
+}
+
+
+
+@mixin X-center($pY:0,$pX:0,$mY:0,$mX:auto,$ta:center){
+  padding: $pY $pX;
+  margin: $mY $mX;
+  text-align: $ta;
+}
+
+@mixin overlay(){
+  position: absolute;
+  left:0;
+  top:0;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin botton-overtop{
+  @include X-center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+}
+
+@mixin center-overlay-absolute($top:0,$right:0,$bottom:0,$left:0){
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  margin: auto;
+}
+
+@mixin botton($pY,$pX,$color:$color-hot,$border:none){
+  padding: $pY $pX;
+  background-color: $color;
+  border:$border;
+}
+
+@mixin triangle($border, $color-top:transparent, $color-right:transparent, $color-bottom:transparent, $color-left:transparent){
+  border-top: $border solid $color-top;
+  border-right: $border solid  $color-right;
+  border-bottom: $border solid  $color-bottom;
+  border-left: $border solid $color-left;
+  width: 0;
+}
+
+@mixin half-triangle ($height,$width,$border-top-color:none,$border-right-color:none,$border-bottom-color:none,$border-left-color:none){
+  border-top: $height solid $border-top-color;  // #e7e7e7
+  border-right: $width solid $border-right-color;
+  border-bottom: $height solid $border-bottom-color;
+  border-left: $width solid $border-left-color;
+}
+
+@mixin arrow ($size:5px,$weight:2px,$color:$color-default,$derection:0deg){
+  position: absolute;
+  border-top:$weight solid $color;
+  border-right:$weight solid $color;
+  padding: $size;
+  transform: translate(-50%, -50%) rotate($derection - 45deg);
+}
+
+// @mixin dotted($display:block,$radius:5px,$color:$color-default,$mY: 20px, $mX: auto){
+//   .dot {
+//     display: $display;
+//     border: $radius solid $color-default;
+//     border-radius: $radius;
+//     margin: $mY $mX;
+//     width: 0;
+//   }
+// }
+
+@mixin circle($radius:10px,$color:$color-default){
+  border-radius: $radius;
+  border: $radius solid $color;
+  width: 0;
+  height: 0;
+}
+
+// %down-arrow{
+//   @include triangle(30px,$color-top:$color-hot);
+//   position: absolute;
+//   top: 100%;
+//   left: 0;
+//   right: 0;
+//   margin: 0 auto;
+//   z-index: 1;
+// }
+
+// %dot-vertical-group{
+//   position: absolute;
+//   display: flex;
+//   justify-content: center;
+//   top:-25px;
+//   left: 0;
+//   right: 0;
+//   margin: 0 auto;
+//   @include dotted($display:inline-block,$mX:20px);
+// }
