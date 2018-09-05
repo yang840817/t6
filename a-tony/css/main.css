@@ -121,8 +121,9 @@ section {
     position: absolute;
     background: white;
     width: 200px;
-    z-index: 100;
+    z-index: 1;
     margin-left: -20px;
+    top: 58px;
   }
 }
 #nav .navbar button {
@@ -185,13 +186,6 @@ section {
 
 #solutions {
   background-color: #fff;
-}
-#solutions .row {
-  overflow: hidden;
-}
-#solutions .row [class*="col-"] {
-  margin-bottom: -99999px;
-  padding-bottom: 99999px;
 }
 #solutions .card {
   height: 100%;
@@ -266,7 +260,7 @@ section {
   padding: 10px 0;
   border-bottom: 1px solid #dadada;
 }
-#info .choose-contain:first-child {
+#info .choose-contain:nth-child(2) {
   padding-top: 0;
 }
 #info .choose-contain .circleArrowContain {
