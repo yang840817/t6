@@ -1,0 +1,82 @@
+@import "./modules/normalize.scss";
+@import "./modules/variables-color.scss";
+@import "./modules/variables-width.scss";
+@import "./modules/mixin-mediaquery.scss";
+@import "./modules/extendclass.scss";
+.carousel{
+  position: relative;
+  top:-30px;
+  overflow: hidden;
+  .carousel--height{
+    width: 100%;
+  }
+  input{
+    display: none;
+  }
+  &__img{
+    position: absolute;
+    top:0;
+    width: 100%;
+    transform: translateX(100%);
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    .pre{
+      background-image: url("../img/slider_prev.gif");
+      @extend%carousel--label;
+      left:0;
+    }
+    .next{
+      background-image: url("../img/slider_next.gif");
+      @extend%carousel--label;
+      right:0;
+    }
+  }
+}
+
+
+
+#i1:checked ~ #img1,#i2:checked ~ #img2,#i3:checked ~ #img3{
+  transform: translateX(0);
+}
+
+// @keyframes change{
+//   0%{
+//     transform: translateX(100%);
+//     z-index:1;
+//   }
+//   16.666%{
+//     transform: translateX(0);
+//       z-index:1;
+//   }
+//   33.333%{
+//     transform: translateX(0);
+//       z-index:1;
+//   }
+//   50%{
+//     transform: translateX(-100%);
+//     z-index:0;
+//   }
+//   100%{
+//     transform: translateX(-100%);
+//     z-index:0;
+//   }
+// }
+//
+//
+// #img1,#img2,#img3{
+//   animation-name: change;
+//   animation-duration:12s;
+//   animation-iteration-count:infinite;
+//   animation-timing-function:linear;
+// }
+// #img1{
+//   animation-delay:0s;
+// }
+// #img2{
+//   animation-delay:4s;
+// }
+// #img3{
+//   animation-delay:8s;
+// }

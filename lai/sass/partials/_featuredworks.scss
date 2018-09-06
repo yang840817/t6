@@ -1,0 +1,40 @@
+@import "./modules/normalize.scss";
+@import "./modules/variables-color.scss";
+@import "./modules/variables-width.scss";
+@import "./modules/mixin-mediaquery.scss";
+@import "./modules/extendclass.scss";
+.featuredworks{
+  padding: 60px 45px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  h3 {
+     font-size: 22px;
+     font-weight: 500;
+     margin-top: 0;
+     width: 100%;
+     @include mediaquery_phone{
+       font-size: 31px;
+     }
+  }
+  &__img{
+    width: 100%;
+    margin-bottom: 10px;
+    @include mediaquery_minipad{
+      width: 49%;
+    }
+    @include mediaquery_pc{
+      width: 23%;
+      margin-bottom:0;
+    }
+    a{
+      display: inline-block;
+    }
+    img{
+      width: 100%;
+      &:hover{
+        filter:brightness(.5);
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+%container--fluid {
+   width: 100%;
+}
+%container--fixed {
+   width: 100%;
+   margin: 0 auto;
+   box-sizing: border-box;
+   @include mediaquery_phone {
+      max-width: $width--phone * 0.95;
+   }
+   @include mediaquery_minipad {
+      max-width: $width--minipad * 0.95;
+   }
+   @include mediaquery_pad {
+      max-width: $width--pad * 0.95;
+   }
+   @include mediaquery_pc {
+      max-width: $width--pc * 0.95;
+   }
+}
+%carousel--label {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   z-index: 2;
+   width: 30px;
+   height: 66px;
+   background-size: 76%;
+   &:hover {
+      background-position-y: -68px;
+   }
+   @include mediaquery_minipad {
+      width: 50px;
+      height: 147px;
+      background-size: 100%;
+      &:hover {
+         background-position-y: -149px;
+      }
+   }
+}
