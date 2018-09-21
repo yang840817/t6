@@ -1,0 +1,30 @@
+//手機
+$phones-width:425px;
+@mixin phones{
+  @media only screen and (min-width: $phones-width){
+    @content;
+  }
+}
+
+// 平板
+$tables-width:768px;
+@mixin tables-medium{
+  @media only screen and (min-width: $tables-width){
+    @content;
+  }
+}
+
+$width:992px;
+@mixin tables-large{
+  @media only screen and (min-width: $width){
+    @content;
+  }
+}
+
+//桌電
+$desktop-width:1140px;
+@mixin desktops{
+  @media only screen and (min-width: $desktop-width){
+    @content;
+  }
+}

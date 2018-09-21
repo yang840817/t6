@@ -1,0 +1,10 @@
+@import 'color';
+@import 'media';
+
+
+/*-----------------------------------
+背景圖路徑
+------------------------------------*/
+@mixin bg-image($img-name) {
+  background-image: url('../img/#{$img-name}');
+}
