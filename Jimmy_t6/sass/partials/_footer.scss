@@ -1,0 +1,136 @@
+// @import '../modules/all';
+
+footer {
+  background-color: #1e1e1e;
+
+
+
+  #footer_background {
+    @include background_img('../img/footer_bg.jpg', repeat-x);
+  }
+
+  #footer_container {
+    @include background_img('../img/subbg.gif');
+    padding-top: 34px;
+
+    .testimonial {
+      margin-bottom: 35px;
+      position: relative;
+      background: #e6e6e6;
+      padding: 18px 10px;
+      color: #57514c;
+      border-radius: 3px;
+      border: 1px solid #dbdbdb;
+
+      &::after {
+        content: '';
+        border-color: #e6e6e6 transparent transparent #e6e6e6;
+        border-width: 9px 18px 9px 18px;
+        border-style: solid;
+        position: absolute;
+        bottom: -18px;
+        left: -1px;
+      }
+    }
+
+    .media-body a {
+      color: $background_color_green;
+      font-style: italic;
+    }
+  }
+
+  .testimonial {
+    margin-bottom: 35px;
+    position: relative;
+    background: #e6e6e6;
+    padding: 18px 10px;
+    color: #57514c;
+    border-radius: 3px;
+    border: 1px solid #dbdbdb;
+
+    &::after {
+      content: '';
+      border-color: #e6e6e6 transparent transparent #e6e6e6;
+      border-width: 9px 18px 9px 18px;
+      border-style: solid;
+      position: absolute;
+      bottom: -18px;
+      left: -1px;
+    }
+  }
+
+  input {
+    @extend %footer_input_textarea;
+  }
+
+  #message {
+    @extend %footer_input_textarea;
+    min-height: 100px;
+    margin-bottom: 20px;
+  }
+
+  #footer_reset {
+    background: #1c1c1c;
+    @extend %footer_btn;
+  }
+
+  #footer_submit {
+    background: $background_color_green;
+    @extend %footer_btn;
+  }
+
+  .flickr_images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+  }
+
+  .footer_bottom {
+    padding: 20px 0;
+  }
+
+  .copyright {
+    @extend %footer_fonts;
+
+    a {
+      color: $background_color_green;
+      text-transform: none;
+    }
+  }
+
+  .footer_bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (max-width: 992px) {
+      justify-content: center;
+    }
+  }
+
+
+  .footer_nav {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer_nav_items {
+    padding: 0 9.5px;
+    @include background_img('../img/foot_menu_li_bg.gif', no-repeat, right center);
+
+    &:last-child {
+      background: none;
+    }
+
+    a {
+      @extend %footer_fonts;
+
+      &:hover {
+        color: $background_color_green;
+        text-decoration: none;
+      }
+    }
+  }
+}

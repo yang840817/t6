@@ -1,0 +1,51 @@
+// @import 'fonts';
+
+@mixin background_img ($url, $repeat:repeat, $position:left top) {
+  background-image: url($url);
+  background-repeat: $repeat;
+  background-position: $position;
+}
+
+%footer_input_textarea {
+  width: 100%;
+  margin: 0 0 5px 0;
+  padding: 3px 6px;
+  font-size: $small_font_size;
+  color: #818181;
+  border-radius: 3px;
+  background: #e6e6e6;
+  border: 1px solid #dbdbdb;
+}
+
+%footer_btn {
+  cursor: pointer;
+  padding: 4px 14px 5px 14px;
+  color: #fff;
+  text-transform: uppercase;
+  border: 1px solid #bbbbbb;
+}
+
+%footer_fonts {
+  color: #5c5c5c;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: $base_font_style;
+  font-size: $base_font_size;
+  @include background_img('../img/bg.jpg');
+}
+
+img {
+  display: block;
+}
