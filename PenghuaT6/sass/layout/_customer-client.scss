@@ -1,0 +1,156 @@
+//  base 
+@import '../base/resetcss';
+@import '../base/variables';
+@import '../base/rwd-breakpoints';
+
+.customer-client{
+max-width: $container-width;
+margin: 0 auto;
+padding: 30px 2%;
+background-image: url("../../img/subbg.gif");
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+h3{
+    text-transform: uppercase;
+    padding-bottom: 16px;
+    font-size: map-get($fontsize, fz-20 )
+}
+> div{
+    width: 100%;
+    box-sizing: border-box;
+    @include tablet-m{
+        width: 48%;
+    }
+    @include laptop{
+        width: 23%;
+    }
+}
+.tweets{
+    font-size: map-get($fontsize , fz-14 );
+    padding-bottom: 25px;
+    @include tablet-m{
+        padding-bottom: 0;
+    }
+}
+.customer-feedback{
+    .feedback{
+        .content{
+            background: map-get($bg-color, sixth );
+            border-radius:5px;
+            padding: 15px;
+            position: relative;
+            &::after{
+                content: '';
+                display: inline-block;
+                border-width: 15px 25px;
+                border-color: rgba(231, 231, 231, 1) transparent transparent rgba(231, 231, 231, 1);
+                border-style: solid;
+                position: absolute;
+                bottom: -20px;
+                left: 0;
+            }
+            p{
+                font-size: map-get($fontsize , fz-14 );                            
+            }
+        }
+    }
+    .customer{
+        display: flex;
+        padding-top: 35px;
+        .avatar{
+            padding-right: 10px;
+        }
+        .customer-intro{
+            p{
+                margin: 0;
+            }
+            a{
+                font-style: italic;
+                color: map-get($color , sixth );
+                text-decoration: none;
+            }
+        }
+    }
+}
+.contact{
+    padding-top: 20px;
+    form{
+        input[type="text"],textarea{
+            width: 100%;
+            background: map-get($bg-color, sixth );
+            border: map-get($borderstyle , secondary );
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        textarea{
+            resize: none;
+        }
+        input[type="reset"]{
+            color: map-get($color , third);
+            background: map-get($bg-color ,primary);
+            padding: 10px 15px;
+            transition: background .4s;
+            border: none;
+            cursor: pointer;
+            &:hover{
+                background: map-get($bg-color ,seventh);
+            }
+        }
+        input[type="submit"]{
+            color: map-get($color , third);
+            background: map-get($bg-color ,secondary);
+            padding: 10px 15px;
+            transition: background .4s;
+            border: none;
+            cursor: pointer;
+            &:hover{
+                background: map-get($bg-color ,seventh);
+            }
+        }
+    }
+    @include laptop{
+        padding-top: 0;
+    }
+}
+
+.flickr-website{
+    padding-top: 20px;
+    img{
+        width: 100%;
+        vertical-align: middle;
+    }
+    .gallery-container{                
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 5px;
+        .gallery{
+            position: relative;
+            text-align: center;
+            transition: background .4s;
+            a{
+                display: block;
+            }
+            &:hover{
+                ::before{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    background: map-get($bg-color,seventh );
+                    opacity: .3;
+                }
+            }
+            
+        }
+    }
+    @include laptop{
+        padding-top: 0;
+    }
+}
+}

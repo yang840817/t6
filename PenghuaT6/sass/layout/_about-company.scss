@@ -1,0 +1,245 @@
+
+//  base 
+@import '../base/resetcss';
+@import '../base/variables';
+@import '../base/rwd-breakpoints';
+
+.about-company{
+max-width: $container-width;
+margin: 0 auto;
+background-image: url("../../img/subbg.gif");
+position: relative;
+padding-top: 0%;
+@include laptop{
+    padding-top: 32%;
+}
+.service-lists{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: unset;
+    @include laptop{
+        position: absolute;
+        top: -25px;
+        z-index: 2;
+    }
+    .list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        width: 100%;
+        padding: 10px 50px 26px;
+        background: map-get($bg-color, sixth );
+        box-sizing: border-box;
+        border: map-get($borderstyle , primary);
+        color: map-get($color , fourth );
+        transition: background-color .4s;
+        position: relative;
+        cursor: pointer;
+        &:hover{
+            color: map-get($color,fifth );
+            background-color: map-get($bg-color,seventh );
+        }
+        @include tablet-m{
+            width: 50%;
+            padding: 15px 30px 26px 30px;
+        }
+        @include laptop{
+            width: 22%;
+            margin: 0 1.5% ;
+            padding: 15px 15px 26px 15px;
+        }
+        .list-title{
+            padding: 16px 0;
+            text-transform: uppercase;
+            font-size: map-get($fontsize , fz-16 );
+        }
+        .list-picture{
+            padding-bottom: 16px;
+            img{
+                width: auto;
+            }
+        }
+        .list-content{
+            font-size: map-get($fontsize , fz-14 );  
+            padding-bottom: 20px;                  
+        }
+        .list-btn{
+            align-self: center;
+            background-color: map-get($bg-color , fifth );
+            text-decoration: none;
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            color: map-get($color , third );
+        }
+    }
+}
+
+.company-info-container{
+    display: flex;
+    flex-wrap:wrap;
+    border-bottom: map-get($borderstyle , primary );
+    justify-content: center;
+    padding: 0 2% 20px;
+    @include tablet-m{
+        padding: 0 2% 80px;
+    }
+    > div{
+        flex: 0 1 98%;
+        @include tablet-m{
+            flex: 0 1 48%;
+        }
+        @include laptop{
+            flex: 0 1 31.33%;
+        }
+    }
+    @include laptop{
+        justify-content: flex-start;
+    }
+    a{
+        text-decoration: none;
+        color: map-get($color , primary );
+        &:hover{
+            color: map-get($color, fourth );
+        }
+    }
+    h2{
+        text-transform: uppercase;
+        padding: 16px 0;
+    }
+    .intro{
+        .picture{
+            padding-bottom: 20px;
+        }
+        .content{
+            font-size: map-get($fontsize,fz-14);
+            color: map-get($color, fourth );
+            @include tablet{
+                font-size: map-get($fontsize,fz-12);
+            }
+        }
+    }
+    .advance{
+        padding-left: 0;
+        @include tablet-m{
+            padding: 0 0 0 2%;
+        }
+        @include laptop{
+            padding: 0 2%;
+        }
+        .advance-lists{
+            color: map-get($color, fourth );
+            counter-reset: tidbit-counter;
+            display: flex;
+            flex-direction: column;
+            .list{
+                display: flex;
+                padding-bottom: 15px;
+                + .list{
+                        padding: 15px 0;
+                    }
+                border-bottom: map-get($borderstyle , primary );
+                &::before{
+                    counter-increment: tidbit-counter;
+                    content: ">";
+                    display: block;
+                    border-radius: 99px;
+                    background: map-get($bg-color,sixth);
+                    width: 40px;
+                    height: 40px;
+                    color: map-get($color,third);
+                    font-size: map-get($fontsize , fz-24);
+                    text-align: center;
+                    margin-right: 10px;
+                }
+                span{
+                    width: calc(100% - 40px);
+                    align-self: center;
+                }
+            }
+        }
+    }
+    .news-container{
+        .news{
+            display: flex;
+            color: map-get($color, fourth );
+            &:first-of-type{
+            padding-bottom: 30px;
+            }
+            .picture{
+                width: 35%;
+                padding-right: 10px;
+                @include laptop{
+                    width: 50%;
+                    padding-right: 10px;
+                }
+            }
+            .news-content-container{
+                width: 65%;
+                .date{
+                    background: map-get($bg-color , secondary );
+                    color: map-get($color, third );
+                    height: 30px;
+                    width: 100px;
+                    text-align: center;
+                    line-height: 30px;
+                    margin-bottom: 5px;
+                    @include phone-m{
+                        margin-bottom: 10px;
+                    }
+                }
+                .content{
+                    font-size: map-get($fontsize,fz-14); 
+                    line-height: 1.2;                   
+                }
+            }
+        }
+        @include tablet-m{
+            flex: 0 1 98%;
+        }
+        @include laptop{
+            flex: 0 1 31.33%;
+        }
+    }
+}
+
+.company-features{
+    margin-bottom: 50px;
+    padding: 0 2% 50px;
+    position: relative;
+    .arrow-container{
+        position: absolute;
+        right: 2%;
+        top: 10%;
+        display: none;
+        a{
+            color: map-get($color , secondary );
+        }
+        @include tablet-m{
+            display: block;
+        }
+    }
+    h2{
+        text-transform: uppercase;
+        padding: 16px 0;
+    }
+    .works-container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .works{
+            width: 100%;
+            padding-bottom: 5px;
+            @include phone-m{
+                flex:0 1 49%;
+            }
+            @include tablet-m{
+                flex:0 1 23%;
+                padding-bottom: 0;                   
+            }
+        }
+    }
+}
+}

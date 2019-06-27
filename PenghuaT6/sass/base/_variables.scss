@@ -1,0 +1,44 @@
+
+// width
+$container-width:1200px;
+
+// border
+$borderstyle:(
+    primary:1px solid rgba(189, 189, 189, 1),
+    secondary:1px solid rgba(243, 243, 243, 1),
+);
+
+
+// font size
+$fontsize:(
+    fz-12:12px,
+    fz-14:14px,
+    fz-16:16px,
+    fz-20:20px,
+    fz-24:24px,
+);
+
+
+// color
+$color :(
+    primary:rgba(0, 0, 0, 1),
+    secondary:rgba(156, 156, 156, 1),
+    third:rgba(255, 255, 255, 1),
+    fourth:rgba(57, 57, 57, 1),
+    fifth:rgba(231, 231, 231, 1),
+    sixth:rgba(128, 182, 2, 1),
+);
+
+
+// background color
+$bg-color :(
+    primary: rgba(0, 0, 0, 1),
+    secondary:rgba(128, 182, 2, 1),
+    third:rgba(255, 255, 255, 1),
+    fourth:rgba(243, 243, 243, 1),
+    fifth:rgba(156, 156, 156, 1),
+    sixth:rgba(231, 231, 231, 1),
+    seventh:rgba(57, 57, 57, 1),
+
+);
+

@@ -1,0 +1,29 @@
+//  base 
+@import '../base/resetcss';
+@import '../base/variables';
+
+
+%secondary-background {
+  content: "";
+  display: block;
+  background-color: map-get($bg-color, primary );
+}
+
+
+#main-background {
+  background-image: url("../../img/bg.jpg");
+  position: relative;
+  &::before {
+      @extend %secondary-background;
+      height: 100px;
+  }
+  &::after {
+      @extend %secondary-background; 
+      height: 280px;
+      position: absolute;
+      left: 0;
+      right:0;
+      bottom: 0;
+      z-index: -1;
+  }
+}
