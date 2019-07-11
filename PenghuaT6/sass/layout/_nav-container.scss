@@ -1,0 +1,164 @@
+//  base 
+@import '../base/resetcss';
+@import '../base/variables';
+@import '../base/rwd-breakpoints';
+
+.nav-container{
+    max-width: $container-width;
+    margin: 0 auto ;
+    display: flex;
+    flex-direction: column;
+    @include tablet{
+        flex-direction: row;
+    }
+    .rwd-menu-icon{
+        display: block;
+        background-color: map-get($bg-color , third );
+        padding: 15px;
+        font-size: 36px;
+        @include tablet{
+            display: none;
+        }
+    }
+    label{
+        flex: 1 1 0;
+        background-color: map-get($bg-color , third );
+        @include tablet{
+            border: map-get($borderstyle, primary );
+            box-shadow: 1px 1px 4px map-get($color ,fourth );
+        }
+    }
+    input[type="checkbox"]{
+        display: none;
+    }
+    input[type="checkbox"]:not(:checked) + label nav {
+        display: none;
+        @include tablet{
+            display: block;
+        }
+    }
+    nav{
+        display: flex;
+        width: 100%;
+        border: none;
+        ul{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            li{
+                width: 100%;
+                a{ 
+                    display: block;
+                    text-decoration: none;
+                    box-sizing: border-box;
+                    background-color: map-get($bg-color , third );
+                    color:map-get($color , primary );
+                    border: map-get($borderstyle, secondary );
+                    text-transform: uppercase;
+                    font-size: map-get($fontsize, fz-14 );
+                    padding: 0 12px;
+                    line-height: 47px;
+                    transition: all .4s;
+                    &:hover{
+                        background-color: map-get($bg-color , secondary );
+                        color: map-get($color, third);
+                    }
+                    i{
+                        display: inline;
+                        padding-left: 5px;
+                        font-size: 10px;
+                    }
+                    @include tablet{
+                        text-align: center;
+                    }
+                }
+                .active{
+                    background-color: map-get($bg-color , secondary );
+                    color: map-get($color, third);
+                }
+                &:nth-child(5){
+                    ul{
+                        width: 100%;
+                        @include tablet{
+                            width: 150%;
+                        }
+                    }
+                }
+            }
+            .blank{
+                width: 200%;
+            }
+            @include tablet{
+                flex-wrap: nowrap;
+            }
+            .dropdown-menu{
+                position: relative;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    z-index: 2;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    transition: all .4s;
+                    min-height: 0px;
+                    opacity: 0;
+                    @include tablet{
+                        top: 100%;
+                    }
+                    li{
+                        a{
+                            padding-left: 30px;
+                            &:hover{
+                                background: map-get($bg-color, fifth );
+                            }
+                            @include tablet{
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+                }
+                &:hover{
+                    ul{
+                        position: relative;
+                        min-height: auto;
+                        opacity: 1;
+                        @include tablet{
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .searchbar{
+        width: 100%;
+        padding:10px 0 0 0;
+        background-color: map-get($bg-color , third ); 
+        text-align: center;  
+        border: none;
+        order: -1;  
+        box-shadow: 1px 1px 4px map-get($color ,fourth );
+        @include tablet{
+            width: 24%;
+            margin-left: 1%;
+            padding: 5px 0;
+            order: 0;
+            border: map-get($borderstyle, primary );
+        }
+        input[type="text"]{
+            width: 97%;
+            padding: 10px 15px;
+            background-color: map-get($bg-color , fourth );
+            border: map-get($borderstyle, secondary );
+            background-image: url("../../img/search.png");
+            background-repeat: no-repeat;
+            background-position: 97% center;
+            @include tablet{
+                width:90%;
+            }
+        }       
+    }
+}

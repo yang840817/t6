@@ -1,0 +1,44 @@
+//  social media : 架構為: ul > li > a > svg  水平排列SVG icon
+
+@mixin common-social-links-use {
+    .social-media{
+        display: flex;
+        justify-content: flex-end;
+        @include tablet{
+            margin-bottom: 10px;
+        }
+        li{
+            + li{
+                margin-left: 10px;
+            }
+            a{
+                display: block;
+                width: 25px;
+                height: 25px;
+                border-radius: 99px;
+                background-color: #000;
+                transition:all .4s;
+                line-height: 25px;
+                text-align: center;
+                &:hover{
+                    svg{
+                        fill: #000;
+                    }
+                    background-color: #fff;
+                }
+                svg{
+                    width: 70%;
+                    fill:#fff;
+                    vertical-align: middle;
+                }
+            }
+        }
+        .tel-icon{
+            @include tablet{
+                display: none;
+            }
+        }
+    }
+}
+
+

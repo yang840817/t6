@@ -1,0 +1,67 @@
+//  base 
+@import '../base/resetcss';
+@import '../base/variables';
+@import '../base/rwd-breakpoints';
+
+footer{
+max-width: $container-width;
+margin: 0  auto;
+display: flex;
+padding: 20px 0;
+font-size: map-get($fontsize, fz-14 );
+flex-direction: column;
+align-items: center;
+@include laptop{
+flex-direction: row;
+justify-content: space-between;
+}
+.copyright{
+    color: map-get($color , secondary );
+    padding-top: 10px;
+    order: 1;
+    @include laptop{
+        padding-bottom: 0;
+        order: 0;
+    }
+    span{
+        color: map-get($color , sixth );
+    }
+}
+.footer-nav{
+    display: flex;
+    flex-wrap: wrap;
+    a{
+        color: map-get($color , secondary );
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 0 10px;
+        margin-bottom: 10px;
+        width: 33.33%;
+        text-align: center;
+        border-right: map-get($borderstyle , primary );
+        transition: color .4s;
+        &:last-child{
+            border: none;
+            @include tablet-m{
+            padding-right: 0;
+            }
+        }
+        &:nth-child(3){
+            border-right: none;
+        }
+        &:hover{
+            color: map-get($color , third );
+        }
+        @include tablet-m{
+            width: auto;
+            margin-bottom: 0;
+            &:nth-child(3){
+                border-right: map-get($borderstyle , primary );
+            }
+        }
+    }
+    .active{
+        color: map-get($color , sixth );
+    }
+}
+}

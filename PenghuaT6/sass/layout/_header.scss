@@ -1,0 +1,66 @@
+// component
+@import '../component/social-link';
+//  base 
+@import '../base/resetcss';
+@import '../base/variables';
+@import '../base/rwd-breakpoints';
+
+header{
+max-width: $container-width;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-image: url("../../img/subbg.gif");
+border: map-get($borderstyle, primary);
+margin: -90px auto 30px;
+padding: 30px;
+box-shadow: 1px 1px 4px map-get($color ,fourth);
+@include tablet{
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header-logo{
+    margin-bottom: 15px; 
+    a{
+        display: block;
+    }           
+@include tablet{
+    margin-bottom: 0;            
+    }
+}
+.header-links{
+    display: flex;
+    @include tablet{
+        flex-direction: column;
+    }
+    @include common-social-links-use;
+        .social-media{
+    display: flex;
+    justify-content: flex-end;
+    @include tablet{
+        margin-bottom: 10px;
+    }
+    .tel-icon{
+        @include tablet{
+            display: none;
+        }
+    }
+}
+    .tel{
+        color: map-get($color , primary );
+        font-size: map-get($fontsize, fz-14 );
+        display: none;
+        a{
+            text-decoration: none;
+            color: map-get($color , primary );
+            transition: all .4s;
+            &:hover{
+                color: map-get($color , secondary );
+            }
+        }
+        @include tablet{
+            display: block;                    
+        }
+    }
+}
+}
