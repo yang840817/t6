@@ -1,0 +1,231 @@
+//header
+
+// brand_group
+header {
+  font-size: 0;
+  .brand_group {
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+    padding: 2rem 1.2rem;
+    box-shadow: 0 0 3px rgba($brand_tertiary, 0.7);
+
+    @include mediaquery_minipad {
+      align-items: flex-start;
+    }
+  }
+  .brand_logo {
+    margin-bottom: 2rem;
+
+    @include mediaquery_minipad {
+      flex-basis: 55%;
+      margin-bottom: 0;
+    }
+  }
+  .brand_social {
+    text-align: right;
+
+    @include mediaquery_minipad {
+      flex-basis: 45%;
+    }
+    a {
+      margin-left: 0.5rem;
+      width: 27px;
+      height: 27px;
+      &:nth-of-type(1) {
+        background: url(../images/social.png) 0 0;
+        &:hover {
+          background: url(../images/social.png) 0 27px;
+        }
+      }
+      &:nth-of-type(2) {
+        background: url(../images/social.png) -37px 0;
+        &:hover {
+          background: url(../images/social.png) -37px 27px;
+        }
+      }
+      &:nth-of-type(3) {
+        background: url(../images/social.png) -74px 0;
+        &:hover {
+          background: url(../images/social.png) -74px 27px;
+        }
+      }
+      &:nth-of-type(4) {
+        background: url(../images/social.png) -111px 0;
+        &:hover {
+          background: url(../images/social.png) -111px 27px;
+        }
+      }
+      &:nth-of-type(5) {
+        background: url(../images/social.png) -150px 0;
+        &:hover {
+          background: url(../images/social.png) -150px 27px;
+        }
+      }
+    }
+    p {
+      margin: 1rem 0 0;
+      font: 14px/1.5em "Droid Sans", sans-serif;
+    }
+  }
+}
+
+// navbar_group
+header {
+  .navbar_group {
+    position: relative;
+    z-index: 0;
+    background: $brand_light;
+    box-shadow: 0 0 3px rgba($brand_tertiary, 0.7);
+
+    @include mediaquery_tablet {
+      background: transparent;
+      box-shadow: none;
+    }
+
+    input:checked ~ .menu {
+      display: block;
+    }
+
+    input:checked ~ label {
+      transition: 0.2s;
+      transform: rotate(90deg);
+    }
+
+    .navbar_menu {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+
+      a:hover {
+        border-bottom: 1px solid $brand_primary;
+        color: $brand_primary;
+
+        @include mediaquery_tablet {
+          border-bottom: none;
+        }
+      }
+
+      input {
+        display: none;
+      }
+
+      label {
+        position: relative;
+        display: inline-block;
+        box-sizing: border-box;
+        margin: 10px;
+        width: 34px;
+        height: 34px;
+        background: $brand_primary;
+        font-size: 14px;
+
+        @include mediaquery_tablet {
+          display: none;
+        }
+        &::before {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto;
+          width: 24px;
+          height: 2px;
+          background: $brand_light;
+          box-shadow: 0 8px 0 $brand_light, 0 -8px 0 $brand_light;
+          content: "";
+        }
+      }
+      .menu {
+        position: absolute;
+        top: -250px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
+        box-sizing: border-box;
+        padding-top: 0.8rem;
+        width: 100%;
+        height: 250px;
+        background: $brand_tertiary;
+        text-align: center;
+
+        @include mediaquery_minipad {
+          top: -280px;
+          height: 250px;
+        }
+        @include mediaquery_tablet {
+          position: relative;
+          top: 0;
+          display: block;
+          padding-top: 0;
+          width: 76%;
+          height: 100%;
+          background: $brand_light;
+          box-shadow: 0 0 3px rgba($brand_tertiary, 0.7);
+          text-align: left;
+          text-align-last: justify;
+        }
+        @include mediaquery_laptop {
+          width: 77.5%;
+          text-align-last: left;
+        }
+      }
+      a {
+        display: block;
+        padding: 10px 15px;
+        color: $brand_light;
+        font: 14px/18px "Droid Sans", sans-serif;
+
+        @include mediaquery_minipad {
+          display: inline-block;
+          margin-top: 180px;
+        }
+        @include mediaquery_tablet {
+          margin: 0;
+          padding: 18px 18px;
+          color: $brand_tertiary;
+          &:hover {
+            background: $brand_primary;
+            color: $brand_light;
+          }
+          + a {
+            border-left: 1px solid $brand_lightgray;
+          }
+        }
+        @include mediaquery_laptop {
+          padding: 18px 25px;
+          &:last-of-type {
+            border-right: 1px solid $brand_lightgray;
+          }
+        }
+        // &:after {
+        //   content: " \25BC";
+        //   font-size: 12px;
+        // }
+      }
+    }
+    .navbar_search {
+      margin-left: auto;
+      padding: 10px;
+      width: calc(100% - 65px);
+
+      @include mediaquery_tablet {
+        width: 20%;
+        background: $brand_light;
+        box-shadow: 0 0 3px rgba($brand_tertiary, 0.7);
+      }
+      input[type="text"] {
+        width: 100%;
+        border: 1px solid $brand_lightgray;
+        background: url(../images/search.png) no-repeat 95% 50% rgba($brand_lightgray, 0.5);
+        color: $brand_darkgray;
+        font: 14px/30px Arial, sans-serif;
+      }
+    }
+  }
+}

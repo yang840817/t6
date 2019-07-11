@@ -1,0 +1,79 @@
+// :root {
+//   font-size: calc(1vw + 1vh + 0.5vmin);
+// }
+
+body {
+  background: linear-gradient(
+      to bottom,
+      $brand_tertiary 1.5%,
+      rgba($brand_tertiary, 0) 1.5%,
+      rgba($brand_tertiary, 0) 92%,
+      $brand_tertiary 92%
+    ),
+    url(../images/bg.jpg) repeat center center $brand_tertiary;
+
+  @include mediaquery_minipad {
+    background: linear-gradient(
+        to bottom,
+        $brand_tertiary 2.5%,
+        rgba($brand_tertiary, 0) 2.5%,
+        rgba($brand_tertiary, 0) 91%,
+        $brand_tertiary 91%
+      ),
+      url(../images/bg.jpg) repeat center center $brand_tertiary;
+  }
+  @include mediaquery_laptop {
+    background: linear-gradient(
+        to bottom,
+        $brand_tertiary 4%,
+        rgba($brand_tertiary, 0) 4%,
+        rgba($brand_tertiary, 0) 90%,
+        $brand_tertiary 90%
+      ),
+      url(../images/bg.jpg) repeat center center $brand_tertiary;
+  }
+}
+
+.brand_group {
+  background: url(../images/subbg.gif) repeat top left $brand_light;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+
+  @include mediaquery_mobile {
+    max-width: $max_mobile;
+  }
+  @include mediaquery_minipad {
+    max-width: $max_minipad;
+  }
+  @include mediaquery_tablet {
+    max-width: $max_tablet;
+  }
+  @include mediaquery_laptop {
+    max-width: $max_laptop;
+  }
+  @include mediaquery_desktop {
+    max-width: $max_desktop;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.column {
+  flex: 0 1 auto;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+a {
+  display: inline-block;
+}

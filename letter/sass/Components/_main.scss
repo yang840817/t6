@@ -1,0 +1,304 @@
+//main
+
+main {
+  background: url(../images/subbg.gif) repeat top left $brand_light;
+  box-shadow: 0 0 3px rgba($brand_tertiary, 0.7);
+}
+
+// banner_group
+main {
+  .banner_group {
+    position: relative;
+    height: 500px;
+    font-size: 0;
+    animation: banner 25s infinite;
+    @keyframes banner {
+      0%,
+      20% {
+        background: url(../images/banner1.jpg) center center no-repeat $brand_light / cover;
+      }
+      20%,
+      53% {
+        background: url(../images/banner2.jpg) center center no-repeat $brand_light / cover;
+      }
+      53%,
+      86% {
+        background: url(../images/banner3.jpg) center center no-repeat $brand_light / cover;
+      }
+      86%,
+      100% {
+        background: url(../images/banner1.jpg) center center no-repeat $brand_light / cover;
+      }
+    }
+    a {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      box-sizing: border-box;
+      margin: auto 0;
+      width: 40px;
+      height: 120px;
+      background: rgba($brand_dark, 0.7);
+      color: $brand_gray;
+      text-align: center;
+      font-size: 1.5rem;
+      line-height: 120px;
+      transition: 0.3s;
+      &::before {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-top: 1px solid $brand_light;
+        border-right: 1px solid $brand_light;
+        content: "";
+        transform: rotate(45deg);
+      }
+      &:hover {
+        background: $brand_primary;
+      }
+      &:nth-of-type(2) {
+        margin-left: auto;
+        &::before {
+          transform: rotate(-135deg);
+        }
+      }
+    }
+  }
+}
+
+// card_group
+main {
+  .card_group {
+    justify-content: space-evenly;
+    padding: 0 0.8rem;
+    text-align: center;
+
+    @include mediaquery_minipad {
+      justify-content: space-between;
+    }
+    .column {
+      flex-basis: 100%;
+
+      @include mediaquery_minipad {
+        flex-basis: 49%;
+      }
+      @include mediaquery_tablet {
+        flex-basis: 49%;
+      }
+      @include mediaquery_laptop {
+        flex-basis: 24%;
+      }
+    }
+  }
+  .card {
+    z-index: 0;
+    padding: 2rem 1.2rem 1rem;
+    border: 1px solid $brand_gray;
+    background: $brand_lightgray;
+    color: $brand_secondary;
+
+    @include mediaquery_minipad {
+      &:nth-of-type(2) {
+        margin-top: -2rem;
+      }
+      &:last-of-type {
+        margin-bottom: 1rem;
+      }
+    }
+    @include mediaquery_tablet {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+    }
+    @include mediaquery_laptop {
+      margin-top: -2rem;
+      padding-right: 0.4rem;
+      padding-left: 0.4rem;
+    }
+    @include mediaquery_desktop {
+      padding-right: 1.9rem;
+      padding-left: 1.9rem;
+    }
+
+    &:first-of-type {
+      margin-top: -2rem;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 1rem;
+    }
+
+    &:hover {
+      background: rgba($brand_tertiary, 0.7);
+      color: $brand_light;
+    }
+    h2 {
+      margin-bottom: 1.5rem;
+      font: 1.3rem/1 "Droid Sans", sans-serif;
+    }
+    p {
+      font: 1rem/1 Arial, sans-serif;
+    }
+
+    button {
+      margin: 1rem;
+      padding: 0.5rem 1rem;
+      border-style: none;
+      background: $brand_gray;
+      color: $brand_secondary;
+      font: 1rem/1 Arial, sans-serif;
+    }
+  }
+}
+
+// profile_group
+main {
+  .profile_group {
+    justify-content: space-between;
+    padding: 1.5rem 0.8rem 2rem;
+    color: $brand_darkgray;
+
+    h3 {
+      width: 100%;
+      color: $brand_tertiary;
+      font: 30px/1 "Droid Sans", sans-serif;
+    }
+    p {
+      font: 1rem/1.2 Arial, sans-serif;
+    }
+    a {
+      color: $brand_tertiary;
+      font: 14px/1 Arial, sans-serif;
+    }
+    > .column {
+      flex-basis: 100%;
+
+      @include mediaquery_minipad {
+        &:not(:last-of-type) {
+          flex-basis: 48%;
+        }
+      }
+      @include mediaquery_laptop {
+        flex-basis: 31%;
+        &:not(:last-of-type) {
+          flex-basis: 31%;
+        }
+      }
+    }
+  }
+  .profile_choose {
+    p {
+      overflow-x: hidden;
+      padding: 1rem 0 2rem 3.5rem;
+      border-bottom: 1px solid $brand_gray;
+      text-indent: -3.5rem;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      @include mediaquery_minipad {
+        white-space: normal;
+      }
+      @include mediaquery_tablet {
+        white-space: nowrap;
+      }
+
+      &::first-letter {
+        margin-right: 0.3rem;
+        padding: 15px 19px;
+        border-radius: 50%;
+        background: $brand_gray;
+        color: $brand_light;
+        text-align: center;
+      }
+    }
+  }
+  .profile_news {
+    justify-content: space-between;
+    font-size: 0;
+
+    @include mediaquery_minipad {
+      align-items: center;
+    }
+    @include mediaquery_tablet {
+      align-items: flex-start;
+    }
+    .column {
+      flex-basis: 47%;
+      margin-bottom: 1rem;
+
+      @include mediaquery_minipad {
+        flex-basis: 30%;
+        &:nth-of-type(even) {
+          flex-basis: 65%;
+        }
+      }
+      @include mediaquery_tablet {
+        flex-basis: 20%;
+        &:nth-of-type(even) {
+          flex-basis: 27%;
+        }
+      }
+      @include mediaquery_laptop {
+        flex-basis: 40%;
+        &:nth-of-type(even) {
+          flex-basis: 53%;
+        }
+      }
+    }
+    img {
+      width: 100%;
+    }
+    span {
+      display: inline-block;
+      padding: 0.5rem;
+      background: $brand_primary;
+      color: $brand_light;
+      font: 1rem/1 Arial, sans-serif;
+    }
+    p {
+      font: 14px/18px Arial, sans-serif;
+    }
+  }
+  hr {
+    margin: 0 0.8rem 1rem;
+    border-top: 1px solid $brand_gray;
+  }
+
+  // project_group
+  .project_group {
+    overflow: hidden;
+    justify-content: space-between;
+    padding: 1rem 0.8rem 1rem;
+    h3 {
+      width: 100%;
+      font: 30px/0.5 "Droid Sans", arial;
+
+      &::after {
+        float: right;
+        color: $brand_gray;
+        content: "\003c  \003e";
+        font-size: 1.5rem;
+        // margin-right: 1rem;
+        // width: 10px;
+        // height: 10px;
+        // border-top: 2px solid $brand_gray;
+        // border-right: 2px solid $brand_gray;
+        // filter: drop-shadow(10px -10px 0 $brand_gray);
+        // transform: rotate(45deg);
+      }
+    }
+    .column {
+      flex-basis: 100%;
+      margin-bottom: 2rem;
+      font-size: 0;
+
+      @include mediaquery_minipad {
+        flex-basis: 49.5%;
+      }
+      @include mediaquery_laptop {
+        flex-basis: 24.5%;
+      }
+    }
+  }
+}

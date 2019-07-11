@@ -1,0 +1,46 @@
+//mediaquery_devices_width
+$devices_mobile: 360px;
+$devices_minipad: 576px;
+$devices_tablet: 768px;
+$devices_laptop: 992px;
+$devices_desktop: 1200px;
+
+//mediaquery_max_width
+$max_mobile: 340px;
+$max_minipad: 540px;
+$max_tablet: 720px;
+$max_laptop: 960px;
+$max_desktop: 1170px;
+
+// mediaquery_breakpoint
+
+@mixin mediaquery_mobile {
+  @media all and (min-width: $devices-mobile) {
+    // max-width: $max_mobile;
+    @content;
+  }
+}
+@mixin mediaquery_minipad {
+  @media all and (min-width: $devices-minipad) {
+    // max-width: $max_minipad;
+    @content;
+  }
+}
+@mixin mediaquery_tablet {
+  @media all and (min-width: $devices-tablet) {
+    // max-width: $max_tablet;
+    @content;
+  }
+}
+@mixin mediaquery_laptop {
+  @media all and (min-width: $devices-laptop) {
+    // max-width: $max_laptop;
+    @content;
+  }
+}
+@mixin mediaquery_desktop {
+  @media all and (min-width: $devices-desktop) {
+    // max-width: $max_desktop;
+    @content;
+  }
+}

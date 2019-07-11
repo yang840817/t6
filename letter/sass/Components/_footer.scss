@@ -1,0 +1,147 @@
+// FOOTER
+// info_group
+footer {
+  margin-top: 4rem;
+  color: $brand_tertiary;
+
+  .info_group {
+    justify-content: space-between;
+    padding: 1rem 0.8rem 1.5rem;
+    background: url(../images/subbg.gif) repeat top left $brand_light;
+    box-shadow: 0 0 3px rgba($brand_tertiary, 0.7);
+
+    .column {
+      flex-basis: 100%;
+
+      @include mediaquery_minipad {
+        flex-basis: 48%;
+      }
+      @include mediaquery_laptop {
+        flex-basis: 23.5%;
+      }
+      & p:nth-of-type(2) {
+        overflow: hidden;
+      }
+    }
+
+    & :nth-of-type(2) p:nth-child(2) {
+      position: relative;
+      padding: 18px 11px 40px 28px;
+      border-radius: 5px;
+      background: $brand_gray;
+      // box-shadow: 1px 1px 0px 1px pink inset, -1px -20px 0px 1px pink inset;
+      color: $brand_darkgray;
+      line-height: 16px;
+
+      clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 13% 85%, 0% 95%);
+      &::before {
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        bottom: 1px;
+        left: 1px;
+        z-index: -1;
+        background: $brand_lightgray;
+        content: "";
+
+        clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 13% 85%, 0% 95%);
+      }
+    }
+
+    h3 {
+      font: 23px/1 "Droid Sans", sans-serif;
+    }
+
+    p {
+      color: $brand_darkgray;
+      font: 14px/1.4 arial, sans-serif;
+    }
+
+    a {
+      color: $brand_primary;
+      font-style: italic;
+    }
+
+    & :nth-child(2) :nth-child(3) {
+      img {
+        float: left;
+        margin-right: 0.5rem;
+      }
+    }
+
+    & :nth-child(3) input,
+    textarea {
+      box-sizing: border-box;
+      margin-bottom: 0.3rem;
+      padding: 3px 6px;
+      width: 100%;
+      border: 1px solid $brand_gray;
+      border-radius: 3px;
+      background: $brand_lightgray;
+      color: $brand_darkgray;
+      font-size: 12px;
+      resize: none;
+    }
+
+    textarea {
+      margin-bottom: 0.5rem;
+      height: 110px;
+    }
+
+    button {
+      margin-bottom: 1rem;
+      padding: 4px 14px 5px;
+      border: none;
+      background: $brand_tertiary;
+      color: $brand_light;
+      font: 14px/1.5 "Droid Sans", sans-serif;
+      &:last-of-type {
+        background: $brand_primary;
+      }
+    }
+
+    .column:last-child {
+      text-align: justify;
+      text-align-last: justify;
+      font-size: 0;
+      img {
+        margin-bottom: 0.3rem;
+        width: 24%;
+      }
+    }
+  }
+}
+.footer_bar {
+  overflow: hidden;
+  margin: 1.2rem 0;
+  color: $brand_darkgray;
+  text-align: center;
+  font: 14px/1 Arial, sans-serif;
+  line-height: 1.5rem;
+
+  @include mediaquery_laptop {
+    text-align: right;
+  }
+
+  p {
+    margin: 0;
+
+    @include mediaquery_laptop {
+      float: left;
+    }
+  }
+  p a {
+    color: $brand_primary;
+  }
+  a {
+    color: inherit;
+    + a::before {
+      padding: 0 5px;
+      color: inherit;
+      content: "\0399";
+    }
+    &:hover {
+      color: $brand_primary;
+    }
+  }
+}
