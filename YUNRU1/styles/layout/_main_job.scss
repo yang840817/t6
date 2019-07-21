@@ -1,0 +1,35 @@
+.main {
+  .job {
+    text-align: center;
+    margin-top: -30px;
+    .job_column_1,
+    .job_column_2,
+    .job_column_3,
+    .job_column_4 {
+      background-color: #cfcfcf;
+      padding: 1rem;
+      margin-bottom: 30px;
+      height: calc(100% - 30px);
+      &:hover {
+        background-color: #4e4e4eb2;
+        color: azure;
+      }
+    }
+    .job_title {
+      margin-top: 2rem;
+      font-weight: 200;
+    }
+    .job_text {
+      //可不可以寫得更好，大小變的時候變形
+      font-size: 0.8rem;
+      font-weight: 100;
+    }
+    .job_botton {
+      background-color: #9e9e9e;
+      margin-bottom: 15px;
+      line-height: 1.5rem;
+      color: inherit;
+      border: none;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+// header
+.brand {
+  padding: 15px 15px;
+  font-size: 0;
+  text-align: center;
+  margin-bottom: 60px;
+  background: url(../images/subbg.gif);
+  box-shadow: 0px 2px 2px #3e3e3e70;
+  @media (min-width: 768px) {
+    // text-align-last使用要很小心繼承問題，要記得復原這一件事情
+    text-align-last: justify;
+    padding: 30px 15px;
+  }
+  .brand_logo {
+    display: inline-block;
+    margin-bottom: 15px;
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .navbar {
+    display: inline-block;
+    @media (min-width: 768px) {
+      vertical-align: middle;
+      text-align-last: right;
+    }
+    .nav_link {
+      display: inline-block;
+      margin-left: 5px;
+      width: 28px;
+      height: 27px;
+      background-image: url(../images/social.png);
+      &:nth-of-type(1) {
+        @include link(0, 0, 0, -27px);
+      }
+      &:nth-of-type(2) {
+        @include link(-36px, 0, -36px, -27px);
+      }
+      &:nth-of-type(3) {
+        @include link(-73px, 0, -73px, -27px);
+      }
+      &:nth-of-type(4) {
+        @include link(-110px, 0, -110px, -27px);
+      }
+      &:nth-of-type(5) {
+        @include link(-149px, 0, -149px, -27px);
+      }
+    }
+    .nav_text {
+      font-size: 0.8rem;
+    }
+  }
+}

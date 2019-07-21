@@ -1,0 +1,31 @@
+.nav__footer {
+  text-align: center;
+  @include Mediaquery-pc {
+    text-align-last: left;
+  }
+  .nav_text {
+    color: dimgrey;
+    font-weight: 100;
+    font-size: 0.8rem;
+    > span {
+      color: $brand-tertiary;
+    }
+  }
+  .nav {
+    margin-top: 10px;
+    @include Mediaquery-pc {
+      float: right;
+      margin-top: 0;
+    }
+    .nav_link {
+      font-weight: 100;
+      font-size: 0.5rem;
+      color: #fff;
+      padding: 0 1rem;
+      border-left: 1px solid #fff;
+    }
+    .nav_link_first {
+      border-left: none;
+    }
+  }
+}

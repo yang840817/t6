@@ -1,0 +1,34 @@
+/*
+*column-a-b-c，a 代表在 phone 大小、b 代表在 pad 大小、c 代表在 pc 欄位占比
+*/
+
+.row {
+  position: relative;
+  display: flex;
+  font-size: 0;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  @include Mediaquery-pad {
+    margin: 0;
+  }
+}
+
+.column-4-2-1 {
+  width: 100%;
+  padding: 0 15px;
+  @include Mediaquery-pad {
+    width: 50%;
+  }
+  @include Mediaquery-pc {
+    width: 25%;
+  }
+}
+
+.column-3-1-1 {
+  width: 100%;
+  padding: 0 15px;
+  @include Mediaquery-pad {
+    width: 33.33333%;
+  }
+}

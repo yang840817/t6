@@ -1,0 +1,66 @@
+.main {
+  .banner {
+    position: relative;
+    padding-top: 41.5%;
+    margin: 0 -15px;
+    .banner_images_1,
+    .banner_images_2,
+    .banner_images_3 {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      opacity: 0;
+      -webkit-animation: round 11s linear infinite;
+    }
+    @include Mediaquery-phone {
+      .banner_tab_left,
+      .banner_tab_right {
+        //兩個鍵接的地方
+        position: absolute;
+        width: 40px;
+        height: 119px;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        z-index: 2;
+        background: url(../images/slider_prev.gif);
+        &:hover {
+          //兩個鍵接的地方
+          background-position: 0px 119px;
+        }
+      }
+      .banner_tab_right {
+        //兩個鍵接的地方
+        left: auto;
+        right: 0;
+        background: url(../images/slider_next.gif);
+        &:hover {
+          //兩個鍵接的地方
+          background-position: 0px 119px;
+        }
+      }
+      .banner_images_1 {
+        -webkit-animation-delay: 0s;
+      }
+      .banner_images_2 {
+        -webkit-animation-delay: 4s;
+      }
+      .banner_images_3 {
+        -webkit-animation-delay: 8s;
+      }
+    }
+  }
+
+  // 這也是動畫部分歐
+  @keyframes round {
+    0% {
+      opacity: 1;
+    }
+    42% {
+      opacity: 1;
+    }
+    44% {
+      opacity: 0;
+    }
+  }
+}

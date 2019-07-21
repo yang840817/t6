@@ -1,0 +1,106 @@
+.social-media {
+  position: relative;
+  background: url(../images/subbg.gif);
+  margin-bottom: 30px;
+  box-shadow: 0px 2px 2px #3e3e3e70;
+  .social-media_title {
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-bottom: 0.5rem;
+  }
+  .social-media_column_1,
+  .social-media_column_2,
+  .social-media_column_3,
+  .social-media_column_4 {
+    margin-bottom: 15px;
+  }
+  .social-media_text {
+    font-size: 0.8rem;
+  }
+  .social-media_column_2 {
+    .talkbox {
+      p {
+        margin: 0;
+      }
+      position: relative;
+      background-color: #ececec;
+      padding: 1rem;
+      font-size: 0.8rem;
+      font-weight: 100;
+      margin-bottom: 50px;
+      border-radius: 0.25rem 0.25rem 0.25rem 0;
+      &:after {
+        display: block;
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        content: "";
+        background-color: #ececec;
+        display: block;
+        width: 20px;
+        height: 20px;
+        clip-path: polygon(0 0, 0% 100%, 100% 0);
+      }
+    }
+    img {
+      float: left;
+      margin-right: 10px;
+    }
+    span {
+      font-weight: 100;
+      font-size: 0.5rem;
+      &:nth-of-type(2) {
+        color: $brand-tertiary;
+      }
+    }
+  }
+  .social-media_column_3 {
+    form {
+      width: 100%;
+      font-size: 0;
+      input {
+        line-height: 2rem;
+        box-sizing: border-box;
+        border: 1px solid #c9c9c9;
+        background-color: #ececec;
+        width: 100%;
+        margin-bottom: 0.5rem;
+        padding: 0 0.5rem;
+        border-radius: 3px;
+      }
+      textarea {
+        border-radius: 3px;
+        box-sizing: border-box;
+        border: 1px solid #c9c9c9;
+        background-color: #ececec;
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+      button {
+        box-sizing: border-box;
+        border: none;
+        background-color: #80b600;
+        margin-right: 0.5rem;
+        line-height: 1.5rem;
+        color: #fff;
+        &:nth-of-type(2) {
+          background-color: #4e4e4e;
+        }
+      }
+    }
+  }
+  .social-media_column_4 {
+    font-size: 0;
+    text-align: justify;
+    text-align-last: justify;
+    h4 {
+      font-size: 1.5rem;
+      text-align-last: left;
+    }
+    img {
+      width: 22.5%;
+      padding-bottom: 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.body_background {
+  background: linear-gradient(
+      to bottom,
+      #333 2.5%,
+      rgba(255, 255, 255, 0) 2.5%,
+      rgba(255, 255, 255, 0) 92%,
+      #333 92%,
+      #333 100%
+    ),
+    url(../images/bg.jpg) repeat;
+  margin: 1rem 0;
+}

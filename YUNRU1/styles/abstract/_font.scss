@@ -1,0 +1,15 @@
+@import "../../font/droid-sans/DroidSans-Bold.ttf";
+@import "../../font/droid-sans/DroidSans.ttf";
+
+/**
+* font veriables
+*/
+$font: "DroidSans", sans-serif;
+
+/**
+* font set mixin
+*/
+@mixin font($style, $size, $lineheight, $fontfamily) {
+  font: $style $size $fontfamily;
+  line-height: $lineheight;
+}

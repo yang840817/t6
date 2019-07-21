@@ -1,0 +1,19 @@
+.main {
+  .picture {
+    font-size: 0;
+    .picture_column_1,
+    .picture_column_2,
+    .picture_column_3,
+    .picture_column_4 {
+      margin-bottom: 30px;
+      img {
+        max-width: 100%;
+      }
+    }
+    .picture_title {
+      padding-left: 1rem;
+      width: 100%;
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@mixin link($x, $y, $xhover, $yhover) {
+  background-position: $x $y;
+  &:hover {
+    background-position: $xhover $yhover;
+  }
+}
