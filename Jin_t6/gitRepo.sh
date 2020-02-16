@@ -8,7 +8,7 @@ TARGET_REPO_PATH="/Users/Mac/Desktop/Layout_Practice/Business_Planet_template"
 git -C $ORIGIN_REPO_PATH commit -m "$1"
 git -C $ORIGIN_REPO_PATH stash -u
 
-cp $ORIGIN_REPO_COPY_PATH $TARGET_REPO_PATH
+cp -r $ORIGIN_REPO_COPY_PATH $TARGET_REPO_PATH
 git -C $TARGET_REPO_PATH add .
 git -C $TARGET_REPO_PATH commit -m "$1"
 
