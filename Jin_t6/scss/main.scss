@@ -2,3 +2,10 @@
 @import "./abstract/color";
 @import "./abstract/typography";
 @import "./abstract/mediaquery";
+
+@import "./layout/substrate";
+@import "./layout/header";
+
+img {
+  width: 100%;
+}

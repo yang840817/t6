@@ -1,0 +1,82 @@
+header {
+  position: relative;
+  .substrate {
+    height: 83px;
+    background: $dark-gray;
+    margin-bottom: 60px;
+  }
+}
+
+.header-content {
+  position: absolute;
+  top: 10px;
+  right: 2%;
+  left: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 0;
+  background: url(../../images/subbg.gif);
+  box-shadow: 0px 1px 3px $crystal-gray;
+  h1 {
+    flex: 0 0 100%;
+    padding: 0px 20px;
+    margin-bottom: 15px;
+  }
+  section {
+    flex: 0 0 100%;
+  }
+  img {
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+.contact {
+  padding: 0 20px;
+}
+
+.contact-link {
+  margin-bottom: 10px;
+  text-align: right;
+  a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: top;
+    &:nth-child(1) {
+      background: url(../images/social.png) 0% 0%/660% no-repeat;
+      &:hover {
+        background: url(../images/social.png) 0% 100%/660% no-repeat;
+      }
+    }
+    &:nth-child(2) {
+      background: url(../images/social.png) 24.5% 0%/660% no-repeat;
+      &:hover {
+        background: url(../images/social.png) 24.5% 100%/660% no-repeat;
+      }
+    }
+    &:nth-child(3) {
+      background: url(../images/social.png) 49% 0%/660% no-repeat;
+      &:hover {
+        background: url(../images/social.png) 49% 100%/660% no-repeat;
+      }
+    }
+    &:nth-child(4) {
+      background: url(../images/social.png) 74% 0%/660% no-repeat;
+      &:hover {
+        background: url(../images/social.png) 74% 100%/660% no-repeat;
+      }
+    }
+    &:nth-child(5) {
+      background: url(../images/social.png) 100% 0%/660% no-repeat;
+      &:hover {
+        background: url(../images/social.png) 100% 100%/660% no-repeat;
+      }
+    }
+  }
+}
+
+.contact-number {
+  text-align: right;
+  @include fontstyle(12px, 400, capitalize, $black);
+}
