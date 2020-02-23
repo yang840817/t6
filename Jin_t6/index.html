@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header class="header container">
+  <header class="header shadow container">
     <h1><a href="##"><img src="./images/logo.png" alt="Business Planet"></a></h1>
     <section class="contact">
       <div class="contact-link">
@@ -22,14 +22,14 @@
       <p class="contact-number">Call Us Now:+1(777)784-25-43</p>
     </section>
   </header>
-  <main>
-    <nav class="main-menu container">
+  <main class="container">
+    <nav class="main-menu">
       <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label cursor="pointer" class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <label cursor="pointer" class="menu-icon" for="menu-btn"><span></span></label>
       <ul class="main-menu-list">
         <li><a href="##">Home</a></li>
         <li><a href="##">About</a></li>
-        <li>
+        <li class="mutiple-menu">
           <a href="##">Features</a>
           <ul class="sub-menu">
             <li><a href="##">Features1</a></li>
@@ -37,7 +37,7 @@
             <li><a href="##">Features3</a></li>
           </ul>
         </li>
-        <li>
+        <li class="mutiple-menu">
           <a href="##">Portfolio</a>
           <ul class="sub-menu">
             <li><a href="##">Portfolio1</a></li>
@@ -45,7 +45,7 @@
             <li><a href="##">Portfolio3</a></li>
           </ul>
         </li>
-        <li>
+        <li class="mutiple-menu">
           <a href="##">Blog</a>
           <ul class="sub-menu">
             <li><a href="##">Blog1</a></li>
@@ -55,10 +55,12 @@
         </li>
         <li><a href="##">Contacts</a></li>
       </ul>
-      <form action="">
-        <input type="search" placeholder="Search the site...">
-        <button type="submit"><img src="./images/search.png" alt="A magnifier button"></button>
-      </form>
+      <div class="search-bar">
+        <form action="">
+          <input type="search" placeholder="Search the site...">
+          <button type="submit"><img src="./images/search.png" alt="A magnifier button"></button>
+        </form>
+      </div>
     </nav>
     <section class="banner">
       <img src="./images/banner3.jpg" alt="Two bussinessman doing the tug of war.">

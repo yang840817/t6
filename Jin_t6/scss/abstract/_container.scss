@@ -12,5 +12,6 @@
 @include mediaquery_phone {
   .container {
     width: 84%;
+    max-width: 1640px;
   }
 }
