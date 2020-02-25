@@ -6,9 +6,14 @@
 @import "./abstract/mediaquery";
 @import "./abstract/container";
 
+@import "./component/button";
+@import "./component/card";
+
 @import "./layout/substrate";
 @import "./layout/header";
 @import "./layout/navbar";
+@import "./layout/banner";
+@import "./layout/service";
 
 img {
   width: 100%;
