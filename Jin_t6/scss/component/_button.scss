@@ -1,0 +1,17 @@
+.primary-button {
+  display: block;
+  background: $light-gray;
+  width: 55px;
+  margin: 0 auto;
+  @include fontstyle(14px, 400, capitalize, $dark-gray);
+  line-height: 30px;
+  text-align: center;
+  &:hover {
+    background: $green;
+    color: $white;
+  }
+}
+
+// .secondary-button {
+
+// }
