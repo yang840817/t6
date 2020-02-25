@@ -1,0 +1,26 @@
+{
+    "name": "template-6",
+    "version": "1.0.0",
+    "description": "goodideas",
+    "main": "index.js",
+    "scripts": {
+        "build-css": "node-sass -w scss/main.scss -o dist/ -r"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yachen168/Template-6.git"
+    },
+    "keywords": [
+        "goodideas"
+    ],
+    "author": "yachen",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/yachen168/Template-6/issues"
+    },
+    "homepage": "https://github.com/yachen168/Template-6#readme",
+    "dependencies": {
+        "bootstrap": "^4.4.1",
+        "node-sass": "^4.13.1"
+    }
+}
