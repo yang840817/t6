@@ -74,13 +74,6 @@
   }
 }
 
-@include mediaquery_pad {
-  .welcome, .why-choose-us {
-    flex: 0 0 48%;
-    border-bottom: 0;
-  }
-}
-
 .news {
   display: flex;
   flex-wrap: wrap;
@@ -107,7 +100,59 @@
     line-height: 33px;
     @include fontstyle(1rem, 500, capitalize, $white);
   }
-  @include mediaquery_pad {
+}
+
+.worker {
+  flex: 0 0 100%;
+  font-size: 0;
+  border: 0;
+  h2 {
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+  }
+  &-btn-group {
+    display: inline-block;
+    width: 20%;
+    text-align: right;
+  }
+  button {
+    padding: 0;
+  }
+  svg {
+    fill: $light-gray;
+    width: 15px;
+    height: 15px;
+  }
+  &-group {
+    display: flex;
+    flex-wrap: wrap;
+    a {
+      flex: 0 0 100%;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@include mediaquery_phone {
+  .worker {
+    &-group {
+      margin-right: -10px;
+      margin-left: -10px;
+      a {
+        flex: 0 0 50%;
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+@include mediaquery_pad {
+  .welcome, .why-choose-us {
+    flex: 0 0 48%;
+    border-bottom: 0;
+  }
+  .news {
     flex: 0 0 100%;
     border-top: 1px solid $light-gray;
     figure {
@@ -117,6 +162,7 @@
     }
   }
 }
+
 
 @include mediaquery_pc {
   .welcome, .why-choose-us, .news {
@@ -143,5 +189,12 @@
   .worker {
     border-top: 1px solid $light-gray;
     margin-top: 50px;
+    margin-bottom: 75px;
+    &-group {
+      a {
+        flex: 0 0 25%;
+        margin-bottom: 0;
+      }
+    }
   }
 }
