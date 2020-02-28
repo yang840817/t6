@@ -10,8 +10,7 @@ footer {
     }
     .tweet {
         p {
-            font-size: 14px;
-            font-weight: 500;
+            @include font(14px, 500, $black);
         }
     }
     .testimonial {
@@ -20,9 +19,7 @@ footer {
             padding: 15px 10px 15px 25px;
             background-color: $gray;
             border-radius: 3px 3px 3px 0;
-            font-size: 13px;
-            color: $darkGray;
-            font-weight: 500;
+            @include font(13px, 500);
             line-height: 1.1;
             margin-bottom: 30px;
             border: 1px solid $midGray;
@@ -58,14 +55,10 @@ footer {
                 display: inline-block;
                 vertical-align: middle;
                 h4 {
-                    font-size: 13px;
-                    font-weight: 600;
-                    color: $darkGray;
+                    @include font(13px, 600);
                 }
                 a {
-                    font-size: 12px;
-                    font-weight: 600;
-                    color: $green;
+                    @include font(12px, 600, $green);
                 }
             }
         }
@@ -79,22 +72,20 @@ footer {
             border: 1px solid $midGray;
             border-radius: 3px;
             font-size: 12px;
+            vertical-align: top;
             &::placeholder {
                 font-weight: 600;
             }
         }
         textarea {
-            margin-top: 6px;
             height: 105px;
             resize: none;
         }
         button {
             padding: 5px 10px;
-            margin-top: 10px;
+            margin-top: 20px;
             background-color: $black;
-            color: $white;
-            font-size: 14px;
-            font-weight: 500;
+            @include font(14px, 500, $white);
             border: none;
             &:hover {
                 background-color: $green;
@@ -117,37 +108,25 @@ footer {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
     align-items: center;
     padding: 10px 0;
     background-color: $black;
     color: $darkGray;
     text-align: center;
     .copyright {
-        font-size: 13px;
-        font-weight: 500;
+        @include font(13px, 500);
         span:nth-child(2) {
             color: $green;
         }
     }
     nav {
-        order: -1;
         a {
             display: inline-block;
             text-decoration: none;
-            font-size: 14px;
-            font-weight: 500;
-            color: $darkGray;
+            @include font(14px, 500);
             &:hover {
                 color: $green;
             }
         }
-        @media (min-width: 992px) {
-            order: 0;
-        }
-    }
-    @media (min-width: 992px) {
-        flex-direction: row;
-        justify-content: space-between;
     }
 }
