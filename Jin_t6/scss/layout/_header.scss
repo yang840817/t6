@@ -1,7 +1,7 @@
 .header {
   display: flex;
   flex-wrap: wrap;
-  padding: 15px 0;
+  padding: 15px 30px;
   background: url(../../images/subbg.gif);
   margin-bottom: 26px;
   h1 {
@@ -17,14 +17,15 @@
     flex: 0 0 100%;
   }
   img {
-    width: 280px;
-    vertical-align: top;
+    width: 100%;
+    max-width: 280px;
+    vertical-align: middle;
   }
 }
 
-.contact {
-  padding: 0 20px;
-}
+// .contact {
+//   padding: 0 20px;
+// }
 
 .contact-link {
   margin-bottom: 10px;
@@ -70,4 +71,22 @@
 .contact-number {
   text-align: center;
   @include fontstyle(12px, 400, capitalize, $black);
+}
+
+@include mediaquery_pad {
+  .header {
+    h1 {
+      flex: 0 0 50%;
+      > a {
+        text-align: left;
+      }
+    }
+    section {
+      flex: 0 0 50%;
+    }
+  }
+  .contact-link, .contact-number {
+    text-align: right;
+  }
+  
 }
