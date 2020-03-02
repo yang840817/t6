@@ -40,7 +40,7 @@
 .main-menu-list, .sub-menu {
   max-height: 0;
   overflow: hidden;
-  transition: .5s;
+  transition: max-height .5s;
 }
 
 .main-menu-list {
@@ -186,6 +186,7 @@
   }
   .sub-menu {
     position: absolute;
+    z-index: 99;
     li {
       float: none;
       display: block;

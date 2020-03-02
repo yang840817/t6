@@ -1,17 +1,21 @@
-.primary-button {
-  display: block;
-  background: $light-gray;
-  width: 55px;
-  margin: 0 auto;
-  @include fontstyle(14px, 400, capitalize, $dark-gray);
-  line-height: 30px;
+@mixin basic-button($bg-color, $color, $hover-color, $text-transform, $line-height) {
+  display: inline-block;
+  background: $bg-color;
+  padding: 0 15px;
+  @include fontstyle(14px, 400, $text-transform, $color);
+  font-family: $font;
+  line-height: $line-height;
   text-align: center;
   &:hover {
     background: $green;
-    color: $white;
+    color: $hover-color;
   }
 }
 
-// .secondary-button {
+.primary-button {
+  @include basic-button($light-gray, $dark-gray, $white, capitalize, 2);
+}
 
-// }
+.secondary-button {
+  @include basic-button($dark-gray, $white, $white, uppercase, 2.5);
+}
