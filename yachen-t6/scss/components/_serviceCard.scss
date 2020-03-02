@@ -16,8 +16,7 @@
     p {
         height: 85px;
         padding: 0 30px;
-        font-size: 14px;
-        font-weight: 600;
+        @include font(14px, 600);
         line-height: 1.2;
         overflow-y: scroll;
         @media (min-width: 992px) {
@@ -37,12 +36,10 @@
         width: 65px;
         padding: 4px 0;
         margin: 0 auto;
-        color: $darkGray;
         text-align: center;
         text-decoration: none;
-        font-size: 14px;
-        font-weight: 600;
         background-color: $midGray;
+        @include font(14px, 600, $darkGray);
     }
     &:hover {
         color: $white;

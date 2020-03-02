@@ -5,9 +5,7 @@
         height: 100%;
         border-top: 1px solid $gray;
         .navbar-nav .nav-link {
-            color: $darkGray;
-            font-weight: 500;
-            font-size: 13px;
+            @include font(13px, 500);
             text-align: center;
             padding: 16px 25px;
             &:hover {
@@ -49,9 +47,7 @@
             border: 1px solid $gray;
         }
         input::placeholder {
-            font-size: 13px;
-            font-weight: 700;
-            color: $midGray;
+            @include font(13px, 700, $midGray);
         }
         .fa-search {
             position: absolute;

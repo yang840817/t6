@@ -42,31 +42,27 @@ main {
   box-shadow: 0 0 2px 0 rgba(100, 100, 100, 0.7), 0 0 5px rgba(100, 100, 100, 0.7); }
 
 figcaption {
-  color: #646464;
   font-size: 14px;
-  font-weight: 500; }
+  font-weight: 500;
+  color: #646464; }
 
 .own-container {
   max-width: 1200px;
   padding: 5px 0 0; }
 
 header {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #161616;
   padding: 35px 40px;
-  overflow: hidden;
   background-color: #ffffff;
   box-shadow: 0 0 3px 0 rgba(100, 100, 100, 0.7), 0 0 5px rgba(100, 100, 100, 0.7); }
   header .logo {
-    display: block;
     max-width: 320px;
-    margin: 0 auto 10px; }
-    @media all and (min-width: 768px) {
-      header .logo {
-        float: left;
-        margin-bottom: 0; } }
+    margin-bottom: 10px; }
   header .social {
-    display: flow-root; }
+    text-align: center; }
     header .social a {
       display: inline-block;
       background: url("../images/social.png") no-repeat;
@@ -94,9 +90,6 @@ header {
       font-size: 13px;
       font-weight: 500;
       color: #646464; }
-    @media all and (min-width: 768px) {
-      header .social {
-        text-align: right; } }
 
 .navigation .navbar {
   background-color: #ffffff;
@@ -104,9 +97,9 @@ header {
   height: 100%;
   border-top: 1px solid #E8E8E8; }
   .navigation .navbar .navbar-nav .nav-link {
-    color: #646464;
-    font-weight: 500;
     font-size: 13px;
+    font-weight: 500;
+    color: #646464;
     text-align: center;
     padding: 16px 25px; }
     .navigation .navbar .navbar-nav .nav-link:hover {
@@ -231,15 +224,16 @@ footer {
     font-size: 20px; }
   footer .tweet p {
     font-size: 14px;
-    font-weight: 500; }
+    font-weight: 500;
+    color: #161616; }
   footer .testimonial .dialog {
     position: relative;
     padding: 15px 10px 15px 25px;
     background-color: #E8E8E8;
     border-radius: 3px 3px 3px 0;
     font-size: 13px;
-    color: #646464;
     font-weight: 500;
+    color: #646464;
     line-height: 1.1;
     margin-bottom: 30px;
     border: 1px solid #cccccc; }
@@ -283,21 +277,21 @@ footer {
     background-color: #E8E8E8;
     border: 1px solid #cccccc;
     border-radius: 3px;
-    font-size: 12px; }
+    font-size: 12px;
+    vertical-align: top; }
     footer .contact input::placeholder,
     footer .contact textarea::placeholder {
       font-weight: 600; }
   footer .contact textarea {
-    margin-top: 6px;
     height: 105px;
     resize: none; }
   footer .contact button {
     padding: 5px 10px;
-    margin-top: 10px;
+    margin-top: 20px;
     background-color: #161616;
-    color: #ffffff;
     font-size: 14px;
     font-weight: 500;
+    color: #ffffff;
     border: none; }
     footer .contact button:hover {
       background-color: #81B700; }
@@ -314,7 +308,6 @@ footer {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
   align-items: center;
   padding: 10px 0;
   background-color: #161616;
@@ -322,26 +315,18 @@ footer {
   text-align: center; }
   .copyright-and-nav .copyright {
     font-size: 13px;
-    font-weight: 500; }
+    font-weight: 500;
+    color: #646464; }
     .copyright-and-nav .copyright span:nth-child(2) {
       color: #81B700; }
-  .copyright-and-nav nav {
-    order: -1; }
-    .copyright-and-nav nav a {
-      display: inline-block;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 500;
-      color: #646464; }
-      .copyright-and-nav nav a:hover {
-        color: #81B700; }
-    @media (min-width: 992px) {
-      .copyright-and-nav nav {
-        order: 0; } }
-  @media (min-width: 992px) {
-    .copyright-and-nav {
-      flex-direction: row;
-      justify-content: space-between; } }
+  .copyright-and-nav nav a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #646464; }
+    .copyright-and-nav nav a:hover {
+      color: #81B700; }
 
 .service-card {
   height: 330px;
@@ -361,6 +346,7 @@ footer {
     padding: 0 30px;
     font-size: 14px;
     font-weight: 600;
+    color: #646464;
     line-height: 1.2;
     overflow-y: scroll; }
     @media (min-width: 992px) {
@@ -376,12 +362,12 @@ footer {
     width: 65px;
     padding: 4px 0;
     margin: 0 auto;
-    color: #646464;
     text-align: center;
     text-decoration: none;
+    background-color: #cccccc;
     font-size: 14px;
     font-weight: 600;
-    background-color: #cccccc; }
+    color: #646464; }
   .service-card:hover {
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.6);
@@ -403,10 +389,10 @@ footer {
     margin-right: 10px; }
   .choose-item p {
     flex: 0 0 74%;
+    margin-bottom: 0;
     font-size: 16px;
-    color: #646464;
     font-weight: 500;
-    margin-bottom: 0; }
+    color: #646464; }
 
 .choose-item + .choose-item {
   padding-top: 15px; }
@@ -423,8 +409,8 @@ footer {
     padding: 5px 0;
     text-align: center;
     font-size: 16px;
-    background-color: #81B700;
     color: #ffffff;
+    background-color: #81B700;
     margin-bottom: 25px; }
   .news-item p {
     font-size: 13px;
