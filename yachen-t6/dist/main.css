@@ -374,6 +374,8 @@ footer {
     border: 1px solid #161616; }
     .service-card:hover p::-webkit-scrollbar-thumb {
       background-color: #E8E8E8; }
+    .service-card:hover p {
+      color: #ffffff; }
   @media (min-width: 992px) {
     .service-card {
       margin: -30px 15px 0; } }

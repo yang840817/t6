@@ -48,6 +48,9 @@
         p::-webkit-scrollbar-thumb {
             background-color: $gray;
         }
+        p {
+            color: $white;
+        }
     }
     @media (min-width: 992px) {
         margin: -30px 15px 0;
