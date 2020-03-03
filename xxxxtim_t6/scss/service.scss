@@ -1,0 +1,53 @@
+.service {
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 0 45px;
+  position: relative;
+  top: -65px;
+  @include mobile {
+    top: 0px;
+  }
+
+  &-card {
+    background-color: #e7e7e7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // width: 40%;
+    padding: 30px 10px 30px;
+    position: relative;
+    top: -45px;
+    margin-top: 20px;
+    &:hover {
+      background-color: #646464;
+      color: white;
+    }
+    @include mobile {
+      top: 0px;
+    }
+  }
+  &-cardTitle {
+    font-size: 18px;
+    text-align: center;
+  }
+  &-cardImage {
+    width: 35%;
+    margin: 10px 0;
+  }
+  &-cardContent {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &-cardButton {
+    background-color: #cdcdcd;
+    border: none;
+    line-height: 35px;
+    font-size: 17px;
+    width: 28%;
+    cursor: pointer;
+  }
+} //service

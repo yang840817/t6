@@ -1,0 +1,144 @@
+.footer {
+  &-container {
+    background-color: #1c1c1c;
+    padding-bottom: 20px;
+    // position: relative;
+  }
+  &-content {
+    background-color: white;
+    width: 80%;
+    top: -215px;
+    position: relative;
+    // left: 51%;
+    // transform: translateX(-50%);
+    padding-bottom: 35px;
+    margin: 0 auto;
+  }
+  &-testContainer {
+    margin-bottom: 40px;
+    position: relative;
+  }
+  &-testContext {
+    width: 100%;
+    background-color: #e6e6e6;
+    padding: 20px 15px 20px 30px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 5%;
+  }
+  &-testTriangle {
+    border-color: #e6e6e6 transparent transparent #e6e6e6;
+    border-width: 9px 18px 9px 18px;
+    border-style: solid;
+    position: absolute;
+    bottom: -14px;
+  }
+  &-testImgContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  &-testNameContainer {
+    margin-left: 15px;
+    display: grid;
+  }
+  &-testLink {
+    color: #80b60a;
+    font-style: italic;
+    font-weight: bold;
+    :hover {
+      color: blue;
+    }
+  }
+  &-GetName {
+    width: 100%;
+    color: #8a8a8a;
+    border-radius: 3%;
+    box-sizing: border-box;
+    border: 2px solid #d9d9d9;
+    background-color: #e6e6e6;
+    line-height: 27px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    resize: none;
+    height: 35px;
+    padding-left: 10px;
+  }
+  &-GetMessage {
+    width: 100%;
+    color: #8a8a8a;
+    border-radius: 3%;
+    box-sizing: border-box;
+    border: 2px solid #d9d9d9;
+    background-color: #e6e6e6;
+    line-height: 27px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    resize: none;
+    height: 100px;
+    padding-left: 10px;
+  }
+  &-GetButton {
+    line-height: 37px;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 0 5px;
+    &:hover {
+      background-color: #80b60a;
+    }
+  }
+
+  &-flick {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &-flickImgContainer {
+    width: 23%;
+    height: 23%;
+    margin-bottom: 5px;
+    cursor: pointer;
+    &:hover {
+      filter: brightness(0.5);
+    }
+  }
+  &-bottom {
+    width: 80%;
+    margin: -180px auto 0 auto;
+    width: 80%;
+    margin: -180px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include mobile {
+      justify-content: center;
+    }
+  }
+  &-copyright {
+    color: #5a5a5a;
+    @include mobile {
+      text-align: center;
+    }
+  }
+  &-privacy {
+    color: #80b60a;
+  }
+  &-linkConrainer {
+    @include mobile {
+      text-align: center;
+    }
+  }
+  &-link {
+    color: #8b8a8a;
+    border-right: 2px solid #8b8a8a;
+    padding: 0 10px;
+    text-decoration: none;
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
