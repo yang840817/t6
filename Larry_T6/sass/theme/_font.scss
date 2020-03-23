@@ -1,0 +1,19 @@
+@mixin font-family($font-family){
+    font-family: $font-family;
+}
+
+$font: helvetica ;
+
+
+$h2-font-size:18px;
+$h2-color:#000000;
+
+$h3-font-size:18px;
+$h3-color:#6e6e6e;
+
+$article-h2-font-size:18px;
+$article-h2-color:#000000;
+$article-text-color:#8f8f8f;
+
+
+

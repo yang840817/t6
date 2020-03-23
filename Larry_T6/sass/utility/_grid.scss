@@ -1,0 +1,59 @@
+@mixin row(){
+    display: flex;
+    margin: 0 -15px;
+}
+
+@mixin col($number){
+    padding-left: 15px;
+    padding-right: 15px;
+    @if $number == 1{
+        flex:0 0 8.33333%;
+    }
+
+    @else if $number == 2{
+        flex:0 0 16.66666%;
+    }
+
+    @else if $number == 3{
+        flex:0 0 24.99999%;
+    }
+
+    @else if $number == 4{
+        flex:0 0 33.33333%;
+    }
+
+    @else if $number == 5{
+        flex:0 0 41.66666%;
+    }
+
+    @else if $number == 6{
+        flex:0 0 49.99998%;
+    }
+
+    @else if $number == 7{
+        flex:0 0 58.33331%;
+    }
+
+    @else if $number == 8{
+        flex:0 0 66.66664%;
+    }
+
+    @else if $number == 9{
+        flex:0 0 74.997%;
+    }
+
+    @else if $number == 10{
+        flex:0 0 83.33333%;
+    }
+
+    @else if $number == 11{
+        flex:0 0 91.66663%;
+    }
+
+    @else if $number == 12{
+        flex:0 0 100%;
+    }
+}
+
+
+

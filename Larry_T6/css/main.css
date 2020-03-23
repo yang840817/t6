@@ -1,0 +1,174 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.card {
+  background-color: #e8e8e8;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+body {
+  background-image: url(../images/bg.jpg);
+  box-shadow: inset 0 95px 0 0;
+}
+
+.container {
+  height: 1000px;
+  padding-top: 5px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+.container .logo {
+  display: flex;
+  margin: 0 -15px;
+  justify-content: center;
+}
+.container .logo-col {
+  padding-left: 15px;
+  padding-right: 15px;
+  flex: 0 0 83.33333%;
+}
+.container .logo-item {
+  background-image: url(../images/subbg.gif);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 5px 1px gray;
+}
+.container .logo-item h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.container .logo-item h1 img {
+  width: 100%;
+}
+.container .logo-item .social {
+  font-size: 0;
+  text-align: center;
+}
+.container .logo-item .social a {
+  display: inline-block;
+  width: 27px;
+  height: 28px;
+  margin-bottom: 10px;
+}
+.container .logo-item .social a + a {
+  margin-left: 10px;
+}
+.container .logo-item .social .facebook {
+  background: url(../images/social.png) no-repeat 0 1px;
+}
+.container .logo-item .social .facebook:hover {
+  background: url(../images/social.png) no-repeat 0 -27px;
+}
+.container .logo-item .social .twitter {
+  background: url(../images/social.png) no-repeat -37px 1px;
+}
+.container .logo-item .social .twitter:hover {
+  background: url(../images/social.png) no-repeat -37px -27px;
+}
+.container .logo-item .social .flicker {
+  background: url(../images/social.png) no-repeat -74px 1px;
+}
+.container .logo-item .social .flicker:hover {
+  background: url(../images/social.png) no-repeat -74px -27px;
+}
+.container .logo-item .social .dribbble {
+  background: url(../images/social.png) no-repeat -111px 1px;
+}
+.container .logo-item .social .dribbble:hover {
+  background: url(../images/social.png) no-repeat -111px -27px;
+}
+.container .logo-item .social .rss {
+  background: url(../images/social.png) no-repeat -150px 1px;
+}
+.container .logo-item .social .rss:hover {
+  background: url(../images/social.png) no-repeat -150px -27px;
+}
+.container .logo-item .social div {
+  font-size: 16px;
+}
+@media (min-width: 992px) {
+  .container .logo-item {
+    margin-bottom: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 35px;
+  }
+  .container .logo-item .social {
+    text-align: right;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

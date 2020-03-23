@@ -1,0 +1,163 @@
+@use "./utility/breaking-point";
+@use "./utility/grid";
+@use './utility/reset';
+@use './theme/font';
+@use './component/more-button';
+@use './modules/card';
+
+*{
+    box-sizing: border-box;
+    @include font.font-family(Helvetica);
+}
+
+body{
+    background-image: url(../images/bg.jpg);
+    box-shadow:inset 0 95px 0 0; 
+}
+
+.container{
+    height: 1000px;
+    padding-top: 5px;
+    @include breaking-point.above-contain(all);
+
+.logo{
+    @include grid.row;
+    justify-content: center;
+}
+
+.logo-col{
+    @include grid.col(10);
+}
+
+.logo-item{
+    background-image: url(../images/subbg.gif);
+    display: flex;
+    flex-direction: column;
+    
+    box-shadow: 0 0 5px 1px gray;
+
+    h1{
+        text-align: center;
+        margin-bottom: 10px;
+        img{
+            width: 100%;
+        }
+    }
+    
+    .social{
+        font-size: 0;
+        text-align: center;
+        a{
+            display: inline-block;
+            width: 27px;
+            height: 28px;
+            margin-bottom: 10px;
+        }
+
+        a+a{
+            margin-left: 10px;
+        }
+
+        .facebook{
+            background: url(../images/social.png) no-repeat 0 1px;
+        }
+
+        .facebook:hover{
+            background: url(../images/social.png) no-repeat 0 -27px;
+        }
+
+        .twitter{
+            background:url(../images/social.png) no-repeat -37px 1px;
+        }
+
+        .twitter:hover{
+            background:url(../images/social.png) no-repeat -37px -27px;
+        }
+
+        .flicker{
+            background:url(../images/social.png) no-repeat -74px 1px;
+        }
+
+        .flicker:hover{
+            background:url(../images/social.png) no-repeat -74px -27px;
+        }
+
+        .dribbble{
+            background:url(../images/social.png) no-repeat -111px 1px;
+        }
+
+        .dribbble:hover{
+            background:url(../images/social.png) no-repeat -111px -27px;
+
+        }
+
+        .rss{
+            background:url(../images/social.png) no-repeat -150px 1px;
+        }
+
+        .rss:hover{
+            background:url(../images/social.png) no-repeat -150px -27px;
+        }
+
+        div{
+            font-size: 16px;
+            // margin-top: 10px;
+        }
+    }
+ 
+}
+    // @include breaking-point.breaking-point(sm){ 
+    //     max-width: 540px;
+    // }
+    // @include breaking-point.breaking-point(md){
+    //     max-width: 720px;
+    // }
+
+    // @include breaking-point.breaking-point(lg){
+    //     max-width:960px;
+    // }
+
+    // @include breaking-point.breaking-point(xl){ 
+    //     max-width:1140px;
+    // }
+
+    // @include breaking-point.above-contain(xl);
+
+    // @include breaking-point.above-contain(sm);
+
+   
+
+ 
+
+.logo-item {
+    @include breaking-point.breaking-point(lg){
+        margin-bottom: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 35px;
+        .social{
+            text-align: right;
+        }
+    }
+}
+
+
+// .box{
+//     @include breaking_point.breaking_point(Pc){
+//         @include grid.col(1);
+//     }
+// }
+
+// .container{
+//     @include breaking-point.breaking_point(Pc){
+//         max-width: 960px;
+//     }
+// }
+
+// .container{
+//     @include breaking-point.breaking_point(Pad){
+//         max-width: 720px;
+//     }
+// }
+
+}
