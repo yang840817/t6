@@ -1,0 +1,46 @@
+$h2-color:#000000;
+
+@mixin h2-color() {
+    color:$h2-color;
+}
+
+$h3-color:#6e6e6e;
+
+@mixin h3-color() {
+    color:$h3-color;
+}
+
+$text-color:#000000;
+
+@mixin text-color() {
+    color: $text-color;
+}
+
+
+$article-h2-color:#000000;
+
+@mixin article-h2-color() {
+    color:$article-h2-color;
+}
+
+
+$article-text-color:#8f8f8f;
+
+@mixin article-text-color() {
+    color:$article-text-color;
+}
+
+
+
+@mixin a($no-guter){
+
+    @if $no-guter == no-gutter{
+        margin: 0;
+    }
+
+    @if  $no-guter != 0{
+        margin: -15px;
+        
+    }
+
+}

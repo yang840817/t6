@@ -1,3 +1,36 @@
+body header .container, body main .container, body main .carousel .container, body main .card-wrap .container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 576px) {
+  body header .container, body main .container, body main .carousel .container, body main .card-wrap .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  body header .container, body main .container, body main .carousel .container, body main .card-wrap .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  body header .container, body main .container, body main .carousel .container, body main .card-wrap .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  body header .container, body main .container, body main .carousel .container, body main .card-wrap .container {
+    max-width: 1140px;
+  }
+}
+
+body main .card-wrap .container .card {
+  display: flex;
+  margin: 0 -15px;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,121 +86,257 @@ table {
 
 * {
   box-sizing: border-box;
-  font-family: Helvetica;
 }
 
 body {
   background-image: url(../images/bg.jpg);
   box-shadow: inset 0 95px 0 0;
 }
-body .container {
-  height: 1000px;
+body header {
+  margin-bottom: 15px;
+}
+body header .container {
   padding-top: 5px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 0;
+  padding-left: 0;
 }
-body .container .logo {
-  display: flex;
-  margin: 0 -15px;
-  justify-content: center;
-}
-body .container .logo-col {
-  padding-left: 15px;
-  padding-right: 15px;
-  flex: 0 0 83.33333%;
-}
-body .container .logo-item {
+body header .container .logo {
   background-image: url(../images/subbg.gif);
   display: flex;
   flex-direction: column;
   box-shadow: 0 0 5px 1px gray;
+  padding: 5px;
 }
-body .container .logo-item h1 {
+body header .container .logo h1 {
   text-align: center;
   margin-bottom: 10px;
 }
-body .container .logo-item h1 img {
+body header .container .logo h1 img {
   width: 100%;
 }
-body .container .logo-item .social {
+body header .container .logo .social {
   font-size: 0;
   text-align: center;
 }
-body .container .logo-item .social a {
+body header .container .logo .social a {
   display: inline-block;
   width: 27px;
   height: 28px;
   margin-bottom: 10px;
 }
-body .container .logo-item .social a + a {
+body header .container .logo .social a + a {
   margin-left: 10px;
 }
-body .container .logo-item .social .facebook {
+body header .container .logo .social .facebook {
   background: url(../images/social.png) no-repeat 0 1px;
 }
-body .container .logo-item .social .facebook:hover {
+body header .container .logo .social .facebook:hover {
   background: url(../images/social.png) no-repeat 0 -27px;
 }
-body .container .logo-item .social .twitter {
+body header .container .logo .social .twitter {
   background: url(../images/social.png) no-repeat -37px 1px;
 }
-body .container .logo-item .social .twitter:hover {
+body header .container .logo .social .twitter:hover {
   background: url(../images/social.png) no-repeat -37px -27px;
 }
-body .container .logo-item .social .flicker {
+body header .container .logo .social .flicker {
   background: url(../images/social.png) no-repeat -74px 1px;
 }
-body .container .logo-item .social .flicker:hover {
+body header .container .logo .social .flicker:hover {
   background: url(../images/social.png) no-repeat -74px -27px;
 }
-body .container .logo-item .social .dribbble {
+body header .container .logo .social .dribbble {
   background: url(../images/social.png) no-repeat -111px 1px;
 }
-body .container .logo-item .social .dribbble:hover {
+body header .container .logo .social .dribbble:hover {
   background: url(../images/social.png) no-repeat -111px -27px;
 }
-body .container .logo-item .social .rss {
+body header .container .logo .social .rss {
   background: url(../images/social.png) no-repeat -150px 1px;
 }
-body .container .logo-item .social .rss:hover {
+body header .container .logo .social .rss:hover {
   background: url(../images/social.png) no-repeat -150px -27px;
 }
-body .container .logo-item .social div {
-  font-size: 16px;
+body header .container .logo .social div {
+  font-size: 0.9rem;
 }
 @media (min-width: 992px) {
-  body .container .logo-item {
+  body header .container .logo {
     margin-bottom: 0;
     flex-direction: row;
     justify-content: space-between;
     padding: 35px;
   }
-  body .container .logo-item .social {
+  body header .container .logo h1 {
+    margin: 0;
+  }
+  body header .container .logo .social {
     text-align: right;
   }
 }
-@media (min-width: 576px) {
-  body .container {
-    max-width: 540px;
+@media (min-width: 992px) {
+  body header {
+    margin-bottom: 30px;
   }
 }
-@media (min-width: 768px) {
-  body .container {
-    max-width: 720px;
+body main .container {
+  padding-right: 0;
+  padding-left: 0;
+  display: flex;
+}
+body main .container .navbar {
+  flex: 0 1 0;
+  display: flex;
+  position: relative;
+}
+body main .container .navbar .burger {
+  display: block;
+  padding: 15px;
+  font-size: 1.5rem;
+  box-shadow: 0 0 5px 1px gray;
+  background-image: url(../images/subbg.gif);
+}
+@media (min-width: 992px) {
+  body main .container .navbar .burger {
+    display: none;
+  }
+}
+body main .container .navbar #burger {
+  display: none;
+}
+body main .container .navbar #burger:checked + ul {
+  display: block;
+}
+body main .container .navbar ul {
+  background-image: url(../images/subbg.gif);
+  flex: 0 1 100%;
+  display: none;
+  margin-right: 8px;
+  box-shadow: 0 0 5px 1px gray;
+  position: absolute;
+  top: 100%;
+  z-index: 50;
+}
+body main .container .navbar ul li {
+  border-right: 0.5px solid darkgray;
+  position: relative;
+}
+body main .container .navbar ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 20px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #000000;
+}
+body main .container .navbar ul li:hover {
+  background-color: #8db537;
+}
+body main .container .navbar ul li:hover > .dropdown-item {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 120px;
+  width: 70%;
+  text-align: center;
+  box-shadow: 0 0 5px 1px gray;
+  background-image: url(../images/subbg.gif);
+  z-index: 99;
+}
+@media (min-width: 992px) {
+  body main .container .navbar ul li:hover > .dropdown-item {
+    top: 57px;
+    left: 0;
+    width: 100%;
+  }
+}
+body main .container .navbar ul li .dropdown-item {
+  display: none;
+}
+body main .container .navbar ul li .dropdown-item a {
+  display: block;
+}
+body main .container .navbar ul li .dropdown-item a:hover {
+  background-color: #8db537;
+}
+@media (min-width: 992px) {
+  body main .container .navbar ul {
+    display: flex;
+    position: static;
   }
 }
 @media (min-width: 992px) {
-  body .container {
-    max-width: 960px;
+  body main .container .navbar {
+    flex: 0 1 70%;
   }
 }
-@media (min-width: 1200px) {
-  body .container {
-    max-width: 1140px;
+body main .search {
+  flex: 0 1 100%;
+  background-image: url(../images/subbg.gif);
+  box-shadow: 0 0 5px 1px gray;
+  padding: 10px;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+@media (min-width: 992px) {
+  body main .search {
+    flex: 0 1 30%;
   }
+}
+body main .search #search {
+  width: 100%;
+  font-size: 1rem;
+  padding: 8px 8px;
+  border: 1px solid darkgray;
+  outline: none;
+}
+body main .search .search-icon {
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  cursor: pointer;
+}
+body main .carousel .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+body main .carousel .container img {
+  width: 100%;
+}
+body main .carousel .container .next {
+  background: url(../images/slider_next.gif) no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 999;
+  width: 40px;
+  height: 119px;
+}
+body main .carousel .container .next:hover {
+  background-position: 0 -119px;
+}
+body main .carousel .container .prev {
+  background: url(../images/slider_prev.gif) no-repeat;
+  position: absolute;
+  width: 40px;
+  height: 119px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 999;
+}
+body main .carousel .container .prev:hover {
+  background-position: 0 -119px;
+}
+body main .card-wrap .container .card-item {
+  padding-left: 15px;
+  padding-right: 15px;
+  flex: 0 0 25%;
 }
 
 /*# sourceMappingURL=main.css.map */
