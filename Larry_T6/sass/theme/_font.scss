@@ -1,0 +1,34 @@
+$h2-color:#000000;
+
+@mixin h2() {
+    color:$h2-color;
+    font-size: 1.5rem;
+}
+
+$h3-color:#000000;
+
+@mixin h3() {
+    font-size: 1rem;
+    color:$h3-color;
+}
+
+$text-color:#000000;
+
+@mixin text() {
+    color: $text-color;
+}
+
+
+// $article-h2-color:#000000;
+
+// @mixin article-h2-color() {
+//     color:$article-h2-color;
+// }
+
+
+// $article-text-color:#8f8f8f;
+
+// @mixin article-text-color() {
+//     color:$article-text-color;
+// }
+

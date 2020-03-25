@@ -1,4 +1,4 @@
-body header .container, body main .container, body main .carousel .container, body main .card-wrap .container {
+body header .container, body main, body main .container, body main .carousel .container, body main .card-wrap .container {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -6,27 +6,27 @@ body header .container, body main .container, body main .carousel .container, bo
   padding-right: 15px;
 }
 @media (min-width: 576px) {
-  body header .container, body main .container, body main .carousel .container, body main .card-wrap .container {
+  body header .container, body main, body main .container, body main .carousel .container, body main .card-wrap .container {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
-  body header .container, body main .container, body main .carousel .container, body main .card-wrap .container {
+  body header .container, body main, body main .container, body main .carousel .container, body main .card-wrap .container {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
-  body header .container, body main .container, body main .carousel .container, body main .card-wrap .container {
+  body header .container, body main, body main .container, body main .carousel .container, body main .card-wrap .container {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  body header .container, body main .container, body main .carousel .container, body main .card-wrap .container {
+  body header .container, body main, body main .container, body main .carousel .container, body main .card-wrap .container {
     max-width: 1140px;
   }
 }
 
-body main .card-wrap .container .card {
+body main .card-wrap .container .card, body main .introduce {
   display: flex;
   margin: 0 -15px;
 }
@@ -80,8 +80,81 @@ table {
   border-spacing: 0;
 }
 
-.card {
+.card-item .card-body .more {
+  display: block;
+  background-color: #cecece;
+  width: 30%;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.card-item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.card-item .card-body {
   background-color: #e8e8e8;
+  box-shadow: inset 0 0 2px 0.5px gray;
+  border-radius: 2px;
+  padding-bottom: 10px;
+}
+@media (min-width: 576px) {
+  .card-item .card-body {
+    padding-bottom: 20px;
+  }
+}
+.card-item .card-body:hover {
+  background-color: rgba(100, 100, 100, 0.9);
+}
+.card-item .card-body h3 {
+  padding: 30px 0;
+  font-size: 1rem;
+  color: #000000;
+}
+@media (min-width: 576px) {
+  .card-item .card-body h3 {
+    padding-bottom: 50px;
+  }
+}
+.card-item .card-body p {
+  margin-top: 10px;
+  padding: 0 10px;
+  height: 90px;
+  color: #000000;
+}
+@media (min-width: 992px) {
+  .card-item .card-body p {
+    margin-top: 20px;
+    height: 110px;
+  }
+}
+.card-item .card-body .more {
+  color: black;
+}
+.card-item .card-body .more:hover {
+  color: red;
+}
+
+.choose-items {
+  display: flex;
+  align-items: center;
+}
+.choose-items .arrow {
+  border-radius: 50%;
+  padding: 20px 22px;
+  background-color: #dadada;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.choose-items .choose-message {
+  align-self: center;
+  font-weight: bold;
+  color: #828282;
+  margin-bottom: 10px;
 }
 
 * {
@@ -179,6 +252,11 @@ body header .container .logo .social div {
     margin-bottom: 30px;
   }
 }
+body main {
+  padding-right: 0;
+  padding-left: 0;
+  background-image: url(../images/subbg.gif);
+}
 body main .container {
   padding-right: 0;
   padding-left: 0;
@@ -194,7 +272,6 @@ body main .container .navbar .burger {
   padding: 15px;
   font-size: 1.5rem;
   box-shadow: 0 0 5px 1px gray;
-  background-image: url(../images/subbg.gif);
 }
 @media (min-width: 992px) {
   body main .container .navbar .burger {
@@ -208,7 +285,6 @@ body main .container .navbar #burger:checked + ul {
   display: block;
 }
 body main .container .navbar ul {
-  background-image: url(../images/subbg.gif);
   flex: 0 1 100%;
   display: none;
   margin-right: 8px;
@@ -216,6 +292,7 @@ body main .container .navbar ul {
   position: absolute;
   top: 100%;
   z-index: 50;
+  background-image: url(../images/subbg.gif);
 }
 body main .container .navbar ul li {
   border-right: 0.5px solid darkgray;
@@ -272,7 +349,6 @@ body main .container .navbar ul li .dropdown-item a:hover {
 }
 body main .search {
   flex: 0 1 100%;
-  background-image: url(../images/subbg.gif);
   box-shadow: 0 0 5px 1px gray;
   padding: 10px;
   align-self: flex-start;
@@ -304,6 +380,7 @@ body main .carousel .container {
 }
 body main .carousel .container img {
   width: 100%;
+  height: 100%;
 }
 body main .carousel .container .next {
   background: url(../images/slider_next.gif) no-repeat;
@@ -333,10 +410,68 @@ body main .carousel .container .prev {
 body main .carousel .container .prev:hover {
   background-position: 0 -119px;
 }
-body main .card-wrap .container .card-item {
+@media (min-width: 992px) {
+  body main .card-wrap {
+    margin-top: -40px;
+    position: relative;
+    z-index: 100;
+    margin-bottom: 50px;
+  }
+}
+body main .card-wrap .container {
+  padding: 0 35px;
+}
+body main .card-wrap .container .card {
+  flex-wrap: wrap;
+}
+body main .card-wrap .container .card .card-item {
   padding-left: 15px;
   padding-right: 15px;
-  flex: 0 0 25%;
+  flex: 0 0 100%;
+}
+@media (min-width: 768px) {
+  body main .card-wrap .container .card .card-item {
+    padding-left: 15px;
+    padding-right: 15px;
+    flex: 0 0 50%;
+  }
+}
+@media (min-width: 992px) {
+  body main .card-wrap .container .card .card-item {
+    padding-left: 15px;
+    padding-right: 15px;
+    flex: 0 0 25%;
+  }
+}
+body main .introduce .introduce-col {
+  padding-left: 15px;
+  padding-right: 15px;
+  flex: 0 0 33.3333333333%;
+}
+body main .introduce .introduce-col h2 {
+  color: #000000;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+body main .introduce .introduce-col .welcome img {
+  margin-bottom: 25px;
+  width: 100%;
+}
+body main .introduce .introduce-col .welcome span {
+  line-height: 1.5;
+  color: #000000;
+}
+body main .introduce .introduce-col .welcome a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+body main .introduce .introduce-col .why-choose .choose-items {
+  border-bottom: 2px solid #eaeaea;
+  margin-top: 20px;
+}
+body main .introduce .introduce-col .news-media {
+  display: flex;
 }
 
 /*# sourceMappingURL=main.css.map */

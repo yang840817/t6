@@ -1,0 +1,23 @@
+@use '../component/more-button';
+@use '../utility/grid';
+@use "../utility/breaking-point";
+@use '../theme/font';
+
+.choose-items {
+  display: flex;
+  align-items: center;
+  .arrow {
+    border-radius: 50%;
+    padding: 20px 22px;
+    background-color: #dadada;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  .choose-message {
+    align-self: center;
+    font-weight: bold;
+    color: #828282;
+    margin-bottom: 10px;
+  }
+}
