@@ -3,50 +3,49 @@
 @use "../utility/breaking-point";
 @use '../theme/font';
 
-$card-background-color:#e8e8e8;
+$card-background-color: #e8e8e8;
 
-$hover-card-background-color:rgba(100, 100, 100 , 0.9);
+$hover-card-background-color: rgba(100, 100, 100, 0.9);
 
-.card-item{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-align: center;
-    .card-body{
-        background-color:$card-background-color;
-        box-shadow:inset 0 0 2px 0.5px gray;
-        border-radius: 2px;
-        padding-bottom: 10px;
-        @include breaking-point.breaking-point(sm){
-            padding-bottom: 20px;
-        }
-
-        &:hover{
-            background-color:$hover-card-background-color;
-        }
-        h3{
-            padding: 30px 0;
-            @include font.h3();
-            @include breaking-point.breaking-point(sm){
-                padding-bottom: 50px;
-            }
-        }
-        p{
-            margin-top: 10px;
-            padding: 0 10px;
-            height: 90px;
-            @include font.text();
-            @include breaking-point.breaking-point(lg){
-                margin-top: 20px;
-                height: 110px;
-            } 
-        }
-        .more{
-            color: black;
-            @extend %more;
-            &:hover{
-                color: red;
-            }
+.card-item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  .card-body {
+    background-color: $card-background-color;
+    box-shadow: inset 0 0 2px 0.5px gray;
+    border-radius: 2px;
+    padding-bottom: 10px;
+    @include breaking-point.breaking-point(sm) {
+      padding-bottom: 20px;
     }
+
+    &:hover {
+      background-color: $hover-card-background-color;
     }
-    
+    h3 {
+      padding: 30px 0;
+      @extend %font-h3;
+      @include breaking-point.breaking-point(sm) {
+        padding-bottom: 50px;
+      }
+    }
+    p {
+      margin-top: 10px;
+      padding: 0 10px;
+      height: 90px;
+      @extend %font-text;
+      @include breaking-point.breaking-point(lg) {
+        margin-top: 20px;
+        height: 110px;
+      }
+    }
+    .more {
+      color: black;
+      @extend %more;
+      &:hover {
+        color: red;
+      }
+    }
+  }
 }

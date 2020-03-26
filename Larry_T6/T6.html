@@ -105,10 +105,10 @@
       </div>
     </nav>
     <section class="
-        carousel container">
+        carousel-wrap">
       <div class="container">
         <!-- Swiper -->
-        <div class="swiper-container">
+        <div class="swiper-container carousel">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <a href="##">
@@ -133,20 +133,19 @@
 
           <!-- Add Arrows -->
           <div class="next">
-
+            <i class="fas fa-chevron-right"></i>
           </div>
           <div class="prev">
-
+            <i class="fas fa-chevron-left"></i>
           </div>
         </div>
-
 
         <!-- Swiper JS -->
         <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
         <!-- Initialize Swiper -->
         <script>
-          var swiper = new Swiper('.swiper-container', {
+          var swiper = new Swiper('.carousel', {
             spaceBetween: 30,
             centeredSlides: true,
             autoplay: {
@@ -229,7 +228,7 @@
               <a href="##">More</a>
             </div>
           </div>
-          <div class="introduce-col">
+          <div class="introduce-col order">
             <div class="why-choose">
               <h2>WHY CHOOSE US?</h2>
               <div class="choose-items">
@@ -295,15 +294,224 @@
 
           </div>
         </div>
+    </section>
+    <section class="features-works-wrap">
+      <div class="container">
+        <div class="swiper-container features-works">
+          <h2>FEATURED WORKS</h2>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="features-works-items">
+                <img src="./images/g1.jpg"
+                  alt="g1">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="features-works-items">
+                <img src="./images/g2.jpg"
+                  alt="g2">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="features-works-items">
+                <img src="./images/g3.jpg"
+                  alt="g3">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="features-works-items">
+                <img src="./images/g4.jpg"
+                  alt="g4">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="features-works-items">
+                <img src="./images/g1.jpg"
+                  alt="g1">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="features-works-items">
+                <img src="./images/g2.jpg"
+                  alt="g2">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="features-works-items">
+                <img src="./images/g3.jpg"
+                  alt="g3">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="features-works-items">
+                <img src="./images/g4.jpg"
+                  alt="g4">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="arrow-btn">
+            <div class="next">
+              <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="prev">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          var swiper = new Swiper('.features-works', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+            breakpoints: {
+              // 640: {
+              //   slidesPerView: 2,
+              //   slidesPerGroup: 2,
+              //   spaceBetween: 20,
+              // },
+              768: {
+                slidesPerView: 2,
+                slidesPerGroup: 1,
+                spaceBetween: 20,
+              },
+              1024: {
+                slidesPerView: 4,
+                slidesPerGroup: 4,
+                spaceBetween: 40,
+              },
+            },
+            navigation: {
+              nextEl: '.next',
+              prevEl: '.prev',
+            },
+          });
+        </script>
+
+      </div>
 
     </section>
-    <section></section>
   </main>
   <footer>
+    <div class="container">
+      <div class="comment">
+        <div class="comment-col">
+          <div class="last-tweet">
+            <h2>LATEST TWEETS</h2>
+            <p>loading tweets...</p>
+          </div>
+        </div>
+        <div class="comment-col">
+          <div class="testimonials">
+            <h2>TESTIMONIALS</h2>
+            <p class="testimonials-text">"Sed dapibus molesite interdum. Fusce nec est ante, sit amet lacinia lorem. Maecenas nec eros ut mauris pulvinar suscipit. Aliquam erat"</p>
+            <div class="testimonials-media">
+              <img src="./images/men.jpg"
+                alt="men">
+              <div class="testimonials-media-text">
+                <div class="name">Stephen Bingham</div>
+                <a href="##">demolink.org</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comment-col">
+          <form action="T6.html"
+            class="contact-us">
+            <h2>GET IN TOUCH!</h2>
+            <input type="text"
+              name="name"
+              placeholder="Name">
+            <input type="email"
+              name="email"
+              placeholder="Email">
 
+            <textarea name="message"
+              placeholder="Message"></textarea>
+
+            <button class="clear"
+              type="reset">
+              CLEAR FORM
+            </button>
+            <button type="button">
+              SEND!
+            </button>
+
+          </form>
+        </div>
+        <div class="comment-col">
+          <div class="flicker">
+            <h2>FLICKR</h2>
+            <div class="flicker-item">
+              <a class="flicker-img">
+                <img src="./images/f1.jpg"
+                  alt="f1">
+              </a>
+              <a class="flicker-img">
+                <img src="./images/f2.jpg"
+                  alt="f2">
+              </a>
+              <a class="flicker-img">
+                <img src="./images/f3.jpg"
+                  alt="f3">
+              </a>
+              <a class="flicker-img">
+                <img src="./images/f4.jpg"
+                  alt="f4">
+              </a>
+              <a class="flicker-img">
+                <img src="./images/f5.jpg"
+                  alt="f5">
+              </a>
+              <a class="flicker-img">
+                <img src="./images/f6.jpg"
+                  alt="f6">
+              </a>
+              <a class="flicker-img">
+                <img src="./images/f7.jpg"
+                  alt="f7">
+              </a>
+              <a class="flicker-img">
+                <img src="./images/f8.jpg"
+                  alt="f8">
+              </a>
+              <a class="flicker-img">
+                <img src="./images/f9.jpg"
+                  alt="f9">
+              </a>
+              <a class="flicker-img">
+                <img src="./images/f10.jpg"
+                  alt="f10">
+              </a>
+              <a class="flicker-img">
+                <img src="./images/f11.jpg"
+                  alt="f11">
+              </a>
+              <a class="flicker-img">
+                <img src="./images/f12.jpg"
+                  alt="f12">
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </div>
   </footer>
 
   </div>
+
 </body>
 
 </html>
