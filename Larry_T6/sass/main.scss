@@ -3,6 +3,8 @@
 @use './utility/reset';
 @use './theme/font';
 @use './theme/background-image';
+@use './modules/header';
+
 @use './component/more-button';
 @use './modules/card';
 @use './modules/choose-item';
@@ -16,106 +18,6 @@ body {
   box-shadow: inset 0 95px 0 0, inset 0 -50px 0 0;
   @include breaking-point.breaking-point(lg) {
     box-shadow: inset 0 95px 0 0, inset 0 -180px 0 0;
-  }
-}
-header {
-  margin-bottom: 15px;
-  .container {
-    padding-top: 5px;
-
-    .logo {
-      @include background-image.content-background-image();
-      display: flex;
-      flex-direction: column;
-      box-shadow: 0 0 5px 1px gray;
-      padding: 5px;
-
-      h1 {
-        text-align: center;
-        margin-bottom: 10px;
-        img {
-          width: 100%;
-        }
-      }
-
-      .social {
-        font-size: 0;
-        text-align: center;
-        a {
-          display: inline-block;
-          width: 27px;
-          height: 28px;
-          margin-bottom: 10px;
-        }
-
-        a + a {
-          margin-left: 10px;
-        }
-
-        .facebook {
-          background: url(../images/social.png) no-repeat 0 1px;
-        }
-
-        .facebook:hover {
-          background: url(../images/social.png) no-repeat 0 -27px;
-        }
-
-        .twitter {
-          background: url(../images/social.png) no-repeat -37px 1px;
-        }
-
-        .twitter:hover {
-          background: url(../images/social.png) no-repeat -37px -27px;
-        }
-
-        .flicker {
-          background: url(../images/social.png) no-repeat -74px 1px;
-        }
-
-        .flicker:hover {
-          background: url(../images/social.png) no-repeat -74px -27px;
-        }
-
-        .dribbble {
-          background: url(../images/social.png) no-repeat -111px 1px;
-        }
-
-        .dribbble:hover {
-          background: url(../images/social.png) no-repeat -111px -27px;
-        }
-
-        .rss {
-          background: url(../images/social.png) no-repeat -150px 1px;
-        }
-
-        .rss:hover {
-          background: url(../images/social.png) no-repeat -150px -27px;
-        }
-
-        div {
-          font-size: 0.9rem;
-        }
-      }
-      @include breaking-point.breaking-point(lg) {
-        margin-bottom: 0;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 35px;
-        h1 {
-          margin: 0;
-        }
-        .social {
-          text-align: right;
-        }
-      }
-    }
-    @extend %above-contain;
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-  @include breaking-point.breaking-point(lg) {
-    margin-bottom: 30px;
   }
 }
 
