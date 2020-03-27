@@ -2,6 +2,7 @@
 @use "../utility/grid";
 @use '../theme/background-image';
 @use '../component/carousel';
+@use '../component/card';
 
 main {
   @extend %above-contain;

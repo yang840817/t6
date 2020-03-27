@@ -22,31 +22,6 @@ body {
   }
 }
 
-.card-wrap {
-  @include breaking-point.breaking-point(lg) {
-    margin-top: -40px;
-    position: relative;
-    z-index: 100;
-    margin-bottom: 50px;
-  }
-  .container {
-    @extend %above-contain;
-    padding: 0 35px;
-    .card {
-      @extend %row;
-      flex-wrap: wrap;
-      .card-item {
-        @include grid.col(12);
-        @include breaking-point.breaking-point(md) {
-          @include grid.col(6);
-        }
-        @include breaking-point.breaking-point(lg) {
-          @include grid.col(3);
-        }
-      }
-    }
-  }
-}
 .introduce-wrap {
   margin-bottom: 3rem;
   .container {
