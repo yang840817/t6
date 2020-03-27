@@ -3,6 +3,9 @@
 @use '../theme/background-image';
 @use '../theme/font';
 
+nav {
+  display: flex;
+}
 .navbar {
   display: flex;
   flex: 0 1 0;

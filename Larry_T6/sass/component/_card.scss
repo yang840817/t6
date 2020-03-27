@@ -3,15 +3,11 @@
 @use "../utility/breaking-point";
 @use '../theme/font';
 
-$card-background-color: #e8e8e8;
-
-$hover-card-background-color: rgba(100, 100, 100, 0.9);
-
 .card-wrap {
-  .container {
-    @extend %above-contain;
-    padding: 0 35px;
-  }
+  padding: 0 35px;
+  // .container {
+  //   @extend %above-contain;
+  // }
   @include breaking-point.breaking-point(lg) {
     margin-top: -40px;
     position: relative;
@@ -36,6 +32,7 @@ $hover-card-background-color: rgba(100, 100, 100, 0.9);
   }
 }
 
+$card-background-color: #e8e8e8;
 .card-body {
   background-color: $card-background-color;
   box-shadow: inset 0 0 2px 0.5px gray;
@@ -45,6 +42,7 @@ $hover-card-background-color: rgba(100, 100, 100, 0.9);
     padding-bottom: 20px;
   }
 
+  $hover-card-background-color: rgba(100, 100, 100, 0.9);
   &:hover {
     background-color: $hover-card-background-color;
   }
@@ -65,11 +63,12 @@ $hover-card-background-color: rgba(100, 100, 100, 0.9);
       height: 110px;
     }
   }
-  .more {
-    color: black;
-    @extend %more;
-    &:hover {
-      color: red;
-    }
+}
+
+.more {
+  color: black;
+  @extend %more;
+  &:hover {
+    color: red;
   }
 }
