@@ -9,7 +9,7 @@
     padding-left: 0;
     img {
       width: 100%;
-      height: 100%;
+      vertical-align: middle;
     }
   }
 
@@ -85,8 +85,7 @@
 
 .product {
   position: relative;
-  margin-bottom: 50px;
-  padding: 0 35px 50px 35px;
+  padding: 0 35px;
   h2 {
     @extend %font-h2;
     @include breaking-point.breaking-point(lg) {
@@ -96,6 +95,7 @@
 
   img {
     width: 100%;
+    vertical-align: middle;
   }
 
   .swiper-pagination {
@@ -108,7 +108,7 @@
   color: #cdcdce;
   display: none;
   position: absolute;
-  top: 20px;
+  top: 35px;
   right: 0;
   z-index: 999;
   @include breaking-point.breaking-point(lg) {

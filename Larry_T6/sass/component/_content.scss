@@ -10,6 +10,8 @@ main {
   @extend %above-contain;
   padding-right: 0;
   padding-left: 0;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
   @include background-image.content-background-image();
   box-shadow: 0 0 5px 1px gray;
 }
