@@ -5,9 +5,11 @@
 .choose-items {
   display: flex;
   align-items: center;
+  border-bottom: 2px solid #eaeaea;
+  margin-top: 25px;
   .arrow {
     border-radius: 50%;
-    padding: 20px 23px;
+    padding: 14px 20px;
     background-color: #dadada;
     margin-right: 10px;
     margin-bottom: 10px;

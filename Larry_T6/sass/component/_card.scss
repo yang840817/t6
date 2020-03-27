@@ -57,7 +57,16 @@ $card-background-color: #e8e8e8;
     height: 90px;
     @extend %font-text;
     margin-top: 10px;
+    margin-bottom: 40px;
     padding: 0 10px;
+    width: 100%;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+    // white-space: nowrap;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
     @include breaking-point.breaking-point(lg) {
       margin-top: 20px;
       height: 110px;
