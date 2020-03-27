@@ -13,11 +13,15 @@
 
 body {
   background-image: url(../images/bg.jpg);
-  box-shadow: inset 0 95px 0 0;
+  box-shadow: inset 0 95px 0 0, inset 0 -50px 0 0;
+  @include breaking-point.breaking-point(lg) {
+    box-shadow: inset 0 95px 0 0, inset 0 -180px 0 0;
+  }
   header {
     margin-bottom: 15px;
     .container {
       padding-top: 5px;
+
       .logo {
         @include background-image.content-background-image();
         display: flex;
@@ -217,7 +221,6 @@ body {
       display: flex;
       align-items: center;
       position: relative;
-
       @include breaking-point.breaking-point(lg) {
         flex: 0 1 30%;
       }
@@ -241,27 +244,29 @@ body {
         @extend %above-contain;
         padding-right: 0;
         padding-left: 0;
-        // .carousel-container {
-        //   position: relative;
-        // }
-
         img {
           width: 100%;
           height: 100%;
         }
 
+        .swiper-pagination {
+          @include breaking-point.breaking-point(sm) {
+            display: none;
+          }
+        }
+
         .next {
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          right: 0;
-          margin: auto;
-          z-index: 999;
-          width: 20px;
-          height: 20px;
-          color: darkgray;
-          outline: none;
-          font-size: 2rem;
+          // position: absolute;
+          // top: 0;
+          // bottom: 0;
+          // right: 0;
+          // margin: auto;
+          // z-index: 999;
+          // width: 20px;
+          // height: 20px;
+          // color: darkgray;
+          // outline: none;
+          // font-size: 2rem;
 
           @include breaking-point.breaking-point(sm) {
             background: url(../images/slider_next.gif) no-repeat;
@@ -283,17 +288,17 @@ body {
         }
 
         .prev {
-          position: absolute;
-          width: 20px;
-          height: 20px;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          margin: auto;
-          z-index: 999;
-          color: darkgray;
-          outline: none;
-          font-size: 2rem;
+          // position: absolute;
+          // width: 20px;
+          // height: 20px;
+          // top: 0;
+          // bottom: 0;
+          // left: 0;
+          // margin: auto;
+          // z-index: 999;
+          // color: darkgray;
+          // outline: none;
+          // font-size: 2rem;
           @include breaking-point.breaking-point(sm) {
             background: url(../images/slider_prev.gif) no-repeat;
             position: absolute;
@@ -342,10 +347,6 @@ body {
     }
     .introduce-wrap {
       margin-bottom: 3rem;
-      // @include breaking-point.breaking-point(xl) {
-      //   margin-bottom: 5rem;
-      // }
-
       .container {
         padding: 0 35px;
       }
@@ -417,7 +418,6 @@ body {
       }
 
       .why-choose {
-        // border-bottom: 1px solid gray;
         @include breaking-point.breaking-point(md) {
           border: 0;
         }
@@ -525,31 +525,26 @@ body {
     .comment {
       @extend %row;
       flex-wrap: wrap;
-      div:nth-of-type(-n + 3) {
+      .comment-col:nth-of-type(-n + 3) {
         margin-bottom: 20px;
+        @include breaking-point.breaking-point(lg) {
+          margin-bottom: 0;
+        }
       }
     }
     .comment-col {
       border-bottom: 1px solid #dfdfdf;
-
       @include grid.col(12);
-
-      @include breaking-point.breaking-point(md) {
-        @include grid.col(6);
-        margin-bottom: 20px;
-      }
       @include breaking-point.breaking-point(lg) {
         @include grid.col(3);
         border-bottom: 0;
       }
-      // display: flex;
-      // flex-direction: column;
     }
 
     .last-tweet {
       p {
         margin-bottom: 20px;
-        @include breaking-point.breaking-point(md) {
+        @include breaking-point.breaking-point(lg) {
           margin-bottom: 0;
         }
       }
@@ -562,20 +557,20 @@ body {
     }
 
     .testimonials-text {
-      padding: 20px 10px;
+      padding: 15px 10px;
       color: #828282;
       font-size: 0.9rem;
       line-height: 1.2;
       background-color: #e7e7e7;
-      margin-bottom: 30px;
+      margin-bottom: 34px;
       position: relative;
       border: 1px solid #dfdfdf;
 
       &::after {
         content: "";
         display: block;
-        width: 35px;
-        height: 18px;
+        width: 30px;
+        height: 15px;
         background-color: #e7e7e7;
         clip-path: polygon(0 0, 100% 0, 0 100%);
         position: absolute;
@@ -588,6 +583,10 @@ body {
     .testimonials-media {
       display: flex;
       align-items: center;
+      margin-bottom: 10px;
+      @include breaking-point.breaking-point(lg) {
+        margin-bottom: 0;
+      }
 
       img {
         margin-right: 15px;
@@ -614,7 +613,7 @@ body {
 
       textarea {
         width: 100%;
-        height: 125px;
+        height: 113px;
         padding: 8px;
         background-color: #e7e7e7;
         border: 1px solid #dfdfdf;
@@ -646,18 +645,15 @@ body {
     }
 
     .flicker-item {
-      // @extend %row;
       display: flex;
       flex-wrap: wrap;
       a:nth-of-type(-n + 8) {
-        margin-bottom: 16px;
+        margin-bottom: 10px;
       }
       margin: 0 -5px;
     }
 
     .flicker-img {
-      // @include grid.col(3);
-      // padding: 0 2px;
       flex: 0 1 25%;
       padding: 0 5px;
       cursor: pointer;

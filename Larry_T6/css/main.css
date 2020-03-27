@@ -175,7 +175,12 @@ body main .container .navbar ul li a, body main .introduce .introduce-col .welco
 
 body {
   background-image: url(../images/bg.jpg);
-  box-shadow: inset 0 95px 0 0;
+  box-shadow: inset 0 95px 0 0, inset 0 -50px 0 0;
+}
+@media (min-width: 992px) {
+  body {
+    box-shadow: inset 0 95px 0 0, inset 0 -180px 0 0;
+  }
 }
 body header {
   margin-bottom: 15px;
@@ -394,18 +399,10 @@ body main .carousel-wrap .container img {
   width: 100%;
   height: 100%;
 }
-body main .carousel-wrap .container .next {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  z-index: 999;
-  width: 20px;
-  height: 20px;
-  color: darkgray;
-  outline: none;
-  font-size: 2rem;
+@media (min-width: 576px) {
+  body main .carousel-wrap .container .swiper-pagination {
+    display: none;
+  }
 }
 @media (min-width: 576px) {
   body main .carousel-wrap .container .next {
@@ -425,19 +422,6 @@ body main .carousel-wrap .container .next {
   body main .carousel-wrap .container .next:hover {
     background-position: 0 -119px;
   }
-}
-body main .carousel-wrap .container .prev {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  z-index: 999;
-  color: darkgray;
-  outline: none;
-  font-size: 2rem;
 }
 @media (min-width: 576px) {
   body main .carousel-wrap .container .prev {
@@ -678,22 +662,19 @@ body footer .container {
 body footer .comment {
   flex-wrap: wrap;
 }
-body footer .comment div:nth-of-type(-n + 3) {
+body footer .comment .comment-col:nth-of-type(-n + 3) {
   margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  body footer .comment .comment-col:nth-of-type(-n + 3) {
+    margin-bottom: 0;
+  }
 }
 body footer .comment-col {
   border-bottom: 1px solid #dfdfdf;
   padding-left: 15px;
   padding-right: 15px;
   flex: 0 0 100%;
-}
-@media (min-width: 768px) {
-  body footer .comment-col {
-    padding-left: 15px;
-    padding-right: 15px;
-    flex: 0 0 50%;
-    margin-bottom: 20px;
-  }
 }
 @media (min-width: 992px) {
   body footer .comment-col {
@@ -706,7 +687,7 @@ body footer .comment-col {
 body footer .last-tweet p {
   margin-bottom: 20px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   body footer .last-tweet p {
     margin-bottom: 0;
   }
@@ -716,20 +697,20 @@ body footer h2 {
   margin-bottom: 30px;
 }
 body footer .testimonials-text {
-  padding: 20px 10px;
+  padding: 15px 10px;
   color: #828282;
   font-size: 0.9rem;
   line-height: 1.2;
   background-color: #e7e7e7;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   position: relative;
   border: 1px solid #dfdfdf;
 }
 body footer .testimonials-text::after {
   content: "";
   display: block;
-  width: 35px;
-  height: 18px;
+  width: 30px;
+  height: 15px;
   background-color: #e7e7e7;
   clip-path: polygon(0 0, 100% 0, 0 100%);
   position: absolute;
@@ -741,6 +722,12 @@ body footer .testimonials-text::after {
 body footer .testimonials-media {
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
+}
+@media (min-width: 992px) {
+  body footer .testimonials-media {
+    margin-bottom: 0;
+  }
 }
 body footer .testimonials-media img {
   margin-right: 15px;
@@ -764,7 +751,7 @@ body footer .contact-us input {
 }
 body footer .contact-us textarea {
   width: 100%;
-  height: 125px;
+  height: 113px;
   padding: 8px;
   background-color: #e7e7e7;
   border: 1px solid #dfdfdf;
@@ -798,7 +785,7 @@ body footer .flicker-item {
   margin: 0 -5px;
 }
 body footer .flicker-item a:nth-of-type(-n + 8) {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 body footer .flicker-img {
   flex: 0 1 25%;
