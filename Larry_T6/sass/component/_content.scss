@@ -3,6 +3,8 @@
 @use '../theme/background-image';
 @use '../component/carousel';
 @use '../component/card';
+@use '../component/introduce-area';
+@use '../component/choose-item';
 
 main {
   @extend %above-contain;
@@ -10,10 +12,4 @@ main {
   padding-left: 0;
   @include background-image.content-background-image();
   box-shadow: 0 0 5px 1px gray;
-  // .container {
-  //   @extend %above-contain;
-  //   padding-right: 0;
-  //   padding-left: 0;
-
-  // }
 }
