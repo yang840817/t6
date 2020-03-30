@@ -4,8 +4,11 @@
 @use '../utility/grid';
 
 footer {
-  @extend %above-contain;
-  @include background-image.content-background-image;
+  .container {
+    @extend %above-contain;
+    padding: 35px;
+    @include background-image.content-background-image;
+  }
   h2 {
     @extend %font-h2;
     font-size: 1.3rem;
@@ -15,8 +18,6 @@ footer {
 .comment {
   @extend %row;
   flex-wrap: wrap;
-  padding: 35px;
-  @include grid.content-fluid(-15px);
 }
 
 .comment-col:nth-of-type(-n + 3) {
@@ -78,7 +79,6 @@ footer {
     top: calc(100% - 1px);
     left: -1px;
     z-index: 998;
-    // border-left: 1px solid #dfdfdf;
   }
 }
 .testimonials-media {
@@ -141,10 +141,6 @@ footer {
   }
 }
 
-// .photo {
-//   margin: 0 -2px;
-// }
-
 .photo-item {
   display: flex;
   flex-wrap: wrap;
@@ -165,6 +161,7 @@ footer {
 }
 
 .bottom-information {
+  @extend %above-contain;
   display: flex;
   flex-direction: column;
   align-items: center;

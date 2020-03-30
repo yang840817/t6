@@ -9,7 +9,6 @@
 .introduce {
   @extend %row;
   flex-wrap: wrap;
-  @include grid.content-fluid(-15px);
   padding-bottom: 3rem;
   @include breaking-point.breaking-point(xl) {
     padding-bottom: 5rem;
