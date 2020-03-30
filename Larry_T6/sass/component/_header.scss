@@ -5,13 +5,13 @@
 
 header {
   @extend %above-contain;
+  padding-left: 0;
+  padding-right: 0;
   margin-bottom: 15px;
   @include breaking-point.breaking-point(lg) {
     margin-bottom: 30px;
   }
   padding-top: 5px;
-  padding-right: 0;
-  padding-left: 0;
 }
 
 .logo {

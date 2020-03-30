@@ -5,9 +5,6 @@
 
 .card-wrap {
   padding: 0 35px;
-  // .container {
-  //   @extend %above-contain;
-  // }
   @include breaking-point.breaking-point(lg) {
     margin-top: -40px;
     position: relative;
@@ -18,8 +15,9 @@
 .card {
   @extend %row;
   flex-wrap: wrap;
+  @include grid.content-fluid(-15px);
 }
-.card-item {
+.card-col {
   text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -60,9 +58,6 @@ $card-background-color: #e8e8e8;
     margin-bottom: 40px;
     padding: 0 10px;
     width: 100%;
-    // overflow: hidden;
-    // text-overflow: ellipsis;
-    // white-space: nowrap;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 5;

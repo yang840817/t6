@@ -9,6 +9,7 @@
 .introduce {
   @extend %row;
   flex-wrap: wrap;
+  @include grid.content-fluid(-15px);
   padding-bottom: 3rem;
   @include breaking-point.breaking-point(xl) {
     padding-bottom: 5rem;
@@ -56,7 +57,6 @@
       @extend %font-text;
     }
     a {
-      text-decoration: none;
       color: black;
       font-weight: bold;
     }
@@ -90,8 +90,13 @@
   }
 }
 .news-media {
-  display: flex;
-  align-items: flex-start;
+  text-align: center;
+  margin-bottom: 20px;
+  @include breaking-point.breaking-point(sm) {
+    display: flex;
+    margin-bottom: 0;
+    align-items: flex-start;
+  }
   @include breaking-point.breaking-point(lg) {
     margin-top: 30px;
   }
@@ -102,23 +107,20 @@
 
 .news-media-text {
   color: #828282;
+  font-size: 0;
   a {
     font-weight: bold;
     color: #000000;
-    text-decoration: none;
     font-size: 0.9rem;
   }
   span {
     font-size: 0.9rem;
-    // display: -webkit-box;
-    // -webkit-box-orient: vertical;
-    // -webkit-line-clamp: 3;
-    // overflow: hidden;
   }
 }
 
 .date {
   color: white;
+  font-size: 0.9rem;
   text-align: center;
   background-color: #8db537;
   padding: 5px 0;

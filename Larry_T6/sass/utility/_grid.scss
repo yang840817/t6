@@ -1,11 +1,11 @@
-// @mixin row(){
-//     display: flex;
-//     margin: 0 -15px;
-// }
-
 %row {
   display: flex;
-  margin: 0 -15px;
+  // margin: 0 -15px;
+}
+
+@mixin content-fluid($edge-gutter) {
+  margin-left: $edge-gutter;
+  margin-right: $edge-gutter;
 }
 
 @mixin col($number) {

@@ -2,14 +2,14 @@
 @use "../utility/grid";
 @use '../theme/background-image';
 @use '../component/carousel';
-@use '../component/card';
+@use "../object/card";
 @use '../component/introduce-area';
-@use '../component/choose-item';
+@use "../object/choose-item";
 
 main {
   @extend %above-contain;
-  padding-right: 0;
   padding-left: 0;
+  padding-right: 0;
   margin-bottom: 50px;
   padding-bottom: 50px;
   @include background-image.content-background-image();

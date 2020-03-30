@@ -6,7 +6,6 @@
 footer {
   @extend %above-contain;
   @include background-image.content-background-image;
-  // padding: 35px;
   h2 {
     @extend %font-h2;
     font-size: 1.3rem;
@@ -53,18 +52,32 @@ footer {
   margin-bottom: 34px;
   padding: 15px 10px;
 
+  &::before {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 13px;
+    background-color: #e7e7e7;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
+    z-index: 999;
+    // border-left: 1px solid #dfdfdf;
+  }
+
   &::after {
     content: "";
     display: block;
     width: 30px;
     height: 15px;
-    background-color: #e7e7e7;
+    background-color: #dfdfdf;
     clip-path: polygon(0 0, 100% 0, 0 100%);
     position: absolute;
     top: calc(100% - 1px);
     left: -1px;
-    z-index: 999;
-    border-left: 1px solid #dfdfdf;
+    z-index: 998;
+    // border-left: 1px solid #dfdfdf;
   }
 }
 .testimonials-media {
@@ -83,7 +96,6 @@ footer {
   a {
     font-size: 0.8rem;
     color: #91b83e;
-    text-decoration: none;
   }
 }
 .contact-us {
@@ -109,7 +121,7 @@ footer {
   }
 
   button {
-    padding: 10px 15px;
+    padding: 10px 10px;
     font-weight: bold;
     font-size: 0.7rem;
     color: #ffff;
@@ -128,9 +140,9 @@ footer {
   }
 }
 
-.photo {
-  margin: 0 -2px;
-}
+// .photo {
+//   margin: 0 -2px;
+// }
 
 .photo-item {
   display: flex;
@@ -151,7 +163,7 @@ footer {
   }
 }
 
-.copyright {
+.bottom-information {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -159,7 +171,6 @@ footer {
   padding: 20px 0;
   background-color: #000000;
   font-size: 0.9rem;
-  margin: 0 -15px;
   @include breaking-point.breaking-point(lg) {
     flex-direction: row;
   }
@@ -171,7 +182,6 @@ footer {
   justify-content: center;
   a {
     display: block;
-    text-decoration: none;
     color: #5d5d5d;
     &:hover {
       color: #8db537;
@@ -187,7 +197,7 @@ footer {
   }
 }
 
-.copyright-text {
+.copyright {
   @include breaking-point.breaking-point(lg) {
     order: -1;
   }
@@ -197,7 +207,6 @@ footer {
   }
   a {
     color: #535353;
-    text-decoration: none;
     &:hover {
       color: #82a633;
     }
