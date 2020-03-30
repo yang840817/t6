@@ -16,6 +16,7 @@ footer {
   @extend %row;
   flex-wrap: wrap;
   padding: 35px;
+  @include grid.content-fluid(-15px);
 }
 
 .comment-col:nth-of-type(-n + 3) {
