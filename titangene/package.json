@@ -4,9 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-sass-watch": "sass --watch src/scss:dict/styles",
+    "build-sass-minify": "sass -s compressed src/scss:dict/styles"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.26.3"
+  }
 }
