@@ -1,0 +1,17 @@
+// *----------------------------------*\
+// Settings > Config
+// *----------------------------------*/
+
+// Global config settings
+// Inspired by: https://github.com/ahmadajmi/itcss/blob/master/settings/_config.scss
+
+$config: (
+  debug: true
+);
+
+// Example:
+// @if (config(debug) == true) { ... }
+
+@function config($key) {
+  @return map-get($config, $key);
+}
