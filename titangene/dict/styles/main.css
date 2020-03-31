@@ -48,4 +48,43 @@ body::before {
   z-index: -1;
 }
 
+.header_brand {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  margin-bottom: 32px;
+  padding: 32px 40px;
+  background-color: #fff;
+}
+
+.logo h1 {
+  margin: 0;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social {
+  text-align: right;
+  font-size: 0;
+}
+
+.icon {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+}
+
+.icon + .icon {
+  margin-left: 6px;
+}
+
+.telephone p {
+  margin: 0;
+  font-size: 14px;
+}
+
 /*# sourceMappingURL=main.css.map */
