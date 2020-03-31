@@ -14,7 +14,7 @@ header {
   padding-top: 5px;
 }
 
-.logo {
+.logo-wrap {
   @include background-image.content-background-image();
   display: flex;
   flex-direction: column;

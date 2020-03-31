@@ -53,7 +53,6 @@ footer {
   border: 1px solid #dfdfdf;
   margin-bottom: 34px;
   padding: 15px 10px;
-
   &::before {
     content: "";
     display: block;
@@ -65,9 +64,7 @@ footer {
     top: calc(100% - 1px);
     left: 0;
     z-index: 999;
-    // border-left: 1px solid #dfdfdf;
   }
-
   &::after {
     content: "";
     display: block;
@@ -174,7 +171,7 @@ footer {
   }
 }
 
-.bottom-nav {
+.footer-nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

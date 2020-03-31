@@ -2,8 +2,10 @@
 @use '../utility/grid';
 @use "../utility/breaking-point";
 @use '../theme/font';
+@use '../theme/background-image';
 
 .card-wrap {
+  // @include background-image.content-background-image();
   padding: 0 35px;
   @include breaking-point.breaking-point(lg) {
     margin-top: -40px;

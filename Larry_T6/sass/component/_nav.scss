@@ -4,8 +4,12 @@
 @use '../theme/font';
 
 nav {
+  @extend %above-contain;
+  padding-right: 0;
+  padding-left: 0;
   display: flex;
   justify-content: space-between;
+  @include background-image.content-background-image();
 }
 .navbar {
   display: flex;
@@ -15,14 +19,14 @@ nav {
   }
   position: relative;
   ul {
-    @include background-image.content-background-image();
     display: none;
     flex: 0 1 100%;
     position: absolute;
     top: 100%;
     z-index: 50;
     margin-right: 8px;
-    box-shadow: 0 0 5px 1px gray;
+    box-shadow: 0 0 3px 1px gray;
+    @include background-image.content-background-image();
     @include breaking-point.breaking-point(lg) {
       display: flex;
       position: static;
@@ -47,9 +51,11 @@ nav {
 
       &:hover > .dropdown-item {
         display: block;
+        // transition: all 1s;
+        // opacity: 1;
         position: absolute;
         top: 0;
-        left: 120px;
+        left: 100%;
         width: 70%;
         text-align: center;
         box-shadow: 0 0 5px 1px gray;
@@ -75,6 +81,14 @@ nav {
 
 .dropdown-item {
   display: none;
+  // position: absolute;
+  // top: 0;
+  // left: 100%;
+  // opacity: 0;
+  @include breaking-point.breaking-point(lg) {
+    top: 100%;
+    left: 0;
+  }
   a {
     display: block;
     &:hover {
@@ -86,6 +100,7 @@ nav {
 .burger {
   display: block;
   font-size: 1.5rem;
+  @include background-image.content-background-image();
   box-shadow: 0 0 5px 1px gray;
   padding: 15px;
   @include breaking-point.breaking-point(lg) {
@@ -101,9 +116,10 @@ nav {
 .search {
   display: flex;
   align-items: center;
+  // @include background-image.content-background-image();
   flex: 0 1 100%;
   position: relative;
-  box-shadow: 0 0 5px 1px gray;
+  box-shadow: 0 0 3px 1px gray;
   padding: 10px;
   input {
     background-color: #f4f4f4;

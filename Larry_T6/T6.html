@@ -16,8 +16,7 @@
 
 <body>
   <header>
-    <!-- <div class="container"> -->
-    <div class="logo">
+    <div class="logo-wrap">
       <h1 alt="BUSINESS PLANET">
         <img src="images/logo.png">
       </h1>
@@ -34,79 +33,76 @@
           class="rss"></a>
         <div>Call Us Now: +1 (777) 784-25-43</div>
       </div>
-      <!-- </div> -->
   </header>
-
+  <nav>
+    <div class="navbar">
+      <label for="burger"
+        class="burger">☰</label>
+      <input type="checkbox"
+        id="burger">
+      <ul>
+        <li><a href="##">
+            HOME
+          </a></li>
+        <li><a href="##">
+            ABOUT
+          </a></li>
+        <li class="dropdown">
+          <a href="##">
+            FEATURES
+            <span>&or;</span>
+          </a>
+          <div class="dropdown-item">
+            <a href="##">item</a>
+            <a href="##">item</a>
+            <a href="##">item</a>
+            <a href="##">item</a>
+            <a href="##">item</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="##">
+            PORTFOLIO
+            <span>&or;</span>
+          </a>
+          <div class="dropdown-item">
+            <a href="##">item</a>
+            <a href="##">item</a>
+            <a href="##">item</a>
+            <a href="##">item</a>
+            <a href="##">item</a>
+        </li>
+        <li class="dropdown">
+          <a href="##">
+            BLOG
+            <span>&or;</span>
+          </a>
+          <div class="dropdown-item">
+            <a href="##">item</a>
+            <a href="##">item</a>
+            <a href="##">item</a>
+            <a href="##">item</a>
+            <a href="##">item</a>
+        </li>
+        <li><a href="##">
+            CONTACTS
+          </a></li>
+      </ul>
+    </div>
+    <form class="search">
+      <input type="text"
+        name="search"
+        id="search-bar"
+        placeholder="Search the site">
+      <label for="search-bar"
+        class="search-icon">
+        <img src="./images/search.png"
+          alt="search">
+      </label>
+    </form>
+  </nav>
   <main>
-    <nav>
-      <div class="navbar">
-        <label for="burger"
-          class="burger">☰</label>
-        <input type="checkbox"
-          id="burger">
-        <ul>
-          <li><a href="##">
-              HOME
-            </a></li>
-          <li><a href="##">
-              ABOUT
-            </a></li>
-          <li class="dropdown">
-            <a href="##">
-              FEATURES
-              <span>&or;</span>
-            </a>
-            <div class="dropdown-item">
-              <a href="##">item</a>
-              <a href="##">item</a>
-              <a href="##">item</a>
-              <a href="##">item</a>
-              <a href="##">item</a>
-            </div>
 
-          </li>
-          <li class="dropdown">
-            <a href="##">
-              PORTFOLIO
-              <span>&or;</span>
-            </a>
-            <div class="dropdown-item">
-              <a href="##">item</a>
-              <a href="##">item</a>
-              <a href="##">item</a>
-              <a href="##">item</a>
-              <a href="##">item</a>
-          </li>
-          <li class="dropdown">
-            <a href="##">
-              BLOG
-              <span>&or;</span>
-            </a>
-            <div class="dropdown-item">
-              <a href="##">item</a>
-              <a href="##">item</a>
-              <a href="##">item</a>
-              <a href="##">item</a>
-              <a href="##">item</a>
-          </li>
-          <li><a href="##">
-              CONTACTS
-            </a></li>
-        </ul>
-      </div>
-      <form class="search">
-        <input type="text"
-          name="search"
-          id="search-bar"
-          placeholder="Search the site">
-
-        <label for="search-bar"
-          class="search-icon">
-          <img src="./images/search.png"
-            alt="search">
-        </label>
-      </form>
-    </nav>
     <section class="
         banner">
       <div class="container">
@@ -130,12 +126,9 @@
                 <img src="./images/banner3.jpg"
                   alt="banner3">
               </a>
-
             </div>
           </div>
-
           <div class="swiper-pagination"></div>
-
           <!-- Add Arrows -->
           <div class="next">
             <!-- <i class="fas fa-chevron-right"></i> -->
@@ -144,11 +137,8 @@
             <!-- <i class="fas fa-chevron-left"></i> -->
           </div>
         </div>
-
-
         <!-- Swiper JS -->
         <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-
         <!-- Initialize Swiper -->
         <script>
           var swiper = new Swiper('.carousel', {
@@ -170,9 +160,7 @@
         </script>
       </div>
     </section>
-
     <section class="card-wrap">
-      <!-- <div class="container"> -->
       <div class="card">
         <div class="card-col">
           <div class="card-body">
@@ -215,14 +203,10 @@
               class="more">more</a>
           </div>
         </div>
-
       </div>
-      <!-- </div> -->
     </section>
-
     <section class="
         introduce-wrap">
-      <!-- <div class="container"> -->
       <div class="introduce">
         <div class="introduce-col">
           <div class="welcome">
@@ -244,7 +228,6 @@
               </div>
               <p class="choose-message">Etiam rutrum venenatis dui, non</p>
             </div>
-
             <div class="choose-items">
               <div class="arrow">
                 <i class="fas fa-chevron-right"></i>
@@ -253,7 +236,6 @@
                 Aliquam ac diam in lorem vulputate auctor.
               </p>
             </div>
-
             <div class="choose-items">
               <div class="arrow">
                 <i class="fas fa-chevron-right"></i>
@@ -262,7 +244,6 @@
                 Vestibulum vitae urna quis eros convallis
               </p>
             </div>
-
             <div class="choose-items">
               <div class="arrow">
                 <i class="fas fa-chevron-right"></i>
@@ -271,7 +252,6 @@
                 Sed magna, congue
               </p>
             </div>
-
           </div>
         </div>
         <div class="introduce-col">
@@ -284,7 +264,6 @@
                 <div class="date">12.12.12</div>
                 <span>Aliquam ac diam in lorem vulputate auctor. Aliquam rhoncus nunc et justo imperdiet blandit...</span>
                 <a href="##">More</a>
-
               </div>
             </div>
             <div class="news-media">
@@ -295,17 +274,11 @@
                 <span>Sed auctor laoreet augue, is pulvinar lacus mattis non. In hac habitassw platea dictumst. Proin et lorem...</span>
                 <a href="##">More</a>
               </div>
-
             </div>
-
           </div>
-
         </div>
-        <!-- </div> -->
     </section>
-
     <section class="product">
-      <!-- <div class="container"> -->
       <div class="swiper-container features-works">
         <h2>FEATURED WORKS</h2>
         <div class="swiper-wrapper">
@@ -359,7 +332,7 @@
           </div>
         </div>
         <div class="swiper-pagination"></div>
-        <div class="arrow-btn">
+        <div class="btn">
           <div class="next">
             <i class="fas fa-chevron-left"></i>
           </div>
@@ -368,7 +341,6 @@
           </div>
         </div>
       </div>
-
       <script>
         var swiper = new Swiper('.features-works', {
           slidesPerView: 1,
@@ -403,12 +375,8 @@
           },
         });
       </script>
-
-      <!-- </div> -->
-
     </section>
   </main>
-
   <footer>
     <div class="container">
       <div class="comment">
@@ -442,10 +410,8 @@
             <input type="email"
               name="email"
               placeholder="Email">
-
             <textarea name="message"
               placeholder="Message"></textarea>
-
             <button class="clear"
               type="reset">
               CLEAR FORM
@@ -453,7 +419,6 @@
             <button type="button">
               SEND!
             </button>
-
           </form>
         </div>
         <div class="comment-col">
@@ -508,15 +473,13 @@
                 <img src="./images/f12.jpg"
                   alt="f12">
               </a>
-
             </div>
           </div>
         </div>
       </div>
     </div>
-
     <div class="bottom-information">
-      <div class="bottom-nav">
+      <div class="footer-nav">
         <a href="##">HOME<span>|</span></a>
         <a href="##">ABOUT<span>|</span></a>
         <a href="##">FEATURES<span>|</span></a>
@@ -531,7 +494,6 @@
       </div>
     </div>
   </footer>
-
 </body>
 
 </html>

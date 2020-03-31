@@ -1,6 +1,7 @@
 @use "../utility/breaking-point";
 @use "../utility/grid";
 @use '../theme/font';
+// @use '../theme/background-image';
 
 .banner {
   .container {
@@ -42,6 +43,7 @@
       width: 40px;
       height: 119px;
       margin: auto;
+      // outline: none;
       i {
         display: none;
       }
@@ -84,6 +86,7 @@
 }
 
 .product {
+  // @include background-image.content-background-image();
   position: relative;
   padding: 0 35px;
   h2 {
@@ -104,7 +107,7 @@
     }
   }
 }
-.arrow-btn {
+.btn {
   color: #cdcdce;
   display: none;
   position: absolute;

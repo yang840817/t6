@@ -1,8 +1,10 @@
 @use "../utility/breaking-point";
 @use "../utility/grid";
 @use '../theme/font';
+@use '../theme/background-image';
 
 .introduce-wrap {
+  @include background-image.content-background-image();
   margin-bottom: 3rem;
   padding: 0 35px;
 }
