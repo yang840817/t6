@@ -1,0 +1,19 @@
+@use "../tools/mixins";
+@use "../settings/settings";
+
+@mixin make-container-max-widths() {
+  @each $breakpoint, $container-max-width in settings.$container-max-widths {
+    @include mixins.media-breakpoint-up($breakpoint) {
+      max-width: $container-max-width;
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  // 不同裝置斷點的最大寬度
+  @include make-container-max-widths();
+}
