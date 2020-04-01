@@ -1,0 +1,78 @@
+@use "../settings/colors" as color;
+
+.header_navbar {
+  display: flex;
+  justify-content: space-between;
+
+  .navbar {
+    width: 830px;
+    padding: 0;
+    background-color: color.$color-background;
+  }
+
+  .navbar-nav ul {
+    width: 140px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #fff;
+  }
+  .navbar-nav li {
+    position: relative;
+
+    li {
+      border-top: 1px solid color.$color-border;
+    }
+
+    &:hover > .dropdown_menu,
+    &.active > .dropdown_menu {
+      display: block;
+    }
+  }
+  .navbar-nav > li {
+    border-right: 1px solid color.$color-border;
+  }
+
+  .navbar-nav .active > .nav-link {
+    background-color: color.$color-link-hover-background;
+    color: color.$color-link-hover;
+  }
+
+  .nav-link {
+    padding: 14px 24px !important;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: color.$color-link;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+}
+
+.search {
+  width: 300px;
+  padding: 8px 12px 8px 18px;
+  background-color: color.$color-background;
+}
+
+.search_form {
+  position: relative;
+
+  input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid color.$color-border;
+    background-color: color.$color-input-background;
+    line-height: 14px;
+  }
+
+  button {
+    height: 100%;
+    border: none;
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+  }
+}
