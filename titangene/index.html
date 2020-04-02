@@ -127,7 +127,17 @@
         </div>
       </nav>
       <section class="search">
-        <form class="search_form">
+        <button class="search_toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#searchBar"
+          aria-controls="searchBar"
+          aria-expanded="false"
+          aria-label="Toggle search bar">
+          <img src="./src/images/search.png"
+              alt="search toggler">
+        </button>
+        <form class="collapse search_form" id="searchBar">
           <input type="text"
             name="search"
             placeholder="Search the Site...">
