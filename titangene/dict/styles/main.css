@@ -504,6 +504,11 @@ body::before {
   color: #fff;
 }
 
+.header_navbar .nav-item:hover > .nav-link {
+  background-color: #93d200;
+  color: #fff;
+}
+
 .header_navbar .nav-link {
   padding: 14px 24px !important;
   font-size: 14px;

@@ -15,6 +15,11 @@
   }
 
   .nav-item.active > .nav-link {
+    background-color: color.$color-link-active-background;
+    color: color.$color-link-hover;
+  }
+
+  .nav-item:hover > .nav-link {
     background-color: color.$color-link-hover-background;
     color: color.$color-link-hover;
   }

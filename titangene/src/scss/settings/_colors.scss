@@ -2,6 +2,7 @@
 $white: #fff;
 $black: #000;
 $green: #81b800;
+$light-green: #93d200;
 $light-gray-100: #f3f3f3;
 $light-gray-200: #e7e7e7;
 
@@ -17,4 +18,5 @@ $color-input-background: $light-gray-100;
 // link color
 $color-link: $black;
 $color-link-hover: $white;
-$color-link-hover-background: $green;
+$color-link-hover-background: $light-green;
+$color-link-active-background: $green;
