@@ -511,7 +511,7 @@ body::before {
 
 .header_navbar .nav-link {
   padding: 14px 24px !important;
-  font-size: 14px;
+  font-size: 13px;
   text-transform: uppercase;
   color: #000;
 }
