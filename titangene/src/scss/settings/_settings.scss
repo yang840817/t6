@@ -1,0 +1,35 @@
+// *----------------------------------*\
+// Settings > Config
+// *----------------------------------*/
+
+// Global config settings
+// Inspired by: https://github.com/ahmadajmi/itcss/blob/master/settings/_config.scss
+
+$config: (
+  debug: true
+);
+
+// Example:
+// @if (config(debug) == true) { ... }
+
+@function config($key) {
+  @return map-get($config, $key);
+}
+
+
+
+// *----------------------------------*\
+// Settings > Breakpoints
+// *----------------------------------*/
+
+$breakpoints: (
+  mobile:  576px,
+  tablet:  768px,
+  pc: 1200px
+);
+  
+$container-max-widths: (
+  mobile: 540px,
+  tablet: 720px,
+  pc: 1140px
+);

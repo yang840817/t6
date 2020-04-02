@@ -1,0 +1,17 @@
+{
+  "name": "titangene",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-sass-watch": "sass --watch src/scss:dict/styles",
+    "build-sass-minify": "sass -s compressed src/scss:dict/styles"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.4.1",
+    "sass": "^1.26.3"
+  }
+}
