@@ -24,8 +24,8 @@
     color: color.$color-link-hover;
   }
 
-  .nav-link {
-    padding: 14px 24px !important;
+  .navbar-nav .nav-link {
+    padding: 14px 24px;
     font-size: 13px;
     text-transform: uppercase;
     color: color.$color-link;
