@@ -61,7 +61,7 @@ img {
   padding: 0.5rem 1rem;
 }
 
-.navbar > .container-md, .navbar .container,
+.navbar > .container-xl, .navbar .container,
 .navbar .container-fluid {
   display: flex;
   flex-wrap: wrap;
@@ -136,43 +136,43 @@ img {
   background-size: 100% 100%;
 }
 
-@media (max-width: 767.98px) {
-  .navbar-expand-md > .container-md, .navbar-expand-md > .container,
-.navbar-expand-md > .container-fluid {
+@media (max-width: 1199.98px) {
+  .navbar-expand-xl > .container-xl, .navbar-expand-xl > .container,
+.navbar-expand-xl > .container-fluid {
     padding-right: 0;
     padding-left: 0;
   }
 }
-@media (min-width: 768px) {
-  .navbar-expand-md {
+@media (min-width: 1200px) {
+  .navbar-expand-xl {
     flex-flow: row nowrap;
     justify-content: flex-start;
   }
 
-  .navbar-expand-md .navbar-nav {
+  .navbar-expand-xl .navbar-nav {
     flex-direction: row;
   }
 
-  .navbar-expand-md .navbar-nav .dropdown-menu {
+  .navbar-expand-xl .navbar-nav .dropdown-menu {
     position: absolute;
   }
 
-  .navbar-expand-md .navbar-nav .nav-link {
+  .navbar-expand-xl .navbar-nav .nav-link {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
 
-  .navbar-expand-md > .container-md, .navbar-expand-md > .container,
-.navbar-expand-md > .container-fluid {
+  .navbar-expand-xl > .container-xl, .navbar-expand-xl > .container,
+.navbar-expand-xl > .container-fluid {
     flex-wrap: nowrap;
   }
 
-  .navbar-expand-md .navbar-collapse {
+  .navbar-expand-xl .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
   }
 
-  .navbar-expand-md .navbar-toggler {
+  .navbar-expand-xl .navbar-toggler {
     display: none;
   }
 }
@@ -181,7 +181,7 @@ img {
   justify-content: flex-start;
 }
 
-.navbar-expand > .container-md, .navbar-expand > .container,
+.navbar-expand > .container-xl, .navbar-expand > .container,
 .navbar-expand > .container-fluid {
   padding-right: 0;
   padding-left: 0;
@@ -200,7 +200,7 @@ img {
   padding-left: 0.5rem;
 }
 
-.navbar-expand > .container-md, .navbar-expand > .container,
+.navbar-expand > .container-xl, .navbar-expand > .container,
 .navbar-expand > .container-fluid {
   flex-wrap: nowrap;
 }
