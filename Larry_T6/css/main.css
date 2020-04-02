@@ -56,7 +56,7 @@ footer h2, .introduce-col h2, .product h2 {
   font-size: 1rem;
 }
 
-.introduce-col .welcome span, .card-body p, .navbar ul li a {
+.introduce-col .welcome span, .card-body p, .navbar a {
   color: #000000;
 }
 
@@ -94,22 +94,16 @@ nav {
     position: static;
   }
 }
-.navbar ul li {
+.navbar li {
   display: flex;
   align-items: center;
   position: relative;
   border-right: 0.5px solid darkgray;
 }
-.navbar ul li a {
-  display: flex;
-  font-size: 0.9rem;
-  padding: 18px 17px;
-  cursor: pointer;
-}
-.navbar ul li:hover {
+.navbar li:hover {
   background-color: #8db537;
 }
-.navbar ul li:hover > .dropdown-item {
+.navbar li:hover > .dropdown-item {
   display: block;
   position: absolute;
   top: 0;
@@ -121,11 +115,18 @@ nav {
   z-index: 99;
 }
 @media (min-width: 992px) {
-  .navbar ul li:hover > .dropdown-item {
+  .navbar li:hover > .dropdown-item {
     top: 57px;
     left: 0;
     width: 100%;
   }
+}
+.navbar a {
+  display: flex;
+  line-height: 20px;
+  font-size: 0.9rem;
+  padding: 18px 17px;
+  cursor: pointer;
 }
 
 .dropdown span {
@@ -227,7 +228,6 @@ header {
   padding: 5px;
 }
 .logo-wrap h1 {
-  text-align: center;
   margin-bottom: 10px;
 }
 .logo-wrap img {
@@ -327,6 +327,7 @@ header {
     width: 40px;
     height: 119px;
     margin: auto;
+    outline: none;
   }
   .banner .next i {
     display: none;
@@ -346,6 +347,7 @@ header {
     left: 0;
     z-index: 999;
     margin: auto;
+    outline: none;
   }
   .banner .prev i {
     display: none;
@@ -469,7 +471,7 @@ header {
 }
 @media (min-width: 576px) {
   .card-body h3 {
-    padding-bottom: 50px;
+    padding-bottom: 25px;
   }
 }
 .card-body p {
@@ -659,13 +661,13 @@ header {
   align-items: center;
   border-bottom: 2px solid #eaeaea;
   margin-top: 25px;
+  padding-bottom: 10px;
 }
 .choose-items .arrow {
   border-radius: 50%;
   padding: 14px 20px;
   background-color: #dadada;
   margin-right: 10px;
-  margin-bottom: 10px;
   color: #ffffff;
 }
 
@@ -673,7 +675,6 @@ header {
   align-self: center;
   font-weight: bold;
   color: #828282;
-  margin-bottom: 10px;
 }
 
 main {
@@ -817,6 +818,9 @@ footer h2 {
   margin-bottom: 20px;
   cursor: pointer;
   outline: none;
+}
+.contact-us button:hover {
+  color: red;
 }
 @media (min-width: 992px) {
   .contact-us button {

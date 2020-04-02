@@ -10,7 +10,7 @@ footer {
     @include background-image.content-background-image;
   }
   h2 {
-    @extend %font-h2;
+    @extend %font-title;
     font-size: 1.3rem;
     margin-bottom: 30px;
   }
@@ -129,6 +129,9 @@ footer {
     margin-bottom: 20px;
     cursor: pointer;
     outline: none;
+    &:hover {
+      color: red;
+    }
     @include breaking-point.breaking-point(lg) {
       margin-bottom: 0;
     }

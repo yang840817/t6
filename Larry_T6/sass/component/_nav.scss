@@ -31,43 +31,44 @@ nav {
       display: flex;
       position: static;
     }
+  }
 
-    li {
-      display: flex;
-      align-items: center;
-      position: relative;
-      border-right: 0.5px solid darkgray;
-      a {
-        display: flex;
-        @extend %font-text;
-        font-size: 0.9rem;
-        padding: 18px 17px;
-        cursor: pointer;
-      }
+  li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-right: 0.5px solid darkgray;
 
-      &:hover {
-        background-color: #8db537;
-      }
+    &:hover {
+      background-color: #8db537;
+    }
 
-      &:hover > .dropdown-item {
-        display: block;
-        // transition: all 1s;
-        // opacity: 1;
-        position: absolute;
-        top: 0;
-        left: 100%;
-        width: 70%;
-        text-align: center;
-        box-shadow: 0 0 5px 1px gray;
-        @include background-image.content-background-image();
-        z-index: 99;
-        @include breaking-point.breaking-point(lg) {
-          top: 57px;
-          left: 0;
-          width: 100%;
-        }
+    &:hover > .dropdown-item {
+      display: block;
+      // transition: all 1s;
+      // opacity: 1;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 70%;
+      text-align: center;
+      box-shadow: 0 0 5px 1px gray;
+      @include background-image.content-background-image();
+      z-index: 99;
+      @include breaking-point.breaking-point(lg) {
+        top: 57px;
+        left: 0;
+        width: 100%;
       }
     }
+  }
+  a {
+    display: flex;
+    line-height: 20px;
+    @extend %font-text;
+    font-size: 0.9rem;
+    padding: 18px 17px;
+    cursor: pointer;
   }
 }
 

@@ -43,7 +43,7 @@
       width: 40px;
       height: 119px;
       margin: auto;
-      // outline: none;
+      outline: none;
       i {
         display: none;
       }
@@ -75,6 +75,7 @@
       left: 0;
       z-index: 999;
       margin: auto;
+      outline: none;
       i {
         display: none;
       }
@@ -90,7 +91,7 @@
   position: relative;
   padding: 0 35px;
   h2 {
-    @extend %font-h2;
+    @extend %font-title;
     @include breaking-point.breaking-point(lg) {
       margin-bottom: 35px;
     }

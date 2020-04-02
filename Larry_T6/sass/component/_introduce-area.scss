@@ -27,7 +27,7 @@
     @include grid.col(4);
   }
   h2 {
-    @extend %font-h2;
+    @extend %font-title;
     padding-top: 15px;
     text-align: center;
 

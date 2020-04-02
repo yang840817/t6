@@ -47,11 +47,11 @@ $card-background-color: #e8e8e8;
     background-color: $hover-card-background-color;
   }
   h3 {
-    @extend %font-h3;
-    @include breaking-point.breaking-point(sm) {
-      padding-bottom: 50px;
-    }
     padding: 30px 0;
+    @extend %font-subtitle;
+    @include breaking-point.breaking-point(sm) {
+      padding-bottom: 25px;
+    }
   }
   p {
     height: 90px;
