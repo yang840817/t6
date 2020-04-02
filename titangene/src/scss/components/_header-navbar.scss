@@ -10,31 +10,11 @@
     background-color: color.$color-background;
   }
 
-  .navbar-nav ul {
-    width: 140px;
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    background-color: #fff;
-  }
-  .navbar-nav li {
-    position: relative;
-
-    li {
-      border-top: 1px solid color.$color-border;
-    }
-
-    &:hover > .dropdown_menu,
-    &.active > .dropdown_menu {
-      display: block;
-    }
-  }
-  .navbar-nav > li {
+  .navbar-nav > .nav-item {
     border-right: 1px solid color.$color-border;
   }
 
-  .navbar-nav .active > .nav-link {
+  .nav-item.active > .nav-link {
     background-color: color.$color-link-hover-background;
     color: color.$color-link-hover;
   }
@@ -48,6 +28,28 @@
 
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+}
+
+.dropdown {
+  position: relative;
+
+  .nav-item {
+    border-top: 1px solid color.$color-border;
+  }
+
+  &:hover > &_menu,
+  &.active > &_menu {
+    display: block;
+  }
+
+  &_menu {
+    min-width: 140px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #fff;
   }
 }
 
