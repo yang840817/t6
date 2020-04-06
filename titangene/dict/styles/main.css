@@ -691,12 +691,37 @@ body::before {
 
 .icon {
   display: inline-block;
-  width: 26px;
-  height: 26px;
+  width: 27px;
+  height: 27px;
+  background: url(../../src/images/social.png) no-repeat;
+}
+
+.icon:hover {
+  background-position-y: -28px;
 }
 
 .icon + .icon {
   margin-left: 6px;
+}
+
+.icon_facebook {
+  background-position: 0 0;
+}
+
+.icon_twitter {
+  background-position: -38px 0;
+}
+
+.icon_flickr {
+  background-position: -75px 0;
+}
+
+.icon_dribbble {
+  background-position: -112px 0;
+}
+
+.icon_rss {
+  background-position: right 0;
 }
 
 .telephone p {
