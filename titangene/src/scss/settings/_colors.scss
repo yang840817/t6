@@ -5,6 +5,7 @@ $green: #81b800;
 $light-green: #93d200;
 $light-gray-100: #f3f3f3;
 $light-gray-200: #e7e7e7;
+$light-gray-300: #cecece;
 
 // body color
 $color-body-background: $white;
@@ -25,3 +26,7 @@ $color-link: $black;
 $color-link-hover: $white;
 $color-link-hover-background: $light-green;
 $color-link-active-background: $green;
+
+// card color
+$color-card-background: $white;
+$color-card-action-btn-background: $light-gray-300;

@@ -1,0 +1,32 @@
+@use "../settings/colors" as color;
+
+.card {
+  padding: 30px;
+  background-color: $color-card-background;
+
+  &_title {
+    margin: 0 0 20px;
+  }
+
+  &_img {
+    margin: 20px 0;
+  }
+
+  &_body {
+    margin-top: 20px;
+  }
+
+  &_text {
+    margin: 20px 0;
+
+    :last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  &_action-btn {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: $color-card-action-btn-background;
+  }
+}
