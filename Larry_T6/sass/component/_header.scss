@@ -42,6 +42,9 @@ header {
 .social {
   font-size: 0;
   text-align: center;
+  @include breaking-point.breaking-point(lg) {
+    text-align: right;
+  }
   a {
     display: inline-block;
     width: 27px;
