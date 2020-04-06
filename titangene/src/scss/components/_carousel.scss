@@ -1,0 +1,36 @@
+@use "../tools/mixins";
+
+.carousel {
+  img {
+    width: 100%;
+  }
+}
+
+.main_carousel {
+  %carousel_control {
+    width: 36px;
+    height: 60px;
+    margin-top: 0;
+    transform: translateY(-50%);
+    background-color: #171717;
+    color: #fff;
+    
+    @include mixins.media-breakpoint-up(tablet) {
+      height: 110px;
+    }
+
+    &::after {
+      font-size: 15px;
+    }
+  }
+
+  .carousel_control-prev {
+    @extend %carousel_control;
+    left: 0;
+  }
+
+  .carousel_control-next {
+    @extend %carousel_control;
+    right: 0;
+  }
+}
