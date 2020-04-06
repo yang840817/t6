@@ -667,23 +667,44 @@ body::before {
 }
 .header_brand {
   display: flex;
-  justify-content: space-between;
-  margin-top: 6px;
-  margin-bottom: 32px;
-  padding: 32px 40px;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px 16px;
   background-color: #fff;
 }
 
+@media (min-width: 768px) {
+  .header_brand {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 6px;
+    margin-bottom: 32px;
+    padding: 32px 40px;
+  }
+}
 .logo h1 {
   margin: 0;
+}
+
+.logo img {
+  width: 100%;
 }
 
 .contact {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
 }
 
+@media (min-width: 768px) {
+  .contact {
+    align-items: normal;
+    margin-top: 0;
+  }
+}
 .social {
   text-align: right;
   font-size: 0;
@@ -724,6 +745,15 @@ body::before {
   background-position: right 0;
 }
 
+.telephone {
+  margin-top: 8px;
+}
+
+@media (min-width: 768px) {
+  .telephone {
+    margin-top: 0;
+  }
+}
 .telephone p {
   margin: 0;
   font-size: 14px;

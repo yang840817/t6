@@ -1,22 +1,43 @@
 @use "../settings/colors" as color;
+@use "../tools/mixins";
 
 .header_brand {
   display: flex;
-  justify-content: space-between;
-  margin-top: 6px;
-  margin-bottom: 32px;
-  padding: 32px 40px;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px 16px;
   background-color: color.$color-background;
+  
+  @include mixins.media-breakpoint-up(tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 6px;
+    margin-bottom: 32px;
+    padding: 32px 40px;
+  }
 }
 
-.logo h1 {
-  margin: 0;
+.logo {
+  h1 {
+    margin: 0;
+  }
+  img {
+    width: 100%;
+  }
 }
 
 .contact {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  
+  @include mixins.media-breakpoint-up(tablet) {
+    align-items: normal;
+    margin-top: 0;
+  }
 }
 
 .social {
@@ -60,6 +81,12 @@
 }
 
 .telephone {
+  margin-top: 8px;
+
+  @include mixins.media-breakpoint-up(tablet) {
+    margin-top: 0;
+  }
+
   p {
     margin: 0;
     font-size: 14px;
