@@ -4,9 +4,6 @@
 .header_navbar {
   position: relative;
   
-  @include mixins.media-breakpoint-up(tablet) {
-  }
-  
   @include mixins.media-breakpoint-up(pc) {
     display: flex;
     justify-content: space-between;
@@ -15,9 +12,7 @@
   .navbar {
     padding: 0;
     background-color: color.$color-background;
-    
-    @include mixins.media-breakpoint-up(tablet) {
-    }
+
     @include mixins.media-breakpoint-up(pc) {
       flex: 1 0 0;
     }
