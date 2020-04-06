@@ -7,8 +7,8 @@
   align-items: center;
   margin-bottom: 20px;
   padding: 20px 16px;
-  background-color: color.$color-background;
-  
+  background-color: color.$background-color;
+
   @include mixins.media-breakpoint-up(tablet) {
     flex-direction: row;
     justify-content: space-between;
@@ -62,7 +62,7 @@
   &_facebook {
     background-position: 0 0;
   }
-  
+
   &_twitter {
     background-position: -38px 0;
   }

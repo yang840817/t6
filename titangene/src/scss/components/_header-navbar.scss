@@ -11,7 +11,7 @@
 
   .navbar {
     padding: 0;
-    background-color: color.$color-background;
+    background-color: color.$background-color;
 
     @include mixins.media-breakpoint-up(pc) {
       flex: 1 0 0;
@@ -19,24 +19,24 @@
   }
 
   .navbar-nav > .nav-item {
-    border-right: 1px solid color.$color-border;
+    border-right: 1px solid color.$border-color;
   }
 
   .nav-item.active > .nav-link {
-    background-color: color.$color-link-active-background;
-    color: color.$color-link-hover;
+    background-color: color.$link-active-background-color;
+    color: color.$link-hover-color;
   }
 
   .nav-item:hover > .nav-link {
-    background-color: color.$color-link-hover-background;
-    color: color.$color-link-hover;
+    background-color: color.$link-hover-background-color;
+    color: color.$link-hover-color;
   }
 
   .navbar-nav .nav-link {
     padding: 14px 24px;
     font-size: 13px;
     text-transform: uppercase;
-    color: color.$color-link;
+    color: color.$link-color;
   }
 
   .navbar-toggler {
@@ -46,8 +46,8 @@
   }
 
   .dropdown.show .nav-link {
-    background-color: color.$color-link-hover-background;
-    color: color.$color-link-hover;
+    background-color: color.$link-hover-background-color;
+    color: color.$link-hover-color;
   }
 
   .dropdown-menu {
@@ -59,8 +59,8 @@
     font-size: 13px;
 
     &:hover {
-      background-color: color.$color-link-hover-background;
-      color: color.$color-link-hover;
+      background-color: color.$link-hover-background-color;
+      color: color.$link-hover-color;
     }
   }
 }
@@ -78,7 +78,7 @@
     padding: 8px 12px 8px 18px;
     position: absolute;
     right: 0;
-    background-color: color.$color-background;
+    background-color: color.$background-color;
   }
 
   @include mixins.media-breakpoint-up(pc) {
@@ -105,7 +105,7 @@
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: color.$color-background;
+  background-color: color.$background-color;
 
   @include mixins.media-breakpoint-up(tablet) {
     width: auto;
@@ -121,8 +121,8 @@
   input {
     width: 100%;
     padding: 8px 32px 8px 8px;
-    border: 1px solid color.$color-border;
-    background-color: color.$color-input-background;
+    border: 1px solid color.$border-color;
+    background-color: color.$input-background-color;
     line-height: 14px;
   }
 

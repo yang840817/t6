@@ -8,25 +8,28 @@ $light-gray-200: #e7e7e7;
 $light-gray-300: #cecece;
 
 // body color
-$color-body-background: $white;
-$color-body: $black;
-
+$body-background-color: $white;
+$body-color: $black;
 
 // border color
-$color-border: $light-gray-200;
-
+$border-color: $light-gray-200;
 
 // background color
-$color-background: $white;
-$color-input-background: $light-gray-100;
-
+$background-color: $white;
+$input-background-color: $light-gray-100;
 
 // link color
-$color-link: $black;
-$color-link-hover: $white;
-$color-link-hover-background: $light-green;
-$color-link-active-background: $green;
+$link-color: $black;
+$link-hover-color: $white;
+$link-hover-background-color: $light-green;
+$link-active-background-color: $green;
+
+
+
+// *----------------------------------*\
+// component color
+// *----------------------------------*/
 
 // card color
-$color-card-background: $white;
-$color-card-action-btn-background: $light-gray-300;
+$card-background-color: $white;
+$card-action-btn-background-color: $light-gray-300;
