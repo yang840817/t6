@@ -1,0 +1,9 @@
+@use "../settings/settings";
+
+@mixin media-breakpoint-up($name) {
+  $breakpoint: map-get(settings.$breakpoints, $name);
+
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}

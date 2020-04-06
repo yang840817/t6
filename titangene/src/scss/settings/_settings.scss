@@ -38,13 +38,16 @@ $line-height-base: 1.5;
 // *----------------------------------*/
 
 $breakpoints: (
-  mobile:  576px,
-  tablet:  768px,
-  pc: 1200px
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
 );
   
 $container-max-widths: (
-  mobile: 540px,
-  tablet: 720px,
-  pc: 1140px
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
 );

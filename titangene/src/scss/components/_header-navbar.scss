@@ -1,10 +1,10 @@
 @use "../settings/colors" as color;
-@use "../tools/mixins";
+@use "../tools/breakpoint";
 
 .header_navbar {
   position: relative;
-  
-  @include mixins.media-breakpoint-up(pc) {
+
+  @include breakpoint.media-breakpoint-up(xl) {
     display: flex;
     justify-content: space-between;
   }
@@ -13,7 +13,7 @@
     padding: 0;
     background-color: color.$background-color;
 
-    @include mixins.media-breakpoint-up(pc) {
+    @include breakpoint.media-breakpoint-up(xl) {
       flex: 1 0 0;
     }
   }
@@ -73,7 +73,7 @@
   top: 0;
   right: 0;
 
-  @include mixins.media-breakpoint-up(tablet) {
+  @include breakpoint.media-breakpoint-up(md) {
     width: 300px;
     padding: 8px 12px 8px 18px;
     position: absolute;
@@ -81,7 +81,7 @@
     background-color: color.$background-color;
   }
 
-  @include mixins.media-breakpoint-up(pc) {
+  @include breakpoint.media-breakpoint-up(xl) {
     position: static;
   }
 }
@@ -94,7 +94,7 @@
   border: none;
   background-color: transparent;
 
-  @include mixins.media-breakpoint-up(tablet) {
+  @include breakpoint.media-breakpoint-up(md) {
     display: none;
   }
 }
@@ -107,7 +107,7 @@
   right: 0;
   background-color: color.$background-color;
 
-  @include mixins.media-breakpoint-up(tablet) {
+  @include breakpoint.media-breakpoint-up(md) {
     width: auto;
     padding: 0;
     position: relative;
@@ -133,7 +133,7 @@
     right: 12px;
     background-color: transparent;
 
-    @include mixins.media-breakpoint-up(tablet) {
+    @include breakpoint.media-breakpoint-up(md) {
       right: 0;
     }
   }

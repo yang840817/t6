@@ -1,9 +1,10 @@
-@use "../tools/mixins";
+@use "../tools/breakpoint";
 @use "../settings/settings";
 
+// ref: https://github.com/twbs/bootstrap/blob/master/scss/mixins/_container.scss
 @mixin make-container-max-widths() {
   @each $breakpoint, $container-max-width in settings.$container-max-widths {
-    @include mixins.media-breakpoint-up($breakpoint) {
+    @include breakpoint.media-breakpoint-up($breakpoint) {
       max-width: $container-max-width;
     }
   }

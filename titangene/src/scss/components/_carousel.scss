@@ -1,4 +1,4 @@
-@use "../tools/mixins";
+@use "../tools/breakpoint";
 
 .carousel {
   img {
@@ -14,8 +14,8 @@
     transform: translateY(-50%);
     background-color: #171717;
     color: #fff;
-    
-    @include mixins.media-breakpoint-up(tablet) {
+
+    @include breakpoint.media-breakpoint-up(md) {
       height: 110px;
     }
 
