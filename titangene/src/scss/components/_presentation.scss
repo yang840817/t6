@@ -1,0 +1,33 @@
+@use "../settings/colors" as color;
+
+.presentation_list {
+  position: relative;
+  z-index: 1;
+  top: -22px;
+}
+
+.presentation {
+  padding: 30px 20px 28px 20px;
+  text-align: center;
+  background-color: color.$presentation-background-color;
+
+  &:hover {
+    background-color: color.$presentation-hover-background-color;
+    color: color.$presentation-hover-color;
+  }
+
+  .card_title {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  .card_body {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+
+  .card_text {
+    height: 76px;
+    margin-bottom: 22px;
+  }
+}

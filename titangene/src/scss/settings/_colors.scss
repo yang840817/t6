@@ -1,6 +1,7 @@
 // colors
 $white: #fff;
 $black: #000;
+$gray: #636363;
 $green: #81b800;
 $light-green: #93d200;
 $light-gray-100: #f3f3f3;
@@ -33,3 +34,8 @@ $link-active-background-color: $green;
 // card color
 $card-background-color: $white;
 $card-action-btn-background-color: $light-gray-300;
+
+// presentation color
+$presentation-background-color: $light-gray-200;
+$presentation-hover-background-color: $gray;
+$presentation-hover-color: $white;
