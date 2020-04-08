@@ -1346,107 +1346,6 @@ main {
   padding-top: 0;
 }
 
-.header_brand {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 24px 16px;
-  margin-bottom: 20px;
-  background-color: #fff;
-}
-
-@media (min-width: 768px) {
-  .header_brand {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 36px 40px 34px;
-    margin-top: 6px;
-    margin-bottom: 32px;
-  }
-}
-.logo h1 {
-  margin: 0;
-}
-
-.logo img {
-  max-width: 330px;
-  width: 100%;
-}
-
-.contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 24px;
-}
-
-@media (min-width: 768px) {
-  .contact {
-    align-items: normal;
-    margin-top: 0;
-  }
-}
-.social {
-  text-align: right;
-  font-size: 0;
-}
-
-@media (min-width: 768px) {
-  .social {
-    margin: 4px 0 15px;
-  }
-}
-.icon {
-  display: inline-block;
-  width: 27px;
-  height: 27px;
-  background: url(../../src/images/social.png) no-repeat;
-}
-
-.icon:hover {
-  background-position-y: -28px;
-}
-
-.icon + .icon {
-  margin-left: 6px;
-}
-
-.icon_facebook {
-  background-position: 0 0;
-}
-
-.icon_twitter {
-  background-position: -38px 0;
-}
-
-.icon_flickr {
-  background-position: -75px 0;
-}
-
-.icon_dribbble {
-  background-position: -112px 0;
-}
-
-.icon_rss {
-  background-position: right 0;
-}
-
-.telephone {
-  margin-top: 10px;
-}
-
-@media (min-width: 768px) {
-  .telephone {
-    margin-top: 0;
-  }
-}
-.telephone p {
-  margin: 0;
-  font-size: 14px;
-  line-height: 14px;
-}
-
 .header_navbar {
   position: relative;
 }
@@ -1683,6 +1582,111 @@ main {
 .presentation .card_text {
   height: 76px;
   margin-bottom: 22px;
+}
+
+.weclome .card_img img {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 16px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 36px 40px 34px;
+    margin-top: 6px;
+    margin-bottom: 32px;
+  }
+}
+.logo h1 {
+  margin: 0;
+}
+
+.logo img {
+  max-width: 330px;
+  width: 100%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    align-items: normal;
+    margin-top: 0;
+  }
+}
+.social {
+  text-align: right;
+  font-size: 0;
+}
+
+@media (min-width: 768px) {
+  .social {
+    margin: 4px 0 15px;
+  }
+}
+.icon {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background: url(../../src/images/social.png) no-repeat;
+}
+
+.icon:hover {
+  background-position-y: -28px;
+}
+
+.icon + .icon {
+  margin-left: 6px;
+}
+
+.icon_facebook {
+  background-position: 0 0;
+}
+
+.icon_twitter {
+  background-position: -38px 0;
+}
+
+.icon_flickr {
+  background-position: -75px 0;
+}
+
+.icon_dribbble {
+  background-position: -112px 0;
+}
+
+.icon_rss {
+  background-position: right 0;
+}
+
+.telephone {
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .telephone {
+    margin-top: 0;
+  }
+}
+.telephone p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
 }
 
 /*# sourceMappingURL=main.css.map */
