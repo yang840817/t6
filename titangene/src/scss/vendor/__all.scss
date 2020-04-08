@@ -1,2 +1,5 @@
-@use "./bootstrap";
-@use "./swiper";
+// bootstrap
+@use "./bootstrap/bootstrap";
+
+// carousel
+@use "./carousel/swiper";
