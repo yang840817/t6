@@ -1,10 +1,10 @@
-@use '../object/more-button';
+@use '../component/more-button';
 @use '../utility/grid';
 @use "../utility/breaking-point";
 @use '../theme/font';
 @use '../theme/background-image';
 
-.card-wrap {
+.card {
   // @include background-image.content-background-image();
   padding: 0 35px;
   @include breaking-point.breaking-point(lg) {
@@ -14,25 +14,34 @@
     margin-bottom: 50px;
   }
 }
-.card {
-  @extend %row;
+.row {
+  // @extend %row;
   flex-wrap: wrap;
-  @include grid.content-fluid(-15px);
-}
-.card-col {
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  @include grid.col(12);
-  @include breaking-point.breaking-point(md) {
-    @include grid.col(6);
-  }
-  @include breaking-point.breaking-point(lg) {
-    @include grid.col(3);
-  }
+  // @include grid.content-fluid(-15px);
 }
 
 .card-body {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.col {
+  &-12 {
+    @include grid.col(12);
+  }
+  &-md-6 {
+    @include breaking-point.breaking-point(md) {
+      @include grid.col(6);
+    }
+  }
+  &-lg-3 {
+    @include breaking-point.breaking-point(lg) {
+      @include grid.col(3);
+    }
+  }
+}
+
+.card-text {
   background-color: #e8e8e8;
   box-shadow: inset 0 0 2px 0.5px gray;
   border-radius: 2px;
@@ -42,6 +51,7 @@
   }
   &:hover {
     background-color: rgba(100, 100, 100, 0.9);
+    border: 1px solid;
   }
 
   &:hover > h3,

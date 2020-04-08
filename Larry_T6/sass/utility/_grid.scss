@@ -1,12 +1,27 @@
-%row {
+// %row {
+//   display: flex;
+//   margin: 0 -15px;
+// }
+
+.row {
   display: flex;
   margin: 0 -15px;
+  &-no-gutters {
+    @extend .row;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  &-no-gutters > col {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
-@mixin content-fluid($edge-gutter) {
-  margin-left: $edge-gutter;
-  margin-right: $edge-gutter;
-}
+// @mixin content-fluid($edge-gutter) {
+//   margin-left: $edge-gutter;
+//   margin-right: $edge-gutter;
+// }
 
 @mixin col($number) {
   padding-left: 15px;

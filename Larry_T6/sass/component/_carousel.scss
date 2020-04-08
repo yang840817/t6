@@ -4,15 +4,15 @@
 // @use '../theme/background-image';
 
 .banner {
-  .container {
-    @extend %above-contain;
-    padding-right: 0;
-    padding-left: 0;
-    img {
-      width: 100%;
-      vertical-align: middle;
-    }
+  // .container {
+  // @extend %above-contain;
+  // padding-right: 0;
+  // padding-left: 0;
+  img {
+    width: 100%;
+    vertical-align: middle;
   }
+  // }
 
   .swiper-pagination {
     @include breaking-point.breaking-point(sm) {

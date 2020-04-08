@@ -10,12 +10,12 @@
   <link rel="stylesheet"
     href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
   <link rel="stylesheet"
-    href="css/main.css">
+    href="css/index.css">
   <title>T6</title>
 </head>
 
 <body>
-  <header>
+  <header class="header container-fluid">
     <div class="logo-wrap">
       <h1 alt="BUSINESS PLANET">
         <img src="images/logo.png">
@@ -34,7 +34,7 @@
         <div>Call Us Now: +1 (777) 784-25-43</div>
       </div>
   </header>
-  <nav>
+  <nav class="nav container-fluid">
     <div class="navbar">
       <label for="burger"
         class="burger">☰</label>
@@ -57,7 +57,7 @@
             <a href="##">item</a>
             <a href="##">item</a>
             <a href="##">item</a>
-            <a href="##">item</a>ｂｂ
+            <a href="##">item</a>
           </div>
         </li>
         <li class="dropdown">
@@ -102,69 +102,68 @@
       </label>
     </form>
   </nav>
-  <main>
-
+  <main class="main container-fluid">
     <section class="
         banner">
-      <div class="container">
-        <!-- Swiper -->
-        <div class="swiper-container carousel">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <a href="##">
-                <img src="./images/banner1.jpg"
-                  alt="banner1">
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="##">
-                <img src="./images/banner2.jpg"
-                  alt="banner2">
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="##">
-                <img src="./images/banner3.jpg"
-                  alt="banner3">
-              </a>
-            </div>
+      <!-- <div class="container"> -->
+      <!-- Swiper -->
+      <div class="swiper-container carousel">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="##">
+              <img src="./images/banner1.jpg"
+                alt="banner1">
+            </a>
           </div>
-          <div class="swiper-pagination"></div>
-          <!-- Add Arrows -->
-          <div class="next">
-            <!-- <i class="fas fa-chevron-right"></i> -->
+          <div class="swiper-slide">
+            <a href="##">
+              <img src="./images/banner2.jpg"
+                alt="banner2">
+            </a>
           </div>
-          <div class="prev">
-            <!-- <i class="fas fa-chevron-left"></i> -->
+          <div class="swiper-slide">
+            <a href="##">
+              <img src="./images/banner3.jpg"
+                alt="banner3">
+            </a>
           </div>
         </div>
-        <!-- Swiper JS -->
-        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-        <!-- Initialize Swiper -->
-        <script>
-          var swiper = new Swiper('.carousel', {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-              delay: 3000,
-              disableOnInteraction: false,
-            },
-            pagination: {
-              el: '.swiper-pagination',
-              clickable: true,
-            },
-            navigation: {
-              nextEl: '.next',
-              prevEl: '.prev',
-            },
-          });
-        </script>
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="next">
+          <!-- <i class="fas fa-chevron-right"></i> -->
+        </div>
+        <div class="prev">
+          <!-- <i class="fas fa-chevron-left"></i> -->
+        </div>
       </div>
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper('.carousel', {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.next',
+            prevEl: '.prev',
+          },
+        });
+      </script>
+      <!-- </div> -->
     </section>
-    <section class="card-wrap">
-      <div class="card">
-        <div class="card-col">
-          <div class="card-body">
+    <section class="card">
+      <div class="row">
+        <div class="card-body col-12 col-md-6 col-lg-3">
+          <div class="card-text">
             <h3>GROWTH STRATEGIES</h3>
             <img src="./images/p1.png"
               alt="p1">
@@ -174,8 +173,8 @@
               class="more">more</a>
           </div>
         </div>
-        <div class="card-col">
-          <div class="card-body">
+        <div class="card-body col-12 col-md-6 col-lg-3">
+          <div class="card-text">
             <h3>PERFECT SUPPORT</h3>
             <img src="./images/p2.png"
               alt="p2">
@@ -184,8 +183,8 @@
               class="more">more</a>
           </div>
         </div>
-        <div class="card-col">
-          <div class="card-body">
+        <div class="card-body col-12 col-md-6 col-lg-3">
+          <div class="card-text">
             <h3>PARTNERS PROGRAMS</h3>
             <img src="./images/p3.png"
               alt="p3">
@@ -194,8 +193,8 @@
               class="more">more</a>
           </div>
         </div>
-        <div class="card-col">
-          <div class="card-body">
+        <div class="card-body col-12 col-md-6 col-lg-3">
+          <div class="card-text">
             <h3>PREMIUM SERVICES</h3>
             <img src="./images/p4.png"
               alt="p4">
@@ -207,9 +206,9 @@
       </div>
     </section>
     <section class="
-        introduce-wrap">
-      <div class="introduce">
-        <div class="introduce-col">
+        introduce">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="welcome">
             <h2>WELCOME</h2>
             <img src="./images/welcome.jpg"
@@ -220,20 +219,20 @@
             <a href="##">More</a>
           </div>
         </div>
-        <div class="introduce-col order">
+        <div class="col-12 col-lg-4 order-last order-lg-0">
           <div class="why-choose">
             <h2>WHY CHOOSE US?</h2>
             <div class="choose-items">
               <div class="arrow">
                 <i class="fas fa-chevron-right"></i>
               </div>
-              <p class="choose-message">Etiam rutrum venenatis dui, non</p>
+              <p class="choose-text">Etiam rutrum venenatis dui, non</p>
             </div>
             <div class="choose-items">
               <div class="arrow">
                 <i class="fas fa-chevron-right"></i>
               </div>
-              <p class="choose-message">
+              <p class="choose-text">
                 Aliquam ac diam in lorem vulputate auctor.
               </p>
             </div>
@@ -241,7 +240,7 @@
               <div class="arrow">
                 <i class="fas fa-chevron-right"></i>
               </div>
-              <p class="choose-message">
+              <p class="choose-text">
                 Vestibulum vitae urna quis eros convallis
               </p>
             </div>
@@ -249,13 +248,13 @@
               <div class="arrow">
                 <i class="fas fa-chevron-right"></i>
               </div>
-              <p class="choose-message">
+              <p class="choose-text">
                 Sed magna, congue
               </p>
             </div>
           </div>
         </div>
-        <div class="introduce-col">
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="news">
             <h2>NEWS & EVENTS</h2>
             <div class="news-media">
@@ -379,15 +378,15 @@
     </section>
   </main>
   <footer>
-    <div class="container">
-      <div class="comment">
-        <div class="comment-col">
+    <div class="comment container">
+      <div class="row">
+        <div class="comment-items col-12 col-lg-3">
           <div class="last-tweet">
             <h2>LATEST TWEETS</h2>
             <p>loading tweets...</p>
           </div>
         </div>
-        <div class="comment-col">
+        <div class="comment-items col-12 col-lg-3">
           <div class="testimonials">
             <h2>TESTIMONIALS</h2>
             <p class="testimonials-text">"Sed dapibus molesite interdum. Fusce nec est ante, sit amet lacinia lorem. Maecenas nec eros ut mauris pulvinar suscipit. Aliquam erat"</p>
@@ -401,7 +400,7 @@
             </div>
           </div>
         </div>
-        <div class="comment-col">
+        <div class="comment-items col-12 col-lg-3">
           <form action="T6.html"
             class="contact-us">
             <h2>GET IN TOUCH!</h2>
@@ -422,7 +421,7 @@
             </button>
           </form>
         </div>
-        <div class="comment-col">
+        <div class="comment-items col-12 col-lg-3">
           <div class="photo">
             <h2>FLICKR</h2>
             <div class="photo-item">
@@ -479,16 +478,17 @@
         </div>
       </div>
     </div>
-    <div class="bottom-information">
+    <div class="bottom-information container-fluid">
       <div class="footer-nav">
-        <a href="##">HOME<span>|</span></a>
+        <a href="##"
+          class="current-page">HOME<span>|</span></a>
         <a href="##">ABOUT<span>|</span></a>
         <a href="##">FEATURES<span>|</span></a>
         <a href="##">PORTFOLIO<span>|</span></a>
         <a href="##">BLOG<span>|</span></a>
         <a href="##">CONTACT </a>
       </div>
-      <div class="copyright">
+      <div class="copyright order-first">
         BUSINESS PLANET &copy 2020
         <span>|</span>
         <a href="##">Privacy Policy</a>

@@ -48,8 +48,8 @@
 //         }
 //     }
 // }
-
-%above-contain {
+.container {
+  // %above-contain {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -67,4 +67,10 @@
   @media (min-width: 1200px) {
     max-width: 1140px;
   }
+  &-fluid {
+    @extend .container;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  // }
 }
