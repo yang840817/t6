@@ -1350,8 +1350,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 24px 16px;
   margin-bottom: 20px;
-  padding: 20px 16px;
   background-color: #fff;
 }
 
@@ -1359,9 +1359,9 @@ main {
   .header_brand {
     flex-direction: row;
     justify-content: space-between;
+    padding: 36px 40px 34px;
     margin-top: 6px;
     margin-bottom: 32px;
-    padding: 32px 40px;
   }
 }
 .logo h1 {
@@ -1369,6 +1369,7 @@ main {
 }
 
 .logo img {
+  max-width: 330px;
   width: 100%;
 }
 
@@ -1391,6 +1392,11 @@ main {
   font-size: 0;
 }
 
+@media (min-width: 768px) {
+  .social {
+    margin: 4px 0 15px;
+  }
+}
 .icon {
   display: inline-block;
   width: 27px;
@@ -1427,7 +1433,7 @@ main {
 }
 
 .telephone {
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 @media (min-width: 768px) {
@@ -1438,6 +1444,7 @@ main {
 .telephone p {
   margin: 0;
   font-size: 14px;
+  line-height: 14px;
 }
 
 .header_navbar {

@@ -5,16 +5,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 24px 16px;
   margin-bottom: 20px;
-  padding: 20px 16px;
   background-color: color.$background-color;
 
   @include breakpoint.media-breakpoint-up(md) {
     flex-direction: row;
     justify-content: space-between;
+    padding: 36px 40px 34px;
     margin-top: 6px;
     margin-bottom: 32px;
-    padding: 32px 40px;
   }
 }
 
@@ -23,6 +23,7 @@
     margin: 0;
   }
   img {
+    max-width: 330px;
     width: 100%;
   }
 }
@@ -43,6 +44,10 @@
 .social {
   text-align: right;
   font-size: 0;
+
+  @include breakpoint.media-breakpoint-up(md) {
+    margin: 4px 0 15px;
+  }
 }
 
 .icon {
@@ -81,7 +86,7 @@
 }
 
 .telephone {
-  margin-top: 8px;
+  margin-top: 10px;
 
   @include breakpoint.media-breakpoint-up(md) {
     margin-top: 0;
@@ -90,5 +95,6 @@
   p {
     margin: 0;
     font-size: 14px;
+    line-height: 14px;
   }
 }
