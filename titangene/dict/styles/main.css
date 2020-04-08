@@ -1604,16 +1604,30 @@ header {
   position: relative;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .nav--primary {
     display: flex;
     justify-content: space-between;
+    position: static;
+  }
+}
+.nav--primary .navbar-collapse {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: #fff;
+}
+
+@media (min-width: 992px) {
+  .nav--primary .navbar-collapse {
+    position: static;
   }
 }
 .search {
   width: 100%;
-  height: 48px;
-  margin-left: 8px;
+  height: 100%;
   position: absolute;
   top: 0;
   right: 0;
@@ -1622,23 +1636,33 @@ header {
 @media (min-width: 768px) {
   .search {
     width: 300px;
-    padding: 8px 12px 8px 18px;
+    padding: 0 12px 0 18px;
     position: absolute;
     right: 0;
     background-color: #fff;
   }
 }
+@media (min-width: 992px) {
+  .search {
+    flex: 0 1 300px;
+    height: auto;
+    margin-left: 8px;
+    position: static;
+  }
+}
 @media (min-width: 1200px) {
   .search {
+    width: 300px;
     position: static;
   }
 }
 .search_toggler {
-  height: 48px;
+  height: 100%;
   padding: 8px 16px;
   border: none;
   position: absolute;
   right: 0;
+  z-index: 1;
   background-color: transparent;
 }
 
@@ -1649,10 +1673,11 @@ header {
 }
 .search_form {
   width: 100%;
-  padding: 8px 10px;
+  padding: 12px;
   position: absolute;
   top: 100%;
   right: 0;
+  z-index: 2;
   background-color: #fff;
 }
 
@@ -1661,7 +1686,8 @@ header {
     width: auto;
     padding: 0;
     position: relative;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .search_form.collapse:not(.show) {
