@@ -1,4 +1,4 @@
-@use "../tools/breakpoint";
+@use "../../tools/breakpoint";
 
 .carousel {
   img {
@@ -6,7 +6,11 @@
   }
 }
 
-.main_carousel {
+// *------------------------------------------------*\
+// `.banner` use Bootstrap navbar component
+// *------------------------------------------------*/
+
+.banner {
   %carousel_control {
     width: 36px;
     height: 60px;
