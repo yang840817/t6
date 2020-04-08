@@ -1448,6 +1448,40 @@ main {
   padding-top: 0;
 }
 
+.search {
+  background-color: #fff;
+}
+
+.search_toggler {
+  padding: 8px 20px;
+  border: none;
+  background-color: transparent;
+}
+
+.search_form {
+  display: flex;
+  padding: 12px;
+  background-color: #fff;
+}
+
+.search_form input {
+  width: 100%;
+  padding: 12px 8px;
+  border: 1px solid #e7e7e7;
+  border-right: none;
+  background-color: #f3f3f3;
+  line-height: 14px;
+}
+
+.search_form button {
+  flex: 0 0 32px;
+  height: 40px;
+  padding: 6px;
+  border: 1px solid #e7e7e7;
+  border-left: none;
+  background: #f3f3f3 url(../../src/images/search.png) no-repeat center;
+}
+
 .card {
   padding: 30px;
   background-color: #fff;
@@ -1686,39 +1720,6 @@ header {
     display: flex;
     position: static;
   }
-}
-.search {
-  background-color: #fff;
-}
-
-.search_toggler {
-  padding: 8px 20px;
-  border: none;
-  background-color: transparent;
-}
-
-.search_form {
-  display: flex;
-  padding: 12px;
-  background-color: #fff;
-}
-
-.search_form input {
-  width: 100%;
-  padding: 12px 8px;
-  border: 1px solid #e7e7e7;
-  border-right: none;
-  background-color: #f3f3f3;
-  line-height: 14px;
-}
-
-.search_form button {
-  flex: 0 0 32px;
-  height: 40px;
-  padding: 6px;
-  border: 1px solid #e7e7e7;
-  border-left: none;
-  background: #f3f3f3 url(../../src/images/search.png) no-repeat center;
 }
 
 /*# sourceMappingURL=main.css.map */
