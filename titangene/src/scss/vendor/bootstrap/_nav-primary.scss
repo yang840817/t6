@@ -16,8 +16,8 @@
     }
 
     &-toggler {
+      padding: 12px;
       border: none;
-      height: 48px;
       z-index: 1;
     }
 
@@ -32,7 +32,7 @@
       }
 
       .nav-link {
-        padding: 14px 24px;
+        padding: 18px 30px;
         font-size: 13px;
         text-transform: uppercase;
         color: color.$link-color;
@@ -54,6 +54,11 @@
 
 .nav--primary {
   .dropdown {
+    &-toggle::after {
+      position: absolute;
+      top: 50%;
+    }
+
     &.show .nav-link {
       background-color: color.$link-hover-background-color;
       color: color.$link-hover-color;
@@ -61,11 +66,21 @@
 
     &-menu {
       padding: 0;
+      margin: 0;
+      border-radius: 0;
     }
 
     &-item {
-      padding: 14px 24px;
+      padding: 14px 24px 14px 40px;
       font-size: 13px;
+
+      @include breakpoint.media-breakpoint-up(lg) {
+        padding: 14px 24px;
+      }
+
+      & + .dropdown-item {
+        border-top: 1px solid #ebebeb;
+      }
   
       &:hover {
         background-color: color.$link-hover-background-color;

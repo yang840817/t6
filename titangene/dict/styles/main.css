@@ -656,6 +656,11 @@ img {
   color: #fff;
 }
 
+.nav--primary .dropdown-toggle::after {
+  position: absolute;
+  top: 50%;
+}
+
 .nav--primary .dropdown.show .nav-link {
   background-color: #93d200;
   color: #fff;
@@ -663,11 +668,22 @@ img {
 
 .nav--primary .dropdown-menu {
   padding: 0;
+  margin: 0;
+  border-radius: 0;
 }
 
 .nav--primary .dropdown-item {
-  padding: 14px 24px;
+  padding: 14px 24px 14px 40px;
   font-size: 13px;
+}
+
+@media (min-width: 992px) {
+  .nav--primary .dropdown-item {
+    padding: 14px 24px;
+  }
+}
+.nav--primary .dropdown-item + .dropdown-item {
+  border-top: 1px solid #ebebeb;
 }
 
 .nav--primary .dropdown-item:hover {
