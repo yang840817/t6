@@ -1,0 +1,40 @@
+@use "../../tools/breakpoint";
+
+.carousel {
+  img {
+    width: 100%;
+  }
+}
+
+// *------------------------------------------------*\
+// `.banner` use Bootstrap navbar component
+// *------------------------------------------------*/
+
+.banner {
+  %carousel_control {
+    width: 36px;
+    height: 60px;
+    margin-top: 0;
+    transform: translateY(-50%);
+    background-color: #171717;
+    color: #fff;
+
+    @include breakpoint.media-breakpoint-up(md) {
+      height: 110px;
+    }
+
+    &::after {
+      font-size: 15px;
+    }
+  }
+
+  .carousel_control-prev {
+    @extend %carousel_control;
+    left: 0;
+  }
+
+  .carousel_control-next {
+    @extend %carousel_control;
+    right: 0;
+  }
+}

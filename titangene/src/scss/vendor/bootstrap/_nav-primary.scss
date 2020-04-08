@@ -1,0 +1,91 @@
+@use "../../settings/colors" as color;
+@use "../../tools/breakpoint";
+
+
+// *------------------------------------------------*\
+// `.nav--primary` use Bootstrap navbar component
+// *------------------------------------------------*/
+
+.nav--primary {
+  .navbar {
+    padding: 0;
+    background-color: color.$background-color;
+
+    @include breakpoint.media-breakpoint-up(xl) {
+      flex: 1 0 0;
+    }
+
+    &-toggler {
+      padding: 15px;
+      border: none;
+      z-index: 1;
+    }
+
+    &-nav {
+      & > .nav-item {
+        border-right: 1px solid color.$border-color;
+      }
+
+      .active > .nav-link {
+        background-color: color.$link-active-background-color;
+        color: color.$link-hover-color;
+      }
+
+      .nav-link {
+        padding: 18px 30px;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: color.$link-color;
+  
+        &:hover {
+          background-color: color.$link-hover-background-color;
+          color: color.$link-hover-color;
+        }
+      }
+    }
+  }
+}
+
+
+
+// *------------------------------------------------*\
+// `.nav--primary` use Bootstrap dropdown component
+// *------------------------------------------------*/
+
+.nav--primary {
+  .dropdown {
+    &-toggle::after {
+      position: absolute;
+      top: 50%;
+    }
+
+    &.show .nav-link {
+      background-color: color.$link-hover-background-color;
+      color: color.$link-hover-color;
+    }
+
+    &-menu {
+      padding: 0;
+      margin: 0;
+      border-radius: 0;
+    }
+
+    &-item {
+      padding: 14px 24px 14px 40px;
+      font-size: 13px;
+
+      @include breakpoint.media-breakpoint-up(lg) {
+        padding: 14px 24px;
+      }
+
+      & + .dropdown-item {
+        border-top: 1px solid #ebebeb;
+      }
+  
+      &:hover {
+        background-color: color.$link-hover-background-color;
+        color: color.$link-hover-color;
+      }
+    }
+  }
+}
