@@ -29,57 +29,57 @@
   @include breakpoint.media-breakpoint-up(xl) {
     position: static;
   }
-}
 
-.search_toggler {
-  height: 48px;
-  padding: 8px 16px;
-  position: absolute;
-  right: 0;
-  border: none;
-  background-color: transparent;
-
-  @include breakpoint.media-breakpoint-up(md) {
-    display: none;
-  }
-}
-
-.search_form {
-  width: 100%;
-  padding: 8px 10px;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: color.$background-color;
-
-  @include breakpoint.media-breakpoint-up(md) {
-    width: auto;
-    padding: 0;
-    position: relative;
-    top: 0;
-
-    &.collapse:not(.show) {
-      display: block;
+  &_toggler {
+    height: 48px;
+    padding: 8px 16px;
+    border: none;
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+  
+    @include breakpoint.media-breakpoint-up(md) {
+      display: none;
     }
   }
 
-  input {
+  &_form {
     width: 100%;
-    padding: 8px 32px 8px 8px;
-    border: 1px solid color.$border-color;
-    background-color: color.$input-background-color;
-    line-height: 14px;
-  }
-
-  button {
-    padding: 6px;
-    border: none;
+    padding: 8px 10px;
     position: absolute;
-    right: 12px;
-    background-color: transparent;
-
+    top: 100%;
+    right: 0;
+    background-color: color.$background-color;
+  
     @include breakpoint.media-breakpoint-up(md) {
-      right: 0;
+      width: auto;
+      padding: 0;
+      position: relative;
+      top: 0;
+  
+      &.collapse:not(.show) {
+        display: block;
+      }
+    }
+  
+    input {
+      width: 100%;
+      padding: 8px 32px 8px 8px;
+      border: 1px solid color.$border-color;
+      background-color: color.$input-background-color;
+      line-height: 14px;
+    }
+  
+    button {
+      padding: 6px;
+      border: none;
+      position: absolute;
+      right: 12px;
+      background-color: transparent;
+  
+      @include breakpoint.media-breakpoint-up(md) {
+        right: 0;
+      }
     }
   }
 }
