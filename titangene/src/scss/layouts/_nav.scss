@@ -8,61 +8,6 @@
     display: flex;
     justify-content: space-between;
   }
-
-  .navbar {
-    padding: 0;
-    background-color: color.$background-color;
-
-    @include breakpoint.media-breakpoint-up(xl) {
-      flex: 1 0 0;
-    }
-  }
-
-  .navbar-nav > .nav-item {
-    border-right: 1px solid color.$border-color;
-  }
-
-  .nav-item.active > .nav-link {
-    background-color: color.$link-active-background-color;
-    color: color.$link-hover-color;
-  }
-
-  .nav-item:hover > .nav-link {
-    background-color: color.$link-hover-background-color;
-    color: color.$link-hover-color;
-  }
-
-  .navbar-nav .nav-link {
-    padding: 14px 24px;
-    font-size: 13px;
-    text-transform: uppercase;
-    color: color.$link-color;
-  }
-
-  .navbar-toggler {
-    border: none;
-    height: 48px;
-    z-index: 1;
-  }
-
-  .dropdown.show .nav-link {
-    background-color: color.$link-hover-background-color;
-    color: color.$link-hover-color;
-  }
-
-  .dropdown-menu {
-    padding: 0;
-  }
-
-  .dropdown-item {
-    padding: 14px 24px;
-    font-size: 13px;
-
-    &:hover {
-      background-color: color.$link-hover-background-color;
-      color: color.$link-hover-color;
-    }
-  }
 }
 
 .search {
