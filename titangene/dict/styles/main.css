@@ -66,7 +66,7 @@ img {
   padding: 0.5rem 1rem;
 }
 
-.navbar > .container-xl, .navbar .container,
+.navbar > .container-lg, .navbar .container,
 .navbar .container-fluid {
   display: flex;
   flex-wrap: wrap;
@@ -141,43 +141,43 @@ img {
   background-size: 100% 100%;
 }
 
-@media (max-width: 1199.98px) {
-  .navbar-expand-xl > .container-xl, .navbar-expand-xl > .container,
-.navbar-expand-xl > .container-fluid {
+@media (max-width: 991.98px) {
+  .navbar-expand-lg > .container-lg, .navbar-expand-lg > .container,
+.navbar-expand-lg > .container-fluid {
     padding-right: 0;
     padding-left: 0;
   }
 }
-@media (min-width: 1200px) {
-  .navbar-expand-xl {
+@media (min-width: 992px) {
+  .navbar-expand-lg {
     flex-flow: row nowrap;
     justify-content: flex-start;
   }
 
-  .navbar-expand-xl .navbar-nav {
+  .navbar-expand-lg .navbar-nav {
     flex-direction: row;
   }
 
-  .navbar-expand-xl .navbar-nav .dropdown-menu {
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: absolute;
   }
 
-  .navbar-expand-xl .navbar-nav .nav-link {
+  .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
 
-  .navbar-expand-xl > .container-xl, .navbar-expand-xl > .container,
-.navbar-expand-xl > .container-fluid {
+  .navbar-expand-lg > .container-lg, .navbar-expand-lg > .container,
+.navbar-expand-lg > .container-fluid {
     flex-wrap: nowrap;
   }
 
-  .navbar-expand-xl .navbar-collapse {
+  .navbar-expand-lg .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
   }
 
-  .navbar-expand-xl .navbar-toggler {
+  .navbar-expand-lg .navbar-toggler {
     display: none;
   }
 }
@@ -186,7 +186,7 @@ img {
   justify-content: flex-start;
 }
 
-.navbar-expand > .container-xl, .navbar-expand > .container,
+.navbar-expand > .container-lg, .navbar-expand > .container,
 .navbar-expand > .container-fluid {
   padding-right: 0;
   padding-left: 0;
@@ -205,7 +205,7 @@ img {
   padding-left: 0.5rem;
 }
 
-.navbar-expand > .container-xl, .navbar-expand > .container,
+.navbar-expand > .container-lg, .navbar-expand > .container,
 .navbar-expand > .container-fluid {
   flex-wrap: nowrap;
 }
@@ -371,13 +371,13 @@ img {
   left: auto;
 }
 
-@media (min-width: 1200px) {
-  .dropdown-menu-xl-left {
+@media (min-width: 992px) {
+  .dropdown-menu-lg-left {
     right: auto;
     left: 0;
   }
 
-  .dropdown-menu-xl-right {
+  .dropdown-menu-lg-right {
     right: 0;
     left: auto;
   }

@@ -9,11 +9,11 @@
 
 $grid-breakpoints: (
   xs: 0,
-  xl: 1200px
+  lg: 992px
 );
 
 $container-max-widths: (
-  xl: 1140px
+  lg: 960px
 );
 
 @import "../../../../node_modules/bootstrap/scss/transitions";
