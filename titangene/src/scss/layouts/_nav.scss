@@ -1,7 +1,7 @@
 @use "../settings/colors" as color;
 @use "../tools/breakpoint";
 
-.header_navbar {
+.nav--primary {
   position: relative;
 
   @include breakpoint.media-breakpoint-up(xl) {
