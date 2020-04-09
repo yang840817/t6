@@ -64,7 +64,7 @@ footer {
   position: relative;
   border: 1px solid #dfdfdf;
   margin-bottom: 34px;
-  padding: 15px 25px;
+  padding: 15px 0 15px 25px;
   &::before {
     content: "";
     display: block;
@@ -101,10 +101,11 @@ footer {
     margin-right: 15px;
   }
   .name {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   a {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    font-style: italic;
     color: #91b83e;
   }
 }

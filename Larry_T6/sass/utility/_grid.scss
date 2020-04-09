@@ -26,29 +26,30 @@
 @mixin col($number) {
   padding-left: 15px;
   padding-right: 15px;
-  @if $number == 1 {
-    flex: 0 0 1/12 * 100%;
-  } @else if $number == 2 {
-    flex: 0 0 2/12 * 100%;
-  } @else if $number == 3 {
-    flex: 0 0 3/12 * 100%;
-  } @else if $number == 4 {
-    flex: 0 0 4/12 * 100%;
-  } @else if $number == 5 {
-    flex: 0 0 5/12 * 100%;
-  } @else if $number == 6 {
-    flex: 0 0 6/12 * 100%;
-  } @else if $number == 7 {
-    flex: 0 0 7/12 * 100%;
-  } @else if $number == 8 {
-    flex: 0 0 8/12 * 100%;
-  } @else if $number == 9 {
-    flex: 0 0 9/12 * 100%;
-  } @else if $number == 10 {
-    flex: 0 0 10/12 * 100%;
-  } @else if $number == 11 {
-    flex: 0 0 11/12 * 100%;
-  } @else if $number == 12 {
-    flex: 0 0 100%;
-  }
+  flex: 0 0 $number/12 * 100%;
+  // @if $number == 1 {
+  //   flex: 0 0 1/12 * 100%;
+  // } @else if $number == 2 {
+  //   flex: 0 0 2/12 * 100%;
+  // } @else if $number == 3 {
+  //   flex: 0 0 3/12 * 100%;
+  // } @else if $number == 4 {
+  //   flex: 0 0 4/12 * 100%;
+  // } @else if $number == 5 {
+  //   flex: 0 0 5/12 * 100%;
+  // } @else if $number == 6 {
+  //   flex: 0 0 6/12 * 100%;
+  // } @else if $number == 7 {
+  //   flex: 0 0 7/12 * 100%;
+  // } @else if $number == 8 {
+  //   flex: 0 0 8/12 * 100%;
+  // } @else if $number == 9 {
+  //   flex: 0 0 9/12 * 100%;
+  // } @else if $number == 10 {
+  //   flex: 0 0 10/12 * 100%;
+  // } @else if $number == 11 {
+  //   flex: 0 0 11/12 * 100%;
+  // } @else if $number == 12 {
+  //   flex: 0 0 100%;
+  // }
 }
