@@ -44,11 +44,25 @@
     &:hover {
       background-color: #8db537;
     }
+    //item淡出效果
+    &.dropdown {
+      & > .dropdown-item {
+        opacity: 0;
+        position: absolute;
+        left: 100vw;
+      }
+      &:hover > .dropdown-item {
+        transition: opacity 1s;
+        opacity: 1;
+        left: 100%;
+        @include breaking-point.breaking-point(md) {
+          left: 0;
+        }
+      }
+    }
 
     &:hover > .dropdown-item {
       display: block;
-      // transition: all 1s;
-      // opacity: 1;
       position: absolute;
       top: 0;
       left: 100%;
@@ -83,11 +97,10 @@
 }
 
 .dropdown-item {
-  display: none;
-  // position: absolute;
+  // display: none;
+  position: absolute;
   // top: 0;
   // left: 100%;
-  // opacity: 0;
   @include breaking-point.breaking-point(lg) {
     top: 100%;
     left: 0;

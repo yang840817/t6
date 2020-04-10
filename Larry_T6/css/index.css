@@ -126,6 +126,21 @@ footer h2, .welcome h2, .product h2 {
 .navbar li:hover {
   background-color: #8db537;
 }
+.navbar li.dropdown > .dropdown-item {
+  opacity: 0;
+  position: absolute;
+  left: 100vw;
+}
+.navbar li.dropdown:hover > .dropdown-item {
+  transition: opacity 1s;
+  opacity: 1;
+  left: 100%;
+}
+@media (min-width: 768px) {
+  .navbar li.dropdown:hover > .dropdown-item {
+    left: 0;
+  }
+}
 .navbar li:hover > .dropdown-item {
   display: block;
   position: absolute;
@@ -159,7 +174,7 @@ footer h2, .welcome h2, .product h2 {
 }
 
 .dropdown-item {
-  display: none;
+  position: absolute;
 }
 @media (min-width: 992px) {
   .dropdown-item {
