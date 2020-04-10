@@ -1520,7 +1520,8 @@ body::before {
 
 .card_action-btn {
   display: inline-block;
-  padding: 6px 14px;
+  padding: 2px 14px;
+  font-size: 14px;
   background-color: #cecece;
 }
 
