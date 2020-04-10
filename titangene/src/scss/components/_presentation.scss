@@ -1,15 +1,37 @@
 @use "../settings/colors" as color;
+@use "../tools/breakpoint";
 
 .presentation_list {
-  position: relative;
-  z-index: 1;
-  top: -22px;
+  // 因絕對定位 top -30px，所以 margin-bottom 需 -30px 抵消
+  margin-bottom: 62px - 30px;
+
+  @include breakpoint.media-breakpoint-up(lg) {
+    position: relative;
+    z-index: 1;
+    top: -30px;
+  }
 }
 
 .presentation {
-  padding: 30px 20px 28px 20px;
+  padding: 34px 28px 28px 28px;
   text-align: center;
   background-color: color.$presentation-background-color;
+
+  @include breakpoint.media-breakpoint-up(sm) {
+    padding: 34px 50px 28px 50px;
+  }
+
+  @include breakpoint.media-breakpoint-up(md) {
+    padding: 34px 30px 28px 30px;
+  }
+
+  @include breakpoint.media-breakpoint-up(lg) {
+    padding: 34px 20px 28px 20px;
+  }
+
+  @include breakpoint.media-breakpoint-up(xl) {
+    padding: 34px 28px 28px 28px;
+  }
 
   &:hover {
     background-color: color.$presentation-hover-background-color;
@@ -17,17 +39,42 @@
   }
 
   .card_title {
+    margin-bottom: 26px;
     font-size: 14px;
     text-transform: uppercase;
   }
 
-  .card_body {
-    font-size: 12px;
-    line-height: 1.3;
-  }
+  .card_img {
+    margin: 26px 0;
 
+    img {
+      width: auto;
+    }
+  }
+  
+  .card_body {
+    @include breakpoint.media-breakpoint-up(md) {
+      height: 64px;
+    }
+
+    @include breakpoint.media-breakpoint-up(xl) {
+      height: 88px;
+    }
+  }
+  
   .card_text {
-    height: 76px;
-    margin-bottom: 22px;
+    font-size: 13px;
+    line-height: 1.3;
+
+    @include breakpoint.media-breakpoint-up(md) {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
+      overflow: hidden;
+    }
+
+    @include breakpoint.media-breakpoint-up(xl) {
+      -webkit-line-clamp: 5;
+    }
   }
 }
