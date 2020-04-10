@@ -1,0 +1,71 @@
+@use '../Utility/breakingpoint';
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:-16px;
+    margin-right: -16px;
+
+    &_nogutters{
+        @extend .row;
+        margin-left:0;
+        margin-right: 0;
+    }
+
+    &_nogutters >[class*="col_"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@mixin col_($number){
+    padding-right: 16px;
+    padding-left: 16px;
+    flex: 0 0 ($number / 12) * 100%;
+}
+
+.col_12{
+    @include col_(12);
+}
+
+.col_phone_10{
+    @include breakingpoint.phone-width(){
+        @include col_(10);
+    }
+}
+
+.col_pad_6{
+    @include breakingpoint.pad-width(){
+        @include col_(6);
+    }
+}
+
+.col_laptop_3{
+    @include breakingpoint.laptop-width(){
+        @include col_(3);
+    }
+}
+
+.col_laptop_4{
+    @include breakingpoint.laptop-width(){
+        @include col_(4);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

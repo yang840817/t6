@@ -1,0 +1,13 @@
+@use './color';
+
+$mainbg:url(../images/subbg.gif);
+
+@mixin background_image($bg){
+    @if $bg == main{
+        background-image: $mainbg;
+    }
+
+    @else {
+        background: $bg;
+    }
+}
