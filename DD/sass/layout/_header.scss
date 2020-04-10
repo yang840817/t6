@@ -1,0 +1,102 @@
+@use '../Utility/reset';
+@use '../Utility/color';
+@use '../Utility/background';
+@use '../Utility/breakingpoint';
+@use '../Utility/grid';
+
+@mixin square($square_w:27px,$square_h:27px) {
+    width: $square_w;
+    height: $square_h;
+}
+
+@mixin icon_sprite($r:0,$t:0){
+    background:url(../images/social.png) $r $t;
+}
+
+.header{
+    margin-top: 8px;
+    margin-bottom: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    @include background.background_image(main);
+
+    &_wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+            @include breakingpoint.pad-width{
+                flex-wrap: nowrap;
+                justify-content: space-between;
+            }
+    }
+}
+
+.logo{
+    margin-bottom: 16px;
+    @include breakingpoint.pad-width{
+        margin-bottom: 0;
+    }
+}
+
+.social_area{
+    text-align: center;
+
+    @include breakingpoint.pad-width{
+        text-align: right;
+    }
+
+    ul{
+        margin-bottom: 8px;
+    }
+}
+
+.facebook{
+    @include square();
+    @include icon_sprite();
+
+    &:hover{
+        @include icon_sprite(0,27px);
+    }
+}
+
+.twitter{
+    @include square();
+    @include icon_sprite(140px,0);
+
+    &:hover{
+        @include icon_sprite(140px,27px);
+    }
+}
+
+.flickr{
+    @include square();
+    @include icon_sprite(103px,0);
+
+    &:hover{
+        @include icon_sprite(103px,27px);
+    }
+}
+
+.dribble{
+    @include square();
+    @include icon_sprite(66px,0);
+
+    &:hover{
+        @include icon_sprite(66px,27px);
+    }
+}
+
+.rss{
+    @include square();
+    @include icon_sprite(27px,0);
+
+    &:hover{
+        @include icon_sprite(27px,27px);
+    }
+}
+
+.telephone{
+    color: color.$black;
+    font-size: .9rem;
+}

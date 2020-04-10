@@ -1,0 +1,85 @@
+@use '../Utility/reset';
+@use '../Utility/breakingpoint';
+@use '../Utility/grid';
+@use '../Utility/color';
+
+.footer{
+    margin-top:8px;
+    margin-bottom: 8px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+.footer_group{
+    display: flex;
+    flex-direction: column;
+
+    @include breakingpoint.laptop-width{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.copyright{
+    order:1;
+    font-size: .6rem;
+    text-align: center;
+
+    @include breakingpoint.laptop-width{
+        order:0;
+        text-align: left;
+    }
+
+    & span:nth-child(1){
+        color:color.$gray_text;
+    }
+
+    & span:nth-child(2){
+        color:color.$green;
+    }
+
+    a{
+        color: color.$green;
+    }
+}
+
+.nav_bottom{
+    font-size: 0.8rem;
+    text-align: center;
+    margin-bottom: 8px;
+    
+    a{
+        display: block;
+        color:color.$gray_text;
+        padding: 8px;
+
+        &:hover{
+            text-decoration: none;
+            color: color.$green;
+        }
+    }
+
+    span{
+        color:color.$gray_light;
+        display: none;
+    }
+
+    .current_page{
+        color: color.$green;
+    }
+
+    @include breakingpoint.pad-width{
+        a{
+            display: inline-block;
+            padding: 0 8px;
+        }
+
+        span{
+            display: inline;
+        }
+    }
+
+    @include breakingpoint.laptop-width{
+        margin-bottom: 0;
+
+    }
+}

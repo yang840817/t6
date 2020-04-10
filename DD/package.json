@@ -1,0 +1,24 @@
+{
+  "name": "dd-t6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "sass": "^1.26.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass --watch sass/home.scss:css/home.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diyunhung/T6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diyunhung/T6/issues"
+  },
+  "homepage": "https://github.com/diyunhung/T6#readme"
+}
