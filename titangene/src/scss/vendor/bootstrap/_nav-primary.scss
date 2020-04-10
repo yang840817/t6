@@ -55,9 +55,14 @@
 
 .nav--primary {
   .dropdown {
-    &-toggle::after {
-      position: absolute;
-      top: 50%;
+    &-toggle {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
     }
 
     &.show .nav-link {

@@ -657,9 +657,14 @@ img {
   color: #fff;
 }
 
+.nav--primary .dropdown-toggle {
+  position: relative;
+}
+
 .nav--primary .dropdown-toggle::after {
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
 }
 
 .nav--primary .dropdown.show .nav-link {
