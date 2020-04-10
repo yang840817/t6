@@ -11,13 +11,13 @@ $breakpoint-mobile-container:540px;
 
 @mixin phone-width() {
     @media (min-width: $breakpoint-mobile) {
-            @content;
+        @content;
     }
 }
 
 @mixin pad-width() {
     @media (min-width: $breakpoint-tablet) {
-            @content;
+        @content;
     }
 }
 
