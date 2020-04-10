@@ -5,15 +5,16 @@ $gray: #636363;
 $green: #81b800;
 $light-green: #93d200;
 $light-gray-100: #f3f3f3;
-$light-gray-200: #e7e7e7;
-$light-gray-300: #cecece;
+$light-gray-200: #ebebeb;
+$light-gray-300: #e7e7e7;
+$light-gray-400: #cecece;
 
 // body color
 $body-background-color: $white;
 $body-color: $black;
 
 // border color
-$border-color: $light-gray-200;
+$border-color: $light-gray-300;
 
 // background color
 $background-color: $white;
@@ -30,12 +31,15 @@ $link-active-background-color: $green;
 // component color
 // *----------------------------------*/
 
+// dropdown
+$dropdown-border-color: $light-gray-200;
+
 // card color
 $card-background-color: $white;
-$card-action-btn-background-color: $light-gray-300;
+$card-action-btn-background-color: $light-gray-400;
 
 // presentation color
-$presentation-background-color: $light-gray-200;
+$presentation-background-color: $light-gray-300;
 $presentation-hover-background-color: $gray;
 $presentation-hover-color: $white;
 
