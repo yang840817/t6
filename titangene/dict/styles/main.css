@@ -1498,6 +1498,10 @@ body::before {
   margin: 20px 0;
 }
 
+.card_img img {
+  width: 100%;
+}
+
 .card_body {
   margin-top: 20px;
 }
