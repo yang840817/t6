@@ -1,0 +1,100 @@
+@use "../Utility/color";
+@use '../Utility/breakingpoint';
+
+.card{
+
+    width: 100%;
+    padding: 32px;
+    margin-bottom: 12px;
+    border:0.8px solid color.$gray_dark;
+    background-color:color.$gray_light;
+    text-align: center;
+
+    &:hover{
+        background-color: rgba(0,0,0,0.6);
+        color:color.$white;
+        border-color: darken(color.$gray_dark,50%);
+    }
+
+    h3{
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+        font-weight: normal;
+    }
+
+    img{
+        align-self: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .card-body{
+        flex: 1 0 auto;
+    }
+
+    p{
+        text-align: center;
+        font-size: 0.9rem;
+        line-height: 1;
+        height: 125px;
+    }
+}
+
+.card_verticaltohorizon{
+    display: flex;
+    flex-direction: column;  
+    
+    @include breakingpoint.pad-width(){
+        flex-direction: row;
+        margin-bottom: 16px;
+    }
+}
+
+.card_verticaltohorizon_last{
+    display: flex;
+    flex-direction: column;  
+    
+    @include breakingpoint.pad-width(){
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+}
+
+.card_verticaltohorizon_img{
+    margin-bottom: 16px;
+
+    @include breakingpoint.pad-width(){
+        flex:0 0 45%;
+        margin-right: 32px;
+        margin-bottom: 0;
+    }
+}
+
+.card_content{
+    margin-bottom: 16px;
+
+    @include breakingpoint.pad-width(){
+        flex:1 1 auto;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+
+    .date{
+        display: inline-block;
+        background-color:color.$green;
+        color: color.$white;
+        padding: 10px;
+        padding-bottom: 14px;
+        margin-bottom: 16px;
+    }
+
+    p{
+        font-size: 0.9rem;
+        line-height: 1.1;
+        color:color.$gray_text;
+        text-align: left;
+    }
+    a{
+        color: color.$black;
+    }
+}
+

@@ -1,0 +1,49 @@
+@use "../Utility/color";
+
+@mixin colortheme($colorname){
+    display: inline-block;
+    padding: 8px 16px;
+    color: color.$black;
+    background-color: $colorname;
+    font-weight: bold;
+    &:hover {
+        background-color: lighten($colorname, 10%);
+        color:color.$white;
+        cursor: pointer;
+        }
+    &:active {
+    background-color: darken($colorname, 30%);
+    }
+}
+
+.button_green{
+    @include colortheme(color.$green);
+    color: color.$white;
+}
+
+.button_gray_light{
+    @include colortheme(color.$gray_light);
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.button_gray_dark{
+    @include colortheme(color.$gray_dark);
+
+    font-weight: normal;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.button_black{
+    @include colortheme(color.$black);
+    color: color.$white;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
