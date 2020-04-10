@@ -1510,7 +1510,7 @@ body::before {
   margin: 20px 0;
 }
 
-.card_text :last-child {
+.card_text:last-child {
   margin-bottom: 0;
 }
 
