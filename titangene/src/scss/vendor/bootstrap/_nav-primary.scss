@@ -32,8 +32,9 @@
       }
 
       .nav-link {
-        padding: 18px 30px;
+        padding: 20px 30px;
         font-size: 13px;
+        line-height: 20px;
         text-transform: uppercase;
         color: color.$link-color;
   
@@ -71,11 +72,12 @@
     }
 
     &-item {
-      padding: 14px 24px 14px 40px;
+      padding: 20px 24px 20px 40px;
       font-size: 13px;
+      line-height: 20px;
 
       @include breakpoint.media-breakpoint-up(lg) {
-        padding: 14px 24px;
+        padding: 20px 30px;
       }
 
       & + .dropdown-item {

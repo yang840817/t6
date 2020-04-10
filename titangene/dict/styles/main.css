@@ -645,8 +645,9 @@ img {
 }
 
 .nav--primary .navbar-nav .nav-link {
-  padding: 14px 24px;
+  padding: 20px 30px;
   font-size: 13px;
+  line-height: 20px;
   text-transform: uppercase;
   color: #000;
 }
@@ -673,13 +674,14 @@ img {
 }
 
 .nav--primary .dropdown-item {
-  padding: 14px 24px 14px 40px;
+  padding: 20px 24px 20px 40px;
   font-size: 13px;
+  line-height: 20px;
 }
 
 @media (min-width: 992px) {
   .nav--primary .dropdown-item {
-    padding: 14px 24px;
+    padding: 20px 30px;
   }
 }
 .nav--primary .dropdown-item + .dropdown-item {
