@@ -1514,6 +1514,10 @@ body::before {
   margin-bottom: 0;
 }
 
+.card_footer {
+  margin-top: 20px;
+}
+
 .card_action-btn {
   display: inline-block;
   padding: 6px 14px;
