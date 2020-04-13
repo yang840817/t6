@@ -28,6 +28,10 @@ img {
   vertical-align: middle;
 }
 
+.modify_container {
+  padding-top: 6px;
+}
+
 .display-2 {
   font-size: 28px;
   font-weight: bold;
@@ -1751,7 +1755,6 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding: 36px 40px 34px;
-    margin-top: 6px;
     margin-bottom: 32px;
   }
 }
