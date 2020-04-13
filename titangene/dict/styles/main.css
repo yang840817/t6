@@ -31,7 +31,7 @@ img {
 .display-2 {
   font-size: 28px;
   font-weight: bold;
-  line-height: 30px;
+  line-height: 26px;
   text-transform: uppercase;
 }
 
@@ -1647,9 +1647,6 @@ body::before {
 
 .welcome .card_title {
   margin-bottom: 30px;
-  font-size: 28px;
-  line-height: 30px;
-  text-transform: uppercase;
 }
 
 .welcome .card_img {
@@ -1662,7 +1659,7 @@ body::before {
   color: #636363;
 }
 
-.choose_list h2 {
+.choose_list .display-2 {
   margin: 0 0 14px;
 }
 
