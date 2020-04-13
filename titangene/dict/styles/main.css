@@ -1711,10 +1711,15 @@ body::before {
 
 .choose {
   display: flex;
-  padding: 16px 12px;
+  padding: 12px 8px;
   border-bottom: 1px solid #e7e7e7;
 }
 
+@media (min-width: 576px) {
+  .choose {
+    padding: 16px 12px;
+  }
+}
 .choose .card_img {
   height: 46px;
   flex: 0 0 46px;
@@ -1738,7 +1743,7 @@ body::before {
 }
 
 .choose .card_text {
-  margin: 10px 0 0;
+  margin: 12px 0 0;
   line-height: 19px;
 }
 
