@@ -1,11 +1,11 @@
-var swiper = new Swiper('.swiper-container', {
+const bannerSwiper = new Swiper('.banner .swiper-container', {
   loop: true,
   autoplay: {
     delay: 5000
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
+    nextEl: '.banner .swiper-button-next',
+    prevEl: '.banner .swiper-button-prev'
   }
 });
 
