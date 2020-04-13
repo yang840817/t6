@@ -38,43 +38,45 @@
     color: color.$presentation-hover-color;
   }
 
-  .card_title {
-    margin-bottom: 26px;
-    font-size: 14px;
-    text-transform: uppercase;
-  }
-
-  .card_img {
-    margin: 26px 0;
-
-    img {
-      width: auto;
+  .card {
+    &_title {
+      margin-bottom: 26px;
+      font-size: 14px;
+      text-transform: uppercase;
     }
-  }
+
+    &_img {
+      margin: 26px 0;
   
-  .card_body {
-    @include breakpoint.media-breakpoint-up(md) {
-      height: 64px;
+      img {
+        width: auto;
+      }
     }
 
-    @include breakpoint.media-breakpoint-up(xl) {
-      height: 88px;
-    }
-  }
+    &_body {
+      @include breakpoint.media-breakpoint-up(md) {
+        height: 64px;
+      }
   
-  .card_text {
-    font-size: 13px;
-    line-height: 1.3;
-
-    @include breakpoint.media-breakpoint-up(md) {
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 4;
-      overflow: hidden;
+      @include breakpoint.media-breakpoint-up(xl) {
+        height: 88px;
+      }
     }
 
-    @include breakpoint.media-breakpoint-up(xl) {
-      -webkit-line-clamp: 5;
+    &_text {
+      font-size: 13px;
+      line-height: 1.3;
+  
+      @include breakpoint.media-breakpoint-up(md) {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        overflow: hidden;
+      }
+  
+      @include breakpoint.media-breakpoint-up(xl) {
+        -webkit-line-clamp: 5;
+      }
     }
   }
 }
