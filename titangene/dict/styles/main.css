@@ -1920,8 +1920,9 @@ main {
 }
 @media (min-width: 992px) {
   main {
-    padding: 0 40px;
-  }
+main aside {
+  padding-bottom: 44px;
+}
 }
 
 /*# sourceMappingURL=main.css.map */

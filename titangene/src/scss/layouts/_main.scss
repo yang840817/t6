@@ -8,6 +8,9 @@ main {
   }
 
   @include breakpoint.media-breakpoint-up(lg) {
-    padding: 0 40px;
+
+  aside {
+    padding-bottom: 44px;
+  }
   }
 }
