@@ -977,6 +977,9 @@ body::before {
   z-index: -1;
 }
 
+form {
+  font-size: 0;
+}
 
 input {
   width: 100%;
