@@ -1,13 +1,17 @@
+@use "../settings/colors" as color;
 @use "../tools/breakpoint";
 
 main {
   padding: 20px;
+  background-color: color.$main-background-color;
   
   @include breakpoint.media-breakpoint-up(md) {
     padding: 0px;
   }
 
   @include breakpoint.media-breakpoint-up(lg) {
+    padding: 0 40px 76px;
+  }
 
   aside {
     padding-bottom: 44px;
