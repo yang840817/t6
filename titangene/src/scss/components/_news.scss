@@ -1,4 +1,5 @@
 @use '../settings/colors' as color;
+@use "../tools/breakpoint";
 
 .news_list {
   .display-2 {
@@ -17,12 +18,20 @@
 
   .card {
     &_img {
-      flex: 0 0 144px;
+      flex: 0 0 90px;
       margin: 0;
+
+      @include breakpoint.media-breakpoint-up(sm) {
+        flex: 0 0 144px;
+      }
     }
 
     &_body {
-      margin: 0 0 0 30px;
+      margin: 0 0 0 20px;
+
+      @include breakpoint.media-breakpoint-up(md) {
+        margin: 0 0 0 30px;
+      }
 
       time {
         display: inline-block;
@@ -34,9 +43,13 @@
     }
 
     &_text {
-      margin: 24px 0 0;
+      margin: 12px 0 0;
       font-size: 13px;
       line-height: 20px;
+
+      @include breakpoint.media-breakpoint-up(sm) {
+        margin: 24px 0 0;
+      }
     }
   }
 }
