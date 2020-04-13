@@ -1506,6 +1506,11 @@ body::before {
   margin-bottom: 0;
 }
 
+.card_link {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
 .card_footer {
   margin-top: 20px;
 }
