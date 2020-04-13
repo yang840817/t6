@@ -1805,7 +1805,18 @@ header {
   }
 }
 main {
-  padding: 0 40px;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  main {
+    padding: 0px;
+  }
+}
+@media (min-width: 992px) {
+  main {
+    padding: 0 40px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
