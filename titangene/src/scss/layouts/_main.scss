@@ -14,7 +14,11 @@ main {
   }
 
   aside {
-    padding-bottom: 44px;
+    padding-bottom: 20px;
+
+    @include breakpoint.media-breakpoint-up(sm) {
+      padding-bottom: 44px;
+    }
   }
 
   hr {
