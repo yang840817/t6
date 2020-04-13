@@ -1959,14 +1959,15 @@ header {
 }
 
 .nav--primary {
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 @media (min-width: 992px) {
   .nav--primary {
     display: flex;
     justify-content: space-between;
-    position: static;
   }
 }
 .nav--primary .navbar-collapse {
