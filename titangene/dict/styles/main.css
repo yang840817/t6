@@ -1923,6 +1923,11 @@ main {
 main aside {
   padding-bottom: 44px;
 }
+
+main hr {
+  margin: 40px 0 50px;
+  border: none;
+  border-top: 1px solid #c7c7c7;
 }
 
 /*# sourceMappingURL=main.css.map */

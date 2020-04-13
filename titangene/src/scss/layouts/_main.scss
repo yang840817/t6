@@ -12,5 +12,10 @@ main {
   aside {
     padding-bottom: 44px;
   }
+
+  hr {
+    margin: 40px 0 50px;
+    border: none;
+    border-top: 1px solid color.$hr-border-color;
   }
 }
