@@ -1525,6 +1525,32 @@ body::before {
   background-color: #cecece;
 }
 
+@media (min-width: 768px) {
+  .card_deck {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+.card_deck .card {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .card_deck .card {
+    width: calc(50% - 30px);
+    flex: 0 1 auto;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 992px) {
+  .card_deck .card {
+    flex: 1 0 0;
+  }
+}
 .presentation_list {
   margin-bottom: 32px;
 }

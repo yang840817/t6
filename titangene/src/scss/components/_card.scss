@@ -1,4 +1,6 @@
+@use "../settings/settings";
 @use "../settings/colors" as color;
+@use "../tools/breakpoint";
 
 .card {
   padding: 30px;
@@ -37,5 +39,30 @@
     padding: 2px 14px;
     font-size: 14px;
     background-color: color.$card-action-btn-background-color;
+  }
+}
+
+.card_deck {
+  @include breakpoint.media-breakpoint-up(md) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -(settings.$card-deck-margin);
+    margin-left: -(settings.$card-deck-margin);
+  }
+
+  .card {
+    margin-bottom: settings.$card-deck-margin;
+
+    @include breakpoint.media-breakpoint-up(md) {
+      width: calc(50% - #{settings.$card-deck-margin});
+      flex: 0 1 auto;
+      margin-top: settings.$card-deck-margin;
+      margin-left: settings.$card-deck-margin;
+      margin-bottom: 0;
+    }
+
+    @include breakpoint.media-breakpoint-up(lg) {
+      flex: 1 0 0;
+    }
   }
 }
