@@ -1696,6 +1696,42 @@ body::before {
   line-height: 19px;
 }
 
+.news_list .display-2 {
+  margin: 0 0 30px;
+}
+
+.news {
+  display: flex;
+  padding: 0;
+  background-color: transparent;
+}
+
+.news + .news {
+  margin-top: 35px;
+}
+
+.news .card_img {
+  flex: 0 0 144px;
+  margin: 0;
+}
+
+.news .card_body {
+  margin: 0 0 0 30px;
+}
+
+.news .card_body time {
+  display: inline-block;
+  padding: 5px 12px;
+  background-color: #81b800;
+  color: #fff;
+  font-weight: bold;
+}
+
+.news .card_text {
+  margin: 24px 0 0;
+  font-size: 13px;
+  line-height: 20px;
+}
 header {
   display: flex;
   flex-direction: column;
