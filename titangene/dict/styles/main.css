@@ -961,10 +961,6 @@ body::before {
   z-index: -1;
 }
 
-main {
-  padding: 0 40px;
-}
-
 .container {
   width: 100%;
   margin-right: auto;
@@ -1727,6 +1723,9 @@ header {
     display: flex;
     position: static;
   }
+}
+main {
+  padding: 0 40px;
 }
 
 /*# sourceMappingURL=main.css.map */
