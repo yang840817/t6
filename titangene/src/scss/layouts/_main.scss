@@ -6,7 +6,7 @@ main {
   background-color: color.$main-background-color;
   
   @include breakpoint.media-breakpoint-up(md) {
-    padding: 0px;
+    padding: 30px;
   }
 
   @include breakpoint.media-breakpoint-up(lg) {
