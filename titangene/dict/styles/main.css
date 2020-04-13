@@ -986,6 +986,15 @@ input {
   color: #636363;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
+
+textarea {
+  width: 100%;
+  padding: 3px 5px;
+  border: 1px solid #dcdcdc;
+  background-color: #e7e7e7;
+  color: #636363;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
 .container {
   width: 100%;
   margin-right: auto;

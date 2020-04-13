@@ -9,3 +9,12 @@ input {
   color: color.$input-text-color;
   font-family: settings.$form-font-family;
 }
+
+textarea {
+  width: 100%;
+  padding: 3px 5px;
+  border: 1px solid color.$textarea-border-color;
+  background-color: color.$textarea-background-color;
+  color: color.$textarea-text-color;
+  font-family: settings.$form-font-family;
+}
