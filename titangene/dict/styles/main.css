@@ -1792,7 +1792,6 @@ button {
 .news {
   display: flex;
   padding: 0;
-  background-color: transparent;
 }
 
 .news + .news {
