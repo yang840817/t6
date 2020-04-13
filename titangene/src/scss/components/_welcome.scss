@@ -1,0 +1,24 @@
+@use '../settings/colors' as color;
+
+.welcome {
+  padding: 0;
+
+  .card {
+    &_title {
+      margin-bottom: 30px;
+      font-size: 28px;
+      line-height: 30px;
+      text-transform: uppercase;
+    }
+
+    &_img {
+      margin: 22px 0;
+    }
+
+    &_text {
+      font-size: 14px;
+      line-height: 18px;
+      color: color.$welcome-card-text-color;
+    }
+  }
+}

@@ -1632,9 +1632,25 @@ body::before {
     -webkit-line-clamp: 5;
   }
 }
+.welcome {
+  padding: 0;
+}
 
-.weclome .card_img img {
-  width: 100%;
+.welcome .card_title {
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.welcome .card_img {
+  margin: 22px 0;
+}
+
+.welcome .card_text {
+  font-size: 14px;
+  line-height: 18px;
+  color: #636363;
 }
 
 header {
