@@ -1662,6 +1662,43 @@ body::before {
   color: #636363;
 }
 
+.choose_list h2 {
+  margin: 0 0 14px;
+}
+
+.choose {
+  display: flex;
+  padding: 16px 12px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.choose .card_img {
+  height: 46px;
+  flex: 0 0 46px;
+  margin: 0;
+  background-color: #dcdcdc;
+  border-radius: 50%;
+}
+
+.choose .card_img::after {
+  margin-left: 21px;
+  content: "next";
+  font-family: swiper-icons;
+  font-size: 15px;
+  line-height: 46px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.choose .card_body {
+  margin: 0 0 0 14px;
+}
+
+.choose .card_text {
+  margin: 10px 0 0;
+  line-height: 19px;
+}
+
 header {
   display: flex;
   flex-direction: column;
