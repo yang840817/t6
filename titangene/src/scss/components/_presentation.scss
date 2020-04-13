@@ -16,6 +16,7 @@
   padding: 34px 28px 28px 28px;
   text-align: center;
   background-color: color.$presentation-background-color;
+  border: 1px solid color.$presentation-border-color;
 
   @include breakpoint.media-breakpoint-up(sm) {
     padding: 34px 50px 28px 50px;
@@ -36,6 +37,7 @@
   &:hover {
     background-color: color.$presentation-hover-background-color;
     color: color.$presentation-hover-color;
+    border: 1px solid color.$presentation-hover-border-color;
   }
 
   .card {

@@ -1563,6 +1563,7 @@ body::before {
   padding: 34px 28px 28px 28px;
   text-align: center;
   background-color: #e7e7e7;
+  border: 1px solid #dcdcdc;
 }
 
 @media (min-width: 576px) {
@@ -1588,6 +1589,7 @@ body::before {
 .presentation:hover {
   background-color: #636363;
   color: #fff;
+  border: 1px solid #000;
 }
 
 .presentation .card_title {

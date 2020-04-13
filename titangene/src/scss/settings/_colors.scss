@@ -7,7 +7,8 @@ $light-green: #93d200;
 $light-gray-100: #f3f3f3;
 $light-gray-200: #ebebeb;
 $light-gray-300: #e7e7e7;
-$light-gray-400: #cecece;
+$light-gray-400: #dcdcdc;
+$light-gray-500: #cecece;
 
 // body color
 $body-background-color: $white;
@@ -39,12 +40,14 @@ $search-background-color: $light-gray-100;
 
 // card
 $card-background-color: $white;
-$card-action-btn-background-color: $light-gray-400;
+$card-action-btn-background-color: $light-gray-500;
 
 // presentation
 $presentation-background-color: $light-gray-300;
+$presentation-border-color: $light-gray-400;
 $presentation-hover-background-color: $gray;
 $presentation-hover-color: $white;
+$presentation-hover-border-color: $black;
 
 // welcome
 $welcome-card-text-color: $gray;
