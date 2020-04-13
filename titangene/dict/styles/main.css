@@ -1668,6 +1668,43 @@ body::before {
   color: #636363;
 }
 
+@media (min-width: 576px) {
+  .welcome {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .welcome .card_title {
+    flex: 0 0 100%;
+  }
+
+  .welcome .card_img {
+    flex: 0 0 200px;
+    margin: 0;
+  }
+
+  .welcome .card_body {
+    flex: 1 0 0;
+    margin: 0 0 0 20px;
+  }
+
+  .welcome .card_text {
+    margin: 0;
+  }
+}
+@media (min-width: 768px) {
+  .welcome {
+    display: block;
+  }
+
+  .welcome .card_img {
+    margin: 22px 0;
+  }
+
+  .welcome .card_body {
+    margin: 0;
+  }
+}
 .choose_list .display-2 {
   margin: 0 0 14px;
 }
