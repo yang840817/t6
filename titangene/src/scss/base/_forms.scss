@@ -18,3 +18,11 @@ textarea {
   color: color.$textarea-text-color;
   font-family: settings.$form-font-family;
 }
+
+button {
+  padding: 5px;
+  border: 1px solid color.$button-border-color;
+  background-color: color.$button-background-color;
+  color: color.$button-text-color;
+  font-family: settings.$form-font-family;
+}
