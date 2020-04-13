@@ -1,0 +1,8 @@
+@use "../settings/settings";
+
+.display-2 {
+  font-size: settings.$display2-size;
+  font-weight: settings.$display2-weight;
+  line-height: settings.$display2-line-height;
+  text-transform: uppercase;
+}
