@@ -8,3 +8,13 @@ var swiper = new Swiper('.swiper-container', {
     prevEl: '.swiper-button-prev'
   }
 });
+
+const featureSwiper = new Swiper('.feature .swiper-container', {
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.feature .swiper-button-next',
+    prevEl: '.feature .swiper-button-prev'
+  }
+});

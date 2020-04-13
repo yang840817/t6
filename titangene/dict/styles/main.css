@@ -1732,6 +1732,11 @@ body::before {
   font-size: 13px;
   line-height: 20px;
 }
+
+.feature .display-2 {
+  margin-bottom: 34px;
+}
+
 header {
   display: flex;
   flex-direction: column;
