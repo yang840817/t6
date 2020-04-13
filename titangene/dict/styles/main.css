@@ -1643,7 +1643,7 @@ button {
 .presentation:hover {
   background-color: #636363;
   color: #fff;
-  border: 1px solid #000;
+  border: 1px solid #161616;
 }
 
 .presentation .card_title {
