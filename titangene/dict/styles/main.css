@@ -1841,6 +1841,15 @@ button {
 }
 
 
+.testimonial {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial_person {
+  margin-top: 10px;
+}
+
 .album {
   font-size: 0;
   margin-top: -7px;
