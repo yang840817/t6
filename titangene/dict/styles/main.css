@@ -1902,11 +1902,16 @@ textarea {
   margin-top: 16px;
 }
 .form_control {
+  display: block;
   width: 100%;
   padding: 3px 5px;
   border: 1px solid #dcdcdc;
   background-color: #e7e7e7;
   color: #636363;
+}
+
+.form_control + .form_control {
+  margin-top: 4px;
 }
 
 .contact {
