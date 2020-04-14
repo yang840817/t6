@@ -31,27 +31,6 @@ $link-active-background-color: $green;
 
 
 // *----------------------------------*\
-// element color
-// *----------------------------------*/
-
-// input element
-$input-background-color: $light-gray-300;
-$input-border-color: $light-gray-400;
-$input-text-color: $gray;
-
-// textarea element
-$textarea-background-color: $light-gray-300;
-$textarea-border-color: $light-gray-400;
-$textarea-text-color: $gray;
-
-// button element
-$button-background-color: $light-gray-300;
-$button-border-color: $light-gray-400;
-$button-text-color: $gray;
-
-
-
-// *----------------------------------*\
 // layout color
 // *----------------------------------*/
 
@@ -101,3 +80,8 @@ $bubble-border-color: $light-gray-400;
 
 // media
 $media-link-color: $green;
+
+// form
+$input-background-color: $light-gray-300;
+$input-border-color: $light-gray-400;
+$input-text-color: $gray;
