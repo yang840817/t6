@@ -1893,6 +1893,10 @@ form {
   background-color: #e7e7e7;
   color: #636363;
 }
+
+.contact {
+  font-size: 0;
+}
 }
 
 .album {
