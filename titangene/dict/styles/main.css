@@ -1874,6 +1874,37 @@ button {
   line-height: 16px;
 }
 
+.media {
+  display: flex;
+}
+
+.media_img {
+  flex: 0 0 50px;
+}
+
+.media_img img {
+  width: 100%;
+}
+
+.media_body {
+  flex: 1 0 0;
+  align-self: center;
+  margin-left: 14px;
+}
+
+.media_title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+.media_link {
+  font-size: 13px;
+  font-weight: bold;
+  font-style: italic;
+  color: #81b800;
+}
 
 .testimonial {
   display: flex;
