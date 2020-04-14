@@ -977,8 +977,21 @@ body::before {
   z-index: -1;
 }
 
-form {
-  font-size: 0;
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+button:not(:disabled),
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled) {
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
 }
 
 .container {
