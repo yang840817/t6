@@ -1901,6 +1901,28 @@ textarea {
 .testimonial_person {
   margin-top: 16px;
 }
+
+.button {
+  padding: 3px 5px;
+}
+
+.button--primary {
+  border: none;
+  margin-left: 5px;
+  background-color: #81b800;
+  color: #fff;
+}
+
+.button--secondary {
+  border: none;
+  background-color: #161616;
+  color: #fff;
+}
+
+.button_group {
+  font-size: 0;
+}
+
 .form_control {
   display: block;
   width: 100%;
@@ -1927,7 +1949,7 @@ textarea {
   height: 110px;
 }
 
-.contact button {
+.contact .button {
   padding: 6px 13px;
   font-weight: bold;
   text-transform: uppercase;

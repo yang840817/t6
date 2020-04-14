@@ -10,13 +10,13 @@
     height: 110px;
   }
 
-  button {
+  .button {
     padding: 6px 13px;
     font-weight: bold;
     text-transform: uppercase;
-  }
 
-  .button_group {
-    margin-top: 18px;
+    &_group {
+      margin-top: 18px;
+    }
   }
 }
