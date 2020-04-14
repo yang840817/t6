@@ -355,8 +355,10 @@
     </main>
 
     <footer>
+      <!-- ================= footer_list ================= -->
       <section class="footer_list">
         <div class="row">
+          <!-- ================= tweets ================= -->
           <div class="col-3">
             <section class="card footer_item">
               <h2 class="card_title display-3">Latest Tweets</h2>
@@ -392,10 +394,31 @@
               </div>
             </section>
           </div>
+
+          <!-- ================= form ================= -->
           <div class="col-3">
             <section class="card footer_item">
               <h2 class="card_title display-3">Get in touch!</h2>
               <div class="card_body">
+                <form class="form contact">
+                  <input type="text"
+                    class="form_control"
+                    name="name"
+                    placeholder="Name">
+                  <input type="email"
+                    class="form_control"
+                    name="email"
+                    placeholder="Email">
+                  <textarea name="message"
+                    class="form_control"
+                    cols="32"
+                    rows="6"
+                    placeholder="Message"></textarea>
+                  <div class="button_group">
+                    <button type="reset">Clear Form</button>
+                    <button type="submit">Send!</button>
+                  </div>
+                </form>
               </div>
             </section>
           </div>

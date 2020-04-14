@@ -1,3 +1,22 @@
 .contact {
   font-size: 0;
+
+  .form_control {
+    padding: 4px;
+    font-size: 13px;
+  }
+  
+  textarea.form_control {
+    height: 110px;
+  }
+
+  button {
+    padding: 6px 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .button_group {
+    margin-top: 18px;
+  }
 }

@@ -1917,6 +1917,24 @@ textarea {
 .contact {
   font-size: 0;
 }
+
+.contact .form_control {
+  padding: 4px;
+  font-size: 13px;
+}
+
+.contact textarea.form_control {
+  height: 110px;
+}
+
+.contact button {
+  padding: 6px 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contact .button_group {
+  margin-top: 18px;
 }
 
 .album {
