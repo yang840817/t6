@@ -1840,6 +1840,40 @@ button {
   margin-bottom: 34px;
 }
 
+.bubble {
+  position: relative;
+  padding: 18px 14px 18px 28px;
+  border: 1px solid #dcdcdc;
+  margin-bottom: 26px;
+  background-color: #e7e7e7;
+}
+
+.bubble::before {
+  content: "";
+  border-bottom: 17px solid transparent;
+  border-left: 25px solid #dcdcdc;
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: -1px;
+}
+
+.bubble::after {
+  content: "";
+  border-bottom: 15px solid transparent;
+  border-left: 23px solid #e7e7e7;
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.bubble_text {
+  margin: 0;
+  font-size: 13px;
+  line-height: 16px;
+}
+
 
 .testimonial {
   display: flex;
