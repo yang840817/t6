@@ -1991,6 +1991,16 @@ textarea {
   gap: 7px;
 }
 
+@media (min-width: 576px) {
+  .album {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .album {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 .album_item img {
   width: 100%;
 }
