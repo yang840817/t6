@@ -2264,6 +2264,20 @@ footer {
   padding: 20px;
 }
 
+
+.copyright {
+  font-size: 14px;
+}
+
+.copyright p {
+  margin: 0;
+  color: #636363;
+}
+
+.copyright a {
+  color: #81b800;
+}
+
 @media (min-width: 992px) {
   .order-lg-1 {
     order: 1 !important;

@@ -25,3 +25,15 @@ footer {
   padding: 20px;
   
 }
+.copyright {
+  font-size: 14px;
+
+  p {
+    margin: 0;
+    color: color.$copyright-text-color;
+  }
+  
+  a {
+    color: color.$copyright-link-color;
+  }
+}
