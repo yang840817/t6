@@ -1,0 +1,10 @@
+@use "../settings/colors" as color;
+
+footer {
+  margin-top: 72px;
+}
+
+.footer_list {
+  padding: 34px 40px 38px;
+  background-color: color.$footer_list-background-color;
+}

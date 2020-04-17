@@ -2009,6 +2009,14 @@ main hr {
     margin: 40px 0 50px;
   }
 }
+footer {
+  margin-top: 72px;
+}
+
+.footer_list {
+  padding: 34px 40px 38px;
+  background-color: #fff;
+}
 @media (min-width: 992px) {
   .order-lg-1 {
     order: 1 !important;
