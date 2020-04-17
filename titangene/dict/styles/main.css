@@ -2316,6 +2316,10 @@ footer {
 }
 
 @media (min-width: 992px) {
+  .order-lg-first {
+    order: -1 !important;
+  }
+
   .order-lg-1 {
     order: 1 !important;
   }
