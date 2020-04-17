@@ -27,8 +27,8 @@
       }
 
       .active > .nav-link {
-        background-color: color.$link-active-background-color;
-        color: color.$link-hover-color;
+        background-color: color.$nav-primary-link-active-background-color;
+        color: color.$nav-primary-link-hover-color;
       }
 
       .nav-link {
@@ -36,11 +36,11 @@
         font-size: 13px;
         line-height: 20px;
         text-transform: uppercase;
-        color: color.$link-color;
+        color: color.$nav-primary-link-color;
   
         &:hover {
-          background-color: color.$link-hover-background-color;
-          color: color.$link-hover-color;
+          background-color: color.$nav-primary-link-hover-background-color;
+          color: color.$nav-primary-link-hover-color;
         }
       }
     }
@@ -66,8 +66,8 @@
     }
 
     &.show .nav-link {
-      background-color: color.$link-hover-background-color;
-      color: color.$link-hover-color;
+      background-color: color.$nav-primary-link-hover-background-color;
+      color: color.$nav-primary-link-hover-color;
     }
 
     &-menu {
@@ -90,8 +90,8 @@
       }
   
       &:hover {
-        background-color: color.$link-hover-background-color;
-        color: color.$link-hover-color;
+        background-color: color.$nav-primary-link-hover-background-color;
+        color: color.$nav-primary-link-hover-color;
       }
     }
   }

@@ -22,11 +22,17 @@ $border-color: $light-gray-300;
 // background color
 $background-color: $white;
 
-// link color
-$link-color: $black;
-$link-hover-color: $white;
-$link-hover-background-color: $light-green;
-$link-active-background-color: $green;
+
+
+// *----------------------------------*\
+// vendor color
+// *----------------------------------*/
+
+// nav-primary
+$nav-primary-link-color: $black;
+$nav-primary-link-hover-color: $white;
+$nav-primary-link-hover-background-color: $light-green;
+$nav-primary-link-active-background-color: $green;
 
 
 
@@ -34,6 +40,7 @@ $link-active-background-color: $green;
 // layout color
 // *----------------------------------*/
 
+// main layout
 $main-background-color: $white;
 $hr-border-color: $light-gray-600;
 
