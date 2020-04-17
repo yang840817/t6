@@ -2264,14 +2264,24 @@ main hr {
   }
 }
 footer {
-  margin-top: 72px;
+  margin-top: 40px;
 }
 
+@media (min-width: 768px) {
+  footer {
+    margin-top: 72px;
+  }
+}
 .footer_list {
-  padding: 34px 40px 38px;
+  padding: 30px 20px;
   background-color: #fff;
 }
 
+@media (min-width: 768px) {
+  .footer_list {
+    padding: 34px 40px 38px;
+  }
+}
 .footer_item {
   padding: 0;
   font-size: 13px;
@@ -2288,16 +2298,42 @@ footer {
   padding: 20px;
 }
 
+@media (min-width: 992px) {
+  .footer_bar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1200px) {
+  .footer_bar {
+    padding: 20px 0;
+  }
+}
 .footer_nav {
   margin-bottom: 10px;
 }
 
+@media (min-width: 992px) {
+  .footer_nav {
+    margin-bottom: 0;
+  }
+}
 .footer_nav .nav {
   display: block;
   font-size: 0;
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .footer_nav .nav {
+    margin-right: 8px;
+  }
+}
+@media (min-width: 992px) {
+  .footer_nav .nav {
+    text-align: left;
+  }
+}
 .footer_nav .nav-item {
   display: inline-block;
 }
