@@ -1,15 +1,11 @@
 @use "../settings/settings";
 
 .album {
-  font-size: 0;
-  margin-top: - (settings.$album-margin);
-  margin-left: - (settings.$album-margin);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: settings.$album-margin;
 
   &_item {
-    display: inline-block;
-    margin-top: settings.$album-margin;
-    margin-left: settings.$album-margin;
-
     img {
       width: 100%;
     }
