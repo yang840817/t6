@@ -1626,6 +1626,28 @@ textarea {
     top: -30px;
   }
 }
+.presentation_list .row {
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+@media (min-width: 768px) {
+  .presentation_list .row {
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+.presentation_list [class*=col-] {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+@media (min-width: 768px) {
+  .presentation_list [class*=col-] {
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+}
 .presentation {
   padding: 34px 28px 28px 28px;
   text-align: center;
