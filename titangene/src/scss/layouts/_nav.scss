@@ -11,6 +11,12 @@
     justify-content: space-between;
   }
 
+  .navbar {
+    @include breakpoint.media-breakpoint-up(lg) {
+      flex: 1 0 0;
+    }
+  }
+
   .navbar-collapse {
     position: absolute;
     top: 100%;
