@@ -4,8 +4,8 @@ const bannerSwiper = new Swiper('.banner .swiper-container', {
     delay: 5000
   },
   navigation: {
-    nextEl: '.banner .swiper-button-next',
-    prevEl: '.banner .swiper-button-prev'
+    nextEl: '.banner .carousel_control-next',
+    prevEl: '.banner .carousel_control-prev'
   }
 });
 
@@ -13,8 +13,8 @@ const featureSwiper = new Swiper('.feature .swiper-container', {
   loop: true,
   slidesPerView: 1,
   navigation: {
-    nextEl: '.feature .swiper-button-next',
-    prevEl: '.feature .swiper-button-prev'
+    nextEl: '.feature .carousel_control-next',
+    prevEl: '.feature .carousel_control-prev'
   },
   breakpoints: {
     567: {
