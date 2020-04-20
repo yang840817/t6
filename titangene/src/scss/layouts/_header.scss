@@ -1,4 +1,5 @@
 @use "../settings/colors" as color;
+@use "../settings/settings";
 @use "../tools/breakpoint";
 
 header {
@@ -7,7 +8,7 @@ header {
   align-items: center;
   padding: 24px 16px;
   margin-bottom: 20px;
-  background-color: color.$background-color;
+  background-image: settings.$sub-background-image;
 
   @include breakpoint.media-breakpoint-up(md) {
     flex-direction: row;
