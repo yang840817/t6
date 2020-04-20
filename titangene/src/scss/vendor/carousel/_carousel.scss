@@ -38,3 +38,40 @@
     right: 0;
   }
 }
+
+.feature {
+  position: relative;
+
+  .carousel {
+    &_control {
+      display: flex;
+      position: absolute;
+      top: 16px;
+      right: 0;
+
+      &-prev,
+      &-next {
+        font-family: swiper-icons;
+      }
+
+      &-prev {
+        padding-right: 6px;
+
+        &::after {
+          content: "prev";
+          font-family: swiper-icons;
+        }
+      }
+      
+      &-next {
+        padding-left: 6px;
+        margin-left: 2px;
+
+        &::after {
+          content: "next";
+          font-family: swiper-icons;
+        }
+      }
+    }
+  }
+}

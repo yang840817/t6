@@ -988,6 +988,40 @@ body {
   right: 0;
 }
 
+.feature {
+  position: relative;
+}
+
+.feature .carousel_control {
+  display: flex;
+  position: absolute;
+  top: 16px;
+  right: 0;
+}
+
+.feature .carousel_control-prev, .feature .carousel_control-next {
+  font-family: swiper-icons;
+}
+
+.feature .carousel_control-prev {
+  padding-right: 6px;
+}
+
+.feature .carousel_control-prev::after {
+  content: "prev";
+  font-family: swiper-icons;
+}
+
+.feature .carousel_control-next {
+  padding-left: 6px;
+  margin-left: 2px;
+}
+
+.feature .carousel_control-next::after {
+  content: "next";
+  font-family: swiper-icons;
+}
+
 input,
 button,
 textarea {
