@@ -12,30 +12,44 @@
 
 .banner {
   %carousel_control {
-    width: 36px;
+    width: 40px;
     height: 60px;
     margin-top: 0;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
     transform: translateY(-50%);
-    background-color: #171717;
-    color: #fff;
-
+    background-position-y: -30px;
+    cursor: pointer;
+    
     @include breakpoint.media-breakpoint-up(md) {
-      height: 110px;
+      height: 119px;
+      background-position-y: 0;
     }
+    
+    &:hover {
+      background-position-y: 89px;
 
+      @include breakpoint.media-breakpoint-up(md) {
+        background-position-y: 119px;
+      }
+    }
+    
     &::after {
       font-size: 15px;
     }
   }
-
+  
   .carousel_control-prev {
     @extend %carousel_control;
     left: 0;
+    background-image: url(../../src/images/slider_prev.gif);
   }
-
+  
   .carousel_control-next {
     @extend %carousel_control;
     right: 0;
+    background-image: url(../../src/images/slider_next.gif);
   }
 }
 
