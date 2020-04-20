@@ -28,11 +28,6 @@ img {
   vertical-align: middle;
 }
 
-body {
-  background-image: url(../../src/images/bg.jpg);
-  box-shadow: inset 0 98px #161616, inset 0 -234px #161616;
-}
-
 .modify_container {
   padding-top: 6px;
 }
@@ -1035,6 +1030,11 @@ body {
 .feature .carousel_control-next::after {
   content: "next";
   font-family: swiper-icons;
+}
+
+body {
+  background-image: url(../../src/images/bg.jpg);
+  box-shadow: inset 0 98px #161616, inset 0 -234px #161616;
 }
 
 a {
