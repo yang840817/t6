@@ -22,10 +22,6 @@ img {
   vertical-align: middle;
 }
 
-.modify_container {
-  padding-top: 6px;
-}
-
 .display-2 {
   font-size: 28px;
   font-weight: bold;
@@ -1110,6 +1106,10 @@ textarea {
     max-width: 1140px;
   }
 }
+.modify_container {
+  padding-top: 6px;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
