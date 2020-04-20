@@ -1826,6 +1826,7 @@ textarea {
 .choose .card_text {
   margin: 12px 0 0;
   line-height: 19px;
+  color: #636363;
 }
 
 .news_list .display-2 {
@@ -1873,6 +1874,7 @@ textarea {
   margin: 12px 0 0;
   font-size: 13px;
   line-height: 20px;
+  color: #636363;
 }
 
 @media (min-width: 576px) {

@@ -46,6 +46,7 @@
       margin: 12px 0 0;
       font-size: 13px;
       line-height: 20px;
+      color: color.$news-text-color;
 
       @include breakpoint.media-breakpoint-up(sm) {
         margin: 24px 0 0;
