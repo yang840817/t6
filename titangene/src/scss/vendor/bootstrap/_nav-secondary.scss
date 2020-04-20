@@ -23,6 +23,10 @@
       color: color.$nav-secondary-link-color;
       text-transform: uppercase;
       
+      &:hover {
+        color: color.$nav-secondary-link-hover-color;
+      }
+
       &.active {
         color: color.$nav-secondary-link-active-color;
       }

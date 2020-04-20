@@ -742,6 +742,10 @@ body {
   text-transform: uppercase;
 }
 
+.nav--secondary .nav-link:hover {
+  color: #93d200;
+}
+
 .nav--secondary .nav-link.active {
   color: #93d200;
 }
