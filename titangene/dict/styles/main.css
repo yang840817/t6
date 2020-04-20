@@ -1731,6 +1731,7 @@ textarea {
 }
 .welcome {
   padding: 0;
+  background-color: transparent;
 }
 
 .welcome .card_title {
@@ -1792,6 +1793,7 @@ textarea {
   display: flex;
   padding: 12px 8px;
   border-bottom: 1px solid #e7e7e7;
+  background-color: transparent;
 }
 
 @media (min-width: 576px) {
@@ -1833,6 +1835,7 @@ textarea {
 .news {
   display: flex;
   padding: 0;
+  background-color: transparent;
 }
 
 .news + .news {
@@ -2267,6 +2270,7 @@ footer {
 .footer_item {
   padding: 0;
   font-size: 13px;
+  background-color: transparent;
 }
 
 .footer_item .display-3 {
