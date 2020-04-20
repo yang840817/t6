@@ -2,13 +2,19 @@
 
 @if (settings.config(debug) == true) {
   * {
-    // outline: 1px solid red;
-    // background-color: transparent !important;
-    // background-image: none !important;
+    outline: 1px solid red;
+    background-color: transparent !important;
+    background-image: none !important;
   }
 
   img {
-    // opacity: 0.2;
+    opacity: 0.2;
+  }
+
+  @media (min-width: 1200px) {
+    .container-xl {
+      max-width: 1250px !important;
+    }
   }
 
   // screen width: 1364px
