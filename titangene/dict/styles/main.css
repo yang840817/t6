@@ -2302,7 +2302,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 18px;
 }
 
 @media (min-width: 992px) {
@@ -2313,7 +2313,7 @@ footer {
 }
 @media (min-width: 1200px) {
   .footer_bar {
-    padding: 20px 0;
+    padding: 18px 0;
   }
 }
 .footer_nav {

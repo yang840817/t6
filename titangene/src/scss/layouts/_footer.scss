@@ -34,7 +34,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 18px;
 
   @include breakpoint.media-breakpoint-up(lg) {
     flex-direction: row;
@@ -42,7 +42,7 @@ footer {
   }
 
   @include breakpoint.media-breakpoint-up(xl) {
-    padding: 20px 0;
+    padding: 18px 0;
   }
 }
 
