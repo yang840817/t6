@@ -1896,6 +1896,7 @@ textarea {
   border: 1px solid #dcdcdc;
   margin-bottom: 18px;
   background-color: #e7e7e7;
+  border-radius: 2px 2px 2px 0;
 }
 
 .bubble::before {
