@@ -59,6 +59,10 @@
     background-color: color.$presentation-hover-background-color;
     color: color.$presentation-hover-color;
     border: 1px solid color.$presentation-hover-border-color;
+
+    .card_text {
+      font-weight: bold;
+    }
   }
 
   .card {

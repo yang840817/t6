@@ -1682,9 +1682,13 @@ textarea {
   }
 }
 .presentation:hover {
-  background-color: #636363;
+  background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
   border: 1px solid #161616;
+}
+
+.presentation:hover .card_text {
+  font-weight: bold;
 }
 
 .presentation .card_title {
