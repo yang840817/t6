@@ -2007,6 +2007,7 @@ textarea {
 .contact .form_control {
   padding: 4px;
   font-size: 13px;
+  border-radius: 2px;
 }
 
 .contact textarea.form_control {
