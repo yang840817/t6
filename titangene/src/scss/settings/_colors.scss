@@ -3,6 +3,7 @@ $white: #fff;
 $black: #000;
 $black-100: #161616;
 $gray: #636363;
+$gray-100: #949393;
 $green: #81b800;
 $light-green: #93d200;
 $light-gray-100: #f3f3f3;
@@ -34,6 +35,11 @@ $nav-primary-link-color: $black;
 $nav-primary-link-hover-color: $white;
 $nav-primary-link-hover-background-color: $light-green;
 $nav-primary-link-active-background-color: $green;
+
+// nav-secondary
+$nav-secondary-link-color: $gray;
+$nav-secondary-link-active-color: $light-green;
+$nav-secondary-separate-line-color: $gray-100;
 
 
 

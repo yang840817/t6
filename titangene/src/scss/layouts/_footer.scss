@@ -25,6 +25,22 @@ footer {
   padding: 20px;
   
 }
+
+.footer_nav {
+  margin-bottom: 10px;
+
+  .nav {
+    display: block;
+    font-size: 0;
+    text-align: center;
+
+
+    &-item {
+      display: inline-block;
+    }
+  }
+}
+
 .copyright {
   font-size: 14px;
 
