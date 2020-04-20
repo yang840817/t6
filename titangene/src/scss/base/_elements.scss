@@ -1,0 +1,5 @@
+@use "../settings/colors" as color;
+
+a {
+  color: color.$link-color;
+}
