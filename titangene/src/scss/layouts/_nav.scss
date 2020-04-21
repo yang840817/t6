@@ -80,3 +80,16 @@
     }
   }
 }
+
+.is-fixed-top {
+  box-shadow: 1px 0 4px 0 rgba(0, 0, 0, .3);
+
+  .navbar {
+    box-shadow: none;
+  }
+
+  .search {
+    margin-left: 0;
+    box-shadow: none;
+  }
+}
