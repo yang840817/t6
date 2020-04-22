@@ -22,14 +22,4 @@ main {
       padding-bottom: 44px;
     }
   }
-
-  hr {
-    margin: 30px 0;
-    border: none;
-    border-top: 1px solid color.$hr-border-color;
-    
-    @include breakpoint.media-breakpoint-up(sm) {
-      margin: 40px 0 50px;
-    }
-  }
 }

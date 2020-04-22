@@ -1,5 +1,6 @@
 @use "../settings/settings";
 @use "../settings/colors" as color;
+@use "../tools/breakpoint";
 
 body {
   font-size: settings.$font-size-base;
@@ -14,4 +15,10 @@ body {
 
 a {
   color: color.$link-color;
+}
+
+hr {
+  margin: 40px 0 50px;
+  border: none;
+  border-top: 1px solid color.$hr-border-color;
 }
