@@ -1572,6 +1572,14 @@ textarea {
     padding-left: 30px;
   }
 }
+.no-gutters-x {
+  margin-left: 0;
+}
+
+.no-gutters-x > .col, .no-gutters-x > [class*=col-] {
+  padding-left: 0;
+}
+
 .no-gutters-y {
   margin-top: 0;
 }
