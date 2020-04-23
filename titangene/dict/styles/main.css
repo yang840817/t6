@@ -1692,40 +1692,40 @@ textarea {
     flex: 1 0 0;
   }
 }
-.presentation_list {
+.presentation {
   margin-bottom: 32px;
 }
 
 @media (min-width: 992px) {
-  .presentation_list {
+  .presentation {
     position: relative;
     z-index: 1;
     top: -30px;
   }
 }
-.presentation_list .row {
+.presentation .row {
   margin-top: -20px;
   margin-left: -20px;
 }
 
 @media (min-width: 768px) {
-  .presentation_list .row {
+  .presentation .row {
     margin-top: -30px;
     margin-left: -30px;
   }
 }
-.presentation_list [class*=col-] {
+.presentation [class*=col-] {
   padding-top: 20px;
   padding-left: 20px;
 }
 
 @media (min-width: 768px) {
-  .presentation_list [class*=col-] {
+  .presentation [class*=col-] {
     padding-top: 30px;
     padding-left: 30px;
   }
 }
-.presentation {
+.presentation .card {
   padding: 34px 28px 28px 28px;
   text-align: center;
   background-color: #e7e7e7;
@@ -1733,32 +1733,32 @@ textarea {
 }
 
 @media (min-width: 576px) {
-  .presentation {
+  .presentation .card {
     padding: 34px 50px 28px 50px;
   }
 }
 @media (min-width: 768px) {
-  .presentation {
+  .presentation .card {
     padding: 34px 30px 28px 30px;
   }
 }
 @media (min-width: 992px) {
-  .presentation {
+  .presentation .card {
     padding: 34px 20px 28px 20px;
   }
 }
 @media (min-width: 1200px) {
-  .presentation {
+  .presentation .card {
     padding: 34px 28px 28px 28px;
   }
 }
-.presentation:hover {
+.presentation .card:hover {
   background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
   border: 1px solid #161616;
 }
 
-.presentation:hover .card_text {
+.presentation .card:hover .card_text {
   font-weight: bold;
 }
 
