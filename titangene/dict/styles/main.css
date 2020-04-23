@@ -712,6 +712,16 @@ img {
   color: #fff;
 }
 
+.nav--secondary .nav {
+  font-size: 0;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .nav--secondary .nav {
+    text-align: left;
+  }
+}
 .nav--secondary .nav-item + .nav-item {
   padding-left: 10px;
 }
@@ -2402,18 +2412,11 @@ footer {
 }
 .footer_nav .nav {
   display: block;
-  font-size: 0;
-  text-align: center;
 }
 
 @media (min-width: 768px) {
   .footer_nav .nav {
     margin-right: 8px;
-  }
-}
-@media (min-width: 992px) {
-  .footer_nav .nav {
-    text-align: left;
   }
 }
 .footer_nav .nav-item {

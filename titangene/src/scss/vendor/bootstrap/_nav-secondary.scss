@@ -1,7 +1,20 @@
 @use "../../settings/colors" as color;
+@use "../../tools/breakpoint";
+
+
+// *------------------------------------------------*\
+// `.nav--secondary` use Bootstrap nav component
+// *------------------------------------------------*/
 
 .nav--secondary {
   .nav {
+    font-size: 0;
+    text-align: center;
+
+    @include breakpoint.media-breakpoint-up(lg) {
+      text-align: left;
+    }
+
     &-item {
       & + .nav-item {
         padding-left: 10px;

@@ -54,15 +54,9 @@ footer {
 
   .nav {
     display: block;
-    font-size: 0;
-    text-align: center;
 
     @include breakpoint.media-breakpoint-up(md) {
       margin-right: 8px;
-    }
-
-    @include breakpoint.media-breakpoint-up(lg) {
-      text-align: left;
     }
 
     &-item {
