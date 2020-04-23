@@ -1,0 +1,40 @@
+@use '../Utilities/color.scss';
+
+@mixin social-media-image($positionX,$positionY) {
+    width: 30px;
+    height: 28px;
+    background: url(../images/social.png) no-repeat $positionX $positionY;
+}
+
+@mixin body-background{
+    background: linear-gradient(color.$black 15px, transparent 15px,90%,color.$black 90%) no-repeat,
+                url(../images/bg.jpg);
+}
+
+@mixin menu-icon {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+    background-image: url(../images/menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80% 80%;
+}
+
+@mixin search-icon {
+    background-color: color.$background-gray;
+    background-image: url(../images/search.png);
+    background-repeat: no-repeat;
+    background-position: top 7px right 7px;
+}
+
+@mixin dropdown-arrow-black {
+    background-image: url(../images/down-arrow.svg);
+    background-repeat: no-repeat;
+}
+
+@mixin dropdown-arrow-white {
+    background-image: url(../images/down-arrow-white.svg);
+    background-repeat: no-repeat;
+}

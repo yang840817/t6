@@ -1,0 +1,186 @@
+@use './layout/reset.scss';
+@use './Utilities/color.scss';
+@use './Utilities/sizing.scss';
+@use './content/background.scss';
+
+
+body{
+    @include background.body-background
+}
+
+.header{
+    background-image: url(../images/subbg.gif);
+    text-align: center;
+
+    h1{
+        display: inline-block;
+        margin: 1rem 0;
+
+        @media (min-width: 768px) {
+            margin: 0;
+        }
+    }
+
+}
+
+.logo{
+    @media (min-width:768px) {
+        text-align: left;
+    }
+    h1{
+        width: sizing.$width-75;
+        img{
+            width: sizing.$width-full;
+        }
+    }
+}
+
+.social_media_area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    @media (min-width:768px) {
+        align-items: flex-end;
+    }
+    
+    .social_media_icon{
+        display: flex;
+
+        a{
+            .facebook{
+                @include background.social-media-image(2px,0px);
+                &:hover{
+                    @include background.social-media-image(2px,-27px);
+                }
+            }
+            .twitter{
+                @include background.social-media-image(-35px,0px);
+                &:hover{
+                    @include background.social-media-image(-35px,-27px);
+                }
+            }
+            .flickr{
+                @include background.social-media-image(-72px,0px);
+                &:hover{
+                    @include background.social-media-image(-72px,-27px);
+                }
+            }
+            .dribbble{
+                @include background.social-media-image(-109px,0px);
+                &:hover{
+                    @include background.social-media-image(-109px,-27px);
+                }
+            }
+            .rss{
+                @include background.social-media-image(-148px,0px);
+                &:hover{
+                    @include background.social-media-image(-148px,-27px);
+                }
+            }
+        }
+    }
+    .telephone{
+        a{
+            color: color.$black;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.nav_area{        
+    .menu_area{
+        background-color: color.$background-white;
+        text-align: right;
+
+        @media (min-width:768px) {
+            margin-right: 5px;
+        }
+        label{
+            span{ 
+                margin: 12px;
+                @include background.menu-icon;
+            }
+        }
+        #burger{
+            display: none;
+            &:checked+ul{
+                display: block;
+            }
+        }
+        @media (min-width:992px) {
+            label{
+                display: none;
+            }
+        }
+    }
+
+    ul{
+        display: none;
+        text-align: center;
+        @media (min-width:992px) {
+            display: flex;
+        }
+        
+        .home_page{
+            color: color.$font-white;
+            background-color: color.$green;
+        }
+        li{
+            border-right: solid 1px color.$font-gray;
+            position: relative;
+            a{
+                font-size: 0.5rem;
+                color: color.$font-black;
+                text-transform: uppercase;
+                padding: 1.2rem 1.5rem;
+                &:hover{
+                    color: color.$font-white;
+                    background-color: color.$green;
+                }
+            }
+        }
+        .dropdown_menu{
+            position: relative;
+            &:hover>.dropdown_item{
+                display: block;
+            }
+
+            .dropdown_arrow{
+                width: 10px;
+                height: 10px;
+                display: inline-block;
+                @include background.dropdown-arrow-black;
+                &:hover{
+                    @include background.dropdown-arrow-white;
+                }
+            }
+
+            .dropdown_item{
+                width: 100%;
+                display: none;
+                position: absolute;
+                top: 0;
+                right: 100%;
+                background-color: color.$background-white;
+                @media (min-width:992px) {
+                    top:100%;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    .search_box{
+        background-color: color.$background-white;
+        align-items: flex-start;
+        padding: 9px;
+        input{
+            padding: 5px;
+            width: sizing.$width-full;
+            border: solid 2px color.$font-gray;
+            border-radius: 2px;
+            @include background.search-icon;
+        }
+    }
+}
