@@ -1796,6 +1796,15 @@ textarea {
     -webkit-line-clamp: 5;
   }
 }
+.introduce {
+  padding-bottom: 20px;
+}
+
+@media (min-width: 576px) {
+  .introduce {
+    padding-bottom: 44px;
+  }
+}
 .welcome {
   padding: 0;
   background-color: transparent;
@@ -2322,15 +2331,6 @@ main {
 @media (min-width: 992px) {
   main {
     padding: 0 40px 76px;
-  }
-}
-main aside {
-  padding-bottom: 20px;
-}
-
-@media (min-width: 576px) {
-  main aside {
-    padding-bottom: 44px;
   }
 }
 footer {

@@ -1,4 +1,3 @@
-@use "../settings/colors" as color;
 @use "../settings/settings";
 @use "../tools/breakpoint";
 
@@ -13,13 +12,5 @@ main {
 
   @include breakpoint.media-breakpoint-up(lg) {
     padding: 0 40px 76px;
-  }
-
-  aside {
-    padding-bottom: 20px;
-
-    @include breakpoint.media-breakpoint-up(sm) {
-      padding-bottom: 44px;
-    }
   }
 }
