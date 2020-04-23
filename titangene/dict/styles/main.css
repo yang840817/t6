@@ -2215,9 +2215,9 @@ header {
     margin-top: 0;
   }
 }
-.telephone p {
-  margin: 0;
+.telephone address {
   font-size: 14px;
+  font-style: normal;
   line-height: 14px;
 }
 
