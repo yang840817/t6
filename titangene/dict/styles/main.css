@@ -2052,7 +2052,6 @@ textarea {
 
 .button--primary {
   border: none;
-  margin-left: 5px;
   background-color: #81b800;
   color: #fff;
 }
@@ -2102,6 +2101,10 @@ textarea {
 
 .contact .button_group {
   margin-top: 18px;
+}
+
+.contact .button + .button {
+  margin-left: 5px;
 }
 
 .album {

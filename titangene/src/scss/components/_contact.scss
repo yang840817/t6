@@ -19,5 +19,9 @@
     &_group {
       margin-top: 18px;
     }
+
+    & + .button {
+      margin-left: 5px;
+    }
   }
 }
