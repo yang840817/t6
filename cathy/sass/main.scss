@@ -2,6 +2,7 @@
 @use './Utilities/color.scss';
 @use './Utilities/sizing.scss';
 @use './content/background.scss';
+@use './components/banner.scss';
 
 
 body{
@@ -94,7 +95,7 @@ body{
         text-align: right;
 
         @media (min-width:768px) {
-            margin-right: 5px;
+            margin-right: 9px;
         }
         label{
             span{ 
@@ -150,10 +151,7 @@ body{
                 width: 10px;
                 height: 10px;
                 display: inline-block;
-                @include background.dropdown-arrow-black;
-                &:hover{
-                    @include background.dropdown-arrow-white;
-                }
+                @include background.dropdown-arrow;
             }
 
             .dropdown_item{
@@ -175,6 +173,10 @@ body{
         background-color: color.$background-white;
         align-items: flex-start;
         padding: 9px;
+        margin-right: 9px;
+        @media (min-width: 960px) {
+            margin-right: 0;
+        }
         input{
             padding: 5px;
             width: sizing.$width-full;
@@ -184,3 +186,26 @@ body{
         }
     }
 }
+
+.banner_area{
+    height: 80vh;
+    .banner{
+        a{
+            display: none;
+            @media (min-width:576px) {
+                display: inline-block;
+            }
+        }
+        .control_button_left{
+            @include banner.control-button;
+            }
+        }
+        .control_button_right{
+            transform: scaleX(-1);
+            @include banner.control-button;
+        }
+        .control_button_icon{
+            display: none;
+        }
+}
+

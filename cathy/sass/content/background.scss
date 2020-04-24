@@ -29,12 +29,16 @@
     background-position: top 7px right 7px;
 }
 
-@mixin dropdown-arrow-black {
+@mixin dropdown-arrow {
     background-image: url(../images/down-arrow.svg);
     background-repeat: no-repeat;
 }
 
-@mixin dropdown-arrow-white {
-    background-image: url(../images/down-arrow-white.svg);
+@mixin control-button-icon {
+    background-image: url(../images/slider_prev.gif);
+    background-position: top 0px left 0px;
     background-repeat: no-repeat;
+    &:hover{
+        background-position: top -119px left 0px;
+    }
 }
