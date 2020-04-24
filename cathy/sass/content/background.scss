@@ -7,7 +7,7 @@
 }
 
 @mixin body-background{
-    background: linear-gradient(color.$black 15px, transparent 15px,90%,color.$black 90%) no-repeat,
+    background: linear-gradient(color.$black 10vh, transparent 15px,90%,color.$black 90%) no-repeat,
                 url(../images/bg.jpg);
 }
 
