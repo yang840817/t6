@@ -27,19 +27,20 @@
       }
 
       .active > .nav-link {
-        background-color: color.$link-active-background-color;
-        color: color.$link-hover-color;
+        background-color: color.$nav-primary-link-active-background-color;
+        color: color.$nav-primary-link-hover-color;
       }
 
       .nav-link {
-        padding: 18px 30px;
+        padding: 20px 30px;
         font-size: 13px;
+        line-height: 20px;
         text-transform: uppercase;
-        color: color.$link-color;
+        color: color.$nav-primary-link-color;
   
         &:hover {
-          background-color: color.$link-hover-background-color;
-          color: color.$link-hover-color;
+          background-color: color.$nav-primary-link-hover-background-color;
+          color: color.$nav-primary-link-hover-color;
         }
       }
     }
@@ -54,14 +55,19 @@
 
 .nav--primary {
   .dropdown {
-    &-toggle::after {
-      position: absolute;
-      top: 50%;
+    &-toggle {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
     }
 
     &.show .nav-link {
-      background-color: color.$link-hover-background-color;
-      color: color.$link-hover-color;
+      background-color: color.$nav-primary-link-hover-background-color;
+      color: color.$nav-primary-link-hover-color;
     }
 
     &-menu {
@@ -71,20 +77,21 @@
     }
 
     &-item {
-      padding: 14px 24px 14px 40px;
+      padding: 20px 24px 20px 40px;
       font-size: 13px;
+      line-height: 20px;
 
       @include breakpoint.media-breakpoint-up(lg) {
-        padding: 14px 24px;
+        padding: 20px 30px;
       }
 
       & + .dropdown-item {
-        border-top: 1px solid #ebebeb;
+        border-top: 1px solid color.$dropdown-border-color;
       }
   
       &:hover {
-        background-color: color.$link-hover-background-color;
-        color: color.$link-hover-color;
+        background-color: color.$nav-primary-link-hover-background-color;
+        color: color.$nav-primary-link-hover-color;
       }
     }
   }
