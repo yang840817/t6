@@ -10,6 +10,7 @@ body{
 }
 
 .header{
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.5);
     background-image: url(../images/subbg.gif);
     text-align: center;
 
@@ -191,68 +192,164 @@ body{
     }
 }
 
-.banner_area{
-    .banner{
-        a{
-            display: none;
-            @media (min-width:576px) {
-                display: inline-block;
+main{
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.5);
+    background-image: url(../images/subbg.gif);
+    padding: 0 15px;
+    .banner_area{
+        margin: 0 -15px;
+        .banner{
+            a{
+                display: none;
+                @media (min-width:576px) {
+                    display: inline-block;
+                }
             }
-        }
-        .control_button_left{
-            @include banner.control-button;
+            .control_button_left{
+                @include banner.control-button;
+                }
             }
-        }
-        .control_button_right{
-            transform: scaleX(-1);
-            @include banner.control-button;
-        }
-        .control_button_icon{
-            display: none;
-        }
-}
-
-.service_area{
-    position: relative;
-    margin-top: 1rem;
-    @media (min-width:992px) {
-        z-index: 50;
-        top: -30px;
+            .control_button_right{
+                transform: scaleX(-1);
+                @include banner.control-button;
+            }
+            .control_button_icon{
+                display: none;
+            }
     }
-    .card_body{
-        background-color: color.$background-gray;
-        &:hover{
-            background-color: color.$background-black;
-            color: color.$font-white
+    
+    .service_area{
+        position: relative;
+        margin-top: 1rem;
+        @media (min-width:992px) {
+            top: -30px;
         }
-        .card_title{
-            font-size: 14px;
-            font-weight: 600;
+        .card_body{
+            margin-bottom: 30px;
+            background-color: color.$background-gray;
+            &:hover{
+                background-color: color.$background-black;
+                color: color.$font-white;
+            }
+            @media (min-width:992px) {
+                margin-bottom: 0;
+            }
+            .card_title{
+                font-size: 14px;
+                font-weight: 600;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            .card_image{
+                width: 60px;
+                height: 60px;
+                margin: 0 auto;
+            }
+            .card_text{
+                margin: 0 auto;
+                font-size: 14px;
+                text-align: center;
+            }
+            .card_button{
+                width: sizing.$width-50;
+                font-size: 12px;
+                margin: 0 auto;
+                color: color.$font-black;
+                text-transform: capitalize;
+                border: none;
+                background-color: color.$button-gray;
+                &:hover{
+                    color: color.$font-white;
+                    background-color: color.$button-black;
+                }
+                &:active{
+                    color: color.$font-white;
+                    background-color: color.$button-black;
+                }
+            }
+        }
+    }
+
+    .info_area{
+        h2{
             text-align: center;
             text-transform: uppercase;
-        }
-        .card_image{
-            width: 60px;
-            height: 60px;
-            margin: 0 auto;
-        }
-        .card_text{
-            margin: 0 auto;
-            font-size: 14px;
-            text-align: center;
-        }
-        .card_button{
-            width: sizing.$width-50;
-            font-size: 12px;
-            margin: 0 auto;
-            color: color.$font-black;
-            text-transform: capitalize;
-            border: none;
-            background-color: color.$button-gray;
-            &:active{
-                color: color.$font-white;
-                background-color: color.$button-black;
+            margin-bottom: 15px;
+            @media (min-width:992px) {
+                text-align: left;
             }
         }
+        figure{
+            .company_image{
+                @media (min-width:992px) {
+                    margin-bottom: 15px;
+                }
+                img{
+                    width: sizing.$width-full;
+                }
+            }
+            .figure_content{
+                p{
+                    display: inline;
+                    font-size: 14px;
+                    a{
+                        font-size: 16px;
+                        color: color.$font-black;
+                        display: inline;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+        .why_chose_us{
+            .choose_list{
+                .choose_item{
+                    border-bottom: solid 2px color.$background-gray;
+                    .choose_list_style{
+                        display: inline-block;
+                        vertical-align: middle;
+                        @include background.choose-list-style;
+                        margin: 0 5px;
+                        img{
+                            width: 40%;
+                            transform: translate(80%,60%) rotate(-90deg);
+                        }
+                    }
+                    .choose_list_content{
+                        width: sizing.$width-75;
+                        color: color.$font-gray;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+        .news_and_events{
+            .news_item{
+                display: flex;
+                .news_image{
+                    flex: 0 0 45%;
+                    margin-right: 15px;
+                    img{
+                        width: sizing.$width-full
+                    }
+                }
+                .news_content{
+                    flex: 0 0 50%;
+                    time{
+                        color: color.$font-white;
+                        font-weight: 600;
+                        padding: 10px 15px;
+                        margin-bottom: 15px;
+                        background-color: color.$green;
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 1;
+                    }
+                }
+            }
+        }
+
     }
 }
