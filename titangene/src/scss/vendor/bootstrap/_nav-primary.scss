@@ -10,15 +10,20 @@
   .navbar {
     padding: 0;
     background-color: color.$background-color;
-
-    @include breakpoint.media-breakpoint-up(xl) {
-      flex: 1 0 0;
-    }
+    box-shadow: 1px 0 4px 0 rgba(0, 0, 0, .3);
 
     &-toggler {
       padding: 15px;
       border: none;
-      z-index: 1;
+    }
+
+    &-collapse {
+      background-color: color.$background-color;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, .3);
+  
+      @include breakpoint.media-breakpoint-up(lg) {
+        box-shadow: none;
+      }
     }
 
     &-nav {

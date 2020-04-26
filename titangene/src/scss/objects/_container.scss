@@ -2,6 +2,10 @@
 @use "../tools/breakpoint";
 @use "../tools/container";
 
+// *----------------------------------*\
+// base container
+// *----------------------------------*/
+
 // 具有每個斷點的 max-width 的 container
 .container {
   @include container.make-container();
@@ -33,4 +37,15 @@
       }
     }
   }
+}
+
+
+
+// *----------------------------------*\
+// custom container
+// *----------------------------------*/
+
+// 客製化容器
+.modify_container {
+  padding-top: 6px;
 }

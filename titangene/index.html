@@ -12,7 +12,9 @@
 
 <body>
   <div class="container-xl modify_container">
+    <!-- ================= header ================= -->
     <header>
+      <!-- ================= logo ================= -->
       <section class="logo">
         <h1>
           <img src="./src/images/logo.png"
@@ -20,6 +22,8 @@
             alt="logo">
         </h1>
       </section>
+
+      <!-- ================= contact ================= -->
       <section class="contact">
         <section class="social">
           <a href="##"
@@ -39,11 +43,14 @@
             title="RSS"></a>
         </section>
         <div class="telephone">
-          <p>Call Us Now: +1 (777) 784-25-43</p>
+          <address>
+            Call Us Now: <a href="tel:+1777784-25-43">+1 (777) 784-25-43</a>
+          </address>
         </div>
       </section>
     </header>
 
+    <!-- ================= nav primary ================= -->
     <nav class="nav--primary">
       <section class="navbar navbar-expand-lg navbar-light">
         <button class="navbar-toggler"
@@ -148,6 +155,7 @@
       </section>
     </nav>
 
+    <!-- ================= banner (carousel) ================= -->
     <section class="carousel banner">
       <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -171,10 +179,10 @@
 
     <main>
       <!-- ================= presentation ================= -->
-      <section class="presentation_list">
+      <section class="presentation">
         <div class="row">
           <div class="col-12 col-md-6 col-lg-3">
-            <section class="card presentation">
+            <section class="card">
               <h3 class="card_title">Growth Strategies</h3>
               <div class="card_img">
                 <img src="./src/images/p1.png"
@@ -190,7 +198,7 @@
             </section>
           </div>
           <div class="col-12 col-md-6 col-lg-3">
-            <section class="card presentation">
+            <section class="card">
               <h3 class="card_title">Perfect Support</h3>
               <div class="card_img">
                 <img src="./src/images/p2.png"
@@ -206,7 +214,7 @@
             </section>
           </div>
           <div class="col-12 col-md-6 col-lg-3">
-            <section class="card presentation">
+            <section class="card">
               <h3 class="card_title">Partners Programs</h3>
               <div class="card_img">
                 <img src="./src/images/p3.png"
@@ -222,7 +230,7 @@
             </section>
           </div>
           <div class="col-12 col-md-6 col-lg-3">
-            <section class="card presentation">
+            <section class="card">
               <h3 class="card_title">Premium Service</h3>
               <div class="card_img">
                 <img src="./src/images/p4.png"
@@ -240,7 +248,8 @@
         </div>
       </section>
 
-      <aside>
+      <!-- ================= introduce ================= -->
+      <section class="introduce">
         <div class="row">
           <!-- ================= welcome ================= -->
           <div class="col-12 col-md-6 col-lg-5 col-xl-4">
@@ -260,31 +269,19 @@
 
           <!-- ================= choose ================= -->
           <div class="col-12 col-md-6 col-lg-12 col-xl-4 order-lg-1 order-xl-0">
-            <section class="choose_list">
+            <section class="choose choose_list">
               <h2 class="display-2">Why choose us?</h2>
-              <section class="choose card">
-                <div class="card_img"></div>
-                <div class="card_body">
-                  <p class="card_text">Etiam rutrum venenatis dui, non</p>
-                </div>
+              <section class="choose_item">
+                <p class="choose_text">Etiam rutrum venenatis dui, non</p>
               </section>
-              <section class="choose card">
-                <div class="card_img"></div>
-                <div class="card_body">
-                  <p class="card_text">Aliquam ac diam in lorem vulputate auctor.</p>
-                </div>
+              <section class="choose_item">
+                <p class="choose_text">Aliquam ac diam in lorem vulputate auctor.</p>
               </section>
-              <section class="choose card">
-                <div class="card_img"></div>
-                <div class="card_body">
-                  <p class="card_text">Vestibulum vitae urna quis eros convallis</p>
-                </div>
+              <section class="choose_item">
+                <p class="choose_text">Vestibulum vitae urna quis eros convallis</p>
               </section>
-              <section class="choose card">
-                <div class="card_img"></div>
-                <div class="card_body">
-                  <p class="card_text">Sed magna magna, congue</p>
-                </div>
+              <section class="choose_item">
+                <p class="choose_text">Sed magna magna, congue</p>
               </section>
             </section>
           </div>
@@ -322,11 +319,11 @@
             </section>
           </div>
         </div>
-      </aside>
+      </section>
 
       <hr>
 
-      <!-- ================= feature ================= -->
+      <!-- ================= feature (carousel) ================= -->
       <section class="carousel feature">
         <h2 class="display-2">Featured Works</h2>
         <div class="swiper-container">
@@ -362,139 +359,131 @@
         <div class="row">
           <!-- ================= tweets ================= -->
           <div class="col-12 col-md-6 col-xl-3">
-            <section class="card footer_item">
-              <h2 class="card_title display-3">Latest Tweets</h2>
-              <div class="card_body">
-                <p class="card_text">loading tweets...</p>
-              </div>
+            <section class="footer_item">
+              <h2 class="display-3">Latest Tweets</h2>
+              <p>loading tweets...</p>
             </section>
           </div>
 
           <!-- ================= testimonial ================= -->
           <div class="col-12 col-md-6 col-xl-3">
-            <section class="card footer_item">
-              <h2 class="card_title display-3">Testimonials</h2>
-              <div class="card_body">
-                <section class="testimonial">
-                  <div class="testimonial_body bubble">
-                    <p class="bubble_text">"Sed dapibus molesite interdum. Fusce nec est ante, sit amet lacinia lorem. Maecenas nec eros ut mauris pulvinar suscipit. Aliquam erat"</p>
-                  </div>
-                  <div class="testimonial_person">
-                    <div class="media">
-                      <div class="media_img">
-                        <img src="./src/images/men.jpg"
-                          alt="Stephen Bingham">
-                      </div>
-                      <div class="media_body">
-                        <h4 class="media_title">Stephen Bingham</h4>
-                        <a href="##"
-                          class="media_link">demolink.org</a>
-                      </div>
+            <section class="footer_item">
+              <h2 class="display-3">Testimonials</h2>
+              <section class="testimonial">
+                <div class="testimonial_body bubble">
+                  <p class="bubble_text">"Sed dapibus molesite interdum. Fusce nec est ante, sit amet lacinia lorem. Maecenas nec eros ut mauris pulvinar suscipit. Aliquam erat"</p>
+                </div>
+                <div class="testimonial_person">
+                  <div class="media">
+                    <div class="media_img">
+                      <img src="./src/images/men.jpg"
+                        alt="Stephen Bingham">
+                    </div>
+                    <div class="media_body">
+                      <h4 class="media_title">Stephen Bingham</h4>
+                      <a href="http://www.demolink.org"
+                        class="media_link">demolink.org</a>
                     </div>
                   </div>
-                </section>
-              </div>
+                </div>
+              </section>
             </section>
           </div>
 
           <!-- ================= form ================= -->
           <div class="col-12 col-md-6 col-xl-3">
-            <section class="card footer_item">
-              <h2 class="card_title display-3">Get in touch!</h2>
-              <div class="card_body">
-                <form class="form contact">
-                  <input type="text"
-                    class="form_control"
-                    name="name"
-                    placeholder="Name">
-                  <input type="email"
-                    class="form_control"
-                    name="email"
-                    placeholder="Email">
-                  <textarea name="message"
-                    class="form_control"
-                    cols="32"
-                    rows="6"
-                    placeholder="Message"></textarea>
-                  <div class="button_group">
-                    <button type="reset"
-                      class="button button--secondary">Clear Form</button>
-                    <button type="submit"
-                      class="button button--primary">Send!</button>
-                  </div>
-                </form>
-              </div>
+            <section class="footer_item">
+              <h2 class="display-3">Get in touch!</h2>
+              <form class="form contact">
+                <input type="text"
+                  class="form_control"
+                  name="name"
+                  placeholder="Name">
+                <input type="email"
+                  class="form_control"
+                  name="email"
+                  placeholder="Email">
+                <textarea name="message"
+                  class="form_control"
+                  cols="32"
+                  rows="6"
+                  placeholder="Message"></textarea>
+                <div class="button_group">
+                  <button type="reset"
+                    class="button button--secondary">Clear Form</button>
+                  <button type="submit"
+                    class="button button--primary">Send!</button>
+                </div>
+              </form>
             </section>
           </div>
 
           <!-- ================= album ================= -->
           <div class="col-12 col-md-6 col-xl-3">
-            <section class="card footer_item">
-              <h2 class="card_title display-3">Flickr</h2>
-              <div class="card_body">
-                <section class="album">
-                  <a href="##"
-                    class="album_item">
-                    <img src="./src/images/f1.jpg"
-                      alt="album 1">
-                  </a>
-                  <a href="##"
-                    class="album_item">
-                    <img src="./src/images/f2.jpg"
-                      alt="album 2">
-                  </a>
-                  <a href="##"
-                    class="album_item">
-                    <img src="./src/images/f3.jpg"
-                      alt="album 3">
-                  </a>
-                  <a href="##"
-                    class="album_item">
-                    <img src="./src/images/f4.jpg"
-                      alt="album 4">
-                  </a>
-                  <a href="##"
-                    class="album_item">
-                    <img src="./src/images/f5.jpg"
-                      alt="album 5">
-                  </a>
-                  <a href="##"
-                    class="album_item">
-                    <img src="./src/images/f6.jpg"
-                      alt="album 6">
-                  </a>
-                  <a href="##"
-                    class="album_item">
-                    <img src="./src/images/f7.jpg"
-                      alt="album 7">
-                  </a>
-                  <a href="##"
-                    class="album_item">
-                    <img src="./src/images/f8.jpg"
-                      alt="album 8">
-                  </a>
-                  <a href="##"
-                    class="album_item">
-                    <img src="./src/images/f9.jpg"
-                      alt="album 9">
-                  </a>
-                  <a href="##"
-                    class="album_item">
-                    <img src="./src/images/f10.jpg"
-                      alt="album 10">
-                  </a>
-                  <a href="##"
-                    class="album_item">
-                    <img src="./src/images/f11.jpg"
-                      alt="album 11">
-                  </a>
-                  <a href="##"
-                    class="album_item">
-                    <img src="./src/images/f12.jpg"
-                      alt="album 12">
-                  </a>
-                </section>
-              </div>
+            <section class="footer_item">
+              <h2 class="display-3">Flickr</h2>
+              <section class="album">
+                <a href="##"
+                  class="album_item">
+                  <img src="./src/images/f1.jpg"
+                    alt="album 1">
+                </a>
+                <a href="##"
+                  class="album_item">
+                  <img src="./src/images/f2.jpg"
+                    alt="album 2">
+                </a>
+                <a href="##"
+                  class="album_item">
+                  <img src="./src/images/f3.jpg"
+                    alt="album 3">
+                </a>
+                <a href="##"
+                  class="album_item">
+                  <img src="./src/images/f4.jpg"
+                    alt="album 4">
+                </a>
+                <a href="##"
+                  class="album_item">
+                  <img src="./src/images/f5.jpg"
+                    alt="album 5">
+                </a>
+                <a href="##"
+                  class="album_item">
+                  <img src="./src/images/f6.jpg"
+                    alt="album 6">
+                </a>
+                <a href="##"
+                  class="album_item">
+                  <img src="./src/images/f7.jpg"
+                    alt="album 7">
+                </a>
+                <a href="##"
+                  class="album_item">
+                  <img src="./src/images/f8.jpg"
+                    alt="album 8">
+                </a>
+                <a href="##"
+                  class="album_item">
+                  <img src="./src/images/f9.jpg"
+                    alt="album 9">
+                </a>
+                <a href="##"
+                  class="album_item">
+                  <img src="./src/images/f10.jpg"
+                    alt="album 10">
+                </a>
+                <a href="##"
+                  class="album_item">
+                  <img src="./src/images/f11.jpg"
+                    alt="album 11">
+                </a>
+                <a href="##"
+                  class="album_item">
+                  <img src="./src/images/f12.jpg"
+                    alt="album 12">
+                </a>
+              </section>
             </section>
           </div>
         </div>

@@ -5,6 +5,7 @@
   position: sticky;
   top: 0;
   z-index: 10;
+  // navbar 和 search 之間的縫隙中，有一塊佔了約一半的白色區塊
   box-shadow: inset 0 -24px 0 0 #fff;
 
   @include breakpoint.media-breakpoint-up(lg) {
@@ -13,10 +14,16 @@
   }
 
   .navbar {
-    box-shadow: 1px 0 4px 0 rgba(0, 0, 0, .3);
-
     @include breakpoint.media-breakpoint-up(lg) {
       flex: 1 0 0;
+    }
+
+    @include breakpoint.media-breakpoint-up(xl) {
+      flex: 1 0 0;
+    }
+
+    &-toggler {
+      z-index: 1;
     }
   }
 
@@ -26,12 +33,9 @@
     left: 0;
     right: 0;
     z-index: 2;
-    background-color: color.$background-color;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .3);
 
     @include breakpoint.media-breakpoint-up(lg) {
       position: static;
-      box-shadow: none;
     }
   }
 
@@ -78,5 +82,18 @@
         box-shadow: none;
       }
     }
+  }
+}
+
+.is-fixed-top {
+  box-shadow: 1px 0 4px 0 rgba(0, 0, 0, .3);
+
+  .navbar {
+    box-shadow: none;
+  }
+
+  .search {
+    margin-left: 0;
+    box-shadow: none;
   }
 }
