@@ -1,6 +1,10 @@
 @use '../Utilities/color.scss';
 @use '../Utilities/sizing.scss';
 
+%background-shadow{
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.5);
+}
+
 @mixin social-media-image($positionX,$positionY) {
     width: 30px;
     height: 28px;
@@ -25,9 +29,11 @@
 
 @mixin search-icon {
     background-color: color.$background-gray;
-    background-image: url(../images/search.png);
-    background-repeat: no-repeat;
-    background-position: top 7px right 7px;
+    @media (min-width:768px) {
+        background-image: url(../images/search.png);
+        background-repeat: no-repeat;
+        background-position: top 7px right 7px;
+    }
 }
 
 @mixin dropdown-arrow {
@@ -51,4 +57,10 @@
     height: 50px;
     background-color: color.$button-gray;
     border-radius: 50%;
+}
+
+@mixin balloon-triangle {
+    border-top: solid 30px color.$background-gray;
+    border-left: solid 0 color.$button-gray;
+    border-right: solid 60px transparent;
 }

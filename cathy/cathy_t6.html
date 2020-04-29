@@ -51,16 +51,16 @@
         </header>
         <nav class="container-fluid container-sm sticky-top mt-3 px-0 nav_area">
             <div class="row no-gutters">
-                <div class="col-10 col-lg-3 order-lg-2">
+                <div class="col-6 col-md-9 col-lg-3 order-lg-2">
                     <div class="search_box">
                         <input type="text" placeholder="search the site...">
                     </div>
                 </div>
-                <div class="col-2 col-lg-9 order-lg-1">
+                <div class="col-6 col-md-3 col-lg-9 order-lg-1">
                     <div class="menu_area">
                         <label for="burger"><span class="menu_icon"></span></label>
                         <input type="checkbox" id="burger">
-                        <ul>
+                        <ul class="menu_list">
                             <li><a class="home_page" href="##">home</a></li>
                             <li><a href="##">about</a></li>
                             <li class="dropdown_menu">
@@ -178,20 +178,19 @@
                         </div>
                     </div>
                 </div>
-
             </section>
-            <section class="container info_area">
+            <article class="container info_area">
                 <div class="row">
                     <div class="col-12 col-lg-4">
                         <figure>
                             <h2>welcome</h2>
                             <div class="row">
-                                <div class="col-6 col-lg-12">
+                                <div class="col-12 col-md-6 col-lg-12">
                                     <div class="company_image">
                                         <img src="./images/welcome.jpg" alt="company image">
                                     </div>
                                 </div>
-                                <div class="col-6 col-lg-12">
+                                <div class="col-12 col-md-6 col-lg-12">
                                     <div class="figure_content">
                                         <p>Curabitur velit nisl, porttitor viverra molesite quis, Iacinia eget purus. Suspendisse ipsum massa, rutrum in hendrerit malesuada, fermentum id erat...
                                             <a href="##">more</a>
@@ -251,21 +250,130 @@
                             <h2>news & events</h2>
                             <div class="news_item">
                                 <div class="news_image">
-                                    <img src="./images/news1.jpg" alt="news 01">
+                                    <img src="./images/news1.jpg" alt="12.12.12 news01">
                                 </div>
                                 <div class="news_content">
                                     <time datetime="2012-12-12">12.12.12</time>
-                                    <p>Aliquam ac diam in lorem vulputate auctor. Aliquam rhoncus nunc et justo imperdiet blandit...
+                                    <p>Aliquam ac diam in lorem auctor. Aliquam rhoncus nunc et justo blandit...
                                         <a href="##">more</a>
                                     </p>
-
                                 </div>
+                            </div>
+                            <div class="news_item">
+                                <div class="news_image">
+                                    <img src="./images/news2.jpg" alt="12.12.12 news02">
+                                </div>
+                                <div class="news_content">
+                                    <time datetime="2012-12-12">12.12.12</time>
+                                    <p>Aliquam ac diam in lorem auctor. Aliquam rhoncus nunc et justo blandit...
+                                        <a href="##">more</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <hr class="line_gap">
+            <section class="container feature_works">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="photo_gallery">
+                            <h2>feature works</h2>
+                            <div class="swiper-container gallery_content">
+                                <div class="mb-3 gallery_button">
+                                    <div class="swiper-button-next button_next"><img src="./images/down-arrow.svg" alt=""></div>
+                                    <div class="swiper-button-prev button_prev"><img src="./images/down-arrow.svg" alt=""></div>
+                                </div>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide gallery_item"><img src="./images/g1.jpg" alt="feature 01"></div>
+                                    <div class="swiper-slide gallery_item"><img src="./images/g2.jpg" alt="feature 02"></div>
+                                    <div class="swiper-slide gallery_item"><img src="./images/g3.jpg" alt="feature 03"></div>
+                                    <div class="swiper-slide gallery_item"><img src="./images/g4.jpg" alt="feature 04"></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
+        <footer>
+            <div class="container footer_area">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="mb-3 latest_tweets">
+                            <h4>latest tweets</h4>
+                            <p>loading tweets...</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="mb-3 testimonials">
+                            <h4>testimonials</h4>
+                            <div class="p-3 text_balloon">
+                                <p>" Sed dapibus molestie interdum. Fusce nec est ante, sit amet lacinia lorem. Maecenas nec eros ut mauris pulvinar suscipit. Aliquam erat</p>
+                            </div>
+                            <div class="ceo_info">
+                                <div class="mr-3 ceo_image">
+                                    <img src="./images/men.jpg" alt="company ceo">
+                                </div>
+                                <div class="ceo_introduction">
+                                    <span>Stephen Bingham</span>
+                                    <a href="##">demolink.org</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="mb-3 get_in_touch">
+                            <h4>get in touch!</h4>
+                            <form>
+                                <div class="form-group form_group">
+                                    <input type="text" placeholder="name" class="form-control mb-1 name_text" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <input type="email" placeholder="email" class="form-control mb-1 email_text" id="exampleInputPassword1">
+                                    <textarea placeholder="message" class="form-control text_area" id="exampleFormControlTextarea1" rows="5"></textarea>
+                                </div>
+                                <button class="clear_button">clear form</button>
+                                <button class="send_button">send!</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="flickr">
+                            <h4>flickr</h4>
+                            <div class="photo_area">
+                                <a href="##"><img src="./images/f1.jpg" alt="flickr01"></a>
+                                <a href="##"><img src="./images/f2.jpg" alt="flickr02"></a>
+                                <a href="##"><img src="./images/f3.jpg" alt="flickr03"></a>
+                                <a href="##"><img src="./images/f4.jpg" alt="flickr04"></a>
+                                <a href="##"><img src="./images/f5.jpg" alt="flickr05"></a>
+                                <a href="##"><img src="./images/f6.jpg" alt="flickr06"></a>
+                                <a href="##"><img src="./images/f7.jpg" alt="flickr07"></a>
+                                <a href="##"><img src="./images/f8.jpg" alt="flickr08"></a>
+                                <a href="##"><img src="./images/f9.jpg" alt="flickr09"></a>
+                                <a href="##"><img src="./images/f10.jpg" alt="flickr10"></a>
+                                <a href="##"><img src="./images/f11.jpg" alt="flickr11"></a>
+                                <a href="##"><img src="./images/f12.jpg" alt="flickr12"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright_area">
+                <div class="copyright">
+                    <span class="copyright_text">business planet &copy 2020 </span>
+                    <a href="##">Privacy Policy</a>
+                </div>
+                <div class="footer_menu">
+                    <a href="##">home</a>
+                    <a href="##">about</a>
+                    <a href="##">features</a>
+                    <a href="##">portfolio</a>
+                    <a href="##">blog</a>
+                    <a href="##">contacts</a>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <!-- Optional JavaScript -->
@@ -273,5 +381,35 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="./node_modules/swiper/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            breakpoints: {
+                576: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                992 : {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                }
+            },
+        });
+    </script>
 </body>
 </html>
