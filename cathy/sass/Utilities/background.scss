@@ -1,5 +1,5 @@
 @use '../Utilities/color.scss';
-@use '../Utilities/sizing.scss';
+@use '../Utilities/sizing.scss'; 
 
 %background-shadow{
     box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.5);
@@ -30,33 +30,26 @@
 @mixin search-icon {
     background-color: color.$background-gray;
     @media (min-width:768px) {
-        background-image: url(../images/search.png);
-        background-repeat: no-repeat;
-        background-position: top 7px right 7px;
+        background: color.$background-gray url(../images/search.png) no-repeat top 7px right 7px;
     }
 }
 
 @mixin dropdown-arrow {
-    background-image: url(../images/down-arrow.svg);
-    background-repeat: no-repeat;
+    background: url(../images/down-arrow.svg) no-repeat;
 }
 
-
-
-@mixin control-button-icon {
-    background-image: url(../images/slider_prev.gif);
-    background-position: top 0px left 0px;
-    background-repeat: no-repeat;
+@mixin gallery-item-hover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s ease;
+    opacity: 0;
+    background: color.$background-black  url(../images/icon1.png) no-repeat top 50% left 50%;
     &:hover{
-        background-position: top -119px left 0px;
+        opacity: 1;
     }
-}
-
-@mixin choose-list-style {
-    width: 50px;
-    height: 50px;
-    background-color: color.$button-gray;
-    border-radius: 50%;
 }
 
 @mixin balloon-triangle {

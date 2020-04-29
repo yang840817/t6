@@ -6,7 +6,7 @@ $extra-large-size-screen: 1200px;
 $small-size-container:540px;
 $medium-size-container: 720px;
 $large-size-container: 960px;
-$extra-large-size-container: 1140px;
+$extra-large-size-container: 1140px; 
 
 @mixin small-size {
     @media(min-width:$small-size-screen) {

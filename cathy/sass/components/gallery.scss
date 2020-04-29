@@ -1,0 +1,34 @@
+@use '../module/reset.scss';
+@use '../Utilities/color.scss';
+@use '../Utilities/sizing.scss';
+@use '../Utilities/font-size.scss';
+@use '../Utilities/background.scss';
+@use '../element/button.scss';
+@use '/home/cathy/webcamp/t6/cathy/node_modules/swiper/swiper.scss';
+
+.feature_works{
+    .photo_gallery{
+        h2{
+            @extend %font-h2;
+            @media (min-width:992px) {
+                margin-bottom: 0;
+            }
+        }
+        .gallery_button{
+            text-align: right;
+            @media (max-width:992px) {
+                display: none;
+            }
+        }
+        .gallery_item{
+            box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.5);
+            img{
+                width: sizing.$width-full;
+                object-fit: cover;
+            }
+            .gallery_item_hover{
+                @include button.gallery-item-hover;
+            }
+        }
+    }
+}

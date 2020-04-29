@@ -1,0 +1,39 @@
+@use '../Utilities/color.scss';
+@use '../Utilities/sizing.scss';
+@use '../Utilities/font-size.scss';
+@use '../Utilities/background.scss';
+@use '../element/button.scss';
+
+.service_area{
+    position: relative;
+    margin-top: 1rem;
+    @media (min-width:992px) {
+        top: -30px;
+    }
+    .card_body{
+        margin-bottom: 30px;
+        background-color: color.$background-gray;
+        &:hover{
+            background-color: color.$background-black;
+            color: color.$font-white;
+        }
+        @media (min-width:992px) {
+            margin-bottom: 0;
+        }
+        .card_title{
+            @extend %card-title;
+        }
+        .card_image{
+            width: 60px;
+            height: 60px;
+            margin: 0 auto;
+        }
+        .card_text{
+            @extend %context;
+            text-align: center;
+        }
+        .card_button{
+            @extend %gray-more-button;
+        }
+    }
+}

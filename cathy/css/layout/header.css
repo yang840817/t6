@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+*::after {
+  box-sizing: border-box;
+}
+*::before {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, p, ol, ul, li, label, input {
+  margin: 0;
+}
+
+ol, ul, li {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  display: block;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.header {
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+  background-image: url(../images/subbg.gif);
+  text-align: center;
+}
+.header .logo {
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .header .logo {
+    text-align: left;
+  }
+}
+.header .logo h1 {
+  margin: 0 auto 30px;
+  width: 75%;
+}
+@media (min-width: 768px) {
+  .header .logo h1 {
+    margin: 0;
+  }
+}
+.header .logo h1 img {
+  width: 100%;
+}
+.header .social_media_area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .header .social_media_area {
+    align-items: flex-end;
+  }
+}
+.header .social_media_area .social_media_icon {
+  display: flex;
+}
+.header .social_media_area .social_media_icon a .facebook {
+  width: 30px;
+  height: 28px;
+  background: url(../images/social.png) no-repeat 2px 0px;
+}
+.header .social_media_area .social_media_icon a .facebook:hover {
+  width: 30px;
+  height: 28px;
+  background: url(../images/social.png) no-repeat 2px -27px;
+}
+.header .social_media_area .social_media_icon a .twitter {
+  width: 30px;
+  height: 28px;
+  background: url(../images/social.png) no-repeat -35px 0px;
+}
+.header .social_media_area .social_media_icon a .twitter:hover {
+  width: 30px;
+  height: 28px;
+  background: url(../images/social.png) no-repeat -35px -27px;
+}
+.header .social_media_area .social_media_icon a .flickr {
+  width: 30px;
+  height: 28px;
+  background: url(../images/social.png) no-repeat -72px 0px;
+}
+.header .social_media_area .social_media_icon a .flickr:hover {
+  width: 30px;
+  height: 28px;
+  background: url(../images/social.png) no-repeat -72px -27px;
+}
+.header .social_media_area .social_media_icon a .dribbble {
+  width: 30px;
+  height: 28px;
+  background: url(../images/social.png) no-repeat -109px 0px;
+}
+.header .social_media_area .social_media_icon a .dribbble:hover {
+  width: 30px;
+  height: 28px;
+  background: url(../images/social.png) no-repeat -109px -27px;
+}
+.header .social_media_area .social_media_icon a .rss {
+  width: 30px;
+  height: 28px;
+  background: url(../images/social.png) no-repeat -148px 0px;
+}
+.header .social_media_area .social_media_icon a .rss:hover {
+  width: 30px;
+  height: 28px;
+  background: url(../images/social.png) no-repeat -148px -27px;
+}
+.header .social_media_area .telephone a {
+  color: #171717;
+  text-transform: capitalize;
+}
+
+/*# sourceMappingURL=header.css.map */

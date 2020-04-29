@@ -1,12 +1,29 @@
-@use '../content/background.scss';
+@use '../Utilities/color.scss';
+@use '../Utilities/sizing.scss';
+@use '../Utilities/font-size.scss';
+@use '../Utilities/background.scss';
+@use '../element/button.scss';
 
-@mixin control-button {
-    width: 40px;
-    height: 118px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    opacity: 1;
-    @include background.control-button-icon;
+
+.banner_area{
+    margin: 0 -15px;
+    .banner{
+        a{
+            display: none;
+            @media (min-width:576px) {
+                display: inline-block;
+            }
+        }
+        .control_button_left{
+            @include button.control-button;
+            }
+        }
+        .control_button_right{
+            transform: scaleX(-1);
+            @include button.control-button;
+        }
+        .control_button_icon{
+            display: none;
+        }
 }
 

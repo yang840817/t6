@@ -1,0 +1,105 @@
+@use '../module/reset.scss';
+@use '../Utilities/color.scss';
+@use '../Utilities/sizing.scss';
+@use '../Utilities/font-size.scss';
+@use '../Utilities/background.scss';
+@use '../components/banner.scss';
+@use '../components/card.scss';
+@use '../components/gallery.scss';
+@use '../element/button.scss';
+
+main{
+    @extend %background-shadow;
+    background-image: url(../images/subbg.gif);
+    padding: 0 15px 30px;
+    
+
+    .info_area{
+        figure{
+            h2{
+                @extend %font-h2;
+            }
+
+            .company_image{
+                margin-bottom: 15px;
+                position: relative;
+                img{
+                    width: sizing.$width-full;
+                }
+                .company_image_hover{
+                    @include button.company-image-hover;
+                }
+            }
+
+            .figure_content{
+                p{
+                    display: inline-block;
+                    @extend %context;
+                    a{
+                        @extend %more-link;
+                    }
+                }
+            }
+        }
+        .why_chose_us{
+            h2{
+                @extend %font-h2;
+            }
+            .choose_list{
+                .choose_item{
+                    border-bottom: solid 2px color.$background-gray;
+                    .choose_list_style{
+                        @extend %gray-list-button
+                    }
+                    .choose_list_content{
+                        width: sizing.$width-75;
+                        color: color.$font-gray;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+        .news_and_events{
+            h2{
+                @extend %font-h2;
+            }
+            .news_item{
+                display: flex;
+                &:nth-child(even){
+                    margin-bottom: 30px;
+                }
+                .news_image{
+                    flex: 0 0 45%;
+                    margin-right: 15px;
+                    img{
+                        width: sizing.$width-full
+                    }
+                }
+                .news_content{
+                    flex: 0 0 50%;
+                    time{
+                        display: inline-block;
+                        color: color.$font-white;
+                        font-weight: 600;
+                        padding: 5px 10px;
+                        margin-bottom: 10px;
+                        background-color: color.$green;
+                    }
+                    p{
+                        @extend %context;
+                        a{
+                            @extend %more-link;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .line_gap{
+        border-bottom: solid 2px color.$background-gray;
+        margin: 30px 0;
+    }
+
+}
