@@ -33,3 +33,10 @@
     text-align: center;
     text-transform: uppercase;
 }
+
+@mixin copyright-font($font-color,$text-transform) {
+    font-size: 14px;
+    font-weight: 600;
+    color: $font-color;
+    text-transform: $text-transform;
+}

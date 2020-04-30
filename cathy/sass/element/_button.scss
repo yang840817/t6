@@ -63,6 +63,7 @@
     color: color.$font-black;
     text-transform: capitalize;
     border: none;
+    border-radius: 0;
     background-color: color.$button-gray;
     &:hover{
         color: color.$font-white;
@@ -80,9 +81,12 @@
     vertical-align: middle;
     @include choose-list-style;
     margin: 0 5px;
+    &:hover > img{
+        transform: translate(0,15%) rotate(0deg);
+    }
     img{
         width: 40%;
-        transform: translate(80%,60%) rotate(-90deg);
+        transform: translate(15%,0) rotate(-90deg);
     }
 }
 
@@ -108,9 +112,11 @@
     width: sizing.$width-25 * 0.08;
     display: inline-block;
     transform: rotate(90deg);
+    cursor: pointer;
 }
 .button_prev{
     width: sizing.$width-25 * 0.08;
     display: inline-block;
     transform: rotate(-90deg);
+    cursor: pointer;
 }

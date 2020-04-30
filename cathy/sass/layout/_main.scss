@@ -9,10 +9,9 @@
 @use '../element/button.scss';
 
 main{
-    @extend %background-shadow;
+    box-shadow: 1px 1px 5px 1px color.$background-black, 0 -30px 0 0 color.$background-white ;
     background-image: url(../images/subbg.gif);
     padding: 0 15px 30px;
-    
 
     .info_area{
         figure{
@@ -34,6 +33,7 @@ main{
             .figure_content{
                 p{
                     display: inline-block;
+                    color: color.$font-gray;
                     @extend %context;
                     a{
                         @extend %more-link;
@@ -66,12 +66,13 @@ main{
             }
             .news_item{
                 display: flex;
-                &:nth-child(even){
-                    margin-bottom: 30px;
+                margin-bottom: 30px;
+                justify-content: space-between;
+                &:last-child{
+                    margin-bottom: 0;
                 }
                 .news_image{
                     flex: 0 0 45%;
-                    margin-right: 15px;
                     img{
                         width: sizing.$width-full
                     }
@@ -87,6 +88,7 @@ main{
                         background-color: color.$green;
                     }
                     p{
+                        color: color.$font-gray;
                         @extend %context;
                         a{
                             @extend %more-link;
@@ -99,7 +101,7 @@ main{
 
     .line_gap{
         border-bottom: solid 2px color.$background-gray;
-        margin: 30px 0;
+        margin: 30px 15px;
     }
 
 }

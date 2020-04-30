@@ -7,8 +7,8 @@
 @use '../element/button.scss';
 
 footer{
-    margin-top: 60px;
     .footer_area{
+        margin-top: 60px;
         @extend %background-shadow;
         background-image: url(../images/subbg.gif);
         text-align: center;
@@ -27,28 +27,6 @@ footer{
         .testimonials{
             h4{
                 @extend %font-h4;
-            }
-            .text_balloon{
-                background-color: color.$background-gray;
-                // border: solid 1px color.$button-gray;
-                border-radius: 5px;
-                position: relative;
-                &::before{
-                    content: "";
-                    position: absolute;
-                    left: 50%;
-                    bottom: -15px;
-                    transform: translateX(-50%);
-                    @include background.balloon-triangle;
-                    @media (min-width:992px) {
-                        left: 0;
-                        transform: translateX(0);
-                    }
-                }
-                p{
-                    @extend %context;
-                    color: color.$font-gray;
-                }
             }
             .ceo_info{
                 margin-top: 30px;
@@ -92,6 +70,7 @@ footer{
                 .text_area{
                     @extend %input-style;
                     padding: 5px;
+                    resize: none    ;
                 }
             }
             .clear_button{
@@ -135,26 +114,20 @@ footer{
             margin-bottom: 15px;
             text-align: center;
             @media (min-width:992px) {
-                flex: 0 0 50%;
+                flex: 0 0 40%;
                 text-align: left;
                 margin-bottom: 0;
             }
             .copyright_text{
-                font-size: 14px;
-                font-weight: 600;
-                color: color.$font-gray;
-                text-transform: uppercase;
+                @include font-size.copyright-font(color.$font-gray,uppercase);
                 &::after{
                     content: "";
-                    height: auto;
                     border-right: solid 2px color.$font-gray;
                     margin-right: 5px;
                 }
             }
             a{
-                font-size: 14px;
-                font-weight: 600;
-                color: color.$green;
+                @include font-size.copyright-font(color.$green,capitalize);
                 display: inline-block;
             }
         }
@@ -165,16 +138,17 @@ footer{
             flex-direction: column;
             align-items: center;
             @media (min-width:768px) {
-                flex: 0 0 50%;
                 flex-direction: row;
+                justify-content: center;
+            }
+            @media (min-width:992px) {
+                flex: 0 0 60%;
                 justify-content: flex-end;
             }
 
             a{
-                font-size: 14px;
-                font-weight: 600;
-                color: color.$font-gray;
-                text-transform: uppercase;
+                @include font-size.copyright-font(color.$font-gray,uppercase);
+                letter-spacing: 1px;
                 padding: 5px 8px;
                 &:hover{
                     color: color.$green;
@@ -182,8 +156,9 @@ footer{
                 @media (min-width:768px) {
                     border-right: solid 2px color.$font-gray;
                     padding: 0 8px;
-                    &:nth-child(6){
+                    &:last-child{
                         border: none;
+                        padding-right: 0;
                     }
                 }
             }

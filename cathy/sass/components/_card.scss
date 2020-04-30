@@ -13,6 +13,7 @@
     .card_body{
         margin-bottom: 30px;
         background-color: color.$background-gray;
+        border-radius: 0em;
         &:hover{
             background-color: color.$background-black;
             color: color.$font-white;
