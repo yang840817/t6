@@ -116,7 +116,6 @@
     .search_box{
         @extend %background-shadow;
         background-color: color.$background-white;
-        align-items: flex-start;
         padding: 9px;
         margin-right: 9px;
         @media (min-width: 992px) {

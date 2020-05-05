@@ -11,7 +11,7 @@
 main{
     box-shadow: 1px 1px 5px 1px color.$background-black, 0 -30px 0 0 color.$background-white ;
     background-image: url(../images/subbg.gif);
-    padding: 0 15px 30px;
+    padding: 0 30px 45px;
 
     .info_area{
         figure{
@@ -30,7 +30,7 @@ main{
                 }
             }
 
-            .figure_content{
+            figcaption{
                 p{
                     display: inline-block;
                     color: color.$font-gray;

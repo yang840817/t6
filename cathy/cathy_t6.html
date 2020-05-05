@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Reset Css Style -->
-    <link rel="stylesheet" href="./css/layout/reset.css">
     <!-- Bootsrtap Css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Main Css -->
     <link rel="stylesheet" href="./css/web-main.css">
 </head>
 <body>
-    <div class="container-fluid container-sm px-0">
-        <header class="px-3 py-4 mt-3 header">
+    <div class="container px-0">
+        <header class="mt-3 header">
             <div class="row no-gutters">
                 <div class="col-12 col-md-6">
                     <div class="logo">
@@ -49,7 +47,7 @@
                 </div>
             </div>
         </header>
-        <nav class="container-fluid container-sm sticky-top mt-3 px-0 nav_area">
+        <nav class="sticky-top mt-3 px-0 nav_area">
             <div class="row no-gutters">
                 <div class="col-6 col-md-9 col-lg-3 order-lg-2">
                     <div class="search_box">
@@ -135,7 +133,7 @@
                         </button>
                     </div>
             </section>
-            <section class="container service_area">
+            <section class="service_area">
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="px-3 py-4 card card_body">
@@ -179,7 +177,7 @@
                     </div>
                 </div>
             </section>
-            <article class="container info_area">
+            <article class="info_area">
                 <div class="row">
                     <div class="col-12 col-lg-4">
                         <figure>
@@ -192,11 +190,11 @@
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 col-lg-12">
-                                    <div class="figure_content">
+                                    <figcaption>
                                         <p>Curabitur velit nisl, porttitor viverra molesite quis, Iacinia eget purus. Suspendisse ipsum massa, rutrum in hendrerit malesuada, fermentum id erat...
                                             <a href="##">more</a>
                                         </p>
-                                    </div>
+                                    </figcaption>
                                 </div>
                             </div>
                         </figure>
@@ -276,43 +274,39 @@
                 </div>
             </article>
             <hr class="line_gap">
-            <section class="container feature_works">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="photo_gallery">
-                            <h2>feature works</h2>
-                            <div class="swiper-container gallery_content">
-                                <div class="mb-3 gallery_button">
-                                    <div class="swiper-button-next button_next"><img src="./images/down-arrow.svg" alt=""></div>
-                                    <div class="swiper-button-prev button_prev"><img src="./images/down-arrow.svg" alt=""></div>
-                                </div>
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide gallery_item">
-                                        <img src="./images/g1.jpg" alt="feature 01">
-                                        <a href="##" class="gallery_item_hover"></a>
-                                    </div>
-                                    <div class="swiper-slide gallery_item">
-                                        <img src="./images/g2.jpg" alt="feature 02">
-                                        <a href="##" class="gallery_item_hover"></a>
-                                    </div>
-                                    <div class="swiper-slide gallery_item">
-                                        <img src="./images/g3.jpg" alt="feature 03">
-                                        <a href="##" class="gallery_item_hover"></a>
-                                    </div>
-                                    <div class="swiper-slide gallery_item">
-                                        <img src="./images/g4.jpg" alt="feature 04">
-                                        <a href="##" class="gallery_item_hover"></a>
-                                    </div>
-                                </div>
-                                <div class="swiper-pagination"></div>
+            <section class="feature_works">
+                <div class="photo_gallery">
+                    <h2>feature works</h2>
+                    <div class="swiper-container gallery_content">
+                        <div class="mb-3 gallery_button">
+                            <div class="swiper-button-next button_next"><img src="./images/down-arrow.svg" alt=""></div>
+                            <div class="swiper-button-prev button_prev"><img src="./images/down-arrow.svg" alt=""></div>
+                        </div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide gallery_item">
+                                <img src="./images/g1.jpg" alt="feature 01">
+                                <a href="##" class="gallery_item_hover"></a>
+                            </div>
+                            <div class="swiper-slide gallery_item">
+                                <img src="./images/g2.jpg" alt="feature 02">
+                                <a href="##" class="gallery_item_hover"></a>
+                            </div>
+                            <div class="swiper-slide gallery_item">
+                                <img src="./images/g3.jpg" alt="feature 03">
+                                <a href="##" class="gallery_item_hover"></a>
+                            </div>
+                            <div class="swiper-slide gallery_item">
+                                <img src="./images/g4.jpg" alt="feature 04">
+                                <a href="##" class="gallery_item_hover"></a>
                             </div>
                         </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </section>
         </main>
         <footer>
-            <div class="container footer_area">
+            <div class="footer_area">
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="mb-3 latest_tweets">
@@ -415,11 +409,11 @@
             breakpoints: {
                 576: {
                     slidesPerView: 2,
-                    spaceBetween: 20,
+                    spaceBetween: 30,
                 },
                 992 : {
                     slidesPerView: 4,
-                    spaceBetween: 40,
+                    spaceBetween: 30,
                 }
             },
         });

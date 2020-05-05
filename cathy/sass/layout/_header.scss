@@ -8,12 +8,9 @@
     @extend %background-shadow;
     background-image: url(../images/subbg.gif);
     text-align: center;
+    padding: 15px 30px;
 
     .logo{
-        justify-content: center;
-        @media (min-width:768px) {
-            text-align: left;
-        }
         h1{
             margin: 0 auto 30px;
             width: sizing.$width-75;

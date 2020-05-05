@@ -14,13 +14,13 @@ footer .footer_area .latest_tweets h4, footer .footer_area .testimonials h4, foo
   margin-bottom: 15px;
 }
 
-footer .footer_area .latest_tweets p, footer .footer_area .testimonials .ceo_info .ceo_introduction span, footer .footer_area .testimonials .ceo_info .ceo_introduction a, main .info_area figure .figure_content p, main .info_area .news_and_events .news_item .news_content p, .service_area .card_body .card_text, .text_balloon p {
+footer .footer_area .latest_tweets p, footer .footer_area .testimonials .ceo_info .ceo_introduction span, footer .footer_area .testimonials .ceo_info .ceo_introduction a, main .info_area figure figcaption p, main .info_area .news_and_events .news_item .news_content p, .service_area .card_body .card_text, .text_balloon p {
   margin: 0 auto;
   font-size: 14px;
   line-height: 1.2;
 }
 
-main .info_area figure .figure_content p a, main .info_area .news_and_events .news_item .news_content p a {
+main .info_area figure figcaption p a, main .info_area .news_and_events .news_item .news_content p a {
   font-size: 16px;
   color: #171717;
   display: inline;
@@ -116,14 +116,7 @@ button {
 .header {
   background-image: url(../images/subbg.gif);
   text-align: center;
-}
-.header .logo {
-  justify-content: center;
-}
-@media (min-width: 768px) {
-  .header .logo {
-    text-align: left;
-  }
+  padding: 15px 30px;
 }
 .header .logo h1 {
   margin: 0 auto 30px;
@@ -319,7 +312,6 @@ button {
 }
 .nav_area .search_box {
   background-color: #fff;
-  align-items: flex-start;
   padding: 9px;
   margin-right: 9px;
 }
@@ -411,7 +403,7 @@ footer .footer_area .get_in_touch .send_button {
 }
 
 .banner_area {
-  margin: 0 -15px;
+  margin: 0 -30px;
 }
 .banner_area .banner a {
   display: none;
@@ -452,11 +444,12 @@ footer .footer_area .get_in_touch .send_button {
 
 .service_area {
   position: relative;
-  margin-top: 1rem;
+  margin-top: 30px;
 }
 @media (min-width: 992px) {
   .service_area {
     top: -30px;
+    margin: 0;
   }
 }
 .service_area .card_body {
@@ -626,7 +619,6 @@ footer .footer_area .get_in_touch .send_button {
 }
 .feature_works .photo_gallery .gallery_item img {
   width: 100%;
-  object-fit: cover;
 }
 .feature_works .photo_gallery .gallery_item .gallery_item_hover {
   width: 100%;
@@ -645,7 +637,7 @@ footer .footer_area .get_in_touch .send_button {
 main {
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5), 0 -30px 0 0 #fff;
   background-image: url(../images/subbg.gif);
-  padding: 0 15px 30px;
+  padding: 0 30px 45px;
 }
 main .info_area figure .company_image {
   margin-bottom: 15px;
@@ -667,7 +659,7 @@ main .info_area figure .company_image .company_image_hover {
 main .info_area figure .company_image .company_image_hover:hover {
   opacity: 1;
 }
-main .info_area figure .figure_content p {
+main .info_area figure figcaption p {
   display: inline-block;
   color: #8f8f8f;
 }
@@ -723,8 +715,10 @@ footer .footer_area .get_in_touch form .name_text, footer .footer_area .get_in_t
   border-radius: 5px;
 }
 
-footer .footer_area {
+footer {
   margin-top: 60px;
+}
+footer .footer_area {
   background-image: url(../images/subbg.gif);
   text-align: center;
   padding: 30px;
@@ -775,8 +769,8 @@ footer .footer_area .flickr .photo_area {
   flex-wrap: wrap;
 }
 footer .footer_area .flickr .photo_area a {
-  width: calc((100% - 15px) / 4);
-  margin-bottom: 5px;
+  flex: 0 0 23%;
+  margin-bottom: 8px;
 }
 footer .footer_area .flickr .photo_area img {
   width: 100%;
@@ -785,7 +779,6 @@ footer .footer_area .flickr .photo_area img {
 footer .copyright_area {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   padding: 15px 0;
 }
 footer .copyright_area .copyright {

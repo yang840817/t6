@@ -7,8 +7,8 @@
 @use '../element/button.scss';
 
 footer{
+    margin-top: 60px;
     .footer_area{
-        margin-top: 60px;
         @extend %background-shadow;
         background-image: url(../images/subbg.gif);
         text-align: center;
@@ -92,9 +92,8 @@ footer{
                 justify-content: space-between;
                 flex-wrap: wrap;
                 a{
-                    width: calc((100% - 15px) / 4);
-                    margin-bottom: 5px;
-                    // margin-right: 5px;
+                    flex: 0 0 23%;
+                    margin-bottom: 8px;
                 }
                 img{
                     width: sizing.$width-full;
@@ -106,7 +105,6 @@ footer{
     .copyright_area{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         padding: 15px 0;
 
         .copyright{
