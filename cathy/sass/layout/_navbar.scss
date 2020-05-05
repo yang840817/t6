@@ -52,6 +52,7 @@
                 font-size: 0.5rem;
                 color: color.$font-black;
                 text-transform: uppercase;
+                line-height: 16px;
                 padding: 1.2rem 1.5rem;
                 border-bottom: solid 1px color.$button-gray;
                 &:hover{
@@ -64,6 +65,7 @@
                 }
             }
         }
+
         .dropdown_menu{
             position: relative;
             &:hover .dropdown_item {
@@ -107,6 +109,7 @@
                 width: 10px;
                 height: 10px;
                 display: inline-block;
+                vertical-align: middle;
                 @include background.dropdown-arrow;
             }
         }
@@ -125,7 +128,7 @@
         input{
             padding: 5px;
             width: sizing.$width-full;
-            border: solid 2px color.$button-gray;
+            border: solid 1px color.$button-gray;
             border-radius: 2px;
             @include background.search-icon;
         }

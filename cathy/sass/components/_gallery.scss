@@ -26,7 +26,8 @@
                 width: sizing.$width-full;
             }
             .gallery_item_hover{
-                @include button.gallery-item-hover;
+                @include background.image-hover;
+                background: color.$background-black  url(../images/icon1.png) no-repeat top 50% left 50%;
             }
         }
     }

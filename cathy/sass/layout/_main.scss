@@ -27,6 +27,7 @@ main{
                 }
                 .company_image_hover{
                     @include button.company-image-hover;
+                    background: color.$background-black url(../images/icon2.png) no-repeat top 50% left 50%;
                 }
             }
 

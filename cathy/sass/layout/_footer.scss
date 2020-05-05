@@ -59,26 +59,24 @@ footer{
                 @extend %font-h4;
             }
             form{
-                .name_text{
+                input{
                     @extend %input-style;
                     padding: 5px;
                 }
-                .email_text{
-                    @extend %input-style;
-                    padding: 5px;
-                }
-                .text_area{
+                textarea{
                     @extend %input-style;
                     padding: 5px;
                     resize: none    ;
                 }
             }
             .clear_button{
-                @extend %form-darkgray-button;
+                @extend %form-button;
+                background-color: color.$button-darkgray;
                 padding: 5px 10px;
             }
             .send_button{
-                @extend %form-green-button;
+                @extend %form-button;
+                background-color: color.$green;
                 padding: 5px 10px;
             }
         }
@@ -109,12 +107,10 @@ footer{
 
         .copyright{
             flex: 0 0 100%;
-            margin-bottom: 15px;
             text-align: center;
             @media (min-width:992px) {
                 flex: 0 0 40%;
                 text-align: left;
-                margin-bottom: 0;
             }
             .copyright_text{
                 @include font-size.copyright-font(color.$font-gray,uppercase);
@@ -135,6 +131,7 @@ footer{
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-bottom: 15px;
             @media (min-width:768px) {
                 flex-direction: row;
                 justify-content: center;
@@ -142,6 +139,7 @@ footer{
             @media (min-width:992px) {
                 flex: 0 0 60%;
                 justify-content: flex-end;
+                margin-bottom: 0;
             }
 
             a{

@@ -11,10 +11,11 @@
         top: -30px;
         margin: 0;
     }
-    .card_body{
-        margin-bottom: 30px;
+    .card_content{
         background-color: color.$background-gray;
         border-radius: 0em;
+        text-align: center;
+        margin-bottom: 30px;
         &:hover{
             background-color: color.$background-black;
             color: color.$font-white;
@@ -32,6 +33,10 @@
         }
         .card_text{
             @extend %context;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
+            overflow: hidden;
             text-align: center;
         }
         .card_button{

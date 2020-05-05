@@ -14,7 +14,7 @@ footer .footer_area .latest_tweets h4, footer .footer_area .testimonials h4, foo
   margin-bottom: 15px;
 }
 
-footer .footer_area .latest_tweets p, footer .footer_area .testimonials .ceo_info .ceo_introduction span, footer .footer_area .testimonials .ceo_info .ceo_introduction a, main .info_area figure figcaption p, main .info_area .news_and_events .news_item .news_content p, .service_area .card_body .card_text, .text_balloon p {
+footer .footer_area .latest_tweets p, footer .footer_area .testimonials .ceo_info .ceo_introduction span, footer .footer_area .testimonials .ceo_info .ceo_introduction a, main .info_area figure figcaption p, main .info_area .news_and_events .news_item .news_content p, .service_area .card_content .card_text, .text_balloon p {
   margin: 0 auto;
   font-size: 14px;
   line-height: 1.2;
@@ -27,7 +27,7 @@ main .info_area figure figcaption p a, main .info_area .news_and_events .news_it
   text-transform: capitalize;
 }
 
-.service_area .card_body .card_title {
+.service_area .card_content .card_title {
   font-size: 14px;
   font-weight: 600;
   text-align: center;
@@ -115,7 +115,6 @@ button {
 
 .header {
   background-image: url(../images/subbg.gif);
-  text-align: center;
   padding: 15px 30px;
 }
 .header .logo h1 {
@@ -250,6 +249,7 @@ button {
   font-size: 0.5rem;
   color: #171717;
   text-transform: uppercase;
+  line-height: 16px;
   padding: 1.2rem 1.5rem;
   border-bottom: solid 1px #cecece;
 }
@@ -308,6 +308,7 @@ button {
   width: 10px;
   height: 10px;
   display: inline-block;
+  vertical-align: middle;
   background: url(../images/down-arrow.svg) no-repeat;
 }
 .nav_area .search_box {
@@ -324,7 +325,7 @@ button {
 .nav_area .search_box input {
   padding: 5px;
   width: 100%;
-  border: solid 2px #cecece;
+  border: solid 1px #cecece;
   border-radius: 2px;
   background-color: #e8e8e8;
 }
@@ -334,7 +335,7 @@ button {
   }
 }
 
-.service_area .card_body .card_button {
+.service_area .card_content .card_button {
   width: 50%;
   font-size: 12px;
   margin: 0 auto;
@@ -344,11 +345,11 @@ button {
   border-radius: 0;
   background-color: #cecece;
 }
-.service_area .card_body .card_button:hover {
+.service_area .card_content .card_button:hover {
   color: #fff;
   background-color: #2c2d2f;
 }
-.service_area .card_body .card_button:active {
+.service_area .card_content .card_button:active {
   color: #fff;
   background-color: #2c2d2f;
 }
@@ -370,36 +371,26 @@ main .info_area .why_chose_us .choose_list .choose_item .choose_list_style img {
   transform: translate(15%, 0) rotate(-90deg);
 }
 
-footer .footer_area .get_in_touch .clear_button {
+footer .footer_area .get_in_touch .clear_button, footer .footer_area .get_in_touch .send_button {
   font-size: 14px;
   font-weight: 600;
   color: #fff;
   text-transform: uppercase;
   border: none;
-  background-color: #2c2d2f;
 }
 
-footer .footer_area .get_in_touch .send_button {
-  font-size: 14px;
-  font-weight: 600;
-  color: #fff;
-  text-transform: uppercase;
-  border: none;
-  background-color: #81b70c;
+.button_prev, .button_next {
+  width: 2%;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .button_next {
-  width: 2%;
-  display: inline-block;
   transform: rotate(90deg);
-  cursor: pointer;
 }
 
 .button_prev {
-  width: 2%;
-  display: inline-block;
   transform: rotate(-90deg);
-  cursor: pointer;
 }
 
 .banner_area {
@@ -452,26 +443,31 @@ footer .footer_area .get_in_touch .send_button {
     margin: 0;
   }
 }
-.service_area .card_body {
-  margin-bottom: 30px;
+.service_area .card_content {
   background-color: #e8e8e8;
   border-radius: 0em;
+  text-align: center;
+  margin-bottom: 30px;
 }
-.service_area .card_body:hover {
+.service_area .card_content:hover {
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
 }
 @media (min-width: 992px) {
-  .service_area .card_body {
+  .service_area .card_content {
     margin-bottom: 0;
   }
 }
-.service_area .card_body .card_image {
+.service_area .card_content .card_image {
   width: 60px;
   height: 60px;
   margin: 0 auto;
 }
-.service_area .card_body .card_text {
+.service_area .card_content .card_text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
   text-align: center;
 }
 @font-face {
@@ -655,6 +651,7 @@ main .info_area figure .company_image .company_image_hover {
   transition: 0.5s ease;
   opacity: 0;
   background: rgba(0, 0, 0, 0.5) url(../images/icon2.png) no-repeat top 50% left 50%;
+  background: rgba(0, 0, 0, 0.5) url(../images/icon2.png) no-repeat top 50% left 50%;
 }
 main .info_area figure .company_image .company_image_hover:hover {
   opacity: 1;
@@ -705,7 +702,7 @@ main .line_gap {
   margin: 30px 15px;
 }
 
-footer .footer_area .get_in_touch form .name_text, footer .footer_area .get_in_touch form .email_text, footer .footer_area .get_in_touch form .text_area {
+footer .footer_area .get_in_touch form input, footer .footer_area .get_in_touch form textarea {
   width: 100%;
   height: 12.5%;
   font-size: 10px;
@@ -747,20 +744,19 @@ footer .footer_area .testimonials .ceo_info .ceo_introduction a {
   font-weight: 600;
   font-style: oblique;
 }
-footer .footer_area .get_in_touch form .name_text {
+footer .footer_area .get_in_touch form input {
   padding: 5px;
 }
-footer .footer_area .get_in_touch form .email_text {
-  padding: 5px;
-}
-footer .footer_area .get_in_touch form .text_area {
+footer .footer_area .get_in_touch form textarea {
   padding: 5px;
   resize: none;
 }
 footer .footer_area .get_in_touch .clear_button {
+  background-color: #2c2d2f;
   padding: 5px 10px;
 }
 footer .footer_area .get_in_touch .send_button {
+  background-color: #81b70c;
   padding: 5px 10px;
 }
 footer .footer_area .flickr .photo_area {
@@ -783,14 +779,12 @@ footer .copyright_area {
 }
 footer .copyright_area .copyright {
   flex: 0 0 100%;
-  margin-bottom: 15px;
   text-align: center;
 }
 @media (min-width: 992px) {
   footer .copyright_area .copyright {
     flex: 0 0 40%;
     text-align: left;
-    margin-bottom: 0;
   }
 }
 footer .copyright_area .copyright .copyright_text {
@@ -816,6 +810,7 @@ footer .copyright_area .footer_menu {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 15px;
 }
 @media (min-width: 768px) {
   footer .copyright_area .footer_menu {
@@ -827,6 +822,7 @@ footer .copyright_area .footer_menu {
   footer .copyright_area .footer_menu {
     flex: 0 0 60%;
     justify-content: flex-end;
+    margin-bottom: 0;
   }
 }
 footer .copyright_area .footer_menu a {
