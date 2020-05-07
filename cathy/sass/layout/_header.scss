@@ -1,7 +1,7 @@
-@use '../module/reset.scss';
+@use '../Utilities/reset';
 @use '../Utilities/color.scss';
 @use '../Utilities/sizing.scss';
-@use '../Utilities/font-size.scss';
+@use '../Utilities/font.scss';
 @use '../Utilities/background.scss';
 
 .header{
@@ -10,15 +10,15 @@
     padding: 15px 30px;
 
     .logo{
-        h1{
-            margin: 0 auto 30px;
-            width: sizing.$width-75;
-            @media(min-width:768px) {
-                margin: 0;
-            }
-            img{
-                width: sizing.$width-full;
-            }
+        width: sizing.$width-75;
+        margin: 0 auto 30px;
+        text-align: center;
+        @media(min-width:768px) {
+            text-align: left;
+            margin: 0;
+        }
+        img{
+            width: sizing.$width-full;
         }
     }
     .social_media_area{
@@ -32,41 +32,40 @@
         
         .social_media_icon{
             display: flex;
-    
-            a{
-                .facebook{
-                    @include background.social-media-image(2px,0px);
-                    &:hover{
-                        @include background.social-media-image(2px,-27px);
-                    }
+
+            .facebook{
+                @include background.social-media-image(2px,0px);
+                &:hover{
+                    @include background.social-media-image(2px,-27px);
                 }
-                .twitter{
-                    @include background.social-media-image(-35px,0px);
-                    &:hover{
-                        @include background.social-media-image(-35px,-27px);
-                    }
+            }
+            .twitter{
+                @include background.social-media-image(-35px,0px);
+                &:hover{
+                    @include background.social-media-image(-35px,-27px);
                 }
-                .flickr{
-                    @include background.social-media-image(-72px,0px);
-                    &:hover{
-                        @include background.social-media-image(-72px,-27px);
-                    }
+            }
+            .flickr{
+                @include background.social-media-image(-72px,0px);
+                &:hover{
+                    @include background.social-media-image(-72px,-27px);
                 }
-                .dribbble{
-                    @include background.social-media-image(-109px,0px);
-                    &:hover{
-                        @include background.social-media-image(-109px,-27px);
-                    }
+            }
+            .dribbble{
+                @include background.social-media-image(-109px,0px);
+                &:hover{
+                    @include background.social-media-image(-109px,-27px);
                 }
-                .rss{
-                    @include background.social-media-image(-148px,0px);
-                    &:hover{
-                        @include background.social-media-image(-148px,-27px);
-                    }
+            }
+            .rss{
+                @include background.social-media-image(-148px,0px);
+                &:hover{
+                    @include background.social-media-image(-148px,-27px);
                 }
             }
         }
         .telephone{
+            margin-bottom: 0;
             a{
                 color: color.$black;
                 text-transform: capitalize;

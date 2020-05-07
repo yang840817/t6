@@ -1,7 +1,7 @@
-@use '../module/reset.scss';
+@use '../Utilities/reset';
 @use '../Utilities/color.scss';
 @use '../Utilities/sizing.scss';
-@use '../Utilities/font-size.scss';
+@use '../Utilities/font.scss';
 @use '../Utilities/background.scss'; 
 
 .nav_area{  

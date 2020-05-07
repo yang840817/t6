@@ -1,7 +1,7 @@
-@use '../module/reset.scss';
+@use '../Utilities/reset';
 @use '../Utilities/color.scss';
 @use '../Utilities/sizing.scss';
-@use '../Utilities/font-size.scss';
+@use '../Utilities/font.scss';
 @use '../Utilities/background.scss';
 @use '../components/form.scss';
 @use '../element/button.scss';
@@ -113,7 +113,7 @@ footer{
                 text-align: left;
             }
             .copyright_text{
-                @include font-size.copyright-font(color.$font-gray,uppercase);
+                @include font.copyright-font(color.$font-gray,uppercase);
                 &::after{
                     content: "";
                     border-right: solid 2px color.$font-gray;
@@ -121,7 +121,7 @@ footer{
                 }
             }
             a{
-                @include font-size.copyright-font(color.$green,capitalize);
+                @include font.copyright-font(color.$green,capitalize);
                 display: inline-block;
             }
         }
@@ -143,7 +143,7 @@ footer{
             }
 
             a{
-                @include font-size.copyright-font(color.$font-gray,uppercase);
+                @include font.copyright-font(color.$font-gray,uppercase);
                 letter-spacing: 1px;
                 padding: 5px 8px;
                 &:hover{

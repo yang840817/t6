@@ -117,16 +117,18 @@ button {
   background-image: url(../images/subbg.gif);
   padding: 15px 30px;
 }
-.header .logo h1 {
-  margin: 0 auto 30px;
+.header .logo {
   width: 75%;
+  margin: 0 auto 30px;
+  text-align: center;
 }
 @media (min-width: 768px) {
-  .header .logo h1 {
+  .header .logo {
+    text-align: left;
     margin: 0;
   }
 }
-.header .logo h1 img {
+.header .logo img {
   width: 100%;
 }
 .header .social_media_area {
@@ -142,55 +144,58 @@ button {
 .header .social_media_area .social_media_icon {
   display: flex;
 }
-.header .social_media_area .social_media_icon a .facebook {
+.header .social_media_area .social_media_icon .facebook {
   width: 30px;
   height: 28px;
   background: url(../images/social.png) no-repeat 2px 0px;
 }
-.header .social_media_area .social_media_icon a .facebook:hover {
+.header .social_media_area .social_media_icon .facebook:hover {
   width: 30px;
   height: 28px;
   background: url(../images/social.png) no-repeat 2px -27px;
 }
-.header .social_media_area .social_media_icon a .twitter {
+.header .social_media_area .social_media_icon .twitter {
   width: 30px;
   height: 28px;
   background: url(../images/social.png) no-repeat -35px 0px;
 }
-.header .social_media_area .social_media_icon a .twitter:hover {
+.header .social_media_area .social_media_icon .twitter:hover {
   width: 30px;
   height: 28px;
   background: url(../images/social.png) no-repeat -35px -27px;
 }
-.header .social_media_area .social_media_icon a .flickr {
+.header .social_media_area .social_media_icon .flickr {
   width: 30px;
   height: 28px;
   background: url(../images/social.png) no-repeat -72px 0px;
 }
-.header .social_media_area .social_media_icon a .flickr:hover {
+.header .social_media_area .social_media_icon .flickr:hover {
   width: 30px;
   height: 28px;
   background: url(../images/social.png) no-repeat -72px -27px;
 }
-.header .social_media_area .social_media_icon a .dribbble {
+.header .social_media_area .social_media_icon .dribbble {
   width: 30px;
   height: 28px;
   background: url(../images/social.png) no-repeat -109px 0px;
 }
-.header .social_media_area .social_media_icon a .dribbble:hover {
+.header .social_media_area .social_media_icon .dribbble:hover {
   width: 30px;
   height: 28px;
   background: url(../images/social.png) no-repeat -109px -27px;
 }
-.header .social_media_area .social_media_icon a .rss {
+.header .social_media_area .social_media_icon .rss {
   width: 30px;
   height: 28px;
   background: url(../images/social.png) no-repeat -148px 0px;
 }
-.header .social_media_area .social_media_icon a .rss:hover {
+.header .social_media_area .social_media_icon .rss:hover {
   width: 30px;
   height: 28px;
   background: url(../images/social.png) no-repeat -148px -27px;
+}
+.header .social_media_area .telephone {
+  margin-bottom: 0;
 }
 .header .social_media_area .telephone a {
   color: #171717;
