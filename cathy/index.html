@@ -6,7 +6,7 @@
     <!-- Bootsrtap Css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Swiper Css -->
-    <link rel="stylesheet" href="../package/css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <!-- Main Css -->
     <link rel="stylesheet" href="./css/web-main.css">
 </head>
@@ -277,8 +277,8 @@
                     <h2>feature works</h2>
                     <div class="swiper-container gallery_content">
                         <div class="mb-3 gallery_button">
-                            <div class="swiper-button-next button_next"><img src="./images/down-arrow.svg" alt=""></div>
-                            <div class="swiper-button-prev button_prev"><img src="./images/down-arrow.svg" alt=""></div>
+                            <div class="button_next"><img src="./images/down-arrow.svg" alt=""></div>
+                            <div class="button_prev"><img src="./images/down-arrow.svg" alt=""></div>
                         </div>
                         <div class="swiper-wrapper">
                             <div class="swiper-slide gallery_item">
@@ -399,8 +399,8 @@
             loopFillGroupWithBlank: true,
 
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.button_next',
+                prevEl: '.button_prev',
             },
 
             breakpoints: {
