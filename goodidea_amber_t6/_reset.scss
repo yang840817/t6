@@ -1,0 +1,20 @@
+$margin_0: 0;
+$padding_0: 0;
+%margin{
+  margin: $margin_0;
+}
+%padding{
+  padding: $padding_0;
+}
+
+
+h1{
+  @extend %margin;
+}
+ul{
+  @extend %margin;
+  @extend %padding;
+}
+p{
+  @extend %margin;
+}
