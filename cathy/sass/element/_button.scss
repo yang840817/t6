@@ -1,7 +1,7 @@
-@use '../Utilities/color.scss';
-@use '../Utilities/sizing.scss';
-@use '../Utilities/font.scss';
-@use '../Utilities/background.scss';
+@use '../utility/color.scss';
+@use '../utility/sizing.scss';
+@use '../utility/font.scss';
+@use '../utility/background.scss';
 
 
 @mixin control-button-icon {
@@ -27,7 +27,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    transition: .5s ease;
+    transition: opacity .5s ease;
     opacity: 0;
     background: color.$background-black url(../images/icon2.png) no-repeat top 50% left 50%;
     &:hover{
@@ -85,7 +85,7 @@
 }
 
 %gallery-button{
-    width: sizing.$width-25 * 0.08;
+    width: 1.5rem;
     display: inline-block;
     cursor: pointer;
 }

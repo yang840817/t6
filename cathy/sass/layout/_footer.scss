@@ -1,8 +1,8 @@
-@use '../Utilities/reset';
-@use '../Utilities/color.scss';
-@use '../Utilities/sizing.scss';
-@use '../Utilities/font.scss';
-@use '../Utilities/background.scss';
+@use '../utility/reset';
+@use '../utility/color.scss';
+@use '../utility/sizing.scss';
+@use '../utility/font.scss';
+@use '../utility/background.scss';
 @use '../components/form.scss';
 @use '../element/button.scss';
 
@@ -91,7 +91,11 @@ footer{
                 flex-wrap: wrap;
                 a{
                     flex: 0 0 23%;
-                    margin-bottom: 8px;
+                    margin-bottom: 5px;
+                    margin-right: 5px;
+                    &:nth-child(4n){
+                        margin-right: 0;
+                    }
                 }
                 img{
                     width: sizing.$width-full;

@@ -1,8 +1,8 @@
-@use '../Utilities/reset';
-@use '../Utilities/color.scss';
-@use '../Utilities/sizing.scss';
-@use '../Utilities/font.scss';
-@use '../Utilities/background.scss';
+@use '../utility/reset';
+@use '../utility/color.scss';
+@use '../utility/sizing.scss';
+@use '../utility/font.scss';
+@use '../utility/background.scss';
 @use '../element/button.scss';
 
 
@@ -25,9 +25,21 @@
             img{
                 width: sizing.$width-full;
             }
-            .gallery_item_hover{
-                @include background.image-hover;
+            a{
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
                 background: color.$background-black  url(../images/icon1.png) no-repeat top 50% left 50%;
+
+                transition: opacity .5s ease;
+                opacity: 0;
+            }
+            &:hover{
+                a{
+                    opacity: 1;
+                }
             }
         }
     }
