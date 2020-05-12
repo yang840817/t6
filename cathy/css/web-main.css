@@ -643,7 +643,7 @@ footer .footer_area .get_in_touch .send_button {
 }
 footer .footer_area .flickr .photo_area {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 footer .footer_area .flickr .photo_area a {
