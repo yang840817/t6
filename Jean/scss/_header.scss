@@ -1,0 +1,102 @@
+
+header {
+    padding-top: 10px;
+}
+
+.header_container {
+    height: fit-content;
+
+    background-image: url(../img/subbg.gif);
+    box-shadow: 0 0 5px black;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 1rem;
+    margin-bottom: 2rem;
+
+    @media (min-width: 1200px) {
+
+        justify-content: space-between;
+        height: fit-content;
+       
+        padding: 2rem;
+        margin: 0 auto 2rem;
+    }
+
+    .contact_ways {
+        flex: 1 0 40%;
+        align-self: center;
+
+        text-align: right;
+    }
+}
+
+h1 {
+    margin-bottom: 1rem;
+
+    @media (min-width: 576px) {
+        margin-bottom: 0;
+    }
+
+    font-size: 0;
+
+    & button {
+        display: inline;
+        vertical-align: middle;
+        margin-right: 0.5rem;
+    }
+
+    & a {
+        display: inline;
+    }
+
+    & img {
+        width: 75%;
+
+        @media (min-width: 768px) {
+
+            width: 100%;
+        }
+    }
+}
+
+
+.contact_list {
+    font-size: 0;
+
+    a {
+        display: inline-block;
+    }
+}
+
+@mixin social_icon($nth) {
+    $x: -37px * $nth;
+
+    @if ($nth==4) {
+        $x: -150px;
+    }
+
+    &:nth-child(#{$nth + 1}) {
+        background-position: $x 0;
+
+        &:hover {
+            background-position: $x -81px;
+        }
+    }
+}
+
+.contact_list a {
+    width: 27px;
+    height: 27px;
+    margin-left: 0.3rem;
+
+    background-image: url(../img/social.png);
+    @include social_icon(0);
+    @include social_icon(1);
+    @include social_icon(2);
+    @include social_icon(3);
+    @include social_icon(4);
+
+}

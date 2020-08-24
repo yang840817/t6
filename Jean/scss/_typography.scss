@@ -1,0 +1,45 @@
+.head2{
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.head3{
+	font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.head4 {
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+
+nav .nav_style{
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+
+.benifit .col-xl-3 p{
+	font-size: 0.8rem;
+}
+
+article .benifit_item .head3{
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+
+footer .head3{
+	font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.copyright{
+	text-transform: uppercase;
+
+	& a{
+		text-transform: none;
+	}
+}
+
+.footer_nav{
+	text-transform: uppercase;
+}

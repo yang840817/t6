@@ -1,0 +1,266 @@
+.article_container {
+
+    background-image: url(../img/subbg.gif);
+    box-shadow: 0 0 5px black, 0 -1.5rem #f0f0f0;
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+
+    @media (min-width: 1200px) {
+        
+        margin-bottom: 4rem;
+    }
+
+    & h2 {
+        margin-bottom: 1rem;
+
+        @media (min-width: 1200px) {
+
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.row {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.benifit {
+    &.row {
+
+    }
+
+    @media (min-width: 768px) {
+
+        &>div:nth-child(odd) {
+            padding-right: 0.5rem;
+        }
+
+        &>div:nth-child(even) {
+            padding-left: 0.5rem;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        position: relative;
+        top: -3rem;
+        margin: 0 25px;
+
+        &>div:nth-child(odd) {
+            padding: 0 15px;
+        }
+
+        &>div:nth-child(even) {
+            padding: 0 15px;
+        }
+    }
+
+    &_item {
+        margin-bottom: 1rem;
+        background-color: $grey_color;
+        padding: 1rem;
+        text-align: center;
+
+        & h3,
+        & img,
+        & p {
+            margin-bottom: 1rem;
+        }
+
+        & a {
+            background-color: #cecece;
+            padding: 0.5rem 1rem;
+        }
+
+        &:hover {
+            background-color: #444444dd;
+            color: white;
+        }
+
+        @media (min-width: 1200px) {
+            padding: 2.5rem;
+
+            & h3,
+            & img,
+            & p {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+.main_content {
+    padding-bottom: 4rem;
+    border-bottom: 1px solid lightgrey;
+
+    @media (min-width: 1200px) {
+        margin: 0 25px;
+
+        & .col-12 {
+            padding: 0 15px;
+            margin: 0;
+        }
+    }
+}
+
+.welcome_card {
+    margin-bottom: 1rem;
+
+    & figure img {
+        width: 100%;
+        margin-bottom: 1rem;
+
+        @media (min-width: 1200px) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    & figure a {
+        font-weight: bold;
+    }
+
+    & figure figcaption {
+        color: #8b8b8b;
+        font-size: 0.8rem;
+    }
+}
+
+.choose_list {
+    margin-bottom: 1rem;
+
+    & ul {
+        list-style: none;
+        margin: 0;
+    }
+
+    & li {
+        display: flex;
+        align-items: baseline;
+        line-height: 1rem;
+        color: #8b8b8b;
+        padding: 0 1rem 1rem 0;
+        border-bottom: 1px solid lightgrey;
+
+        &+li {
+            padding-top: 1rem;
+        }
+    }
+
+    & li span {
+        text-align: center;
+        background-color: #dadada;
+
+        margin: 0 0.5rem;
+        border-radius: 100%;
+
+        flex: 0 0 2rem;
+        line-height: 2rem;
+
+        @media (min-width: 1200px) {
+            flex: 0 0 3rem;
+            line-height: 3rem;
+        }
+
+        & i {
+            padding-left: 4px;
+            color: white;
+            vertical-align: baseline;
+        }
+    }
+}
+
+.news_events figure {
+    display: flex;
+    font-size: 0.8rem;
+    color: #8b8b8b;
+    margin-bottom: 1rem;
+
+    &:last-child {
+        margin: 0;
+    }
+
+    @media (min-width: 768px) {
+        margin-bottom: 2rem;
+    }
+
+    & img {
+
+        width: 100%;
+        height: 100%;
+        margin-right: 1rem;
+        flex: 0 0 50%;
+
+        @media (min-width: 768px) {
+            flex: 0 0 30%;
+        }
+    }
+
+    & h3 {
+        width: fit-content;
+        color: white;
+        font-size: 1rem;
+        background-color: $theme_color;
+        padding: 0.5rem 1rem 0.6rem;
+        margin-bottom: 1rem;
+    }
+
+    & a {
+        color: black;
+        font-weight: bold;
+    }
+}
+
+.feature_works {
+    padding-top: 4rem;
+
+    & h2 {
+        margin-left: 1rem;
+
+        @media (min-width: 1200px) {
+            margin-left: 40px;
+        }
+    }
+
+    .works_list {
+
+        div+div img {
+            margin-top: 1rem;
+        }
+
+        div .work_item {
+            width: 100%;
+            box-shadow: 0 0 5px grey;
+
+            @media (min-width: 768px) {
+                margin-top: 1rem;
+            }
+
+            @media (min-width: 1200px) {
+                margin-top: 0rem;
+
+            }
+        }
+
+        @media (min-width: 768px) {
+
+            &>div:nth-child(odd) {
+                padding-right: 0.5rem;
+            }
+
+            &>div:nth-child(even) {
+                padding-left: 0.5rem;
+            }
+        }
+
+        @media (min-width: 1200px) {
+
+            &>div:nth-child(odd) {
+                padding: 0 15px;
+            }
+
+            &>div:nth-child(even) {
+                padding: 0 15px;
+            }
+        }
+    }
+}
