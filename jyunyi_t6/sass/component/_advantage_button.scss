@@ -14,7 +14,7 @@ $circle_w: 50px;
         width: $circle_w;
         height: $circle_w;
         border-radius: $circle_w/2;
-        background-color: color.$lightgrey;
+        background-color: color.$light_grey;
         
         flex-shrink: 0;
 
@@ -26,7 +26,7 @@ $circle_w: 50px;
         transition: 0.5s;
 
         &:hover {
-            background-color: color.$darkgrey;
+            background-color: color.$dark_grey;
             transform: rotate(90deg);
         }
 

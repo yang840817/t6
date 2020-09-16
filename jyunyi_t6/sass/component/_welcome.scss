@@ -18,7 +18,7 @@
 
             position: absolute;
 
-            background-color: color.$darkgrey ;
+            background-color: color.$dark_grey ;
 
             opacity: 0;
             transition: 0.4s;
@@ -46,6 +46,6 @@
     }
 
     a {
-        color: color.$darkgrey;
+        color: color.$dark_grey;
     }
 }

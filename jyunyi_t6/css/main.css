@@ -8,7 +8,7 @@ body {
 }
 
 @media (min-width: 1200px) {
-  .wrap {
+  .wrapper {
     max-width: 1250px;
   }
 }
@@ -276,11 +276,11 @@ body {
   }
 }
 
-header.wrap {
+header.wrapper {
   padding: 0;
 }
 @media (min-width: 992px) {
-  header.wrap {
+  header.wrapper {
     margin-top: 10px;
   }
 }
@@ -566,36 +566,36 @@ header.wrap {
   }
 }
 
-main.wrap {
+main.wrapper {
   background-image: url(../img/subbg.gif);
   padding-bottom: 20px;
 }
 @media (min-width: 992px) {
-  main.wrap {
+  main.wrapper {
     padding: 0 35px 60px 35px;
     box-shadow: 0 1px 4px #777;
   }
 }
-main.wrap h3 {
+main.wrapper h3 {
   margin-bottom: 20px;
   font-weight: normal;
   font-size: 30px;
   letter-spacing: 2px;
 }
 @media (min-width: 768px) {
-  main.wrap h3 {
+  main.wrapper h3 {
     margin-bottom: 30px;
   }
 }
-main.wrap .introduce {
+main.wrapper .introduce {
   margin-top: 20px;
 }
 @media (min-width: 768px) {
-  main.wrap .introduce {
+  main.wrapper .introduce {
     margin-top: 50px;
   }
 }
-main.wrap .introduce p {
+main.wrapper .introduce p {
   color: #808080;
 }
 
@@ -855,13 +855,13 @@ main.wrap .introduce p {
   color: #E8E8E8;
 }
 
-footer.wrap {
+footer.wrapper {
   background-image: url(../img/subbg.gif);
   margin-top: 20px;
   padding-top: 20px;
 }
 @media (min-width: 992px) {
-  footer.wrap {
+  footer.wrapper {
     margin-top: 50px;
     padding: 20px 35px;
     box-shadow: 0 -1px 4px #777;

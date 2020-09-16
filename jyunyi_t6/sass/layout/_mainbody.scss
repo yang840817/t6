@@ -9,7 +9,7 @@
 @use '../theme/fonts';
 
 
-main.wrap {
+main.wrapper {
     background-image: url(../img/subbg.gif);
     padding-bottom: 20px;
     
@@ -38,7 +38,7 @@ main.wrap {
         }
     
         p {
-            color: color.$text_grey;
+            color: color.$a_bit_lighter_grey;
         }
     }
 

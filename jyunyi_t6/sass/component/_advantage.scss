@@ -4,13 +4,13 @@
 .advantage div {
 
     display: flex;
-    border-bottom: 1px solid color.$lightgrey;
+    border-bottom: 1px solid color.$light_grey;
 
     padding: 15px 0;
     
     align-items: center;
 
-    color: color.$text_grey;
+    color: color.$a_bit_lighter_grey;
 
     &:first-of-type {
         padding-top: 0;

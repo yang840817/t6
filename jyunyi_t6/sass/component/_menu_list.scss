@@ -25,7 +25,7 @@
             align-items: stretch;
 
             border-bottom: none;
-            border-right: 1px solid color.$lightgrey;
+            border-right: 1px solid color.$light_grey;
         }
 
     }
@@ -39,7 +39,7 @@
         align-items: center;
         justify-content: center;
 
-        color: color.$darkgrey;
+        color: color.$dark_grey;
         font-size: fonts.$header_menu_list;
 
         &:hover {

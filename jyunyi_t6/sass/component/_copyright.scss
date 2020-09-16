@@ -4,7 +4,7 @@
 
 
 .copyrights {
-    background-color: color.$darkgrey;
+    background-color: color.$dark_grey;
 
     @include mediaquery.pad_horizontal{
         padding: 0;
@@ -67,7 +67,7 @@
 
         &:not(:last-child)::after {
             content:'|';
-            color: color.$lightgrey;
+            color: color.$light_grey;
             margin: 0 5px;
             vertical-align: top;
 
@@ -78,7 +78,7 @@
             text-decoration: none;
 
             &:not(:last-child)::after {
-                color: color.$lightgrey;
+                color: color.$light_grey;
             }
         }
     }

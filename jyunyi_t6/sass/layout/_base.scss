@@ -2,16 +2,16 @@
 @use '../utilities/mediaquery';
 
 * {
-    color: color.$darkgrey;
+    color: color.$dark_grey;
     // outline: 1px solid pink;
 }
 
 body {
     background-repeat: repeat;
-    background-image: linear-gradient(color.$darkgrey 0% 5%, rgba(255,255,255,0) 5% 88%, color.$darkgrey 88% 100%), url(../img/bg.jpg);
+    background-image: linear-gradient(color.$dark_grey 0% 5%, rgba(255,255,255,0) 5% 88%, color.$dark_grey 88% 100%), url(../img/bg.jpg);
 }
 
-.wrap {
+.wrapper {
     @include mediaquery.laptop {
         max-width: 1250px;
     }

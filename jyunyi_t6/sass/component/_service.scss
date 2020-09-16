@@ -24,7 +24,7 @@
     height: 100%;
 
     outline: 1px solid color.$bordergrey;
-    background-color: color.$lightgrey;
+    background-color: color.$light_grey;
 
     padding: 40px 25px 15px;
     text-align: center;
@@ -55,16 +55,16 @@
 
 .read_more_button {
     display: inline-block;
-    background-color: color.$more_button_grey;
+    background-color: #CECECE;
 
     margin-top: auto;
 
     padding: 5px 10px;
 
-    color: color.$darkgrey;
+    color: color.$dark_grey;
 
     &:hover {
-        color: color.$darkgrey;
+        color: color.$dark_grey;
         text-decoration: none;
     }
     

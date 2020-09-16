@@ -3,7 +3,7 @@
 
 @use '../utilities/mediaquery';
 
-header.wrap {
+header.wrapper {
     padding: 0;
 
     @include mediaquery.pad_horizontal{

@@ -10,7 +10,7 @@ $triangle-height: 20px;
 .dialogue {
 
     position: relative;
-    background-color: color.$lightgrey;
+    background-color: color.$light_grey;
 
     border: 1px solid color.$bordergrey;
     border-radius: $dialogue-border-raduis;
@@ -18,8 +18,8 @@ $triangle-height: 20px;
 
     padding: 15px 10px 15px 40px;
 
-    font-size: fonts.$text;
-    color: color.$darkgrey;
+    font-size: fonts.$basic_font_size;
+    color: color.$dark_grey;
 
     &::before {
       content: '';
@@ -48,7 +48,7 @@ $triangle-height: 20px;
       height: 0;
 
       border-bottom: ($triangle-height - 2px) solid transparent;
-      border-left: ($triangle-width - 3px) solid color.$lightgrey;
+      border-left: ($triangle-width - 3px) solid color.$light_grey;
       border-bottom-left-radius: ($dialogue-border-raduis - 1px);  
 
     }
@@ -81,7 +81,7 @@ $triangle-height: 20px;
           border-left: 19px solid transparent;
           
           border-bottom: 14px solid transparent;
-          border-right: 19px solid color.$lightgrey; 
+          border-right: 19px solid color.$light_grey; 
   
       }
 
@@ -113,7 +113,7 @@ $triangle-height: 20px;
         bottom: 2px - $triangle-height;
 
         border-bottom: ($triangle-height - 2px) solid transparent;
-        border-left: ($triangle-width - 3px) solid color.$lightgrey;
+        border-left: ($triangle-width - 3px) solid color.$light_grey;
         border-bottom-left-radius: ($dialogue-border-raduis - 1px);  
 
         border-top: none;
