@@ -435,15 +435,9 @@ header.wrap {
   color: white;
   transition: 0.5s;
 }
-.advantage span .hide {
-  display: none;
-}
 .advantage span:hover {
   background-color: #171717;
   transform: rotate(90deg);
-}
-.advantage span:hover .hide {
-  display: block;
 }
 
 .advantage div {
@@ -664,28 +658,6 @@ main.wrap {
   font-size: 16px;
 }
 
-.user {
-  margin-top: 40px;
-  display: flex;
-}
-.user img {
-  width: 100%;
-  flex: 0 0 30%;
-  object-fit: contain;
-  object-position: top;
-  margin-right: 20px;
-}
-.user .user_profile p {
-  font-size: 18px;
-  color: #171717;
-  margin-bottom: 5px;
-}
-.user .user_profile a {
-  color: #81B700;
-  font-style: italic;
-  font-size: 16px;
-}
-
 .information_block form textarea, .information_block form input.fill_in {
   width: 100%;
   background-color: #E8E8E8;
@@ -712,6 +684,9 @@ main.wrap {
   font-size: 14px;
   color: white;
   padding: 5px 10px;
+}
+.information_block form button:focus, .information_block form input.clear_button:focus {
+  outline: none;
 }
 .information_block form input.clear_button {
   background-color: #171717;

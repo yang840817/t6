@@ -25,18 +25,9 @@ $circle_w: 50px;
         color: white;
         transition: 0.5s;
 
-        .hide {
-            display: none;
-        }
-
         &:hover {
             background-color: color.$darkgrey;
             transform: rotate(90deg);
-
-            .hide {
-                display: block;
-            }
-
         }
 
     }

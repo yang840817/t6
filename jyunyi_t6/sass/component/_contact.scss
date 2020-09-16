@@ -43,6 +43,10 @@
         font-size: fonts.$introduce_text;
         color: white;
         padding: 5px 10px;
+
+        &:focus {
+            outline: none;
+        }
     }
 
     input.clear_button {  
