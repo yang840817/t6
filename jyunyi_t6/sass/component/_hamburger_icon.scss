@@ -1,0 +1,23 @@
+@use '../theme/color';
+
+.hamburger_icon {
+    height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    align-content: space-around;
+
+
+span{
+    display: block;
+    width: 80%;
+    height: 2px;
+    border-radius: 5px;
+
+    background-color: color.$main_green;
+    margin: 0 auto;
+
+}
+
+}

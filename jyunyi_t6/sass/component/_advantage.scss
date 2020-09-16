@@ -1,0 +1,23 @@
+@use '../theme/color';
+@use './advantage_button';
+
+.advantage div {
+
+    display: flex;
+    border-bottom: 1px solid color.$lightgrey;
+
+    padding: 15px 0;
+    
+    align-items: center;
+
+    color: color.$text_grey;
+
+    &:first-of-type {
+        padding-top: 0;
+    }
+
+    &:last-of-type {
+        margin-bottom: 20px;
+    }
+    
+}

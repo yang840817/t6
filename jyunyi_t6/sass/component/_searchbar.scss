@@ -1,0 +1,72 @@
+@use '../theme/color';
+@use '../utilities/mediaquery';
+
+.searchbar {
+    padding: 5px 15px;
+
+    @include mediaquery.pad_horizontal{
+        flex: 0 0 30%;
+        background-color: white;
+        box-shadow: -2px -2px 4px #777;
+    }
+
+    form {
+        display: flex;
+        border: 1px solid color.$lightgrey;
+        background-color: #F3F3F3;
+        
+        padding: 5px;
+
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    input {
+        flex: 0 0 90%;
+
+        border: none;
+        background-color: #F3F3F3;
+
+        color: color.$grey;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            color: color.$grey;
+        }
+
+        &::-webkit-search-cancel-button{
+            -webkit-appearance: none;
+
+            height: 16px;
+            width: 16px;
+
+            border-radius: 8px;
+            background-image: url(../img/criss-cross.svg);
+            background-size: contain;
+
+            cursor: pointer;
+        }
+    }
+
+    button {
+        width: 30px;
+        height: 25px;
+        padding: 0;
+
+        border: none;
+
+        background-color: rgba(0,0,0,0);
+        background-image: url(../img/search.png);
+        background-repeat: no-repeat;
+
+        &:hover , &:focus {
+            outline: none;
+        }
+    }
+
+
+
+}

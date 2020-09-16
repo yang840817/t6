@@ -1,0 +1,33 @@
+//斷點
+$phone_horizontal: 576px;
+$pad: 768px;
+$pad_horizontal: 992px;
+$laptop: 1200px;
+
+
+//-------------
+
+@mixin phone_horizontal{
+    @media(min-width:$phone_horizontal){
+      @content;
+    }
+}
+
+@mixin pad{
+    @media(min-width:$pad){
+      @content;
+    }
+}
+
+@mixin pad_horizontal{
+    @media(min-width:$pad_horizontal){
+      @content;
+    }
+}
+
+@mixin laptop{
+    @media(min-width:$laptop){
+      @content;
+    }
+}
+

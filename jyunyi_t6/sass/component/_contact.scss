@@ -1,0 +1,55 @@
+@use '../theme/color';
+@use '../theme/fonts';
+@use '../utilities/mediaquery';
+
+
+%contact_block{
+    width: 100%;
+
+    background-color: color.$lightgrey;
+    border: 1px solid color.$bordergrey;
+    border-radius: 4px;
+
+    padding: 5px 0 5px 5px;
+
+    font-size: fonts.$text;
+    color: color.$text_grey;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.information_block form {
+    input.fill_in {
+        @extend %contact_block;
+
+        margin-bottom: 10px;
+    }
+
+    textarea {
+        @extend %contact_block;
+
+        height: 100px;
+        margin-bottom: 15px;
+
+        resize: none;
+        
+    }
+
+    button , input.clear_button {
+        border: none;
+
+        font-size: fonts.$introduce_text;
+        color: white;
+        padding: 5px 10px;
+    }
+
+    input.clear_button {  
+        background-color: color.$darkgrey;
+    }
+
+    button.send {  
+        background-color: color.$main_green;
+    }
+}

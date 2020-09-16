@@ -1,0 +1,48 @@
+@use '../utilities/mediaquery';
+
+.brand {
+    display: flex;
+
+    width: 100%;
+    background-image: url(../img/subbg.gif);
+    
+    padding: 15px;
+
+    @include mediaquery.pad_horizontal{
+        padding: 35px;
+        box-shadow: 0 2px 4px #777;
+        
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    a {
+        display: inline-block;
+    }
+
+    img {
+        width: 100%;
+    }
+
+}
+
+.logo {
+    padding: 15px;
+    margin-bottom: 0;
+
+    img {
+    width: 100%;
+    }
+}
+
+.brand_logo {
+    flex-shrink: 1;
+
+    @include mediaquery.pad_horizontal{
+            flex: 0 0 30%;
+        }
+}

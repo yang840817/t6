@@ -1,0 +1,34 @@
+@use '../component/welcome';
+@use '../component/advantage';
+@use '../component/news';
+@use '../component/featured_works_slider';
+
+@use '../theme/fonts';
+@use '../theme/color';
+
+@use '../utilities/mediaquery';
+
+.line {
+    border-top: 1px solid color.$linecolor;
+    margin-top: 20px;
+
+    @include mediaquery.pad_horizontal{
+        margin-top: 50px;
+    }
+}
+
+
+.featured_works {
+
+    margin-top: 20px;
+
+    @include mediaquery.pad_horizontal{
+        margin-top: 50px;
+    }
+
+    .carousel_slide_small {
+        @include mediaquery.pad{
+            display: none;
+    }
+}
+}

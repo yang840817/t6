@@ -1,0 +1,52 @@
+@use '../utilities/mediaquery' ;
+@use '../theme/color';
+
+
+.featured_works {
+    
+    .carousel_slide_medium{
+    
+        display: none;
+    
+        @include mediaquery.pad{
+            display: block;
+            position: relative;
+
+            .carousel-item_medium {
+                .image {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    margin: 0 -10px;
+        
+                    img {
+                        width: 25%;
+                        padding: 0 10px;   
+                        flex: 1 1 auto;
+                    }
+                }
+            }
+    
+            .click_button_next {
+                width: 20px;
+                height: 20px;
+                top: -33px;
+    
+                font-family: "Poppins", sans-serif;
+                font-size: 24px;
+                color: color.$grey;
+            }
+    
+            .click_button_pre {
+                @extend .click_button_next;
+                left: auto;
+                right: 40px;
+            }
+    
+            .click_icon {
+                background-image: none;
+            }
+        }
+
+    }
+
+}

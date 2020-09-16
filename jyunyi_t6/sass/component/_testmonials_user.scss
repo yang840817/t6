@@ -1,0 +1,32 @@
+@use '../theme/color';
+
+.user {
+    margin-top: 40px;
+    display: flex;
+
+    img {
+        width: 100%;
+        flex: 0 0 30%;
+
+        object-fit: contain;
+        object-position: top;
+
+        margin-right: 20px;
+    }
+
+    .user_profile {
+
+        p {
+            font-size: 18px;
+            color: color.$darkgrey;
+            margin-bottom: 5px;
+        }
+
+        a {
+            color: color.$main_green;
+            font-style: italic;
+            font-size: 16px;
+        }
+
+    }
+  }

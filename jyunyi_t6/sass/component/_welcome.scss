@@ -1,0 +1,51 @@
+@use '../theme/color';
+@use '../theme/fonts';
+
+.welcome {
+
+    .image {
+
+        display: block;
+        position: relative;
+
+        .hover_color{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 100%;
+            height: 100%;
+
+            position: absolute;
+
+            background-color: color.$darkgrey ;
+
+            opacity: 0;
+            transition: 0.4s;
+
+            &:hover {
+
+                opacity: 0.8;
+
+            }
+
+        }
+        
+
+        img.introduce_image {
+            width: 100%;
+
+            
+        }
+    }
+    
+
+    p {
+        font-size: fonts.$introduce_text;
+        margin-top: 20px;
+    }
+
+    a {
+        color: color.$darkgrey;
+    }
+}

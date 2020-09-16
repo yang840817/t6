@@ -1,0 +1,70 @@
+@use '../theme/color';
+@use '../utilities/mediaquery';
+
+
+.banner {
+    padding: 0;
+    box-shadow: 0px -20px 0px white;
+}
+
+.slider {
+
+    .carousel {
+
+        img {
+            min-height: 250px;
+            object-fit: cover;
+        }
+    }
+
+
+    .control_button {
+
+        display:none;
+
+        @include mediaquery.phone_horizontal{
+            display: block;
+            width: 40px;
+            height: 116px;
+
+            background-image:  url(../img/slider_prev.gif);
+            background-repeat: no-repeat;
+
+            top: 50%;
+            transform: translateY(-50%);
+
+            &:hover {
+                background-position: 0 100%;
+            }
+            
+        }
+
+    }
+
+    .control_button_next {
+        background-image:  url(../img/slider_next.gif);
+    }
+
+
+    .carousel-indicators {
+
+        @include mediaquery.phone_horizontal{
+            display: none;
+            
+        }
+
+        .indicator {
+            width: 8px;
+            height: 8px;
+    
+            border: none;
+            border-radius: 5px;
+    
+            margin: 0 10px;
+    
+        }
+
+    }
+
+        
+}

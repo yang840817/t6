@@ -1,0 +1,85 @@
+@use '../utilities/mediaquery';
+@use '../theme/fonts';
+
+.address {
+    padding: 10px;
+    background-color: white;
+    text-align: right;
+
+    p {
+        margin-bottom: 0;
+    }
+
+    @include mediaquery.pad_horizontal{
+        display: none;
+    }
+
+}
+
+.address-lg {
+    display: none;
+
+    @include mediaquery.pad_horizontal{
+        display: block;
+        flex: 0 0 30%;
+        text-align: right;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+.socila_media {
+    margin-bottom: 10px;
+    font-size: 0;
+          
+    a {
+        display: inline-block;
+
+        width: 27px;
+        height: 27px;
+
+        background-image: url(../img/social.png);
+
+        &:hover {
+            background-position: 0 27px;
+        }
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+
+
+        &:nth-child(2) {
+            background-position: -37px 0;
+            &:hover {
+                background-position: -37px 27px;
+            }
+        }
+
+        &:nth-child(3) {
+            background-position: -74px 0;
+            &:hover {
+                background-position: -74px 27px;
+            }
+        }
+
+        &:nth-child(4) {
+            background-position: -111px 0;
+            &:hover {
+                background-position: -111px 27px;
+            }
+        }
+
+        &:nth-child(5) {
+            background-position: -150px 0;
+            &:hover {
+                background-position: -150px 27px;
+            }
+        }
+
+    }
+
+}

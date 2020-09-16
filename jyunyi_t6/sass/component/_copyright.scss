@@ -1,0 +1,85 @@
+@use '../theme/color';
+@use '../theme/fonts';
+@use '../utilities/mediaquery';
+
+
+.copyrights {
+    background-color: color.$darkgrey;
+
+    @include mediaquery.pad_horizontal{
+        padding: 0;
+    }
+}
+
+
+.copyrights_block {
+    padding: 15px 0;
+
+    @include mediaquery.pad_horizontal{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        padding: 15px 10px 15px 0;
+    }
+
+
+}
+
+.privacy_policy{
+
+    font-size: 0;
+    text-align: center;
+
+    @include mediaquery.pad_horizontal{
+        order: 1;
+    }
+    
+    span {
+        color: color.$grey;
+        font-size: fonts.$copyright_text;
+
+        &::after {
+            content: '|';
+            margin: 0 5px;
+        }
+    }
+
+    a {
+        color: color.$main_green;
+        font-size: fonts.$copyright_text;
+    }
+}
+
+.guide_menu {
+    font-size: 0;
+    text-align: center;
+    margin-bottom: 5px;
+
+    @include mediaquery.pad_horizontal{
+        margin-bottom: 0;
+        order: 2;
+    }
+
+    a {
+        font-size: fonts.$copyright_text;
+        color: color.$grey;
+
+        &:not(:last-child)::after {
+            content:'|';
+            color: color.$lightgrey;
+            margin: 0 5px;
+            vertical-align: top;
+
+        }
+
+        &:hover {
+            color: color.$main_green;
+            text-decoration: none;
+
+            &:not(:last-child)::after {
+                color: color.$lightgrey;
+            }
+        }
+    }
+}

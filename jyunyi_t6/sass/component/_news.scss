@@ -1,0 +1,76 @@
+@use '../utilities/mediaquery';
+@use '../theme/color';
+@use '../theme/fonts';
+
+.news {
+    @include mediaquery.pad {
+        display: flex;
+    }
+
+    @include mediaquery.pad_horizontal {
+        display: block;
+    }
+
+    .each_news {
+        
+        display: flex;
+        align-items: flex-start;
+    
+        font-size: fonts.$introduce_text;
+    
+        margin-bottom: 20px;
+    
+        img {
+            width: 120px;
+            flex: 0 1 auto;
+            margin-right: 15px;
+        }
+    
+        p {
+            margin-bottom: 0;
+        }
+    
+    
+        .detail {
+            
+            .date {
+                display: inline-block;
+                background-color: color.$main_green;
+        
+                padding: 5px 10px;
+                margin-bottom: 20px;
+        
+        
+                color: white;
+                font-weight: bold;
+            }
+        
+            a {
+                color: color.$darkgrey;
+            }
+        }
+    
+        @include mediaquery.pad {
+            flex: 0 1 50%;
+    
+            &:first-child {
+                margin-right: 15px;
+            }
+    
+            &:last-child {
+                margin-left: 15px;
+            }
+        }
+    
+        @include mediaquery.pad_horizontal {
+            
+            &:first-child {
+                margin-right: 0;
+            }
+    
+            &:last-child {
+                margin-left: 0;
+            }
+        }
+    }
+}

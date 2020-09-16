@@ -1,0 +1,17 @@
+@use '../component/hamburger_icon';
+
+.button_first {
+    margin-left: auto;
+}
+
+
+.button {
+
+    flex-shrink: 1;
+    padding: 5px;
+
+    &:focus {
+        outline: none;
+    }
+
+}

@@ -1,0 +1,92 @@
+@use '../theme/color';
+@use '../theme/fonts';
+
+$dialogue-border-raduis: 4px;
+$triangle-width: 40px;
+$triangle-height: 20px;     
+
+.dialogue {
+
+    position: relative;
+    background-color: color.$lightgrey;
+
+    border: 1px solid color.$bordergrey;
+    border-radius: $dialogue-border-raduis;
+    border-bottom-left-radius: 0px;  
+
+    padding: 15px 10px 15px 40px;
+
+    font-size: fonts.$text;
+    color: color.$darkgrey;
+
+
+//----對話框底下三角形-----------------------------------
+
+//底下三角形（框線）
+
+    &::before {
+        content: '';
+
+        position: absolute;
+        left:  -1px;
+        bottom: 0px - $triangle-height;
+
+        width: 0;
+        height: 0;
+
+        border-bottom: $triangle-height solid transparent;
+        border-left: $triangle-width solid color.$bordergrey;
+        border-bottom-left-radius: $dialogue-border-raduis;  
+
+      }
+
+//上方遮蓋三角形
+      
+      &::after {
+        content: '';
+
+        position: absolute;
+        left:  0;
+        bottom: 2px - $triangle-height;
+
+        width: 0;
+        height: 0;
+
+        border-bottom: ($triangle-height - 2px) solid transparent;
+        border-left: ($triangle-width - 3px) solid color.$lightgrey;
+        border-bottom-left-radius: ($dialogue-border-raduis - 1px);  
+
+      }
+    }
+
+
+.user {
+      margin-top: 40px;
+      display: flex;
+
+      img {
+          width: 100%;
+          flex: 0 0 30%;
+
+          object-fit: contain;
+          object-position: top;
+
+          margin-right: 20px;
+      }
+
+      .user_profile {
+
+          p {
+              font-size: 18px;
+              color: color.$darkgrey;
+              margin-bottom: 5px;
+          }
+
+          a {
+              color: color.$main_green;
+              font-style: italic;
+              font-size: 16px;
+          }
+
+      }
+    }

@@ -1,0 +1,20 @@
+@use '../module/brand_area';
+@use '../module/navbar';
+
+@use '../utilities/mediaquery';
+
+header.wrap {
+    padding: 0;
+
+    @include mediaquery.pad_horizontal{
+        margin-top: 10px;
+    }
+}
+
+.whole_nav {
+    padding: 0;
+
+    @include mediaquery.pad_horizontal{
+        flex-wrap: wrap;
+    }
+}

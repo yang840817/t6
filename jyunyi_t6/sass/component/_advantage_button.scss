@@ -1,0 +1,44 @@
+@use '../theme/color';
+
+$circle_w: 50px;
+
+.advantage {
+    
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        user-select: none;
+
+        width: $circle_w;
+        height: $circle_w;
+        border-radius: $circle_w/2;
+        background-color: color.$lightgrey;
+        
+        flex-shrink: 0;
+
+        margin-right: 15px;
+
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        transition: 0.5s;
+
+        .hide {
+            display: none;
+        }
+
+        &:hover {
+            background-color: color.$darkgrey;
+            transform: rotate(90deg);
+
+            .hide {
+                display: block;
+            }
+
+        }
+
+    }
+
+}

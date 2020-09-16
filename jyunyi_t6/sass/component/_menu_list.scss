@@ -1,0 +1,76 @@
+@use '../theme/color';
+@use '../theme/fonts';
+@use '../utilities/mediaquery';
+
+.menu_show {
+    padding: 0 15px;
+    align-items: stretch;
+
+    @include mediaquery.pad_horizontal{
+        padding: 0;
+        margin-right: 10px;
+        background-color: white;
+        box-shadow: 0px -2px 4px #777;
+    }
+    
+}
+
+.menu_list {
+
+    li {
+        border-bottom: 1px solid color.$main_green;
+
+        @include mediaquery.pad_horizontal{
+            display: flex;
+            align-items: stretch;
+
+            border-bottom: none;
+            border-right: 1px solid color.$lightgrey;
+        }
+
+    }
+}
+
+.guide .menu_show .menu_list {
+
+    a {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: color.$darkgrey;
+        font-size: fonts.$header_menu_list;
+
+        &:hover {
+            background-color: color.$main_green;
+            color: white;
+        }
+
+        @include mediaquery.pad_horizontal{
+            padding: 0 15px;
+            
+        }
+    }
+
+    .dropdown_list_icon {
+        &::after {
+            content: '>';
+            font-family: "Poppins", sans-serif;
+            font-size: fonts.$header_menu_list -2px;
+            transform: rotate(90deg);
+            margin-left: 5px;
+
+        }
+    }
+
+    .dropdown_detail {
+        border: none;
+        border-radius: 0;
+        padding: 0;
+    
+        a { 
+            padding: 10px 0;
+        }
+    }
+}

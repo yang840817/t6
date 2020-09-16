@@ -1,0 +1,74 @@
+@use '../utilities/mediaquery';
+@use '../theme/color';
+
+.service {
+
+    @include mediaquery.pad{
+        margin-top: -45px;
+    }
+
+}
+
+.service_card {
+
+    margin-top: 20px;
+
+    @include mediaquery.pad{
+        display: flex;
+    }
+}
+
+.service_introduce {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    outline: 1px solid color.$bordergrey;
+    background-color: color.$lightgrey;
+
+    padding: 40px 25px 15px;
+    text-align: center;
+
+    h2 {
+        font-size: 25px;
+        flex: 0 0 100%;
+
+        @include mediaquery.pad{
+        font-size: 19px;
+        }
+
+    }
+
+    &:hover {
+        background-color: rgba(23,23,23,0.7);
+        outline: none;
+
+        h2,p {
+            color: white;
+        }
+    }
+
+}
+
+.service_icon {
+    margin: 25px 0;
+}
+
+.read_more_button {
+    display: inline-block;
+    background-color: color.$more_button_grey;
+    
+    align-self: flex-end;
+
+    padding: 5px 10px;
+
+    color: color.$darkgrey;
+
+    &:hover {
+        color: color.$darkgrey;
+        text-decoration: none;
+    }
+    
+}

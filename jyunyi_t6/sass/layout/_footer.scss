@@ -1,0 +1,30 @@
+@use '../component/testmonials';
+@use '../component/contact';
+@use '../component/flickr';
+@use '../component/copyright';
+
+@use '../theme/color';
+@use '../utilities/mediaquery';
+@use '../theme/fonts';
+
+footer.wrap {
+    background-image: url(../img/subbg.gif);
+
+    margin-top: 20px;
+    padding-top: 20px;
+    
+    @include mediaquery.pad_horizontal{
+        margin-top: 50px;
+        padding: 20px 35px;
+        box-shadow: 0 -1px 4px #777;
+    }
+}
+
+.information_block {
+    margin-bottom: 20px;
+
+    h4 {
+        margin-bottom: 20px;
+        font-size: fonts.$footer_title;
+    }
+}

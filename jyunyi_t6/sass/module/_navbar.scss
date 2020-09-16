@@ -1,0 +1,22 @@
+@use '../component/menu_list';
+@use '../component/socialmedia_links';
+@use '../component/searchbar';
+
+@use '../utilities/mediaquery';
+@use '../theme/color';
+@use '../theme/fonts';
+
+.guide {
+    width: 100%;
+    background-image: url(../img/subbg.gif);
+
+    @include mediaquery.pad_horizontal {
+        display: flex;
+        justify-content: space-between;
+
+        background-image: none;
+
+        margin-top: 30px;
+    }
+
+}
