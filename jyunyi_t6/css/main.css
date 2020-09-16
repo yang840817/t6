@@ -578,28 +578,26 @@ main.wrap {
     box-shadow: 0 1px 4px #777;
   }
 }
-
-.featured_works h3, .introduce h3 {
+main.wrap h3 {
   margin-bottom: 20px;
   font-weight: normal;
   font-size: 30px;
   letter-spacing: 2px;
 }
 @media (min-width: 768px) {
-  .featured_works h3, .introduce h3 {
+  main.wrap h3 {
     margin-bottom: 30px;
   }
 }
-
-.introduce {
+main.wrap .introduce {
   margin-top: 20px;
 }
 @media (min-width: 768px) {
-  .introduce {
+  main.wrap .introduce {
     margin-top: 50px;
   }
 }
-.introduce p {
+main.wrap .introduce p {
   color: #808080;
 }
 

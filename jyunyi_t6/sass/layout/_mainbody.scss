@@ -17,38 +17,29 @@ main.wrap {
         padding: 0 35px 60px 35px;
         box-shadow: 0 1px 4px #777;
     }
-}
-
-%main_h3 {
 
     h3 {
-    margin-bottom: 20px;
-    font-weight: normal;
-    font-size: fonts.$mainbody_title;
-    letter-spacing: 2px;
+        margin-bottom: 20px;
+        font-weight: normal;
+        font-size: fonts.$mainbody_title;
+        letter-spacing: 2px;
+    
+        @include mediaquery.pad{
+            margin-bottom: 30px;
+            }
+    }
 
-    @include mediaquery.pad{
-        margin-bottom: 30px;
+    .introduce {
+
+        margin-top: 20px;
+    
+        @include mediaquery.pad{
+            margin-top: 50px;
+        }
+    
+        p {
+            color: color.$text_grey;
         }
     }
-}
-    
 
-.introduce {
-    @extend %main_h3;
-
-    margin-top: 20px;
-
-    @include mediaquery.pad{
-        margin-top: 50px;
-    }
-
-    p {
-        color: color.$text_grey;
-    }
-
-}
-
-.featured_works {
-    @extend %main_h3;
 }
