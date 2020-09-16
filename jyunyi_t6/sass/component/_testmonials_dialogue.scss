@@ -1,9 +1,11 @@
 @use '../theme/color';
 @use '../theme/fonts';
 
+@use '../utilities/mediaquery';
+
 $dialogue-border-raduis: 4px;
 $triangle-width: 40px;
-$triangle-height: 20px;     
+$triangle-height: 20px;   
 
 .dialogue {
 
@@ -19,42 +21,105 @@ $triangle-height: 20px;
     font-size: fonts.$text;
     color: color.$darkgrey;
 
-
-//----對話框底下三角形-----------------------------------
-
-//底下三角形（框線）
-
     &::before {
+      content: '';
+
+      position: absolute;
+      left:  -1px;
+      bottom: 0px - $triangle-height;
+
+      width: 0;
+      height: 0;
+
+      border-bottom: $triangle-height solid transparent;
+      border-left: $triangle-width solid color.$bordergrey;
+      border-bottom-left-radius: $dialogue-border-raduis;  
+
+    }
+    
+    &::after {
+      content: '';
+
+      position: absolute;
+      left:  0;
+      bottom: 2px - $triangle-height;
+
+      width: 0;
+      height: 0;
+
+      border-bottom: ($triangle-height - 2px) solid transparent;
+      border-left: ($triangle-width - 3px) solid color.$lightgrey;
+      border-bottom-left-radius: ($dialogue-border-raduis - 1px);  
+
+    }
+
+    @include mediaquery.phone_horizontal{
+
+      border-bottom-left-radius: $dialogue-border-raduis;
+
+      &::before {
+          content: '';
+  
+          left:  -40px;
+          bottom: 20px;
+          
+          border-top: 15px solid transparent;
+          border-left: 20px solid transparent;
+          
+          border-bottom: 15px solid transparent;
+          border-right: 20px solid color.$bordergrey;
+  
+      }
+
+      &::after {
+          content: '';
+
+          left:  -37px;
+          bottom: 21px;
+  
+          border-top: 14px solid transparent;
+          border-left: 19px solid transparent;
+          
+          border-bottom: 14px solid transparent;
+          border-right: 19px solid color.$lightgrey; 
+  
+      }
+
+    }
+
+    @include mediaquery.pad{
+
+      border-bottom-left-radius: 0;
+
+      &::before {
         content: '';
 
-        position: absolute;
         left:  -1px;
         bottom: 0px - $triangle-height;
-
-        width: 0;
-        height: 0;
 
         border-bottom: $triangle-height solid transparent;
         border-left: $triangle-width solid color.$bordergrey;
         border-bottom-left-radius: $dialogue-border-raduis;  
 
-      }
+        border-top: none;
+        border-right: none;
 
-//上方遮蓋三角形
+      }
       
       &::after {
         content: '';
 
-        position: absolute;
         left:  0;
         bottom: 2px - $triangle-height;
-
-        width: 0;
-        height: 0;
 
         border-bottom: ($triangle-height - 2px) solid transparent;
         border-left: ($triangle-width - 3px) solid color.$lightgrey;
         border-bottom-left-radius: ($dialogue-border-raduis - 1px);  
 
+        border-top: none;
+        border-right: none;
+
       }
+      
     }
+}

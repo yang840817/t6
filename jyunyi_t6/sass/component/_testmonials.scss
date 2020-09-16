@@ -1,2 +1,24 @@
 @use './testmonials_dialogue';
 @use './testmonials_user';
+
+@use '../utilities/mediaquery';
+@use '../theme/color';
+
+
+.feedback {
+    @include mediaquery.phone_horizontal{
+        display: flex;
+        align-items: flex-start;
+
+        .dialogue {
+            order: 2;
+            flex: 1 0 60%;
+        }
+
+    }
+
+    @include mediaquery.pad{
+        display: block;
+
+    }
+}

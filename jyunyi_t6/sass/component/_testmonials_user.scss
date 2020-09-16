@@ -1,8 +1,24 @@
 @use '../theme/color';
+@use '../utilities/mediaquery';
+
 
 .user {
     margin-top: 40px;
     display: flex;
+
+    @include mediaquery.phone_horizontal{
+        display: block;
+        flex: 0 0 30%;
+        margin-top: 0;
+        margin-right: 50px;
+    }
+
+    @include mediaquery.pad{
+        display: flex;
+        margin-top: 40px;
+        margin-right: 0;
+    
+    }
 
     img {
         width: 100%;

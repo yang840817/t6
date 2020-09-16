@@ -3,7 +3,7 @@
 @use '../utilities/mediaquery';
 
 .menu_show {
-    padding: 0 15px;
+    padding: 0 15px 15px 15px;
     align-items: stretch;
 
     @include mediaquery.pad_horizontal{

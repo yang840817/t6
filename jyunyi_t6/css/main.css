@@ -1,5 +1,6 @@
 * {
   color: #171717;
+  outline: 1px solid pink;
 }
 
 body {
@@ -82,7 +83,7 @@ body {
 }
 
 .menu_show {
-  padding: 0 15px;
+  padding: 0 15px 15px 15px;
   align-items: stretch;
 }
 @media (min-width: 992px) {
@@ -633,10 +634,73 @@ main.wrap .introduce p {
   border-left: 37px solid #E8E8E8;
   border-bottom-left-radius: 3px;
 }
+@media (min-width: 576px) {
+  .dialogue {
+    border-bottom-left-radius: 4px;
+  }
+  .dialogue::before {
+    content: "";
+    left: -40px;
+    bottom: 20px;
+    border-top: 15px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 20px solid #DCDCDC;
+  }
+  .dialogue::after {
+    content: "";
+    left: -37px;
+    bottom: 21px;
+    border-top: 14px solid transparent;
+    border-left: 19px solid transparent;
+    border-bottom: 14px solid transparent;
+    border-right: 19px solid #E8E8E8;
+  }
+}
+@media (min-width: 768px) {
+  .dialogue {
+    border-bottom-left-radius: 0;
+  }
+  .dialogue::before {
+    content: "";
+    left: -1px;
+    bottom: -20px;
+    border-bottom: 20px solid transparent;
+    border-left: 40px solid #DCDCDC;
+    border-bottom-left-radius: 4px;
+    border-top: none;
+    border-right: none;
+  }
+  .dialogue::after {
+    content: "";
+    left: 0;
+    bottom: -18px;
+    border-bottom: 18px solid transparent;
+    border-left: 37px solid #E8E8E8;
+    border-bottom-left-radius: 3px;
+    border-top: none;
+    border-right: none;
+  }
+}
 
 .user {
   margin-top: 40px;
   display: flex;
+}
+@media (min-width: 576px) {
+  .user {
+    display: block;
+    flex: 0 0 30%;
+    margin-top: 0;
+    margin-right: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .user {
+    display: flex;
+    margin-top: 40px;
+    margin-right: 0;
+  }
 }
 .user img {
   width: 100%;
@@ -654,6 +718,22 @@ main.wrap .introduce p {
   color: #81B700;
   font-style: italic;
   font-size: 16px;
+}
+
+@media (min-width: 576px) {
+  .feedback {
+    display: flex;
+    align-items: flex-start;
+  }
+  .feedback .dialogue {
+    order: 2;
+    flex: 1 0 60%;
+  }
+}
+@media (min-width: 768px) {
+  .feedback {
+    display: block;
+  }
 }
 
 .information_block form textarea, .information_block form input.fill_in {
