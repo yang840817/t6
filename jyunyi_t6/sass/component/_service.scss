@@ -11,19 +11,17 @@
 
 .service_card {
 
-    margin-top: 20px;
-
-    @include mediaquery.pad{
-        display: flex;
-    }
+    margin-top: 20px
+    
 }
 
 .service_introduce {
 
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column; 
+    align-items: center;
+
+    height: 100%;
 
     outline: 1px solid color.$bordergrey;
     background-color: color.$lightgrey;
@@ -33,7 +31,6 @@
 
     h2 {
         font-size: 25px;
-        flex: 0 0 100%;
 
         @include mediaquery.pad{
         font-size: 19px;
@@ -59,8 +56,8 @@
 .read_more_button {
     display: inline-block;
     background-color: color.$more_button_grey;
-    
-    align-self: flex-end;
+
+    margin-top: auto;
 
     padding: 5px 10px;
 

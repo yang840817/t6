@@ -89,7 +89,7 @@ $triangle-height: 20px;
 
     @include mediaquery.pad{
 
-      border-bottom-left-radius: 0;
+      border-bottom-left-radius: $dialogue-border-raduis;
 
       &::before {
         content: '';

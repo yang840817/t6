@@ -1,14 +1,28 @@
 @use '../utilities/mediaquery';
 @use '../theme/fonts';
+@use '../theme/color';
+
+
+%phonenumber {
+    p {
+        margin-bottom: 0;
+
+        a {
+            color: color.$darkgrey;
+
+            &:hover{
+                color: color.$darkgrey;
+            }
+        }
+    }
+}
 
 .address {
+    @extend %phonenumber;
+
     padding: 10px;
     background-color: white;
     text-align: right;
-
-    p {
-        margin-bottom: 0;
-    }
 
     @include mediaquery.pad_horizontal{
         display: none;
@@ -17,6 +31,8 @@
 }
 
 .address-lg {
+    @extend %phonenumber;
+    
     display: none;
 
     @include mediaquery.pad_horizontal{
@@ -24,9 +40,6 @@
         flex: 0 0 30%;
         text-align: right;
 
-        p {
-            margin-bottom: 0;
-        }
     }
 }
 

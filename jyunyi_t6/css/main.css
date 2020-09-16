@@ -1,6 +1,5 @@
 * {
   color: #171717;
-  outline: 1px solid pink;
 }
 
 body {
@@ -139,13 +138,20 @@ body {
   padding: 10px 0;
 }
 
+.address-lg p, .address p {
+  margin-bottom: 0;
+}
+.address-lg p a, .address p a {
+  color: #171717;
+}
+.address-lg p a:hover, .address p a:hover {
+  color: #171717;
+}
+
 .address {
   padding: 10px;
   background-color: white;
   text-align: right;
-}
-.address p {
-  margin-bottom: 0;
 }
 @media (min-width: 992px) {
   .address {
@@ -161,9 +167,6 @@ body {
     display: block;
     flex: 0 0 30%;
     text-align: right;
-  }
-  .address-lg p {
-    margin-bottom: 0;
   }
 }
 
@@ -342,17 +345,12 @@ header.wrap {
 .service_card {
   margin-top: 20px;
 }
-@media (min-width: 768px) {
-  .service_card {
-    display: flex;
-  }
-}
 
 .service_introduce {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
   outline: 1px solid #DCDCDC;
   background-color: #E8E8E8;
   padding: 40px 25px 15px;
@@ -360,7 +358,6 @@ header.wrap {
 }
 .service_introduce h2 {
   font-size: 25px;
-  flex: 0 0 100%;
 }
 @media (min-width: 768px) {
   .service_introduce h2 {
@@ -382,7 +379,7 @@ header.wrap {
 .read_more_button {
   display: inline-block;
   background-color: #CECECE;
-  align-self: flex-end;
+  margin-top: auto;
   padding: 5px 10px;
   color: #171717;
 }
@@ -659,7 +656,7 @@ main.wrap .introduce p {
 }
 @media (min-width: 768px) {
   .dialogue {
-    border-bottom-left-radius: 0;
+    border-bottom-left-radius: 4px;
   }
   .dialogue::before {
     content: "";
@@ -778,10 +775,12 @@ main.wrap .introduce p {
   flex-flow: row wrap;
   margin: -3px;
 }
-.img_set img {
-  width: 15px;
+.img_set div {
   padding: 3px;
-  flex: 1 1 25%;
+  flex: 0 0 25%;
+}
+.img_set div img {
+  width: 100%;
 }
 
 .copyrights {
