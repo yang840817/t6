@@ -655,7 +655,7 @@ main.wrapper .introduce p {
 }
 @media (min-width: 768px) {
   .dialogue {
-    border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 0px;
   }
   .dialogue::before {
     content: "";

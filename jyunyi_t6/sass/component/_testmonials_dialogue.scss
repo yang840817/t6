@@ -12,7 +12,7 @@ $triangle-height: 20px;
     position: relative;
     background-color: color.$light_grey;
 
-    border: 1px solid color.$bordergrey;
+    border: 1px solid color.$border_grey;
     border-radius: $dialogue-border-raduis;
     border-bottom-left-radius: 0px;  
 
@@ -32,7 +32,7 @@ $triangle-height: 20px;
       height: 0;
 
       border-bottom: $triangle-height solid transparent;
-      border-left: $triangle-width solid color.$bordergrey;
+      border-left: $triangle-width solid color.$border_grey;
       border-bottom-left-radius: $dialogue-border-raduis;  
 
     }
@@ -67,7 +67,7 @@ $triangle-height: 20px;
           border-left: 20px solid transparent;
           
           border-bottom: 15px solid transparent;
-          border-right: 20px solid color.$bordergrey;
+          border-right: 20px solid color.$border_grey;
   
       }
 
@@ -89,7 +89,7 @@ $triangle-height: 20px;
 
     @include mediaquery.pad{
 
-      border-bottom-left-radius: $dialogue-border-raduis;
+      border-bottom-left-radius: 0px;
 
       &::before {
         content: '';
@@ -98,8 +98,9 @@ $triangle-height: 20px;
         bottom: 0px - $triangle-height;
 
         border-bottom: $triangle-height solid transparent;
-        border-left: $triangle-width solid color.$bordergrey;
+        border-left: $triangle-width solid color.$border_grey;
         border-bottom-left-radius: $dialogue-border-raduis;  
+        
 
         border-top: none;
         border-right: none;
