@@ -1,0 +1,34 @@
+@use "../utility/reset";
+@use "../utility/breakpoint";
+.featured_works {
+  @include breakpoint.pad-lg {
+    position: relative;
+  }
+  &_lg {
+    @include breakpoint.pad-lg {
+      display: none;
+    }
+  }
+  &_xs {
+    display: none;
+    @include breakpoint.pad-lg {
+      position: static;
+      display: block;
+      margin: 0 -10px;
+    }
+    .carousel_xs_btn {
+      width: 30px;
+      position: absolute;
+      top: 15px;
+      right: 30px;
+    }
+    &_img {
+      display: flex;
+      flex-wrap: nowrap;
+      img {
+        width: 25%;
+        padding: 0 10px;
+      }
+    }
+  }
+}

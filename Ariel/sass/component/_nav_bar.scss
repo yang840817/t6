@@ -1,0 +1,114 @@
+@use "../utility/reset";
+@use "../utility/base";
+@use "../utility/breakpoint";
+@use "../theme/color";
+@use "../theme/font";
+nav {
+  margin-top: 20px;
+  text-align: center;
+}
+.menu {
+  
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  &_wrap {
+    @include breakpoint.pad-lg {
+      flex: 3 0 0;
+    }
+    flex: 1 0 0;
+    label {
+      @include breakpoint.pad-lg {
+        display: none;
+      }
+      display: block;
+      margin: 0;
+      font-size: 32px;
+      background-color: #ffffff;
+    }
+    input {
+      display: none;
+    }
+  }
+}
+
+.search_wrap {
+  @include breakpoint.pad-lg {
+    flex: 1 0 0;
+  }
+  padding: 10px 20px;
+  margin-left: 10px;
+  flex: 3 0 0;
+  box-shadow: 0px 0px 8px 2px #818181;
+  background-color: color.$white;
+  input {
+    width: 100%;
+    border: solid 1px #eaeaea;
+    background: #f3f3f3 url(../images/search.png) no-repeat right 8px bottom 3px;
+  }
+}
+#burger:checked + ul {
+  display: block;
+  @include breakpoint.pad-lg {
+    display: flex;
+  }
+}
+.dropdown {
+  display: inline-block;
+  &_menu {
+    display: none;
+    background-color: color.$white;
+    @include breakpoint.pad-lg {
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+    }
+  }
+  &:hover &_menu {
+    display: flex;
+    flex-direction: column;
+    border-right: none;
+    li {
+      @include breakpoint.pad-lg {
+        position: relative;
+      }
+    }
+  }
+}
+.menu_item {
+  @include breakpoint.pad-lg {
+    position: static;
+    display: flex;
+  }
+  display: none;
+  padding: 0;
+  background-color: color.$white;
+  position: absolute;
+  z-index: 1000;
+  box-shadow: 0px 0px 8px 2px #818181;
+  li,
+  ul {
+    list-style: none;
+    @include breakpoint.pad-lg {
+      border-right: solid 1px #f7f7f7;
+    }
+  }
+  ul {
+    @include breakpoint.pad-lg {
+      width: fit-content;
+    }
+    width: 100%;
+  }
+  a {
+    color: color.$gray;
+    font-size: font.$header_font_size;
+    display: inline-block;
+    padding: 15px;
+    width: 100%;
+    &:hover {
+      color: color.$light_gray0;
+      background-color: color.$green;
+      @extend %hover;
+    }
+  }
+}

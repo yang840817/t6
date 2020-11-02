@@ -1,0 +1,17 @@
+@use "./utility/base";
+
+@use "./component/nav_bar";
+@use "./component/carousel";
+@use "./component/producdcard";
+@use "./component/why_choose_us";
+@use "./component/news";
+@use "./component/features_works";
+@use "./component/testimonials";
+@use "./component/get_in_touch";
+@use "./component/flickr";
+@use "./component/copyright";
+
+
+@use "./layout/header";
+@use "./layout/bodymain";
+@use "./layout/footer";

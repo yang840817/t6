@@ -1,0 +1,27 @@
+$mobile: 576px;
+$pad: 768px;
+$pad-lg: 992px;
+$laptop: 1200px;
+
+@mixin mobile {
+  @media (min-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin pad {
+  @media (min-width: $pad) {
+    @content();
+  }
+}
+
+@mixin pad-lg {
+  @media (min-width: $pad-lg) {
+    @content();
+  }
+}
+@mixin laptop {
+  @media (min-width: $laptop) {
+    @content();
+  }
+}

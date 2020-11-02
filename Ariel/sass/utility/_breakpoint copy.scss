@@ -1,0 +1,27 @@
+$mobile: 576px;
+$pad: 768px;
+$lg: 992px;
+$laptop: 1200px;
+
+@mixin break-point ($size) {
+  @media (min-width: $size) {
+    @content();
+  }
+}
+
+// @mixin break-point ($size) {
+//   @media (min-width: $size) {
+//     @content();
+//   }
+// }
+
+// @mixin break-point ($size) {
+//   @media (min-width: $size) {
+//     @content();
+//   }
+// }
+// @mixin break-point ($size) {
+//   @media (min-width: $size) {
+//     @content();
+//   }
+// }

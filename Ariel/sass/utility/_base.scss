@@ -1,0 +1,16 @@
+@use "../utility/breakpoint";
+@use "../theme/color";
+
+body {
+  background-image: url("../images/bg.jpg");
+  box-shadow: inset 0 60px 0 0 #181818, inset 0 -280px 0 0;
+  @include breakpoint.pad {
+    box-shadow: inset 0 60px 0 0 #181818, inset 0 -200px 0 0;
+  }
+}
+
+%hover {
+  color: color.$green;
+  font-weight: bold;
+  text-decoration: none;
+}

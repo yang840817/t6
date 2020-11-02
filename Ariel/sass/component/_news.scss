@@ -1,0 +1,40 @@
+@use "../utility/reset";
+@use "../theme/color";
+@use "../theme/font";
+.news {
+  display: flex;
+  &_img {
+    flex: 1 1 0;
+    img {
+      width: 100%;
+    }
+  }
+  &_text {
+    flex: 1 1 0;
+    margin-left: 12px;
+    time {
+      display: inline-block;
+      padding: 5px 10px;
+      color: color.$light_gray0;
+      background-color: color.$green;
+    }
+    p {
+      line-height: 16px;
+      margin-top: 15px;
+      font-size: 14px;
+      display: -webkit-box;
+      overflow: hidden;
+      white-space: normal;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    }
+    a:hover {
+      @extend %hover;
+    }
+  }
+}
+
+.news:not(:last-child) {
+  margin-bottom: 20px;
+}

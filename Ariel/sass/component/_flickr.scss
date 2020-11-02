@@ -1,0 +1,12 @@
+.flickr_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+}
+.flickr_img {
+  width: 25%;
+  padding: 5px;
+  img {
+    width: 100%;
+  }
+}

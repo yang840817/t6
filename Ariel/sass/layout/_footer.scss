@@ -1,0 +1,21 @@
+@use "../utility/reset";
+@use "../utility/breakpoint";
+@use "../theme/font";
+@use "../theme/color";
+footer {
+  margin-top: 40px;
+}
+.footer_wrap {
+  padding: 20px 40px;
+  background-image: url(../images/subbg.gif);
+  .footer_item {
+    @include breakpoint.pad-lg {
+      margin-bottom: 0;
+    }
+    margin-bottom: 20px;
+  }
+}
+h3 {
+  font-size: font.$h3_font_size;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,87 @@
+@use "../utility/reset";
+@use "../utility/breakpoint";
+@use "../theme/font";
+@use "../theme/color";
+header {
+  padding-top: 10px;
+}
+.logo_wrap {
+  @include breakpoint.pad {
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+  }
+  font-size: font.$header_font_size;
+  color: color.$gray;
+  padding: 20px;
+  text-align: center;
+  background-image: url(../images/subbg.gif);
+  .logo_img {
+    @include breakpoint.pad {
+      margin-bottom: 0;
+    }
+    margin-bottom: 20px;
+    font-size: 0;
+    a {
+      display: inline-block;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.header_item {
+  font-size: 0;
+  span,
+  a {
+    color: color.$gray;
+    font-size: font.$header_font_size;
+  }
+}
+a:hover {
+  color: color.$green;
+}
+
+.header_social_media {
+  margin-bottom: 5px;
+  a {
+    display: inline-block;
+    padding: 14px;
+    background-image: url(../images/social.png);
+    background-size: 185px;
+  }
+  a:not(:first-child) {
+    margin-left: 6px;
+  }
+  :nth-child(1) {
+    background-position: left 0px top -1px;
+    &:hover {
+      background-position: left 0 bottom 1px;
+    }
+  }
+  :nth-child(2) {
+    background-position: left -39px top 0;
+    &:hover {
+      background-position: left -39px bottom 0;
+    }
+  }
+  :nth-child(3) {
+    background-position: left -77.5px top 0px;
+    &:hover {
+      background-position: left -77.5px bottom 0;
+    }
+  }
+  :nth-child(4) {
+    background-position: right -41px top 0;
+    &:hover {
+      background-position: right -41px bottom 0px;
+    }
+  }
+  :nth-child(5) {
+    background-position: right 0 top 0;
+    &:hover {
+      background-position: right 0 bottom 0;
+    }
+  }
+}

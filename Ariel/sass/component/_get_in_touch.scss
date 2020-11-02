@@ -1,0 +1,30 @@
+@use "../utility/reset";
+@use "../utility/breakpoint";
+@use "../theme/font";
+@use "../theme/color";
+.name,
+.email,
+.message {
+  width: 100%;
+  padding: 2px 10px;
+  margin-bottom: 12px;
+  border: solid 1px #eaeaea;
+  border-radius: 5px;
+  background-color: color.$light_gray;
+}
+.message {
+  height: 100px;
+  resize: none;
+}
+.reset,
+.submit {
+  padding: 5px 10px;
+  border: none;
+  color: color.$light_gray0;
+}
+.submit {
+  background-color: color.$green;
+}
+.reset {
+  background-color: color.$black;
+}

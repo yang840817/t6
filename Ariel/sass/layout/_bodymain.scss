@@ -1,0 +1,60 @@
+@use "../utility/reset";
+@use "../utility/base";
+@use "../utility/breakpoint";
+@use "../theme/color";
+@use "../theme/font";
+.main_wrap {
+  padding: 20px 40px 60px;
+  background-image: url(../images/subbg.gif);
+  p {
+    font-size: font.$main_p_font_size;
+  }
+  h2 {
+    font-size: font.$h2_font_size;
+    margin: 30px 0 15px;
+  }
+  h4 {
+    @include breakpoint.pad-lg {
+      word-spacing: 10px;
+    }
+    @include breakpoint.laptop {
+      word-spacing: 0;
+    }
+    color: color.$gray;
+    font-size: font.$h4_font_size;
+  }
+}
+.service {
+  margin-top: -25px;
+  p,
+  a {
+    color: color.$gray0;
+  }
+  a:hover {
+    @extend %hover;
+  }
+  .service_wrap {
+    margin-bottom: 20px;
+    @include breakpoint.pad-lg {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.welcome_img {
+  text-align: center;
+  a {
+    display: inline-block;
+    img {
+      width: 100%;
+    }
+  }
+  &:hover {
+    filter: opacity(80%);
+  }
+}
+.line {
+  padding: 0.3px;
+  margin: 30px 0 20px;
+  background-color: color.$light_gray;
+}
