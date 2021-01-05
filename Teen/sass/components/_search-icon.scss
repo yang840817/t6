@@ -1,0 +1,14 @@
+// searchbar icon
+%search-icon{
+  padding: 5px 20px;
+  @include position-absolute(0, 0, 0, auto);
+  background-image: url(../img/search.png);
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+
+  &:hover{
+    background-image: url(../img/icon1.png);
+    background-size: 80%;
+  }
+}

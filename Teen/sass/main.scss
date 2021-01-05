@@ -1,0 +1,34 @@
+*{
+  // outline: 1px solid red;
+}
+
+// base
+@import 'base/reset';
+@import 'base/color';
+@import 'base/font';
+
+// setting
+@import 'setting/background-image'; //container background, social media icon
+@import 'setting/position';
+@import 'setting/spacing'; // row margin, column padding
+@import 'setting/hover'; //link color, word color, darker
+@import 'setting/box-style'; // box-shadow (nav), placeholder, input border, input submit
+
+// components
+@import 'components/search-icon'; // (section: search bar)
+@import 'components/banner-control'; // banner control prev & next icon
+@import 'components/card'; // (section: service)
+@import 'components/more-info'; // (section: about)
+@import 'components/arrow'; // (section: about)
+@import 'components/deco-triangle'; // deco-triangle & deco-triangle-border, (section: footer)
+
+// layout
+@import 'layout/grid-system';
+@import 'layout/container';
+@import 'layout/header';
+@import 'layout/main-nav'; // main, navbar, search bar
+@import 'layout/banner';
+@import 'layout/service';
+@import 'layout/about'; // welcome, choose, news & events
+@import 'layout/feature';
+@import 'layout/footer'; // footer info (quote, submit, flickr), footer bottom (copyright, sub navbar)

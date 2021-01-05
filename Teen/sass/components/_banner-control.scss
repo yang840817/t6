@@ -1,0 +1,13 @@
+// banner control icon
+%banner-control{
+  width: 30px; // origin width is 40px
+  height: 88px; // origin half height is 119px
+  background: {
+    position: left top;
+    size: 100%;
+  }
+
+  &:hover{
+    background-position: left bottom;
+  }
+}

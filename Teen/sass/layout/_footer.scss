@@ -1,0 +1,129 @@
+// footer info
+.footer_info{
+  padding: 10px 30px 30px;
+  @include container-background;
+  
+  .info{
+    @extend %row;
+  
+    .info_item{
+      @extend %col;
+    } 
+  } 
+}
+
+// footer info--quote
+.quote{
+  .quotation{
+    padding: 20px 10px 20px 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px 5px 5px 0;
+    background-color: #eee;
+    color: #555;
+    position: relative;
+    @extend %deco-triangle-border;
+    @extend %deco-triangle;
+  }
+
+  .quote_body{
+    margin-top: 35px;
+    display: flex;
+
+    .quote_text{
+      margin-top: 7px;
+      margin-left: 10px;
+      line-height: 1;
+      a{
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+// footer info--submit
+.submit{
+  input{
+    margin-bottom: 5px;
+    @extend %input-submit;
+  }
+
+  textarea{
+    margin-bottom: 20px;
+    @extend %input-submit;
+  }
+
+  button{
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    @extend %hover-primary-background;
+  }
+}
+
+// footer info--flickr
+.flickr_box{
+  margin: 0 -5px;
+
+  .flickr_item{
+    padding: 0 5px;
+    &:nth-child(-n+8){
+      padding-bottom: 10px;
+    }
+
+    a{
+      display: block;
+    }
+    img{
+      width: 100%;
+    }
+  }
+}
+
+
+// footer bottom
+.footer_bottom{
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  @include mediaquery-tablet-L{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .copyright{
+    margin-top: 10px;
+    @include mediaquery-tablet-L{
+      margin-top: 0;
+    }
+    color: #555;
+    line-height: 1;
+    a{
+      margin-left: 5px;
+      border-left: 1px solid #555;
+      padding-left: 5px;
+      display: inline-block;
+      color: $primary-color;
+    }
+  }
+
+  .sub_menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    a{
+      padding: 0 10px;
+      color: #555;
+      line-height: 1;
+      &:not(:first-child){
+        border-left: 2px solid #999;
+      }
+      @extend %hover-primary-color;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}

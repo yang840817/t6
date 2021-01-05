@@ -1,0 +1,69 @@
+
+// header--logo, connect social media & tel
+header{
+  margin-top: 5px;
+  padding: 30px;
+  @include container-background;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include mediaquery-tablet-P{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  // left--logo
+  h1{
+    margin-bottom: 15px;
+    @include mediaquery-tablet-P{
+      margin-bottom: 0;
+    }
+
+    a{
+      display: block;
+    }
+  }
+
+  // right top--connect social media
+  .connect_icon{
+    margin-bottom: 5px;
+    font-size: 0;
+    text-align: center;
+    @include mediaquery-tablet-P{
+      text-align: right;
+    }
+
+    a{
+      display: inline-block;
+      width: 27px;
+      height: 27px;
+    }
+    a + a{
+      margin-left: 10px;
+    }
+
+    .connect_icon_fb{
+      @include connect-icon(0%);
+    }
+    .connect_icon_twitter{
+      @include connect-icon(25%);
+    }
+    .connect_icon_flickr{
+      @include connect-icon(50%);
+    }
+    .connect_icon_dribbble{
+      @include connect-icon(75%);
+    }
+    .connect_icon_rss{
+      @include connect-icon(100%);
+    }
+  }
+
+  // right top--tel
+  .connect_tel{
+    a{
+      display: inline-block;
+      @extend %hover-primary-color;
+    }
+  } 
+}

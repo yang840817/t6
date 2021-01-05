@@ -1,0 +1,12 @@
+// main--banner
+.banner_control{
+  width: 30px;
+  .banner_control_prev_icon{
+    background-image: url(../img/slider_prev.gif);
+    @extend %banner-control;
+  }
+  .banner_control_next_icon{
+    background-image: url(../img/slider_next.gif);
+    @extend %banner-control;
+  }
+}

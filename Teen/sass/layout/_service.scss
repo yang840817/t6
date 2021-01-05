@@ -1,0 +1,17 @@
+// main--service
+.service{
+  padding: 0 30px 20px;
+  @include mediaquery-mobile-L{    
+    margin-top: -40px;
+  }
+}
+
+.service_box{
+  @extend %row;
+  text-align: center;
+
+  .service_item{
+    @extend %col;
+    @extend %card;
+  }
+}

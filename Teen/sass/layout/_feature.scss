@@ -1,0 +1,37 @@
+// main--feature
+.feature{
+  margin: 0 30px;
+  padding: 40px 0;
+  border-top: 1px solid #ccc;
+
+  h2{
+    margin-bottom: 0;
+  }
+  
+  .feature_box{
+    @extend %row;
+    position: relative;
+    
+    i{
+      color: #ccc;
+    }
+    .arrow_left{
+      @include position-absolute(-20px, 30px, auto, auto);
+    }
+    .arrow_right{
+      @include position-absolute(-20px, 10px, auto, auto);
+    }
+
+    .feature_item{
+      @extend %col;
+      
+      a{
+        position: relative;
+        display: block;
+        &::before{
+          @extend %hover-darker;
+        }
+      }
+    }
+  }
+}
