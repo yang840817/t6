@@ -5,13 +5,11 @@
     margin-top: -40px;
   }
 }
-
 .service_box{
   @extend %row;
   text-align: center;
-
-  .service_item{
-    @extend %col;
-    @extend %card;
-  }
+}
+.service_item{
+  @extend %col;
+  @extend %card;
 }

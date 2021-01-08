@@ -1,0 +1,71 @@
+main{
+  margin: 30px 0 60px;
+  @include mediaquery-tablet-L{
+    margin-top: 60px;
+    padding-top: 30px;
+  }
+  @include container-background;
+}
+
+// main--navbar
+.menu{
+  padding: 10px 30px;
+  @include mediaquery-tablet-L{
+    margin-top: -60px; // main padding-top -30px & menu margin-top -30px
+    padding: 0;
+  }
+  position: relative;
+  align-items: stretch; // bootstrap .navbar default is center
+}
+.menu_collapse{
+  border: 1px solid #ddd;
+  @include container-background;
+  @include mediaquery-tablet-L{
+    box-shadow: 2px -2px 5px #777;
+    border: none;
+  }
+}
+.menu_item{
+  @include mediaquery-tablet-L{
+    border-right: 1px solid #eee;
+  }
+}
+.menu .menu_item .menu_link{
+  padding: 15px;
+  color: black;
+  &:hover{
+    @include primary-background-color;
+  }
+}
+.menu_link{
+  i{
+    font-size: 10px;
+  }
+  &::after{
+    display: none; /* cover bootstrap's dropdown icon */
+  }
+} 
+.menu_dropdown_item{
+  &:hover{
+    @include primary-background-color;
+  }
+}
+
+// main--searchbar
+.search_form{
+  @include mediaquery-tablet-L{
+    margin-left: 10px;
+    box-shadow: -2px -2px 5px #777;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    order: 2;
+    flex-grow: 1;
+    @include container-background;
+  }
+}
+.search_button{
+  @include mediaquery-tablet-L{
+    margin: 10px; // 消除form padding 10px
+  }
+}

@@ -5,7 +5,6 @@ $tablet-P: 768px;
 $tablet-L: 992px;
 $desktop: 1200px;
 
-
 // mediaquery
 // mobile-Portrait: 320px
 @mixin mediaquery-mobile-P {
@@ -37,7 +36,3 @@ $desktop: 1200px;
     @content;
   }
 }
-
-
-
-

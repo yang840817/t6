@@ -33,7 +33,7 @@
           <a href="##" class="connect_icon_dribbble"></a>
           <a href="##" class="connect_icon_rss"></a>
         </div>
-        <p class="connect_tel">Call Us Now: <a href="tel:+1-777-7842543">+1 (777) 784-25-43</a></p>
+        <span>Call Us Now: </span><a href="tel:+1-777-7842543">+1 (777) 784-25-43</a>
       </div>
     </header>
 
@@ -47,13 +47,14 @@
         </button>
         <!-- search bar -->
         <form class="search_form">
-          <input class="form-control search_input" type="search" placeholder="Search the Site..." aria-label="Search">
+          <input class="form-control search_input" type="search" name="search" placeholder="Search the Site..."
+            aria-label="Search">
           <button class="btn search_button" type="submit">
           </button>
         </form>
         <!-- navigation -->
         <div class="collapse navbar-collapse menu_collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto menu_nav">
+          <ul class="navbar-nav mr-auto">
             <li class="nav-item menu_item">
               <a class="nav-link menu_link" href="##">HOME <span class="sr-only">(current)</span></a>
             </li>
@@ -101,7 +102,7 @@
       </nav>
 
       <section class="banner">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div id="carouselControls" class="carousel slide" data-ride="carousel">
           <!-- banner -->
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -115,13 +116,11 @@
             </div>
           </div>
           <!-- banner button-->
-          <a class="carousel-control-prev banner_control" href="#carouselExampleControls" role="button"
-            data-slide="prev">
+          <a class="carousel-control-prev banner_control" href="#carouselControls" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon banner_control_prev_icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </a>
-          <a class="carousel-control-next banner_control" href="#carouselExampleControls" role="button"
-            data-slide="next">
+          <a class="carousel-control-next banner_control" href="#carouselControls" role="button" data-slide="next">
             <span class="carousel-control-next-icon banner_control_next_icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
@@ -140,9 +139,7 @@
                   suscipit augue nibh in
                   enim. Nullam dignissim euismodnunc at</p>
               </div>
-              <div class="card_footer">
-                <a href="##" class="card_button">More</a>
-              </div>
+              <a href="##" class="card_button">More</a>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-lg-3 service_item">
@@ -154,9 +151,7 @@
                   neque in ante.
                   Curabitur fringilla tristque nisl ut</p>
               </div>
-              <div class="card_footer">
-                <a href="##" class="card_button">More</a>
-              </div>
+              <a href="##" class="card_button">More</a>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-lg-3 service_item">
@@ -168,9 +163,7 @@
                   scelerisque lectus
                   pharetra quis. Cras</p>
               </div>
-              <div class="card_footer">
-                <a href="##" class="card_button">More</a>
-              </div>
+              <a href="##" class="card_button">More</a>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-lg-3 service_item">
@@ -182,9 +175,7 @@
                   sodales. Donec sit
                   amet diam neque</p>
               </div>
-              <div class="card_footer">
-                <a href="##" class="card_button">More</a>
-              </div>
+              <a href="##" class="card_button">More</a>
             </div>
           </div>
         </div>
@@ -199,9 +190,9 @@
             <img src="img/welcome.jpg" alt="company building">
             <p>Curabitur velit nisl, porttitor viverra molesite quis, Iacinia eget purus. Suspendisse ipsum massa,
               rutrum in hendrerit malesuada, fermentum id erat
-              <input type="checkbox" id="more_welcome" class="more_checkbox">
-              <label for="more_welcome" class="more_button">...More</label>
-              <span class="more_text">Lorem ipsum dolor sit amet.</span>
+              <input type="checkbox" id="more_welcome">
+              <label for="more_welcome">...More</label>
+              <span>Lorem ipsum dolor sit amet.</span>
             </p>
           </div>
           <!-- choose -->
@@ -234,9 +225,9 @@
               <div class="news_body">
                 <span>12.12.12</span>
                 <p>Aliquam ac diam in lorem vulputate auctor. Aliquam rhoncus nunc et justo imperdiet blandit
-                  <input type="checkbox" id="more_blog1" class="more_checkbox">
-                  <label for="more_blog1" class="more_button">...More</label>
-                  <span class="more_text">Lorem ipsum dolor sit amet.</span>
+                  <input type="checkbox" id="more_blog1">
+                  <label for="more_welcome">...More</label>
+                  <span>Lorem ipsum dolor sit amet.</span>
                 </p>
               </div>
             </div>
@@ -248,9 +239,9 @@
                 <span>12.12.12</span>
                 <p>Sed auctor laoreet augue, is pulvinar lacus mattis non. In hac habitassw platea dictumst. Proin et
                   lorem
-                  <input type="checkbox" id="more_blog2" class="more_checkbox">
-                  <label for="more_blog2" class="more_button">...More</label>
-                  <span class="more_text">Lorem ipsum dolor sit amet.</span>
+                  <input type="checkbox" id="more_blog1">
+                  <label for="more_welcome">...More</label>
+                  <span>Lorem ipsum dolor sit amet.</span>
                 </p>
               </div>
             </div>
@@ -258,23 +249,22 @@
         </div>
       </section>
 
-      <!-- feature -->
       <section class="feature">
         <h2>FEATURE WORKS</h2>
+        <a href="##" class="arrow_left"><i class="fas fa-chevron-left"></i></a>
+        <a href="##" class="arrow_right"><i class="fas fa-chevron-right"></i></a>
         <div class="row feature_box">
-          <a href="##"><i class="fas fa-chevron-left arrow_left"></i></a>
-          <a href="##"><i class="fas fa-chevron-right arrow_right"></i></a>
           <div class="col-12 col-sm-6 col-lg-3 feature_item">
-            <a href="##"><img src="img/g1.jpg" alt="feature works" class="img-fluid"></a>
+            <a href="##" class="feature_item_link"><img src="img/g1.jpg" alt="feature works" class="img-fluid"></a>
           </div>
           <div class="col-12 col-sm-6 col-lg-3 feature_item">
-            <a href="##"><img src="img/g2.jpg" alt="feature works" class="img-fluid"></a>
+            <a href="##" class="feature_item_link"><img src="img/g2.jpg" alt="feature works" class="img-fluid"></a>
           </div>
           <div class="col-12 col-sm-6 col-lg-3 feature_item">
-            <a href="##"><img src="img/g3.jpg" alt="feature works" class="img-fluid"></a>
+            <a href="##" class="feature_item_link"><img src="img/g3.jpg" alt="feature works" class="img-fluid"></a>
           </div>
           <div class="col-12 col-sm-6 col-lg-3 feature_item">
-            <a href="##"><img src="img/g4.jpg" alt="feature works" class="img-fluid"></a>
+            <a href="##" class="feature_item_link"><img src="img/g4.jpg" alt="feature works" class="img-fluid"></a>
           </div>
         </div>
       </section>
@@ -283,23 +273,23 @@
 
     <footer>
       <section class="footer_info">
-        <div class="row info">
+        <div class="row info_box">
           <!-- tweet -->
           <div class="col-12 col-sm-6 col-lg-3 info_item tweet">
             <h3>LATEST TWEETS</h3>
             <span>loading tweets...</span>
           </div>
-          <!-- quote -->
-          <div class="col-12 col-sm-6 col-lg-3 info_item quote">
+          <!-- dialog -->
+          <div class="col-12 col-sm-6 col-lg-3 info_item dialog">
             <h3>TESTIMONIALS</h3>
-            <div class="quotation">
+            <div class="dialog_box">
               <p>" Sed dapibus molesite interdum. Fusce nec est ante, sit amet lacinia lorem. Maecenas nec eros ut
                 mauris
                 pulvinar suscipit. Aliquam erat</p>
             </div>
-            <div class="quote_body">
-              <img src="img/men.jpg" alt="Stephen Bingham">
-              <div class="quote_text">
+            <div class="dialog_body">
+              <img src="img/men.jpg" alt="Stephen Bingham" class="dialog_image">
+              <div class="dialog_text">
                 <p>Stephen Bingham</p>
                 <a href="##"><em>demolink.org</em></a>
               </div>
@@ -319,7 +309,21 @@
           <!-- flickr -->
           <div class="col-12 col-sm-6 col-lg-3 info_item flickr">
             <h3>FLICKR</h3>
-            <div class="row flickr_box">
+            <div class="flickr_box">
+              <a href="##"><img src="img/f1.jpg" alt="flickr"></a>
+              <a href="##"><img src="img/f2.jpg" alt="flickr"></a>
+              <a href="##"><img src="img/f3.jpg" alt="flickr"></a>
+              <a href="##"><img src="img/f4.jpg" alt="flickr"></a>
+              <a href="##"><img src="img/f5.jpg" alt="flickr"></a>
+              <a href="##"><img src="img/f6.jpg" alt="flickr"></a>
+              <a href="##"><img src="img/f7.jpg" alt="flickr"></a>
+              <a href="##"><img src="img/f8.jpg" alt="flickr"></a>
+              <a href="##"><img src="img/f9.jpg" alt="flickr"></a>
+              <a href="##"><img src="img/f10.jpg" alt="flickr"></a>
+              <a href="##"><img src="img/f11.jpg" alt="flickr"></a>
+              <a href="##"><img src="img/f12.jpg" alt="flickr"></a>
+            </div>
+            <!-- <div class="row flickr_box">
               <div class="col-3 flickr_item"><a href="##"><img src="img/f1.jpg" alt="flickr"></a></div>
               <div class="col-3 flickr_item"><a href="##"><img src="img/f2.jpg" alt="flickr"></a></div>
               <div class="col-3 flickr_item"><a href="##"><img src="img/f3.jpg" alt="flickr"></a></div>
@@ -332,7 +336,7 @@
               <div class="col-3 flickr_item"><a href="##"><img src="img/f10.jpg" alt="flickr"></a></div>
               <div class="col-3 flickr_item"><a href="##"><img src="img/f11.jpg" alt="flickr"></a></div>
               <div class="col-3 flickr_item"><a href="##"><img src="img/f12.jpg" alt="flickr"></a></div>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>

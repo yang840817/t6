@@ -1,20 +1,12 @@
 //font
-$font-family: 'Open Sans', sans-serif;
-%font{
-  font-family: $font-family;
-}
-
 @mixin font-style($size, $weight){
   font: {
-    family: $font-family;
+    family: 'Open Sans', sans-serif;
     size: $size;
     weight: $weight;
   }
 }
 
-h2, h3, h4, p, a, span{
-  @extend %font;
-}
 h2{
   @include font-style(26px, 600);
 }
@@ -22,6 +14,7 @@ h3{
   @include font-style(22px, 600);
   color: #333;
 }
+
 h4{
   @include font-style(16px, 400);
   color: #555;

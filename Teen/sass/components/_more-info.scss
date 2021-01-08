@@ -1,14 +1,15 @@
 // more infomation
 %more-info{
-  .more_button{
-    @extend %hover-primary-color;
+  label{
+    margin-bottom: 0;
+    @include hover-primary-color;
   }
-  .more_text,
-  .more_checkbox,
-  .more_checkbox:checked ~ .more_button{
+  span,
+  input,
+  input:checked ~ label{
     display: none;
   }
-  .more_checkbox:checked ~ .more_text{
+  input:checked ~ span{
     display: inline;
   }
 }

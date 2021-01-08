@@ -6,33 +6,28 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     background-color: #eee;
-  
     &:hover{
       background-color: rgba(0,0,0,.7);
-  
       .card_title,
       .card_text{
         color: white;
       }
     }
-  
-    .card_body,
-    .card_image{
-      margin-bottom: 20px;
-    }
-    
-    .card_footer{
-      .card_button{
-        padding: 5px 15px;
-        background-color: #ccc;
-        color: #111;
-        @extend %hover-primary-background;
-  
-        &:hover{
-          text-decoration: none;
-        }
-      }
+  }
+  .card_body,
+  .card_image{
+    margin-bottom: 20px;
+  }
+  .card_button{
+    padding: 5px 15px;
+    display: inline-block;
+    background-color: #ccc;
+    color: #111;
+    &:hover{
+      @include primary-background-color;
+      text-decoration: none;
     }
   }
 }

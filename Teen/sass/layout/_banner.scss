@@ -1,12 +1,26 @@
+// banner control icon
+@mixin banner-control-icon{
+  width: 30px; // origin width is 40px
+  height: 88px; // origin half height is 119px
+  background-position: left top;
+  background-size: 100%;
+  &:hover{
+    background-position: left bottom;
+  }
+  @content;
+}
+
 // main--banner
 .banner_control{
   width: 30px;
   .banner_control_prev_icon{
-    background-image: url(../img/slider_prev.gif);
-    @extend %banner-control;
+    @include banner-control-icon{
+      background-image: url(../img/slider_prev.gif);
+    }
   }
   .banner_control_next_icon{
-    background-image: url(../img/slider_next.gif);
-    @extend %banner-control;
+    @include banner-control-icon{
+      background-image: url(../img/slider_next.gif);
+    }
   }
 }

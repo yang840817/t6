@@ -1,7 +1,7 @@
 // arrow style
 %arrow{
   .arrow_style{
-    margin: 0 10px;
+    margin-right: 10px;
     border-radius: 50px;
     padding: 0 18px;
     width: 40px;
@@ -10,9 +10,8 @@
     color: white;
     line-height: 40px;
     transition: transform .3s;
-
     &:hover{
-      @extend %primary-background;
+      @include primary-background-color;
       transform: rotate(90deg);
     }
   }

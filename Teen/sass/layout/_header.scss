@@ -1,9 +1,7 @@
-
 // header--logo, connect social media & tel
 header{
   margin-top: 5px;
   padding: 30px;
-  @include container-background;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,59 +9,70 @@ header{
     flex-direction: row;
     justify-content: space-between;
   }
+  @include container-background;
+}
   
-  // left--logo
-  h1{
-    margin-bottom: 15px;
-    @include mediaquery-tablet-P{
-      margin-bottom: 0;
-    }
+// left--logo
+h1{
+  margin-bottom: 15px;
+  @include mediaquery-tablet-P{
+    margin-bottom: 0;
+  }
+  font-size: 0;
+  a{
+    display: inline-block;
+  }
+}
 
-    a{
-      display: block;
-    }
+// right top--social media
+.connect{
+  font-size: 0;
+}
+.connect_icon{
+  margin-bottom: 5px;
+  text-align: center;
+  @include mediaquery-tablet-P{
+    text-align: right;
   }
 
-  // right top--connect social media
-  .connect_icon{
-    margin-bottom: 5px;
-    font-size: 0;
-    text-align: center;
-    @include mediaquery-tablet-P{
-      text-align: right;
-    }
-
-    a{
-      display: inline-block;
-      width: 27px;
-      height: 27px;
-    }
-    a + a{
-      margin-left: 10px;
-    }
-
-    .connect_icon_fb{
-      @include connect-icon(0%);
-    }
-    .connect_icon_twitter{
-      @include connect-icon(25%);
-    }
-    .connect_icon_flickr{
-      @include connect-icon(50%);
-    }
-    .connect_icon_dribbble{
-      @include connect-icon(75%);
-    }
-    .connect_icon_rss{
-      @include connect-icon(100%);
-    }
+  a + a{
+    margin-left: 10px;
   }
+}
 
-  // right top--tel
-  .connect_tel{
-    a{
-      display: inline-block;
-      @extend %hover-primary-color;
-    }
-  } 
+@mixin social-media-icon($x){
+  width: 27px;
+  height: 27px;
+  display: inline-block;
+  background-image: url(../img/social.png);
+  background-position: $x top;
+  &:hover{
+    background-position: $x bottom;
+  }
+}
+.connect_icon_fb{
+  @include social-media-icon(0%);
+}
+.connect_icon_twitter{
+  @include social-media-icon(25%);
+}
+.connect_icon_flickr{
+  @include social-media-icon(50%);
+}
+.connect_icon_dribbble{
+  @include social-media-icon(75%);
+}
+.connect_icon_rss{
+  @include social-media-icon(100%);
+}
+
+// right bottom--tel
+.connect{
+  span{
+    vertical-align: middle;
+  }
+  a{
+    vertical-align: middle;
+    @include hover-primary-color;
+  }
 }

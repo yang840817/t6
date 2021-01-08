@@ -1,5 +1,5 @@
 *{
-  // outline: 1px solid red;
+  outline: 1px solid red;
 }
 
 // base
@@ -7,26 +7,25 @@
 @import 'base/color';
 @import 'base/font';
 
-// setting
-@import 'setting/background-image'; //container background, social media icon
-@import 'setting/position';
-@import 'setting/spacing'; // row margin, column padding
-@import 'setting/hover'; //link color, word color, darker
-@import 'setting/box-style'; // box-shadow (nav), placeholder, input border, input submit
+// partials
+@import 'partials/spacing'; // row margin, column padding
+@import 'partials/grid-system';
+@import 'partials/position';
+@import 'partials/background-image'; //container background, social media icon
+@import 'partials/hover'; //link color, word color, darker
 
 // components
-@import 'components/search-icon'; // (section: search bar)
-@import 'components/banner-control'; // banner control prev & next icon
+@import 'components/search'; // (section: searchbar)
 @import 'components/card'; // (section: service)
 @import 'components/more-info'; // (section: about)
 @import 'components/arrow'; // (section: about)
-@import 'components/deco-triangle'; // deco-triangle & deco-triangle-border, (section: footer)
+@import 'components/dialog-box'; // deco-triangle & deco-triangle-border, (section: footer)
+@import 'components/form'; // (footer)
 
 // layout
-@import 'layout/grid-system';
 @import 'layout/container';
 @import 'layout/header';
-@import 'layout/main-nav'; // main, navbar, search bar
+@import 'layout/navbar'; // main, navbar, searchbar
 @import 'layout/banner';
 @import 'layout/service';
 @import 'layout/about'; // welcome, choose, news & events

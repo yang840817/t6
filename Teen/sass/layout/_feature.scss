@@ -1,37 +1,34 @@
 // main--feature
 .feature{
   margin: 0 30px;
-  padding: 40px 0;
   border-top: 1px solid #ccc;
-
+  padding: 40px 0;
+  position: relative;
   h2{
     margin-bottom: 0;
   }
-  
-  .feature_box{
-    @extend %row;
-    position: relative;
-    
-    i{
-      color: #ccc;
-    }
-    .arrow_left{
-      @include position-absolute(-20px, 30px, auto, auto);
-    }
-    .arrow_right{
-      @include position-absolute(-20px, 10px, auto, auto);
-    }
+  a{
+    display: inline-block;
+  }
+  i{
+    color: #ccc;
+    @include hover-primary-color;
+  }
+}
+.arrow_left{
+  @include position-absolute(50px, 20px, auto, auto);
+}
+.arrow_right{
+  @include position-absolute(50px, 0, auto, auto);
+}
+.feature_box{
+  @extend %row;
+}
 
-    .feature_item{
-      @extend %col;
-      
-      a{
-        position: relative;
-        display: block;
-        &::before{
-          @extend %hover-darker;
-        }
-      }
-    }
+.feature_item{
+  @extend %col;
+  
+  &::before{
+    @extend %hover-darker;
   }
 }
