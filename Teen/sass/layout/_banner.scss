@@ -1,3 +1,11 @@
+main{
+  margin-bottom: 60px;
+  @include mediaquery-tablet-L{
+    box-shadow: 0 -25px white;
+  }
+  @include container-background;
+}
+
 // banner control icon
 @mixin banner-control-icon{
   width: 30px; // origin width is 40px

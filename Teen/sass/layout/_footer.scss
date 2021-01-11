@@ -16,6 +16,7 @@
 // footer info--quote
 .dialog_box{
   padding: 20px 10px 20px 30px;
+  @extend %dialog-box;
 }
 .dialog_body{
   margin-top: 35px;
@@ -37,11 +38,11 @@
   }
   input{
     margin-bottom: 5px;
-    @include form.input-style(0px);
+    @include form.input-style(5px);
   }
   textarea{
     margin-bottom: 20px;
-    @include form.input-style(0px);
+    @include form.input-style(5px);
   }
   button{
     border: none;

@@ -11,7 +11,7 @@
 }
 // feature image
 %hover-darker{
-  content: url(../img/icon2.png) " ";
+  content: url(../img/icon2.png);
   @include position-absolute(0,0,0,0);
   display: flex;
   justify-content: center;

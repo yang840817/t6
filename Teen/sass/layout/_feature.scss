@@ -24,11 +24,15 @@
 .feature_box{
   @extend %row;
 }
-
 .feature_item{
   @extend %col;
-  
+}
+.feature_item_link{
+  position: relative;
   &::before{
     @extend %hover-darker;
+  }
+  img{
+    width: 100%;
   }
 }

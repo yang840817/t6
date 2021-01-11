@@ -28,6 +28,8 @@
   display: flex;
   align-items: center;
   position: relative;
+}
+.arrow_style{
   @extend %arrow;
 }
 

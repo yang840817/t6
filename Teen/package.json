@@ -1,10 +1,9 @@
 {
-  "name": "teen",
+  "name": "business_planet",
   "version": "1.0.0",
   "description": "goodideas template t6",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "sass --watch sass/main.scss:css/main.css"
   },
   "keywords": [
@@ -13,7 +12,8 @@
   ],
   "author": "Teen",
   "license": "ISC",
-  "dependencies": {
-    "sass": "^1.30.0"
+  "dependencies": {},
+  "devDependencies": {
+    "sass": "^1.32.2"
   }
 }

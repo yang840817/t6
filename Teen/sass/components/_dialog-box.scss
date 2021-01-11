@@ -6,7 +6,7 @@
     border-bottom: 17px solid transparent;
     width: 0;
     height: 0;
-    @include position-absolute(auto, auto, -17px, -1px);
+    @include position-absolute(100%, auto, auto, -1px);
   }
 }
 %triangle{
@@ -16,12 +16,12 @@
     border-bottom: 15px solid transparent;
     width: 0;
     height: 0;
-    @include position-absolute(auto, auto, -15px, 0);
+    @include position-absolute(100%, auto, auto, 0);
   }
 }
 
 // dialog box
-.dialog_box{
+%dialog-box{
   border: 1px solid #ddd;
   border-radius: 5px 5px 5px 0;
   position: relative;
