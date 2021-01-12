@@ -46,6 +46,7 @@
   textarea{
     margin-bottom: 20px;
     @include form.input-style(5px);
+    resize: none; // 關閉調整輸入框大小
   }
   button{
     border: none;
@@ -65,7 +66,10 @@
 // footer info--flickr
 .flickr_box{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  @include mediaquery-mobile-L{
+    grid-template-columns: repeat(4, 1fr);
+  }
   gap: 5px;
   img{
     width: 100%;
