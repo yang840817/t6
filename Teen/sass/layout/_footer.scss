@@ -28,6 +28,9 @@
   line-height: 1;
   a{
     color: $primary-color;
+    &:hover{
+      text-decoration: underline;
+    }
   }
 }
 
@@ -93,6 +96,9 @@
     padding-left: 5px;
     display: inline-block;
     color: $primary-color;
+    &:hover{
+      text-decoration: underline;
+    }
   }
 }
 .sub_menu{

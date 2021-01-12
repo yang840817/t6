@@ -15,7 +15,9 @@
     margin-bottom: 20px;
     width: 100%;
   }
-  @extend %more-info;
+  a{
+    @extend %more-info;
+  }
 }
 
 // main--about--choose
@@ -51,7 +53,9 @@
     display: inline-block;
     @include primary-background-color;
   }
-  @extend %more-info;
+  a{
+    @extend %more-info;
+  }
 }
 .news_item + .news_item{
   margin-top: 20px;

@@ -2,7 +2,8 @@
 .service{
   padding: 0 30px 20px;
   @include mediaquery-mobile-L{    
-    margin-top: -40px;
+    transform: translateY(-40px);
+    padding-bottom: 0;
   }
 }
 .service_box{

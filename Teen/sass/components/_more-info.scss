@@ -1,15 +1,8 @@
 // more infomation
 %more-info{
-  label{
-    margin-bottom: 0;
-    @include hover-primary-color;
-  }
-  span,
-  input,
-  input:checked ~ label{
-    display: none;
-  }
-  input:checked ~ span{
-    display: block;
+  @include hover-primary-color;
+  font-weight: bold;
+  &:hover{
+    text-decoration: underline;
   }
 }

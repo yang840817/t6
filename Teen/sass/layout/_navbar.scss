@@ -12,43 +12,47 @@
   @include mediaquery-tablet-L{
     background-image: none;
   }
-}
-.menu_collapse{
-  border: 1px solid #ddd;
-  @include container-background;
-  @include mediaquery-tablet-L{
-    box-shadow: 2px -2px 5px #777;
-    border: none;
+
+  .menu_collapse{
+    border: 1px solid #ddd;
+    @include mediaquery-tablet-L{
+      box-shadow: 2px -2px 5px #777;
+      border: none;
+      @include container-background;
+    }
   }
-}
-.menu_item{
-  @include mediaquery-tablet-L{
-    border-right: 1px solid #eee;
+  .menu_item{
+    @include mediaquery-tablet-L{
+      border-right: 1px solid #eee;
+    }
   }
-}
-.menu .menu_item .menu_link{
-  padding: 15px;
-  color: black;
-  &:hover{
-    @include primary-background-color;
+  .menu_item .menu_link{
+    padding: 15px;
+    // display: block;
+    color: black;
+    &:hover{
+      @include primary-background-color;
+    }
+    i{
+      font-size: 10px;
+    }
+    &::after{
+      display: none; /* cover bootstrap's dropdown icon */
+    }
   }
-}
-.menu_link{
-  i{
-    font-size: 10px;
-  }
-  &::after{
-    display: none; /* cover bootstrap's dropdown icon */
-  }
-} 
-.menu_dropdown_item{
-  &:hover{
-    @include primary-background-color;
+  .menu_dropdown_item{
+    &:hover{
+      @include primary-background-color;
+    }
   }
 }
 
 // searchbar
 .search_form{
+  flex-grow: 1;
+  @include mediaquery-mobile-L{
+    flex-grow: 0;
+  }
   @include mediaquery-tablet-L{
     margin-left: 10px;
     box-shadow: -2px -2px 5px #777;
@@ -56,12 +60,12 @@
     display: flex;
     align-items: center;
     order: 2;
-    flex-grow: 1;
     @include container-background;
   }
-}
-.search_button{
-  @include mediaquery-tablet-L{
-    margin: 10px; // 消除form padding 10px
+  
+  .search_button{
+    @include mediaquery-tablet-L{
+      margin: 10px; // 消除form padding 10px
+    }
   }
 }

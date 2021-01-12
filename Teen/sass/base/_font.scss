@@ -1,7 +1,7 @@
 //font
 @mixin font-style($size, $weight){
   font: {
-    family: 'Open Sans', sans-serif;
+    family: 'Open Sans', sans-serif; // 無襯線體
     size: $size;
     weight: $weight;
   }

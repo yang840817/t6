@@ -5,7 +5,7 @@
   padding: 40px 0;
   position: relative;
   h2{
-    margin-bottom: 0;
+    // margin-bottom: 0;
   }
   a{
     display: inline-block;
@@ -22,10 +22,10 @@
   @include position-absolute(50px, 0, auto, auto);
 }
 .feature_box{
-  @extend %row;
+  // @extend %row;
 }
 .feature_item{
-  @extend %col;
+  // @extend %col;
 }
 .feature_item_link{
   position: relative;
