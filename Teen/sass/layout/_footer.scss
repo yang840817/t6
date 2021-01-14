@@ -6,30 +6,34 @@
 }
 
 // footer info
-.info_box{
-  @extend %row;
-} 
-.info_item{
-  @extend %col;
-} 
+.info{
+  &_box{
+    @extend %row;
+  }
+  &_item{
+    @extend %col;
+  }
+}
 
 // footer info--quote
-.dialog_box{
-  padding: 20px 10px 20px 30px;
-  @extend %dialog-box;
-}
-.dialog_body{
-  margin-top: 35px;
-  display: flex;
-}
-.dialog_text{
-  margin-top: 7px;
-  margin-left: 10px;
-  line-height: 1;
-  a{
-    color: $primary-color;
-    &:hover{
-      text-decoration: underline;
+.dialog{
+  &_box{
+    padding: 20px 10px 20px 30px;
+    @extend %dialog-box;
+  }
+  &_body{
+    margin-top: 35px;
+    display: flex;
+  }
+  &_text{
+    margin-top: 7px;
+    margin-left: 10px;
+    line-height: 1;
+    a{
+      color: $primary-color;
+      &:hover{
+        text-decoration: underline;
+      }
     }
   }
 }

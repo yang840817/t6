@@ -21,12 +21,13 @@ main{
 // main--banner
 .banner_control{
   width: 30px;
-  .banner_control_prev_icon{
+
+  &_prev_icon{
     @include banner-control-icon{
       background-image: url(../img/slider_prev.gif);
     }
   }
-  .banner_control_next_icon{
+  &_next_icon{
     @include banner-control-icon{
       background-image: url(../img/slider_next.gif);
     }

@@ -1,3 +1,15 @@
+// connect_icon
+@mixin social-media-icon($x){
+  width: 30px;
+  height: 27px;
+  display: inline-block;
+  background-image: url(../img/social.png);
+  background-position: $x top;
+  &:hover{
+    background-position: $x bottom;
+  }
+}
+
 // header--logo, connect social media & tel
 header{
   margin-top: 5px;
@@ -30,43 +42,34 @@ h1{
 // right top--social media
 .connect{
   font-size: 0;
-}
-.connect_icon{
-  margin-bottom: 5px;
-  text-align: center;
-  @include mediaquery-tablet-P{
-    text-align: right;
-  }
 
-  a + a{
-    margin-left: 10px;
-  }
-}
+  &_icon{
+    margin-bottom: 5px;
+    text-align: center;
+    @include mediaquery-tablet-P{
+      text-align: right;
+    }
 
-@mixin social-media-icon($x){
-  width: 30px;
-  height: 27px;
-  display: inline-block;
-  background-image: url(../img/social.png);
-  background-position: $x top;
-  &:hover{
-    background-position: $x bottom;
+    a:not(:first-child){
+      margin-left: 10px;
+    }
+
+    &_fb{
+      @include social-media-icon(0%);
+    }
+    &_twitter{
+      @include social-media-icon(25%);
+    }
+    &_flickr{
+      @include social-media-icon(50%);
+    }
+    &_dribbble{
+      @include social-media-icon(75%);
+    }
+    &_rss{
+      @include social-media-icon(100%);
+    }
   }
-}
-.connect_icon_fb{
-  @include social-media-icon(0%);
-}
-.connect_icon_twitter{
-  @include social-media-icon(25%);
-}
-.connect_icon_flickr{
-  @include social-media-icon(50%);
-}
-.connect_icon_dribbble{
-  @include social-media-icon(75%);
-}
-.connect_icon_rss{
-  @include social-media-icon(100%);
 }
 
 // right bottom--tel
@@ -74,6 +77,7 @@ h1{
   span{
     vertical-align: middle;
   }
+  
   a{
     vertical-align: middle;
     @include hover-primary-color;

@@ -1,4 +1,11 @@
 // main--feature
+.arrow_left{
+  @include position-absolute(50px, 20px, auto, auto);
+}
+.arrow_right{
+  @include position-absolute(50px, 0, auto, auto);
+}
+
 .feature{
   margin: 0 30px;
   border-top: 1px solid #ccc;
@@ -11,19 +18,14 @@
     color: #ccc;
     @include hover-primary-color;
   }
-}
-.arrow_left{
-  @include position-absolute(50px, 20px, auto, auto);
-}
-.arrow_right{
-  @include position-absolute(50px, 0, auto, auto);
-}
-.feature_item_link{
-  position: relative;
-  &::before{
-    @extend %hover-darker;
-  }
-  img{
-    width: 100%;
+
+  &_item_link{
+    position: relative;
+    &::before{
+      @extend %hover-darker;
+    }
+    img{
+      width: 100%;
+    }
   }
 }

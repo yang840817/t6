@@ -1,12 +1,14 @@
 // main--about
 .about{
   padding: 0 30px 40px;
-}
-.about_box{
-  @extend %row;  
-}
-.about_item{
-  @extend %col;
+
+  &_box{
+    @extend %row;  
+  }
+
+  &_item{
+    @extend %col;
+  }
 }
 
 // main--about--welcome
@@ -35,27 +37,32 @@
 }
 
 // main--about--news
-.news_item{
-  display: flex;
-}
-.news_image{
-  margin-right: 20px;
-  img{
-    width: 100%;
+.news{
+  &_item{
+    display: flex;
   }
-}
-.news_body{
-  flex: 1 0 50%;
-  > span{
-    margin-bottom: 20px;
-    padding: 5px 10px;
-    display: inline-block;
-    @include primary-background-color;
+
+  &_item + &_item{
+    margin-top: 20px;
   }
-  a{
-    @extend %more-info;
+
+  &_image{
+    margin-right: 20px;
+    img{
+      width: 100%;
+    }
   }
-}
-.news_item + .news_item{
-  margin-top: 20px;
+
+  &_body{
+    flex: 1 0 50%;
+    > span{
+      margin-bottom: 20px;
+      padding: 5px 10px;
+      display: inline-block;
+      @include primary-background-color;
+    }
+    a{
+      @extend %more-info;
+    }
+  }
 }
