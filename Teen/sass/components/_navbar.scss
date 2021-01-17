@@ -1,0 +1,52 @@
+@use '../utilities/color';
+@use '../utilities/background-theme';
+@use '../utilities/mediaquery';
+
+// navbar
+.menu{
+  &_toggler{
+    &:focus{
+      box-shadow: none;
+    }
+  }
+
+  &_collapse{
+    border: 1px solid #ddd;
+
+    @include mediaquery.mediaquery-tablet-L{
+      border: none;
+      box-shadow: 2px -2px 5px #777;
+      @include background-theme.background;
+    }
+  }
+
+  &_item{
+    @include mediaquery.mediaquery-tablet-L{
+      border-right: 1px solid #eee;
+    }
+  }
+
+  & &_item &_link{
+    padding: 15px;
+
+    color: black;
+
+    &:hover{
+      @extend %primary-background-color;
+    }
+
+    i{
+      font-size: 10px;
+    }
+
+    &::after{
+      display: none; /* cover bootstrap's dropdown icon */
+    }
+  }
+
+  &_dropdown_item{
+    &:hover{
+      @extend %primary-background-color;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@use '../utilities/color';
+
+.sub_menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  a{
+    padding: 0 10px;
+
+    color: #555;
+    line-height: 1;
+
+    &:not(:first-child){
+      border-left: 2px solid #999;
+    }
+    
+    &:hover{
+      color: color.$primary-color;
+      text-decoration: none;
+    }
+  }
+}

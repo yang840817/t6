@@ -1,28 +1,55 @@
-@use "../components/form";
+@use '../utilities/background-theme';
+@use '../utilities/mediaquery';
+
+@use '../utilities/input-style';
+@use '../utilities/position';
+
 
 // searchbar
-.search_form{
-  width: 40%;
-  position: relative;
+.search{
+  &_form{
+    position: relative;
+    
+    @include mediaquery.mediaquery-mobile-L{
+      width: 40%;
+    }
 
-  .search_input{
-    @include form.input-style(0px);
+    @include mediaquery.mediaquery-tablet-L{
+      margin-left: 10px;
+      box-shadow: -2px -2px 5px #777;
+      padding: 0 10px;
+      display: flex;
+      align-items: center;
+      order: 2;
+      @include background-theme.background;
+    }
+  }
+
+  &_input{
+    @include input-style.input-style(0px);
     padding: 5px 10px;
   }
-  
-  .search_button{
+
+  &_button{
     padding: 5px 20px;
-    @include position-absolute(0, 0, 0, auto);
+    @include position.position-absolute(0, 0, 0, auto);
+
     background-image: url(../img/search.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 40%;
+
     &:hover{
       background-image: url(../img/icon1.png);
       background-size: 70%;
     }
+
     &:focus{
       box-shadow: none;
+    }
+
+    @include mediaquery.mediaquery-tablet-L{
+      margin-right: 10px; // 填補 form padding 10px 的空間
     }
   }
 }

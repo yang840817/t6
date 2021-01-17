@@ -1,32 +1,43 @@
-// card
-%card{
-  .card_group{
+@use "../utilities/color";
+@use '../utilities/mediaquery';
+
+// main--service
+.service{
+  &_group{
     padding: 30px 20px 20px;
     height: 100%; /* equal height */
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    
     background-color: #eee;
+
+    text-align: center;
+    
     &:hover{
       background-color: rgba(0,0,0,.7);
-      .card_title,
-      .card_text{
+    
+      .service_title, .service_text{
         color: white;
       }
     }
   }
-  .card_body,
-  .card_image{
+
+  &_body, &_image{
     margin-bottom: 20px;
   }
-  .card_button{
+
+  &_button{
     padding: 5px 15px;
     display: inline-block;
     background-color: #ccc;
+
     color: #111;
+    
     &:hover{
-      @include primary-background-color;
+      @extend %primary-background-color;
       text-decoration: none;
     }
   }

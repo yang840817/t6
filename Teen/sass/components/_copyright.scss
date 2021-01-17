@@ -1,0 +1,27 @@
+@use '../utilities/color';
+@use '../utilities/mediaquery';
+
+.copyright{
+  margin-top: 10px;
+  @include mediaquery.mediaquery-tablet-L{
+    margin-top: 0;
+  }
+
+  color: #555;
+  line-height: 1;
+
+  a{
+    margin-left: 5px;
+
+    border-left: 1px solid #555;
+    padding-left: 5px;
+
+    display: inline-block;
+
+    color: color.$primary-color;
+    
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}

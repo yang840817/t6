@@ -1,88 +1,24 @@
-// connect_icon
-@mixin social-media-icon($x){
-  width: 30px;
-  height: 27px;
-  display: inline-block;
-  background-image: url(../img/social.png);
-  background-position: $x top;
-  &:hover{
-    background-position: $x bottom;
-  }
-}
+@use '../utilities/background-theme';
+@use '../utilities/mediaquery';
 
-// header--logo, connect social media & tel
+@use '../components/brand-logo';
+@use '../components/connect';
+
+
+// header--brand logo, connect social media & tel
 header{
   margin-top: 5px;
   padding: 30px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  @include mediaquery-tablet-P{
+
+  @include mediaquery.mediaquery-tablet-P{
     flex-direction: row;
     justify-content: space-between;
   }
-  @include container-background;
-}
-  
-// left--logo
-h1{
-  margin-bottom: 15px;
-  @include mediaquery-tablet-P{
-    margin-bottom: 0;
-  }
-  font-size: 0;
-  a{
-    display: inline-block;
-  }
-  img{
-    width: 100%;
-  }
+
+  @include background-theme.background;
 }
 
-// right top--social media
-.connect{
-  font-size: 0;
-
-  &_icon{
-    margin-bottom: 5px;
-    text-align: center;
-    @include mediaquery-tablet-P{
-      text-align: right;
-    }
-
-    a:not(:first-child){
-      margin-left: 10px;
-    }
-
-    &_fb{
-      @include social-media-icon(0%);
-    }
-    &_twitter{
-      @include social-media-icon(25%);
-    }
-    &_flickr{
-      @include social-media-icon(50%);
-    }
-    &_dribbble{
-      @include social-media-icon(75%);
-    }
-    &_rss{
-      @include social-media-icon(100%);
-    }
-  }
-}
-
-// right bottom--tel
-.connect{
-  span{
-    vertical-align: middle;
-  }
-  
-  a{
-    vertical-align: middle;
-    @include hover-primary-color;
-    &:hover{
-      text-decoration: underline;
-    }
-  }
-}

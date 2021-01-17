@@ -1,33 +1,10 @@
 // vendors
-@import 'vendors/bootstrap';
-@import 'vendors/swiper';
-
-// base
-@import 'base/reset';
-@import 'base/color';
-@import 'base/font';
-
-// partials
-@import 'partials/spacing'; // row margin, column padding
-@import 'partials/grid-system';
-@import 'partials/position';
-@import 'partials/background-image'; //container background
-@import 'partials/hover'; //link color, word color, darker
-
-// components
-@import 'components/search'; // navbar
-@import 'components/card'; // service
-@import 'components/more-info'; // about
-@import 'components/arrow'; // about--choose
-@import 'components/dialog-box'; // footer
-@import 'components/form'; // footer--submit
+@use 'vendors/bootstrap';
+@use 'vendors/swiper';
 
 // layout
-@import 'layout/container';
-@import 'layout/header';
-@import 'layout/navbar'; // navbar, searchbar
-@import 'layout/banner'; // main, banner
-@import 'layout/service';
-@import 'layout/about'; // welcome, choose, news & events
-@import 'layout/feature';
-@import 'layout/footer'; // footer info (dialog, submit, flickr), footer bottom (copyright, sub navbar)
+@use 'layout/base';
+@use 'layout/header';
+@use 'layout/navigation'; // navbar, searchbar
+@use 'layout/main'; // banner, service, about, feature works
+@use 'layout/footer'; // footer info (dialog, submit, flickr), footer bottom (copyright, sub menu)

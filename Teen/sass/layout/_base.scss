@@ -1,0 +1,12 @@
+@use '../base/reset';
+@use '../base/font';
+
+body{
+  background: 
+  linear-gradient(to bottom, #151515 0% 100px, transparent 100px 90%, #151515 90% 100%),
+  url(../img/bg.jpg) center top;
+}
+
+.container_wrap{
+  padding: 0; // bootstrap origin container padding is 15px
+}

@@ -1,17 +1,9 @@
 // break points: 直式螢幕 Portrait, 橫式螢幕 Landscape
-$mobile-P: 320px;
 $mobile-L: 576px;
 $tablet-P: 768px;
 $tablet-L: 992px;
-$desktop: 1200px;
 
 // mediaquery
-// mobile-Portrait: 320px
-@mixin mediaquery-mobile-P {
-  @media (min-width: $mobile-P) {
-    @content;
-  }
-}
 // mobile-Landscape: 576px
 @mixin mediaquery-mobile-L {
   @media (min-width: $mobile-L) {
@@ -27,12 +19,6 @@ $desktop: 1200px;
 // tablet-Landscape: 992px
 @mixin mediaquery-tablet-L {
   @media (min-width: $tablet-L) {
-    @content;
-  }
-}
-// desktop: 1200px
-@mixin mediaquery-desktop {
-  @media (min-width: $desktop) {
     @content;
   }
 }

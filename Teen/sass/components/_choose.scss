@@ -1,0 +1,40 @@
+@use '../utilities/color';
+
+// main--about--choose
+.choose{
+  &_item{
+    &:not(:last-child){
+      margin-bottom: 20px;
+    }
+  
+    border-bottom: 1px solid #ddd;
+    padding: 0 10px 20px;
+    
+    display: flex;
+    
+    align-items: center;
+  }
+  
+  &_arrow{
+    margin-right: 10px;
+  
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+  
+    flex-shrink: 0; // flex-shrink default is 1
+    
+    background-color: #ddd;
+    
+    color: white;
+    line-height: 40px; // 垂直置中
+    text-align: center; // 水平置中
+    
+    transition: transform .3s;
+    
+    &:hover{
+      @extend %primary-background-color;
+      transform: rotate(90deg);
+    }
+  }
+}

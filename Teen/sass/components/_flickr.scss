@@ -1,0 +1,17 @@
+@use '../utilities/mediaquery';
+
+// footer info--flickr
+.flickr_box{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  @include mediaquery.mediaquery-mobile-L{
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  gap: 5px;
+  
+  img{
+    width: 100%;
+  }
+}

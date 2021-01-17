@@ -1,0 +1,13 @@
+//color
+$primary-color: #82B800;
+
+// hover to primary color
+%hover-primary-color{
+  color: $primary-color;
+}
+
+// background color is primary color
+%primary-background-color{
+  background-color: $primary-color;
+  color: white;
+}

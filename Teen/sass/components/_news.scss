@@ -1,0 +1,38 @@
+@use '../utilities/color';
+@use '../utilities/more-info';
+
+// about--news
+.news{
+  &_item{
+    display: flex;
+  }
+
+  &_item + &_item{
+    margin-top: 20px;
+  }
+
+  &_image{
+    margin-right: 20px;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  &_body{
+    flex: 1 0 50%;
+
+    > span{
+      margin-bottom: 20px;
+      padding: 5px 10px;
+
+      display: inline-block;
+      
+      @extend %primary-background-color;
+    }
+
+    a{
+      @extend %more-info;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@use '../utilities/more-info';
+
+// main--about--welcome
+.welcome{
+  img{
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  a{
+    @extend %more-info;
+  }
+}

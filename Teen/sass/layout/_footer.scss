@@ -1,11 +1,20 @@
-@use "../components/form";
+@use '../utilities/background-theme';
+@use '../utilities/mediaquery';
 
-.footer_info{
-  padding: 10px 30px 30px;
-  @include container-background;
-}
+@use '../components/grid-spacing';
+@use '../components/testimonials';
+@use '../components/submit-message';
+@use '../components/flickr';
+@use '../components/copyright';
+@use '../components/sub-menu';
+
 
 // footer info
+.footer_info{
+  padding: 10px 30px 30px;
+  @include background-theme.background;
+}
+
 .info{
   &_box{
     @extend %row;
@@ -15,114 +24,16 @@
   }
 }
 
-// footer info--quote
-.dialog{
-  &_box{
-    padding: 20px 10px 20px 30px;
-    @extend %dialog-box;
-  }
-  &_body{
-    margin-top: 35px;
-    display: flex;
-  }
-  &_text{
-    margin-top: 7px;
-    margin-left: 10px;
-    line-height: 1;
-    a{
-      color: $primary-color;
-      &:hover{
-        text-decoration: underline;
-      }
-    }
-  }
-}
-
-// footer info--submit
-.submit{
-  form{
-    font-size: 0;
-  }
-  input{
-    margin-bottom: 5px;
-    @include form.input-style(5px);
-  }
-  textarea{
-    margin-bottom: 20px;
-    @include form.input-style(5px);
-    resize: none; // 關閉調整輸入框大小
-  }
-  button{
-    border: none;
-    padding: 5px 10px;
-    font-size: 14px;
-    background-color: black;
-    color: white;
-    &:hover{
-      @include primary-background-color;
-    }
-  }
-  button + button{
-    margin-left: 10px;
-  }
-}
-
-// footer info--flickr
-.flickr_box{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  @include mediaquery-mobile-L{
-    grid-template-columns: repeat(4, 1fr);
-  }
-  gap: 5px;
-  img{
-    width: 100%;
-  }
-}
-
 // footer bottom
 .footer_bottom{
   padding: 20px 0;
+
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  @include mediaquery-tablet-L{
+
+  @include mediaquery.mediaquery-tablet-L{
     flex-direction: row;
     justify-content: space-between;
-  }
-}
-.copyright{
-  margin-top: 10px;
-  @include mediaquery-tablet-L{
-    margin-top: 0;
-  }
-  color: #555;
-  line-height: 1;
-  a{
-    margin-left: 5px;
-    border-left: 1px solid #555;
-    padding-left: 5px;
-    display: inline-block;
-    color: $primary-color;
-    &:hover{
-      text-decoration: underline;
-    }
-  }
-}
-.sub_menu{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  a{
-    padding: 0 10px;
-    color: #555;
-    line-height: 1;
-    &:not(:first-child){
-      border-left: 2px solid #999;
-    }
-    @include hover-primary-color;
-    &:hover{
-      text-decoration: none;
-    }
   }
 }

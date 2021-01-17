@@ -1,0 +1,19 @@
+// header left--logo
+@use '../utilities/mediaquery';
+
+h1{
+  margin-bottom: 15px;
+  @include mediaquery.mediaquery-tablet-P{
+    margin-bottom: 0;
+  }
+
+  font-size: 0;
+
+  a{
+    display: inline-block;
+  }
+
+  img{
+    width: 100%;
+  }
+}

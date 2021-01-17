@@ -13,7 +13,7 @@
   "author": "Teen",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.0.0-alpha1",
+    "bootstrap": "^5.0.0-beta1",
     "swiper": "^6.4.5"
   },
   "devDependencies": {

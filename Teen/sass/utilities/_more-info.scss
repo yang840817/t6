@@ -1,0 +1,11 @@
+@use '../utilities/color';
+
+// interactions about more infomation
+%more-info{
+  font-weight: bold;
+
+  &:hover{
+    color: color.$primary-color;
+    text-decoration: underline;
+  }
+}

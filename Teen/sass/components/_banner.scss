@@ -1,20 +1,18 @@
-main{
-  margin-bottom: 60px;
-  @include mediaquery-tablet-L{
-    box-shadow: 0 -25px white;
-  }
-  @include container-background;
-}
+@use '../utilities/background-theme';
+@use '../utilities/mediaquery';
 
 // banner control icon
 @mixin banner-control-icon{
   width: 30px; // origin width is 40px
   height: 88px; // origin half height is 119px
+
   background-position: left top;
   background-size: 100%;
+  
   &:hover{
     background-position: left bottom;
   }
+  
   @content;
 }
 
@@ -27,6 +25,7 @@ main{
       background-image: url(../img/slider_prev.gif);
     }
   }
+  
   &_next_icon{
     @include banner-control-icon{
       background-image: url(../img/slider_next.gif);

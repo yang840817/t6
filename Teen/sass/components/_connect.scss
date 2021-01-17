@@ -1,0 +1,67 @@
+@use '../utilities/color';
+@use '../utilities/mediaquery';
+
+// connect_icon
+@mixin social-media-icon($x){
+  width: 30px;
+  height: 27px;
+  display: inline-block;
+  
+  background-image: url(../img/social.png);
+  background-position: $x top;
+
+  &:hover{
+    background-position: $x bottom;
+  }
+}
+
+// right top--social media
+.connect{
+  font-size: 0;
+
+  &_icon{
+    margin-bottom: 5px;
+
+    text-align: center;
+    
+    @include mediaquery.mediaquery-tablet-P{
+      text-align: right;
+    }
+
+    a:not(:first-child){
+      margin-left: 10px;
+    }
+
+    &_fb{
+      @include social-media-icon(0%);
+    }
+    &_twitter{
+      @include social-media-icon(25%);
+    }
+    &_flickr{
+      @include social-media-icon(50%);
+    }
+    &_dribbble{
+      @include social-media-icon(75%);
+    }
+    &_rss{
+      @include social-media-icon(100%);
+    }
+  }
+}
+
+// right bottom--tel
+.connect{
+  span{
+    vertical-align: middle;
+  }
+  
+  a{
+    vertical-align: middle;
+
+    &:hover{
+      @extend %hover-primary-color;
+      text-decoration: underline;
+    }
+  }
+}

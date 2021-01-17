@@ -1,0 +1,24 @@
+@use '../utilities/background-theme';
+@use '../utilities/mediaquery';
+
+@use '../components/navbar';
+@use '../components/search';
+
+.menu{
+  margin-top: 30px;
+  padding: 10px 30px;
+  @include mediaquery.mediaquery-tablet-L{
+    padding: 0;
+  }
+
+  position: relative;
+
+  justify-content: space-between;
+  align-items: stretch; // bootstrap .navbar default is center
+  
+  @include background-theme.background;
+  
+  @include mediaquery.mediaquery-tablet-L{
+    background-image: none;
+  }
+}

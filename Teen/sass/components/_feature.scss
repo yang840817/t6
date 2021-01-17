@@ -1,0 +1,53 @@
+@use '../utilities/color';
+@use '../utilities/position';
+
+// main--feature
+.feature_arrow_left{
+  @include position.position-absolute(50px, 20px, auto, auto);
+}
+.feature_arrow_right{
+  @include position.position-absolute(50px, 0, auto, auto);
+}
+
+.feature{
+  position: relative;
+  
+  a{
+    display: inline-block;
+  }
+
+  i{
+    color: #ccc;
+
+    &:hover{
+      color: color.$primary-color;
+    }
+  }
+
+  &_item_link{
+    position: relative;
+
+    &::before{
+      content: url(../img/icon2.png);
+
+      @include position.position-absolute(0,0,0,0);
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      background-color: black;
+      
+      transition: opacity .5s;
+      opacity: 0;  
+    }
+
+    &:hover::before{
+      opacity: 0.6;
+    }
+
+    img{
+      width: 100%;
+    }
+  }
+}
