@@ -1,5 +1,4 @@
-@use '../utilities/background-theme';
-@use '../utilities/mediaquery';
+@use '../components/background-theme';
 
 @use '../components/brand-logo';
 @use '../components/connect';
@@ -11,13 +10,8 @@ header{
   padding: 30px;
 
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap; // default is nowrap
   align-items: center;
-
-  @include mediaquery.mediaquery-tablet-P{
-    flex-direction: row;
-    justify-content: space-between;
-  }
 
   @include background-theme.background;
 }

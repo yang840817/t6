@@ -3,8 +3,19 @@
 
 .copyright{
   margin-top: 10px;
+
+  flex: 1 0 100%;
+  order: 2;
+
+  text-align: center;
+  
   @include mediaquery.mediaquery-tablet-L{
     margin-top: 0;
+
+    flex: 1 0 50%;
+    order: 1;
+
+    text-align: left;
   }
 
   color: #555;

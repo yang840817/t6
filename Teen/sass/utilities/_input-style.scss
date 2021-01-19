@@ -1,7 +1,7 @@
 @mixin input-style($border-radius){
   border: 1px solid #ddd;
   border-radius: $border-radius;
-  padding: 5px;
+  padding: 5px 10px;
   width: 100%;
   background-color: #eee;
 

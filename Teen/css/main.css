@@ -7914,14 +7914,19 @@ body {
 
 h1 {
   margin-bottom: 15px;
+  flex: 1 0 100%;
+  text-align: center;
   font-size: 0;
 }
 @media (min-width: 768px) {
   h1 {
     margin-bottom: 0;
+    flex: 1 0 50%;
+    text-align: left;
   }
 }
 h1 a {
+  margin: 0 auto;
   display: inline-block;
 }
 h1 img {
@@ -7939,15 +7944,17 @@ h1 img {
 
 .connect {
   font-size: 0;
-}
-.connect_icon {
-  margin-bottom: 5px;
+  flex: 1 0 100%;
   text-align: center;
 }
 @media (min-width: 768px) {
-  .connect_icon {
+  .connect {
+    flex: 1 0 50%;
     text-align: right;
   }
+}
+.connect_icon {
+  margin-bottom: 5px;
 }
 .connect_icon a:not(:first-child) {
   margin-left: 10px;
@@ -8017,28 +8024,30 @@ header {
   margin-top: 5px;
   padding: 30px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   background-image: url(../img/subbg.gif);
 }
-@media (min-width: 768px) {
-  header {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
 
+.menu_toggler {
+  position: absolute;
+  top: 10px;
+  right: auto;
+  bottom: auto;
+  left: 30px;
+  z-index: 1;
+}
 .menu_toggler:focus {
-  box-shadow: none;
+  box-shadow: 0 0 0 2px #777;
 }
 .menu_collapse {
   border: 1px solid #ddd;
+  background-color: #fff;
 }
 @media (min-width: 992px) {
   .menu_collapse {
     border: none;
     box-shadow: 2px -2px 5px #777;
-    background-image: url(../img/subbg.gif);
   }
 }
 @media (min-width: 992px) {
@@ -8055,42 +8064,44 @@ header {
 }
 .menu .menu_item .menu_link::after {
   display: none;
-  /* cover bootstrap's dropdown icon */
+  /* hide bootstrap's dropdown icon */
 }
 .search_form {
+  padding: 10px 30px 10px 40%;
+  width: 100%;
   position: relative;
+  background-color: #fff;
 }
 @media (min-width: 576px) {
   .search_form {
-    width: 40%;
+    padding: 10px 30px 10px 60%;
   }
 }
 @media (min-width: 992px) {
   .search_form {
-    margin-left: 10px;
-    box-shadow: -2px -2px 5px #777;
+    margin: 0 0 0 10px;
     padding: 0 10px;
+    width: 40%;
+    box-shadow: -2px -2px 5px #777;
     display: flex;
     align-items: center;
     order: 2;
-    background-image: url(../img/subbg.gif);
   }
 }
 .search_input {
   border: 1px solid #ddd;
   border-radius: 0px;
-  padding: 5px;
+  padding: 5px 10px;
   width: 100%;
   background-color: #eee;
   color: #999;
   font-size: 14px;
-  padding: 5px 10px;
 }
 .search_button {
   padding: 5px 20px;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 30px;
   bottom: 0;
   left: auto;
   z-index: 1;
@@ -8099,6 +8110,16 @@ header {
   background-position: center;
   background-size: 40%;
 }
+@media (min-width: 992px) {
+  .search_button {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+    left: auto;
+    z-index: 1;
+  }
+}
 .search_button:hover {
   background-image: url(../img/icon1.png);
   background-size: 70%;
@@ -8106,29 +8127,12 @@ header {
 .search_button:focus {
   box-shadow: none;
 }
-@media (min-width: 992px) {
-  .search_button {
-    margin-right: 10px;
-  }
-}
-
 .menu {
   margin-top: 30px;
-  padding: 10px 30px;
+  padding: 0;
   position: relative;
   justify-content: space-between;
   align-items: stretch;
-  background-image: url(../img/subbg.gif);
-}
-@media (min-width: 992px) {
-  .menu {
-    padding: 0;
-  }
-}
-@media (min-width: 992px) {
-  .menu {
-    background-image: none;
-  }
 }
 
 .info_box, .service_box, .about_box {
@@ -8307,34 +8311,25 @@ header {
 
 main {
   margin-bottom: 60px;
+  box-shadow: 0 -25px white;
   background-image: url(../img/subbg.gif);
-}
-@media (min-width: 992px) {
-  main {
-    box-shadow: 0 -25px white;
-  }
 }
 
 .service {
-  padding: 0 30px 20px;
-}
-@media (min-width: 576px) {
-  .service {
-    padding-bottom: 0;
-    transform: translateY(-40px);
-  }
+  padding: 0 30px;
+  transform: translateY(-30px);
 }
 .about {
   padding: 0 30px 40px;
 }
 .feature {
   margin: 0 30px;
-  border-top: 1px solid #ccc;
   padding: 40px 0;
+  border-top: 1px solid #ccc;
 }
 
 .dialog_box {
-  padding: 20px 10px 20px 30px;
+  padding: 20px 15px 20px 30px;
   border: 1px solid #ddd;
   border-radius: 5px 5px 5px 0;
   position: relative;
@@ -8390,7 +8385,7 @@ main {
   margin-bottom: 5px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  padding: 5px;
+  padding: 5px 10px;
   width: 100%;
   background-color: #eee;
   color: #999;
@@ -8400,7 +8395,7 @@ main {
   margin-bottom: 20px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  padding: 5px;
+  padding: 5px 10px;
   width: 100%;
   background-color: #eee;
   color: #999;
@@ -8434,12 +8429,18 @@ main {
 
 .copyright {
   margin-top: 10px;
+  flex: 1 0 100%;
+  order: 2;
+  text-align: center;
   color: #555;
   line-height: 1;
 }
 @media (min-width: 992px) {
   .copyright {
     margin-top: 0;
+    flex: 1 0 50%;
+    order: 1;
+    text-align: left;
   }
 }
 .copyright a {
@@ -8457,6 +8458,15 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  flex: 1 0 100%;
+  order: 1;
+}
+@media (min-width: 992px) {
+  .sub_menu {
+    justify-content: flex-end;
+    flex: 1 0 50%;
+    order: 2;
+  }
 }
 .sub_menu a {
   padding: 0 10px;
@@ -8479,14 +8489,8 @@ main {
 .footer_bottom {
   padding: 20px 0;
   display: flex;
-  flex-direction: column-reverse;
+  flex-wrap: wrap;
   align-items: center;
-}
-@media (min-width: 992px) {
-  .footer_bottom {
-    flex-direction: row;
-    justify-content: space-between;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */

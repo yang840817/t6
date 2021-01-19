@@ -9,13 +9,11 @@
 
   input{
     margin-bottom: 5px;
-
     @include input-style.input-style(5px);
   }
 
   textarea{
     margin-bottom: 20px;
-
     @include input-style.input-style(5px);
     resize: none; // 關閉調整輸入框大小
   }
@@ -23,7 +21,6 @@
   button{
     border: none;
     padding: 5px 10px;
-
     background-color: black;
 
     font-size: 14px;

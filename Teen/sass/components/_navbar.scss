@@ -1,22 +1,25 @@
 @use '../utilities/color';
-@use '../utilities/background-theme';
 @use '../utilities/mediaquery';
+@use '../utilities/position';
+
 
 // navbar
 .menu{
   &_toggler{
+    @include position.position-absolute(10px, auto, auto, 30px);
+
     &:focus{
-      box-shadow: none;
+      box-shadow: 0 0 0 2px #777;
     }
   }
 
   &_collapse{
     border: 1px solid #ddd;
+    background-color: #fff;
 
     @include mediaquery.mediaquery-tablet-L{
       border: none;
       box-shadow: 2px -2px 5px #777;
-      @include background-theme.background;
     }
   }
 
@@ -40,7 +43,7 @@
     }
 
     &::after{
-      display: none; /* cover bootstrap's dropdown icon */
+      display: none; /* hide bootstrap's dropdown icon */
     }
   }
 

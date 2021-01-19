@@ -18,14 +18,20 @@
 // right top--social media
 .connect{
   font-size: 0;
+  flex: 1 0 100%;
+  text-align: center;
 
+  @include mediaquery.mediaquery-tablet-P{
+    flex: 1 0 50%;
+    
+    text-align: right;
+  }
+  
   &_icon{
     margin-bottom: 5px;
-
-    text-align: center;
     
     @include mediaquery.mediaquery-tablet-P{
-      text-align: right;
+      // text-align: right;
     }
 
     a:not(:first-child){

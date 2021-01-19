@@ -1,6 +1,4 @@
-@use '../utilities/background-theme';
 @use '../utilities/mediaquery';
-
 @use '../utilities/input-style';
 @use '../utilities/position';
 
@@ -8,32 +6,34 @@
 // searchbar
 .search{
   &_form{
-    position: relative;
-    
+    padding: 10px 30px 10px 40%;
     @include mediaquery.mediaquery-mobile-L{
-      width: 40%;
+      padding: 10px 30px 10px 60%;
     }
-
+    width: 100%;
+    position: relative;
+    background-color: #fff;
     @include mediaquery.mediaquery-tablet-L{
-      margin-left: 10px;
-      box-shadow: -2px -2px 5px #777;
+      margin: 0 0 0 10px;
       padding: 0 10px;
+      width: 40%;
+      box-shadow: -2px -2px 5px #777;
       display: flex;
       align-items: center;
-      order: 2;
-      @include background-theme.background;
+      order: 2; // 置於 menu_collapse 順序之後
     }
   }
 
   &_input{
     @include input-style.input-style(0px);
-    padding: 5px 10px;
   }
 
   &_button{
     padding: 5px 20px;
-    @include position.position-absolute(0, 0, 0, auto);
-
+    @include position.position-absolute(0, 30px, 0, auto); // form padding right is 30px
+    @include mediaquery.mediaquery-tablet-L{
+      @include position.position-absolute(0, 10px, 0, auto); // form padding right is 10px
+    }
     background-image: url(../img/search.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -49,7 +49,7 @@
     }
 
     @include mediaquery.mediaquery-tablet-L{
-      margin-right: 10px; // 填補 form padding 10px 的空間
+      // margin-right: 10px; // 填補 form padding 10px 的空間
     }
   }
 }

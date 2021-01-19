@@ -1,7 +1,6 @@
-@use '../utilities/background-theme';
-@use '../utilities/mediaquery';
-
+@use '../components/background-theme';
 @use '../components/grid-spacing';
+
 @use '../components/testimonials';
 @use '../components/submit-message';
 @use '../components/flickr';
@@ -9,12 +8,11 @@
 @use '../components/sub-menu';
 
 
-// footer info
+// footer info (testimonials, submit-message, flickr)
 .footer_info{
   padding: 10px 30px 30px;
   @include background-theme.background;
 }
-
 .info{
   &_box{
     @extend %row;
@@ -24,16 +22,10 @@
   }
 }
 
-// footer bottom
+// footer bottom (copyright, sub-menu)
 .footer_bottom{
   padding: 20px 0;
-
   display: flex;
-  flex-direction: column-reverse;
+  flex-wrap: wrap; // default is nowrap
   align-items: center;
-
-  @include mediaquery.mediaquery-tablet-L{
-    flex-direction: row;
-    justify-content: space-between;
-  }
 }

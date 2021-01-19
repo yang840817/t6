@@ -1,9 +1,20 @@
 @use '../utilities/color';
+@use '../utilities/mediaquery';
 
 .sub_menu{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  flex: 1 0 100%;
+  order: 1;
+
+  @include mediaquery.mediaquery-tablet-L{
+    justify-content: flex-end;
+
+    flex: 1 0 50%;
+    order: 2;
+  }
 
   a{
     padding: 0 10px;

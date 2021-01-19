@@ -2,6 +2,10 @@
 @use 'vendors/bootstrap';
 @use 'vendors/swiper';
 
+// base setting
+@use 'base/reset';
+@use 'base/font';
+
 // layout
 @use 'layout/base';
 @use 'layout/header';
