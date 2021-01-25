@@ -1,6 +1,4 @@
-@use '../components/background-theme';
-@use '../components/grid-spacing';
-
+@use '../components/read-more';
 @use '../components/banner';
 @use '../components/service';
 @use '../components/welcome';
@@ -12,31 +10,22 @@
 main{
   margin-bottom: 60px;
   box-shadow: 0 -25px white;
-  @include background-theme.background;
+
+  background-image: url(../img/subbg.gif);
 }
 
 // main--service
 .service{
   padding: 0 30px;
   transform: translateY(-30px);
-
-  &_box{
-    @extend %row;
-  }
-  &_item{
-    @extend %col;
-  }
 }
 
 // main--about (welcome, choose, news)
 .about{
   padding: 0 30px 40px;
 
-  &_box{
-    @extend %row;  
-  }
-  &_item{
-    @extend %col;
+  .read_more{
+    @extend %read-more;
   }
 }
 

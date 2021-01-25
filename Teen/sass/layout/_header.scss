@@ -1,5 +1,3 @@
-@use '../components/background-theme';
-
 @use '../components/brand-logo';
 @use '../components/connect';
 
@@ -13,6 +11,6 @@ header{
   flex-wrap: wrap; // default is nowrap
   align-items: center;
 
-  @include background-theme.background;
+  background-image: url(../img/subbg.gif);
 }
 

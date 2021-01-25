@@ -7912,6 +7912,14 @@ body {
   padding: 0;
 }
 
+.row_box {
+  margin: 0 -10px;
+}
+
+.column_item {
+  padding: 0 10px;
+}
+
 h1 {
   margin-bottom: 15px;
   flex: 1 0 100%;
@@ -8135,12 +8143,12 @@ header {
   align-items: stretch;
 }
 
-.info_box, .service_box, .about_box {
-  margin: 0 -10px;
+.about .read_more {
+  font-weight: bold;
 }
-
-.info_item, .service_item, .about_item {
-  padding: 0 10px;
+.about .read_more:hover {
+  color: #82B800;
+  text-decoration: underline;
 }
 
 .banner_control {
@@ -8197,18 +8205,11 @@ header {
   text-decoration: none;
 }
 
-.news_body a, .welcome a {
-  font-weight: bold;
-}
-.news_body a:hover, .welcome a:hover {
-  color: #82B800;
-  text-decoration: underline;
-}
-
 .welcome img {
   margin-bottom: 20px;
   width: 100%;
 }
+
 .choose_item {
   border-bottom: 1px solid #ddd;
   padding: 0 10px 20px;
@@ -8254,6 +8255,7 @@ header {
   padding: 5px 10px;
   display: inline-block;
 }
+
 .feature_arrow_left {
   position: absolute;
   top: 50px;
@@ -8319,6 +8321,7 @@ main {
   padding: 0 30px;
   transform: translateY(-30px);
 }
+
 .about {
   padding: 0 30px 40px;
 }

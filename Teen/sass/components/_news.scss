@@ -1,5 +1,4 @@
 @use '../utilities/color';
-@use '../utilities/more-info';
 
 // about--news
 .news{
@@ -29,10 +28,6 @@
       display: inline-block;
       
       @extend %primary-background-color;
-    }
-
-    a{
-      @extend %more-info;
     }
   }
 }

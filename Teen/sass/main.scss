@@ -1,14 +1,14 @@
 // vendors
 @use 'vendors/bootstrap';
-@use 'vendors/swiper';
+@use 'vendors/swiper'; // feature works slider
 
 // base setting
 @use 'base/reset';
 @use 'base/font';
 
 // layout
-@use 'layout/base';
-@use 'layout/header';
+@use 'layout/base'; // body background-image, container wrap, grid system spacing
+@use 'layout/header'; // brand logo, connect social media & tel
 @use 'layout/navigation'; // navbar, searchbar
 @use 'layout/main'; // banner, service, about, feature works
 @use 'layout/footer'; // footer info (dialog, submit, flickr), footer bottom (copyright, sub menu)

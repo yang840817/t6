@@ -7,3 +7,11 @@ body{
 .container_wrap{
   padding: 0; // bootstrap origin container padding is 15px
 }
+
+// grid-spacing
+.row_box{
+  margin: 0 -10px; // modify bootstrap row margin
+}
+.column_item{
+  padding: 0 10px; // modify bootstrap column padding
+}
