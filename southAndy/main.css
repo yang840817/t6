@@ -1,0 +1,28 @@
+body {
+  background-image: url(images/bg.jpg);
+}
+
+header {
+  background-color: #333;
+}
+
+.website_title {
+  background: url(/images/subbg.gif);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.community {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.community a {
+  text-decoration: none;
+  display: inline-block;
+  color: #333;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,25 @@
+header {
+  background-color: #333;
+}
+
+.website_title {
+  background: url(/images/subbg.gif);
+  display: flex;
+
+  // *phone version
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.community {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+    color: #333;
+  }
+}
