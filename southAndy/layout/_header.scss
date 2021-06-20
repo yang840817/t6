@@ -10,16 +10,39 @@ header {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-}
 
-.community {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  .community {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
-  a {
-    text-decoration: none;
-    display: inline-block;
-    color: #333;
+    a {
+      text-decoration: none;
+      display: inline-block;
+      color: #333;
+
+      // container
+      width: 25px;
+      height: 25px;
+    }
+    svg {
+      background-color: #333;
+      color: aliceblue;
+      border-radius: 50%;
+      display: inline-block;
+      padding: 5px;
+      height: 100%;
+      width: 100%;
+      font-size: 20px;
+    }
+  }
+
+  .contact {
+    display: flex;
+
+    a {
+      text-decoration: none;
+      color: #333;
+    }
   }
 }

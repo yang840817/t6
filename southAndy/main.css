@@ -13,15 +13,33 @@ header {
   flex-direction: column;
   text-align: center;
 }
-
-.community {
+.website_title .community {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
-.community a {
+.website_title .community a {
   text-decoration: none;
   display: inline-block;
+  color: #333;
+  width: 25px;
+  height: 25px;
+}
+.website_title .community svg {
+  background-color: #333;
+  color: aliceblue;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 5px;
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+}
+.website_title .contact {
+  display: flex;
+}
+.website_title .contact a {
+  text-decoration: none;
   color: #333;
 }
 

@@ -1,6 +1,8 @@
 // *module
 @use "module/container.scss";
 
+// *utilities
+@use "utilities/variable.scss";
 // *layout
 @use "layout/header";
 @use "layout/navigation";
