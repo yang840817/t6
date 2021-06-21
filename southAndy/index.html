@@ -13,7 +13,7 @@
     />
 
     <!-- my css-->
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
     <header>
@@ -50,6 +50,319 @@
         </div>
       </div>
     </header>
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- *小裝置顯示 -->
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Disabled</a
+            >
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <!-- *輪播 -->
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/banner1.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="images/banner2.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="images/banner3.jpg" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- * -->
+        <section class="website_featured">
+          <div class="row">
+            <div class="col-3">
+              <div class="card">
+                <h3 class="card-title">Growth Strategies</h3>
+                <div class="card-img">
+                  <img src="images/p1.png" alt="" />
+                </div>
+                <p class="card-text">
+                  Vestibulum dignissim, dui ac hendrerit blandit, sapien orci
+                  dictum nibh, vel suscipit augue nibh in enim. Nullam dignissim
+                  euismodnunc at.
+                </p>
+                <button class="btn">More</button>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <h3 class="card-title">Perfect Support</h3>
+                <div class="card-img">
+                  <img src="images/p2.png" alt="" />
+                </div>
+                <p class="card-text">
+                  Donec semper, dolor eu iaculis laoreet, erat diam interdum
+                  nisi, vel consequat leo neque in ante. Curabitur fringilla
+                  tristque nisl ut.
+                </p>
+                <button class="btn">More</button>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <h3 class="card-title">Partners Programs</h3>
+                <div class="card-img">
+                  <img src="images/p3.png" alt="" />
+                </div>
+                <p class="card-text">
+                  Nunc pellentesque malesuada enim utdignissim. Etiam aliquam
+                  malesuada magna, vel scelerisque lectus pharetra quis.
+                </p>
+                <button class="btn">More</button>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <h3 class="card-title">Premium Services</h3>
+                <div class="card-img">
+                  <img src="images/p4.png" alt="" />
+                </div>
+                <p class="card-text">
+                  Cumque quibusdam quae ipsam unde cupiditate dolor, adipisci
+                  ut, excepturi quidem fugit, fugiat? Maxime placeat mollitia
+                  excepturi dolores exercitationem impedit cupiditate sunt.
+                </p>
+                <button class="btn">More</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="">
+          <div class="row">
+            <div class="col-lg-4">
+              <div>
+                <h3>welcome</h3>
+                <div>
+                  <img src="images/welcome.jpg" alt="welcome_images" />
+                </div>
+                <p>
+                  Duis molestie commodo sapien, non mollis diam consequat in.
+                  Nulla blandit viverra sodales. Donec sit amet diam neque.
+                  <a href="##">more</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div>
+                <h3>why chose us</h3>
+                <ul>
+                  <li>
+                    <a href="##">
+                      <i class="fas fa-chevron-right fa-fw"></i>
+                    </a>
+                    <span>Etiam rutrum venenatis dui, non</span>
+                  </li>
+                  <li>
+                    <a href="##">
+                      <i class="fas fa-chevron-right fa-fw"></i>
+                    </a>
+                    <span>Aliquam ac diam in lorem vulputate auctor.</span>
+                  </li>
+                  <li>
+                    <a href="##">
+                      <i class="fas fa-chevron-right fa-fw"></i>
+                    </a>
+                    <span>Vestibulum vitae urna quis eros convallis</span>
+                  </li>
+                  <li>
+                    <a href="##">
+                      <i class="fas fa-chevron-right fa-fw"></i>
+                    </a>
+                    <span>Sed magna magna, congue</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div>
+                <h3></h3>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="images/news1.jpg" alt="news" />
+                  </div>
+                  <div class="col-6">
+                    <div>
+                      <a href="##">12.12</a>
+                    </div>
+                    <p>
+                      Aliquam ac diam in lorem vulputate auctor. Aliquam rhoncus
+                      nunc et justo imperdiet blandit
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="images/news2.jpg" alt="news" />
+                  </div>
+                  <div class="col-6">
+                    <div>
+                      <a href="##">12.12</a>
+                    </div>
+                    <p>
+                      Aliquam ac diam in lorem vulputate auctor. Aliquam rhoncus
+                      nunc et justo imperdiet blandit
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- *carousel works -->
+        <section>
+          <div>
+            <h3>featured work</h3>
+          </div>
+          <div>
+            <a href="##">
+              <i class="fas fa-chevron-left"></i>
+            </a>
+            <a href="##">
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </div>
+          <div class="row">
+            <div class="col-lg-3">
+              <a href="##">
+                <img src="images/g1.jpg" alt="featured work" class="w-100" />
+              </a>
+            </div>
+            <div class="col-lg-3">
+              <a href="##">
+                <img src="images/g2.jpg" alt="featured work" class="w-100" />
+              </a>
+            </div>
+            <div class="col-lg-3">
+              <a href="##">
+                <img src="images/g3.jpg" alt="featured work" class="w-100" />
+              </a>
+            </div>
+            <div class="col-lg-3">
+              <a href="##">
+                <img src="images/g4.jpg" alt="featured work" class="w-100" />
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-3"></div>
+        <div class="col-lg-3"></div>
+        <div class="col-lg-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8">
+          <p></p>
+          <a href="##">privacy policy</a>
+        </div>
+        <div class="col-lg-4">
+          <nav>
+            <a href="##">Home</a>
+
+            <a href="##">about</a>
+
+            <a href="##">featured</a>
+
+            <a href="##">ported</a>
+
+            <a href="##">blog</a>
+
+            <a href="##">contacts</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
     <!-- fontawesome -->
     <script
       src="https://kit.fontawesome.com/626796f880.js"
