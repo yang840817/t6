@@ -1,0 +1,197 @@
+@use '../reset';
+@use '../variables/color';
+@use '../variables/typography';
+@use '../components/mixin';
+@use '../components/form';
+@use '../components/breakpoints';
+@use '../components/button';
+
+
+%footer-block {
+  padding: 40px 0;
+}
+
+//footer
+footer {
+  margin-top: 60px;
+  background: url(../images/subbg.gif);
+
+  > div:first-child {
+    padding: 0 40px;
+  }
+}
+
+//tweet
+.tweet {
+  @extend %footer-block;
+
+  h4 {
+    text-transform: uppercase;
+  }
+
+  span {
+    display: inline-block;
+    margin-top: 25px;
+    font-size: typography.$base-font-size * 0.6;
+  }
+}
+
+//testimonials
+.testimonials {
+  @extend %footer-block;
+
+  h4 {
+    text-transform: uppercase;
+  }
+
+  .dialogue-box {
+    position: relative;
+
+    margin-top: 25px;
+    width: 100%;
+    height: 120px;
+    background: darken(color.$gray, 5%);
+    box-sizing: border-box;
+  
+    clip-path: polygon(0% 0%, 100% 0, 100% 90%, 12% 90%, 0 100%);
+  }
+
+  p {
+    position: absolute;
+    left: 0.5%;
+    top: 2px;
+
+    padding: 15px;
+    width: 99%;
+    height: 116px;
+
+    font-size: typography.$base-font-size * 0.6;
+    line-height: 1.2;
+    background-color: color.$gray;
+    
+    clip-path: polygon(0% 0%, 100% 0, 100% 90%, 12% 90%, 0 100%);
+  }
+
+}
+
+.referer {
+  @include mixin.flex(row, flex-start);
+  align-items: center;
+
+  margin-top: 30px;
+
+  div:nth-child(2) {
+    @include mixin.flex(column, center);
+    margin-left: 10px;
+
+    a {
+      color: color.$primary-color;
+      font-style: italic;
+    }
+  }
+}
+
+//contact-form
+.contact-form {
+  @extend %footer-block;
+
+  h4 {
+    text-transform: uppercase;
+  }
+
+  form {
+    margin-top: 25px;
+
+    input {
+      @extend %form-style;
+    }
+
+    input:nth-child(2) {
+      margin-top: 5px;
+    }
+
+    textarea {
+      @extend %form-style;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      resize: none;
+    }
+
+    button:nth-child(4) {
+      border: 0;
+      @include button.button-style(color.$black, color.$secondary-color);
+      font-size: typography.$base-font-size * 0.7;
+      text-transform: uppercase;
+    }
+
+    button:last-child {
+      border: 0;
+      @include button.button-style(color.$primary-color, color.$secondary-color);
+      font-size: typography.$base-font-size * 0.7;
+      text-transform: uppercase;
+    }
+  }
+
+  
+}
+
+//album
+.album {
+  @extend %footer-block;
+
+  h4 {
+    text-transform: uppercase;
+  }
+  
+  .album-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    
+    margin-top: 25px;
+  }
+}
+
+//footer-bottom
+.footer-bottom {
+  @include mixin.flex(column-reverse, flex-start);
+  align-items: center;
+  @include breakpoints.tablet-landscape {
+    @include mixin.flex(row, space-between);
+    align-items: center;
+  }
+
+  background-color: color.$black;
+  line-height: 3;
+
+  .copyright {
+    font-size: typography.$base-font-size * 0.7;
+
+    span:first-child {
+      color: color.$dark-gray;
+      text-transform: uppercase;
+    }
+
+    span:last-child {
+      color: color.$primary-color;
+    }
+  }
+
+  nav {
+    font-size: 0;
+    text-align: center;
+  }
+  
+  nav a {
+    padding: 0 10px;
+    font-size: typography.$base-font-size * 0.7;
+    color: color.$dark-gray;
+    text-transform: uppercase;
+  }
+
+  a + a {
+    border-left: 2px solid color.$gray;
+  }
+  
+}

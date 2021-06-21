@@ -1,0 +1,73 @@
+@use '../reset';
+@use '../variables/color';
+@use '../variables/typography';
+@use '../components/mixin';
+@use '../components/breakpoints';
+@use '../components/searchbox';
+
+
+//navigation
+.navigation {
+  @include mixin.flex(row, space-between);
+  margin-top: 30px;
+
+  .modify-navbar {
+    background-color: color.$secondary-color;
+    flex: 1 0 70%;
+    padding: 0;
+  }
+}
+
+.modify-navbar {
+  @include breakpoints.tablet-landscape {
+    ul {
+      flex-basis: 75%;
+    }
+  
+    li {
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    a {
+      padding: 20px;
+      border-right: 1px solid color.$gray;
+      font-size: typography.$base-font-size * 0.7;
+      color: color.$black;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.modify-navbar .navbar-nav .nav-item a:hover {
+  background: color.$primary-color;
+  color: color.$secondary-color;
+}
+
+
+.search {
+  flex: 1 0 20%;
+
+  padding: 10px 20px;
+  background-color: color.$secondary-color;
+
+  @include breakpoints.tablet-landscape {
+    margin-left: 10px;
+  }
+
+
+  input {
+    @extend %searchbox;
+
+    &::placeholder {
+      color: transparent;
+
+      @include breakpoints.tablet {
+        color: color.$dark-gray;
+        }
+      }
+  }
+}
+
+
+

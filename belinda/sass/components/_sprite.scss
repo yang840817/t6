@@ -1,0 +1,9 @@
+@mixin sprite($x, $y) {
+  display: inline-block;
+
+  background-image: url(../images/social.png);
+  background-repeat: no-repeat;
+  background-position: $x $y;
+  width: 27px;
+  height: 27px;
+}

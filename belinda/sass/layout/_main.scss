@@ -1,0 +1,256 @@
+@use '../reset';
+@use '../variables/color';
+@use '../variables/typography';
+@use '../components/mixin';
+@use '../components/breakpoints';
+@use '../components/board';
+@use '../components/button';
+
+
+body {
+  min-width: 375px;
+  background: linear-gradient(180deg, color.$black 4%, transparent 4%, transparent 92%, color.$black 92%, color.$black 100%), url(../images/bg.jpg) ;
+}
+
+main {
+  background: url(../images/subbg.gif);
+
+  section {
+    padding: 0 40px;
+  }
+}
+
+//services
+.services {
+  div[class*="col"] {
+    margin-top: 10px;
+
+    @include breakpoints.tablet-landscape {
+      position: relative;
+      bottom: 30px;
+      margin-top: 0;
+    }
+  }
+}
+
+.board {
+  @extend %board-normal;
+
+  h2 {
+    font-size: typography.$base-font-size * 0.8;
+    text-transform: uppercase;
+  }
+
+  div {
+    margin-top: 25px;
+  }
+
+  p {
+    margin-top: 25px;
+    font-size: typography.$base-font-size * 0.6;
+  }
+
+  a {
+    display: inline-block;
+    margin-top: 25px;
+    @include button.button-style(darken(color.$gray, 10%), color.$black);
+  }
+
+  &:hover {
+    @extend %board-hover;
+  }
+}
+
+
+//About us
+.company-info {
+  padding-top: 30px;
+  padding-bottom: 70px;
+
+  h2 {
+    text-transform: uppercase;
+  }
+}
+
+//location
+.company-location {
+
+  div {
+    margin-top: 25px;
+  }
+
+  p {
+    position: relative;
+
+    color: color.$dark-gray;
+    font-size: typography.$base-font-size * 0.75;
+    margin-top: 25px;
+
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     display: -webkit-box;
+//     -webkit-line-clamp: 3;
+//     -webkit-box-orient: vertical;
+
+       a {
+//       position: absolute;
+//       right: 0;
+//       bottom: 0;
+      color: color.$black;
+    
+    }
+  }
+}
+
+//strengths
+.company-strengths {
+  ul {
+    margin-top: 25px;
+  }
+
+  li {
+    @include mixin.flex(row, flex-start);
+    align-items: baseline;
+
+    padding: 15px;
+    border-bottom: 1px solid color.$gray;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  
+    a {
+      flex: 0 0 40px;
+      margin-right: 15px;
+
+      line-height: 40px;
+      border-radius: 50%;
+      color: color.$secondary-color;
+      background-color: color.$gray;
+      text-align: center;
+
+      @include breakpoints.desktop {
+        flex: 0 0 50px;
+        line-height: 50px;
+      }
+    }
+  }
+
+  p {
+    font-size: typography.$base-font-size * 0.75;
+    color: color.$dark-gray;
+  }
+}
+
+//events
+.company-events {
+  @include breakpoints.tablet {
+    @include mixin.flex(row, flex-start);
+    flex-wrap: wrap;
+    column-gap: 24px;
+
+    h2 {
+      flex: 1 0 100%;
+    }
+  }
+}
+
+.news-card {
+  flex: 1 0 40%;
+
+  @include breakpoints.tablet-landscape {
+    flex: 1 0 100%;
+  }
+}
+
+.company-events > div {
+  @include mixin.flex(row, space-between);
+  margin-top: 25px;
+}
+
+.news-card {
+  > div:first-child {
+    width: 45%;
+  }
+
+  > div:nth-child(2) {
+    width: 50%;
+  }
+  
+  img {
+    width: 100%;
+  }
+}
+
+.card-text {
+  span {
+    @include button.button-style(color.$primary-color, color.$secondary-color);
+    font-weight: 600;
+  }
+
+  p {
+    position: relative;
+
+    margin-top: 25px;
+
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     display: -webkit-box;
+//     -webkit-line-clamp: 3;
+//     -webkit-box-orient: vertical;
+
+    color: color.$dark-gray;
+    font-size: typography.$base-font-size * 0.75;
+  }
+
+  a {
+    color: color.$black;
+
+    @include breakpoints.desktop {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+//works
+.works {
+  padding-top: 40px;
+  padding-bottom: 80px;
+
+  @include breakpoints.tablet-landscape {
+    > div::before {
+      display: block;
+      content: "";
+
+      position: relative;
+      bottom: 15px;
+
+      margin: 0 12px;
+      width: 100%;
+      height: 2px;
+      background-color: #e0e0e0;
+    }
+  }
+
+  .wrapper {
+    @include mixin.flex(row, space-between);
+    align-items: baseline;
+    
+    
+    h2 {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.button-group {
+  button {
+    border: 0;
+
+    background-color: transparent;
+    font-size: 20px;
+    color: color.$gray;
+  }
+}
