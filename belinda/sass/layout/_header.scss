@@ -1,7 +1,4 @@
-
-@use '../reset';
-@use '../variables/color';
-@use '../variables/typography';
+@use '../abstract/variables';
 @use '../components/mixin';
 @use '../components/sprite';
 @use '../components/breakpoints';
@@ -13,11 +10,9 @@ header {
   @include breakpoints.tablet {
     justify-content: space-between;
   }
-  
   padding: 40px 30px;
-
-  background-image: url(../images/subbg.gif);
-  
+  background-image: variables.$section-bg;
+  box-shadow: 1px 0px 10px;
 
   .contact-channels {
     text-align: center;
@@ -65,12 +60,12 @@ header {
   } 
 
   a {
-    font-size: typography.$base-font-size * 0.6;
-    color: color.$black;
+    font-size: variables.$base-font-size * 0.6;
+    color: variables.$black;
     
 
     &:hover {
-      color: color.$primary-color;
+      color: variables.$primary-color;
     }
   }
 }

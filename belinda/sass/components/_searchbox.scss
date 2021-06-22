@@ -1,15 +1,14 @@
-@use '../variables/color';
-@use '../variables/typography';
+@use '../abstract/variables';
 
 //search box 
 %searchbox {
   padding: 8px;
-  border: 1px solid color.$gray;
+  border: 1px solid variables.$gray;
   width: 100%;
-  font-size: typography.$base-font-size * 0.7;
+  font-size: variables.$base-font-size * 0.7;
   
   background: url(../images/search.png);      
   background-repeat: no-repeat;
   background-position: right 10px center;
-  background-color: color.$light-gray;
+  background-color: variables.$light-gray;
 }

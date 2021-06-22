@@ -1,6 +1,4 @@
-@use '../reset';
-@use '../variables/color';
-@use '../variables/typography';
+@use '../abstract/variables';
 @use '../components/mixin';
 @use '../components/breakpoints';
 @use '../components/searchbox';
@@ -10,16 +8,22 @@
 .navigation {
   @include mixin.flex(row, space-between);
   margin-top: 30px;
+  box-shadow: 0px 1px 5px;
+  @include breakpoints.tablet-landscape {
+    box-shadow: none;
+  }
 
   .modify-navbar {
-    background-color: color.$secondary-color;
     flex: 1 0 70%;
     padding: 0;
+    background-color: variables.$secondary-color;
   }
 }
 
 .modify-navbar {
   @include breakpoints.tablet-landscape {
+    box-shadow: 0px 1px 5px;
+
     ul {
       flex-basis: 75%;
     }
@@ -30,29 +34,29 @@
     }
 
     a {
-      padding: 20px;
-      border-right: 1px solid color.$gray;
-      font-size: typography.$base-font-size * 0.7;
-      color: color.$black;
+      padding: 16px;
+      border-right: 1px solid variables.$gray;
+      font-size: variables.$base-font-size * 0.7;
+      color: variables.$black;
       text-transform: uppercase;
     }
   }
 }
 
 .modify-navbar .navbar-nav .nav-item a:hover {
-  background: color.$primary-color;
-  color: color.$secondary-color;
+  background: variables.$primary-color;
+  color: variables.$secondary-color;
 }
 
 
 .search {
   flex: 1 0 20%;
-
-  padding: 10px 20px;
-  background-color: color.$secondary-color;
-
+  padding: 7px 14px;
+  background-color: variables.$secondary-color;
+  
   @include breakpoints.tablet-landscape {
     margin-left: 10px;
+    box-shadow: 0px 1px 5px;
   }
 
 
@@ -63,7 +67,7 @@
       color: transparent;
 
       @include breakpoints.tablet {
-        color: color.$dark-gray;
+        color: variables.$dark-gray;
         }
       }
   }

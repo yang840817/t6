@@ -1,19 +1,20 @@
-@use '../reset';
-@use '../variables/color';
-@use '../variables/typography';
+@use '../abstract/variables';
 @use '../components/mixin';
 @use '../components/breakpoints';
 @use '../components/board';
 @use '../components/button';
 
 
+
+
 body {
   min-width: 375px;
-  background: linear-gradient(180deg, color.$black 4%, transparent 4%, transparent 92%, color.$black 92%, color.$black 100%), url(../images/bg.jpg) ;
+  background: linear-gradient(180deg, variables.$black 4%, transparent 4%, transparent 92%, variables.$black 92%, variables.$black 100%), url(../images/bg.jpg) ;
 }
 
 main {
-  background: url(../images/subbg.gif);
+  background: variables.$section-bg;
+  box-shadow: 0px 1px 5px;
 
   section {
     padding: 0 40px;
@@ -37,7 +38,7 @@ main {
   @extend %board-normal;
 
   h2 {
-    font-size: typography.$base-font-size * 0.8;
+    font-size: variables.$base-font-size * 0.8;
     text-transform: uppercase;
   }
 
@@ -47,13 +48,13 @@ main {
 
   p {
     margin-top: 25px;
-    font-size: typography.$base-font-size * 0.6;
+    font-size: variables.$base-font-size * 0.6;
   }
 
   a {
     display: inline-block;
     margin-top: 25px;
-    @include button.button-style(darken(color.$gray, 10%), color.$black);
+    @include button.button-style(darken(variables.$gray, 10%), variables.$black);
   }
 
   &:hover {
@@ -82,8 +83,8 @@ main {
   p {
     position: relative;
 
-    color: color.$dark-gray;
-    font-size: typography.$base-font-size * 0.75;
+    color: variables.$dark-gray;
+    font-size: variables.$base-font-size * 0.75;
     margin-top: 25px;
 
 //     overflow: hidden;
@@ -96,7 +97,7 @@ main {
 //       position: absolute;
 //       right: 0;
 //       bottom: 0;
-      color: color.$black;
+      color: variables.$black;
     
     }
   }
@@ -113,32 +114,37 @@ main {
     align-items: baseline;
 
     padding: 15px;
-    border-bottom: 1px solid color.$gray;
+    border-bottom: 1px solid variables.$gray;
 
     &:first-child {
       padding-top: 0;
     }
   
-    a {
-      flex: 0 0 40px;
-      margin-right: 15px;
+  a {
+    flex: 0 0 40px;
+    margin-right: 15px;
 
-      line-height: 40px;
-      border-radius: 50%;
-      color: color.$secondary-color;
-      background-color: color.$gray;
-      text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: variables.$secondary-color;
+    background-color: variables.$gray;
+    text-align: center;
 
-      @include breakpoints.desktop {
-        flex: 0 0 50px;
-        line-height: 50px;
-      }
+    &:hover {
+      background-color: variables.$primary-color;
     }
+
+
+    @include breakpoints.desktop {
+      flex: 0 0 50px;
+      line-height: 50px;
+    }
+  }
   }
 
   p {
-    font-size: typography.$base-font-size * 0.75;
-    color: color.$dark-gray;
+    font-size: variables.$base-font-size * 0.75;
+    color: variables.$dark-gray;
   }
 }
 
@@ -184,7 +190,8 @@ main {
 
 .card-text {
   span {
-    @include button.button-style(color.$primary-color, color.$secondary-color);
+    display: inline-block;
+    @include button.button-style(variables.$primary-color, variables.$secondary-color);
     font-weight: 600;
   }
 
@@ -199,18 +206,18 @@ main {
 //     -webkit-line-clamp: 3;
 //     -webkit-box-orient: vertical;
 
-    color: color.$dark-gray;
-    font-size: typography.$base-font-size * 0.75;
+    color: variables.$dark-gray;
+    font-size: variables.$base-font-size * 0.75;
   }
 
   a {
-    color: color.$black;
+    color: variables.$black;
 
-    @include breakpoints.desktop {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-    }
+//     @include breakpoints.desktop {
+//       position: absolute;
+//       right: 0;
+//       bottom: 0;
+//     }
   }
 }
 
@@ -251,6 +258,6 @@ main {
 
     background-color: transparent;
     font-size: 20px;
-    color: color.$gray;
+    color: variables.$gray;
   }
 }
