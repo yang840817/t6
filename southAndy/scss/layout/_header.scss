@@ -1,0 +1,33 @@
+header {
+}
+.website_title {
+  background: url(/images/subbg.gif);
+  display: flex;
+  justify-content: space-between;
+
+  padding: 25px;
+  margin-top: 5px;
+
+  // ?與nav的距離
+  margin-bottom: 20px;
+
+  .community {
+    text-align: right;
+
+    a {
+      text-decoration: none;
+      display: inline-block;
+      color: #333;
+    }
+    svg {
+      background-color: #333;
+      color: aliceblue;
+      border-radius: 50%;
+      display: inline-block;
+      padding: 5px;
+      height: 25px;
+      width: 25px;
+      font-size: 20px;
+    }
+  }
+}
