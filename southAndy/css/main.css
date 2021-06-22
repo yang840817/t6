@@ -1,3 +1,8 @@
+a {
+  text-decoration: none;
+  color: #333;
+}
+
 body {
   background: linear-gradient(to bottom, #151515 0% 100px, transparent 100px 90%, #151515 90% 100%), url(/images/bg.jpg) center top;
 }
@@ -33,6 +38,13 @@ main .container {
   background-image: url(/images/subbg.gif);
 }
 
+section, .service_box h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
 .service {
   padding: 0 2rem;
   text-align: center;
@@ -54,15 +66,66 @@ main .container {
   margin: 0 auto;
   margin-bottom: 20px;
 }
-.service_box h3 {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
 .service_box p {
   font-size: 12px;
 }
 .service_box button {
   background-color: #ccc;
+}
+
+.intro h3 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.intro {
+  padding: 20px;
+  display: flex;
+}
+.intro .welcome div {
+  margin-bottom: 15px;
+}
+.intro .box {
+  display: flex;
+  flex-direction: column;
+}
+.intro .box .intro_content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-bottom: solid 1px gainsboro;
+}
+.intro .box .intro_content p {
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+.intro .box a {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: gainsboro;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.news_title {
+  background-color: #82b800;
+  display: inline-block;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+.news_title a {
+  color: #fff;
+}
+
+section {
+  padding: 20px;
 }
 
 nav {

@@ -1,8 +1,20 @@
+// * use in news part
+@use "../base/colors" as *;
+
+$main-padding: 20px;
+
 main .container {
   background-image: url(/images/subbg.gif);
 }
 
 // * service
+
+%title-size {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
 
 $content-size: 12px;
 $title-size: 16px;
@@ -16,7 +28,7 @@ $title-size: 16px;
 .service_box {
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: $main-padding;
   height: 100%;
 
   background-color: #eee;
@@ -31,8 +43,7 @@ $title-size: 16px;
     margin-bottom: 20px;
   }
   h3 {
-    font-size: $title-size;
-    margin-bottom: 20px;
+    @extend %title-size;
   }
   p {
     font-size: $content-size;
@@ -43,4 +54,75 @@ $title-size: 16px;
   }
 }
 
-// * welcome
+// * intro
+
+%intro-title {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+$intro-content: 16px;
+
+.intro {
+  padding: $main-padding;
+  display: flex;
+
+  h3 {
+    @extend %intro-title;
+  }
+  .welcome div {
+    margin-bottom: 15px;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    .intro_content {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      padding: 12px;
+      border-bottom: solid 1px gainsboro;
+
+      p {
+        margin-bottom: 0;
+        margin-left: 10px;
+      }
+    }
+    a {
+      display: flex;
+      flex: 0 0 auto;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      background-color: gainsboro;
+      border-radius: 50%;
+
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+// *news
+
+.news {
+  &_title {
+    background-color: $primary-color;
+    display: inline-block;
+    padding: 0 20px;
+    margin-bottom: 20px;
+
+    a {
+      color: #fff;
+    }
+  }
+}
+
+// * carousel
+
+section {
+  @extend %title-size;
+  padding: $main-padding;
+}
