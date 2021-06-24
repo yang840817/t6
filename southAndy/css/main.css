@@ -34,11 +34,14 @@ body {
   font-size: 20px;
 }
 
+main {
+  margin-bottom: 60px;
+}
 main .container {
   background-image: url(/images/subbg.gif);
 }
 
-section, .service_box h3 {
+.service_box h3 {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
@@ -124,8 +127,65 @@ section, .service_box h3 {
   color: #fff;
 }
 
-section {
+.featured {
   padding: 20px;
+}
+footer .container h4 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+footer .container {
+  background: linear-gradient(transparent 100px 90%, #151515 70% 100%), url(/images/subbg.gif) center top;
+  padding: 30px;
+}
+.testimonials .message {
+  padding: 20px;
+  background-color: #e6e6e6;
+  position: relative;
+  margin-bottom: 40px;
+}
+.testimonials .message::after {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top-width: 15px;
+  border-right-width: 20px;
+  border-bottom-width: 15px;
+  border-left-width: 20px;
+  border-top-color: #e6e6e6;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: #e6e6e6;
+}
+.testimonials .message_info {
+  display: flex;
+}
+.testimonials .message_info .image_box {
+  flex: 0 0 25%;
+  margin-right: 1rem;
+}
+.testimonials .message_info a {
+  text-decoration: none;
+  color: #80b600;
+  font-style: italic;
+}
+
+.gallery {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: repeat(4, 65px);
+  grid-gap: 5px;
+}
+.gallery img {
+  max-width: 100%;
 }
 
 nav {

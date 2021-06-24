@@ -3,8 +3,11 @@
 
 $main-padding: 20px;
 
-main .container {
-  background-image: url(/images/subbg.gif);
+main {
+  margin-bottom: 60px;
+  .container {
+    background-image: url(/images/subbg.gif);
+  }
 }
 
 // * service
@@ -122,7 +125,8 @@ $intro-content: 16px;
 
 // * carousel
 
-section {
-  @extend %title-size;
+.featured {
   padding: $main-padding;
+  h3 {
+  }
 }
