@@ -1,9 +1,17 @@
+@use '../abstract/variables';
+@use './breakpoints';
+
+
+$sprite-image: url(../images/social.png);
+
+
 @mixin sprite($x, $y) {
   display: inline-block;
 
-  background-image: url(../images/social.png);
+  background-image: $sprite-image;
   background-repeat: no-repeat;
   background-position: $x $y;
   width: 27px;
   height: 27px;
 }
+

@@ -1,7 +1,8 @@
 @use '../abstract/variables';
 @use '../components/mixin';
-@use '../components/sprite';
 @use '../components/breakpoints';
+@use '../components/sprite';
+
 
 //header
 header {
@@ -13,15 +14,17 @@ header {
   padding: 40px 30px;
   background-image: variables.$section-bg;
   box-shadow: 1px 0px 10px;
+}
 
-  .contact-channels {
-    text-align: center;
-    margin-top: 15px;
 
-    @include breakpoints.tablet {
-      text-align: right;
-      margin-top: 0;
-    }
+//social-links
+.contact-channels {
+  text-align: center;
+  margin-top: 15px;
+
+  @include breakpoints.tablet {
+    text-align: right;
+    margin-top: 0;
   }
 
   .social-media a:first-child {
@@ -58,12 +61,14 @@ header {
       @include sprite.sprite(-150px, bottom);
     }
   } 
+}
 
+//contact number
+.contact-channels {
   a {
     font-size: variables.$base-font-size * 0.6;
     color: variables.$black;
     
-
     &:hover {
       color: variables.$primary-color;
     }

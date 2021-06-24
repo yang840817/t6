@@ -1,15 +1,14 @@
 @use '../abstract/variables';
 @use '../components/mixin';
 @use '../components/breakpoints';
+@use '../components/carousel';
 @use '../components/board';
 @use '../components/button';
 
 
-
-
 body {
   min-width: 375px;
-  background: linear-gradient(180deg, variables.$black 4%, transparent 4%, transparent 92%, variables.$black 92%, variables.$black 100%), url(../images/bg.jpg) ;
+  background: linear-gradient(180deg, variables.$black 100px, transparent 100px, transparent 90%, variables.$black 90%, variables.$black 100%), url(../images/bg.jpg) ;
 }
 
 main {
@@ -87,18 +86,8 @@ main {
     font-size: variables.$base-font-size * 0.75;
     margin-top: 25px;
 
-//     overflow: hidden;
-//     text-overflow: ellipsis;
-//     display: -webkit-box;
-//     -webkit-line-clamp: 3;
-//     -webkit-box-orient: vertical;
-
-       a {
-//       position: absolute;
-//       right: 0;
-//       bottom: 0;
+    a {
       color: variables.$black;
-    
     }
   }
 }
@@ -200,24 +189,12 @@ main {
 
     margin-top: 25px;
 
-//     overflow: hidden;
-//     text-overflow: ellipsis;
-//     display: -webkit-box;
-//     -webkit-line-clamp: 3;
-//     -webkit-box-orient: vertical;
-
     color: variables.$dark-gray;
     font-size: variables.$base-font-size * 0.75;
   }
 
   a {
     color: variables.$black;
-
-//     @include breakpoints.desktop {
-//       position: absolute;
-//       right: 0;
-//       bottom: 0;
-//     }
   }
 }
 
@@ -227,14 +204,13 @@ main {
   padding-bottom: 80px;
 
   @include breakpoints.tablet-landscape {
-    > div::before {
+    &::before {
       display: block;
       content: "";
 
       position: relative;
-      bottom: 15px;
+      bottom: 50px;
 
-      margin: 0 12px;
       width: 100%;
       height: 2px;
       background-color: #e0e0e0;
@@ -252,12 +228,30 @@ main {
   }
 }
 
-.button-group {
-  button {
-    border: 0;
+// .modify-swiper-button {
+//   button {
+//     border: 0;
 
-    background-color: transparent;
-    font-size: 20px;
-    color: variables.$gray;
-  }
+//     background-color: transparent;
+//     font-size: 20px;
+//     color: variables.$gray;
+//   }
+// }
+
+.modify-swiper-button {
+  display: inline-block;
+  position: static;
+  border: 0;
+  width: fit-content;
+  background-color: transparent;
+  color: variables.$dark-gray;
+}
+
+button[class*="swiper-button"]:after {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.modify-swiper-container {
+  margin-top: 25px;
 }

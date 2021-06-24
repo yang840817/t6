@@ -1,4 +1,6 @@
-//carousel-button
+@use '../components/breakpoints';
+
+
 @mixin button-normal($background-image) {
   background-image: $background-image;
   background-size: cover;
@@ -10,5 +12,37 @@
 @mixin button-hover($background-image) {
   background-image: $background-image;
   background-position: bottom;
+}
+
+
+//banner
+.carousel-item {
+  img {
+    min-height: 60vh;
+    object-fit: cover;
+  }
+}
+
+//banner-button
+.modify-button {
+  @include breakpoints.tablet {
+    width: fit-content;
+
+    .modify-prev-icon {
+      @include button-normal(url(../images/slider_prev.gif));
+    
+      &:hover {
+        @include button-hover(url(../images/slider_prev.gif));
+      }
+    }
+    
+    .modify-next-icon {
+      @include button-normal(url(../images/slider_next.gif));
+    
+      &:hover {
+        @include button-hover(url(../images/slider_next.gif));
+      }
+    }
+  }
   
 }

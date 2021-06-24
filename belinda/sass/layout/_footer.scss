@@ -130,8 +130,6 @@ footer {
       text-transform: uppercase;
     }
   }
-
-  
 }
 
 //album
@@ -149,6 +147,15 @@ footer {
     gap: 5px;
     
     margin-top: 25px;
+  }
+}
+
+.album {
+  img {
+    filter:brightness(.5);
+    &:hover {
+      filter: brightness(1);
+    }
   }
 }
 
@@ -180,6 +187,7 @@ footer {
   nav {
     font-size: 0;
     text-align: center;
+    line-height: 1.5;
   }
   
   nav a {
@@ -196,5 +204,4 @@ footer {
   a + a {
     border-left: 2px solid variables.$gray;
   }
-  
 }
