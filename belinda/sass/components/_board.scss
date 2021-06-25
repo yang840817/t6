@@ -1,0 +1,19 @@
+@use '../abstract/variables';
+
+%board-normal {
+  padding: 40px 25px 25px;
+  border: 1px solid #dbdbdb;
+  
+  background-color: variables.$gray;
+  text-align: center;
+  height: 100%;
+}
+
+%board-hover {
+  color: variables.$secondary-color;
+  border-color: variables.$black;
+  background-color: rgba(100,100,100,0.9);
+}
+
+
+
