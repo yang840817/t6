@@ -1,0 +1,11 @@
+@use '../abstracts/font' as *;
+
+//more連結樣式
+.more-link {
+  font-weight: 500;
+  color: $color-primary;
+  &:hover {
+    color: $color-news;
+    text-decoration: underline;
+  }
+}

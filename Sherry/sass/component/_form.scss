@@ -1,0 +1,39 @@
+@use '../abstracts/font'as *;
+@use '../abstracts/_breakpoint' as *;
+@use '../abstracts/background' as *;
+
+@mixin input {
+  background: $color-light-grey;
+  border: 1px solid $color-grey;
+  border-radius: 3px;
+  font-size: $font-sm;
+  &:hover,
+  &:focus {
+    border: 1px solid $color-news;
+  }
+}
+
+/*get in touch*/
+form {
+  input,
+  textarea {
+    @include input;
+  }
+  textarea {
+    resize: none;
+  }
+  .clear {
+    background: $color-primary;
+    color: white;
+    &:hover {
+      @include shadow(-2px, 2px, 2px);
+    }
+  }
+  .send {
+    background: $color-news;
+    color: white;
+    &:hover {
+      @include shadow(-2px, 2px, 2px);
+    }
+  }
+}

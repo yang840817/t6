@@ -1,0 +1,29 @@
+@use '../abstracts/font'as *;
+@use '../abstracts/_breakpoint' as *;
+@use '../abstracts/background' as *;
+
+@use '../component/loading'; //loadin tweet
+@use '../component/review'; //testimonial
+@use '../component/form'; //get in touch!
+@use '../component/flickr'; //12張圖
+@use '../component/bottom-nav'; //footer導覽列
+
+//footer背景, 陰影
+footer {
+  @include shadow(0px, 0px, 2px);
+  @extend %bg-strip;
+}
+
+/*~ footer 標題*/
+.footer_subtitle {
+  font: {
+    size: 1.5rem;
+    weight: 600;
+  }
+  color: $color-primary;
+  margin-bottom: 1rem;
+
+  @include desktop {
+    font-size: 1rem;
+  }
+}
