@@ -6,14 +6,14 @@
 }
 
 footer .container {
-  //   background-image: url(/images/subbg.gif);
-  background: linear-gradient(transparent 100px 90%, #151515 70% 100%),
-    url(/images/subbg.gif) center top;
-
-  padding: 30px;
+  // background: linear-gradient(transparent 100px 90%, #151515 70% 100%),
 
   h4 {
     @extend %footer_title;
+  }
+  .info {
+    background: url(/images/subbg.gif) center top;
+    padding: 30px;
   }
 }
 .testimonials {
@@ -57,6 +57,42 @@ footer .container {
     }
   }
 }
+.contact {
+  input {
+    background-color: #e6e6e6;
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    border-radius: 3%;
+    padding: 5px 10px;
+    margin-bottom: 8px;
+  }
+  textarea {
+    background-color: #e6e6e6;
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    border-radius: 3%;
+    padding: 5px 10px;
+    margin-bottom: 8px;
+  }
+
+  .btn-clear {
+    text-transform: uppercase;
+    background: #000;
+    font-weight: 700;
+    color: #fff;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.1rem;
+    border: 0;
+  }
+  .btn-send {
+    text-transform: uppercase;
+    background: #80b600;
+    color: #fff;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.1rem;
+    border: 0;
+  }
+}
 
 .gallery {
   display: grid;
@@ -66,5 +102,41 @@ footer .container {
   grid-gap: 5px;
   img {
     max-width: 100%;
+  }
+}
+
+$copyright-color: #80b600;
+$copyright-alink: #5a5a5a;
+
+.copyright {
+  text-transform: uppercase;
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  &_title {
+    color: #5a5a5a;
+
+    a {
+      text-decoration: none;
+      color: $copyright-color;
+      text-transform: capitalize;
+    }
+  }
+  &_nav {
+    a {
+      padding: 0 10px;
+      border-right: solid 1px gainsboro;
+      color: $copyright-alink;
+
+      &:hover {
+        color: $copyright-color;
+      }
+    }
+    a:last-child {
+      border-right: 0;
+    }
+    .homemenu {
+      color: $copyright-color;
+    }
   }
 }
