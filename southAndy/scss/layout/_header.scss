@@ -1,3 +1,9 @@
+@use "../components/navigation" as *;
+
+header .container {
+  padding: 0;
+}
+
 .website_title {
   background: url(/images/subbg.gif);
   display: flex;
@@ -7,7 +13,7 @@
   margin-top: 5px;
 
   // ?與nav的距離
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   .community {
     text-align: right;

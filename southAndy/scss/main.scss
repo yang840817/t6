@@ -1,14 +1,8 @@
 // base
 @use "../scss/base/reset";
 
-// *utilities
-@use "../scss/utilities/variable.scss";
-
 // *layout
 @use "../scss/layout/body";
 @use "../scss/layout/header";
 @use "../scss/layout/main";
 @use "../scss/layout/footer";
-
-// * components
-@use "../scss/components/navigation";

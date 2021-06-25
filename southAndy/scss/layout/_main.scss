@@ -1,3 +1,5 @@
+@use "../components/carousel" as *;
+
 // * use in news part
 @use "../base/colors" as *;
 
@@ -7,6 +9,7 @@ main {
   margin-bottom: 60px;
   .container {
     background-image: url(/images/subbg.gif);
+    padding-top: 20px;
   }
 }
 
@@ -128,5 +131,23 @@ $intro-content: 16px;
 .featured {
   padding: $main-padding;
   h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+  & > div {
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  .featured_box {
+    display: flex;
+    align-items: center;
+
+    .alink_prev {
+      margin-right: 10px;
+      color: rgb(218, 210, 210);
+    }
+    .alink_next {
+      color: rgb(218, 210, 210);
+    }
   }
 }
