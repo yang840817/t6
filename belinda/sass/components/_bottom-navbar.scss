@@ -1,0 +1,26 @@
+@use '../base/color';
+@use '../base/typography';
+
+
+.footer-bottom {
+  nav {
+    font-size: 0;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  nav a {
+    padding: 0 10px;
+    font-size: typography.$base-font-size * 0.875;
+    color: color.$dark-gray;
+    text-transform: uppercase;
+
+    &:hover {
+      color: color.$primary-color;
+    }
+  }
+
+  a + a {
+    border-left: 2px solid color.$gray;
+  }
+}

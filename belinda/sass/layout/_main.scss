@@ -1,18 +1,26 @@
-@use '../abstract/variables';
-@use '../components/mixin';
-@use '../components/breakpoints';
+@use '../base/color';
+@use '../base/bg';
+@use '../base/display';
+@use '../base/breakpoints';
+
+@use '../components/button';
 @use '../components/carousel';
 @use '../components/board';
-@use '../components/button';
+@use '../components/figure';  
+@use '../components/list-group'; 
+@use '../components/news-card'; 
+@use '../components/divider';
+@use '../components/swiper'; 
+
 
 
 body {
   min-width: 375px;
-  background: linear-gradient(180deg, variables.$black 100px, transparent 100px, transparent 90%, variables.$black 90%, variables.$black 100%), url(../images/bg.jpg) ;
+  background: linear-gradient(180deg, color.$black 100px, transparent 100px, transparent 90%, color.$black 90%, color.$black 100%), url(../images/bg.jpg) ;
 }
 
 main {
-  background: variables.$section-bg;
+  background: bg.$section-bg;
   box-shadow: 0px 1px 5px;
 
   section {
@@ -20,7 +28,7 @@ main {
   }
 }
 
-//services
+//Service
 .services {
   div[class*="col"] {
     margin-top: 10px;
@@ -33,225 +41,43 @@ main {
   }
 }
 
-.board {
-  @extend %board-normal;
 
-  h2 {
-    font-size: variables.$base-font-size * 0.8;
-    text-transform: uppercase;
-  }
-
-  div {
-    margin-top: 25px;
-  }
-
-  p {
-    margin-top: 25px;
-    font-size: variables.$base-font-size * 0.6;
-  }
-
-  a {
-    display: inline-block;
-    margin-top: 25px;
-    @include button.button-style(darken(variables.$gray, 10%), variables.$black);
-  }
-
-  &:hover {
-    @extend %board-hover;
-  }
-}
-
-
-//About us
+//About Us
 .company-info {
   padding-top: 30px;
   padding-bottom: 70px;
-
-  h2 {
-    text-transform: uppercase;
-  }
 }
 
-//location
-.company-location {
 
-  div {
-    margin-top: 25px;
-  }
-
-  p {
-    position: relative;
-
-    color: variables.$dark-gray;
-    font-size: variables.$base-font-size * 0.75;
-    margin-top: 25px;
-
-    a {
-      color: variables.$black;
-    }
-  }
-}
-
-//strengths
-.company-strengths {
-  ul {
-    margin-top: 25px;
-  }
-
-  li {
-    @include mixin.flex(row, flex-start);
-    align-items: baseline;
-
-    padding: 15px;
-    border-bottom: 1px solid variables.$gray;
-
-    &:first-child {
-      padding-top: 0;
-    }
-  
-  a {
-    flex: 0 0 40px;
-    margin-right: 15px;
-
-    line-height: 40px;
-    border-radius: 50%;
-    color: variables.$secondary-color;
-    background-color: variables.$gray;
-    text-align: center;
-
-    &:hover {
-      background-color: variables.$primary-color;
-    }
-
-
-    @include breakpoints.desktop {
-      flex: 0 0 50px;
-      line-height: 50px;
-    }
-  }
-  }
-
-  p {
-    font-size: variables.$base-font-size * 0.75;
-    color: variables.$dark-gray;
-  }
-}
-
-//events
+//Events
 .company-events {
   @include breakpoints.tablet {
-    @include mixin.flex(row, flex-start);
+    @include display.flex(row, flex-start);
     flex-wrap: wrap;
     column-gap: 24px;
-
-    h2 {
-      flex: 1 0 100%;
-    }
   }
-}
 
-.news-card {
-  flex: 1 0 40%;
-
-  @include breakpoints.tablet-landscape {
+  h2 {
     flex: 1 0 100%;
   }
 }
 
 .company-events > div {
-  @include mixin.flex(row, space-between);
+  @include display.flex(row, space-between);
   margin-top: 25px;
 }
 
-.news-card {
-  > div:first-child {
-    width: 45%;
-  }
 
-  > div:nth-child(2) {
-    width: 50%;
-  }
-  
-  img {
-    width: 100%;
-  }
-}
 
-.card-text {
-  span {
-    display: inline-block;
-    @include button.button-style(variables.$primary-color, variables.$secondary-color);
-    font-weight: 600;
-  }
-
-  p {
-    position: relative;
-
-    margin-top: 25px;
-
-    color: variables.$dark-gray;
-    font-size: variables.$base-font-size * 0.75;
-  }
-
-  a {
-    color: variables.$black;
-  }
-}
-
-//works
+//Works
 .works {
+  @extend %divider;
+
   padding-top: 40px;
   padding-bottom: 80px;
 
-  @include breakpoints.tablet-landscape {
-    &::before {
-      display: block;
-      content: "";
-
-      position: relative;
-      bottom: 50px;
-
-      width: 100%;
-      height: 2px;
-      background-color: #e0e0e0;
-    }
-  }
-
   .wrapper {
-    @include mixin.flex(row, space-between);
+    @include display.flex(row, space-between);
     align-items: baseline;
-    
-    
-    h2 {
-      text-transform: uppercase;
-    }
   }
-}
-
-// .modify-swiper-button {
-//   button {
-//     border: 0;
-
-//     background-color: transparent;
-//     font-size: 20px;
-//     color: variables.$gray;
-//   }
-// }
-
-.modify-swiper-button {
-  display: inline-block;
-  position: static;
-  border: 0;
-  width: fit-content;
-  background-color: transparent;
-  color: variables.$dark-gray;
-}
-
-button[class*="swiper-button"]:after {
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.modify-swiper-container {
-  margin-top: 25px;
 }

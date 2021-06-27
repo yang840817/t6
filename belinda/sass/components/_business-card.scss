@@ -1,0 +1,20 @@
+@use '../base/display';
+@use '../base/color';
+
+
+.referer {
+  @include display.flex(row, flex-start);
+  align-items: center;
+
+  margin-top: 30px;
+
+  div:nth-child(2) {
+    @include display.flex(column, center);
+    margin-left: 10px;
+
+    a {
+      color: color.$primary-color;
+      font-style: italic;
+    }
+  }
+}

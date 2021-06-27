@@ -1,76 +1,22 @@
-@use '../abstract/variables';
-@use '../components/mixin';
-@use '../components/breakpoints';
-@use '../components/sprite';
+@use '../base/color';
+@use '../base/typography';
+@use '../base/bg';
+@use '../base/display';
+@use '../base/breakpoints';
+
+@use '../components/contact';
 
 
-//header
+//Header
 header {
-  @include mixin.flex(row, center);
+  @include display.flex(row, center);
   flex-wrap: wrap;
   @include breakpoints.tablet {
     justify-content: space-between;
   }
   padding: 40px 30px;
-  background-image: variables.$section-bg;
+  background-image: bg.$section-bg;
   box-shadow: 1px 0px 10px;
 }
 
 
-//social-links
-.contact-channels {
-  text-align: center;
-  margin-top: 15px;
-
-  @include breakpoints.tablet {
-    text-align: right;
-    margin-top: 0;
-  }
-
-  .social-media a:first-child {
-    @include sprite.sprite(0, 0);
-    &:hover {
-      @include sprite.sprite(0, bottom);
-    }
-  }
-
-  .social-media a:nth-child(2) {
-    @include sprite.sprite(-37px, 0);
-    &:hover {
-      @include sprite.sprite(-37px, bottom);
-    }
-  }
-
-  .social-media a:nth-child(3) {
-    @include sprite.sprite(-74px, 0);
-    &:hover {
-      @include sprite.sprite(-74px, bottom);
-    }
-  }
-
-  .social-media a:nth-child(4) {
-    @include sprite.sprite(-111px, 0);
-    &:hover {
-      @include sprite.sprite(-111px, bottom);
-    }
-  }
-
-  .social-media a:nth-child(5) {
-    @include sprite.sprite(-150px, 0);
-    &:hover {
-      @include sprite.sprite(-150px, bottom);
-    }
-  } 
-}
-
-//contact number
-.contact-channels {
-  a {
-    font-size: variables.$base-font-size * 0.6;
-    color: variables.$black;
-    
-    &:hover {
-      color: variables.$primary-color;
-    }
-  }
-}

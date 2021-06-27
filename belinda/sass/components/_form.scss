@@ -1,10 +1,49 @@
-@use '../abstract/variables';
+@use '../base/color';
+@use '../base/typography';
+@use './button';
+
 
 %form-style {
   padding: 5px;
-  border: 1px solid darken(variables.$gray, 5%);
+  border: 1px solid darken(color.$gray, 5%);
   border-radius: 3px;
   width: 100%;
-  background-color: variables.$gray;
-  font-size: variables.$base-font-size * 0.6;
+  background-color: color.$gray;
+  font-size: typography.$base-font-size * 0.6;
+}
+
+
+.contact-form {
+  form {
+    margin-top: 25px;
+  
+    input {
+      @extend %form-style;
+    }
+  
+    input:nth-child(2) {
+      margin-top: 5px;
+    }
+  
+    textarea {
+      @extend %form-style;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      resize: none;
+    }
+  
+    button:nth-child(4) {
+      border: 0;
+      @include button.button-style(color.$black, color.$secondary-color);
+      font-size: typography.$base-font-size * 0.7;
+      text-transform: uppercase;
+    }
+  
+    button:last-child {
+      border: 0;
+      @include button.button-style(color.$primary-color, color.$secondary-color);
+      font-size: typography.$base-font-size * 0.7;
+      text-transform: uppercase;
+    }
+  }
 }

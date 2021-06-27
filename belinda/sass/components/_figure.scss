@@ -1,0 +1,22 @@
+@use '../base/color';
+@use '../base/typography';
+
+
+//WELCOME - FIGURE
+.company-location {
+
+  div {
+    margin-top: 25px;
+  }
+
+  p {
+    color: color.$dark-gray;
+    font-size: typography.$base-font-size * 0.875;
+    font-weight: 500;
+    margin-top: 25px;
+
+    a {
+      color: color.$black;
+    }
+  }
+}
