@@ -1,0 +1,46 @@
+@use "../../base/colors" as *;
+@use "../../base/breakpoints" as *;
+@use "../../base/fonts" as *;
+@use "../../base/reset" as *;
+
+.testimonials {
+  .message {
+    padding: 20px;
+    background-color: #e6e6e6;
+    position: relative;
+
+    margin-bottom: 40px;
+
+    &::after {
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      content: "";
+      width: 0;
+      height: 0;
+
+      border-style: solid;
+      border-top-width: 15px;
+      border-right-width: 20px;
+      border-bottom-width: 15px;
+      border-left-width: 20px;
+      border-top-color: #e6e6e6;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: #e6e6e6;
+    }
+  }
+  .message_info {
+    display: flex;
+
+    .image_box {
+      flex: 0 0 25%;
+      margin-right: 1rem;
+    }
+    a {
+      text-decoration: none;
+      color: #80b600;
+      font-style: italic;
+    }
+  }
+}
