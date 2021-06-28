@@ -1,4 +1,5 @@
-@use "../components/navigation" as *;
+@use "../components/header/community" as *;
+@use "../components/header/navigation" as *;
 
 header .container {
   padding: 0;
