@@ -1,5 +1,5 @@
-// @use "../components/main/service" as *;
 @use "../components/main/carousel" as *;
+@use "../components/main/service" as *;
 // @use "../components/swiper" as *;
 // * use in news part
 @use "../base/colors" as *;
@@ -21,44 +21,6 @@ main {
   text-transform: uppercase;
   font-weight: 400;
   margin-bottom: 20px;
-}
-
-$content-size: 12px;
-$title-size: 16px;
-
-.service {
-  padding: 0 2rem;
-  text-align: center;
-
-  transform: translateY(-30px);
-}
-.service_box {
-  align-items: center;
-  justify-content: space-between;
-  padding: $main-padding;
-  height: 100%;
-
-  background-color: #eee;
-
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-  }
-
-  div {
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-  h3 {
-    @extend %title-size;
-  }
-  p {
-    font-size: $content-size;
-  }
-
-  button {
-    background-color: #ccc;
-  }
 }
 
 // * intro

@@ -7,6 +7,25 @@ body {
   background: linear-gradient(to bottom, #151515 0% 100px, transparent 100px 90%, #151515 90% 100%), url(/images/bg.jpg) center top;
 }
 
+.community {
+  text-align: right;
+}
+.community a {
+  text-decoration: none;
+  display: inline-block;
+  color: #333;
+}
+.community svg {
+  background-color: #333;
+  color: aliceblue;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 5px;
+  height: 25px;
+  width: 25px;
+  font-size: 20px;
+}
+
 nav {
   text-transform: uppercase;
 }
@@ -52,24 +71,6 @@ header .container {
   margin-top: 5px;
   margin-bottom: 10px;
 }
-.website_title .community {
-  text-align: right;
-}
-.website_title .community a {
-  text-decoration: none;
-  display: inline-block;
-  color: #333;
-}
-.website_title .community svg {
-  background-color: #333;
-  color: aliceblue;
-  border-radius: 50%;
-  display: inline-block;
-  padding: 5px;
-  height: 25px;
-  width: 25px;
-  font-size: 20px;
-}
 
 main .container {
   padding: 0;
@@ -89,14 +90,6 @@ main .container {
   top: 50%;
   transform: translateY(-50%);
   background-color: #333;
-}
-
-main {
-  margin-bottom: 60px;
-}
-main .container {
-  background-image: url(/images/subbg.gif);
-  padding-top: 20px;
 }
 
 .service_box h3 {
@@ -132,6 +125,14 @@ main .container {
 }
 .service_box button {
   background-color: #ccc;
+}
+
+main {
+  margin-bottom: 60px;
+}
+main .container {
+  background-image: url(/images/subbg.gif);
+  padding-top: 20px;
 }
 
 .intro h3 {
