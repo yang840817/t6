@@ -1,4 +1,4 @@
-@use '../abstracts/font' as *;
+@use '../abstracts/font&color' as *;
 @use '../abstracts/breakpoint' as *;
 
 /*頁尾bottom*/
@@ -13,7 +13,7 @@
   color: $color-dark-grey;
   gap: 0.5rem;
   p > a {
-    color: $color-news;
+    color: $color-green;
   }
   @include ipad {
     font-size: $font-sm;
@@ -33,7 +33,7 @@
       color: $color-dark-grey;
       flex: 1 1 auto;
       &:hover {
-        color: $color-news;
+        color: $color-green;
       }
     }
     @include desktop {

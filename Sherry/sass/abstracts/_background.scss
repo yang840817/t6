@@ -1,9 +1,4 @@
-@use '../abstracts/font' as *;
-
-//陰影
-@mixin shadow($x, $y, $blur) {
-  box-shadow: $x $y $blur $color-dark-grey;
-}
+@use '../abstracts/font&color' as *;
 
 //白條紋背景
 %bg-strip {
@@ -12,3 +7,8 @@
 
 //木紋背景
 $bg-wood: url("../images/background.jpg");
+
+//陰影
+@mixin shadow($x, $y, $blur) {
+  box-shadow: $x $y $blur $color-dark-grey;
+}

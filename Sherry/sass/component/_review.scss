@@ -1,4 +1,4 @@
-@use '../abstracts/_font'as *;
+@use '../abstracts/font&color'as *;
 @use '../abstracts/_breakpoint' as *;
 
 .dialogue {
@@ -39,7 +39,7 @@
   &_info {
     flex: 1 0 auto;
     a {
-      color: $color-news;
+      color: $color-green;
     }
   }
 }

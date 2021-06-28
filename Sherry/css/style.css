@@ -22,7 +22,7 @@ textarea:focus {
   outline: none;
 }
 
-footer, main, header {
+footer .row, main, header {
   background: url("../images/subbg.gif");
 }
 
@@ -313,6 +313,17 @@ nav {
   background-position: 0 -120px;
 }
 
+@media (min-width: 992px) {
+  .services {
+    position: relative;
+  }
+  .services .row {
+    position: absolute;
+    top: -30px;
+    left: 1.5rem;
+    right: 1.5rem;
+  }
+}
 .services .content {
   background: #e8e8e8;
   display: flex;
@@ -321,7 +332,6 @@ nav {
   align-items: center;
   text-align: center;
   gap: 1rem;
-  padding: 1.5rem 1rem;
   height: 100%;
 }
 .services .content:hover {
@@ -345,18 +355,6 @@ nav {
   color: black;
   padding: 0.25rem 1.5rem;
   margin-top: auto;
-}
-
-@media (min-width: 992px) {
-  .services {
-    position: relative;
-  }
-  .services .row {
-    position: absolute;
-    top: -30px;
-    left: 1.5rem;
-    right: 1.5rem;
-  }
 }
 
 .more-link {
@@ -632,16 +630,11 @@ form .send:hover {
   }
 }
 
-footer {
-  box-shadow: 0px 0px 2px #636363;
-}
-
 /*~ footer 標題*/
 .footer_subtitle {
   font-size: 1.5rem;
   font-weight: 600;
   color: black;
-  margin-bottom: 1rem;
 }
 @media (min-width: 992px) {
   .footer_subtitle {

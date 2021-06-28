@@ -1,7 +1,7 @@
-@use '../abstracts/font' as *;
+@use '../abstracts/font&color' as *;
 @use '../abstracts/breakpoint' as *;
 
-//雪碧圖mixin
+//雪碧圖
 $img-links: url("../images/social.png");
 
 @mixin spirit($x, $y) {
@@ -20,7 +20,7 @@ $img-links: url("../images/social.png");
   align-items: center;
   width: 10%;
   &:hover {
-    color: $color-news;
+    color: $color-green;
   }
   i {
     font-size: 1rem;
@@ -89,7 +89,7 @@ input[id="tel"] {
     font-size: $font-reg;
   }
   &:hover {
-    color: $color-news;
+    color: $color-green;
     font-weight: 500;
   }
 }

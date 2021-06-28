@@ -1,5 +1,5 @@
 @use '../abstracts/breakpoint' as *;
-@use '../abstracts/font' as *;
+@use '../abstracts/font&color' as *;
 
 @mixin img_card {
   display: flex;
@@ -13,7 +13,7 @@
     .date {
       width: fit-content;
       padding: 0 0.5rem;
-      background: $color-news;
+      background: $color-green;
       color: $color-basic;
     }
     .ellipsis {
