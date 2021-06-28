@@ -1,7 +1,4 @@
-@use '../base/color';
-@use '../base/typography';
 @use '../base/bg';
-@use '../base/display';
 @use '../base/breakpoints';
 
 @use '../components/contact';
@@ -9,7 +6,8 @@
 
 //Header
 header {
-  @include display.flex(row, center);
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   @include breakpoints.tablet {
     justify-content: space-between;

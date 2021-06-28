@@ -1,7 +1,6 @@
 @use '../base/color';
 @use '../base/typography';
 @use '../base/bg';
-@use '../base/display';
 @use '../base/breakpoints';
 
 @use '../components/dialogue';
@@ -58,11 +57,13 @@ footer {
 
 //Footer-Bottom
 .footer-bottom {
-  @include display.flex(column-reverse, flex-start);
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
   align-items: center;
   @include breakpoints.tablet-landscape {
-    @include display.flex(row, space-between);
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   background-color: color.$black;

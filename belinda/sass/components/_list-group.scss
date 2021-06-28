@@ -1,6 +1,5 @@
 @use '../base/color';
 @use '../base/typography';
-@use '../base/display';
 @use '../base/breakpoints';
 
 
@@ -12,7 +11,8 @@
   }
 
   li {
-    @include display.flex(row, flex-start);
+    display: flex;
+    justify-content: flex-start;
     align-items: baseline;
 
     padding: 15px;

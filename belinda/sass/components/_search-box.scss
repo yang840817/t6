@@ -2,17 +2,27 @@
 @use '../base/typography';
 @use '../base/breakpoints';
 
+
+.navigation {
+  position: relative;
+  
+  .search {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    right: 8px;
+
+    @include breakpoints.tablet-landscape {
+      position: static;
+    }
+  }
+}
+
 //search box ratio
 .search {
-  position: absolute;
-  right: 0;
-  top: 8px;
-  right: 8px;
-  
   background-color: color.$secondary-color;
   
   @include breakpoints.tablet-landscape {
-    position: static;
     flex: 1 0 20%;
     padding: 7px 14px;
     margin-left: 10px;
