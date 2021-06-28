@@ -41,7 +41,8 @@ img {
     margin-top: 0;
   }
 }
-.contact-channels .social-media a:first-child {
+
+.social-media a:first-child {
   display: inline-block;
   background-image: url(../images/social.png);
   background-repeat: no-repeat;
@@ -49,7 +50,7 @@ img {
   width: 27px;
   height: 27px;
 }
-.contact-channels .social-media a:first-child:hover {
+.social-media a:first-child:hover {
   display: inline-block;
   background-image: url(../images/social.png);
   background-repeat: no-repeat;
@@ -57,7 +58,8 @@ img {
   width: 27px;
   height: 27px;
 }
-.contact-channels .social-media a:nth-child(2) {
+
+.social-media a:nth-child(2) {
   display: inline-block;
   background-image: url(../images/social.png);
   background-repeat: no-repeat;
@@ -65,7 +67,7 @@ img {
   width: 27px;
   height: 27px;
 }
-.contact-channels .social-media a:nth-child(2):hover {
+.social-media a:nth-child(2):hover {
   display: inline-block;
   background-image: url(../images/social.png);
   background-repeat: no-repeat;
@@ -73,7 +75,8 @@ img {
   width: 27px;
   height: 27px;
 }
-.contact-channels .social-media a:nth-child(3) {
+
+.social-media a:nth-child(3) {
   display: inline-block;
   background-image: url(../images/social.png);
   background-repeat: no-repeat;
@@ -81,7 +84,7 @@ img {
   width: 27px;
   height: 27px;
 }
-.contact-channels .social-media a:nth-child(3):hover {
+.social-media a:nth-child(3):hover {
   display: inline-block;
   background-image: url(../images/social.png);
   background-repeat: no-repeat;
@@ -89,7 +92,8 @@ img {
   width: 27px;
   height: 27px;
 }
-.contact-channels .social-media a:nth-child(4) {
+
+.social-media a:nth-child(4) {
   display: inline-block;
   background-image: url(../images/social.png);
   background-repeat: no-repeat;
@@ -97,7 +101,7 @@ img {
   width: 27px;
   height: 27px;
 }
-.contact-channels .social-media a:nth-child(4):hover {
+.social-media a:nth-child(4):hover {
   display: inline-block;
   background-image: url(../images/social.png);
   background-repeat: no-repeat;
@@ -105,7 +109,8 @@ img {
   width: 27px;
   height: 27px;
 }
-.contact-channels .social-media a:nth-child(5) {
+
+.social-media a:nth-child(5) {
   display: inline-block;
   background-image: url(../images/social.png);
   background-repeat: no-repeat;
@@ -113,7 +118,7 @@ img {
   width: 27px;
   height: 27px;
 }
-.contact-channels .social-media a:nth-child(5):hover {
+.social-media a:nth-child(5):hover {
   display: inline-block;
   background-image: url(../images/social.png);
   background-repeat: no-repeat;
@@ -511,13 +516,12 @@ main section {
 
 .referer {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   margin-top: 30px;
 }
 .referer div:nth-child(2) {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   margin-left: 10px;
 }
 .referer div:nth-child(2) a {
@@ -564,7 +568,6 @@ main section {
 
 .album-items {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
   grid-template-rows: repeat(3, 1fr);
   gap: 5px;
@@ -582,13 +585,13 @@ main section {
   text-align: center;
   line-height: 1.5;
 }
-.footer-bottom nav a {
+.footer-bottom a {
   padding: 0 10px;
   font-size: 14px;
   color: #9d9d9d;
   text-transform: uppercase;
 }
-.footer-bottom nav a:hover {
+.footer-bottom a:hover {
   color: #80B601;
 }
 .footer-bottom a + a {

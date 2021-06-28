@@ -17,6 +17,7 @@
   background-color: rgba(lighten(color.$black, 30%),0.9);
 }
 
+
 .board {
   @extend %board-normal;
   &:hover {

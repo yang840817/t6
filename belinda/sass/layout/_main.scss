@@ -1,5 +1,5 @@
 @use '../base/color';
-@use '../base/bg';
+@use '../base/background';
 @use '../base/breakpoints';
 
 @use '../components/button';
@@ -19,7 +19,7 @@ body {
 }
 
 main {
-  background: bg.$section-bg;
+  background: background.$section-bg;
   box-shadow: 0px 1px 5px;
 
   section {

@@ -1,4 +1,4 @@
-@use '../base/bg';
+@use '../base/background';
 @use '../base/breakpoints';
 
 @use '../components/contact';
@@ -13,7 +13,7 @@ header {
     justify-content: space-between;
   }
   padding: 40px 30px;
-  background-image: bg.$section-bg;
+  background-image: background.$section-bg;
   box-shadow: 1px 0px 10px;
 }
 
