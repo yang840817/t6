@@ -12,7 +12,7 @@ nav {
 }
 
 .navbar-nav .nav-item {
-  border-right: 1px solid gray;
+  border-right: 1px solid #eee;
 }
 .navbar-nav .nav-item .nav-link:hover {
   background-color: #82b800;
@@ -25,7 +25,6 @@ nav {
 }
 .nav_box .navbar {
   flex-grow: 4;
-  margin-right: 10px;
   box-shadow: -1px -1px 5px 1px rgba(0, 0, 0, 0.5);
 }
 .nav_box .nav_form {
@@ -36,6 +35,11 @@ nav {
   background: #e8e8e8 url(/images/search.png) no-repeat top 10px right 5px;
 }
 
+@media (min-width: 992px) {
+  .nav_box .navbar {
+    margin-right: 10px;
+  }
+}
 header .container {
   padding: 0;
 }
