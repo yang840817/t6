@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang='en' ;>
+
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Sherry T6</title>
+
+  <!-- Bootstrap-->
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css' rel='stylesheet'
+    integrity='sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x' crossorigin='anonymous'>
+
+  <!-- fontawesome-->
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css'
+    integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous'>
+
+  <!-- swiper -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css" rel="stylesheet" />
+
+  <!-- my css-->
+  <link rel='stylesheet' href='./css/style.css'>
+</head>
+
+<body>
+  <!-- ^header -->
+  <header class="px-1 px-md-4 py-3 py-lg-4">
+    <!-- ~漢堡icon -->
+    <label class="hamburger_toggler" for="hamburger"><i class="fas fa-bars"></i></label>
+
+    <!-- ~logo -->
+    <div class="logo">
+      <img class="w-100" src="./images/logo.png" alt="Business planet">
+    </div>
+
+    <label class="tel_toggler" for="tel"><i class="fas fa-phone"></i></label>
+    <input type="checkbox" id="tel">
+    <!-- ~links -->
+    <div class="media_links">
+      <a href="##"></a>
+      <a href="##"></a>
+      <a href="##"></a>
+      <a href="##"></a>
+      <a href="##"></a>
+      <a class="tel_info" href="tel:+1 (777) 784-25-43">Call Us Now: +1 (777) 784-25-43</a>
+    </div>
+  </header>
+
+  <!-- ~導覽列 -->
+  <input type="checkbox" id="hamburger">
+  <nav id="collapse">
+    <form class="search">
+      <input class="d-block mx-auto" type="search" placeholder="Search the Site...">
+    </form>
+    <div class="navigation">
+      <ul>
+        <li><a>HOME</a></li>
+        <li><a>ABOUT</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+            data-bs-toggle="dropdown" aria-expanded="false">FEATURES</a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">HOW</a></li>
+            <li><a class="dropdown-item" href="#">ARE</a></li>
+            <li><a class="dropdown-item" href="#">YOU</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown"><a class="dropdown-toggle" href="#" id="dropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">PORTFOLIO</a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">SHERRY</a></li>
+            <li><a class="dropdown-item" href="#">IS</a></li>
+            <li><a class="dropdown-item" href="#">ME</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" href="#" id="dropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">BLOG</a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">CHECK</a></li>
+            <li><a class="dropdown-item" href="#">THIS</a></li>
+            <li><a class="dropdown-item" href="#">OUT</a></li>
+          </ul>
+        </li>
+        <li><a href="##">CONTACTS</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- ^main -->
+  <main class="mb-4">
+    <!-- ~輪播圖 -->
+    <div id="carouselExampleControls" class="banner carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/banner1.jpg" class="d-block w-100 h-100" alt="banner">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/banner2.jpg" class="d-block w-100 h-100" alt="banner">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/banner3.jpg" class="d-block w-100 h-100" alt="banner">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev_style" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next_style" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- ~四張圖 -->
+    <section class="services my-5 mt-lg-0 px-2 px-md-4">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 gy-lg-0">
+        <div class="col">
+          <div class="content py-4 px-3">
+            <p class="content_title">GROWTH STRATEGY</p>
+            <div class="content_img"><img class="w-100" src="./images/growth strategies.png" alt="strategies"></div>
+            <p class="content_text">Vestibulum dignissim, dui ac hendrerit blandit, sapien orci dictum nibh, vel
+              suscipit augue nibh in
+              enim.
+              Nullam dignissim euismodnunc at</p>
+            <a href="##">More</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="content py-4 px-3">
+            <p class="content_title">PERFECT SUPPORT</p>
+            <div class="content_img"><img class="w-100" src="./images/perfect support.png" alt="perfect support"></div>
+            <p class="content_text">Donec semper, dolor eu iaculis laoreet, erat diam interdum nisi, vel consequat leo
+              meque in ante.
+              Curabitur fringilla tristique nisl ut</p>
+            <a href="##">More</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="content py-4 px-3">
+            <p clss="content_title">PARTNERS PROGRAMS</p>
+            <div class="content_img"><img class="w-100" src="./images/partners program.png" alt="partner programs">
+            </div>
+            <p class="content_text">Nunc pellentesque malesuada enim utdignissim. Etiam aliquam malesuada magna, vel
+              scelerisque lectus
+              pharetra quis. Cras</p>
+            <a href="##">More</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="content py-4 px-3">
+            <p class="scontent_title">PREMIUM SERVICES</p>
+            <div class="content_img"><img class="w-100" src="./images/premium service.png" alt="premium service"></div>
+            <p class="content_text">Duis molestie commodo sapien, non mollis diam consequat in. Nulla blandit viverra
+              sodales. Donec sit
+              amet
+              diam neque</p>
+            <a href="##">More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ~主要內容 -->
+    <article class="mb-3 px-2 px-md-4">
+      <div class="row row-cols-1 row-cols-lg-3 gap-5 gap-md-0">
+        <!-- ~welcome -->
+        <div class="col col-md-6">
+          <div class="welcome">
+            <p class="subtitle">WELCOME</p>
+            <div class="mb-3"><img class="w-100" src="./images/welcome.jpg" alt="welcome"></div>
+            <p>Curabitur velit nisl, porttitor viverra molestie quis, lacinia eget purus. Suspendisse ipsum massa,
+              rutrum in hendrerit malesuada, fermentum id erat...<a class="more-link" href="##">More</a></p>
+          </div>
+        </div>
+        <!-- ~why-choose-us -->
+        <div class="col col-md-6">
+          <div class="list_group">
+            <p class="subtitle">WHY CHOOSE US?</p>
+            <div>
+              <div class="list_item px-1">
+                <div class="symbol"><i class="fas fa-chevron-right"></i></div>
+                <p>Etiam ruturm venenatis dui, non</p>
+              </div>
+              <div class="list_item px-1">
+                <div class="symbol"><i class="fas fa-chevron-right"></i></div>
+                <p>Aliquam ac diam in lorem vulputate auctor.</p>
+              </div>
+              <div class="list_item px-1">
+                <div class="symbol"><i class="fas fa-chevron-right"></i></div>
+                <p>Vestibulum vitae urna quis eros convallis</p>
+              </div>
+              <div class="list_item px-1">
+                <div class="symbol"><i class="fas fa-chevron-right"></i></div>
+                <p>Sed magna magna, congue</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ~news&events -->
+        <div class="col col-md-12 mt-md-3 mt-lg-0">
+          <div class="news_and_events">
+            <p class="subtitle">NEWS & EVENTS</p>
+            <div class="img_card_group">
+              <div class="img_card">
+                <div class="img_card_img">
+                  <img class="w-100" src="./images/news1.jpg" alt="news">
+                </div>
+                <div class="img_card_body">
+                  <p class="date mb-2">12.12.12</p>
+                  <div>
+                    <p class="ellipsis">Aliquam ac diam in lorem vulputate auctor. Aliquam rhoncus nunc et justo
+                      imperdiet blandit ..</p><a class="more-link" href="##">More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="img_card">
+                <div class="img_card_img">
+                  <img class="w-100" src="./images/news2.jpg" alt="news">
+                </div>
+                <div class="img_card_body">
+                  <p class="date mb-2">12.12.12</p>
+                  <div>
+                    <p class="ellipsis">Sed auctor laoreet augue, id pulvinar lacus mattis non. In hac habitasse
+                      platea
+                      dictumst. Proin et lorem</p><a class="more-link" href="##">More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ~swiper區 -->
+    <section class="swiper px-2 px-md-4 pb-5">
+      <div class="subtitle">FEATURED WORKS</div>
+      <div class="swiper-container mySwiper pt-5">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img class="w-100 h-100" src="./images/featured-1.jpg" alt="featured works"></div>
+          <div class="swiper-slide"><img class="w-100 h-100" src="./images/featured-2.jpg" alt="featured works"></div>
+          <div class="swiper-slide"><img class="w-100 h-100" src="./images/featured-3.jpg" alt="featured works"></div>
+          <div class="swiper-slide"><img class="w-100 h-100" src="./images/featured-4.jpg" alt="featured works"></div>
+          <div class="swiper-slide"><img class="w-100 h-100" src="./images/featured-1.jpg" alt="featured works"></div>
+          <div class="swiper-slide"><img class="w-100 h-100" src="./images/featured-2.jpg" alt="featured works"></div>
+          <div class="swiper-slide"><img class="w-100 h-100" src="./images/featured-3.jpg" alt="featured works"></div>
+          <div class="swiper-slide"><img class="w-100 h-100" src="./images/featured-4.jpg" alt="featured works"></div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ^footer -->
+  <footer class="overflow-hidden">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 p-3 p-md-4 gy-5 gy-lg-0">
+
+      <!-- ~latest tweet -->
+      <div class="col">
+        <div class="footer_item px-4 px-md-0">
+          <div class="footer_subtitle mb-3">LATEST TWEETS</div>
+          <p class="tweet">Loading tweets</p>
+        </div>
+      </div>
+      <!-- ~testimonials -->
+      <div class="col">
+        <div class="footer_item px-4 px-md-0">
+          <div class="footer_subtitle mb-3">TESTIMONIALS</div>
+          <div class="dialogue mb-5 px-2 py-3">
+            <div class="dialogue_text ps-3">"Sed dapibus molestie interdum. Fusce nec est ante, sit amet lacinia lorem.
+              Maecenas nex eros ut mauris
+              pulvinar suscipit. Aliquam erat</div>
+          </div>
+          <div class="d-flex reviewer gap-2">
+            <img src="./images/Stephen.jpg" alt="Stephen">
+            <div class="reviewer_info">
+              <p>Stephen Bingham</p>
+              <a href="##"><i>demolink.org</i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ~get in touch -->
+      <div class="col">
+        <div class="footer_item px-4 px-md-0">
+          <div class="footer_subtitle mb-3">GET IN TOUCH!</div>
+          <form>
+            <input class="mb-2 px-2 py-1 w-100" type="text" for="name" placeholder="Name">
+            <input class="mb-2 px-2 py-1 w-100" type="email" for="email" placeholder="Email">
+            <textarea class="mb-2 px-2 pb-5 w-100" type="text" placeholder="Message"></textarea>
+            <div>
+              <button type="reset" class="clear px-2 py-1">CLEAR FORM</button>
+              <button type="submit" class="send px-2 py-1">SEND!</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- ~flickr -->
+      <div class="col">
+        <div class="footer_item px-4 px-md-0">
+          <div class="footer_subtitle mb-3">FLICKR</div>
+          <div class="flickr gap-2">
+            <img src="./images/f1.jpg" alt="flickr">
+            <img src="./images/f2.jpg" alt="flickr">
+            <img src="./images/f3.jpg" alt="flickr">
+            <img src="./images/f4.jpg" alt="flickr">
+            <img src="./images/f5.jpg" alt="flickr">
+            <img src="./images/f6.jpg" alt="flickr">
+            <img src="./images/f7.jpg" alt="flickr">
+            <img src="./images/f8.jpg" alt="flickr">
+            <img src="./images/f9.jpg" alt="flickr">
+            <img src="./images/f10.jpg" alt="flickr">
+            <img src="./images/f11.jpg" alt="flickr">
+            <img src="./images/f12.jpg" alt="flickr">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ~copyright + bottom nav -->
+    <div class="footer_bottom p-3">
+      <!-- ~footer nav -->
+      <div class="footer_nav">
+        <a href="##">HOME</a>
+        <a href="##">ABOUT</a>
+        <a href="##">FEATURES</a>
+        <a href="##">PORTFOLIO</a>
+        <a href="##">BLOG</a>
+        <a href="##">CONTACTS</a>
+      </div>
+      <!-- ~copyright -->
+      <p>BUSINESS PLANET &copy 2020 | <a href="##">Private Policy</a></p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap-->
+  <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js'
+    integrity='sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4'
+    crossorigin='anonymous'></script>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <!-- <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        576: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        992: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+      },
+    });
+  </script> -->
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      slidesPerGroup: 4,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+          slidesPerGroup: 2,
+        },
+        576: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+          slidesPerGroup: 3,
+        },
+        992: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+          slidesPerGroup: 1,
+        },
+      },
+    });
+  </script>
+</body>
+
+</html>

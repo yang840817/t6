@@ -1,0 +1,36 @@
+@use '../abstracts/font&color' as *;
+
+@mixin list_item {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid $color-light-grey;
+  .symbol {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: $color-grey;
+    i {
+      margin: 0 auto;
+      color: $color-basic;
+    }
+    &:hover {
+      background: $color-green;
+      i {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+
+/*~choose us */
+.list_group {
+  .list_item {
+    @include list_item;
+  }
+}

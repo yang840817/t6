@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+// reset
+@use './base/_reset.scss';
+
+//main content
+@use '../sass/layout/body';
+@use '../sass/layout/header';
+@use '../sass/layout/main';
+@use '../sass/layout/footer';
+// * {
+//   outline: 1px solid black;
+// }
