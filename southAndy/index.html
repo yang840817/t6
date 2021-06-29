@@ -11,6 +11,11 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <!-- my css-->
     <link rel="stylesheet" href="/css/main.css" />
   </head>
@@ -352,35 +357,39 @@
             <h3>featured work</h3>
             <!-- ?輪播按鈕 -->
             <div class="featured_box">
-              <a href="##" class="alink_prev">
+              <a href="##" class="alink_prev swiper-button-prev">
                 <i class="fas fa-chevron-left"></i>
               </a>
-              <a href="##" class="alink_next">
+              <a href="##" class="alink_next swiper-button-next">
                 <i class="fas fa-chevron-right"></i>
               </a>
             </div>
           </div>
-          <div class="row">
-            <div class="col-lg-3">
-              <a href="##">
-                <img src="images/g1.jpg" alt="featured work" class="w-100" />
-              </a>
+          <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="##">
+                  <img src="/images/g1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="##">
+                  <img src="/images/g2.jpg" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="##">
+                  <img src="/images/g3.jpg" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="##">
+                  <img src="/images/g4.jpg" alt="" />
+                </a>
+              </div>
             </div>
-            <div class="col-lg-3">
-              <a href="##">
-                <img src="images/g2.jpg" alt="featured work" class="w-100" />
-              </a>
-            </div>
-            <div class="col-lg-3">
-              <a href="##">
-                <img src="images/g3.jpg" alt="featured work" class="w-100" />
-              </a>
-            </div>
-            <div class="col-lg-3">
-              <a href="##">
-                <img src="images/g4.jpg" alt="featured work" class="w-100" />
-              </a>
-            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
         </section>
       </div>
@@ -421,7 +430,7 @@
             <div class="col-lg-3">
               <div class="contact mb-5 mb-lg-0">
                 <h4>Get in touch!</h4>
-                <form action="##" method="POST">
+                <form method="POST" autocomplete="off">
                   <input type="text" name="name" placeholder="Name:" />
                   <input type="email" name="email" placeholder="Email:" />
                   <textarea
@@ -513,5 +522,26 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 10,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>

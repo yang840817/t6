@@ -203,6 +203,14 @@ main .container {
   color: #dad2d2;
 }
 
+.swiper-container a {
+  display: inline-block;
+  width: 100%;
+}
+.swiper-container a img {
+  width: 100%;
+}
+
 .intro {
   padding: 20px;
   display: flex;
@@ -296,6 +304,7 @@ main .container {
   border-radius: 3%;
   padding: 5px 10px;
   margin-bottom: 8px;
+  resize: none;
 }
 .contact .btn-clear {
   text-transform: uppercase;
