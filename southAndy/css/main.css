@@ -11,7 +11,7 @@ h1 {
   margin-bottom: 0;
 }
 
-.intro .box a:hover, .service_box button:hover {
+.intro .box a:hover, .service_box button:hover, .community svg:hover {
   background-color: #82b800;
   color: #fff;
 }
@@ -24,17 +24,21 @@ h1 {
 }
 
 .intro h3 {
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 500;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
 footer .container h4 {
-  font-size: 24px;
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: 600;
   margin-bottom: 20px;
+}
+
+.logo_box a {
+  display: inline-block;
 }
 
 .community {
@@ -244,6 +248,7 @@ main .container {
   padding: 20px;
   background-color: #e6e6e6;
   position: relative;
+  border: 1px solid #d9d9d9;
   margin-bottom: 40px;
 }
 .testimonials .message::after {
@@ -258,10 +263,10 @@ main .container {
   border-right-width: 20px;
   border-bottom-width: 15px;
   border-left-width: 20px;
-  border-top-color: #e6e6e6;
+  border-top-color: #d9d9d9;
   border-right-color: transparent;
   border-bottom-color: transparent;
-  border-left-color: #e6e6e6;
+  border-left-color: #d9d9d9;
 }
 .testimonials .message_info {
   display: flex;
@@ -313,8 +318,8 @@ main .container {
 .gallery {
   display: grid;
   grid-auto-flow: row;
-  grid-template-columns: repeat(4, 60px);
-  grid-template-rows: repeat(4, 65px);
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(60px, 1fr));
   grid-gap: 5px;
 }
 .gallery img {
@@ -349,13 +354,6 @@ main .container {
 }
 .copyright_nav .homemenu {
   color: #80b600;
-}
-
-footer .container h4 {
-  font-size: 24px;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-bottom: 20px;
 }
 
 footer .container .info {

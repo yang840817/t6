@@ -8,7 +8,7 @@
     padding: 20px;
     background-color: #e6e6e6;
     position: relative;
-
+    border: 1px solid #d9d9d9;
     margin-bottom: 40px;
 
     &::after {
@@ -24,10 +24,11 @@
       border-right-width: 20px;
       border-bottom-width: 15px;
       border-left-width: 20px;
-      border-top-color: #e6e6e6;
+      border-top-color: #d9d9d9;
       border-right-color: transparent;
       border-bottom-color: transparent;
-      border-left-color: #e6e6e6;
+      border-left-color: #d9d9d9;
+      // border: 1px solid #d9d9d9;
     }
   }
   .message_info {

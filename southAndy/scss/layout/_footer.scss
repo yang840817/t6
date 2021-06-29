@@ -6,13 +6,6 @@
 // @use "../components/footer/coordinator" as *;
 // @use "../components/footer/flickr" as *;
 
-%footer_title {
-  font-size: 24px;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
 footer .container {
   h4 {
     @extend %footer_title;
