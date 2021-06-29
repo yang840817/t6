@@ -191,16 +191,23 @@ main .container {
   justify-content: space-between;
   margin-bottom: 16px;
 }
-.featured .featured_box {
+
+.featured_box {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
-.featured .featured_box .alink_prev {
-  margin-right: 10px;
+.featured_box a {
+  width: 25px;
+  height: 25px;
   color: #dad2d2;
 }
-.featured .featured_box .alink_next {
-  color: #dad2d2;
+.featured_box a i {
+  width: 100%;
+  height: 100%;
+}
+.featured_box .prev {
+  margin-right: 10px;
 }
 
 .swiper-container a {

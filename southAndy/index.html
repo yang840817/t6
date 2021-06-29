@@ -353,14 +353,14 @@
         </section>
         <!-- !carousel works -->
         <section class="featured">
-          <div class="d-flex">
-            <h3>featured work</h3>
+          <div class="featured_box">
+            <h3>featured works</h3>
             <!-- ?輪播按鈕 -->
-            <div class="featured_box">
-              <a href="##" class="alink_prev swiper-button-prev">
+            <div>
+              <a href="##" class="swiper-btn-prev prev">
                 <i class="fas fa-chevron-left"></i>
               </a>
-              <a href="##" class="alink_next swiper-button-next">
+              <a href="##" class="swiper-btn-next next">
                 <i class="fas fa-chevron-right"></i>
               </a>
             </div>
@@ -388,8 +388,8 @@
                 </a>
               </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
           </div>
         </section>
       </div>
@@ -538,8 +538,8 @@
           clickable: true,
         },
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-btn-next",
+          prevEl: ".swiper-btn-prev",
         },
       });
     </script>
