@@ -34,5 +34,8 @@
   button {
     background-color: #ccc;
     margin-top: auto;
+    &:hover {
+      @extend %primary-hover;
+    }
   }
 }

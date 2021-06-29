@@ -11,6 +11,11 @@ h1 {
   margin-bottom: 0;
 }
 
+.intro .box a:hover, .service_box button:hover {
+  background-color: #82b800;
+  color: #fff;
+}
+
 .service_box h3 {
   font-size: 16px;
   text-transform: uppercase;
@@ -74,7 +79,6 @@ nav {
 
 .nav_box {
   justify-content: space-between;
-  transform: translateY(20px);
 }
 .nav_box .navbar {
   flex-grow: 4;
@@ -86,6 +90,13 @@ nav {
 }
 .nav_box .nav_form input {
   background: #e8e8e8 url(/images/search.png) no-repeat top 10px right 5px;
+}
+.nav_box .nav_form input:hover {
+  background: #e8e8e8 url(/images/icon1.png) no-repeat top 0px right 5px;
+}
+.nav_box .nav_form input:focus {
+  border-color: #82b800;
+  box-shadow: 0 0 0 0.25rem #82b800;
 }
 
 @media (min-width: 992px) {
@@ -155,7 +166,6 @@ main .container {
   background-color: #ccc;
   margin-top: auto;
 }
-
 .news_title {
   background-color: #82b800;
   display: inline-block;
@@ -222,13 +232,12 @@ main .container {
   width: 50px;
   height: 50px;
 }
-
 main {
   margin-bottom: 60px;
 }
 main .container {
   background-image: url(/images/subbg.gif);
-  padding-top: 20px;
+  box-shadow: 0 -20px #fff;
 }
 
 .testimonials .message {

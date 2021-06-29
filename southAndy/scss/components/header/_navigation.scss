@@ -1,6 +1,5 @@
 @use "../../base/breakpoints" as *;
-
-$primary-color: #82b800;
+@use "../../base/colors" as *;
 
 nav {
   text-transform: uppercase;
@@ -17,7 +16,6 @@ nav {
 
 .nav_box {
   justify-content: space-between;
-  transform: translateY(20px);
 
   .navbar {
     flex-grow: 4;
@@ -29,6 +27,13 @@ nav {
 
     input {
       background: #e8e8e8 url(/images/search.png) no-repeat top 10px right 5px;
+      &:hover {
+        background: #e8e8e8 url(/images/icon1.png) no-repeat top 0px right 5px;
+      }
+      &:focus {
+        border-color: $primary-color;
+        box-shadow: 0 0 0 0.25rem $primary-color;
+      }
     }
   }
 }

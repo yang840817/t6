@@ -12,7 +12,8 @@ main {
   margin-bottom: 60px;
   .container {
     background-image: url(/images/subbg.gif);
-    padding-top: 20px;
-    // box-shadow: ;
+
+    // 製造假的背景
+    box-shadow: 0 -20px #fff;
   }
 }

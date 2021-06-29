@@ -1,3 +1,8 @@
 $primary-color: #82b800;
 $copyright-color: #80b600;
 $copyright-alink: #5a5a5a;
+
+%primary-hover {
+  background-color: $primary-color;
+  color: #fff;
+}
