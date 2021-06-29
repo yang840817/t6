@@ -1,19 +1,19 @@
 @use '../base/breakpoints';
 
-@use '../components/navbar-menu';
-@use '../components/dropdown';
-@use '../components/search-box';
+@use '../vendor/navbar-menu';
+@use '../vendor/search-box';
 
 
 
 //Navigation
 .navigation {
-  display: flex;
-  justify-content: space-between;
-
   margin-top: 30px;
   box-shadow: 0px 1px 5px;
+
   @include breakpoints.tablet-landscape {
+    display: flex;
+    justify-content: space-between;
+    
     box-shadow: none;
     background: linear-gradient(180deg, transparent 60%, #fff 60%);
   }

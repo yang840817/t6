@@ -3,12 +3,12 @@
 @use '../base/breakpoints';
 
 
+//search box position 
 .navigation {
   position: relative;
   
   .search {
     position: absolute;
-    right: 0;
     top: 8px;
     right: 8px;
 

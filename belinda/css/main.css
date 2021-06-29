@@ -190,7 +190,6 @@ header {
 }
 .navigation .search {
   position: absolute;
-  right: 0;
   top: 8px;
   right: 8px;
 }
@@ -239,56 +238,23 @@ header {
 }
 
 .navigation {
-  display: flex;
-  justify-content: space-between;
   margin-top: 30px;
   box-shadow: 0px 1px 5px;
 }
 @media (min-width: 992px) {
   .navigation {
+    display: flex;
+    justify-content: space-between;
     box-shadow: none;
     background: linear-gradient(180deg, transparent 60%, #fff 60%);
   }
 }
 
-.carousel-item img {
-  min-height: 60vh;
-  object-fit: cover;
-}
-
-.modify-button {
-  display: none;
-}
-@media (min-width: 768px) {
-  .modify-button {
-    display: inline-block;
-    width: fit-content;
-  }
-  .modify-button .modify-prev-icon {
-    background-image: url(../images/slider_prev.gif);
-    background-size: cover;
-    background-position: top;
-    width: 40px;
-    height: 119px;
-  }
-  .modify-button .modify-prev-icon:hover {
-    background-image: url(../images/slider_prev.gif);
-    background-position: bottom;
-  }
-  .modify-button .modify-next-icon {
-    background-image: url(../images/slider_next.gif);
-    background-size: cover;
-    background-position: top;
-    width: 40px;
-    height: 119px;
-  }
-  .modify-button .modify-next-icon:hover {
-    background-image: url(../images/slider_next.gif);
-    background-position: bottom;
-  }
-}
-
 .board {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 40px 25px 25px;
   border: 1px solid #dbdbdb;
   background-color: #e7e7e7;
@@ -338,7 +304,6 @@ header {
 }
 .company-strengths li {
   display: flex;
-  justify-content: flex-start;
   align-items: baseline;
   padding: 15px;
   border-bottom: 1px solid #e7e7e7;
@@ -407,14 +372,41 @@ header {
   color: #000;
 }
 
-.works::before {
-  display: block;
-  content: "";
-  position: relative;
-  bottom: 50px;
-  width: 100%;
-  height: 2px;
-  background-color: #e0e0e0;
+.carousel-item img {
+  min-height: 60vh;
+  object-fit: cover;
+}
+
+.modify-button {
+  display: none;
+}
+@media (min-width: 768px) {
+  .modify-button {
+    display: inline-block;
+    width: fit-content;
+  }
+  .modify-button .modify-prev-icon {
+    background-image: url(../images/slider_prev.gif);
+    background-size: cover;
+    background-position: top;
+    width: 40px;
+    height: 119px;
+  }
+  .modify-button .modify-prev-icon:hover {
+    background-image: url(../images/slider_prev.gif);
+    background-position: bottom;
+  }
+  .modify-button .modify-next-icon {
+    background-image: url(../images/slider_next.gif);
+    background-size: cover;
+    background-position: top;
+    width: 40px;
+    height: 119px;
+  }
+  .modify-button .modify-next-icon:hover {
+    background-image: url(../images/slider_next.gif);
+    background-position: bottom;
+  }
 }
 
 .modify-swiper-button {
@@ -452,15 +444,14 @@ main section {
   margin-top: 10px;
 }
 @media (min-width: 992px) {
-  .services div[class*=col] {
+  .services > div {
     position: relative;
-    bottom: 30px;
-    margin-top: 0;
+    margin-top: -40px;
   }
 }
 
 .company-info {
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 70px;
 }
 
@@ -486,6 +477,15 @@ main section {
   padding-top: 40px;
   padding-bottom: 80px;
 }
+.works::before {
+  display: block;
+  content: "";
+  position: relative;
+  bottom: 50px;
+  width: 100%;
+  height: 2px;
+  background-color: #e0e0e0;
+}
 .works .wrapper {
   display: flex;
   justify-content: space-between;
@@ -493,21 +493,12 @@ main section {
 }
 
 .dialogue-box {
-  position: relative;
   margin-top: 25px;
   width: 100%;
-  height: 120px;
-  background: #dadada;
-  box-sizing: border-box;
-  clip-path: polygon(0% 0%, 100% 0, 100% 90%, 12% 90%, 0 100%);
+  filter: drop-shadow(1px 0px 0px #dadada) drop-shadow(0px 1px 0px #dadada) drop-shadow(0px -1px 0px #dadada) drop-shadow(-1px 0px 0px #dadada);
 }
 .dialogue-box p {
-  position: absolute;
-  left: 0.5%;
-  top: 2px;
-  padding: 10px 15px 10px 20px;
-  width: 99%;
-  height: 116px;
+  padding: 15px 20px 30px 15px;
   font-size: 14px;
   line-height: 1.2;
   background-color: #e7e7e7;
@@ -535,7 +526,7 @@ main section {
   border-radius: 3px;
   width: 100%;
   background-color: #e7e7e7;
-  font-size: 9.6px;
+  font-size: 12px;
 }
 
 .contact-form form {
@@ -550,19 +541,19 @@ main section {
   resize: none;
 }
 .contact-form form button:nth-child(4) {
-  border: 0;
   padding: 5px 10px;
   background-color: #000;
   color: #fff;
-  font-size: 11.2px;
+  border: 0;
+  font-size: 12px;
   text-transform: uppercase;
 }
 .contact-form form button:last-child {
-  border: 0;
   padding: 5px 10px;
   background-color: #80B601;
   color: #fff;
-  font-size: 11.2px;
+  border: 0;
+  font-size: 12px;
   text-transform: uppercase;
 }
 
@@ -580,25 +571,10 @@ main section {
   filter: brightness(1);
 }
 
-.footer-bottom nav {
-  font-size: 0;
-  text-align: center;
-  line-height: 1.5;
-}
-.footer-bottom a {
-  padding: 0 10px;
-  font-size: 14px;
-  color: #9d9d9d;
-  text-transform: uppercase;
-}
-.footer-bottom a:hover {
-  color: #80B601;
-}
-.footer-bottom a + a {
-  border-left: 2px solid #e7e7e7;
-}
-
-.album, .contact-form, .testimonials, .tweet {
+.tweet,
+.testimonials,
+.contact-form,
+.album {
   padding: 40px 0;
 }
 
@@ -620,7 +596,6 @@ footer > div:first-child {
 .footer-bottom {
   display: flex;
   flex-direction: column-reverse;
-  justify-content: flex-start;
   align-items: center;
   background-color: #000;
   line-height: 3;
@@ -640,6 +615,24 @@ footer > div:first-child {
 }
 .footer-bottom .copyright span:last-child {
   color: #80B601;
+}
+
+.footer-bottom nav {
+  font-size: 0;
+  text-align: center;
+  line-height: 1.5;
+}
+.footer-bottom a {
+  padding: 0 10px;
+  font-size: 14px;
+  color: #9d9d9d;
+  text-transform: uppercase;
+}
+.footer-bottom a:hover {
+  color: #80B601;
+}
+.footer-bottom a + a {
+  border-left: 2px solid #e7e7e7;
 }
 
 /*# sourceMappingURL=main.css.map */

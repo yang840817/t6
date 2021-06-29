@@ -7,14 +7,13 @@
 @use '../components/business-card';
 @use '../components/form';
 @use '../components/album';
-@use '../components/bottom-navbar';
+
 
 
 
 %footer-block {
   padding: 40px 0;
 }
-
 
 //Footer
 footer {
@@ -27,10 +26,16 @@ footer {
   }
 }
 
+.tweet,
+.testimonials,
+.contact-form,
+.album {
+  @extend %footer-block;
+}
+
+
 //Tweet
 .tweet {
-  @extend %footer-block;
-
   span {
     display: inline-block;
     margin-top: 25px;
@@ -38,28 +43,11 @@ footer {
   }
 }
 
-//Testimonials
-.testimonials {
-  @extend %footer-block;
-}
-
-
-//Contact-Form
-.contact-form {
-  @extend %footer-block;
-}
-
-//Album
-.album {
-  @extend %footer-block;
-}
-
 
 //Footer-Bottom
 .footer-bottom {
   display: flex;
   flex-direction: column-reverse;
-  justify-content: flex-start;
   align-items: center;
   @include breakpoints.tablet-landscape {
     flex-direction: row;
@@ -80,5 +68,30 @@ footer {
     span:last-child {
       color: color.$primary-color;
     }
+  }
+}
+
+
+//Bottom-navbar
+.footer-bottom {
+  nav {
+    font-size: 0;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  a {
+    padding: 0 10px;
+    font-size: typography.$base-font-size * 0.875;
+    color: color.$dark-gray;
+    text-transform: uppercase;
+
+    &:hover {
+      color: color.$primary-color;
+    }
+  }
+
+  a + a {
+    border-left: 2px solid color.$gray;
   }
 }

@@ -3,6 +3,12 @@
 @use './button';
 
 %board-normal {
+  //More button can be fixed on the same position regardless the content
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
   padding: 40px 25px 25px;
   border: 1px solid #dbdbdb;
   
