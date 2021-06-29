@@ -7,6 +7,13 @@
 
 $content-size: 12px;
 
+%intro-title {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
 %footer_title {
   font-size: 24px;
   text-transform: uppercase;

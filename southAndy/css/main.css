@@ -18,6 +18,13 @@ h1 {
   margin-bottom: 20px;
 }
 
+.intro h3 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
 footer .container h4 {
   font-size: 24px;
   text-transform: uppercase;
@@ -146,6 +153,7 @@ main .container {
 }
 .service_box button {
   background-color: #ccc;
+  margin-top: auto;
 }
 
 .news_title {
@@ -181,21 +189,6 @@ main .container {
   color: #dad2d2;
 }
 
-main {
-  margin-bottom: 60px;
-}
-main .container {
-  background-image: url(/images/subbg.gif);
-  padding-top: 20px;
-}
-
-.intro h3 {
-  font-size: 32px;
-  font-weight: 500;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
 .intro {
   padding: 20px;
   display: flex;
@@ -228,6 +221,14 @@ main .container {
   border-radius: 50%;
   width: 50px;
   height: 50px;
+}
+
+main {
+  margin-bottom: 60px;
+}
+main .container {
+  background-image: url(/images/subbg.gif);
+  padding-top: 20px;
 }
 
 .testimonials .message {
