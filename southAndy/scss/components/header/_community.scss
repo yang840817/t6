@@ -13,7 +13,7 @@
   text-align: right;
   font-size: 0;
 
-  a {
+  .social {
     display: inline-block;
     margin-right: 5px;
     font-size: 12px;
@@ -34,6 +34,11 @@
     }
   }
   span {
+    font-size: 12px;
+  }
+  a {
+    display: inline-block;
+    margin-right: 5px;
     font-size: 12px;
   }
   .telephone:hover {
