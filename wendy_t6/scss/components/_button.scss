@@ -1,0 +1,103 @@
+@use '../base/color';
+//menu mobile
+.menu button {
+    width: 100%;
+}
+.menu .navbar button:focus {
+    box-shadow: initial;
+}
+//carousel
+$btn_height: 119px;
+$btn_width: 40px;
+
+$next_button: url(../../img/slider_next.gif);
+$prev_button: url(../../img/slider_prev.gif);
+@mixin carousel_btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: $btn_height;
+    width: $btn_width;
+}
+@mixin carousel_btn_hover {
+    background-position: top 119px left 0px;
+}
+
+.carousel_img .previous_banner {
+    @include carousel_btn();
+    background: $prev_button;
+    &:hover {
+        @include carousel_btn_hover;
+    }
+}
+.carousel_img .next_banner {
+    @include carousel_btn();
+    background: $next_button;
+    &:hover {
+        @include carousel_btn_hover;
+    }
+}
+
+.feature {
+    .feature_prev {
+        color: grey;
+        position: absolute;
+        right: 20px;
+        width: fit-content;
+        &:hover {
+            color: lawngreen;
+        }
+        i {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+    .feature_next {
+        position: absolute;
+        width: fit-content;
+        color: grey;
+        &:hover {
+            color: lawngreen;
+        }
+        i {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}
+//menu card_banner
+.card_banner .click_more {
+    color: black;
+    background-color: color.$button_color;
+    border-radius: 0;
+    padding: 6px 12px;
+    border-radius: 0;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover {
+        background-color: color.$button_hover;
+    }
+}
+//menu feature
+.feature .feature_button {
+    height: 30px;
+    width: 50px;
+    position: relative;
+}
+
+//footer get
+.personal .get {
+    button {
+        border: 0;
+        padding: 5px;
+    }
+    .clear {
+        color: #fff;
+        margin-right: 10px;
+    }
+    .send {
+        color: #fff;
+    }
+}
