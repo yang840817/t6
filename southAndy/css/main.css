@@ -11,7 +11,7 @@ h1 {
   margin-bottom: 0;
 }
 
-.intro .box a:hover, .service_box button:hover, .community svg:hover {
+.intro .box a:hover, .service_box button:hover, .community svg:hover, .carousel button.carousel-control-prev:hover, .carousel button.carousel-control-next:hover {
   background-color: #82b800;
   color: #fff;
 }
@@ -46,9 +46,7 @@ footer .container h4 {
   font-size: 0;
 }
 .community a {
-  text-decoration: none;
   display: inline-block;
-  color: #333;
   margin-right: 5px;
   font-size: 12px;
 }
@@ -133,7 +131,6 @@ main .container {
   transform: translateY(-50%);
   background-color: #333;
 }
-
 .carousel button.carousel-control-next {
   height: 120px;
   width: 40px;
@@ -141,7 +138,6 @@ main .container {
   transform: translateY(-50%);
   background-color: #333;
 }
-
 .service {
   padding: 0 2rem;
   text-align: center;

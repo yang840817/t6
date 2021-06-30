@@ -1,3 +1,5 @@
+@use "../../base/colors" as *;
+
 main .container {
   padding: 0;
 }
@@ -7,6 +9,9 @@ main .container {
   top: 50%;
   transform: translateY(-50%);
   background-color: #333;
+  &:hover {
+    @extend %primary-hover;
+  }
 }
 
 .carousel button.carousel-control-next {
@@ -15,4 +20,7 @@ main .container {
   top: 50%;
   transform: translateY(-50%);
   background-color: #333;
+  &:hover {
+    @extend %primary-hover;
+  }
 }
