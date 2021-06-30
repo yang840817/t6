@@ -1,0 +1,50 @@
+@use '../base/breakpoints';
+
+
+@mixin button-normal($background-image) {
+  background-image: $background-image;
+  background-size: cover;
+  background-position: top;
+  width: 40px;
+  height: 119px;
+}
+
+@mixin button-hover($background-image) {
+  background-image: $background-image;
+  background-position: bottom;
+}
+
+
+//Banner
+.carousel-item {
+  img {
+    min-height: 60vh;
+    object-fit: cover;
+  }
+}
+
+//Banner-Button
+.modify-button {
+  display: none;
+
+  @include breakpoints.tablet {
+    display: inline-block;
+    width: fit-content;
+
+    .modify-prev-icon {
+      @include button-normal(url(../images/slider_prev.gif));
+    
+      &:hover {
+        @include button-hover(url(../images/slider_prev.gif));
+      }
+    }
+    
+    .modify-next-icon {
+      @include button-normal(url(../images/slider_next.gif));
+    
+      &:hover {
+        @include button-hover(url(../images/slider_next.gif));
+      }
+    }
+  }
+}

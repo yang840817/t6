@@ -1,0 +1,23 @@
+//swiper 按鈕mixin
+@mixin swiper_button($right, $left) {
+  top: 0;
+  right: $right;
+  left: $left;
+  margin-top: 0;
+  width: 30px;
+  height: 20px;
+  background-size: contain;
+  &::after {
+    content: none;
+  }
+}
+
+/*swiper*/
+.swiper {
+  .swiper-button-prev {
+    @include swiper_button(30px, auto);
+  }
+  .swiper-button-next {
+    @include swiper_button(0, auto);
+  }
+}

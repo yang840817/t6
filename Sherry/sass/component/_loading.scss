@@ -1,0 +1,28 @@
+/*loading tweet*/
+.tweet {
+  height: 100px;
+  &:after {
+    animation: loading-dots 3s infinite;
+    display: inline;
+    content: "";
+    font-size: 10px;
+    margin-left: 5px;
+  }
+}
+@keyframes loading-dots {
+  0% {
+    content: " ..";
+  }
+  35% {
+    content: " ...";
+  }
+  50% {
+    content: " ....";
+  }
+  75% {
+    content: " .....";
+  }
+  100% {
+    content: " ......";
+  }
+}

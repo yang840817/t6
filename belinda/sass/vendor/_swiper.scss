@@ -1,0 +1,20 @@
+@use '../base/color';
+
+
+.modify-swiper-button {
+  display: inline-block;
+  position: static;
+  border: 0;
+  width: fit-content;
+  background-color: transparent;
+  color: color.$dark-gray;
+}
+
+button[class*="swiper-button"]:after {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.modify-swiper-container {
+  margin-top: 25px;
+}

@@ -1,0 +1,43 @@
+@use '../abstracts/font&color' as *;
+@use '../abstracts/breakpoint' as *;
+
+/*頁尾bottom*/
+.footer_bottom {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+  background: black;
+  color: $color-dark-grey;
+  gap: 0.5rem;
+  p > a {
+    color: $color-green;
+  }
+  @include ipad {
+    font-size: $font-sm;
+  }
+  @include desktop {
+    justify-content: space-between;
+  }
+
+  /*bottom-nav*/
+  .footer_nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    font-weight: 500;
+    a {
+      color: $color-dark-grey;
+      flex: 1 1 auto;
+      &:hover {
+        color: $color-green;
+      }
+    }
+    @include desktop {
+      width: 50%;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@use '../base/color';
+@use '../base/typography';
+@use './button';
+
+%board-normal {
+  //More button can be fixed on the same position regardless the content
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 40px 25px 25px;
+  border: 1px solid #dbdbdb;
+  
+  background-color: color.$gray;
+  text-align: center;
+  height: 100%;
+}
+
+%board-hover {
+  color: color.$secondary-color;
+  border-color: color.$black;
+  background-color: rgba(lighten(color.$black, 30%),0.9);
+}
+
+
+.board {
+  @extend %board-normal;
+  &:hover {
+    @extend %board-hover;
+  }
+
+  h3 {
+    font-size: typography.$base-font-size;
+  }
+
+  div {
+    margin-top: 25px;
+  }
+
+  p {
+    margin-top: 25px;
+    font-size: typography.$base-font-size * 0.875;
+  }
+
+  a {
+    display: inline-block;
+    margin-top: 25px;
+    @include button.button-style(darken(color.$gray, 10%), color.$black);
+  }
+}
+

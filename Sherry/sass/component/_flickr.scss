@@ -1,0 +1,11 @@
+@use '../abstracts/font&color'as *;
+@use '../abstracts/_breakpoint' as *;
+
+/*~ flickr*/
+.flickr {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  img {
+    width: 100%;
+  }
+}
