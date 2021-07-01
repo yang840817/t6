@@ -14,3 +14,9 @@ $pc-size: 992px;
     @content;
   }
 }
+
+@mixin phone {
+  @media (min-width: $phone-size) {
+    @content;
+  }
+}

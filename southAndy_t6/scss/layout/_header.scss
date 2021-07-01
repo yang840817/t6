@@ -1,6 +1,8 @@
 @use "../components/header/community" as *;
 @use "../components/header/navigation" as *;
 
+@use "../base/breakpoints" as *;
+
 header .container {
   padding: 0;
 }
@@ -19,4 +21,15 @@ header .container {
   // }
   // ?與nav的距離
   margin-bottom: 10px;
+  @include pad {
+    flex-direction: row;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+
+    @include pad {
+      margin-bottom: 0;
+    }
+  }
 }

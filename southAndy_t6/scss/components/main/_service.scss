@@ -1,11 +1,14 @@
 @use "../../base/fonts" as *;
 @use "../../base/colors" as *;
+@use "../../base/breakpoints" as *;
 
 .service {
   padding: 0 2rem;
   text-align: center;
 
-  transform: translateY(-30px);
+  @include pc {
+    transform: translateY(-30px);
+  }
 }
 .service_box {
   align-items: center;
