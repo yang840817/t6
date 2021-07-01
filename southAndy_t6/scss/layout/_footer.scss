@@ -11,7 +11,7 @@ footer .container {
     @extend %footer_title;
   }
   .info {
-    background: url(/images/subbg.gif) center top;
+    background: url(/images/subbg.gif);
     padding: 30px;
   }
 }
