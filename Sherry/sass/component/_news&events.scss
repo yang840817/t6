@@ -1,5 +1,6 @@
+@use '../abstracts/color' as *;
+@use '../abstracts/text' as *;
 @use '../abstracts/breakpoint' as *;
-@use '../abstracts/font&color' as *;
 
 @mixin img_card {
   display: flex;
@@ -13,7 +14,7 @@
     .date {
       width: fit-content;
       padding: 0 0.5rem;
-      background: $color-green;
+      background: $color-highlight;
       color: $color-basic;
     }
     .ellipsis {

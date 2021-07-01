@@ -4,21 +4,22 @@ ol,
 ul,
 li,
 a,
+h1,
 button,
 input,
 li {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  border: none;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    list-style: none;
 }
 
 input,
 textarea {
-  &:hover,
-  &:focus {
-    border: none;
-    outline: none;
-  }
+    &:hover,
+    &:focus {
+        border: none;
+        outline: none;
+    }
 }

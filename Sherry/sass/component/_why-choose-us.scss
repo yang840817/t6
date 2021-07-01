@@ -1,4 +1,6 @@
-@use '../abstracts/font&color' as *;
+@use '../abstracts/color' as *;
+@use '../abstracts/text' as *;
+@use '../abstracts/breakpoint' as *;
 
 @mixin list_item {
   display: flex;
@@ -20,7 +22,7 @@
       color: $color-basic;
     }
     &:hover {
-      background: $color-green;
+      background: $color-highlight;
       i {
         transform: rotate(90deg);
       }

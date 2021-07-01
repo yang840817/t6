@@ -1,31 +1,24 @@
-@use '../abstracts/font&color' as *;
-@use '../abstracts/_breakpoint' as *;
-@use '../abstracts/_background' as *; //背景
+@use '../abstracts/color' as *;
+@use '../abstracts/text' as *;
+@use '../abstracts/breakpoint' as *;
+@use '../abstracts/background' as *; //背景
 
-@use '../component/_navigation.scss' as *; //導覽列
-@use '../component/_carousel.scss'; //輪播圖
-@use '../component/_4-cards' as *; //四圖區
-@use '../component/more-links' as *;
-@use '../component/_why-choose-us' as *; //why-choose-us
-@use '../component/_news&events' as *; //news and events
-@use '../component/_swiper.scss'; //swiper
+@use '../component/carousel'; //輪播圖
+@use '../component/card' as *; //四圖區
+@use '../component/why-choose-us' as *; //why-choose-us
+@use '../component/news&events' as *; //news and events
+@use '../component/swiper'; //swiper
+@use '../component/more-links' as *; //more link連結圖樣
 
 //背景
 main {
-  @extend %bg-strip;
-  @include shadow(0px, 0px, 2px);
+    @extend %bg-strip;
+    @include shadow(0px, 0px, 2px);
 }
 
 //標題設定
 .subtitle {
-  font-size: $font-subtitle;
-  font-weight: 500;
-  margin-bottom: 1rem;
-}
-
-//斷點
-article {
-  @include desktop {
-    margin-top: 340px;
-  }
+    font-size: $font-subtitle;
+    font-weight: 500;
+    margin-bottom: 1rem;
 }
