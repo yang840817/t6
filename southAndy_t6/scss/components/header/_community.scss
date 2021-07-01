@@ -12,6 +12,10 @@
 .social {
   text-align: right;
   font-size: 0;
+  text-align: center;
+  @include pad {
+    text-align: end;
+  }
 
   &_icon {
     display: inline-block;
