@@ -1,0 +1,22 @@
+@use "../components/header/community" as *;
+@use "../components/header/navigation" as *;
+
+header .container {
+  padding: 0;
+}
+
+.website_title {
+  background: url(/images/subbg.gif);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 25px;
+  margin-top: 5px;
+  // @include pad-size() {
+  //   flex-direction: row;
+  // }
+  // ?與nav的距離
+  margin-bottom: 10px;
+}

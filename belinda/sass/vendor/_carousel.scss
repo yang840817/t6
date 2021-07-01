@@ -1,4 +1,4 @@
-@use '../components/breakpoints';
+@use '../base/breakpoints';
 
 
 @mixin button-normal($background-image) {
@@ -15,7 +15,7 @@
 }
 
 
-//banner
+//Banner
 .carousel-item {
   img {
     min-height: 60vh;
@@ -23,9 +23,12 @@
   }
 }
 
-//banner-button
+//Banner-Button
 .modify-button {
+  display: none;
+
   @include breakpoints.tablet {
+    display: inline-block;
     width: fit-content;
 
     .modify-prev-icon {
@@ -44,5 +47,4 @@
       }
     }
   }
-  
 }

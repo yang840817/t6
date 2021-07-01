@@ -1,0 +1,16 @@
+.album-items {
+  display: grid;
+  // grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+  
+  margin-top: 25px;
+
+  img {
+    filter:brightness(.5);
+    &:hover {
+      filter: brightness(1);
+    }
+  }
+}

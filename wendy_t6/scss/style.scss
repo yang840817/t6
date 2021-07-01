@@ -1,0 +1,22 @@
+//base
+@use './base/color';
+@use './base/reset';
+@use './base/font_size';
+
+//component
+@use './components/nav';
+@use './components/button';
+@use './components/input';
+@use './components/carousel';
+@use './components/card';
+@use './components/grid';
+@use './components/textarea';
+
+//layout
+@use './layout/header';
+@use './layout/main';
+@use './layout/footer';
+@use "./layout/body";
+
+//theme
+@use './theme/background';

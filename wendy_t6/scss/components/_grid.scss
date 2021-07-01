@@ -1,0 +1,16 @@
+.flicker .flickr_inner {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fill, 100px);
+    .item {
+        height: fit-content;
+        img {
+            width: 100%;
+        }
+    }
+}
+@media (min-width: 992px) {
+    .flicker .flickr_inner {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

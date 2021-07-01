@@ -1,0 +1,19 @@
+@use '../base/color';
+//search
+.menu .search {
+    padding: 8px 8px;
+    filter: drop-shadow(1px 1px 3px rgb(51, 45, 45));
+}
+@media (min-width: 992px) {
+    .menu .search {
+        padding-right: 10px;
+        width: 100%;
+    }
+}
+//footer>get
+.get input {
+    width: 100%;
+    border: 0;
+    padding: 10px 0 10px 10px;
+    margin-bottom: 20px;
+}

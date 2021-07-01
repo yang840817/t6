@@ -1,0 +1,14 @@
+@use '../base/color';
+//main>carousel
+
+.carousel_img img {
+    width: 100%;
+}
+.feature {
+    .carousel {
+        position: initial;
+        .carousel-inner {
+            position: initial;
+        }
+    }
+}
