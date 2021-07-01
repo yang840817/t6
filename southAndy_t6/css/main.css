@@ -267,6 +267,15 @@ main .container {
   box-shadow: 0 -20px #fff;
 }
 
+.welcome img {
+  width: 200px;
+}
+@media (min-width: 768px) {
+  .welcome img {
+    width: 100%;
+  }
+}
+
 .testimonials .message {
   padding: 20px;
   background-color: #e6e6e6;
