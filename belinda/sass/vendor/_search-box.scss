@@ -1,0 +1,61 @@
+@use '../base/color';
+@use '../base/typography';
+@use '../base/breakpoints';
+
+
+//search box position 
+.navigation {
+  position: relative;
+  
+  .search {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    @include breakpoints.tablet-landscape {
+      position: static;
+    }
+  }
+}
+
+//search box ratio
+.search {
+  background-color: color.$secondary-color;
+  
+  @include breakpoints.tablet-landscape {
+    flex: 1 0 20%;
+    padding: 7px 14px;
+    margin-left: 10px;
+    box-shadow: 0px 1px 5px;
+  }
+
+//search box style
+  input {
+    padding: 8px;
+    border: 1px solid color.$gray;
+    width: 250px;
+    @include breakpoints.tablet-landscape {
+      width: 100%;
+    }
+    font-size: typography.$base-font-size * 0.875;
+  
+    background: url(../images/search.png);      
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-color: color.$light-gray;
+
+    &::placeholder {
+      color: color.$dark-gray;
+    }
+
+    &:focus {
+      border-color: color.$primary-color;
+      box-shadow: 0 0 5px color.$primary-color;
+    }
+  }
+}
+
+//Remove the search input default clear icon
+[type="search"]::-webkit-search-cancel-button {
+  appearance: none;
+}

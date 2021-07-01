@@ -1,0 +1,20 @@
+@use '../base/background';
+@use '../base/breakpoints';
+
+@use '../components/contact';
+
+
+//Header
+header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  @include breakpoints.tablet {
+    justify-content: space-between;
+  }
+  padding: 40px 30px;
+  background-image: background.$section-bg;
+  box-shadow: 1px 0px 10px;
+}
+
+

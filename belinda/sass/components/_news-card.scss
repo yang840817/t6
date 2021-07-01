@@ -1,0 +1,50 @@
+@use '../base/color';
+@use '../base/typography';
+@use '../base/breakpoints';
+@use './button';
+
+
+.news-card {
+  flex: 1 0 40%;
+
+  @include breakpoints.tablet-landscape {
+    flex: 1 0 100%;
+  }
+}
+
+
+.news-card {
+  > div:first-child {
+    width: 45%;
+  }
+
+  > div:nth-child(2) {
+    width: 50%;
+  }
+  
+  img {
+    width: 100%;
+  }
+}
+
+.card-text {
+  span {
+    display: inline-block;
+    @include button.button-style(color.$primary-color, color.$secondary-color);
+    font-weight: 600;
+  }
+
+  p {
+    position: relative;
+
+    margin-top: 25px;
+
+    color: color.$dark-gray;
+    font-size: typography.$base-font-size * 0.875;
+    font-weight: 500;
+  }
+
+  a {
+    color: color.$black;
+  }
+}

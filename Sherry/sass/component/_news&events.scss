@@ -1,0 +1,44 @@
+@use '../abstracts/breakpoint' as *;
+@use '../abstracts/font&color' as *;
+
+@mixin img_card {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  &_img {
+    width: 50%;
+  }
+  &_body {
+    width: 50%;
+    .date {
+      width: fit-content;
+      padding: 0 0.5rem;
+      background: $color-green;
+      color: $color-basic;
+    }
+    .ellipsis {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
+      overflow: hidden;
+    }
+  }
+}
+// ~news
+.news_and_events {
+  .img_card_group {
+    display: flex;
+    flex-direction: column;
+
+    @include ipad {
+      flex-direction: row;
+      gap: 1rem;
+    }
+    @include desktop {
+      flex-direction: column;
+    }
+    .img_card {
+      @include img_card;
+    }
+  }
+}

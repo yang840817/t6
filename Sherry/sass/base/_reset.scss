@@ -1,0 +1,24 @@
+section,
+p,
+ol,
+ul,
+li,
+a,
+button,
+input,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+}
+
+input,
+textarea {
+  &:hover,
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
