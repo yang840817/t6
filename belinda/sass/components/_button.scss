@@ -1,5 +1,27 @@
+@use '../base/color';
+
 @mixin button-style($bg-color, $text-color) {
   padding: 5px 10px;
   background-color: $bg-color;
   color: $text-color;
+}
+
+
+//alternative
+%info-button {
+  padding: 5px 10px;
+  background-color: darken(color.$gray, 10%);
+  color: color.$black;
+}
+
+%primary-button {
+  padding: 5px 10px;
+  background-color: color.$primary-color;
+  color: color.$secondary-color;
+}
+
+%dark-button {
+  padding: 5px 10px;
+  background-color: color.$black;
+  color: color.$secondary-color;
 }

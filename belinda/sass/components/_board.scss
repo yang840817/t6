@@ -46,7 +46,8 @@
   a {
     display: inline-block;
     margin-top: 25px;
-    @include button.button-style(darken(color.$gray, 10%), color.$black);
+    // @include button.button-style(darken(color.$gray, 10%), color.$black);
+    @extend %info-button;
   }
 }
 

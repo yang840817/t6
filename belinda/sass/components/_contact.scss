@@ -13,6 +13,10 @@ $sprite-image: url(../images/social.png);
   background-position: $x $y;
   width: 27px;
   height: 27px;
+
+  &:hover {
+    background-position: $x bottom;
+  }
 }
 
 
@@ -27,40 +31,48 @@ $sprite-image: url(../images/social.png);
   }
 }
 
+.social-media {
+  font-size: 0;
+
+  a + a {
+    margin-left: 9px;
+  }
+}
+
 //Social Links
 .social-media a:first-child {
   @include sprite(0, 0);
-  &:hover {
-    @include sprite(0, bottom);
-  }
+  // &:hover {
+  //   @include sprite(0, bottom);
+  // }
 }
 
 .social-media a:nth-child(2) {
   @include sprite(-37px, 0);
-  &:hover {
-    @include sprite(-37px, bottom);
-  }
+  // &:hover {
+  //   @include sprite(-37px, bottom);
+  // }
 }
 
 .social-media a:nth-child(3) {
   @include sprite(-74px, 0);
-  &:hover {
-    @include sprite(-74px, bottom);
-  }
+  // &:hover {
+  //   @include sprite(-74px, bottom);
+  // }
 }
 
 .social-media a:nth-child(4) {
   @include sprite(-111px, 0);
-  &:hover {
-    @include sprite(-111px, bottom);
-  }
+  // &:hover {
+  //   @include sprite(-111px, bottom);
+  // }
 }
 
 .social-media a:nth-child(5) {
   @include sprite(-150px, 0);
-  &:hover {
-    @include sprite(-150px, bottom);
-  }
+  // &:hover {
+  //   @include sprite(-150px, bottom);
+  // }
 } 
 
 //Contact Number

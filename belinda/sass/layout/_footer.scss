@@ -60,12 +60,12 @@ footer {
   .copyright {
     font-size: typography.$base-font-size * 0.875;
 
-    span:first-child {
+    span {
       color: color.$dark-gray;
       text-transform: uppercase;
     }
 
-    span:last-child {
+    a {
       color: color.$primary-color;
     }
   }
@@ -78,18 +78,19 @@ footer {
     font-size: 0;
     text-align: center;
     line-height: 1.5;
-  }
-  
-  a {
-    padding: 0 10px;
-    font-size: typography.$base-font-size * 0.875;
-    color: color.$dark-gray;
-    text-transform: uppercase;
 
-    &:hover {
-      color: color.$primary-color;
+    a {
+      padding: 0 10px;
+      font-size: typography.$base-font-size * 0.875;
+      color: color.$dark-gray;
+      text-transform: uppercase;
+  
+      &:hover {
+        color: color.$primary-color;
+      }
     }
   }
+  
 
   a + a {
     border-left: 2px solid color.$gray;
