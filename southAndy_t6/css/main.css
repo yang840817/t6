@@ -241,7 +241,6 @@ header .container {
   flex-direction: column;
 }
 .intro .box .intro_content {
-  flex: 1;
   display: flex;
   align-items: center;
   padding: 12px;
@@ -253,13 +252,11 @@ header .container {
 }
 .intro .box a {
   display: flex;
-  flex: 0 0 auto;
+  flex: 0 0 50px;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
   background-color: gainsboro;
   border-radius: 50%;
-  width: 50px;
   height: 50px;
 }
 main {
@@ -289,10 +286,10 @@ main .container {
   border-right-width: 20px;
   border-bottom-width: 15px;
   border-left-width: 20px;
-  border-top-color: #d9d9d9;
+  border-top-color: #e6e6e6;
   border-right-color: transparent;
   border-bottom-color: transparent;
-  border-left-color: #d9d9d9;
+  border-left-color: #e6e6e6;
 }
 .testimonials .message_info {
   display: flex;
@@ -345,12 +342,12 @@ main .container {
 .gallery {
   display: grid;
   grid-auto-flow: row;
-  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(60px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   grid-gap: 5px;
 }
 .gallery img {
   max-width: 100%;
+  width: 100%;
 }
 
 .copyright {
