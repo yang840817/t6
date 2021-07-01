@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>southAndy_T6</title>
+    <!-- Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- my css-->
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="website_title flex-column flex-md-row">
+          <!-- *logo -->
+          <h1 class="logo_box text-center text-lg-start">
+            <a href="##">
+              <img src="images/logo.png" alt="companylogo" class="w-100" />
+            </a>
+          </h1>
+          <div class="community text-center text-md-end">
+            <div class="mb-2">
+              <a href="##" class="social">
+                <i class="fab fa-facebook fa-fw"></i>
+              </a>
+              <a href="##" class="social">
+                <i class="fab fa-tumblr fa-fw"></i>
+              </a>
+              <a href="##" class="social">
+                <i class="fab fa-instagram fa-fw"></i>
+              </a>
+              <a href="##" class="social">
+                <i class="fab fa-dribbble fa-fw"></i>
+              </a>
+              <a href="##" class="social">
+                <i class="fas fa-rss fa-fw"></i>
+              </a>
+            </div>
+            <span> Call us Now: </span>
+            <a href="tel:+1-777-123-45" class="telephone">+1(777)777-123-45</a>
+          </div>
+        </div>
+        <!-- *navigation -->
+        <div class="nav_box d-flex flex-column flex-lg-row">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 p-lg-0">
+            <!-- *小裝置顯示 -->
+            <a class="navbar-brand d-lg-none" href="#"></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link p-3 active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link p-3" href="#">about</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link p-3 dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    features
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link p-3 dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Portfolio
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link p-3 dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Blog
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link p-3"
+                    href="#"
+                    tabindex="-1"
+                    aria-disabled="true"
+                    >contacts</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <form autocomplete="off" class="nav_form d-flex p-2 bg-light">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <!-- *輪播 -->
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/banner1.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="images/banner2.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="images/banner3.jpg" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev justify-content-md-start"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next justify-content-md-end"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- * service -->
+        <section class="service">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card service_box">
+                <h3 class="card-title">Growth Strategies</h3>
+                <div>
+                  <img src="images/p1.png" alt="service" />
+                </div>
+                <p class="card-text">
+                  Vestibulum dignissim, dui ac hendrerit blandit, sapien orci
+                  dictum nibh, vel suscipit augue nibh in enim. Nullam dignissim
+                  euismodnunc at.
+                </p>
+                <button class="btn">More</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card service_box">
+                <h3 class="card-title">Perfect Support</h3>
+                <div>
+                  <img src="images/p2.png" alt="service" />
+                </div>
+                <p class="card-text">
+                  Donec semper, dolor eu iaculis laoreet, erat diam interdum
+                  nisi, vel consequat leo neque in ante. Curabitur fringilla
+                  tristque nisl ut.
+                </p>
+                <button class="btn">More</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card service_box">
+                <h3 class="card-title">Partners Programs</h3>
+                <div>
+                  <img src="images/p3.png" alt="service" />
+                </div>
+                <p class="card-text">
+                  Nunc pellentesque malesuada enim utdignissim. Etiam aliquam
+                  malesuada magna, vel scelerisque lectus pharetra quis.
+                </p>
+                <button class="btn">More</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card service_box">
+                <h3 class="card-title">Premium Services</h3>
+                <div>
+                  <img src="images/p4.png" alt="service" />
+                </div>
+                <p class="card-text">
+                  Cumque quibusdam quae ipsam unde cupiditate dolor, adipisci
+                  ut, excepturi quidem fugit, fugiat? Maxime placeat mollitia
+                  excepturi dolores exercitationem impedit cupiditate sunt.
+                </p>
+                <button class="btn">More</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- *intro -->
+        <section class="intro">
+          <div class="row">
+            <div class="col-5 col-lg-4">
+              <div class="welcome mb-5 mb-lg-0">
+                <h3>welcome</h3>
+                <div>
+                  <img
+                    src="images/welcome.jpg"
+                    alt="welcome_images"
+                    class="w-100"
+                  />
+                </div>
+                <p>
+                  Duis molestie commodo sapien, non mollis diam consequat in.
+                  Nulla blandit viverra sodales. Donec sit amet diam neque.
+                  <a href="##">more</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-7 col-lg-4">
+              <div class="box mb-5 mb-lg-0">
+                <h3>why chose us</h3>
+                <div class="intro_content pt-0">
+                  <a href="##">
+                    <i class="fas fa-chevron-right fa-fw"></i>
+                  </a>
+                  <p>Etiam rutrum venenatis dui, non</p>
+                </div>
+                <div class="intro_content">
+                  <a href="##">
+                    <i class="fas fa-chevron-right fa-fw"></i>
+                  </a>
+                  <p>Aliquam ac diam in lorem vulputate auctor.</p>
+                </div>
+                <div class="intro_content">
+                  <a href="##">
+                    <i class="fas fa-chevron-right fa-fw"></i>
+                  </a>
+                  <p>Vestibulum vitae urna quis eros convallis</p>
+                </div>
+                <div class="intro_content">
+                  <a href="##">
+                    <i class="fas fa-chevron-right fa-fw"></i>
+                  </a>
+                  <p>Sed magna magna, congue</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="news mb-5 mb-lg-0">
+                <h3>news & events</h3>
+                <div class="row">
+                  <div class="col-6 col-md-3 col-lg-6">
+                    <img src="images/news1.jpg" alt="news" />
+                  </div>
+                  <div class="col-6 col-md-9 col-lg-6">
+                    <div class="news_title">
+                      <a href="##">12.12.12</a>
+                    </div>
+                    <p>
+                      Aliquam ac diam in lorem vulputate auctor. Aliquam rhoncus
+                      nunc et justo imperdiet blandit
+                    </p>
+                  </div>
+                </div>
+                <!-- !如何讓多餘文字對齊 -->
+                <div class="row">
+                  <div class="col-6 col-md-3 col-lg-6">
+                    <img src="images/news2.jpg" alt="news" />
+                  </div>
+                  <div class="col-6 col-md-9 col-lg-6">
+                    <div class="news_title">
+                      <a href="##">12.12.12</a>
+                    </div>
+                    <p>
+                      Aliquam ac diam in lorem vulputate auctor. Aliquam rhoncus
+                      nunc et justo imperdiet blandit
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- *swiper -->
+        <section class="featured">
+          <div class="featured_box">
+            <h3>featured works</h3>
+            <!-- ?輪播按鈕 -->
+            <div>
+              <a href="##" class="swiper-btn-prev prev">
+                <i class="fas fa-chevron-left"></i>
+              </a>
+              <a href="##" class="swiper-btn-next next">
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="##">
+                  <img src="/images/g1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="##">
+                  <img src="/images/g2.jpg" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="##">
+                  <img src="/images/g3.jpg" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="##">
+                  <img src="/images/g4.jpg" alt="" />
+                </a>
+              </div>
+            </div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container p-0">
+        <div class="info">
+          <div class="row">
+            <div class="col-6 col-lg-3">
+              <div class="mb-5 mb-lg-0">
+                <h4>lastest tweets</h4>
+                <p>loading tweets...</p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="testimonials mb-5 mb-lg-0">
+                <h4>testimonials</h4>
+                <p class="message mb-5">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Repudiandae officia accusamus atque veniam cumque vero
+                  perspiciatis!
+                </p>
+                <div class="message_info">
+                  <div class="image_box">
+                    <img
+                      src="images/men.jpg"
+                      alt="employee"
+                      class="w-100 d-block"
+                    />
+                  </div>
+                  <div>
+                    <h5>stephen bingham</h5>
+                    <a href="##">demolink.org</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="contact mb-5 mb-lg-0">
+                <h4>Get in touch!</h4>
+                <form method="POST" autocomplete="off">
+                  <input type="text" name="name" placeholder="Name:" />
+                  <input type="email" name="email" placeholder="Email:" />
+                  <textarea
+                    name="message"
+                    placeholder="Left your message:"
+                    rows="5"
+                  ></textarea>
+                  <button class="btn-clear" type="reset">Clear Form</button>
+                  <button class="btn-send" type="submit">Send!</button>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div>
+                <h4>flick</h4>
+                <div class="gallery">
+                  <div>
+                    <img src="images/f1.jpg" alt="flicks" />
+                  </div>
+                  <div>
+                    <img src="images/f2.jpg" alt="flicks" />
+                  </div>
+                  <div>
+                    <img src="images/f3.jpg" alt="flicks" />
+                  </div>
+                  <div>
+                    <img src="images/f4.jpg" alt="flicks" />
+                  </div>
+                  <div>
+                    <img src="images/f5.jpg" alt="flicks" />
+                  </div>
+                  <div>
+                    <img src="images/f6.jpg" alt="flicks" />
+                  </div>
+                  <div>
+                    <img src="images/f7.jpg" alt="flicks" />
+                  </div>
+                  <div>
+                    <img src="images/f8.jpg" alt="flicks" />
+                  </div>
+                  <div>
+                    <img src="images/f9.jpg" alt="flicks" />
+                  </div>
+                  <div>
+                    <img src="images/f10.jpg" alt="flicks" />
+                  </div>
+                  <div>
+                    <img src="images/f11.jpg" alt="flicks" />
+                  </div>
+                  <div>
+                    <img src="images/f12.jpg" alt="flicks" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- *copyright -->
+        <div
+          class="copyright justify-content-center justify-content-lg-between"
+        >
+          <div class="copyright_title">
+            <span>business planet @ 2030 |</span>
+            <a href="##">privacy policy</a>
+          </div>
+          <nav class="copyright_nav d-none d-lg-block">
+            <a href="##" class="homemenu">Home</a>
+
+            <a href="##">about</a>
+
+            <a href="##">featured</a>
+
+            <a href="##">ported</a>
+
+            <a href="##">blog</a>
+
+            <a href="##">contacts</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/626796f880.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 10,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-btn-next",
+          prevEl: ".swiper-btn-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+@use "../../base/colors" as *;
+@use "../../base/breakpoints" as *;
+@use "../../base/fonts" as *;
+@use "../../base/reset" as *;
+
+.featured {
+  padding: 20px;
+  h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+  & > div {
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  // .featured_box {
+  //   display: flex;
+  //   align-items: center;
+
+  //   .alink_prev {
+  //     margin-right: 10px;
+  //     color: rgb(218, 210, 210);
+  //   }
+  //   .alink_next {
+  //     color: rgb(218, 210, 210);
+  //   }
+  // }
+}
+// ! button setting
+.featured_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    width: 25px;
+    height: 25px;
+    color: $garywhite;
+
+    i {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .prev {
+    margin-right: 10px;
+  }
+}
+.swiper-container {
+  a {
+    display: inline-block;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+}

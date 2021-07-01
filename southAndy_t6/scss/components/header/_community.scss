@@ -1,0 +1,47 @@
+@use "../../base/reset" as *;
+@use "../../base/colors" as *;
+@use "../../base/fonts" as *;
+@use "../../base/breakpoints" as *;
+
+.logo_box {
+  a {
+    display: inline-block;
+  }
+}
+
+.community {
+  text-align: right;
+  font-size: 0;
+
+  .social {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 12px;
+    height: 25px;
+    width: 25px;
+  }
+  svg {
+    background-color: #333;
+    color: aliceblue;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 5px;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    &:hover {
+      @extend %primary-hover;
+    }
+  }
+  span {
+    font-size: 12px;
+  }
+  a {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  .telephone:hover {
+    text-decoration: underline;
+  }
+}
