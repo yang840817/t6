@@ -14,3 +14,37 @@ footer h2 {
 .card_banner h4 {
     @extend %all_h4;
 }
+
+// 1
+// @mixin font-size($font-size, $color){
+//     font-size: $font-size;
+//     color: $color;
+// }
+// h2{
+//     @include font-size(25px)
+// }
+// h4{
+//     @include font-size(18px)
+// }
+$font-size: 50px;
+%margin-bottom {
+    margin-bottom: 20px;
+}
+.information h2 {
+    @extend %margin-bottom;
+}
+.contact h2 {
+    margin-bottom: 20px;
+}
+.welcome p {
+    word-spacing: 2px;
+    color: #000;
+    a {
+        color: #000;
+        font-weight: 500;
+        text-decoration: none;
+        &:hover {
+            color: red;
+        }
+    }
+}

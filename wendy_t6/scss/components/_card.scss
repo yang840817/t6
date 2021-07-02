@@ -1,2 +1,107 @@
 @use '../base/color';
+@use '../components/date';
 $margin_auto: 0 auto;
+// main
+// card_banner
+%margin-bottom {
+    margin-bottom: 20px;
+}
+
+.card_banner {
+    padding: 20px;
+    height: 100%;
+    text-align: center;
+    .card {
+        background-color: color.$light_gray;
+        display: flex;
+        padding: 16px;
+        border-radius: 0px;
+        height: 100%;
+        &:hover {
+            color: #fff;
+        }
+    }
+    .card-body {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        .card-text {
+            flex-grow: 1;
+        }
+    }
+    .card-title {
+        @extend %margin-bottom;
+        span {
+            display: block;
+            @media (min-width: 992px) {
+                display: inline-block;
+                margin-right: 10px;
+            }
+        }
+    }
+    .col-lg-3 {
+        @media (min-width: 992px) {
+            margin-top: -40px;
+        }
+    }
+    .wrap_img {
+        @extend %margin-bottom;
+    }
+}
+
+//news
+
+.news .card {
+    background-color: initial;
+    border: 0;
+    &:nth-child(2) {
+        margin-bottom: 24px;
+    }
+    .card-text {
+        font-size: 14px;
+    }
+    .date {
+        width: fit-content;
+        padding: 5px 10px;
+        color: #fff;
+        font-weight: 600;
+        margin-bottom: 24px;
+    }
+    .wrap_img img {
+        width: 100%;
+    }
+    .card-body {
+        padding: 0;
+        a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+        }
+    }
+}
+
+//footer>sharing
+.sharing {
+    .card {
+        border: 0;
+        background: inherit;
+    }
+    margin-top: 30px;
+    a {
+        font-style: italic;
+        font-weight: 600;
+        color: color.$primary;
+        text-decoration: none;
+        &:hover {
+            font-weight: 600;
+        }
+    }
+    .wrap_img {
+        height: 100%;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}

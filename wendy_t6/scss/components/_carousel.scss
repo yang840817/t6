@@ -4,11 +4,63 @@
 .carousel_img img {
     width: 100%;
 }
+//carousel
+
+$next_button: url(../../img/slider_next.gif);
+$prev_button: url(../../img/slider_prev.gif);
+
+@mixin carousel_button($height, $width) {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: $height;
+    width: $width;
+    &:hover {
+        background-position: top $height left 0px;
+    }
+}
+.carousel_img .next_banner {
+    @include carousel_button(119px, 40px);
+    background: $next_button;
+}
+.carousel_img .previous_banner {
+    @include carousel_button(119px, 40px);
+    background: $prev_button;
+}
+
+@mixin feature_button($direction, $direction_value) {
+    position: absolute;
+    $direction: $direction_value;
+    width: fit-content;
+    color: grey;
+    &:hover {
+        color: lawngreen;
+    }
+    i {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+.feature .feature_prev {
+    @include feature_button(right, 20px);
+}
+.feature .feature_next {
+    @include feature_button(0, 0);
+}
+//feature
 .feature {
     .carousel {
         position: initial;
-        .carousel-inner {
-            position: initial;
-        }
     }
+    .carousel-inner {
+        position: initial;
+    }
+}
+
+//menu feature
+.feature .feature_button {
+    height: 30px;
+    width: 50px;
+    position: relative;
 }

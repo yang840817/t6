@@ -1,0 +1,16 @@
+//menu card_banner
+@use '../../scss/base/color';
+.click_more {
+    color: black;
+    background-color: color.$dark_gray;
+    border-radius: 0;
+    padding: 6px 12px;
+    border-radius: 0;
+    text-decoration: none;
+    display: inline-block;
+    align-self: center;
+    &:hover {
+        background-color: color.$primary;
+        color: #fff;
+    }
+}
