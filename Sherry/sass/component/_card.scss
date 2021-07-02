@@ -1,5 +1,4 @@
 @use '../abstracts/color' as *;
-@use '../abstracts/text' as *;
 @use '../abstracts/breakpoint' as *;
 
 //卡片mixin
@@ -39,7 +38,7 @@
     }
 }
 
-//~四圖區
+/*services*/
 .services {
     @include desktop {
         margin-top: -20px;

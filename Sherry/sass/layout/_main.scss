@@ -1,15 +1,11 @@
-@use '../abstracts/color' as *;
-@use '../abstracts/text' as *;
-@use '../abstracts/breakpoint' as *;
-@use '../abstracts/background' as *; //背景
+@use '../abstracts/background' as *;
 
 @use '../component/carousel'; //輪播圖
-@use '../component/card' as *; //四圖區
-@use '../component/why-choose-us' as *; //why-choose-us
-@use '../component/news&events' as *; //news and events
+@use '../component/card'; //四圖區
+@use '../component/why-choose-us'; //why-choose-us
+@use '../component/news-events'; //news and events
 @use '../component/swiper'; //swiper
-@use '../component/more-links' as *; //more link連結圖樣
-
+@use '../component/more-links'; //more link連結圖樣
 //背景
 main {
     @extend %bg-strip;
@@ -18,7 +14,7 @@ main {
 
 //標題設定
 .subtitle {
-    font-size: $font-subtitle;
+    font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 1rem;
 }
