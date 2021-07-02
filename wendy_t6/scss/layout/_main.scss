@@ -7,9 +7,17 @@
 @use '../components/card';
 @use '../components/click_more';
 @use '../components/circle';
+@use '../base/background.scss';
 
 %margin-bottom {
     margin-bottom: 20px;
+}
+%margin-bottom {
+    margin-bottom: 20px;
+}
+.bg_theme {
+    background: background.$sub_backgrpund;
+    filter: drop-shadow(1px 1px 3px rgb(51, 45, 45));
 }
 @mixin layout_padding {
     padding-left: 35px;
@@ -18,15 +26,27 @@
 //information
 .information {
     margin-bottom: 50px;
+    h2 {
+        @extend %margin-bottom;
+    }
 }
-
 .welcome img {
     width: 100%;
     margin-bottom: 20px;
+    p {
+        word-spacing: 2px;
+        color: #000;
+    }
+    a {
+        color: #000;
+        font-weight: 500;
+        text-decoration: none;
+        &:hover {
+            color: red;
+        }
+    }
 }
-
 //choose
-
 .choose div {
     display: flex;
     align-items: center;
@@ -36,14 +56,11 @@
         align-items: initial;
         padding: 20px;
     }
-
     p {
         margin-bottom: 0;
     }
 }
-
 //news
-
 main {
     margin-bottom: 80px;
 }

@@ -8,18 +8,15 @@ $margin_auto: 0 auto;
 }
 
 .card_banner {
+    margin-top: -50px;
     padding: 20px;
     height: 100%;
     text-align: center;
     .card {
-        background-color: color.$light_gray;
         display: flex;
         padding: 16px;
         border-radius: 0px;
         height: 100%;
-        &:hover {
-            color: #fff;
-        }
     }
     .card-body {
         padding: 0;
@@ -39,13 +36,29 @@ $margin_auto: 0 auto;
             }
         }
     }
-    .col-lg-3 {
-        @media (min-width: 992px) {
-            margin-top: -40px;
-        }
-    }
     .wrap_img {
         @extend %margin-bottom;
+    }
+}
+
+.card_banner .row > div:nth-child(odd) .card {
+    background-color: color.$light_gray;
+    @media (min-width: 768px) {
+        background-color: color.$light_gray;
+    }
+    &:hover {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+.card_banner div:nth-child(even) .card {
+    background-color: rgb(218, 224, 213);
+    @media (min-width: 768px) {
+        background-color: color.$light_gray;
+    }
+    &:hover {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.7);
     }
 }
 
@@ -82,11 +95,11 @@ $margin_auto: 0 auto;
 
 //footer>sharing
 .sharing {
+    margin-top: 30px;
     .card {
         border: 0;
         background: inherit;
     }
-    margin-top: 30px;
     a {
         font-style: italic;
         font-weight: 600;
@@ -103,5 +116,8 @@ $margin_auto: 0 auto;
             width: 100%;
             object-fit: contain;
         }
+    }
+    .card-body {
+        padding: 10px;
     }
 }

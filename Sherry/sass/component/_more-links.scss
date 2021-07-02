@@ -1,11 +1,13 @@
-@use '../abstracts/font&color' as *;
+@use '../abstracts/color' as *;
+@use '../abstracts/text' as *;
+@use '../abstracts/breakpoint' as *;
 
 //more連結樣式
 .more-link {
   font-weight: 500;
   color: $color-primary;
   &:hover {
-    color: $color-green;
+    color: $color-highlight;
     text-decoration: underline;
   }
 }

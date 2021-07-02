@@ -4,9 +4,6 @@
 @use './layout/footer';
 @use "./layout/body";
 
-//theme
-@use './theme/background';
-
 * {
     outline: 1px solid red;
 }

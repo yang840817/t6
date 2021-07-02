@@ -30,21 +30,3 @@ $font-size: 50px;
 %margin-bottom {
     margin-bottom: 20px;
 }
-.information h2 {
-    @extend %margin-bottom;
-}
-.contact h2 {
-    margin-bottom: 20px;
-}
-.welcome p {
-    word-spacing: 2px;
-    color: #000;
-    a {
-        color: #000;
-        font-weight: 500;
-        text-decoration: none;
-        &:hover {
-            color: red;
-        }
-    }
-}

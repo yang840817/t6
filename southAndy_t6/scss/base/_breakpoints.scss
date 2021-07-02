@@ -1,0 +1,16 @@
+//* 直立式
+$phone-size: 375px;
+$pad-size: 768px;
+$pc-size: 992px;
+
+@mixin pc {
+  @media (min-width: $pc-size) {
+    @content;
+  }
+}
+
+@mixin pad {
+  @media (min-width: $pad-size) {
+    @content;
+  }
+}

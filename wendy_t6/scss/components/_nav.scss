@@ -2,13 +2,16 @@
 @use '../base/color';
 
 //main
-
 .menu {
+    background: linear-gradient(to bottom, transparent 30px, #fff 30px, #fff 100%);
     .navbar {
         padding: 0;
         filter: drop-shadow(1px 1px 3px rgb(51, 45, 45));
         z-index: 2;
+        .container {
+        }
     }
+
     .container {
         padding: 0;
         button {
@@ -19,7 +22,13 @@
         }
     }
     .navbar-nav > li:first-child {
-        background-color: rgb(168, 223, 16);
+        background-color: color.$current;
+    }
+    ul {
+        text-align: center;
+        @media (min-width: 992px) {
+            text-align: left;
+        }
     }
     li {
         border-right: 1px color.$dark_gray solid;
@@ -31,15 +40,7 @@
             background-color: color.$primary;
         }
     }
-    .col-lg-3 {
-        @media (min-width: 992px) {
-            display: flex;
-            align-items: center;
-            padding-left: 0;
-        }
-    }
 }
-
 //footer copyright
 .footer_bottom nav {
     margin-top: 20px;
@@ -57,8 +58,10 @@
             color: color.$primary;
             font-weight: 500;
         }
-        & + a {
-            border-left: 2px solid grey;
+        @media (min-width: 992px) {
+            & + a {
+                border-left: 2px solid grey;
+            }
         }
     }
 }

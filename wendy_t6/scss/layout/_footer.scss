@@ -6,15 +6,27 @@
 @use '../components/grid';
 @use "../components/copyright";
 @use '../components/card';
+@use "../base/background.scss";
 // contact
 
 .contact {
     padding: 50px 50px;
     filter: drop-shadow(1px 1px 3px rgb(51, 45, 45));
+    background: background.$sub_backgrpund;
+    .row {
+        gap: 20px;
+        @media (min-width: 992px) {
+            gap: 0;
+        }
+    }
+    h2 {
+        margin-bottom: 20px;
+    }
 }
 .footer_bottom {
     padding: 20px 10px;
     justify-content: space-between;
+    background-color: #000;
     a {
         color: color.$default_gray;
         text-decoration: none;

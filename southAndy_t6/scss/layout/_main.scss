@@ -1,0 +1,19 @@
+@use "../components/main/carousel" as *;
+@use "../components/main/service" as *;
+@use "../components/main/news" as *;
+@use "../components/main/swiper" as *;
+@use "../components/main/choose" as *;
+// * use in news part
+@use "../base/colors" as *;
+
+$main-padding: 20px;
+
+main {
+  margin-bottom: 60px;
+  .container {
+    background-image: url(/images/subbg.gif);
+
+    // 製造假的背景
+    box-shadow: 0 -20px #fff;
+  }
+}

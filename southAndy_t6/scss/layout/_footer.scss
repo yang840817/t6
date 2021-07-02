@@ -1,0 +1,17 @@
+@use "../components/footer/testimonials" as *;
+@use "../components/footer/getintouch" as *;
+@use "../components/footer/flickr" as *;
+
+@use "../components/footer/copyright" as *;
+// @use "../components/footer/coordinator" as *;
+// @use "../components/footer/flickr" as *;
+
+footer .container {
+  h4 {
+    @extend %footer_title;
+  }
+  .info {
+    background: url(/images/subbg.gif);
+    padding: 30px;
+  }
+}

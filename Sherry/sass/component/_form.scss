@@ -1,39 +1,40 @@
-@use '../abstracts/font&color'as *;
-@use '../abstracts/_breakpoint' as *;
+@use '../abstracts/color' as *;
+@use '../abstracts/text' as *;
+@use '../abstracts/breakpoint' as *;
 @use '../abstracts/background' as *;
 
-@mixin input {
-  background: $color-light-grey;
-  border: 1px solid $color-grey;
-  border-radius: 3px;
-  font-size: $font-sm;
-  &:hover,
-  &:focus {
-    border: 1px solid $color-green;
-  }
+@mixin form {
+    background: $color-light-grey;
+    border: 1px solid $color-grey;
+    border-radius: 3px;
+    font-size: $font-sm;
+    &:hover,
+    &:focus {
+        border: 1px solid $color-highlight;
+    }
 }
 
 /*get in touch*/
 form {
-  input,
-  textarea {
-    @include input;
-  }
-  textarea {
-    resize: none;
-  }
-  .clear {
-    background: $color-primary;
-    color: white;
-    &:hover {
-      @include shadow(-2px, 2px, 2px);
+    input,
+    textarea {
+        @include form;
     }
-  }
-  .send {
-    background: $color-green;
-    color: white;
-    &:hover {
-      @include shadow(-2px, 2px, 2px);
+    textarea {
+        resize: none;
     }
-  }
+    .clear {
+        background: $color-primary;
+        color: white;
+        &:hover {
+            @include shadow(-2px, 2px, 2px);
+        }
+    }
+    .send {
+        background: $color-highlight;
+        color: white;
+        &:hover {
+            @include shadow(-2px, 2px, 2px);
+        }
+    }
 }
