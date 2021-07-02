@@ -28,7 +28,8 @@
     margin-bottom: 20px;
   }
   h3 {
-    @extend %title-size;
+    @extend %service_title;
+    margin-bottom: 20px;
   }
   p {
     font-size: $content-size;

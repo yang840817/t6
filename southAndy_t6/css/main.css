@@ -2,10 +2,6 @@ body {
   background: linear-gradient(#151515 0% 100px, transparent 100px 90%, #151515 90% 100%), url(/images/bg.jpg);
 }
 
-main .container {
-  padding: 0;
-}
-
 body {
   margin: 0;
 }
@@ -32,13 +28,11 @@ img {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
-  margin-bottom: 20px;
 }
 
 .intro h3 {
   font-size: 20px;
   font-weight: 500;
-  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
@@ -46,7 +40,6 @@ footer .container h4 {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 600;
-  margin-bottom: 20px;
 }
 
 .logo_box a {
@@ -135,10 +128,6 @@ nav {
     margin-right: 10px;
   }
 }
-header .container {
-  padding: 0;
-}
-
 .website_title {
   background: url(/images/subbg.gif);
   display: flex;
@@ -218,6 +207,9 @@ header .container {
   margin: 0 auto;
   margin-bottom: 20px;
 }
+.service_box h3 {
+  margin-bottom: 20px;
+}
 .service_box p {
   font-size: 12px;
 }
@@ -276,6 +268,9 @@ header .container {
 .intro {
   padding: 20px;
   display: flex;
+}
+.intro h3 {
+  margin-bottom: 20px;
 }
 .intro .welcome div {
   margin-bottom: 15px;
@@ -407,7 +402,12 @@ main .container {
   text-transform: uppercase;
   padding: 16px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+@media (min-width: 992px) {
+  .copyright {
+    justify-content: space-between;
+  }
 }
 .copyright_title {
   color: #5a5a5a;
@@ -418,6 +418,14 @@ main .container {
   text-transform: capitalize;
 }
 
+.copyright_nav {
+  display: none;
+}
+@media (min-width: 992px) {
+  .copyright_nav {
+    display: block;
+  }
+}
 .copyright_nav a {
   padding: 0 10px;
   border-right: solid 1px gainsboro;
@@ -434,10 +442,7 @@ main .container {
 }
 
 footer .container h4 {
-  font-size: 20px;
-  font-weight: 500;
   margin-bottom: 20px;
-  text-transform: uppercase;
 }
 footer .container .info {
   background: url(/images/subbg.gif);

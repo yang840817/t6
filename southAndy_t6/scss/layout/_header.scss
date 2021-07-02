@@ -3,10 +3,6 @@
 
 @use "../base/breakpoints" as *;
 
-header .container {
-  padding: 0;
-}
-
 .website_title {
   background: url(/images/subbg.gif);
   display: flex;
@@ -16,9 +12,7 @@ header .container {
 
   padding: 25px;
   margin-top: 5px;
-  // @include pad-size() {
-  //   flex-direction: row;
-  // }
+
   // ?與nav的距離
   margin-bottom: 10px;
   @include pad {

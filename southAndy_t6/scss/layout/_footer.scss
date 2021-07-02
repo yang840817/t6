@@ -10,7 +10,7 @@
 footer .container {
   h4 {
     @extend %footer_title;
-    @include fonts.title;
+    margin-bottom: 20px;
   }
   .info {
     background: url(/images/subbg.gif);

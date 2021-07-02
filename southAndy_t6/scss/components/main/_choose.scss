@@ -7,7 +7,8 @@
   display: flex;
 
   h3 {
-    @extend %intro-title;
+    @extend %intro_title;
+    margin-bottom: 20px;
   }
   .welcome div {
     margin-bottom: 15px;
