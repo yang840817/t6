@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to bottom, #151515 0% 100px, transparent 100px 90%, #151515 90% 100%), url(/images/bg.jpg) center top;
+  background: linear-gradient(#151515 0% 100px, transparent 100px 90%, #151515 90% 100%), url(/images/bg.jpg);
 }
 
 main .container {
@@ -17,6 +17,10 @@ a {
 
 h1 {
   margin-bottom: 0;
+}
+
+img {
+  width: 100%;
 }
 
 .intro .box a:hover, .service_box button:hover, .social svg:hover, .carousel button.carousel-control-prev:hover, .carousel button.carousel-control-next:hover {
@@ -52,6 +56,12 @@ footer .container h4 {
 .social {
   text-align: right;
   font-size: 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .social {
+    text-align: end;
+  }
 }
 .social_icon {
   display: inline-block;
@@ -98,6 +108,7 @@ nav {
 }
 
 .nav_box {
+  flex-direction: column;
   justify-content: space-between;
 }
 .nav_box .navbar {
@@ -145,10 +156,12 @@ header .container {
 }
 .website_title h1 {
   margin-bottom: 20px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .website_title h1 {
     margin-bottom: 0;
+    text-align: start;
   }
 }
 
@@ -420,6 +433,12 @@ main .container {
   color: #80b600;
 }
 
+footer .container h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
 footer .container .info {
   background: url(/images/subbg.gif);
   padding: 30px;

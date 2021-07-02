@@ -5,10 +5,12 @@
 @use "../components/footer/copyright" as *;
 // @use "../components/footer/coordinator" as *;
 // @use "../components/footer/flickr" as *;
+@use "../base/fonts";
 
 footer .container {
   h4 {
     @extend %footer_title;
+    @include fonts.title;
   }
   .info {
     background: url(/images/subbg.gif);
