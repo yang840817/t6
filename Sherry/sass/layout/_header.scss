@@ -1,5 +1,4 @@
 @use '../abstracts/color' as *;
-@use '../abstracts/text' as *;
 @use '../abstracts/breakpoint' as *;
 @use '../abstracts/background' as *;
 
@@ -8,7 +7,9 @@
 
 header {
     @include shadow(0, 0, 2px);
+
     @extend %bg-strip;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

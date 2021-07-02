@@ -1,5 +1,4 @@
 @use '../abstracts/color' as *;
-@use '../abstracts/text' as *;
 @use '../abstracts/breakpoint' as *;
 
 //雪碧圖
@@ -88,10 +87,10 @@ input[id='tel'],
 /*telephone number information*/
 .tel_info {
     display: block;
-    font-size: $font-reg * 0.5;
+    font-size: 0.5rem;
     color: $color-primary;
     @include ipad {
-        font-size: $font-reg;
+        font-size: 1rem;
     }
     &:hover {
         color: $color-highlight;

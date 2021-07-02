@@ -1,13 +1,13 @@
 @use '../abstracts/color' as *;
-@use '../abstracts/text' as *;
 @use '../abstracts/breakpoint' as *;
 @use '../abstracts/background' as *;
 
+//form
 @mixin form {
     background: $color-light-grey;
     border: 1px solid $color-grey;
     border-radius: 3px;
-    font-size: $font-sm;
+    font-size: 0.8rem;
     &:hover,
     &:focus {
         border: 1px solid $color-highlight;

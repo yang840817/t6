@@ -1,14 +1,12 @@
-@use '../abstracts/color' as *;
-@use '../abstracts/text' as *;
 @use '../abstracts/breakpoint' as *;
 
 .logo {
-  max-width: 80%;
-  @include desktop {
-    max-width: 100%;
-  }
-  a {
-    display: block;
-    font-size: 0;
-  }
+    max-width: 80%;
+    @include desktop {
+        max-width: 100%;
+    }
+    a {
+        display: block;
+        font-size: 0;
+    }
 }

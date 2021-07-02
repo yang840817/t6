@@ -1,38 +1,38 @@
 @use '../abstracts/color' as *;
-@use '../abstracts/text' as *;
 @use '../abstracts/breakpoint' as *;
 
+//list
 @mixin list_item {
-  display: flex;
-  align-items: baseline;
-  gap: 1rem;
-  padding: 1rem 0;
-  border-bottom: 1px solid $color-light-grey;
-  .symbol {
     display: flex;
-    flex: 0 0 auto;
-    align-items: center;
-    justify-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: $color-grey;
-    i {
-      margin: 0 auto;
-      color: $color-basic;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid $color-light-grey;
+    .symbol {
+        display: flex;
+        flex: 0 0 auto;
+        align-items: center;
+        justify-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: $color-grey;
+        i {
+            margin: 0 auto;
+            color: $color-basic;
+        }
+        &:hover {
+            background: $color-highlight;
+            i {
+                transform: rotate(90deg);
+            }
+        }
     }
-    &:hover {
-      background: $color-highlight;
-      i {
-        transform: rotate(90deg);
-      }
-    }
-  }
 }
 
 /*~choose us */
 .list_group {
-  .list_item {
-    @include list_item;
-  }
+    .list_item {
+        @include list_item;
+    }
 }

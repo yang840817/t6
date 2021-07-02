@@ -1,11 +1,12 @@
 @use '../abstracts/color' as *;
-@use '../abstracts/_text' as *;
 @use '../abstracts/_breakpoint' as *;
 @use '../abstracts/_background' as *;
 
 body {
     background: linear-gradient(black 100px, transparent 100px), $bg-wood;
+    padding: 0;
     @include ipad {
+        background: linear-gradient(black 100px, transparent 100px), $bg-wood;
         padding: 0 2rem;
     }
     @include desktop {

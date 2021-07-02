@@ -1,8 +1,7 @@
 @use '../abstracts/color' as *;
-@use '../abstracts/text' as *;
 @use '../abstracts/breakpoint' as *;
 
-/*頁尾bottom區*/
+/*頁尾bottom*/
 .footer_bottom {
     display: flex;
     flex-wrap: wrap;
@@ -13,7 +12,7 @@
     color: $color-dark-grey;
     font-size: 12px;
     @include ipad {
-        font-size: $font-sm;
+        font-size: 0.8rem;
     }
     @include desktop {
         flex-direction: row-reverse;
@@ -22,24 +21,25 @@
 
     /*bottom-nav*/
     .footer_nav {
-        display: grid;
-        grid-template: 1fr 1fr/ 1fr 1fr 1fr;
+        display: flex;
+        flex-wrap: wrap;
         width: 100%;
-        row-gap: 0.25rem;
         font-weight: 500;
         a {
-            flex: 1 1 auto;
+            flex: 1 1 33.333%;
             color: $color-dark-grey;
             &:hover {
                 color: $color-highlight;
             }
+            @include desktop {
+                flex: 1 1 auto;
+            }
         }
         @include mobile {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
+            row-gap: 0.5rem;
         }
         @include desktop {
+            flex-wrap: nowrap;
             width: 50%;
         }
     }

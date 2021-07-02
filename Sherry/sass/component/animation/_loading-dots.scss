@@ -1,0 +1,25 @@
+//點點點效果
+%loading-dots {
+    animation: loading-dots 3s infinite;
+    display: inline;
+    content: '';
+    font-size: 10px;
+    margin-left: 5px;
+}
+@keyframes loading-dots {
+    0% {
+        content: ' ..';
+    }
+    35% {
+        content: ' ...';
+    }
+    50% {
+        content: ' ....';
+    }
+    75% {
+        content: ' .....';
+    }
+    100% {
+        content: ' ......';
+    }
+}

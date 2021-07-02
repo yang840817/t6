@@ -1,5 +1,4 @@
 @use '../abstracts/color' as *;
-@use '../abstracts/text' as *;
 @use '../abstracts/breakpoint' as *;
 
 //漢堡圖示
@@ -26,21 +25,25 @@
 input[id='hamburger'] {
     display: none;
 }
-#hamburger:checked + #collapse {
-    display: flex;
-    flex-direction: column;
-    @include desktop {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        gap: 2%;
-        background: linear-gradient(transparent 50%, white 50%);
+
+#hamburger {
+    &:checked + #collapse {
+        display: flex;
+        flex-direction: column;
+    }
+
+    //nav
+    & + #collapse {
+        display: none;
     }
 }
 
-//nav
-nav {
-    display: none;
-    @include desktop {
+@include desktop {
+    #hamburger:checked + #collapse {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    #collapse {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -49,14 +52,14 @@ nav {
     }
 }
 
-//nav links
+/*nav-bar*/
 .nav_bar {
     text-align: center;
     background: white;
     a {
         display: block;
         padding: 1rem;
-        font-size: $font-reg;
+        font-size: 1rem;
         color: $color-primary;
         &:hover {
             background: $color-highlight;
@@ -104,7 +107,7 @@ nav {
     }
 }
 
-//search bar
+/*search bar*/
 .search {
     background: white;
     padding: 0.5rem;
