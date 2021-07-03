@@ -793,4 +793,8 @@ footer .row {
   row-gap: 2rem;
 }
 
+* {
+  outline: 1px solid black;
+}
+
 /*# sourceMappingURL=style.css.map */
