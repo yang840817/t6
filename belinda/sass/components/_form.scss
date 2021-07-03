@@ -29,26 +29,31 @@
     textarea {
       @extend %form-style;
       margin-top: 5px;
-      margin-bottom: 15px;
       resize: none;
     }
-  
-    button:nth-child(4) {
-      // @include button.button-style(color.$black, color.$secondary-color);
-      @extend %dark-button;
-      border: 0;
-      font-size: typography.$base-font-size * 0.75;
-      text-transform: uppercase;
+
+    div {
+      margin-top: 15px;
+
+      button:first-child {
+        @include button.button-style(color.$black, color.$secondary-color);
+        // @extend %dark-button;
+        border: 0;
+        font-size: typography.$base-font-size * 0.75;
+        text-transform: uppercase;
+      }
+    
+      button:last-child {
+        @include button.button-style(color.$primary-color, color.$secondary-color);
+        // @extend %primary-button;
+        border: 0;
+        margin-left: 5px;
+        font-size: typography.$base-font-size * 0.75;
+        text-transform: uppercase;
+      }
     }
   
-    button:last-child {
-      // @include button.button-style(color.$primary-color, color.$secondary-color);
-      @extend %primary-button;
-      border: 0;
-      margin-left: 5px;
-      font-size: typography.$base-font-size * 0.75;
-      text-transform: uppercase;
-    }
+    
   }
 }
 

@@ -31,84 +31,6 @@ img {
   max-width: 100%;
 }
 
-.contact-channels {
-  text-align: center;
-  margin-top: 15px;
-}
-@media (min-width: 768px) {
-  .contact-channels {
-    text-align: right;
-    margin-top: 0;
-  }
-}
-
-.social-media {
-  font-size: 0;
-}
-.social-media a + a {
-  margin-left: 9px;
-}
-
-.social-media a:first-child {
-  display: inline-block;
-  background-image: url(../images/social.png);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  width: 27px;
-  height: 27px;
-}
-.social-media a:first-child:hover {
-  background-position: 0 bottom;
-}
-
-.social-media a:nth-child(2) {
-  display: inline-block;
-  background-image: url(../images/social.png);
-  background-repeat: no-repeat;
-  background-position: -37px 0;
-  width: 27px;
-  height: 27px;
-}
-.social-media a:nth-child(2):hover {
-  background-position: -37px bottom;
-}
-
-.social-media a:nth-child(3) {
-  display: inline-block;
-  background-image: url(../images/social.png);
-  background-repeat: no-repeat;
-  background-position: -74px 0;
-  width: 27px;
-  height: 27px;
-}
-.social-media a:nth-child(3):hover {
-  background-position: -74px bottom;
-}
-
-.social-media a:nth-child(4) {
-  display: inline-block;
-  background-image: url(../images/social.png);
-  background-repeat: no-repeat;
-  background-position: -111px 0;
-  width: 27px;
-  height: 27px;
-}
-.social-media a:nth-child(4):hover {
-  background-position: -111px bottom;
-}
-
-.social-media a:nth-child(5) {
-  display: inline-block;
-  background-image: url(../images/social.png);
-  background-repeat: no-repeat;
-  background-position: -150px 0;
-  width: 27px;
-  height: 27px;
-}
-.social-media a:nth-child(5):hover {
-  background-position: -150px bottom;
-}
-
 .contact-channels a {
   font-size: 14px;
   color: #000;
@@ -116,18 +38,92 @@ img {
 .contact-channels a:hover {
   color: #80B601;
 }
+.contact-channels .social-media {
+  font-size: 0;
+}
+.contact-channels .social-media a + a {
+  margin-left: 9px;
+}
+.contact-channels .social-media a:first-child {
+  display: inline-block;
+  background-image: url(../images/social.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 27px;
+  height: 27px;
+}
+.contact-channels .social-media a:first-child:hover {
+  background-position: 0 bottom;
+}
+.contact-channels .social-media a:nth-child(2) {
+  display: inline-block;
+  background-image: url(../images/social.png);
+  background-repeat: no-repeat;
+  background-position: -37px 0;
+  width: 27px;
+  height: 27px;
+}
+.contact-channels .social-media a:nth-child(2):hover {
+  background-position: -37px bottom;
+}
+.contact-channels .social-media a:nth-child(3) {
+  display: inline-block;
+  background-image: url(../images/social.png);
+  background-repeat: no-repeat;
+  background-position: -74px 0;
+  width: 27px;
+  height: 27px;
+}
+.contact-channels .social-media a:nth-child(3):hover {
+  background-position: -74px bottom;
+}
+.contact-channels .social-media a:nth-child(4) {
+  display: inline-block;
+  background-image: url(../images/social.png);
+  background-repeat: no-repeat;
+  background-position: -111px 0;
+  width: 27px;
+  height: 27px;
+}
+.contact-channels .social-media a:nth-child(4):hover {
+  background-position: -111px bottom;
+}
+.contact-channels .social-media a:nth-child(5) {
+  display: inline-block;
+  background-image: url(../images/social.png);
+  background-repeat: no-repeat;
+  background-position: -150px 0;
+  width: 27px;
+  height: 27px;
+}
+.contact-channels .social-media a:nth-child(5):hover {
+  background-position: -150px bottom;
+}
 
 header {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   padding: 40px 30px;
   background-image: url(../images/subbg.gif);
   box-shadow: 1px 0px 10px;
 }
+header .logo {
+  text-align: center;
+}
+header .logo a {
+  display: inline-block;
+}
+header .contact-channels {
+  text-align: center;
+  margin-top: 15px;
+}
 @media (min-width: 768px) {
   header {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+  }
+  header .contact-channels {
+    text-align: right;
+    margin-top: 0;
   }
 }
 
@@ -235,28 +231,10 @@ header {
   }
 }
 
-.board a {
-  padding: 5px 10px;
-  background-color: #cecece;
-  color: #000;
-}
-
-.contact-form form button:last-child {
-  padding: 5px 10px;
-  background-color: #80B601;
-  color: #fff;
-}
-
-.contact-form form button:nth-child(4) {
-  padding: 5px 10px;
-  background-color: #000;
-  color: #fff;
-}
-
 .board {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 25px;
   align-items: center;
   padding: 40px 25px 25px;
   border: 1px solid #dbdbdb;
@@ -274,16 +252,15 @@ header {
 .board h3 {
   font-size: 16px;
 }
-.board div {
-  margin-top: 25px;
-}
 .board p {
-  margin-top: 25px;
   font-size: 14px;
 }
 .board a {
   display: inline-block;
-  margin-top: 25px;
+  margin-top: auto;
+  padding: 5px 10px;
+  background-color: #cecece;
+  color: #000;
 }
 
 .company-location div {
@@ -439,6 +416,11 @@ main section {
   margin-top: 10px;
 }
 @media (min-width: 992px) {
+  .services div[class*=col] {
+    margin-top: 0;
+  }
+}
+@media (min-width: 992px) {
   .services {
     position: relative;
     margin-top: -40px;
@@ -456,6 +438,11 @@ main section {
     justify-content: flex-start;
     flex-wrap: wrap;
     column-gap: 24px;
+  }
+}
+@media (min-width: 992px) {
+  .company-events {
+    column-gap: unset;
   }
 }
 .company-events h2 {
@@ -476,7 +463,7 @@ main section {
   display: block;
   content: "";
   position: relative;
-  bottom: 50px;
+  bottom: 40px;
   width: 100%;
   height: 2px;
   background-color: #e0e0e0;
@@ -533,15 +520,23 @@ main section {
 }
 .contact-form form textarea {
   margin-top: 5px;
-  margin-bottom: 15px;
   resize: none;
 }
-.contact-form form button:nth-child(4) {
+.contact-form form div {
+  margin-top: 15px;
+}
+.contact-form form div button:first-child {
+  padding: 5px 10px;
+  background-color: #000;
+  color: #fff;
   border: 0;
   font-size: 12px;
   text-transform: uppercase;
 }
-.contact-form form button:last-child {
+.contact-form form div button:last-child {
+  padding: 5px 10px;
+  background-color: #80B601;
+  color: #fff;
   border: 0;
   margin-left: 5px;
   font-size: 12px;
@@ -574,7 +569,7 @@ footer {
   background: url(../images/subbg.gif);
   box-shadow: 0px 1px 5px;
 }
-footer > div:first-child {
+footer section {
   padding: 0 40px;
 }
 
@@ -586,10 +581,10 @@ footer > div:first-child {
 
 .footer-bottom {
   display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
   background-color: #000;
   line-height: 3;
+  flex-direction: column-reverse;
+  align-items: center;
 }
 @media (min-width: 992px) {
   .footer-bottom {
@@ -616,13 +611,13 @@ footer > div:first-child {
 .footer-bottom nav a {
   padding: 0 10px;
   font-size: 14px;
-  color: #9d9d9d;
   text-transform: uppercase;
+  color: #9d9d9d;
 }
 .footer-bottom nav a:hover {
   color: #80B601;
 }
-.footer-bottom a + a {
+.footer-bottom nav a + a {
   border-left: 2px solid #e7e7e7;
 }
 

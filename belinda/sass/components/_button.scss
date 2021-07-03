@@ -6,22 +6,31 @@
   color: $text-color;
 }
 
+// %button {
+//   padding: 5px 10px;
+// }
 
-//alternative
-%info-button {
-  padding: 5px 10px;
-  background-color: darken(color.$gray, 10%);
-  color: color.$black;
-}
+// %info {
+//   background-color: darken(color.$gray, 10%);
+//   color: color.$black;
+// }
 
-%primary-button {
-  padding: 5px 10px;
-  background-color: color.$primary-color;
-  color: color.$secondary-color;
-}
 
-%dark-button {
-  padding: 5px 10px;
-  background-color: color.$black;
-  color: color.$secondary-color;
-}
+// alternative
+// %info-button {
+//   padding: 5px 10px;
+//   background-color: darken(color.$gray, 10%);
+//   color: color.$black;
+// }
+
+// %primary-button {
+//   padding: 5px 10px;
+//   background-color: color.$primary-color;
+//   color: color.$secondary-color;
+// }
+
+// %dark-button {
+//   padding: 5px 10px;
+//   background-color: color.$black;
+//   color: color.$secondary-color;
+// }

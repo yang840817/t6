@@ -3,6 +3,8 @@
 @use '../base/typography';
 
 
+
+
 $sprite-image: url(../images/social.png);
 
 @mixin sprite($x, $y) {
@@ -20,69 +22,58 @@ $sprite-image: url(../images/social.png);
 }
 
 
-
-.contact-channels {
-  text-align: center;
-  margin-top: 15px;
-
-  @include breakpoints.tablet {
-    text-align: right;
-    margin-top: 0;
-  }
-}
-
-.social-media {
-  font-size: 0;
-
-  a + a {
-    margin-left: 9px;
-  }
-}
-
-//Social Links
-.social-media a:first-child {
-  @include sprite(0, 0);
-  // &:hover {
-  //   @include sprite(0, bottom);
-  // }
-}
-
-.social-media a:nth-child(2) {
-  @include sprite(-37px, 0);
-  // &:hover {
-  //   @include sprite(-37px, bottom);
-  // }
-}
-
-.social-media a:nth-child(3) {
-  @include sprite(-74px, 0);
-  // &:hover {
-  //   @include sprite(-74px, bottom);
-  // }
-}
-
-.social-media a:nth-child(4) {
-  @include sprite(-111px, 0);
-  // &:hover {
-  //   @include sprite(-111px, bottom);
-  // }
-}
-
-.social-media a:nth-child(5) {
-  @include sprite(-150px, 0);
-  // &:hover {
-  //   @include sprite(-150px, bottom);
-  // }
-} 
-
 //Contact Number
 .contact-channels {
   a {
     font-size: typography.$base-font-size * 0.875;
-    color: color.$black;
     
+    color: color.$black;
     &:hover {
       color: color.$primary-color;
     }
   }
-}
+  .social-media {
+    font-size: 0;
+    a + a {
+        margin-left: 9px;
+    }
+    a {
+      //Social Links
+      &:first-child {
+        @include sprite(0, 0);
+        // &:hover {
+        //   @include sprite(0, bottom);
+        // }
+      }
+      
+      &:nth-child(2) {
+        @include sprite(-37px, 0);
+        // &:hover {
+        //   @include sprite(-37px, bottom);
+        // }
+      }
+      
+      &:nth-child(3) {
+        @include sprite(-74px, 0);
+        // &:hover {
+        //   @include sprite(-74px, bottom);
+        // }
+      }
+      
+      &:nth-child(4) {
+        @include sprite(-111px, 0);
+        // &:hover {
+        //   @include sprite(-111px, bottom);
+        // }
+      }
+      
+      &:nth-child(5) {
+        @include sprite(-150px, 0);
+        // &:hover {
+        //   @include sprite(-150px, bottom);
+        // }
+      } 
+    }
+  }
+}  
+
