@@ -14,11 +14,11 @@
 
 
 .news-card {
-  > div:first-child {
+  .news-card-img {
     width: 45%;
   }
 
-  > div:nth-child(2) {
+  .news-card-text {
     width: 50%;
   }
   
@@ -27,10 +27,12 @@
   }
 }
 
-.card-text {
+.news-card-text {
   span {
     display: inline-block;
-    @include button.button-style(color.$primary-color, color.$secondary-color);
+    padding: 5px 10px;
+    background-color: color.$primary-color;
+    color: color.$secondary-color;
     font-weight: 600;
   }
 

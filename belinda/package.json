@@ -1,5 +1,5 @@
 {
-  "name": "belinda",
+  "name": "business planet",
   "version": "1.0.0",
   "description": "t6 layout",
   "main": "index.js",
@@ -9,5 +9,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.35.1"
+  }
 }

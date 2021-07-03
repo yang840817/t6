@@ -6,11 +6,10 @@
 @use './layout/footer';
 
 
-// * {
-//   outline: 1px solid sienna;
-// }
-
-
+body {
+  min-width: 375px;
+  background: linear-gradient(180deg, #000 100px, transparent 100px, transparent 90%, #000 90%, #000 100%), url(../images/bg.jpg);
+}
 
 
 
