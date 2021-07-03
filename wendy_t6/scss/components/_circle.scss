@@ -1,15 +1,16 @@
 @use '../base/font_size';
 @use '../base/color';
+$font-size: 50px;
 .choose div {
     i {
         margin-right: 20px;
         border-radius: 50px;
         font-size: 20px;
-        height: font_size.$font-size;
-        width: font_size.$font-size;
+        height: $font-size;
+        width: $font-size;
         color: #fff;
         text-align: center;
-        line-height: font_size.$font-size;
+        line-height: $font-size;
         flex-shrink: 0;
         background-color: color.$dark_gray;
         &:hover {

@@ -1,4 +1,5 @@
 @use '../base/color';
+@use '../base/font_size';
 @use "../layout/main";
 @use '../components/chat_box';
 @use '../components/input';
@@ -21,6 +22,7 @@
     }
     h2 {
         margin-bottom: 20px;
+        @extend %all_h2;
     }
 }
 .footer_bottom {

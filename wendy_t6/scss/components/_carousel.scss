@@ -29,6 +29,12 @@ $prev_button: url(../../img/slider_prev.gif);
     background: $prev_button;
 }
 
+.feature {
+    display: none;
+    @media (min-width: 992px) {
+        display: block;
+    }
+}
 @mixin feature_button($direction, $direction_value) {
     position: absolute;
     $direction: $direction_value;
@@ -56,11 +62,10 @@ $prev_button: url(../../img/slider_prev.gif);
     .carousel-inner {
         position: initial;
     }
+    .feature_button {
+        height: 30px;
+        width: 50px;
+        position: relative;
+    }
 }
-
 //menu feature
-.feature .feature_button {
-    height: 30px;
-    width: 50px;
-    position: relative;
-}

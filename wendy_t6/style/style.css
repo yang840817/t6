@@ -1,3 +1,19 @@
+.header_inner h1 {
+  font-size: 0;
+}
+
+.contact h2, .information h2, .feature h2 {
+  font-size: 25px;
+}
+
+.card_banner h3 {
+  font-size: 18px;
+}
+
+.information h2, .card_banner .card-title, .card_banner .wrap_img {
+  margin-bottom: 20px;
+}
+
 .social {
   font-size: 0;
   text-align: center;
@@ -67,7 +83,6 @@
   margin-top: 0;
   line-height: 0;
   text-align: center;
-  font-size: 0;
 }
 @media (min-width: 992px) {
   .header_inner h1 {
@@ -98,18 +113,6 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-}
-
-footer h2, main h2 {
-  font-size: 25px;
-}
-
-.card_banner h4 {
-  font-size: 18px;
-}
-
-.information h2 {
-  margin-bottom: 20px;
 }
 
 .menu button {
@@ -262,6 +265,15 @@ footer h2, main h2 {
   background-position: top 119px left 0px;
 }
 
+.feature {
+  display: none;
+}
+@media (min-width: 992px) {
+  .feature {
+    display: block;
+  }
+}
+
 .feature .feature_prev {
   position: absolute;
   width: fit-content;
@@ -294,15 +306,28 @@ footer h2, main h2 {
 .feature .carousel-inner {
   position: initial;
 }
-
 .feature .feature_button {
   height: 30px;
   width: 50px;
   position: relative;
 }
 
-.news .card .card_content .date {
+.date {
   background-color: #81b700;
+  width: fit-content;
+  padding: 5px 10px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.click_more, .news a, .welcome a {
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+}
+.click_more:hover, .news a:hover, .welcome a:hover {
+  color: #81b700;
 }
 
 .information h2, .card_banner .wrap_img, .card_banner .card-title {
@@ -310,10 +335,14 @@ footer h2, main h2 {
 }
 
 .card_banner {
-  margin-top: -50px;
   padding: 20px;
   height: 100%;
   text-align: center;
+}
+@media (min-width: 992px) {
+  .card_banner {
+    margin-top: -50px;
+  }
 }
 .card_banner .card {
   display: flex;
@@ -338,30 +367,22 @@ footer h2, main h2 {
     margin-right: 10px;
   }
 }
-.card_banner .row > div:nth-child(odd) .card {
-  background-color: #e8e8e8;
-}
 @media (min-width: 768px) {
-  .card_banner .row > div:nth-child(odd) .card {
+  .card_banner div:nth-child(even) .card, .card_banner .row > div:nth-child(odd) .card {
     background-color: #e8e8e8;
   }
 }
-.card_banner .row > div:nth-child(odd) .card:hover {
+.card_banner div:nth-child(even) .card:hover, .card_banner .row > div:nth-child(odd) .card:hover {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.card_banner .row > div:nth-child(odd) .card {
+  background-color: #e8e8e8;
+}
+
 .card_banner div:nth-child(even) .card {
   background-color: #dae0d5;
-}
-@media (min-width: 768px) {
-  .card_banner div:nth-child(even) .card {
-    background-color: #e8e8e8;
-  }
-}
-.card_banner div:nth-child(even) .card:hover {
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .news .card {
@@ -374,23 +395,11 @@ footer h2, main h2 {
 .news .card .card-text {
   font-size: 14px;
 }
-.news .card .date {
-  width: fit-content;
-  padding: 5px 10px;
-  color: #fff;
-  font-weight: 600;
-  margin-bottom: 24px;
-}
 .news .card .wrap_img img {
   width: 100%;
 }
 .news .card .card-body {
   padding: 0;
-}
-.news .card .card-body a {
-  text-decoration: none;
-  color: #000;
-  font-weight: 500;
 }
 
 .sharing {
@@ -421,21 +430,6 @@ footer h2, main h2 {
   padding: 10px;
 }
 
-.click_more {
-  color: black;
-  background-color: #cecece;
-  border-radius: 0;
-  padding: 6px 12px;
-  border-radius: 0;
-  text-decoration: none;
-  display: inline-block;
-  align-self: center;
-}
-.click_more:hover {
-  background-color: #81b700;
-  color: #fff;
-}
-
 .choose div i {
   margin-right: 20px;
   border-radius: 50px;
@@ -455,8 +449,28 @@ footer h2, main h2 {
   background-color: #81b700;
 }
 
-.information h2 {
-  margin-bottom: 20px;
+.feature_swiper .swiper-button-next, .feature_swiper .swiper-button-prev {
+  color: #cecece;
+}
+
+.feature_swiper {
+  padding: 35px;
+}
+@media (min-width: 992px) {
+  .feature_swiper {
+    display: none;
+  }
+}
+.feature_swiper .swiper-container {
+  height: 300px;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.wiper-pagination-bullet {
+  background-color: gainsboro;
 }
 
 .information h2 {
@@ -471,21 +485,13 @@ footer h2, main h2 {
 .information {
   margin-bottom: 50px;
 }
-.welcome img {
-  width: 100%;
-  margin-bottom: 20px;
-}
-.welcome img p {
+.welcome p {
   word-spacing: 2px;
   color: #000;
 }
-.welcome img a {
-  color: #000;
-  font-weight: 500;
-  text-decoration: none;
-}
-.welcome img a:hover {
-  color: red;
+.welcome img {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .choose div {
@@ -540,18 +546,14 @@ main {
   padding-bottom: 100px;
 }
 
-.testimonials p {
+.testimonials_text p {
   margin-bottom: 0;
-}
-
-.testimonials .testimonials_text p {
   padding: 20px;
   border-radius: 10px 10px 10px 0;
   border: 1px solid #cecece;
   background-color: #e8e8e8;
 }
-
-.testimonials .testimonials_text:after {
+.testimonials_text:after {
   margin-left: 1px;
   display: block;
   content: "";

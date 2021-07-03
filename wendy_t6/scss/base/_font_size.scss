@@ -1,20 +1,13 @@
+%all_h1 {
+    font-size: 0;
+}
 %all_h2 {
     font-size: 25px;
 }
-%all_h4 {
+%all_h3 {
     font-size: 18px;
 }
-main h2 {
-    @extend %all_h2;
-}
-footer h2 {
-    @extend %all_h2;
-}
-
-.card_banner h4 {
-    @extend %all_h4;
-}
-
+// $all_h2: 25px;
 // 1
 // @mixin font-size($font-size, $color){
 //     font-size: $font-size;
@@ -26,7 +19,7 @@ footer h2 {
 // h4{
 //     @include font-size(18px)
 // }
-$font-size: 50px;
+
 %margin-bottom {
     margin-bottom: 20px;
 }

@@ -1,5 +1,6 @@
 //main> menu
 @use "../base/color";
+@use "../base/font_size";
 @use "../components/social";
 @use "../base/background.scss";
 
@@ -9,7 +10,7 @@
     margin-top: 0;
     line-height: 0;
     text-align: center;
-    font-size: 0;
+    @extend %all_h1;
     @media (min-width: 992px) {
         margin-bottom: 0px;
     }

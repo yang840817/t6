@@ -1,4 +1,9 @@
 @use '../base/color';
-.news .card .card_content .date {
+.date {
     background-color: color.$primary;
+    width: fit-content;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 24px;
 }

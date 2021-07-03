@@ -1,17 +1,24 @@
 @use '../base/color';
+@use '../base/font_size';
 @use '../components/date';
+@use '../components/more';
 $margin_auto: 0 auto;
 // main
 // card_banner
 %margin-bottom {
     margin-bottom: 20px;
 }
-
 .card_banner {
-    margin-top: -50px;
+    @media (min-width: 992px) {
+        margin-top: -50px;
+    }
     padding: 20px;
     height: 100%;
     text-align: center;
+    h3 {
+        @extend %all_h3;
+    }
+
     .card {
         display: flex;
         padding: 16px;
@@ -41,8 +48,7 @@ $margin_auto: 0 auto;
     }
 }
 
-.card_banner .row > div:nth-child(odd) .card {
-    background-color: color.$light_gray;
+%card_banner_color {
     @media (min-width: 768px) {
         background-color: color.$light_gray;
     }
@@ -51,15 +57,13 @@ $margin_auto: 0 auto;
         background-color: rgba(0, 0, 0, 0.7);
     }
 }
+.card_banner .row > div:nth-child(odd) .card {
+    background-color: color.$light_gray;
+    @extend %card_banner_color;
+}
 .card_banner div:nth-child(even) .card {
     background-color: rgb(218, 224, 213);
-    @media (min-width: 768px) {
-        background-color: color.$light_gray;
-    }
-    &:hover {
-        color: #fff;
-        background-color: rgba(0, 0, 0, 0.7);
-    }
+    @extend %card_banner_color;
 }
 
 //news
@@ -73,23 +77,11 @@ $margin_auto: 0 auto;
     .card-text {
         font-size: 14px;
     }
-    .date {
-        width: fit-content;
-        padding: 5px 10px;
-        color: #fff;
-        font-weight: 600;
-        margin-bottom: 24px;
-    }
     .wrap_img img {
         width: 100%;
     }
     .card-body {
         padding: 0;
-        a {
-            text-decoration: none;
-            color: #000;
-            font-weight: 500;
-        }
     }
 }
 
