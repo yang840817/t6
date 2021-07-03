@@ -1,19 +1,50 @@
 @use '../base/color';
 //search
-.menu .search {
+.search {
     padding: 8px 8px;
     filter: drop-shadow(1px 1px 3px rgb(51, 45, 45));
-}
-@media (min-width: 992px) {
-    .menu .search {
+    @media (min-width: 992px) {
         padding-right: 10px;
         width: 100%;
+        background-color: #fff;
+    }
+    input {
+        background: url(../../img/search.png) no-repeat color.$light_gray;
+        background-position: top 50% right 10%;
+        &:focus {
+            background: color.$light_gray;
+            box-shadow: initial;
+            border-color: color.$light_gray;
+        }
     }
 }
-//footer>get
-.get input {
-    width: 100%;
-    border: 0;
-    padding: 10px 0 10px 10px;
-    margin-bottom: 20px;
+
+//footer subscribe
+.subscribe {
+    button {
+        border: 0;
+        padding: 5px;
+    }
+    input {
+        background-color: color.$light_gray;
+        width: 100%;
+        border: 1px solid color.$dark_gray;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    textarea {
+        background-color: color.$light_gray;
+    }
+    .clear {
+        color: #fff;
+        margin-right: 10px;
+        background-color: #000;
+    }
+    .send {
+        color: #fff;
+        background-color: color.$primary;
+    }
+    :focus {
+        border: 3px solid color.$primary;
+    }
 }

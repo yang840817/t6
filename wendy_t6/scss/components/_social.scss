@@ -1,0 +1,41 @@
+@use '../base/color';
+
+@mixin header_nav($width) {
+    display: inline-block;
+    background: url('../../img/social.png');
+    width: 28px;
+    height: 27px;
+    background-position: $width 0px;
+    &:hover {
+        background-position: $width 27px;
+    }
+}
+.social {
+    font-size: 0;
+    text-align: center;
+
+    .facebook {
+        @include header_nav(0);
+    }
+    .twitter {
+        @include header_nav(25%);
+    }
+    .flicker {
+        @include header_nav(50%);
+    }
+    .dribble {
+        @include header_nav(75%);
+    }
+    .rss {
+        @include header_nav(100%);
+    }
+    .tel {
+        font-size: 16px;
+        display: block;
+        text-decoration: none;
+        color: black;
+    }
+    a:not(.tel) {
+        margin-left: 10px;
+    }
+}

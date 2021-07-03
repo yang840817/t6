@@ -1,51 +1,41 @@
 //main> menu
 @use "../base/color";
+@use "../base/font_size";
+@use "../components/social";
+@use "../base/background.scss";
 
 //header_layout
-header {
-    margin-bottom: 32px;
-}
-//header
-.header_inner {
-    // display: flex;
-    justify-content: space-between;
-    padding: 32px;
-    border: 1px solid #000;
-    filter: drop-shadow(1px 1px 3px rgb(51, 45, 45));
-    h1 {
-        text-align: center;
-        margin-top: 0;
-        margin-bottom: 20px;
-        line-height: 0;
-        a {
-            height: 100%;
-            display: inline-block;
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
-        }
-    }
-    .social {
-        font-size: 0;
-        p {
-            margin-bottom: 0;
-            font-size: 16px;
-        }
-    }
-}
-@media (min-width: 992px) {
-    .header_inner {
-        display: flex;
-        text-align: right;
-    }
-}
-@media (min-width: 992px) {
-    .header_inner h1 {
+.header_inner h1 {
+    margin-bottom: 20px;
+    margin-top: 0;
+    line-height: 0;
+    text-align: center;
+    @extend %all_h1;
+    @media (min-width: 992px) {
         margin-bottom: 0px;
     }
 }
-.header_inner .social a + a {
-    margin-left: 10px;
+
+//header
+.header_inner {
+    padding: 32px;
+    border: 1px solid #000;
+    filter: drop-shadow(1px 1px 3px rgb(51, 45, 45));
+    background: background.$sub_backgrpund;
+    margin-bottom: 20px;
+    @media (min-width: 992px) {
+        display: flex;
+        text-align: right;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    a {
+        height: 100%;
+        display: inline-block;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
 }

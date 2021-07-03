@@ -1,0 +1,27 @@
+@use '../base/color';
+%swiper_button {
+    color: color.$dark_gray;
+}
+.feature_swiper {
+    padding: 35px;
+    @media (min-width: 992px) {
+        display: none;
+    }
+
+    .swiper-button-prev {
+        @extend %swiper_button;
+    }
+    .swiper-button-next {
+        @extend %swiper_button;
+    }
+    .swiper-container {
+        height: 300px;
+    }
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+.wiper-pagination-bullet {
+    background-color: gainsboro;
+}
