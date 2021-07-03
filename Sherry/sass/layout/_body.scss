@@ -1,12 +1,16 @@
-@use '../abstracts/breakpoint' as *;
-@use '../abstracts/background' as *;
+@use '../abstracts/color' as *;
+@use '../abstracts/_breakpoint' as *;
+@use '../abstracts/_background' as *;
 
 body {
-  background: linear-gradient(black 3%, transparent 3%, transparent 90%, black 90%), $bg-wood;
-  @include ipad {
-    padding: 0 2rem;
-  }
-  @include desktop {
-    padding: 0 4rem;
-  }
+    background: linear-gradient(black 100px, transparent 100px), $bg-wood;
+    padding: 0;
+    @include ipad {
+        background: linear-gradient(black 100px, transparent 100px), $bg-wood;
+        padding: 0 2rem;
+    }
+    @include desktop {
+        background: linear-gradient(black 3%, transparent 3%, transparent 90%, black 90%), $bg-wood;
+        padding: 0 4rem;
+    }
 }

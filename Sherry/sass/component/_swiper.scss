@@ -1,23 +1,43 @@
+@use '../abstracts/color' as *;
+@use '../abstracts/breakpoint' as *;
+@use "./animation/fly-in" as *;
+
 //swiper 按鈕mixin
 @mixin swiper_button($right, $left) {
-  top: 0;
-  right: $right;
-  left: $left;
-  margin-top: 0;
-  width: 30px;
-  height: 20px;
-  background-size: contain;
-  &::after {
-    content: none;
-  }
+    position: absolute;
+    top: 0;
+    right: $right;
+    left: $left;
+    margin-top: 0;
+    font-size: 18px;
+    color: $color-grey;
+    background-size: contain;
+    &::after {
+        content: none;
+    }
 }
 
-/*swiper*/
+/*swiper control button*/
 .swiper {
-  .swiper-button-prev {
-    @include swiper_button(30px, auto);
-  }
-  .swiper-button-next {
-    @include swiper_button(0, auto);
-  }
+    .swiper_button_prev {
+        @include swiper_button(25px, auto);
+    }
+    .swiper_button_next {
+        @include swiper_button(5px, auto);
+    }
+}
+
+//hover link 圖片
+$icon1: url('../images/icon1.png');
+$icon2: url('../images/icon2.png');
+
+/*swiper animation*/
+.swiper-slide {
+    @extend %fly-in;
+    .hover_link_icon1 {
+        background-image: $icon1;
+    }
+    .hover_link_icon2 {
+        background-image: $icon2;
+    }
 }

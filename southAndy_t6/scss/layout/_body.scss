@@ -1,0 +1,13 @@
+body {
+  background: linear-gradient(
+      to bottom,
+      #151515 0% 100px,
+      transparent 100px 90%,
+      #151515 90% 100%
+    ),
+    url(/images/bg.jpg) center top;
+}
+
+main .container {
+  padding: 0;
+}

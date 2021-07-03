@@ -1,95 +1,99 @@
-@use '../abstracts/font&color' as *;
+@use '../abstracts/color' as *;
 @use '../abstracts/breakpoint' as *;
 
 //雪碧圖
-$img-links: url("../images/social.png");
+$img-links: url('../images/social.png');
 
 @mixin spirit($x, $y) {
-  background: {
-    position: $x $y;
-  }
-  &:hover {
-    background-position: $x 100%;
-  }
+    background: {
+        position: $x $y;
+    }
+    &:hover {
+        background-position: $x 100%;
+    }
 }
 
 //電話圖示
 .tel_toggler {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 10%;
-  &:hover {
-    color: $color-green;
-  }
-  i {
-    font-size: 1rem;
-    @include mobile {
-      font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    &:hover {
+        color: $color-highlight;
     }
-  }
-  @include desktop {
-    display: none;
-  }
+    i {
+        font-size: 1rem;
+        @include mobile {
+            font-size: 1.5rem;
+        }
+    }
+    @include desktop {
+        display: none;
+    }
 }
 
 //toggle效果
-input[id="tel"] {
-  display: none;
+input[id='tel'],
+.media_links {
+    display: none;
 }
 #tel:checked + .media_links {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  @include mobile {
-    gap: 1rem;
-  }
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    @include mobile {
+        gap: 1rem;
+    }
+    @include desktop {
+        display: block;
+        text-align: end;
+    }
 }
 
 /* social media links*/
 .media_links {
-  display: none;
-  @include desktop {
-    display: block;
-    text-align: end;
-  }
-  > a:not(.tel_info) {
-    display: inline-block;
-    background-image: $img-links;
-    background-repeat: no-repeat;
-    width: 28px;
-    height: 27px;
-    &:nth-child(1) {
-      @include spirit(0, 0);
+    @include desktop {
+        display: block;
+        text-align: end;
     }
-    &:nth-child(2) {
-      @include spirit(25%, 0);
+    > a:not(.tel_info) {
+        display: inline-block;
+        background-image: $img-links;
+        background-repeat: no-repeat;
+        width: 28px;
+        height: 27px;
+        &:nth-child(1) {
+            @include spirit(0, 0);
+        }
+        &:nth-child(2) {
+            @include spirit(25%, 0);
+        }
+        &:nth-child(3) {
+            @include spirit(50%, 0);
+        }
+        &:nth-child(4) {
+            @include spirit(75%, 0);
+        }
+        &:nth-child(5) {
+            @include spirit(100%, 0);
+        }
     }
-    &:nth-child(3) {
-      @include spirit(50%, 0);
-    }
-    &:nth-child(4) {
-      @include spirit(75%, 0);
-    }
-    &:nth-child(5) {
-      @include spirit(100%, 0);
-    }
-  }
 }
 
 /*telephone number information*/
 .tel_info {
-  display: block;
-  font-size: $font-reg * 0.5;
-  color: $color-primary;
-  @include ipad {
-    font-size: $font-reg;
-  }
-  &:hover {
-    color: $color-green;
-    font-weight: 500;
-  }
+    display: block;
+    font-size: 0.5rem;
+    color: $color-primary;
+    @include ipad {
+        font-size: 1rem;
+    }
+    &:hover {
+        color: $color-highlight;
+        font-weight: 500;
+    }
 }

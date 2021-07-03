@@ -1,0 +1,111 @@
+@use '../base/color';
+body {
+    background: linear-gradient(to bottom, black 100px, transparent 100px, transparent 90%, black 90%, black 100%),
+        url(../../img/bg.jpg);
+}
+.bg_theme {
+    background: url(../../img/subbg.gif);
+    filter: drop-shadow(1px 1px 3px rgb(51, 45, 45));
+}
+//header
+.header_inner {
+    background: url(../../img/subbg.gif);
+}
+.menu {
+    background: linear-gradient(to bottom, transparent 20px, #fff 20px, #fff 100%);
+}
+//main
+.menu .navbar .container a:hover {
+    background-color: color.$primary;
+}
+.menu .search {
+    input {
+        background: url(../../img/search.png) no-repeat color.$card_primary;
+        background-position: top 50% right 10%;
+        &:focus {
+            background: color.$card_primary;
+            box-shadow: initial;
+            border-color: color.$card_primary;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .menu .search {
+        background-color: #fff;
+    }
+}
+
+//card_banner
+.container .card_banner .card:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.container .card_banner .click_more {
+    background-color: color.$button_color;
+    &:hover {
+        background-color: color.$button_hover;
+    }
+}
+.card_banner .row > div:nth-child(odd) {
+    background-color: color.$card_primary;
+}
+.card_banner .row > div:nth-child(even) {
+    background-color: rgb(218, 224, 213);
+}
+@media (min-width: 992px) {
+    .card_banner .row > div:nth-child(odd) {
+        background-color: initial;
+    }
+    .card_banner .row > div:nth-child(even) {
+        background-color: initial;
+    }
+}
+@media (min-width: 992px) {
+    .container .card_banner .card {
+        background-color: color.$card_primary;
+    }
+}
+
+//choose
+.choose div i {
+    background-color: color.$button_color;
+    &:hover {
+        background-color: color.$primary;
+    }
+}
+//news
+.news .card .card_content .date {
+    background-color: color.$primary;
+}
+//footer
+.contact {
+    background: url(../../img/subbg.gif);
+}
+.testimonials .testimonials_text p {
+    background-color: color.$card_primary;
+}
+.copyright {
+    background-color: #000;
+}
+main .card {
+    background-color: inherit;
+    border: 0;
+}
+footer .card {
+    background-color: inherit;
+    border: 0;
+}
+.personal .get {
+    input {
+        background-color: color.$card_primary;
+    }
+    textarea {
+        background-color: color.$card_primary;
+    }
+    .clear {
+        background-color: #000;
+    }
+    .send {
+        background-color: color.$primary;
+    }
+}

@@ -1,46 +1,45 @@
+@use '../abstracts/color' as *;
 @use '../abstracts/breakpoint' as *;
 
-//按鈕圖片
-$control-prev: url("../images/slider_prev.gif");
-$control-next: url("../images/slider_next.gif");
-
-//@mixin 輪播圖按鈕圖示
-@mixin carousel-control($img) {
-  width: fit-content;
-  opacity: 1;
-
-  &_style {
-    background: $img, 0 0, no-repeat;
-    display: inline-block;
-    width: 40px;
-    height: 118px;
-    &:hover {
-      background-position: 0 -120px;
-    }
-  }
-}
-
-//~輪播圖圖片
+//輪播圖圖片尺寸
 .banner .carousel-item {
-  height: 300px;
-  img {
-    object-fit: cover;
-    object-position: center right;
-  }
-  @include ipad {
-    height: 400px;
+    height: 300px;
     img {
-      object-position: center;
+        object-fit: cover;
+        object-position: center right;
     }
-  }
+    @include ipad {
+        height: 400px;
+        img {
+            object-position: center;
+        }
+    }
 }
 
-//~輪播圖按鈕
+//next, prev按鈕圖片
+$control-prev: url('../images/slider_prev.gif');
+$control-next: url('../images/slider_next.gif');
+
+//輪播圖按鈕圖示
+@mixin carousel-control($img) {
+    width: fit-content;
+    opacity: 1;
+    &_style {
+        background: $img, 0 0, no-repeat;
+        display: inline-block;
+        width: 40px;
+        height: 118px;
+        &:hover {
+            background-position: 0 -120px;
+        }
+    }
+}
+/*輪播圖按鈕*/
 .banner {
-  .carousel-control-prev {
-    @include carousel-control($control-prev);
-  }
-  .carousel-control-next {
-    @include carousel-control($control-next);
-  }
+    .carousel-control-prev {
+        @include carousel-control($control-prev);
+    }
+    .carousel-control-next {
+        @include carousel-control($control-next);
+    }
 }
