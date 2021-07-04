@@ -48,7 +48,8 @@ $margin_auto: 0 auto;
     }
 }
 
-%card_banner_color {
+@mixin card($color) {
+    background-color: $color;
     @media (min-width: 768px) {
         background-color: color.$light_gray;
     }
@@ -57,16 +58,14 @@ $margin_auto: 0 auto;
         background-color: rgba(0, 0, 0, 0.7);
     }
 }
+
 .card_banner .row > div:nth-child(odd) .card {
-    background-color: color.$light_gray;
-    @extend %card_banner_color;
-}
-.card_banner div:nth-child(even) .card {
-    background-color: rgb(218, 224, 213);
-    @extend %card_banner_color;
+    @include card(color.$light_gray);
 }
 
-//news
+.card_banner .row > div:nth-child(even) .card {
+    @include card(color.$card_even);
+}
 
 .news .card {
     background-color: initial;
@@ -91,6 +90,9 @@ $margin_auto: 0 auto;
     .card {
         border: 0;
         background: inherit;
+        .row {
+            gap: 0;
+        }
     }
     a {
         font-style: italic;

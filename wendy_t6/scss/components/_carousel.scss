@@ -35,13 +35,25 @@ $prev_button: url(../../img/slider_prev.gif);
         display: block;
     }
 }
-@mixin feature_button($direction, $direction_value) {
-    position: absolute;
-    $direction: $direction_value;
+// @mixin feature_button($direction, $direction_value) {
+//     position: absolute;
+//     left: $direction_value;
+//     width: fit-content;
+//     color: grey;
+//     &:hover {
+//         color: lawngreen;
+//     }
+//     i {
+//         font-size: 20px;
+//         line-height: 30px;
+//     }
+// }
+
+%feature_button {
     width: fit-content;
     color: grey;
     &:hover {
-        color: lawngreen;
+        color: color.$feature_hover;
     }
     i {
         font-size: 20px;
@@ -49,10 +61,12 @@ $prev_button: url(../../img/slider_prev.gif);
     }
 }
 .feature .feature_prev {
-    @include feature_button(right, 20px);
+    // @include feature_button(right, 10px);
+    @extend %feature_button;
 }
 .feature .feature_next {
-    @include feature_button(0, 0);
+    // @include feature_button(0, 0);
+    @extend %feature_button;
 }
 //feature
 .feature {

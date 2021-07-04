@@ -8,14 +8,15 @@
 @use '../components/card';
 @use '../components/circle';
 @use '../components/more.scss';
+@use '../components/click_more';
 @use '../components/swiper.scss';
 
 %margin-bottom {
     margin-bottom: 20px;
 }
 .bg_theme {
-    background: background.$sub_backgrpund;
-    filter: drop-shadow(1px 1px 3px rgb(51, 45, 45));
+    background: #fff;
+    box-shadow: 2px 2px 5px color.$default_gray;
 }
 @mixin layout_padding {
     padding-left: 35px;
@@ -30,6 +31,10 @@
     }
 }
 .welcome {
+    margin-bottom: 30px;
+    @media (min-width: 992px) {
+        margin-bottom: 0;
+    }
     p {
         word-spacing: 2px;
         color: #000;

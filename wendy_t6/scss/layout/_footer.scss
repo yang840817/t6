@@ -13,9 +13,9 @@
 .contact {
     padding: 50px 50px;
     filter: drop-shadow(1px 1px 3px rgb(51, 45, 45));
-    background: background.$sub_backgrpund;
+    background: background.$sub_background;
     .row {
-        gap: 20px;
+        gap: 30px;
         @media (min-width: 992px) {
             gap: 0;
         }
