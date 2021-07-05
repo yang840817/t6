@@ -1,9 +1,5 @@
 body {
-  background: linear-gradient(to bottom, #151515 0% 100px, transparent 100px 90%, #151515 90% 100%), url(/images/bg.jpg) center top;
-}
-
-main .container {
-  padding: 0;
+  background: linear-gradient(#151515 0% 100px, transparent 100px 90%, #151515 90% 100%), url(/images/bg.jpg);
 }
 
 body {
@@ -19,6 +15,10 @@ h1 {
   margin-bottom: 0;
 }
 
+img {
+  width: 100%;
+}
+
 .intro .box a:hover, .service_box button:hover, .social svg:hover, .carousel button.carousel-control-prev:hover, .carousel button.carousel-control-next:hover {
   background-color: #82b800;
   color: #fff;
@@ -28,13 +28,11 @@ h1 {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
-  margin-bottom: 20px;
 }
 
 .intro h3 {
   font-size: 20px;
   font-weight: 500;
-  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
@@ -42,7 +40,6 @@ footer .container h4 {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 600;
-  margin-bottom: 20px;
 }
 
 .logo_box a {
@@ -52,6 +49,12 @@ footer .container h4 {
 .social {
   text-align: right;
   font-size: 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .social {
+    text-align: end;
+  }
 }
 .social_icon {
   display: inline-block;
@@ -98,6 +101,7 @@ nav {
 }
 
 .nav_box {
+  flex-direction: column;
   justify-content: space-between;
 }
 .nav_box .navbar {
@@ -124,10 +128,6 @@ nav {
     margin-right: 10px;
   }
 }
-header .container {
-  padding: 0;
-}
-
 .website_title {
   background: url(/images/subbg.gif);
   display: flex;
@@ -138,25 +138,58 @@ header .container {
   margin-top: 5px;
   margin-bottom: 10px;
 }
+@media (min-width: 768px) {
+  .website_title {
+    flex-direction: row;
+  }
+}
+.website_title h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .website_title h1 {
+    margin-bottom: 0;
+    text-align: start;
+  }
+}
 
 .carousel button.carousel-control-prev {
-  height: 120px;
-  width: 40px;
+  height: 80px;
+  width: 20px;
   top: 50%;
   transform: translateY(-50%);
   background-color: #333;
 }
+@media (min-width: 768px) {
+  .carousel button.carousel-control-prev {
+    height: 120px;
+    width: 40px;
+  }
+}
+
 .carousel button.carousel-control-next {
-  height: 120px;
-  width: 40px;
+  height: 80px;
+  width: 20px;
   top: 50%;
   transform: translateY(-50%);
   background-color: #333;
 }
+@media (min-width: 768px) {
+  .carousel button.carousel-control-next {
+    height: 120px;
+    width: 40px;
+  }
+}
+
 .service {
   padding: 0 2rem;
   text-align: center;
-  transform: translateY(-30px);
+}
+@media (min-width: 992px) {
+  .service {
+    transform: translateY(-30px);
+  }
 }
 
 .service_box {
@@ -172,6 +205,9 @@ header .container {
 }
 .service_box div {
   margin: 0 auto;
+  margin-bottom: 20px;
+}
+.service_box h3 {
   margin-bottom: 20px;
 }
 .service_box p {
@@ -223,7 +259,6 @@ header .container {
 
 .swiper-container a {
   display: inline-block;
-  width: 100%;
 }
 .swiper-container a img {
   width: 100%;
@@ -232,6 +267,9 @@ header .container {
 .intro {
   padding: 20px;
   display: flex;
+}
+.intro h3 {
+  margin-bottom: 20px;
 }
 .intro .welcome div {
   margin-bottom: 15px;
@@ -267,11 +305,20 @@ main .container {
   box-shadow: 0 -20px #fff;
 }
 
+.welcome img {
+  width: 200px;
+}
+@media (min-width: 768px) {
+  .welcome img {
+    width: 100%;
+  }
+}
+
 .testimonials .message {
   padding: 20px;
   background-color: #e6e6e6;
   position: relative;
-  border: 1px solid #d9d9d9;
+  filter: drop-shadow(2px 3px 2px #d9d9d9);
   margin-bottom: 40px;
 }
 .testimonials .message::after {
@@ -354,7 +401,12 @@ main .container {
   text-transform: uppercase;
   padding: 16px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+@media (min-width: 992px) {
+  .copyright {
+    justify-content: space-between;
+  }
 }
 .copyright_title {
   color: #5a5a5a;
@@ -365,6 +417,14 @@ main .container {
   text-transform: capitalize;
 }
 
+.copyright_nav {
+  display: none;
+}
+@media (min-width: 992px) {
+  .copyright_nav {
+    display: block;
+  }
+}
 .copyright_nav a {
   padding: 0 10px;
   border-right: solid 1px gainsboro;
@@ -380,6 +440,9 @@ main .container {
   color: #80b600;
 }
 
+footer .container h4 {
+  margin-bottom: 20px;
+}
 footer .container .info {
   background: url(/images/subbg.gif);
   padding: 30px;

@@ -1,9 +1,7 @@
 @use "../components/header/community" as *;
 @use "../components/header/navigation" as *;
 
-header .container {
-  padding: 0;
-}
+@use "../base/breakpoints" as *;
 
 .website_title {
   background: url(/images/subbg.gif);
@@ -14,9 +12,19 @@ header .container {
 
   padding: 25px;
   margin-top: 5px;
-  // @include pad-size() {
-  //   flex-direction: row;
-  // }
+
   // ?與nav的距離
   margin-bottom: 10px;
+  @include pad {
+    flex-direction: row;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    @include pad {
+      margin-bottom: 0;
+      text-align: start;
+    }
+  }
 }

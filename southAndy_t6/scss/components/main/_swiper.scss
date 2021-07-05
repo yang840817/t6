@@ -48,7 +48,9 @@
 .swiper-container {
   a {
     display: inline-block;
-    width: 100%;
+    // &:hover {
+    //   content: "..";
+    // }
 
     img {
       width: 100%;

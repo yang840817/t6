@@ -1,11 +1,14 @@
 @use "../../base/fonts" as *;
 @use "../../base/colors" as *;
+@use "../../base/breakpoints" as *;
 
 .service {
   padding: 0 2rem;
   text-align: center;
 
-  transform: translateY(-30px);
+  @include pc {
+    transform: translateY(-30px);
+  }
 }
 .service_box {
   align-items: center;
@@ -25,7 +28,8 @@
     margin-bottom: 20px;
   }
   h3 {
-    @extend %title-size;
+    @extend %service_title;
+    margin-bottom: 20px;
   }
   p {
     font-size: $content-size;

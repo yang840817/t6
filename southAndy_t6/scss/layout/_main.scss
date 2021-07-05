@@ -5,6 +5,7 @@
 @use "../components/main/choose" as *;
 // * use in news part
 @use "../base/colors" as *;
+@use "../base/breakpoints" as *;
 
 $main-padding: 20px;
 
@@ -15,5 +16,14 @@ main {
 
     // 製造假的背景
     box-shadow: 0 -20px #fff;
+  }
+}
+
+.welcome {
+  img {
+    width: 200px;
+    @include pad {
+      width: 100%;
+    }
   }
 }
