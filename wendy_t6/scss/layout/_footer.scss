@@ -9,10 +9,10 @@
 @use '../components/card';
 @use "../base/background.scss";
 // contact
-
 .contact {
     padding: 50px 50px;
-    filter: drop-shadow(1px 1px 3px rgb(51, 45, 45));
+    // filter: drop-shadow(1px 1px 3px rgb(51, 45, 45));
+    box-shadow: background.$box-shadow;
     background: background.$sub_background;
     .row {
         gap: 30px;

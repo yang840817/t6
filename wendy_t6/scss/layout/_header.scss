@@ -20,12 +20,12 @@
 .header_inner {
     padding: 32px;
     border: 1px solid #000;
-    filter: drop-shadow(1px 1px 3px rgb(51, 45, 45));
+    filter: drop-shadow(2px 2px 5px color.$default_gray);
+
     margin-bottom: 20px;
     background-color: #fff;
     @media (min-width: 992px) {
         display: flex;
-        text-align: right;
         justify-content: space-between;
         align-items: flex-start;
     }
