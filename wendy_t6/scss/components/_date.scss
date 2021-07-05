@@ -1,0 +1,9 @@
+@use '../base/color';
+.date {
+    background-color: color.$primary;
+    width: fit-content;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 24px;
+}

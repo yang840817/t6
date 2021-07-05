@@ -1,14 +1,14 @@
-@use '../abstracts/font&color' as *;
+@use '../abstracts/_color' as *;
 
 //白條紋背景
 %bg-strip {
-  background: url("../images/subbg.gif");
+    background: url('../images/subbg.gif');
 }
 
 //木紋背景
-$bg-wood: url("../images/background.jpg");
+$bg-wood: url('../images/background.jpg');
 
 //陰影
 @mixin shadow($x, $y, $blur) {
-  box-shadow: $x $y $blur $color-dark-grey;
+    box-shadow: $x $y $blur $color-dark-grey;
 }

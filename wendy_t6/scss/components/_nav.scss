@@ -1,108 +1,67 @@
 //header social
 @use '../base/color';
-$nav_27: 27px;
-@mixin header_nav {
-    display: inline-block;
-    background: url('../../img/social.png');
-    width: $nav_27;
-    height: $nav_27;
-}
-.social {
-    .facebook {
-        @include header_nav;
-        &:hover {
-            background-position: 0px $nav_27;
-        }
-    }
-    .twitter {
-        @include header_nav;
-        background-position: -37px 0;
-        &:hover {
-            background-position: -37px $nav_27;
-        }
-    }
-    .flicker {
-        @include header_nav;
-        background-position: -74px 0;
-        &:hover {
-            background-position: -74px $nav_27;
-        }
-    }
-    .dribble {
-        @include header_nav;
-        background-position: -111px 0;
-        &:hover {
-            background-position: -111px $nav_27;
-        }
-    }
-    .rss {
-        @include header_nav;
-        background-position: -150px 0;
-        &:hover {
-            background-position: -150px $nav_27;
-        }
-    }
-}
 
 //main
 .menu {
+    background: linear-gradient(to bottom, transparent 30px, #fff 30px, #fff 100%);
     .navbar {
         padding: 0;
+        filter: drop-shadow(1px 1px 3px rgb(51, 45, 45));
+        z-index: 2;
         .container {
-            padding: 0;
-            button {
-                height: 54px;
-            }
-            li {
-                border-right: 1px color.$button_color solid;
-                a {
-                    padding: 15px 20px;
-                    &:hover {
-                        color: #fff;
-                    }
-                }
+        }
+    }
+
+    .container {
+        padding: 0;
+        button {
+            height: 54px;
+            &:focus {
+                box-shadow: initial;
             }
         }
     }
-    // align-items: stretch;
-}
-@media (min-width: 992px) {
-    .menu .col-lg-3 {
-        display: flex;
-        align-items: center;
-        padding-left: 0;
+    .navbar-nav > li:first-child {
+        background-color: color.$current;
+    }
+    ul {
+        text-align: center;
+        @media (min-width: 992px) {
+            text-align: left;
+        }
+    }
+    li {
+        border-right: 1px color.$dark_gray solid;
+    }
+    a {
+        padding: 15px 20px;
+        &:hover {
+            color: #fff;
+            background-color: color.$primary;
+        }
     }
 }
-.menu .navbar {
-    filter: drop-shadow(1px 1px 3px rgb(51, 45, 45));
-}
-
 //footer copyright
-.copyright nav {
+.footer_bottom nav {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    & a:first-child {
-        color: color.$primary;
-        font-weight: 500;
-    }
-}
-@media (min-width: 992px) {
-    .copyright nav {
+    @media (min-width: 992px) {
         margin-top: 0;
         flex-direction: row;
     }
-}
-@media (min-width: 992px) {
-    .copyright nav a {
-        padding: 0 10px;
-    }
-    .copyright nav a + a {
-        border-left: 2px solid grey;
-    }
-}
-@media (min-width: 992px) {
-    .copright nav {
-        margin-top: 0;
+    a {
+        @media (min-width: 992px) {
+            padding: 0 10px;
+        }
+        &:first-child {
+            color: color.$primary;
+            font-weight: 500;
+        }
+        @media (min-width: 992px) {
+            & + a {
+                border-left: 2px solid grey;
+            }
+        }
     }
 }

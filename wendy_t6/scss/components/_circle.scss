@@ -1,0 +1,23 @@
+@use '../base/font_size';
+@use '../base/color';
+$font-size: 50px;
+.choose div {
+    i {
+        margin-right: 20px;
+        border-radius: 50px;
+        font-size: 20px;
+        height: $font-size;
+        width: $font-size;
+        color: #fff;
+        text-align: center;
+        line-height: $font-size;
+        flex-shrink: 0;
+        background-color: color.$dark_gray;
+        &:hover {
+            box-shadow: 2px 2px 5px color.$default_gray;
+            transform: rotate(360deg);
+            transition: all 2s;
+            background-color: color.$primary;
+        }
+    }
+}

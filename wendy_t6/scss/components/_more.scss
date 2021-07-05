@@ -1,0 +1,16 @@
+@use "../base/color";
+.more {
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    &:hover {
+        color: color.$primary;
+    }
+}
+
+.welcome a {
+    @extend .more;
+}
+.news a {
+    @extend .more;
+}

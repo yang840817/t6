@@ -1,24 +1,27 @@
-@use '../abstracts/font&color' as *;
+@use '../abstracts/color' as *;
 @use '../abstracts/breakpoint' as *;
-@use '../abstracts/background' as *; //背景圖
+@use '../abstracts/background' as *;
 
 @use '../component/media-links'; //media links
 @use '../component/logo'; //logo
 
 header {
-  @include shadow(0, 0, 2px);
-  @extend %bg-strip;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  row-gap: 1rem;
+    @include shadow(0, 0, 2px);
 
-  //斷點
-  @include ipad {
-    margin: 0.5rem auto;
-  }
-  @include desktop {
-    margin: 0 0 1rem 0;
-    align-items: center;
-  }
+    @extend %bg-strip;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 1rem;
+
+    //斷點
+    @include ipad {
+        margin: 0.5rem auto;
+    }
+    @include desktop {
+        margin: 0 0 1rem 0;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
 }

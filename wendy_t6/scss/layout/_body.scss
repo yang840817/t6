@@ -1,6 +1,7 @@
+@use '../base/background.scss';
+
 body {
     min-width: 360px;
-}
-* {
-    outline: 1px solid red;
+    background: linear-gradient(to bottom, black 100px, transparent 100px, transparent 90%, black 90%, black 100%),
+        background.$primary_background;
 }

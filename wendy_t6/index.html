@@ -13,6 +13,8 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <!-- my css-->
         <link rel="1stylesheet1" href="./style/css" />
         <title>BUSINESSPLANTES</title>
@@ -24,19 +26,15 @@
                     <h1>
                         <a href="##"><img src="img/logo.png" alt="BUSINESSPLANTES" /></a>
                     </h1>
-                    <nav class="social">
+                    <div class="social">
                         <a href="##" class="facebook"></a>
                         <a href="##" class="twitter"></a>
                         <a href="##" class="flicker"></a>
                         <a href="##" class="dribble"></a>
                         <a href="##" class="rss"></a>
-                        <p>Call Us Now:+1(777)784-25-43</p>
-                    </nav>
+                        <a href="tel:+1(777)784-25-43" class="tel">Call Us Now:+1(777)784-25-43</a>
+                    </div>
                 </div>
-            </div>
-        </header>
-        <main>
-            <div class="container">
                 <!-- menu -->
                 <div class="menu">
                     <div class="row">
@@ -131,79 +129,83 @@
                         </div>
                     </div>
                 </div>
-                <!-- carousel -->
-                <div class="carousel_img">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner banner_ineer">
-                            <div class="carousel-item active">
-                                <img src="img/banner1.jpg" class="d-block" alt="banner_1" />
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/banner2.jpg" class="d-block" alt="banner_2" />
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/banner3.jpg" class="d-block" alt="banner_3" />
-                            </div>
-                        </div>
-                        <button
-                            class="carousel-control-prev previous_banner"
-                            type="button"
-                            data-bs-target="#carouselExampleControls"
-                            data-bs-slide="prev"
-                        >
-                            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button
-                            class="carousel-control-next next_banner"
-                            type="button"
-                            data-bs-target="#carouselExampleControls"
-                            data-bs-slide="next"
-                        >
-                            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-                <!-- card_banner -->
+            </div>
+        </header>
+        <main>
+            <div class="container">
                 <div class="bg_theme">
+                    <!-- carousel -->
+                    <div class="carousel_img">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner banner_ineer">
+                                <div class="carousel-item active">
+                                    <img src="img/banner1.jpg" class="d-block" alt="banner_1" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/banner2.jpg" class="d-block" alt="banner_2" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/banner3.jpg" class="d-block" alt="banner_3" />
+                                </div>
+                            </div>
+                            <button
+                                class="carousel-control-prev previous_banner"
+                                type="button"
+                                data-bs-target="#carouselExampleControls"
+                                data-bs-slide="prev"
+                            >
+                                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button
+                                class="carousel-control-next next_banner"
+                                type="button"
+                                data-bs-target="#carouselExampleControls"
+                                data-bs-slide="next"
+                            >
+                                <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- card_banner -->
                     <div class="card_banner">
                         <div class="row">
                             <div class="col-md-6 col-lg-3">
                                 <div class="card">
-                                    <h4 class="card-title">GROWTH STRATEGIES</h4>
+                                    <h3 class="card-title"><span>GROWTH</span><span>STRATEGIES</span></h3>
                                     <div class="wrap_img">
-                                        <img src="./img/p1.png" class="card-img-top" alt="GROWTH STRATEGIES" />
+                                        <img src="./img/p1.png" alt="GROWTH STRATEGIES" />
                                     </div>
                                     <div class="card-body">
                                         <p class="card-text">
                                             Vestibulum dignissim, dui ac hendrerit blandit, sapien orci dictum nibh, vel
                                             suscipit augue nibh in enim. Nullam dignissim euismodnunc at
                                         </p>
-                                        <a href="#" class="click_more">More</a>
+                                        <a href="##" class="click_more">More</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-3">
                                 <div class="card">
-                                    <h4 class="card-title">PERFECT SUPPORT</h4>
+                                    <h3 class="card-title"><span>PERFECT</span><span>SUPPORT</span></h3>
                                     <div class="wrap_img">
-                                        <img src="./img/p2.png" class="card-img-top" alt="PERFECT SUPPORT" />
+                                        <img src="./img/p2.png" alt="PERFECT SUPPORT" />
                                     </div>
                                     <div class="card-body">
                                         <p class="card-text">
                                             Donec semper, dolor eu iaculis laoreet, erat diam interdum nisi, vel
                                             consequat leo neque in ante. Curabitur fringilla tristque nisl ut
                                         </p>
-                                        <a href="#" class="click_more">More</a>
+                                        <a href="##" class="click_more">More</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-3">
                                 <div class="card">
-                                    <h4 class="card-title">PARTNERS PROGRAMS</h4>
+                                    <h3 class="card-title"><span>PARTNERS</span><span>PROGRAMS</span></h3>
                                     <div class="wrap_img">
-                                        <img src="./img/p3.png" class="card-img-top" alt="PARTNERS PROGRAMS" />
+                                        <img src="./img/p3.png" alt="PARTNERS PROGRAMS" />
                                     </div>
                                     <div class="card-body">
                                         <p class="card-text">
@@ -216,9 +218,9 @@
                             </div>
                             <div class="col-md-6 col-lg-3">
                                 <div class="card">
-                                    <h4 class="card-title">PREMIUM SERVICES</h4>
+                                    <h3 class="card-title"><span>PREMIUM</span><span>SERVICES</span></h3>
                                     <div class="wrap_img">
-                                        <img src="./img/p4.png" class="card-img-top" alt="PREMIUM SERVICES" />
+                                        <img src="./img/p4.png" alt="PREMIUM SERVICES" />
                                     </div>
                                     <div class="card-body">
                                         <p class="card-text">
@@ -271,10 +273,10 @@
                                 <div class="news">
                                     <h2>NEWS & EVENTS</h2>
                                     <div class="card">
-                                        <div class="row g-0">
+                                        <div class="row g-3">
                                             <div class="col-md-5">
                                                 <div class="wrap_img">
-                                                    <img src="img/news1.jpg" class="rounded-start" alt="news1" />
+                                                    <img src="img/news1.jpg" alt="news1" />
                                                 </div>
                                             </div>
                                             <div class="col-md-7">
@@ -291,10 +293,10 @@
                                         </div>
                                     </div>
                                     <div class="card">
-                                        <div class="row g-0">
+                                        <div class="row g-3">
                                             <div class="col-md-5">
                                                 <div class="wrap_img">
-                                                    <img src="img/news2.jpg" class="rounded-start" alt="news2" />
+                                                    <img src="img/news2.jpg" alt="news2" />
                                                 </div>
                                             </div>
                                             <div class="col-md-7">
@@ -391,120 +393,142 @@
                             </div>
                         </div>
                     </section>
+                    <!-- Slider main container -->
+                    <section class="feature_swiper">
+                        <div class="swiper-container">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <img src="img/g1.jpg" alt="g1" />
+                                </div>
+                                <div class="swiper-slide"><img src="img/g2.jpg" alt="g2" /></div>
+                                <div class="swiper-slide"><img src="img/g3.jpg" alt="g3" /></div>
+                                <div class="swiper-slide"><img src="img/g4.jpg" alt="g4" /></div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <!-- <div class="swiper-pagination"></div> -->
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </section>
                 </div>
                 <!-- container div -->
             </div>
         </main>
         <footer>
             <div class="container">
-                <div class="bg_theme">
-                    <div class="contact">
-                        <div class="row">
-                            <div class="col-lg-3">
-                                <div class="tweets">
-                                    <h2>LATEST TWEETS</h2>
-                                    <p>loading tweets...</p>
-                                </div>
+                <div class="contact">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="tweets">
+                                <h2>LATEST TWEETS</h2>
+                                <p>loading tweets...</p>
                             </div>
-                            <div class="col-lg-3">
-                                <div class="testimonials">
-                                    <div class="testimonials_text">
-                                        <h2>TESTIMONIALS</h2>
-                                        <p>
-                                            "Sed dapibus molesite interdum. Fusce nec est ante, sit amet lacinia lorem.
-                                            Maecenas nec eros ut mauris pulvinar suscipit. Aliquam erat
-                                        </p>
-                                    </div>
-                                    <div class="sharing">
-                                        <div class="card">
-                                            <div class="row g-0">
-                                                <div class="col-md-4">
-                                                    <div class="wrap_img">
-                                                        <img src="img/men.jpg" class="rounded-start" alt="..." />
-                                                    </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="testimonials">
+                                <div class="testimonials_text">
+                                    <h2>TESTIMONIALS</h2>
+                                    <p>
+                                        "Sed dapibus molesite interdum. Fusce nec est ante, sit amet lacinia lorem.
+                                        Maecenas nec eros ut mauris pulvinar suscipit. Aliquam erat
+                                    </p>
+                                </div>
+                                <div class="sharing">
+                                    <div class="card">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <div class="wrap_img">
+                                                    <img src="img/men.jpg" alt="men" />
                                                 </div>
-                                                <div class="col-md-8">
-                                                    <div class="card-body">
-                                                        <p class="card-text">Stephen Bingham</p>
-                                                        <a href="##">demolink.org</a>
-                                                    </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <p class="card-text">Stephen Bingham</p>
+                                                    <a href="##">demolink.org</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
-                                <div class="personal">
-                                    <h2>GET IN TOUCH!</h2>
-                                    <form class="get">
-                                        <input type="text" placeholder="Name" />
-                                        <input type="text" placeholder="E-mail" />
-                                        <textarea cols="30" rows="8" placeholder="Message"></textarea>
-                                        <button class="clear">CLEAR FORM</button>
-                                        <button class="send">SEND!</button>
-                                    </form>
-                                </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="personal">
+                                <h2>GET IN TOUCH!</h2>
+                                <form class="subscribe">
+                                    <input type="text" placeholder="Name" />
+                                    <input type="text" placeholder="E-mail" />
+                                    <textarea cols="30" rows="8" placeholder="Message"></textarea>
+                                    <button class="clear" type="reset">CLEAR FORM</button>
+                                    <button class="send" type="submit">SEND!</button>
+                                </form>
                             </div>
-                            <div class="col-lg-3">
-                                <div class="flicker">
-                                    <h2>FLICKR</h2>
-                                    <div class="flickr_inner">
-                                        <div class="item">
-                                            <img src="img/f1.jpg" alt="f1" />
-                                        </div>
-                                        <div class="item">
-                                            <img src="img/f2.jpg" alt="f2" />
-                                        </div>
-                                        <div class="item">
-                                            <img src="img/f3.jpg" alt="f3" />
-                                        </div>
-                                        <div class="item">
-                                            <img src="img/f4.jpg" alt="f4" />
-                                        </div>
-                                        <div class="item">
-                                            <img src="img/f5.jpg" alt="f5" />
-                                        </div>
-                                        <div class="item">
-                                            <img src="img/f6.jpg" alt="f6" />
-                                        </div>
-                                        <div class="item">
-                                            <img src="img/f7.jpg" alt="f7" />
-                                        </div>
-                                        <div class="item">
-                                            <img src="img/f8.jpg" alt="f8" />
-                                        </div>
-                                        <div class="item">
-                                            <img src="img/f9.jpg" alt="f9" />
-                                        </div>
-                                        <div class="item">
-                                            <img src="img/f10.jpg" alt="f10" />
-                                        </div>
-                                        <div class="item">
-                                            <img src="img/f11.jpg" alt="f11" />
-                                        </div>
-                                        <div class="item">
-                                            <img src="img/f12.jpg" alt="f12" />
-                                        </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="flicker">
+                                <h2>FLICKR</h2>
+                                <div class="flickr_inner">
+                                    <div class="item">
+                                        <img src="img/f1.jpg" alt="f1" />
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/f2.jpg" alt="f2" />
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/f3.jpg" alt="f3" />
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/f4.jpg" alt="f4" />
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/f5.jpg" alt="f5" />
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/f6.jpg" alt="f6" />
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/f7.jpg" alt="f7" />
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/f8.jpg" alt="f8" />
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/f9.jpg" alt="f9" />
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/f10.jpg" alt="f10" />
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/f11.jpg" alt="f11" />
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/f12.jpg" alt="f12" />
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="footer_bottom">
                     <div class="copyright">
-                        <div class="copyright_text">
-                            <p>BUSINESS PLANET © 2020</p>
-                            <a href="##">Privacy Policy</a>
-                        </div>
-                        <nav>
-                            <a href="##">HOME</a>
-                            <a href="##">ABOUT</a>
-                            <a href="##">Privacy Policy</a>
-                            <a href="##">PORTFOLIO</a>
-                            <a href="##">BLOG</a>
-                            <a href="##">CONTACTS</a>
-                        </nav>
+                        <p>BUSINESS PLANET © 2020</p>
+                        <a href="##">Privacy Policy</a>
                     </div>
+                    <nav>
+                        <a href="##">HOME</a>
+                        <a href="##">ABOUT</a>
+                        <a href="##">Privacy Policy</a>
+                        <a href="##">PORTFOLIO</a>
+                        <a href="##">BLOG</a>
+                        <a href="##">CONTACTS</a>
+                    </nav>
                 </div>
             </div>
         </footer>
@@ -513,6 +537,9 @@
             integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
             crossorigin="anonymous"
         ></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="js/swiper.js"></script>
         <!-- <img src="template_6.png" alt="" class="template" /> -->
     </body>
 </html>
