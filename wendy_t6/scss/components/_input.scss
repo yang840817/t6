@@ -14,7 +14,7 @@
         background: url(../../img/search.png) no-repeat color.$light_gray;
         background-position: top 50% right 10%;
         &:focus {
-            background: color.$light_gray;
+            background: url(../../img/search.png) no-repeat color.$light_gray;
             box-shadow: initial;
             border-color: color.$light_gray;
         }

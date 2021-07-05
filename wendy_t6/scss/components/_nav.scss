@@ -31,7 +31,9 @@
         }
     }
     li {
-        border-right: 1px color.$dark_gray solid;
+        @media (min-width: 992px) {
+            border-right: 1px color.$dark_gray solid;
+        }
     }
     a {
         padding: 15px 20px;
