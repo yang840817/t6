@@ -18,7 +18,7 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <!-- my css-->
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
@@ -33,7 +33,7 @@
           <div class="social">
             <div class="mb-2">
               <a href="##" class="social_icon">
-                <i class="fab fa-facebook fa-fw"></i>
+                <i class="fab fa-facebook-f fa-fw"></i>
               </a>
               <a href="##" class="social_icon">
                 <i class="fab fa-tumblr fa-fw"></i>
@@ -534,6 +534,21 @@
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          375: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+          992: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+          },
         },
         navigation: {
           nextEl: ".swiper-btn-next",
