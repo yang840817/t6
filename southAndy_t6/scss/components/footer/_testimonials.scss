@@ -8,7 +8,9 @@
     padding: 20px;
     background-color: #e6e6e6;
     position: relative;
-    border: 1px solid #d9d9d9;
+    // ! 無法幫偽元素也上色
+    // border: 1px solid #d9d9d9;
+    filter: drop-shadow(2px 3px 2px #d9d9d9);
     margin-bottom: 40px;
 
     &::after {
@@ -28,7 +30,6 @@
       border-right-color: transparent;
       border-bottom-color: transparent;
       border-left-color: #e6e6e6;
-      // border: 1px solid #d9d9d9;
     }
   }
   .message_info {
