@@ -21,9 +21,16 @@ main {
 
 .welcome {
   img {
-    width: 200px;
-    @include pad {
+    width: 300px;
+    @include pc {
       width: 100%;
     }
+    // ! not finished
+    &:hover {
+      background: no-repeat #000000 50% url(/images/welcome.jpg);
+    }
+  }
+  > div {
+    display: flex;
   }
 }
