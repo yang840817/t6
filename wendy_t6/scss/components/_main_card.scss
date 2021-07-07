@@ -1,7 +1,9 @@
 @use '../base/color';
 @use '../base/font_size';
+@use '../base/reset';
+@use '../base/breakpoint';
 @use '../components/date';
-@use '../components/more';
+@use '../components/text_more';
 $margin_auto: 0 auto;
 // main
 // card_banner
@@ -81,37 +83,5 @@ $margin_auto: 0 auto;
     }
     .card-body {
         padding: 0;
-    }
-}
-
-//footer>sharing
-.sharing {
-    margin-top: 30px;
-    .card {
-        border: 0;
-        background: inherit;
-        .row {
-            gap: 0;
-        }
-    }
-    a {
-        font-style: italic;
-        font-weight: 600;
-        color: color.$primary;
-        text-decoration: none;
-        &:hover {
-            font-weight: 600;
-        }
-    }
-    .wrap_img {
-        height: 100%;
-        img {
-            height: 100%;
-            width: 100%;
-            object-fit: contain;
-        }
-    }
-    .card-body {
-        padding: 10px;
     }
 }

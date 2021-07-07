@@ -1,8 +1,9 @@
 @use '../base/color';
+@use '../base/reset';
 
 @mixin header_nav($width) {
     display: inline-block;
-    background: url('../../img/social.png');
+    background: url('../img/social.png');
     width: 28px;
     height: 27px;
     background-position: $width 0px;

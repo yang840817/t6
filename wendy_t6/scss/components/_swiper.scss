@@ -1,13 +1,17 @@
+@use '../base/breakpoint';
 @use '../base/color';
+@use '../base/reset';
 %swiper_button {
     color: color.$dark_gray;
 }
 .feature_swiper {
     padding: 35px;
-    @media (min-width: 992px) {
+    @include breakpoint.pad_row {
         display: none;
     }
-
+    // @media (min-width: 992px) {
+    //     display: none;
+    // }
     .swiper-button-prev {
         @extend %swiper_button;
     }
@@ -22,6 +26,6 @@
 .swiper-slide img {
     width: 100%;
 }
-.wiper-pagination-bullet {
-    background-color: gainsboro;
-}
+// .wiper-pagination-bullet {
+//     background-color: gainsboro;
+// }

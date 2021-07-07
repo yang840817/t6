@@ -1,6 +1,8 @@
 @use '../base/color';
+@use '../base/reset';
 //menu mobile
 .menu button {
+    background-color: red;
     width: 100%;
     &:focus {
         box-shadow: initial;

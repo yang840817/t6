@@ -1,0 +1,11 @@
+@mixin pad_row {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin mobile_row {
+    @media (min-width: 576px) {
+        @content;
+    }
+}

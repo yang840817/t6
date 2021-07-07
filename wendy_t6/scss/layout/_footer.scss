@@ -1,13 +1,16 @@
 @use '../base/color';
 @use '../base/font_size';
+@use "../base/background.scss";
+@use '../base/breakpoint.scss';
 @use "../layout/main";
 @use '../components/chat_box';
-@use '../components/input';
-@use '../components/textarea';
-@use '../components/grid';
+@use '../components/footer_subscribe';
+@use '../components/footer_nav';
+@use '../components/footer_textarea';
+@use '../components/flicker_grid';
 @use "../components/copyright";
-@use '../components/card';
-@use "../base/background.scss";
+@use '../components/footer_sharing';
+
 // contact
 .contact {
     padding: 50px 50px;
@@ -16,9 +19,12 @@
     background: background.$sub_background;
     .row {
         gap: 30px;
-        @media (min-width: 992px) {
+        @include breakpoint.pad_row {
             gap: 0;
         }
+        // @media (min-width: 992px) {
+        //     gap: 0;
+        // }
     }
     h2 {
         margin-bottom: 20px;
@@ -29,6 +35,9 @@
     padding: 20px 10px;
     justify-content: space-between;
     background-color: #000;
+    @include breakpoint.pad_row {
+        display: flex;
+    }
     a {
         color: color.$default_gray;
         text-decoration: none;
@@ -38,8 +47,8 @@
     }
 }
 
-@media (min-width: 992px) {
-    .footer_bottom {
-        display: flex;
-    }
-}
+// @media (min-width: 992px) {
+//     .footer_bottom {
+//         display: flex;
+//     }
+// }

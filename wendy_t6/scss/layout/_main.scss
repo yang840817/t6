@@ -1,20 +1,21 @@
 @use '../base/color';
 @use '../base/font_size';
 @use '../base/background.scss';
-@use '../components/button';
-@use '../components/nav';
-@use '../components/input';
+@use '../base/breakpoint.scss';
+@use '../components/mobile_menu_button';
+@use '../components/menu_nav';
+@use '../components/search_input';
 @use '../components/carousel';
-@use '../components/card';
-@use '../components/circle';
-@use '../components/more.scss';
+@use '../components/main_card';
+@use '../components/choose_circle';
+@use '../components/text_more.scss';
 @use '../components/click_more';
 @use '../components/swiper.scss';
 
 %margin-bottom {
     margin-bottom: 20px;
 }
-.bg_theme {
+.background_theme {
     background: #fff;
     box-shadow: background.$box-shadow;
 }
@@ -32,9 +33,12 @@
 }
 .welcome {
     margin-bottom: 30px;
-    @media (min-width: 992px) {
+    @include breakpoint.pad_row {
         margin-bottom: 0;
     }
+    // @media (min-width: 992px) {
+    //     margin-bottom: 0;
+    // }
     p {
         word-spacing: 2px;
         color: #000;
@@ -48,11 +52,11 @@
 //choose
 .choose div {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     padding: 20px 0px;
     border-bottom: 1px solid color.$dark_gray;
     @media (min-width: 992px) {
-        align-items: initial;
+        // align-items: initial;
         padding: 20px;
     }
     p {

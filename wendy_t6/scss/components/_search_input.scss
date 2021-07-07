@@ -1,0 +1,30 @@
+@use '../base/color';
+@use '../base/breakpoint';
+@use '../base/reset';
+//search
+.search {
+    position: relative;
+    z-index: 2;
+    padding: 8px 8px;
+    filter: drop-shadow(1px 1px 3px rgb(51, 45, 45));
+    @include breakpoint.pad_row {
+        padding-right: 10px;
+        width: 100%;
+        background-color: #fff;
+    }
+    // @media (min-width: 992px) {
+    //     padding-right: 10px;
+    //     width: 100%;
+    //     background-color: #fff;
+    // }
+    input {
+        background: url(../img/search.png) no-repeat color.$light_gray;
+        background-position: top 50% right 1%;
+        &:focus {
+            background: url(../img/search.png) no-repeat color.$light_gray;
+            background-position: top 50% right 1%;
+            box-shadow: initial;
+            border: 2px solid color.$primary;
+        }
+    }
+}

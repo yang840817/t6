@@ -1,0 +1,31 @@
+//footer subscribe
+@use '../base/color';
+@use '../base/reset';
+.subscribe {
+    button {
+        border: 0;
+        padding: 5px;
+    }
+    input {
+        background-color: color.$light_gray;
+        width: 100%;
+        border: 1px solid color.$dark_gray;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    textarea {
+        background-color: color.$light_gray;
+    }
+    .clear {
+        color: #fff;
+        margin-right: 10px;
+        background-color: #000;
+    }
+    .send {
+        color: #fff;
+        background-color: color.$primary;
+    }
+    :focus {
+        border: 3px solid color.$primary;
+    }
+}

@@ -1,8 +1,8 @@
 //main> menu
 @use "../base/color";
 @use "../base/font_size";
+@use "../base/breakpoint";
 @use "../components/social";
-@use "../base/background.scss";
 
 //header_layout
 .header_inner h1 {
@@ -11,9 +11,12 @@
     line-height: 0;
     text-align: center;
     @extend %all_h1;
-    @media (min-width: 992px) {
+    @include breakpoint.pad_row {
         margin-bottom: 0px;
     }
+    // @media (min-width: 992px) {
+    //     margin-bottom: 0px;
+    // }
 }
 
 //header
@@ -24,11 +27,16 @@
 
     margin-bottom: 20px;
     background-color: #fff;
-    @media (min-width: 992px) {
+    @include breakpoint.pad_row {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
     }
+    // @media (min-width: 992px) {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: flex-start;
+    // }
     a {
         height: 100%;
         display: inline-block;

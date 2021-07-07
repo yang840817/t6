@@ -1,4 +1,5 @@
 @use '../base/color';
+@use '../base/reset';
 //main>carousel
 
 .carousel_img img {
@@ -6,8 +7,8 @@
 }
 //carousel
 
-$next_button: url(../../img/slider_next.gif);
-$prev_button: url(../../img/slider_prev.gif);
+$next_button: url(../img/slider_next.gif);
+$prev_button: url(../img/slider_prev.gif);
 
 @mixin carousel_button($height, $width) {
     position: absolute;

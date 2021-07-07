@@ -1,4 +1,6 @@
 //flicke
+@use '../base/breakpoint';
+@use '../base/reset';
 .flickr_inner {
     display: grid;
     grid-gap: 5px;
@@ -9,7 +11,10 @@
             width: 100%;
         }
     }
-    @media (min-width: 992px) {
+    @include breakpoint.pad_row {
         grid-template-columns: repeat(4, 1fr);
     }
+    // @media (min-width: 992px) {
+    //     grid-template-columns: repeat(4, 1fr);
+    // }
 }

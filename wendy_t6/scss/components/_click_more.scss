@@ -1,5 +1,6 @@
 //menu card_banner
 @use '../../scss/base/color';
+@use '../base/reset';
 .click_more {
     color: black;
     text-decoration: none;
@@ -12,5 +13,6 @@
     &:hover {
         background-color: color.$primary;
         color: #fff;
+        text-decoration: none;
     }
 }
