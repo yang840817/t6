@@ -1,5 +1,4 @@
 @use '../base/color';
-@use '../base/reset';
 
 @mixin header_nav($width) {
     display: inline-block;
@@ -14,7 +13,6 @@
 .social {
     font-size: 0;
     text-align: center;
-
     .facebook {
         @include header_nav(0);
     }

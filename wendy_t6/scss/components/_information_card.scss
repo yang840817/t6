@@ -1,9 +1,7 @@
+@use '../base/breakpoint';
 @use '../base/color';
 @use '../base/font_size';
-@use '../base/reset';
-@use '../base/breakpoint';
-@use '../components/date';
-@use '../components/text_more';
+@use '../components/button_more';
 $margin_auto: 0 auto;
 // main
 // card_banner
@@ -11,16 +9,14 @@ $margin_auto: 0 auto;
     margin-bottom: 20px;
 }
 .card_banner {
-    @media (min-width: 992px) {
+    padding: 20px;
+    text-align: center;
+    @include breakpoint.pad_row {
         margin-top: -50px;
     }
-    padding: 20px;
-    height: 100%;
-    text-align: center;
     h3 {
         @extend %all_h3;
     }
-
     .card {
         display: flex;
         padding: 16px;
@@ -39,7 +35,7 @@ $margin_auto: 0 auto;
         @extend %margin-bottom;
         span {
             display: block;
-            @media (min-width: 992px) {
+            @include breakpoint.pad_row {
                 display: inline-block;
                 margin-right: 10px;
             }
@@ -49,7 +45,6 @@ $margin_auto: 0 auto;
         @extend %margin-bottom;
     }
 }
-
 @mixin card($color) {
     background-color: $color;
     @media (min-width: 768px) {
@@ -60,28 +55,9 @@ $margin_auto: 0 auto;
         background-color: rgba(0, 0, 0, 0.7);
     }
 }
-
 .card_banner .row > div:nth-child(odd) .card {
     @include card(color.$light_gray);
 }
-
 .card_banner .row > div:nth-child(even) .card {
     @include card(color.$card_even);
-}
-
-.news .card {
-    background-color: initial;
-    border: 0;
-    &:nth-child(2) {
-        margin-bottom: 24px;
-    }
-    .card-text {
-        font-size: 14px;
-    }
-    .wrap_img img {
-        width: 100%;
-    }
-    .card-body {
-        padding: 0;
-    }
 }

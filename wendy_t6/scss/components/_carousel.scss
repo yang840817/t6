@@ -1,12 +1,5 @@
 @use '../base/color';
-@use '../base/reset';
-//main>carousel
-
-.carousel_img img {
-    width: 100%;
-}
 //carousel
-
 $next_button: url(../img/slider_next.gif);
 $prev_button: url(../img/slider_prev.gif);
 
@@ -21,66 +14,16 @@ $prev_button: url(../img/slider_prev.gif);
         background-position: top $height left 0px;
     }
 }
-.carousel_img .next_banner {
-    @include carousel_button(119px, 40px);
-    background: $next_button;
-}
-.carousel_img .previous_banner {
-    @include carousel_button(119px, 40px);
-    background: $prev_button;
-}
-
-.feature {
-    display: none;
-    @media (min-width: 992px) {
-        display: block;
+.carousel_img {
+    img {
+        width: 100%;
+    }
+    .next_banner {
+        @include carousel_button(119px, 40px);
+        background: $next_button;
+    }
+    .previous_banner {
+        @include carousel_button(119px, 40px);
+        background: $prev_button;
     }
 }
-// @mixin feature_button($direction, $direction_value) {
-//     position: absolute;
-//     left: $direction_value;
-//     width: fit-content;
-//     color: grey;
-//     &:hover {
-//         color: lawngreen;
-//     }
-//     i {
-//         font-size: 20px;
-//         line-height: 30px;
-//     }
-// }
-
-%feature_button {
-    width: fit-content;
-    color: grey;
-    &:hover {
-        color: color.$feature_hover;
-    }
-    i {
-        font-size: 20px;
-        line-height: 30px;
-    }
-}
-.feature .feature_prev {
-    // @include feature_button(right, 10px);
-    @extend %feature_button;
-}
-.feature .feature_next {
-    // @include feature_button(0, 0);
-    @extend %feature_button;
-}
-//feature
-.feature {
-    .carousel {
-        position: initial;
-    }
-    .carousel-inner {
-        position: initial;
-    }
-    .feature_button {
-        height: 30px;
-        width: 50px;
-        position: relative;
-    }
-}
-//menu feature

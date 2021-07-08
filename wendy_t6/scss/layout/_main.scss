@@ -2,43 +2,45 @@
 @use '../base/font_size';
 @use '../base/background.scss';
 @use '../base/breakpoint.scss';
-@use '../components/mobile_menu_button';
-@use '../components/menu_nav';
-@use '../components/search_input';
 @use '../components/carousel';
-@use '../components/main_card';
+@use '../components/newscard';
+@use '../components/information_card';
 @use '../components/choose_circle';
 @use '../components/text_more.scss';
-@use '../components/click_more';
 @use '../components/swiper.scss';
-
+@use '../components/featture_carousel';
 %margin-bottom {
     margin-bottom: 20px;
-}
-.background_theme {
-    background: #fff;
-    box-shadow: background.$box-shadow;
 }
 @mixin layout_padding {
     padding-left: 35px;
     padding-right: 35px;
 }
-//information
+main {
+    margin-bottom: 80px;
+}
+.background_theme {
+    background: background.$sub_background;
+    box-shadow: background.$box-shadow;
+}
+
+.card_banner {
+    @include layout_padding;
+    padding-bottom: 80px;
+}
 .information {
     margin-bottom: 50px;
     h2 {
         @extend %all_h2;
         @extend %margin-bottom;
     }
+    @include layout_padding;
 }
 .welcome {
     margin-bottom: 30px;
     @include breakpoint.pad_row {
         margin-bottom: 0;
     }
-    // @media (min-width: 992px) {
-    //     margin-bottom: 0;
-    // }
     p {
         word-spacing: 2px;
         color: #000;
@@ -48,55 +50,36 @@
         margin-bottom: 20px;
     }
 }
-
-//choose
-.choose div {
-    display: flex;
-    align-items: baseline;
-    padding: 20px 0px;
-    border-bottom: 1px solid color.$dark_gray;
-    @media (min-width: 992px) {
-        // align-items: initial;
-        padding: 20px;
+.choose {
+    div {
+        display: flex;
+        align-items: baseline;
+        padding: 20px 0px;
+        border-bottom: 1px solid color.$dark_gray;
+        @media (min-width: 992px) {
+            padding: 20px;
+        }
     }
     p {
         margin-bottom: 0;
     }
 }
-//news
-main {
-    margin-bottom: 80px;
-}
-
-//feature
 .feature {
+    @include layout_padding;
+    padding-bottom: 100px;
     &:before {
         content: '';
         display: block;
         border: 1px solid color.$dark_gray;
-        margin-bottom: 50px;
     }
     h2 {
         @extend %all_h2;
         margin-bottom: 30px;
     }
     .feature_inner {
+        padding-top: 50px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-}
-
-//together adjust
-
-.card_banner {
-    @include layout_padding;
-    padding-bottom: 80px;
-}
-.information {
-    @include layout_padding;
-}
-.feature {
-    @include layout_padding;
-    padding-bottom: 100px;
 }

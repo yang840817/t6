@@ -3,7 +3,6 @@
         @content;
     }
 }
-
 @mixin mobile_row {
     @media (min-width: 576px) {
         @content;

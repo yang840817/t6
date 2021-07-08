@@ -1,9 +1,0 @@
-@use '../base/color';
-@use '../base/reset';
-.subscribe textarea {
-    padding: 10px;
-    width: 100%;
-    margin-bottom: 20px;
-    resize: none;
-    border: 1px solid color.$dark_gray;
-}

@@ -1,30 +1,15 @@
 //main> menu
-@use "../base/color";
-@use "../base/font_size";
-@use "../base/breakpoint";
-@use "../components/social";
+@use '../base/color';
+@use '../base/font_size';
+@use '../base/breakpoint';
+@use '../components/social';
+@use '../components/menu';
+@use '../components/search_input';
 
-//header_layout
-.header_inner h1 {
-    margin-bottom: 20px;
-    margin-top: 0;
-    line-height: 0;
-    text-align: center;
-    @extend %all_h1;
-    @include breakpoint.pad_row {
-        margin-bottom: 0px;
-    }
-    // @media (min-width: 992px) {
-    //     margin-bottom: 0px;
-    // }
-}
-
-//header
 .header_inner {
     padding: 32px;
     border: 1px solid #000;
     filter: drop-shadow(2px 2px 5px color.$default_gray);
-
     margin-bottom: 20px;
     background-color: #fff;
     @include breakpoint.pad_row {
@@ -32,11 +17,16 @@
         justify-content: space-between;
         align-items: flex-start;
     }
-    // @media (min-width: 992px) {
-    //     display: flex;
-    //     justify-content: space-between;
-    //     align-items: flex-start;
-    // }
+    h1 {
+        margin-bottom: 20px;
+        margin-top: 0;
+        line-height: 0;
+        text-align: center;
+        @extend %all_h1;
+        @include breakpoint.pad_row {
+            margin-bottom: 0px;
+        }
+    }
     a {
         height: 100%;
         display: inline-block;

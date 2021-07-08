@@ -1,0 +1,36 @@
+@use '../base/color';
+@use '../base/breakpoint';
+%feature_button {
+    width: fit-content;
+    color: grey;
+    &:hover {
+        color: color.$feature_hover;
+    }
+    i {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+.feature {
+    display: none;
+    @include breakpoint.pad_row {
+        display: block;
+    }
+    .feature_prev {
+        @extend %feature_button;
+    }
+    .feature_next {
+        @extend %feature_button;
+    }
+    .carousel {
+        position: initial;
+    }
+    .carousel-inner {
+        position: initial;
+    }
+    .feature_button {
+        height: 30px;
+        width: 50px;
+        position: relative;
+    }
+}

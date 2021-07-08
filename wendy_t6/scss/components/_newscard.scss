@@ -1,0 +1,19 @@
+@use '../components/date';
+@use '../components/text_more';
+
+.news .card {
+    background-color: initial;
+    border: 0;
+    &:nth-child(2) {
+        margin-bottom: 24px;
+    }
+    .card-text {
+        font-size: 14px;
+    }
+    .wrap_img img {
+        width: 100%;
+    }
+    .card-body {
+        padding: 0;
+    }
+}

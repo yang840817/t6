@@ -1,6 +1,6 @@
 //header social
 @use '../base/color';
-@use '../base/reset';
+@use '../base/breakpoint';
 
 //main
 .menu {
@@ -9,8 +9,6 @@
         padding: 0;
         filter: drop-shadow(1px 1px 3px rgb(51, 45, 45));
         z-index: 2;
-        .container {
-        }
     }
 
     .container {
@@ -27,12 +25,12 @@
     }
     ul {
         text-align: center;
-        @media (min-width: 992px) {
+        @include breakpoint.pad_row {
             text-align: left;
         }
     }
     li {
-        @media (min-width: 992px) {
+        @include breakpoint.pad_row {
             border-right: 1px color.$dark_gray solid;
         }
     }
@@ -42,5 +40,13 @@
             color: #fff;
             background-color: color.$primary;
         }
+    }
+}
+
+.menu button {
+    background-color: color.$light_gray;
+    width: 100%;
+    &:focus {
+        box-shadow: initial;
     }
 }
