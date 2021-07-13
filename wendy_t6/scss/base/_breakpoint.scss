@@ -1,10 +1,34 @@
-@mixin pad_row {
-    @media (min-width: 992px) {
-        @content;
-    }
-}
-@mixin mobile_row {
-    @media (min-width: 576px) {
+// @mixin pad_row {
+//     @media (min-width: 992px) {
+//         @content;
+//     }
+// }
+// @mixin mobile_row {
+//     @media (min-width: 576px) {
+//         @content;
+//     }
+// }
+
+// body {
+//     @include pad_row {
+//         color: red;
+//     }
+// }
+// -----
+//目標
+// body {
+//     @include min_width(pad) {
+//         color: red;
+//     }
+// }
+//想法
+$mobile: 576px;
+$pad: 768px;
+$pc: 992px;
+$pc_lg: 1200px;
+
+@mixin min_width($value) {
+    @media (min-width: $value) {
         @content;
     }
 }

@@ -1,11 +1,4 @@
 @use '../base/color';
-.subscribe textarea {
-    padding: 10px;
-    width: 100%;
-    margin-bottom: 20px;
-    resize: none;
-    border: 1px solid color.$dark_gray;
-}
 .subscribe {
     button {
         border: 0;
@@ -20,6 +13,11 @@
     }
     textarea {
         background-color: color.$light_gray;
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 20px;
+        resize: none;
+        border: 1px solid color.$dark_gray;
     }
 }
 .subscribe_button {

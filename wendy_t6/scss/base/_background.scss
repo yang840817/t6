@@ -1,3 +1,9 @@
 @use '../base/color';
 $sub_background: url(../img/subbg.gif);
 $box-shadow: 2px 2px 5px color.$default_gray;
+$primary_background: url(../img/bg.jpg);
+body {
+    min-width: 360px;
+    background: linear-gradient(to bottom, black 80px, transparent 80px, transparent 90%, black 90%, black 100%),
+        $primary_background;
+}

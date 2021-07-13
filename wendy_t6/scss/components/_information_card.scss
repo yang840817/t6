@@ -2,20 +2,23 @@
 @use '../base/color';
 @use '../base/font_size';
 @use '../components/button_more';
-$margin_auto: 0 auto;
 // main
 // card_banner
-%margin-bottom {
-    margin-bottom: 20px;
+@mixin card($color) {
+    background-color: $color;
+    @include breakpoint.min_width(breakpoint.$pad) {
+        background-color: color.$light_gray;
+    }
+    &:hover {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
 }
 .card_banner {
     padding: 20px;
     text-align: center;
-    @include breakpoint.pad_row {
+    @include breakpoint.min_width(breakpoint.$pc) {
         margin-top: -50px;
-    }
-    h3 {
-        @extend %all_h3;
     }
     .card {
         display: flex;
@@ -32,29 +35,27 @@ $margin_auto: 0 auto;
         }
     }
     .card-title {
-        @extend %margin-bottom;
+        align-self: center;
+        @include breakpoint.min_width(breakpoint.$pad) {
+            width: min-content;
+        }
+        @include breakpoint.min_width(breakpoint.$pc_lg) {
+            width: auto;
+        }
+        margin-bottom: 20px;
         span {
             display: block;
-            @include breakpoint.pad_row {
+            @include breakpoint.min_width(breakpoint.$pc) {
                 display: inline-block;
                 margin-right: 10px;
             }
         }
     }
     .wrap_img {
-        @extend %margin-bottom;
+        margin-bottom: 20px;
     }
 }
-@mixin card($color) {
-    background-color: $color;
-    @media (min-width: 768px) {
-        background-color: color.$light_gray;
-    }
-    &:hover {
-        color: #fff;
-        background-color: rgba(0, 0, 0, 0.7);
-    }
-}
+
 .card_banner .row > div:nth-child(odd) .card {
     @include card(color.$light_gray);
 }

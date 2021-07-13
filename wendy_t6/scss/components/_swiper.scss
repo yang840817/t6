@@ -1,11 +1,12 @@
 @use '../base/breakpoint';
 @use '../base/color';
+
 %swiper_button {
     color: color.$dark_gray;
 }
 .feature_swiper {
     padding: 35px;
-    @include breakpoint.pad_row {
+    @include breakpoint.min_width(breakpoint.$pc) {
         display: none;
     }
     .swiper-button-prev {
@@ -19,5 +20,7 @@
     }
     img {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }

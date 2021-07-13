@@ -9,12 +9,13 @@
 @use '../components/text_more.scss';
 @use '../components/swiper.scss';
 @use '../components/featture_carousel';
-%margin-bottom {
-    margin-bottom: 20px;
-}
+
 @mixin layout_padding {
     padding-left: 35px;
     padding-right: 35px;
+}
+%h2_margin {
+    margin-bottom: 20px;
 }
 main {
     margin-bottom: 80px;
@@ -28,17 +29,16 @@ main {
     @include layout_padding;
     padding-bottom: 80px;
 }
-.information {
+.description {
     margin-bottom: 50px;
-    h2 {
-        @extend %all_h2;
-        @extend %margin-bottom;
-    }
     @include layout_padding;
+    h2 {
+        @extend %h2_margin;
+    }
 }
 .welcome {
     margin-bottom: 30px;
-    @include breakpoint.pad_row {
+    @include breakpoint.min_width(breakpoint.$pc) {
         margin-bottom: 0;
     }
     p {
@@ -51,17 +51,21 @@ main {
     }
 }
 .choose {
+    margin-bottom: 30px;
+    @include breakpoint.min_width(breakpoint.$pc) {
+        margin-bottom: 0;
+    }
     div {
         display: flex;
         align-items: baseline;
-        padding: 20px 0px;
+        padding: 20px;
         border-bottom: 1px solid color.$dark_gray;
-        @media (min-width: 992px) {
-            padding: 20px;
-        }
     }
     p {
         margin-bottom: 0;
+    }
+    div:nth-child(2) {
+        padding-top: 0px;
     }
 }
 .feature {
@@ -73,8 +77,7 @@ main {
         border: 1px solid color.$dark_gray;
     }
     h2 {
-        @extend %all_h2;
-        margin-bottom: 30px;
+        @extend %h2_margin;
     }
     .feature_inner {
         padding-top: 50px;

@@ -13,16 +13,33 @@
     padding: 50px 50px;
     box-shadow: background.$box-shadow;
     background: background.$sub_background;
-    h2 {
+    h4 {
         margin-bottom: 20px;
-        @extend %all_h2;
     }
 }
-.footer_bottom {
+%spacing {
+    margin-bottom: 30px;
+    @include breakpoint.min_width(breakpoint.$pc) {
+        margin-bottom: 0;
+    }
+}
+.tweets {
+    @extend %spacing;
+    p {
+        margin-bottom: 0;
+    }
+}
+.testimonials {
+    @extend %spacing;
+}
+.personal {
+    @extend %spacing;
+}
+.footer_link {
     padding: 20px 10px;
     justify-content: space-between;
     background-color: #000;
-    @include breakpoint.pad_row {
+    @include breakpoint.min_width(breakpoint.$pc) {
         display: flex;
     }
     a {

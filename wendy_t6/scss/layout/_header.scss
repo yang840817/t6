@@ -12,18 +12,16 @@
     filter: drop-shadow(2px 2px 5px color.$default_gray);
     margin-bottom: 20px;
     background-color: #fff;
-    @include breakpoint.pad_row {
+    @include breakpoint.min_width(breakpoint.$pc) {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
     }
     h1 {
         margin-bottom: 20px;
         margin-top: 0;
         line-height: 0;
         text-align: center;
-        @extend %all_h1;
-        @include breakpoint.pad_row {
+        @include breakpoint.min_width(breakpoint.$pc) {
             margin-bottom: 0px;
         }
     }

@@ -10,8 +10,11 @@
         filter: drop-shadow(1px 1px 3px rgb(51, 45, 45));
         z-index: 2;
     }
-
     .container {
+        background-color: color.$light_gray;
+        @include breakpoint.min_width(breakpoint.$pc) {
+            background-color: #fff;
+        }
         padding: 0;
         button {
             height: 54px;
@@ -25,12 +28,12 @@
     }
     ul {
         text-align: center;
-        @include breakpoint.pad_row {
+        @include breakpoint.min_width(breakpoint.$pc) {
             text-align: left;
         }
     }
     li {
-        @include breakpoint.pad_row {
+        @include breakpoint.min_width(breakpoint.$pc) {
             border-right: 1px color.$dark_gray solid;
         }
     }
@@ -41,12 +44,11 @@
             background-color: color.$primary;
         }
     }
-}
-
-.menu button {
-    background-color: color.$light_gray;
-    width: 100%;
-    &:focus {
-        box-shadow: initial;
+    button {
+        border: 0;
+        background-color: color.$light_gray;
+        &:focus {
+            box-shadow: initial;
+        }
     }
 }

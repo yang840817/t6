@@ -1,4 +1,5 @@
 @use '../base/color';
+@use '../base/breakpoint';
 //carousel
 $next_button: url(../img/slider_next.gif);
 $prev_button: url(../img/slider_prev.gif);
@@ -10,14 +11,13 @@ $prev_button: url(../img/slider_prev.gif);
     margin: auto;
     height: $height;
     width: $width;
+
+    background-position: 0% 0%;
     &:hover {
         background-position: top $height left 0px;
     }
 }
 .carousel_img {
-    img {
-        width: 100%;
-    }
     .next_banner {
         @include carousel_button(119px, 40px);
         background: $next_button;
@@ -25,5 +25,17 @@ $prev_button: url(../img/slider_prev.gif);
     .previous_banner {
         @include carousel_button(119px, 40px);
         background: $prev_button;
+    }
+    .carousel-item {
+        height: 400px;
+        @include breakpoint.min_width(breakpoint.$pc) {
+            height: auto;
+        }
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
     }
 }

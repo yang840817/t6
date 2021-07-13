@@ -13,7 +13,7 @@
 }
 .feature {
     display: none;
-    @include breakpoint.pad_row {
+    @include breakpoint.min_width(breakpoint.$pc) {
         display: block;
     }
     .feature_prev {

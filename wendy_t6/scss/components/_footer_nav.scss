@@ -1,22 +1,23 @@
 @use '../base/color';
+@use '../base/breakpoint';
 //footer copyright
-.footer_bottom nav {
+.footer_link nav {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    @media (min-width: 992px) {
+    @include breakpoint.min_width(breakpoint.$pc) {
         margin-top: 0;
         flex-direction: row;
     }
     a {
-        @media (min-width: 992px) {
+        @include breakpoint.min_width(breakpoint.$pc) {
             padding: 0 10px;
         }
         &:first-child {
             color: color.$primary;
             font-weight: 500;
         }
-        @media (min-width: 992px) {
+        @include breakpoint.min_width(breakpoint.$pc) {
             & + a {
                 border-left: 2px solid grey;
             }

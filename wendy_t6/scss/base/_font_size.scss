@@ -1,25 +1,12 @@
-%all_h2 {
-    font-size: 25px;
-}
-%all_h1 {
+h1 {
     font-size: 0;
 }
-%all_h3 {
+main h2 {
+    font-size: 25px;
+}
+.card_banner h3 {
     font-size: 18px;
 }
-// $all_h2: 25px;
-// 1
-// @mixin font-size($font-size, $color){
-//     font-size: $font-size;
-//     color: $color;
-// }
-// h2{
-//     @include font-size(25px)
-// }
-// h4{
-//     @include font-size(18px)
-// }
-
-// %margin-bottom {
-//     margin-bottom: 20px;
-// }
+.contact h4 {
+    font-size: 22px;
+}

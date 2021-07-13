@@ -1,16 +1,16 @@
 //flicke
 @use '../base/breakpoint';
+// @import '../base/breakpoint';
 .flickr_inner {
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(6, 1fr);
     .item {
-        height: fit-content;
         img {
             width: 100%;
         }
     }
-    @include breakpoint.pad_row {
+    grid-template-columns: repeat(6, 1fr);
+    @include breakpoint.min_width(breakpoint.$pc) {
         grid-template-columns: repeat(4, 1fr);
     }
 }

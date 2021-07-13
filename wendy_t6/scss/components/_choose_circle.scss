@@ -1,16 +1,16 @@
 @use '../base/font_size';
 @use '../base/color';
-$font-size: 50px;
+$circle-size: 50px;
 .choose {
     i {
         margin-right: 20px;
         border-radius: 50px;
         font-size: 20px;
-        height: $font-size;
-        width: $font-size;
+        height: $circle-size;
+        width: $circle-size;
         color: #fff;
         text-align: center;
-        line-height: $font-size;
+        line-height: $circle-size;
         flex-shrink: 0;
         background-color: color.$dark_gray;
         &:hover {
