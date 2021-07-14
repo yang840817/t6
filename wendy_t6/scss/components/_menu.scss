@@ -1,7 +1,7 @@
 //header social
 @use '../base/color';
 @use '../base/breakpoint';
-
+@use '../components/search_input';
 //main
 .menu {
     background: linear-gradient(to bottom, transparent 30px, #fff 30px, #fff 100%);
@@ -50,5 +50,18 @@
         &:focus {
             box-shadow: initial;
         }
+    }
+    .search {
+        // 排右邊
+        //用bootstrap grid排
+        // 調整media query
+        @include breakpoint.min_width(breakpoint.$pc) {
+            padding-right: 10px;
+            width: 100%;
+            background-color: #fff;
+        }
+        //層級往上
+        position: relative;
+        z-index: 2;
     }
 }

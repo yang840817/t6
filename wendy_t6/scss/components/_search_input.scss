@@ -2,28 +2,19 @@
 @use '../base/breakpoint';
 //search
 .search {
-    // 排右邊
-    // 調整media query
-    @include breakpoint.min_width(breakpoint.$pc) {
-        padding-right: 10px;
-        width: 100%;
-        background-color: #fff;
-    }
     // 放大鏡放進去
     input {
         background: url(../img/search.png) no-repeat color.$light_gray;
         background-position: top 50% right 1%;
         &:focus {
-            background: url(../img/search.png) no-repeat color.$light_gray;
-            background-position: top 50% right 1%;
+            background-color: color.$light_gray; // change default style
+            // background-position: top 50% right 1%;
             box-shadow: initial;
             // 修改原始編框設定
             border: 2px solid color.$primary;
         }
     }
     // 其他
-    position: relative;
-    z-index: 2;
     padding: 8px 8px;
     filter: drop-shadow(1px 1px 3px rgb(51, 45, 45));
 }

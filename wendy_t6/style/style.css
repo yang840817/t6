@@ -89,6 +89,20 @@ main h2 {
   color: #81b700;
 }
 
+.search {
+  padding: 8px 8px;
+  filter: drop-shadow(1px 1px 3px #332d2d);
+}
+.search input {
+  background: url(../img/search.png) no-repeat #e8e8e8;
+  background-position: top 50% right 1%;
+}
+.search input:focus {
+  background-color: #e8e8e8;
+  box-shadow: initial;
+  border: 2px solid #81b700;
+}
+
 .menu {
   background: linear-gradient(to bottom, transparent 30px, #fff 30px, #fff 100%);
 }
@@ -142,29 +156,16 @@ main h2 {
 .menu button:focus {
   box-shadow: initial;
 }
-
-.search {
+.menu .search {
   position: relative;
   z-index: 2;
-  padding: 8px 8px;
-  filter: drop-shadow(1px 1px 3px #332d2d);
 }
 @media (min-width: 992px) {
-  .search {
+  .menu .search {
     padding-right: 10px;
     width: 100%;
     background-color: #fff;
   }
-}
-.search input {
-  background: url(../img/search.png) no-repeat #e8e8e8;
-  background-position: top 50% right 1%;
-}
-.search input:focus {
-  background: url(../img/search.png) no-repeat #e8e8e8;
-  background-position: top 50% right 1%;
-  box-shadow: initial;
-  border: 2px solid #81b700;
 }
 
 .header_inner {
@@ -704,10 +705,6 @@ main {
 }
 .footer_link a:hover {
   color: #fff;
-}
-
-* {
-  outline: 1px solid red;
 }
 
 /*# sourceMappingURL=style.css.map */

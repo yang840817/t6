@@ -31,6 +31,7 @@ $prev_button: url(../img/slider_prev.gif);
         @include breakpoint.min_width(breakpoint.$pc) {
             height: auto;
         }
+
         img {
             height: 100%;
             width: 100%;
