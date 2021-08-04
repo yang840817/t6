@@ -1,0 +1,27 @@
+@use '../abstracts/breakpoint';
+// 木紋背景
+$bg_wood: url(../images/bg.jpg);
+
+// 白條紋背景
+// %whit_line {
+//   background: url(./images/subbg.gif) repeat;
+// }
+
+$sm: 3%, 3%, 90%, 90%;
+$md: 3%, 3%, 90%, 90%;
+$bg_wood: url(../images/bg.jpg);
+@mixin background($top_color, $top_transparent, $bg_transparent, $end_color) {
+  background:
+    linear-gradient(black $top_color, transparent $top_transparent, transparent $bg_transparent, black $end_color), $bg_wood;
+}
+
+body {
+  @include background(0%, 0%, 95%, 95%);
+  @include breakpoint.tablet {
+    @include background(32px, 32px, 90%, 90%)
+  }
+}
+
+@mixin shadow {
+  box-shadow: black 0 0 2px;
+}

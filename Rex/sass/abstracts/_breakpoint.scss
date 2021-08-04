@@ -1,0 +1,23 @@
+// 裝置斷點
+$mobile: 576px;
+$tablet: 768px;
+$desktop: 992px;
+
+// 手機
+@mixin mobile {
+  @media (min-width: $mobile) {
+    @content;
+  }
+}
+// 平板
+@mixin tablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+// 桌機
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}

@@ -1,0 +1,147 @@
+@use '../abstracts/background';
+@use '../abstracts/breakpoint';
+@use '../utilities/color' as *;
+
+@mixin subbg {
+    background: url(../images/subbg.gif) repeat;
+    box-shadow: 0px 0px 5px grey;;
+}
+header .header_container {
+  flex-wrap: wrap;
+}
+.logo_nav {
+  @include subbg;
+}
+
+h1 {
+  max-width: 70%;
+  display: inline-block;
+}
+h1 a {
+  display: block;
+}
+h1 img {
+  width: 100%;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler {
+  color: rgba(0,0,0,.55);
+  border-color: rgba(0,0,0,.1);
+}
+
+.phone_area {
+  display: none;
+  text-align: end;
+}
+@include breakpoint.tablet {
+  .phone_area {
+    display: inline-block;
+  } 
+}
+a.social_icon  {
+  display: inline-block;
+}
+
+.social_icon {
+	background: url(../images/social.png) no-repeat 0 0;
+	background-size: 89px 27px;
+	width: 14px;
+	height: 14px;
+}
+
+@mixin social_icon ($x) {
+  display: inline-block;
+  background: url(../images/social.png) no-repeat $x 0;
+	&:hover {
+    background-position: $x -14px;
+  }
+  background-size: 89px 27px;
+	width: 14px;
+	height: 14px;
+}
+.social_icon_1 {
+  @include social_icon(0)
+}
+.social_icon_2 {
+  @include social_icon(-19px)
+}
+.social_icon_3 {
+  @include social_icon(-37px)
+}
+.social_icon_4 {
+  @include social_icon(-56px)
+}
+.social_icon_5 {
+  @include social_icon(-75px)
+}
+.tel_num {
+  display: block;
+  font-size: .8rem;
+  color: $black;
+}
+.navbar-collapse {
+  background-color: white;
+}
+@include breakpoint.tablet {
+  .navbar-collapse {
+    background-color: unset;
+  }
+}
+.search_icon {
+  font-size: .8rem;
+  flex: 0 0 auto;
+  width: 100%;
+  background: no-repeat right 5% bottom 50% url(../images/search.png);
+}
+
+// .navbar-nav .nav-link {
+//   padding: .75rem;
+// }
+.navbar-expand-md .navbar-nav .nav-link {
+  padding: .75rem;
+  @include breakpoint.tablet {
+    padding: 1rem 1.5rem;
+  }
+}
+
+.navbar-collapse ul li a {
+  // @include breakpoint.tablet {
+  //   padding: 1rem;
+  // }
+  color: $font_grey;
+  font-size: .8rem;
+  &:hover {
+    background-color: $green;
+    color: white;
+  }
+}
+
+@include breakpoint.tablet {
+  .search_form {
+    order: 2;
+    background-color: white;
+    @include background.shadow;
+    background: white;
+    padding: .5rem 1rem;
+    flex: 0 0 25%;
+  }
+  .search_form .d-flex {
+    background-color: #f3f3f3;
+  }
+  .list_area {
+    order: 1;
+    background-color: white;
+    @include background.shadow;
+    flex: 0 0 74%;
+    // height: 54px;
+  }
+  li.nav-item {
+    border-right: #EAEAEA 1px solid;
+  }
+}
+
+.form-control {
+  border-radius: 0;
+}
