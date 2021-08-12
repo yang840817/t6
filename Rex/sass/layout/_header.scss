@@ -1,147 +1,143 @@
-@use '../abstracts/background';
-@use '../abstracts/breakpoint';
+@use '../abstracts/background' as *;
+@use '../abstracts/breakpoint' as *;
 @use '../utilities/color' as *;
 
-@mixin subbg {
-    background: url(../images/subbg.gif) repeat;
-    box-shadow: 0px 0px 5px grey;;
-}
 header .header_container {
   flex-wrap: wrap;
 }
 .logo_nav {
-  @include subbg;
+  padding: 1rem;
+  @extend %white_line;
+  @include desktop {
+    padding: 2rem;
+  }
 }
 
 h1 {
   max-width: 70%;
   display: inline-block;
+  a {
+    display: block;
+  }
+  img {
+    width: 100%;
+  }
 }
-h1 a {
-  display: block;
-}
-h1 img {
-  width: 100%;
-}
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
+
 .navbar-toggler {
   color: rgba(0,0,0,.55);
   border-color: rgba(0,0,0,.1);
+  &-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
 }
 
 .phone_area {
   display: none;
   text-align: end;
 }
-@include breakpoint.tablet {
+@include tablet {
   .phone_area {
     display: inline-block;
   } 
 }
+// 社群icon
 a.social_icon  {
   display: inline-block;
 }
-
-.social_icon {
-	background: url(../images/social.png) no-repeat 0 0;
-	background-size: 89px 27px;
-	width: 14px;
-	height: 14px;
-}
-
 @mixin social_icon ($x) {
   display: inline-block;
   background: url(../images/social.png) no-repeat $x 0;
 	&:hover {
-    background-position: $x -14px;
+    background-position: $x -27px;
   }
-  background-size: 89px 27px;
-	width: 14px;
-	height: 14px;
+	width: 27px;
+	height: 27px;
 }
 .social_icon_1 {
   @include social_icon(0)
 }
 .social_icon_2 {
-  @include social_icon(-19px)
-}
-.social_icon_3 {
   @include social_icon(-37px)
 }
+.social_icon_3 {
+  @include social_icon(-74px)
+}
 .social_icon_4 {
-  @include social_icon(-56px)
+  @include social_icon(-111px)
 }
 .social_icon_5 {
-  @include social_icon(-75px)
+  @include social_icon(-150px)
 }
 .tel_num {
   display: block;
   font-size: .8rem;
-  color: $black;
+  color: black;
+  a {
+    display: inline;
+    text-decoration: none;
+  }
 }
 .navbar-collapse {
   background-color: white;
 }
-@include breakpoint.tablet {
+@include tablet {
   .navbar-collapse {
-    background-color: unset;
+    background: linear-gradient(transparent 50%, white 50%);
   }
 }
-.search_icon {
-  font-size: .8rem;
-  flex: 0 0 auto;
-  width: 100%;
-  background: no-repeat right 5% bottom 50% url(../images/search.png);
-}
 
-// .navbar-nav .nav-link {
-//   padding: .75rem;
-// }
 .navbar-expand-md .navbar-nav .nav-link {
   padding: .75rem;
-  @include breakpoint.tablet {
-    padding: 1rem 1.5rem;
+  @include tablet {
+    padding: 1rem;
   }
 }
 
 .navbar-collapse ul li a {
-  // @include breakpoint.tablet {
-  //   padding: 1rem;
-  // }
-  color: $font_grey;
+  color: $font_grey1;
   font-size: .8rem;
   &:hover {
     background-color: $green;
     color: white;
   }
 }
-
-@include breakpoint.tablet {
+.search_form .d-flex {
+  background-color: #f3f3f3;
+  margin: .75rem;
+  @include tablet {
+    margin: unset;
+  }
+}
+@include tablet {
   .search_form {
     order: 2;
     background-color: white;
-    @include background.shadow;
     background: white;
     padding: .5rem 1rem;
-    flex: 0 0 25%;
-  }
-  .search_form .d-flex {
-    background-color: #f3f3f3;
+    margin-left: .5rem;
+    flex: 1 1 auto;
+    // box-shadow: $shadow_x $shadow_y $blur $陰影顏色;
+    @include shadow(0, 0, 2px);
   }
   .list_area {
     order: 1;
     background-color: white;
-    @include background.shadow;
-    flex: 0 0 74%;
-    // height: 54px;
+    flex: 1 1 70%;
+    @include shadow(0, 0, 2px);
   }
   li.nav-item {
     border-right: #EAEAEA 1px solid;
   }
 }
-
+// 搜尋列放大鏡
+.search_icon {
+  font-size: .8rem;
+  flex: 0 0 auto;
+  width: 100%;
+  background: no-repeat right 5% bottom 50% url(../images/search.png);
+}
 .form-control {
   border-radius: 0;
+  padding: 7px .75rem;
 }

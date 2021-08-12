@@ -1,0 +1,21 @@
+@use '../utilities/color' as *;
+%flex_gap {
+  display: flex;
+  gap: 2rem;
+}
+.news {
+  @extend %flex_gap;
+  &_imgbox {
+    flex: 1 0 40%;
+  }
+  &_content {
+    @extend %flex_gap;
+    flex-direction: column;
+  }
+  &_date {
+    flex: 0;
+    padding: .2rem .5rem;
+    background-color: $green;
+    color: white;
+  }
+}

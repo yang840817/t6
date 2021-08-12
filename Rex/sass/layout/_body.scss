@@ -1,14 +1,11 @@
-@use '../abstracts/breakpoint';
-@use '../abstracts/background';
+@use '../abstracts/breakpoint' as *;
+@use '../abstracts/background' as *;
 
 body {
   max-width: 1024px;
   margin: 0 auto;
+  @include background(0%, 95%);
+  @include tablet {
+    @include background(5rem, 95%)
+  }
 }
-
-// body %bg_wood {
-//   background: linear-gradient(black 3%, transparent 3%, transparent 90%, black 90%);
-// }
-
-// background: linear-gradient(black 3%, transparent 3%, transparent 90%, black 90%);
-

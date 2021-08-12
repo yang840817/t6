@@ -1,0 +1,13 @@
+@use '../abstracts/breakpoint' as *;
+@use '../abstracts/background' as *;
+@use '../utilities/color' as *;
+
+@use '../components/card' as *;
+@use '../components/arrowcircle';
+footer {
+  @extend %white_line;
+  @include tablet {
+    @include shadow(0, 0, 2px);
+  }
+  padding: 0 40px;
+}

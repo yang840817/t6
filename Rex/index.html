@@ -4,18 +4,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- CSS only -->
+  <!-- bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
     rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
     crossorigin="anonymous">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
   <title>T6 Rex</title>
+  <!-- my css -->
   <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
   <header>
     <nav class="navbar navbar-expand-md header_container py-0">
-      <div class="col-12 container-fluid logo_nav py-3">
+      <div class="col-12 container-fluid logo_nav">
         <h1 class="mb-0"><a href="##"><img src="./images/logo.png" alt="bp_logo" title="BUSINESS PLANET"></a></h1>
         <div class="phone_area">
           <a href="##" class="social_icon_1"></a>
@@ -23,7 +26,7 @@
           <a href="##" class="social_icon_3"></a>
           <a href="##" class="social_icon_4"></a>
           <a href="##" class="social_icon_5"></a>
-          <a href="##" class="tel_num">Call Us Now: +1 (777) 784-25-43</a>
+          <span class="tel_num">Call Us Now: <a href="tel:+1777784-25-43" class="tel_num">+1 (777) 784-25-43</a></span>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -93,18 +96,145 @@
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="carousel_button_prev" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="carousel_button_next" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    <article>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 gx-0 gx-md-3 service">
+        <div class="col">
+          <div class="item">
+            <h2>GROWTH STRATEGES</h2>
+            <img class="item_img" src="../images/p1.png" alt="">
+            <div class="item_text">
+              <p class="item_p">Vestibulum dignissm, dui achendrerit blandit, sapien orcidutum nibh,vel suscipit augue nibh in enim. Nullam dignissm euismodnunc at</p>
+            </div>
+            <button class="item_button">More</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="item">
+            <h2>PERFECT SUPPORT</h2>
+            <img class="item_img" src="../images/p2.png" alt="">
+            <div class="item_text">
+              <p class="item_p">Donec semper, dolor eu iaculis laoreet, erat diam interdum nisi, vel consequat leo neque in ante. Curabitur fringilla tristique nisl ut</p>
+            </div>
+            <button class="item_button">More</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="item">
+            <h2>PARTNERS PROGRAMS</h2>
+            <img class="item_img" src="../images/p3.png" alt="">
+            <div class="item_text">
+              <p class="item_p">Nunc pellentesque malesuada enim utdignissim. Etiam aliquam malesuada magna,vel scelerisque lectus pharetra quis. Cras</p>
+            </div>
+            <button class="item_button">More</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="item">
+            <h2>PREMIUME SERVICES</h2>
+            <img class="item_img" src="../images/p4.png" alt="">
+            <div class="item_text">
+              <p class="item_p">Duis molestie commodo sapien, non mollis diam consequat in. Nulla blandit viverra sodales. Donec sit amet diam neque</p>
+            </div>
+            <button class="item_button">More</button>
+          </div>
+        </div>
+      </div>
+      <section>
+        <div class="row row-cols-1 row-cols-md-3 gx-0 gx-md-3">
+          <div class="activity">
+            <h3>WELCOME</h3>
+            <div><img src="./images/welcome.jpg" class="img-fluid" alt="welcome"></div>
+            <p>Curabitur velit nisl,porttitor molestie quis, lacinia eget purus. Suspendisse ipsum massa,ruturm in
+            hendrerit malesuada, fermentum id erat...<a href="##">more</a></p>
+          </div>
+          <div class="activity">
+            <h3>WHY CHOOES US?</h3>
+            <div class="activity_list">
+              <div class="circle_arrow">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+              <p>Etiam rutrum veneatis dui,non</p>
+            </div>
+            <div class="activity_list">
+              <div class="circle_arrow">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+              <p>Aliquam ac diam in lorem vulputate auctor.</p>
+            </div>
+            <div class="activity_list">
+              <div class="circle_arrow">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+              <p>Vestibulum vitae urna quis eros convallis</p>
+            </div>
+            <div class="activity_list">
+              <div class="circle_arrow">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+              <p>Sed magna magna, congue</p>
+            </div>
+          </div>
+          <div class="activity">
+            <h3>NEWS & EVENTS</h3>
+            <div class="news">
+              <div class="news_imgbox">
+                <img src="./images/news1.jpg" class="img-fluid" alt="news1">
+              </div>
+              <div class="news_content">
+                <span class="news_date">
+                  12.12.12
+                </span>
+                <p>Aliquam ac diam in lorem vulputate auctor. Aliquam rhoncus nunc et justo imperdiet blandit... More</p>
+              </div>
+            </div>
+            <div class="news">
+              <div class="news_imgbox">
+                <img src="./images/news2.jpg" class="img-fluid" alt="news2">
+              </div>
+              <div class="news_content">
+                <span class="news_date">
+                  12.12.12
+                </span>
+                <p>Sed auctor laoreet augue, id pulvinar lacus mattis non. In hac habitasse platea dictumst Proin et lorem ... More</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br>
+      <section>
+        <h3>WHY CHOOES US?</h3>
+        <div></div>
+      </section>
+    </article>
   </main>
-  <div style="height: 3000px;color: hotpink;">FFFF</div>
-  
-
+  <footer style="height: 400px;">
+    <div class="row row-cols-1 row-cols-md-4 gx-0 gx-md-3">
+      <div class="col">
+        <h4>LATEST TWEETS</h4>
+      </div>
+      <div class="col">
+        <h4>TESTIMONIALS</h4>
+      </div>
+      <div class="col">
+        <h4>GET IN TOUCH!</h4>
+      </div>
+      <div class="col">
+        <h4>FLICKR</h4>
+      </div>
+    </div>
+  </footer>
+  <div style="color: gray;">
+    <span>BUSINESS PLANET &copy; 2020 | Privacy Policy</span>
+  </div>
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

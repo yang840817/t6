@@ -1,0 +1,85 @@
+@use '../abstracts/breakpoint' as *;
+@use '../abstracts/background' as *;
+@use '../utilities/color' as *;
+@use '../utilities/text' as *;
+
+@use '../components/card' as *;
+@use '../components/arrowcircle' as *;
+@use '../components/news_card' as *;
+
+main {
+  @extend %white_line;
+  @include tablet {
+    @include shadow(0, 0, 2px);
+    margin-bottom: 3rem;
+  }
+}
+@mixin carousel_button_img ($button_img, $x) {
+  display: inline-block;
+  background: url($button_img) no-repeat $x 0;
+	&:hover {
+    background-position: $x -119px;
+  }
+	width: 40px;
+	height: 119px;
+}
+.carousel_button_prev {
+  @include carousel_button_img('../images/slider_prev.gif', 0);
+}
+.carousel_button_next {
+  @include carousel_button_img('../images/slider_next.gif', 0);
+}
+.carousel-control-prev {
+  justify-content: flex-start;
+}
+.carousel-control-next {
+  justify-content: flex-end;
+}
+
+@mixin container {
+  @include tablet {
+    margin-top: -2rem;// card在lg時疊在輪播圖上
+  }
+}
+
+article {
+  @include mobile {
+    padding: 0 40px;
+  }
+}
+.service {
+  @include container;
+}
+.item {
+  @include card_column;
+  @include tablet {
+    margin-bottom: 3rem;
+  }
+}
+h3 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  @include tablet {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+}
+.activity {
+  h3 {
+    color: initial;
+  }
+  @extend %activity_text;
+  &_list {
+    display: flex;
+    flex: 0 1 auto;
+    align-items: baseline;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 1rem;
+    & + & {
+      padding-top: 1rem;
+    }
+  }
+}
+.circle_arrow {
+  @extend %circle_arrow;
+}

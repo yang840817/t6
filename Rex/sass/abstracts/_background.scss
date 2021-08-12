@@ -1,27 +1,18 @@
-@use '../abstracts/breakpoint';
-// 木紋背景
+@use '../abstracts/breakpoint' as *;
+// 木紋背景, 梯形漸層上下黑色塊,中間透明
 $bg_wood: url(../images/bg.jpg);
+@mixin background($color_vaule1, $color_vaule2) {
+  background:
+    linear-gradient(black $color_vaule1, transparent $color_vaule1, transparent $color_vaule2, black $color_vaule2), $bg_wood;
+}
 
 // 白條紋背景
-// %whit_line {
-//   background: url(./images/subbg.gif) repeat;
-// }
-
-$sm: 3%, 3%, 90%, 90%;
-$md: 3%, 3%, 90%, 90%;
-$bg_wood: url(../images/bg.jpg);
-@mixin background($top_color, $top_transparent, $bg_transparent, $end_color) {
-  background:
-    linear-gradient(black $top_color, transparent $top_transparent, transparent $bg_transparent, black $end_color), $bg_wood;
+%white_line {
+  background: url(../images/subbg.gif) repeat;
 }
 
-body {
-  @include background(0%, 0%, 95%, 95%);
-  @include breakpoint.tablet {
-    @include background(32px, 32px, 90%, 90%)
-  }
+// 改變xy跟模糊距離ex.(0, 0, 2px)
+@mixin shadow($shadow_x, $shadow_y, $blur) {
+  box-shadow: $shadow_x $shadow_y $blur black;
 }
-
-@mixin shadow {
-  box-shadow: black 0 0 2px;
-}
+// $陰影顏色: black
