@@ -2,12 +2,150 @@
 @use '../abstracts/background' as *;
 @use '../utilities/color' as *;
 
-@use '../components/card' as *;
-@use '../components/arrowcircle';
 footer {
+  padding: 1rem;
+  margin-bottom: 1rem;
   @extend %white_line;
-  @include tablet {
+  @include mobile {
     @include shadow(0, 0, 2px);
+    padding: 40px;
   }
-  padding: 0 40px;
+}
+// .testimonials 
+.dialogue_box {
+  & p {
+    color: $font_grey1;
+    padding: 1rem 1.5rem;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px 3px 3px 0;
+    background: #E6E6E6;
+  }
+  &::after {
+    content: '';
+    position: relative;
+    top: 14px;
+    margin-left: 1px;
+    border-top: 1.2rem solid #E6E6E6;
+    border-right: 2.5rem solid transparent;
+    filter: drop-shadow(0px 1px #DBDBDB) drop-shadow(-1px 0px #DBDBDB);
+  }
+}
+.referrer {
+  display: flex;
+  padding-top: 1rem;
+  gap: 1rem;
+  & p {
+    display: flex;
+    flex-direction: column;
+  }
+  & a {
+    color: $green;
+    font-weight: italic;
+    font-weight: 700;
+  }
+}
+.contacts {
+  @include mobile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    &_box {
+      flex: 1 1 45%;
+    }
+  }
+  & img {
+    max-width: 100%;
+  }
+  @include tablet {
+    flex: 1 1 calc(100%/4);
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+}
+.form_style {
+  color: $font_grey3;
+  border-radius: 3px;
+  background-color: #E6E6E6;
+  padding: 2px 5px;
+  border: 1px solid #DBDBDB;
+  font-size: .8rem;
+}
+form {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  & input, textarea {
+    @extend .form_style;
+  }
+  margin-bottom: 1rem;
+}
+%form_button {
+  color: white;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  font-size: .8rem;
+  padding: 5px 10px;
+}
+.clear {
+  @extend %form_button;
+  background-color: black;
+}
+.send {
+  @extend %form_button;
+  background-color: $green;
+}
+
+.photos {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  & img {
+    max-width: 100%;
+  }
+}
+%text_flex_warp_center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: .8rem;
+  color: $font_grey2;
+  line-height: .9rem;
+  align-items: baseline;
+}
+.copyright {
+  @extend %text_flex_warp_center;
+  color: gray;
+  font-size: .8rem;
+  & ul {
+    @extend %text_flex_warp_center;
+    list-style: none;
+    margin-bottom: .5rem;
+    @include tablet {
+      order: 2;
+    }
+    & li + li {
+      border-left: 2px solid $font_grey3;
+    }
+    & a {
+      color: $font_grey3;
+      font-size: .7rem;
+      padding: 0 .5rem;
+      font-weight: 500;
+      line-height: inherit;
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+  & span {
+    margin-bottom: 1rem;
+    @include tablet {
+      order: 1;
+    }
+  }
+  @include tablet {
+    justify-content: space-between;
+  }
 }

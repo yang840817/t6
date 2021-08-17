@@ -1,5 +1,5 @@
 @use '../utilities/color' as *;
-
+// activity項目箭頭
 %circle_arrow {
   display: inline-block;
   width: 2.5rem;
@@ -12,10 +12,10 @@
     width: 2.5rem;
     line-height: 2.5rem;
     border-radius: 999px;
+    transition: .2s;
     &:hover {
       transform: rotate(90deg);
       background-color: $green;
     }
   }
 }
-
