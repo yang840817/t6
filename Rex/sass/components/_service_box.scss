@@ -1,0 +1,69 @@
+@use '../abstracts/_background.scss' as *;
+@use '../abstracts/breakpoint.scss' as *;
+@use '../utilities/color.scss' as *;
+
+@mixin service_box_text {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  &_item {
+    
+    @include mobile {
+      flex: 1 1 48%;
+    }
+    @include tablet {
+      flex: 1 1 23%;
+    }
+  }
+  &_box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    height: 100%;
+    background-color: #E7E7E7;
+    border: 1px solid #DBDBDB;
+    padding: 1.5rem;
+    text-align: center;
+    & h2 {
+      font-size: .9rem;
+      margin-bottom: 0rem;
+      text-transform: uppercase;
+    }
+    &_img {
+      width: fit-content;
+    }
+    &_text {// 文字content_box, 超過5行隱藏
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 5;
+      overflow: hidden;
+      // white-space: nowrap;
+    }
+    &_p {
+      text-align: center;
+      font-size: .8rem;
+      line-height: .9rem;
+      margin: 0;
+      // overflow: hidden;
+      // text-overflow: ellipsis;
+      // white-space: nowrap;
+    }
+    &_button {
+      background-color: #CDCDCD;
+      border: 0;
+      padding: .2rem 1rem;
+      &:hover {
+        cursor: pointer;
+        background-color: $green;
+        color: white;
+      }
+    }
+    &:hover {
+      background-color: rgba(50, 50, 50, .8);
+      color: white;
+      border: 1px solid black;
+    }
+  }
+}

@@ -1,9 +1,9 @@
 // 裝置斷點
-$mobile: 576px;// 手機橫式
+$mobile: 568px;// 手機橫式
 $tablet: 768px;
 $desktop: 992px;
 
-// 手機
+// 手機橫式
 @mixin mobile {
   @media (min-width: $mobile) {
     @content;
@@ -15,6 +15,7 @@ $desktop: 992px;
     @content;
   }
 }
+
 // 桌機
 @mixin desktop {
   @media (min-width: $desktop) {
