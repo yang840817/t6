@@ -1,5 +1,5 @@
-@use '../abstracts/breakpoint' as *;
-@use '../abstracts/background' as *;
+@use '../utilities/breakpoint' as *;
+@use '../utilities/background' as *;
 
 body {
   max-width: 1024px;

@@ -1,9 +1,13 @@
-@use '../abstracts/breakpoint' as *;
+@use '../utilities/breakpoint' as *;
 // 木紋背景, 梯形漸層上下黑色塊,中間透明
 $bg_wood: url(../images/bg.jpg);
 @mixin background($color_vaule1, $color_vaule2) {
   background:
-    linear-gradient(black $color_vaule1, transparent $color_vaule1, transparent $color_vaule2, black $color_vaule2), $bg_wood;
+    linear-gradient(black $color_vaule1,
+                      transparent $color_vaule1,
+                      transparent $color_vaule2,
+                    black $color_vaule2),
+                            $bg_wood;
 }
 
 // 白條紋背景

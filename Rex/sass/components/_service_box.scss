@@ -1,13 +1,16 @@
-@use '../abstracts/_background.scss' as *;
-@use '../abstracts/breakpoint.scss' as *;
+@use '../utilities/_background.scss' as *;
+@use '../utilities/breakpoint.scss' as *;
 @use '../utilities/color.scss' as *;
 
-@mixin service_box_text {
+.service {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  @include tablet {
+    position: relative;
+    margin-top: -3rem;// card在lg時疊在輪播圖上
+  }
   &_item {
-    
     @include mobile {
       flex: 1 1 48%;
     }

@@ -1,0 +1,58 @@
+@use '../utilities/breakpoint' as *;
+@use '../utilities/color' as *;
+@use '../components/arrowcircle' as *;
+
+h3 {
+  font-size: 1.5rem;
+  color: black;
+  @include tablet {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+}
+%activity_text {
+  font-size: .9rem;
+  color: $font_grey3;
+}
+.activity {
+  @extend %activity_text;
+  &_box + &_box {
+    margin-top: 2rem;
+  }
+  @include mobile {
+    &_box + &_box {
+      margin-top: unset;
+    }
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    &_box {
+      flex: 1 1 calc(100%/3);
+    }
+  }
+  &_img {
+    margin-bottom: .5rem;
+  }
+  &_list {
+    display: flex;
+    flex: 0 1 auto;
+    align-items: baseline;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 1rem;
+    & + & {
+      padding-top: 1rem;
+    }
+  }
+  @include desktop {
+    flex-wrap: nowrap;
+  }
+}
+.more_link {
+  color: black;
+  &:hover {
+    color: $green;
+  }
+}
+.circle_arrow {
+  @include circle_arrow;
+}

@@ -1,5 +1,5 @@
-@use '../abstracts/background' as *;
-@use '../abstracts/breakpoint' as *;
+@use '../utilities/background' as *;
+@use '../utilities/breakpoint' as *;
 @use '../utilities/color' as *;
 
 header .header_container {

@@ -1,0 +1,47 @@
+@use '../utilities/breakpoint' as *;
+@use '../utilities/background' as *;
+@use '../utilities/color' as *;
+
+// 輪播圖按鈕
+@mixin carousel_button_img ($button_img, $x) {
+  display: inline-block;
+  background: url($button_img) no-repeat $x 0;
+	&:hover {
+    background-position: $x -119px;
+  }
+	width: 40px;
+	height: 119px;
+}
+// 調整輪播圖手機尺寸
+.carousel-item {
+  & img {
+    min-height: 60vh;
+    object-fit: cover;
+  }
+  @include mobile {
+    min-height: unset;
+    width: 100%
+  }
+  &:nth-child(1) > img{
+    object-position: 30%;
+  }
+  &:nth-child(2) > img {
+    object-position: 70%;
+  }
+  &:nth-child(3) > img {
+    object-position: 95%;
+  }
+}
+
+.carousel_button_prev {
+  @include carousel_button_img('../images/slider_prev.gif', 0);
+}
+.carousel_button_next {
+  @include carousel_button_img('../images/slider_next.gif', 0);
+}
+.carousel-control-prev {
+  justify-content: flex-start;
+}
+.carousel-control-next {
+  justify-content: flex-end;
+}
