@@ -1,4 +1,4 @@
-@use '../utilities/_background.scss' as *;
+@use '../utilities/background.scss' as *;
 @use '../utilities/breakpoint.scss' as *;
 @use '../utilities/color.scss' as *;
 
@@ -19,7 +19,7 @@
     }
   }
   &_box {
-    position: relative;
+    // position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,17 +34,18 @@
       margin-bottom: 0rem;
       text-transform: uppercase;
     }
-    &_img {
-      width: fit-content;
+    &_logo {
+      width: 60px;
+      height: 60px;
     }
-    &_text {// 文字content_box, 超過5行隱藏
+    &_img {
+      width: 100%;
+    }
+    & p {
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 5;
       overflow: hidden;
-      // white-space: nowrap;
-    }
-    &_p {
       text-align: center;
       font-size: .8rem;
       line-height: .9rem;

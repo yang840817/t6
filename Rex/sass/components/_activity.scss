@@ -2,36 +2,37 @@
 @use '../utilities/color' as *;
 @use '../components/arrowcircle' as *;
 
-h3 {
-  font-size: 1.5rem;
-  color: black;
-  @include tablet {
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-  }
-}
 %activity_text {
   font-size: .9rem;
   color: $font_grey3;
 }
 .activity {
+  h3 {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 1rem;
+    @include tablet {
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+    }
+  }
   @extend %activity_text;
-  &_box + &_box {
+  &_item + &_item {
     margin-top: 2rem;
   }
   @include mobile {
-    &_box + &_box {
+    &_item + &_item {
       margin-top: unset;
     }
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    &_box {
+    &_item {
       flex: 1 1 calc(100%/3);
     }
   }
   &_img {
-    margin-bottom: .5rem;
+    margin-bottom: 2rem;
   }
   &_list {
     display: flex;
@@ -54,5 +55,5 @@ h3 {
   }
 }
 .circle_arrow {
-  @include circle_arrow;
+  @extend %circle_arrow;
 }

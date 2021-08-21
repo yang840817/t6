@@ -2,12 +2,12 @@
 @use '../utilities/background' as *;
 @use '../utilities/color' as *;
 
-@use '../components/bootstrap' as *;
-@use '../components/service_box.scss' as *;
-@use '../components/arrowcircle' as *;
-@use '../components/activity' as *;
-@use '../components/news_card' as *;
-@use '../components/swiper.scss' as *;
+@use '../vendors/bootstrap';
+@use '../components/service_box.scss';
+@use '../components/arrowcircle';
+@use '../components/activity';
+@use '../components/news_card';
+@use '../vendors/swiper.scss';
 
 main {
   @extend %white_line;
@@ -25,16 +25,19 @@ article {
   }
 }
 section {
-  padding: 2rem 0;
+  padding: 3rem 0;
+  &:last-child {
+    padding-bottom: 2rem;
+  }
 }
-.section_line {
+section + section {
   &::before{
     position: relative;
     display: block;
     content: '';
     background: #C6C6C6;
     height: 1px;
-    bottom: 2rem;
+    bottom: 3rem;
   }
 }
 .feature_slider {

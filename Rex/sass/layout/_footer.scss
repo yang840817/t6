@@ -7,18 +7,17 @@
 
 footer {
   padding: 1rem;
-  margin-bottom: 1rem;
   @extend %white_line;
   @include mobile {
     @include shadow(0, 0, 2px);
     padding: 40px;
   }
+}
+.show_case {
   h4 {
     font-size: 1.4rem;
   }
-}
-.show_case {
-  &_box + &_box {
+  &_item + &_item {
     margin-top: 2rem;
   }
   & img {
@@ -28,16 +27,16 @@ footer {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    &_box {
+    &_item {
       flex: 1 1 47%;
     }
-    &_box + &_box {
+    &_item + &_item {
       margin-top: unset;
     }
   }
   @include desktop {
     flex-wrap: nowrap;
-    &_box {
+    &_item {
       flex: 1 1 23%;
     }
   }

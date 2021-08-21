@@ -1,8 +1,16 @@
 @use '../utilities/color' as *;
+
+@use '../utilities/breakpoint' as *;
 .title_and_button {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  h3 {
+    margin-bottom: 1rem;
+    @include tablet {
+      margin-bottom: 1.5rem;
+    }
+  }
 }
 .sw_slider_button {
   & i {
