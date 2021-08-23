@@ -236,7 +236,7 @@ a.social_icon {
 .carousel_button_prev {
   display: inline-block;
   background: url("../images/slider_prev.gif") no-repeat 0 0;
-  width: 40px;
+  width: 2.5rem;
   height: 119px;
 }
 .carousel_button_prev:hover {
@@ -246,7 +246,7 @@ a.social_icon {
 .carousel_button_next {
   display: inline-block;
   background: url("../images/slider_next.gif") no-repeat 0 0;
-  width: 40px;
+  width: 2.5rem;
   height: 119px;
 }
 .carousel_button_next:hover {
@@ -296,6 +296,7 @@ a.social_icon {
   text-align: center;
 }
 .service_box h2 {
+  flex: 0 1 34px;
   font-size: 0.9rem;
   margin-bottom: 0rem;
   text-transform: uppercase;
@@ -390,7 +391,6 @@ a.social_icon {
 }
 .activity_list {
   display: flex;
-  flex: 0 1 auto;
   align-items: baseline;
   border-bottom: 1px solid lightgray;
   padding-bottom: 1rem;
@@ -519,6 +519,8 @@ section + section::before {
   border: 1px solid #DBDBDB;
   border-radius: 3px 3px 3px 0;
   background: #E6E6E6;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
 }
 .dialogue_box::after {
   content: "";
@@ -558,28 +560,53 @@ section + section::before {
   display: flex;
   gap: 5px;
   flex-direction: column;
-  margin-bottom: 1rem;
 }
-.send, .clear {
+.contacts_clear {
+  background-color: black;
+  display: inline-block;
+  width: fit-content;
+  text-align: center;
+}
+.contacts_clear input {
+  border: unset;
+  border-radius: unset;
+  background-color: unset;
   color: white;
   font-weight: 600;
-  display: inline-block;
-  text-align: center;
   font-size: 0.8rem;
   padding: 5px 10px;
 }
-
-.clear, .send {
-  background-color: black;
-}
-.clear:hover, .send:hover {
+.contacts_clear:hover {
   cursor: pointer;
   color: black;
   background-color: #DBDBDB;
 }
+.contacts_clear:hover input {
+  color: black;
+}
 
-.send {
+.contacts_send {
   background-color: #80B620;
+  display: inline-block;
+  width: fit-content;
+  text-align: center;
+}
+.contacts_send input {
+  border: unset;
+  border-radius: unset;
+  background-color: unset;
+  color: white;
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+}
+.contacts_send:hover {
+  cursor: pointer;
+  color: black;
+  background-color: #DBDBDB;
+}
+.contacts_send:hover input {
+  color: black;
 }
 
 footer {
@@ -588,7 +615,7 @@ footer {
 @media (min-width: 576px) {
   footer {
     box-shadow: 0 0 2px black;
-    padding: 40px;
+    padding: 2.5rem;
   }
 }
 
@@ -628,6 +655,11 @@ footer {
   grid-gap: 0.5rem;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+}
+@media (min-width: 576px) {
+  .flickr {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 .flickr img {
   width: 100%;

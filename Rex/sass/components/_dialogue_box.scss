@@ -1,6 +1,6 @@
 @use '../utilities/color' as *;
 
-// testimonials 推薦人
+// testimonials 推薦人對話框
 .dialogue_box {
   & p {
     color: $font_grey1;
@@ -8,6 +8,8 @@
     border: 1px solid #DBDBDB;
     border-radius: 3px 3px 3px 0;
     background: #E6E6E6;
+    font-size: .7rem;
+    line-height: 1.2rem;
   }
   &::after {
     content: '';

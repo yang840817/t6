@@ -84,7 +84,7 @@
       </div>
     </nav>
   </header>
-    <!-- bs navbar -->
+    <!-- ~bs navbar -->
   <main>
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -98,6 +98,7 @@
           <img src="./images/banner3.jpg" class="d-block w-100" alt="banner3">
         </div>
       </div>
+      <!-- ~bs 輪播圖 -->
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
         <span class="carousel_button_prev" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -266,13 +267,19 @@
       <div class="show_case_item">
         <div class="show_case_box">
           <h4>GET IN TOUCH!</h4>
-          <div class="contacts_form">
-            <input type="name" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <textarea name="content" placeholder="Message"></textarea>
-          </div>
-          <div class="clear">CLEAR FORM</div>
-          <div class="send">SEND!</div>
+          <form class="contacts_form">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea name="content" placeholder="Message" rows="6"></textarea>
+            <div>
+              <div class="contacts_clear">
+                <input type="reset" value="CLEAR FORM">
+              </div>
+              <div class="contacts_send">
+                <input type="submit" value="SEND!">
+              </div>
+            </div>
+          </form>
         </div>
       </div>
       <div class="show_case_item">

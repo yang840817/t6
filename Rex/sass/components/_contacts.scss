@@ -18,28 +18,37 @@
     & input, textarea {
       @extend %contacts_form_style;
     }
-    margin-bottom: 1rem;
   }
 }
-%form_button {
-  color: white;
-  font-weight: 600;
-  display: inline-block;
-  text-align: center;
-  font-size: .8rem;
-  padding: 5px 10px;
+@mixin form_button {
+  input {
+    border: unset;
+    border-radius: unset;
+    background-color: unset;
+    color: white;
+    font-weight: 600;
+    font-size: .8rem;
+    padding: 5px 10px;
+  }
 }
-.clear {
-  @extend %form_button;
-  background-color: black;
+@mixin contacts_button_box($color) {
+  @include form_button;
+  background-color: $color;
+  display: inline-block;
+  width: fit-content;
+  text-align: center;
   &:hover {
     cursor: pointer;
     color: black;
     background-color: #DBDBDB;
+    input {
+      color: black;
+    }
   }
 }
-.send {
-  @extend %form_button;
-  @extend .clear;
-  background-color: $green;
+.contacts_clear {
+  @include contacts_button_box(black);
+}
+.contacts_send {
+  @include contacts_button_box($green);
 }
