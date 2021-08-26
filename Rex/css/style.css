@@ -520,15 +520,6 @@ section + section::before {
   height: 100%;
 }
 
-.dialogue_box p {
-  color: #272727;
-  padding: 1rem 1.5rem;
-  border: 1px solid #DBDBDB;
-  border-radius: 3px 3px 3px 0;
-  background: #E6E6E6;
-  font-size: 0.7rem;
-  line-height: 1.2rem;
-}
 .dialogue_box::after {
   content: "";
   position: relative;
@@ -537,6 +528,15 @@ section + section::before {
   border-top: 1.2rem solid #E6E6E6;
   border-right: 2.5rem solid transparent;
   filter: drop-shadow(0px 1px #DBDBDB) drop-shadow(-1px 0px #DBDBDB);
+}
+.dialogue_box p {
+  color: #272727;
+  padding: 1rem 1.5rem;
+  border: 1px solid #DBDBDB;
+  border-radius: 3px 3px 3px 0;
+  background: #E6E6E6;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
 }
 
 .referrer {
