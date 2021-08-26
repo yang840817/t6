@@ -16,6 +16,13 @@ textarea {
   outline: none;
 }
 
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
 footer, main, .logo_nav {
   background: url(../images/subbg.gif) repeat;
 }
@@ -23,11 +30,11 @@ footer, main, .logo_nav {
 body {
   max-width: 1024px;
   margin: 0 auto;
-  background: linear-gradient(black 0%, transparent 0%, transparent 95%, black 95%), url(../images/bg.jpg);
+  background: linear-gradient(black 0%, transparent 0%, transparent 90%, black 90%), url(../images/bg.jpg);
 }
 @media (min-width: 768px) {
   body {
-    background: linear-gradient(black 5rem, transparent 5rem, transparent 95%, black 95%), url(../images/bg.jpg);
+    background: linear-gradient(black 5rem, transparent 5rem, transparent 90%, black 90%), url(../images/bg.jpg);
   }
 }
 
@@ -72,63 +79,63 @@ h1 img {
   display: none;
   text-align: end;
 }
-
 @media (min-width: 768px) {
   .phone_area {
     display: inline-block;
   }
 }
+
 a.social_icon {
   display: inline-block;
 }
 
-.social_icon_1 {
+.facebook {
   display: inline-block;
   background: url(../images/social.png) no-repeat 0 0;
   width: 27px;
   height: 27px;
 }
-.social_icon_1:hover {
+.facebook:hover {
   background-position: 0 -27px;
 }
 
-.social_icon_2 {
+.twitter {
   display: inline-block;
   background: url(../images/social.png) no-repeat -37px 0;
   width: 27px;
   height: 27px;
 }
-.social_icon_2:hover {
+.twitter:hover {
   background-position: -37px -27px;
 }
 
-.social_icon_3 {
+.dribbble {
   display: inline-block;
   background: url(../images/social.png) no-repeat -74px 0;
   width: 27px;
   height: 27px;
 }
-.social_icon_3:hover {
+.dribbble:hover {
   background-position: -74px -27px;
 }
 
-.social_icon_4 {
+.flickr {
   display: inline-block;
   background: url(../images/social.png) no-repeat -111px 0;
   width: 27px;
   height: 27px;
 }
-.social_icon_4:hover {
+.flickr:hover {
   background-position: -111px -27px;
 }
 
-.social_icon_5 {
+.rss {
   display: inline-block;
   background: url(../images/social.png) no-repeat -150px 0;
   width: 27px;
   height: 27px;
 }
-.social_icon_5:hover {
+.rss:hover {
   background-position: -150px -27px;
 }
 
@@ -140,6 +147,7 @@ a.social_icon {
 .tel_num a {
   display: inline;
   text-decoration: none;
+  color: inherit;
 }
 
 .navbar-collapse {
@@ -203,14 +211,13 @@ a.social_icon {
 }
 .search_icon {
   font-size: 0.8rem;
-  flex: 0 0 auto;
   width: 100%;
   background: no-repeat right 5% bottom 50% url(../images/search.png);
 }
 
 .form-control {
   border-radius: 0;
-  padding: 7px 0.75rem;
+  padding: 0.5rem 2.5rem 0.5rem 1rem;
 }
 
 .carousel-item img {
@@ -383,7 +390,7 @@ a.social_icon {
     margin-top: unset;
   }
   .activity_item {
-    flex: 1 1 calc(100%/3);
+    flex: 1 1 33.3333333333%;
   }
 }
 .activity_img {
@@ -434,16 +441,16 @@ a.social_icon {
   margin-top: 1.5rem;
 }
 
-.title_and_button {
+.swiper_header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
-.title_and_button h3 {
+.swiper_header h3 {
   margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
-  .title_and_button h3 {
+  .swiper_header h3 {
     margin-bottom: 1.5rem;
   }
 }
@@ -650,18 +657,18 @@ footer {
   }
 }
 
-.flickr {
+.flickr_album {
   display: grid;
   grid-gap: 0.5rem;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
 }
 @media (min-width: 576px) {
-  .flickr {
+  .flickr_album {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-.flickr img {
+.flickr_album img {
   width: 100%;
 }
 

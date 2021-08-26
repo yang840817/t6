@@ -3,7 +3,7 @@
 
 // 填寫表單設置
 %contacts_form_style {
-  color: $font_grey3;
+  color: $grey_300;
   border-radius: 3px;
   background-color: #E6E6E6;
   padding: 2px 5px;
@@ -15,7 +15,7 @@
     display: flex;
     gap: 5px;
     flex-direction: column;
-    & input, textarea {
+    input, textarea {
       @extend %contacts_form_style;
     }
   }

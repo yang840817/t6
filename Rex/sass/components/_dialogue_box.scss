@@ -2,8 +2,8 @@
 
 // testimonials 推薦人對話框
 .dialogue_box {
-  & p {
-    color: $font_grey1;
+  p {
+    color: $grey_700;
     padding: 1rem 1.5rem;
     border: 1px solid #DBDBDB;
     border-radius: 3px 3px 3px 0;
@@ -25,11 +25,11 @@
   display: flex;
   padding-top: 1rem;
   gap: 1rem;
-  & p {
+  p {
     display: flex;
     flex-direction: column;
   }
-  & a {
+  a {
     color: $green;
     font-style: italic;
     font-weight: 700;

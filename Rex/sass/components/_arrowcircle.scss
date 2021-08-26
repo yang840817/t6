@@ -1,12 +1,12 @@
 @use '../utilities/color' as *;
 
 // activity項目箭頭
-%circle_arrow {
+%arrowcircle {
   display: inline-block;
   width: 2.5rem;
   text-align: center;
   margin-right: .5rem;
-  & i {
+  i {
     font-size: 1rem;
     color: white;
     background-color: #D9D9D9;
@@ -20,12 +20,12 @@
     }
   }
 }
-// @mixin circle_arrow {
+// @mixin arrowcircle {
 //   display: inline-block;
 //   width: 2.5rem;
 //   text-align: center;
 //   margin-right: .5rem;
-//   & i {
+//   i {
 //     font-size: 1rem;
 //     color: white;
 //     background-color: #D9D9D9;

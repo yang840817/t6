@@ -29,7 +29,7 @@
     border: 1px solid #DBDBDB;
     padding: 1.5rem;
     text-align: center;
-    & h2 {
+    h2 {
       flex: 0 1 34px;
       font-size: .9rem;
       margin-bottom: 0rem;
@@ -42,7 +42,7 @@
     &_img {
       width: 100%;
     }
-    & p {
+    p {
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 5;

@@ -1,7 +1,7 @@
 @use '../utilities/color' as *;
 
 @use '../utilities/breakpoint' as *;
-.title_and_button {
+.swiper_header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;

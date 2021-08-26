@@ -20,7 +20,7 @@ footer {
   &_item + &_item {
     margin-top: 2rem;
   }
-  & img {
+  img {
     max-width: 100%;
   }
   @include mobile {
@@ -41,7 +41,7 @@ footer {
     }
   }
 }
-.flickr {
+.flickr_album {
   display: grid;
   grid-gap: .5rem;
   grid-template-columns: repeat(3, 1fr);
@@ -49,7 +49,7 @@ footer {
     grid-template-columns: repeat(4, 1fr);
   }
   grid-template-rows: repeat(3, 1fr);
-  & img {
+  img {
     width: 100%;
   }
 }

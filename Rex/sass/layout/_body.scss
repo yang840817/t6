@@ -4,8 +4,8 @@
 body {
   max-width: 1024px;
   margin: 0 auto;
-  @include background(0%, 95%);
+  @include background(0%, 90%);
   @include tablet {
-    @include background(5rem, 95%)
+    @include background(5rem, 90%)
   }
 }

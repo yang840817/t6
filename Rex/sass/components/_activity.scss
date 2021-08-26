@@ -1,10 +1,12 @@
 @use '../utilities/breakpoint' as *;
 @use '../utilities/color' as *;
-@use '../components/arrowcircle' as *;
+
+@use '../components/arrowcircle';
+@use 'sass:math';
 
 %activity_text {
   font-size: .9rem;
-  color: $font_grey3;
+  color: $grey_300;
 }
 .activity {
   h3 {
@@ -21,14 +23,15 @@
     margin-top: 2rem;
   }
   @include mobile {
-    &_item + &_item {
-      margin-top: unset;
-    }
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
+    &_item + &_item {
+      margin-top: unset;
+    }
     &_item {
-      flex: 1 1 calc(100%/3);
+      flex: 1 1 math.div(100%, 3);
+      // flex: 1 1 calc(100%/3);
     }
   }
   &_img {
@@ -54,5 +57,5 @@
   }
 }
 .circle_arrow {
-  @extend %circle_arrow;
+  @extend %arrowcircle;
 }

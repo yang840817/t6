@@ -13,3 +13,10 @@ textarea {
   border: none;
   outline: none;
 }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
