@@ -2,28 +2,29 @@
 
 // testimonials 推薦人對話框
 .dialogue_box {
+  position: relative;
+  padding: 1rem 1.5rem;
+  border: 1px solid #DBDBDB;
+  border-radius: 3px 3px 3px 0;
+  background: #E6E6E6;
   &::after {
     content: '';
-    position: relative;
-    top: 14px;
-    margin-left: 1px;
+    position: absolute;
+    bottom: -1.2rem;
+    left: 0;
     border-top: 1.2rem solid #E6E6E6;
     border-right: 2.5rem solid transparent;
     filter: drop-shadow(0px 1px #DBDBDB) drop-shadow(-1px 0px #DBDBDB);
   }
   p {
-    color: $grey_700;
-    padding: 1rem 1.5rem;
-    border: 1px solid #DBDBDB;
-    border-radius: 3px 3px 3px 0;
-    background: #E6E6E6;
     font-size: .7rem;
+    color: $grey_700;
     line-height: 1.2rem;
   }
 }
 .referrer {
   display: flex;
-  padding-top: 1rem;
+  margin-top: 2rem;
   gap: 1rem;
   p {
     display: flex;

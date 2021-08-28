@@ -22,3 +22,10 @@ $desktop: 992px;
     @content;
   }
 }
+
+
+@mixin minwidth($screensize) {
+  @media (min-width:$screensize) {
+    @content;
+  }
+}
