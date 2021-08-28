@@ -3,7 +3,6 @@ a {
 }
 
 p,
-dl,
 ol,
 ul {
   margin: 0;
@@ -23,7 +22,7 @@ textarea {
   padding: 0;
 }
 
-footer, main, .logo_nav {
+.footer_list, main, .logo_nav {
   background: url(../images/subbg.gif) repeat;
 }
 
@@ -57,8 +56,8 @@ header .header_container {
 }
 
 h1 {
-  max-width: 70%;
   display: inline-block;
+  max-width: 70%;
 }
 h1 a {
   display: block;
@@ -215,6 +214,10 @@ a.social_icon {
   background: no-repeat right 5% bottom 50% url(../images/search.png);
 }
 
+[type=search]::-webkit-search-cancel-button {
+  appearance: none;
+}
+
 .form-control {
   border-radius: 0;
   padding: 0.5rem 2.5rem 0.5rem 1rem;
@@ -270,6 +273,14 @@ a.social_icon {
   right: 0;
 }
 
+.service_box_button {
+  border: 0;
+  padding: 0.2rem 1rem;
+}
+.service_box_button:hover {
+  cursor: pointer;
+}
+
 .service {
   display: flex;
   flex-wrap: wrap;
@@ -296,10 +307,10 @@ a.social_icon {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  height: 100%;
-  background-color: #E7E7E7;
   border: 1px solid #DBDBDB;
   padding: 1.5rem;
+  background-color: #E7E7E7;
+  height: 100%;
   text-align: center;
 }
 .service_box h2 {
@@ -326,9 +337,8 @@ a.social_icon {
   margin: 0;
 }
 .service_box_button {
+  margin-top: auto;
   background-color: #CDCDCD;
-  border: 0;
-  padding: 0.2rem 1rem;
 }
 .service_box_button:hover {
   cursor: pointer;
@@ -336,9 +346,9 @@ a.social_icon {
   color: white;
 }
 .service_box:hover {
+  border: 1px solid black;
   background-color: rgba(50, 50, 50, 0.8);
   color: white;
-  border: 1px solid black;
 }
 
 .circle_arrow {
@@ -348,12 +358,12 @@ a.social_icon {
   margin-right: 0.5rem;
 }
 .circle_arrow i {
-  font-size: 1rem;
-  color: white;
-  background-color: #D9D9D9;
-  width: 2.5rem;
-  line-height: 2.5rem;
   border-radius: 999px;
+  width: 2.5rem;
+  background-color: #D9D9D9;
+  color: white;
+  font-size: 1rem;
+  line-height: 2.5rem;
   transition: 0.2s;
 }
 .circle_arrow i:hover {
@@ -362,14 +372,15 @@ a.social_icon {
 }
 
 .activity {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
   color: #7F7F7F;
 }
 
 .activity h3 {
+  margin-bottom: 1rem;
   font-size: 1.5rem;
   color: black;
-  margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
   .activity h3 {
@@ -394,7 +405,7 @@ a.social_icon {
   }
 }
 .activity_img {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .activity_list {
   display: flex;
@@ -431,8 +442,8 @@ a.social_icon {
 }
 .news_date {
   display: inline-block;
-  padding: 0.2rem 0.5rem;
   margin-bottom: 1.5rem;
+  padding: 0.2rem 0.5rem;
   background-color: #80B620;
   color: white;
   font-weight: 600;
@@ -520,28 +531,31 @@ section + section::before {
   height: 100%;
 }
 
+.dialogue_box {
+  position: relative;
+  padding: 1rem 1.5rem;
+  border: 1px solid #DBDBDB;
+  border-radius: 3px 3px 3px 0;
+  background: #E6E6E6;
+}
 .dialogue_box::after {
   content: "";
-  position: relative;
-  top: 14px;
-  margin-left: 1px;
+  position: absolute;
+  bottom: -1.2rem;
+  left: 0;
   border-top: 1.2rem solid #E6E6E6;
   border-right: 2.5rem solid transparent;
   filter: drop-shadow(0px 1px #DBDBDB) drop-shadow(-1px 0px #DBDBDB);
 }
 .dialogue_box p {
-  color: #272727;
-  padding: 1rem 1.5rem;
-  border: 1px solid #DBDBDB;
-  border-radius: 3px 3px 3px 0;
-  background: #E6E6E6;
   font-size: 0.7rem;
+  color: #272727;
   line-height: 1.2rem;
 }
 
 .referrer {
   display: flex;
-  padding-top: 1rem;
+  margin-top: 2rem;
   gap: 1rem;
 }
 .referrer p {
@@ -555,33 +569,34 @@ section + section::before {
 }
 
 .contacts_form input, .contacts_form textarea {
-  color: #7F7F7F;
-  border-radius: 3px;
-  background-color: #E6E6E6;
-  padding: 2px 5px;
   border: 1px solid #DBDBDB;
+  border-radius: 3px;
+  padding: 2px 5px;
+  background-color: #E6E6E6;
+  color: #7F7F7F;
   font-size: 0.8rem;
+  resize: none;
 }
 
 .contacts_form {
   display: flex;
-  gap: 5px;
   flex-direction: column;
+  gap: 5px;
 }
 .contacts_clear {
-  background-color: black;
   display: inline-block;
   width: fit-content;
+  background-color: black;
   text-align: center;
 }
 .contacts_clear input {
+  padding: 5px 10px;
   border: unset;
   border-radius: unset;
   background-color: unset;
   color: white;
-  font-weight: 600;
   font-size: 0.8rem;
-  padding: 5px 10px;
+  font-weight: 600;
 }
 .contacts_clear:hover {
   cursor: pointer;
@@ -593,19 +608,19 @@ section + section::before {
 }
 
 .contacts_send {
-  background-color: #80B620;
   display: inline-block;
   width: fit-content;
+  background-color: #80B620;
   text-align: center;
 }
 .contacts_send input {
+  padding: 5px 10px;
   border: unset;
   border-radius: unset;
   background-color: unset;
   color: white;
-  font-weight: 600;
   font-size: 0.8rem;
-  padding: 5px 10px;
+  font-weight: 600;
 }
 .contacts_send:hover {
   cursor: pointer;
@@ -616,11 +631,11 @@ section + section::before {
   color: black;
 }
 
-footer {
+.footer_list {
   padding: 1rem;
 }
 @media (min-width: 576px) {
-  footer {
+  .footer_list {
     box-shadow: 0 0 2px black;
     padding: 2.5rem;
   }
@@ -663,29 +678,37 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
 }
+.flickr_album a {
+  overflow: hidden;
+}
+.flickr_album a img {
+  width: 100%;
+  transform: scale(1, 1);
+  transition: 0.2s;
+}
+.flickr_album a img:hover {
+  transform: scale(1.2, 1.2);
+}
 @media (min-width: 576px) {
   .flickr_album {
     grid-template-columns: repeat(4, 1fr);
   }
-}
-.flickr_album img {
-  width: 100%;
 }
 
 .copyright ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: baseline;
   font-size: 0.8rem;
   color: #393939;
   line-height: 0.9rem;
-  align-items: baseline;
 }
 
 .copyright {
+  margin: 1rem;
   color: gray;
   font-size: 0.8rem;
-  margin: 1rem;
 }
 .copyright ul {
   line-height: 1rem;
@@ -700,9 +723,9 @@ footer {
   border-left: 2px solid #7F7F7F;
 }
 .copyright ul a {
+  padding: 0 0.5rem;
   color: #7F7F7F;
   font-size: 0.7rem;
-  padding: 0 0.5rem;
   font-weight: 500;
 }
 .copyright ul a:hover {
@@ -717,11 +740,6 @@ footer {
   color: #80B620;
 }
 @media (min-width: 768px) {
-  .copyright span {
-    order: 1;
-  }
-}
-@media (min-width: 768px) {
   .copyright {
     display: flex;
     justify-content: space-between;
@@ -730,7 +748,7 @@ footer {
 }
 @media (min-width: 992px) {
   .copyright {
-    margin: 1rem 0;
+    margin: 1rem;
   }
 }
 

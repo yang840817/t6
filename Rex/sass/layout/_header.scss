@@ -8,17 +8,17 @@ header .header_container {
 .logo_nav {
   padding: 1rem;
   @extend %white_line;
-  @include tablet {
+  @include min_width($md) {
     @include shadow(0, 0, 2px);
   }
-  @include desktop {
+  @include min_width($desktop) {
     padding: 2rem;
   }
 }
 
 h1 {
-  max-width: 70%;
   display: inline-block;
+  max-width: 70%;
   a {
     display: block;
   }
@@ -38,7 +38,7 @@ h1 {
 .phone_area {
   display: none;
   text-align: end;
-  @include tablet {
+  @include min_width($md) {
     display: inline-block;
   }
 }
@@ -83,7 +83,7 @@ a.social_icon  {
 .navbar-collapse {
   background-color: white;
 }
-@include tablet {
+@include min_width($md) {
   .navbar-collapse {
     background: linear-gradient(transparent 50%, white 50%);
   }
@@ -91,7 +91,7 @@ a.social_icon  {
 
 .navbar-expand-md .navbar-nav .nav-link {
   padding: .75rem;
-  @include tablet {
+  @include min_width($md) {
     padding: 1rem;
   }
 }
@@ -107,11 +107,11 @@ a.social_icon  {
 .search_form .d-flex {
   background-color: #f3f3f3;
   margin: .75rem;
-  @include tablet {
+  @include min_width($md) {
     margin: unset;
   }
 }
-@include tablet {
+@include min_width($md) {
   .search_form {
     order: 2;
     background-color: white;
@@ -137,6 +137,10 @@ a.social_icon  {
   font-size: .8rem;
   width: 100%;
   background: no-repeat right 5% bottom 50% url(../images/search.png);
+}
+//Remove the search input default clear icon
+[type="search"]::-webkit-search-cancel-button {
+  appearance: none;
 }
 .form-control {
   border-radius: 0;

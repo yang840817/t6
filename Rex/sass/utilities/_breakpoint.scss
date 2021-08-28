@@ -1,24 +1,31 @@
 // 裝置斷點
-$mobile: 576px;// 手機橫式
-$tablet: 768px;
+$sm: 576px;// 手機橫式
+$md: 768px;
 $desktop: 992px;
 
-// 手機橫式
-@mixin mobile {
-  @media (min-width: $mobile) {
-    @content;
-  }
-}
-// 平板
-@mixin tablet {
-  @media (min-width: $tablet) {
+@mixin min_width($screensize) {
+  @media (min-width: $screensize) {
     @content;
   }
 }
 
+// 手機橫式
+// @mixin mobile {
+//   @media (min-width: $sm) {
+//     @content;
+//   }
+// }
+
+// 平板
+// @mixin tablet {
+//   @media (min-width: $md) {
+//     @content;
+//   }
+// }
+
 // 桌機
-@mixin desktop {
-  @media (min-width: $desktop) {
-    @content;
-  }
-}
+// @mixin desktop {
+//   @media (min-width: $desktop) {
+//     @content;
+//   }
+// }

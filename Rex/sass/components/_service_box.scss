@@ -2,73 +2,25 @@
 @use '../utilities/breakpoint.scss' as *;
 @use '../utilities/color.scss' as *;
 
+@use '../components/card';
+
 .service {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  @include tablet {
+  @include min_width($md) {
     position: relative;
     margin-top: -3rem;// card在lg時疊在輪播圖上
   }
   &_item {
-    @include mobile {
+    @include min_width($sm) {
       flex: 1 1 48%;
     }
-    @include tablet {
+    @include min_width($md) {
       flex: 1 1 23%;
     }
   }
   &_box {
-    // position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: .5rem;
-    height: 100%;
-    background-color: #E7E7E7;
-    border: 1px solid #DBDBDB;
-    padding: 1.5rem;
-    text-align: center;
-    h2 {
-      flex: 0 1 34px;
-      font-size: .9rem;
-      margin-bottom: 0rem;
-      text-transform: uppercase;
-    }
-    &_logo {
-      width: 60px;
-      height: 60px;
-    }
-    &_img {
-      width: 100%;
-    }
-    p {
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 5;
-      overflow: hidden;
-      text-align: center;
-      font-size: .8rem;
-      line-height: .9rem;
-      margin: 0;
-      // overflow: hidden;
-      // text-overflow: ellipsis;
-      // white-space: nowrap;
-    }
-    &_button {
-      background-color: #CDCDCD;
-      border: 0;
-      padding: .2rem 1rem;
-      &:hover {
-        cursor: pointer;
-        background-color: $green;
-        color: white;
-      }
-    }
-    &:hover {
-      background-color: rgba(50, 50, 50, .8);
-      color: white;
-      border: 1px solid black;
-    }
+    @include card.service_card;
   }
 }

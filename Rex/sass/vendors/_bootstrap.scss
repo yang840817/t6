@@ -2,6 +2,9 @@
 @use '../utilities/background' as *;
 @use '../utilities/color' as *;
 
+// @import "../../node_modules/bootstrap/scss/bootstrap";
+
+
 // 輪播圖按鈕
 @mixin carousel_button_img ($button_img, $x) {
   display: inline-block;
@@ -17,7 +20,7 @@
   & img {
     min-height: 60vh;
     object-fit: cover;
-    @include tablet {
+    @include min_width($md) {
       min-height: unset;
       width: 100%
     }

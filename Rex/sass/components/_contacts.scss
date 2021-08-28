@@ -3,18 +3,20 @@
 
 // 填寫表單設置
 %contacts_form_style {
-  color: $grey_300;
-  border-radius: 3px;
-  background-color: #E6E6E6;
-  padding: 2px 5px;
   border: 1px solid #DBDBDB;
+  border-radius: 3px;
+  padding: 2px 5px;
+  background-color: #E6E6E6;
+
+  color: $grey_300;
   font-size: .8rem;
+  resize: none;
 }
 .contacts {
   &_form {
     display: flex;
-    gap: 5px;
     flex-direction: column;
+    gap: 5px;
     input, textarea {
       @extend %contacts_form_style;
     }
@@ -22,20 +24,21 @@
 }
 @mixin form_button {
   input {
+    padding: 5px 10px;
     border: unset;
     border-radius: unset;
     background-color: unset;
+    
     color: white;
-    font-weight: 600;
     font-size: .8rem;
-    padding: 5px 10px;
+    font-weight: 600;
   }
 }
 @mixin contacts_button_box($color) {
   @include form_button;
-  background-color: $color;
   display: inline-block;
   width: fit-content;
+  background-color: $color;
   text-align: center;
   &:hover {
     cursor: pointer;

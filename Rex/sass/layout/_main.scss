@@ -9,18 +9,21 @@
 @use '../components/news_card';
 @use '../vendors/swiper.scss';
 
+// @use '../../node_modules/bootstrap/scss/_navbar.scss';
+// @use '../../node_modules/bootstrap/scss/bootstrap.scss';
+
 main {
   @extend %white_line;
   @include shadow(0, 0, 2px);
     margin-bottom: 2rem;
-  @include tablet {
+  @include min_width($md) {
     margin-bottom: 3rem;
   }
 }
 
 article {
   padding: 1rem;
-  @include mobile {
+  @include min_width($sm) {
     padding: 1rem 2.5rem;
   }
 }
