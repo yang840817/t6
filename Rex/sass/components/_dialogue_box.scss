@@ -3,7 +3,6 @@
 // testimonials 推薦人對話框
 .dialogue_box {
   position: relative;
-<<<<<<< HEAD
   &::after {
     position: absolute;
     bottom: -1.2rem;
@@ -11,20 +10,12 @@
   }
 }
 .dialogue_box {
-=======
->>>>>>> c1b38115ed8c9495ca175cc208c4ac1289f12066
   padding: 1rem 1.5rem;
   border: 1px solid #DBDBDB;
   border-radius: 3px 3px 3px 0;
   background: #E6E6E6;
   &::after {
     content: '';
-<<<<<<< HEAD
-=======
-    position: absolute;
-    bottom: -1.2rem;
-    left: 0;
->>>>>>> c1b38115ed8c9495ca175cc208c4ac1289f12066
     border-top: 1.2rem solid #E6E6E6;
     border-right: 2.5rem solid transparent;
     filter: drop-shadow(0px 1px #DBDBDB) drop-shadow(-1px 0px #DBDBDB);

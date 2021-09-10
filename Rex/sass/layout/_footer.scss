@@ -70,11 +70,7 @@
       }
     }
   }
-<<<<<<< HEAD
   @include min_width($sm) {
-=======
-  @include mobile {
->>>>>>> c1b38115ed8c9495ca175cc208c4ac1289f12066
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -98,11 +94,7 @@
     line-height: 1rem;
     list-style: none;
     // margin-bottom: .5rem;
-<<<<<<< HEAD
     @include min_width($md) {
-=======
-    @include tablet {
->>>>>>> c1b38115ed8c9495ca175cc208c4ac1289f12066
       order: 2;
       // margin-bottom: 1rem;
     }
@@ -128,28 +120,16 @@
     a {
       color: $green;
     }
-<<<<<<< HEAD
     // @include min_width($md) {
     //   order: 1;
     // }
   }
   @include min_width($md) {
-=======
-    // @include tablet {
-    //   order: 1;
-    // }
-  }
-  @include tablet {
->>>>>>> c1b38115ed8c9495ca175cc208c4ac1289f12066
     display: flex;
     justify-content: space-between;
     margin: 1rem 2rem;
   }
-<<<<<<< HEAD
   @include min_width($desktop) {
-=======
-  @include desktop {
->>>>>>> c1b38115ed8c9495ca175cc208c4ac1289f12066
     margin: 1rem;
   }
 }

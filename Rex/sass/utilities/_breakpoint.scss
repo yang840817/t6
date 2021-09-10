@@ -24,23 +24,8 @@ $desktop: 992px;
 // }
 
 // 桌機
-<<<<<<< HEAD
 // @mixin desktop {
 //   @media (min-width: $desktop) {
 //     @content;
 //   }
 // }
-=======
-@mixin desktop {
-  @media (min-width: $desktop) {
-    @content;
-  }
-}
-
-
-@mixin minwidth($screensize) {
-  @media (min-width:$screensize) {
-    @content;
-  }
-}
->>>>>>> c1b38115ed8c9495ca175cc208c4ac1289f12066

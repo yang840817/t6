@@ -29,11 +29,17 @@ article {
 }
 section {
   padding: 3rem 0;
+  @include min_width($md) {
+    padding: 0 0 3rem 0;
+  }
   &:last-child {
     padding-bottom: 2rem;
   }
 }
 section + section {
+  @include min_width($md) {
+    padding: 3rem 0 0 0;
+  }
   &::before{
     position: relative;
     display: block;
