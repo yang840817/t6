@@ -1,12 +1,12 @@
 // 木紋背景, 梯形漸層上下黑色塊,中間透明
-$bg_wood: url(../images/bg.jpg);
 @mixin background($color_value1, $color_value2) {
+  $BG_WOOD: url(../images/bg.jpg);
   background:
     linear-gradient(black $color_value1,
                       transparent $color_value1,
                       transparent $color_value2,
                     black $color_value2),
-                            $bg_wood;
+                            $BG_WOOD;
 }
 
 // 白條紋背景

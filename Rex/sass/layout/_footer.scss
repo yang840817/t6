@@ -14,30 +14,43 @@
   }
 }
 .show_case {
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 0;
+  @include min_width($sm) {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  @include min_width($desktop) {
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+
+  &_item {
+    flex: 100%;
+    @include min_width($sm) {
+      flex: 1 1 47%;
+    }
+    @include min_width($desktop) {
+      flex: 1 1 23%;
+    }
+  }
+}
+
+
+.show_case {
   h4 {
     font-size: 1.4rem;
-  }
-  &_item + &_item {
-    margin-top: 2rem;
   }
   img {
     max-width: 100%;
   }
-  @include min_width($sm) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    &_item {
-      flex: 1 1 47%;
-    }
-    &_item + &_item {
+
+  &_item + &_item {
+    margin-top: 2rem;
+    @include min_width($sm) {
       margin-top: unset;
-    }
-  }
-  @include min_width($desktop) {
-    flex-wrap: nowrap;
-    &_item {
-      flex: 1 1 23%;
     }
   }
 }

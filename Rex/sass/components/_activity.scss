@@ -10,6 +10,7 @@
   color: $grey_300;
 }
 .activity {
+  @extend %activity_text;
   h3 {
     margin-bottom: 1rem;
 
@@ -20,20 +21,19 @@
       margin-bottom: 1.5rem;
     }
   }
-  @extend %activity_text;
   &_item + &_item {
     margin-top: 2rem;
+    @include min_width($sm) {
+      margin-top: unset;
+    }
   }
   @include min_width($sm) {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    &_item + &_item {
-      margin-top: unset;
-    }
     &_item {
       flex: 1 1 math.div(100%, 3);
-      // flex: 1 1 (100%/3);
+      // flex: 1 1 calc(100% / 3);
     }
   }
   &_img {

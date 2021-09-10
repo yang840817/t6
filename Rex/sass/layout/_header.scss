@@ -56,19 +56,19 @@ a.social_icon  {
 	height: 27px;
 }
 .facebook {
-  @include social_icon(0)
+  @include social_icon(0);
 }
 .twitter {
-  @include social_icon(-37px)
+  @include social_icon(-37px);
 }
 .dribbble {
-  @include social_icon(-74px)
+  @include social_icon(-74px);
 }
 .flickr {
-  @include social_icon(-111px)
+  @include social_icon(-111px);
 }
 .rss {
-  @include social_icon(-150px)
+  @include social_icon(-150px);
 }
 .tel_num {
   display: block;
@@ -138,11 +138,13 @@ a.social_icon  {
   width: 100%;
   background: no-repeat right 5% bottom 50% url(../images/search.png);
 }
-//Remove the search input default clear icon
+// 移除 search input default clear icon
 [type="search"]::-webkit-search-cancel-button {
   appearance: none;
 }
 .form-control {
-  border-radius: 0;
   padding: .5rem 2.5rem .5rem 1rem;
+  border-radius: 0;
+  height: 35px;// 設高度搭配下面的box-sizing
+  box-sizing: border-box;// 往內長border不影響外距
 }

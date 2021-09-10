@@ -3,15 +3,19 @@
 // testimonials 推薦人對話框
 .dialogue_box {
   position: relative;
+  &::after {
+    position: absolute;
+    bottom: -1.2rem;
+    left: 0;
+  }
+}
+.dialogue_box {
   padding: 1rem 1.5rem;
   border: 1px solid #DBDBDB;
   border-radius: 3px 3px 3px 0;
   background: #E6E6E6;
   &::after {
     content: '';
-    position: absolute;
-    bottom: -1.2rem;
-    left: 0;
     border-top: 1.2rem solid #E6E6E6;
     border-right: 2.5rem solid transparent;
     filter: drop-shadow(0px 1px #DBDBDB) drop-shadow(-1px 0px #DBDBDB);
