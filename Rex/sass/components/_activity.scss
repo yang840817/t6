@@ -16,7 +16,11 @@
 
     font-size: 1.5rem;
     color: black;
+<<<<<<< HEAD
     @include min_width($md) {
+=======
+    @include tablet {
+>>>>>>> c1b38115ed8c9495ca175cc208c4ac1289f12066
       margin-top: 0;
       margin-bottom: 1.5rem;
     }
@@ -33,7 +37,11 @@
     gap: 1.5rem;
     &_item {
       flex: 1 1 math.div(100%, 3);
+<<<<<<< HEAD
       // flex: 1 1 calc(100% / 3);
+=======
+      // flex: 1 1 (100%/3);
+>>>>>>> c1b38115ed8c9495ca175cc208c4ac1289f12066
     }
   }
   &_img {
@@ -48,8 +56,13 @@
       padding-top: 1rem;
     }
   }
+<<<<<<< HEAD
   // @include min_width($desktop) {
   @include min_width($desktop) {
+=======
+  // @include desktop {
+  @include minwidth($desktop) {
+>>>>>>> c1b38115ed8c9495ca175cc208c4ac1289f12066
     flex-wrap: nowrap;
   }
 }
