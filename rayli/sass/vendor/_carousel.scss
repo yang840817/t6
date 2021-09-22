@@ -1,0 +1,8 @@
+@use "../base/background";
+
+%overwrite-bs-carousel {
+  // 992+ px:
+  //   .carousel-control-next-icon {
+  //     background-image: url(background.$carousel-next);
+  //   }
+}

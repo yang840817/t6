@@ -1,0 +1,25 @@
+@use "../base/color";
+
+%overwrite-bs-navbar {
+  padding: 1rem 0;
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  .container-fluid {
+    padding: 0 1rem;
+  }
+
+  .nav-item {
+    .nav-link {
+      padding: 0.5rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      &:hover {
+        background-color: color.$main-green;
+        color: color.$main-white;
+      }
+    }
+  }
+}

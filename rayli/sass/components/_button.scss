@@ -1,0 +1,45 @@
+@use "../base/color";
+
+%button {
+  display: inline-block;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  text-decoration: none;
+  border: none;
+}
+
+%button-emphasize {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+// @mixin fashion($bg-color, $color) {
+//   @extend %button;
+//   background-color: $bg-color;
+//   color: $color;
+// }
+
+%button-info {
+  @extend %button;
+  background-color: color.$mid-gray;
+  color: color.$main-black;
+}
+
+%button-ok {
+  @extend %button;
+  @extend %button-emphasize;
+  background-color: color.$main-green;
+  color: color.$main-white;
+}
+
+%button-date {
+  @extend %button-ok;
+}
+
+%button-not-ok {
+  @extend %button;
+  @extend %button-emphasize;
+  background-color: color.$main-black;
+  color: color.$main-white;
+}

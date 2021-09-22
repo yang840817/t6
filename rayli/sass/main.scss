@@ -1,0 +1,34 @@
+@use "./layouts/header";
+@use "./layouts/main";
+@use "./layouts/footer";
+
+// @use "./base/color";
+// @use "./base/breakpoint";
+// @use "./base/background";
+
+// body {
+//   //   @extend %background-horizontal-strips;
+//   //   @include breakpoints.sm {
+//   //     background-color: color.$main-green;
+//   //   }
+// }
+
+// * {
+//   outline: 1px dotted blue;
+// }
+
+body {
+  //   background-color: black;
+  //   background-image: url("../images/bg.jpg") no-repeat right;
+
+  background: linear-gradient(
+      180deg,
+      black 0%,
+      black 100px,
+      transparent 100px,
+      transparent 90%,
+      black 90%,
+      black 100%
+    ),
+    url(../images/bg.jpg);
+}

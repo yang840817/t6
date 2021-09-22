@@ -1,0 +1,12 @@
+@use "../base/breakpoint";
+
+%logo {
+  width: fit-content;
+  margin: 0 auto;
+  a {
+    display: block;
+  }
+  img {
+    width: 100%;
+  }
+}

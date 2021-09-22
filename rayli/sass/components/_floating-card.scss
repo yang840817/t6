@@ -1,0 +1,18 @@
+@use "../base/color";
+
+%floating-card {
+  padding: 1rem;
+  background-color: color.$light-gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  & > * {
+    margin: 0;
+  }
+  &:hover {
+    background-color: color.$dark-gray;
+    color: color.$main-white;
+  }
+}

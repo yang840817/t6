@@ -1,0 +1,7 @@
+@use "../base/color";
+
+%overwrite-swiper {
+  div[class^="swiper-button"] {
+    color: color.$mid-gray;
+  }
+}

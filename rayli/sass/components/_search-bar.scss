@@ -1,0 +1,13 @@
+@use "../base/color";
+@use "../base/background";
+
+%search-bar {
+  height: 2.5rem;
+  padding: 0.5rem;
+  border: 1px solid gray;
+  background: url(background.$magnifying-glass-img) color.$light-gray right
+    0.5rem top 50% no-repeat;
+  &:focus {
+    background: color.$light-gray;
+  }
+}

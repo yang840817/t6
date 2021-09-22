@@ -1,0 +1,18 @@
+@use "../base/color";
+
+%multi-input-form {
+  textarea {
+    display: block;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    background-color: color.$light-gray;
+    border: 1px solid gray;
+  }
+
+  & > *:not(:first-child) {
+    margin-top: 0.5rem;
+  }
+}

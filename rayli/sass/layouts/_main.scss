@@ -1,0 +1,124 @@
+@use "../base/color";
+@use "../base/background";
+
+@use "../vendor/carousel";
+@use "../components/floating-card";
+@use "../components/button";
+@use "../components/upper-header";
+@use "../components/fashion-list";
+@use "../components/news-template";
+@use "../vendor/swiper";
+
+.main_contents {
+  margin: 0 1rem;
+  padding-bottom: 1rem;
+  & > *:not(.t6_carousel) {
+    padding: 1rem;
+  }
+  background: url(background.$horizontal-strips);
+}
+
+// carousel
+
+.t6_carousel {
+  @extend %overwrite-bs-carousel;
+}
+
+// featured cards
+
+.feature_card {
+  height: 100%;
+  @extend %floating-card;
+
+  h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+  .feature_card_img {
+    display: block;
+    width: 60px;
+    img {
+      width: 100%;
+    }
+  }
+
+  a.more {
+    display: block;
+    @extend %button-info;
+  }
+}
+
+// welcome news
+
+%main-sub-header {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  @extend %upper-header;
+}
+
+.welcome_news_card {
+  p {
+    color: color.$dark-gray;
+    margin: 0;
+  }
+
+  & > p:first-child {
+    @extend %main-sub-header;
+  }
+
+  a {
+    font-weight: 600;
+    text-decoration: none;
+    color: color.$main-black;
+  }
+}
+
+.welcome_img {
+  img {
+    width: 100%;
+  }
+}
+
+.reason {
+  @extend %fashion-list-with-fa;
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
+
+.news {
+  @extend %news-template;
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
+
+// Featured Works
+
+.featured_works {
+  position: relative;
+
+  p {
+    @extend %main-sub-header;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    @extend %overwrite-swiper;
+  }
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: calc(100% - 2rem);
+    top: 0;
+    height: 1px;
+    background-color: color.$mid-gray;
+  }
+}

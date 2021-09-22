@@ -1,0 +1,18 @@
+@use "../base/color";
+@use "../components/button";
+
+%news-template {
+  display: flex;
+  gap: 1rem;
+  .news_img {
+    width: 100px;
+    flex: 0 0 auto;
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .date {
+    @extend %button-date;
+  }
+}

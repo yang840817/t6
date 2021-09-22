@@ -1,0 +1,15 @@
+@use "../base/background" as bg;
+
+%little-size {
+  width: 28px;
+  height: 27px;
+}
+
+@mixin social-at-x($position-x) {
+  @extend %little-size;
+  display: inline-block;
+  background: url(bg.$social-icons) $position-x 0;
+  &:hover {
+    background: url(bg.$social-icons) $position-x -100%;
+  }
+}
