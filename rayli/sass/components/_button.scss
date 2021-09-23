@@ -14,12 +14,6 @@
   text-transform: uppercase;
 }
 
-// @mixin fashion($bg-color, $color) {
-//   @extend %button;
-//   background-color: $bg-color;
-//   color: $color;
-// }
-
 %button-info {
   @extend %button;
   background-color: color.$mid-gray;

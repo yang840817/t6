@@ -1,19 +1,28 @@
 @use "../base/color";
 @use "../base/background";
+@use "../base/breakpoint";
 
 @use "../components/upper-header";
 @use "../components/dialog";
 @use "../components/person-template";
 @use "../components/button";
 @use "../components/multi-input-form";
+@use "../components/flexible-links";
 
 .footer_contents {
   margin: 2rem 1rem 0 1rem;
+  @include breakpoint.lg {
+    max-width: 992px;
+    margin: 2rem auto 0 auto;
+  }
 }
 
 .footer_cards {
   background: url(background.$horizontal-strips);
   padding: 1rem;
+  @include breakpoint.lg {
+    padding: 2rem;
+  }
 }
 
 .footer_card {
@@ -38,16 +47,20 @@
 .subscribe {
   @extend %multi-input-form;
 
-  textarea {
-    margin-bottom: 0.5rem;
-  }
-
   input[type="submit"] {
     @extend %button-ok;
   }
 
   input[type="reset"] {
     @extend %button-not-ok;
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+    margin-top: 0.5rem;
+    @include breakpoint.lg {
+      font-size: 0.8rem;
+    }
   }
 }
 
@@ -66,36 +79,24 @@
 // copyright
 
 .copyright_and_navlinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   padding: 1rem 0;
   font-size: 0.9rem;
-}
-
-.navlinks {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  //   justify-content: center;
-  a {
-    padding: 0 1rem;
-    color: color.$dark-gray;
-    line-height: 1.2;
-    text-decoration: none;
-    text-transform: uppercase;
-    vertical-align: middle;
-    &:hover {
-      color: color.$main-green;
-    }
-
-    // &:not(:first-child) {
-    //   border-left: 2px solid color.$dark-gray;
-    // }
+  @include breakpoint.lg {
+    padding: 2rem 0;
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
 }
 
+.navlinks {
+  @extend %flexible-links;
+}
+
 .copyright {
-  margin: 1rem 0 0 0;
+  margin: 0;
   color: color.$dark-gray;
   text-transform: uppercase;
   text-align: center;

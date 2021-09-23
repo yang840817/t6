@@ -1,5 +1,6 @@
 @use "../base/color";
 @use "../base/background";
+@use "../base/breakpoint";
 
 @use "../vendor/carousel";
 @use "../components/floating-card";
@@ -11,11 +12,18 @@
 
 .main_contents {
   margin: 0 1rem;
-  padding-bottom: 1rem;
+  background: url(background.$horizontal-strips);
   & > *:not(.t6_carousel) {
     padding: 1rem;
+    @include breakpoint.lg {
+      transform: translateY(-3rem);
+      padding: 2rem;
+    }
   }
-  background: url(background.$horizontal-strips);
+  @include breakpoint.lg {
+    max-width: 992px;
+    margin: 0 auto;
+  }
 }
 
 // carousel
@@ -53,14 +61,13 @@
 
 %main-sub-header {
   font-size: 1.8rem;
-  margin: 1rem 0;
   @extend %upper-header;
 }
 
 .welcome_news_card {
-  p {
+  p:not(:first-child) {
     color: color.$dark-gray;
-    margin: 0;
+    margin: 0.5rem 0 0 0;
   }
 
   & > p:first-child {
@@ -108,10 +115,11 @@
     object-fit: cover;
   }
 
-  .swiper {
-    @extend %overwrite-swiper;
+  div[class^="swiper-button"] {
+    @extend %overwrite-swiper-button;
   }
 
+  //   border line top
   &::before {
     display: block;
     position: absolute;
@@ -120,5 +128,9 @@
     top: 0;
     height: 1px;
     background-color: color.$mid-gray;
+
+    @include breakpoint.lg {
+      width: calc(100% - 4rem);
+    }
   }
 }

@@ -1,8 +1,27 @@
+@use "../base/breakpoint";
 @use "../base/background";
 
 %overwrite-bs-carousel {
-  // 992+ px:
-  //   .carousel-control-next-icon {
-  //     background-image: url(background.$carousel-next);
-  //   }
+  @include breakpoint.lg {
+    span[class$="next-icon"] {
+      position: absolute;
+      right: 0;
+      height: 119px;
+      width: 40px;
+      background: url(background.$carousel-next) 0 0;
+      &:hover {
+        background: url(background.$carousel-next) 0 119px;
+      }
+    }
+    span[class$="prev-icon"] {
+      position: absolute;
+      left: 0;
+      height: 119px;
+      width: 40px;
+      background: url(background.$carousel-prev) 0 0;
+      &:hover {
+        background: url(background.$carousel-prev) 0 119px;
+      }
+    }
+  }
 }

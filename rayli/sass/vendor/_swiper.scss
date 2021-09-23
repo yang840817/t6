@@ -1,7 +1,40 @@
+@use "../base/breakpoint";
 @use "../base/color";
 
-%overwrite-swiper {
-  div[class^="swiper-button"] {
-    color: color.$mid-gray;
+%overwrite-swiper-button {
+  color: color.$mid-gray;
+  top: calc(50% + 1.5rem);
+
+  &[class$="next"] {
+    right: 2rem;
+  }
+  &[class$="prev"] {
+    left: 2rem;
+  }
+
+  @include breakpoint.sm {
+    top: 2rem;
+
+    &::after {
+      font-size: 1rem;
+    }
+
+    &[class$="next"] {
+      right: 1rem;
+    }
+    &[class$="prev"] {
+      left: auto;
+      right: 3rem;
+    }
+  }
+  @include breakpoint.lg {
+    top: 3rem;
+    &[class$="next"] {
+      right: 2rem;
+    }
+    &[class$="prev"] {
+      left: auto;
+      right: 4rem;
+    }
   }
 }

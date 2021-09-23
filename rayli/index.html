@@ -42,7 +42,7 @@
           </div>
         </section>
         <section class="navbar_and_search">
-          <nav class="navbar navbar-expand-md navbar-light bg-light t6_nav">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light t6_nav">
             <div class="container-fluid">
               <!-- <a class="navbar-brand" href="#">Navbar</a> -->
               <button
@@ -217,7 +217,7 @@
           </div>
         </section>
         <section class="feature_cards">
-          <div class="row g-3">
+          <div class="row g-3 g-lg-4">
             <div class="col-sm-6 col-lg-3">
               <div class="feature_card">
                 <h2>Growth strategies</h2>
@@ -277,7 +277,7 @@
           </div>
         </section>
         <section class="welcome_news">
-          <div class="row g-0">
+          <div class="row g-3 g-lg-4">
             <div class="col-sm-6 col-md-4">
               <div class="welcome_news_card">
                 <p>Welcome</p>
@@ -326,7 +326,7 @@
                       <p class="date">12.12.12</p>
                       <p class="intro_text">
                         Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Iste blanditiis ipsum eos officiis, dolorum quod.
+                        elit. Iste blanditiis ipsum.
                         <a href="##">More</a>
                       </p>
                     </div>
@@ -339,7 +339,7 @@
                       <p class="date">12.12.12</p>
                       <p class="intro_text">
                         Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Iste blanditiis ipsum eos officiis, dolorum quod.
+                        elit. Iste blanditiis ipsum.
                         <a href="##">More</a>
                       </p>
                     </div>
@@ -371,9 +371,11 @@
                 </div>
               </div>
               <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+              <!-- <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div> -->
             </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </section>
       </div>
@@ -381,7 +383,7 @@
     <footer>
       <div class="footer_contents">
         <section class="footer_cards">
-          <div class="row g-3">
+          <div class="row g-3 g-lg-4">
             <div class="col-sm-6 col-md-3">
               <div class="footer_card">
                 <p>Latest tweets</p>
@@ -392,10 +394,8 @@
               <div class="footer_card">
                 <p>Testimonials</p>
                 <p class="dialog">
-                  " Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Eum modi voluptate maxime soluta mollitia! Laudantium illum ea
-                  deserunt, sunt quo expedita. Ea non reprehenderit
-                  exercitationem?
+                  " Lorem ipsum dolor, sit amet con sect etur adipis ic ing
+                  elit. Quasi a, pla ceat rerum veri tatis duci mus illo!
                 </p>
                 <div class="person_intro">
                   <div class="person_img">
@@ -412,13 +412,25 @@
               <div class="footer_card">
                 <p>Get in touch!</p>
                 <form action="" class="subscribe">
-                  <input type="text" name="" id="" placeholder="Name" />
-                  <input type="email" name="" id="" placeholder="Email" />
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Name"
+                    required
+                  />
+                  <input
+                    type="email"
+                    name=""
+                    id=""
+                    placeholder="Email"
+                    required
+                  />
                   <textarea
                     name=""
                     id=""
                     placeholder="Message"
-                    rows="5"
+                    rows="3"
                   ></textarea>
                   <input type="reset" value="Clear form" />
                   <input type="submit" value="Send!" />
@@ -497,7 +509,7 @@
         direction: "horizontal",
         loop: true,
         slidesPerView: 1,
-        spaceBetween: 10,
+        spaceBetween: 16,
         // Navigation arrows
         navigation: {
           nextEl: ".swiper-button-next",
@@ -506,11 +518,15 @@
         breakpoints: {
           576: {
             slidesPerView: 2,
-            spaceBetween: 10,
+            spaceBetween: 16,
           },
           768: {
             slidesPerView: 4,
-            spaceBetween: 10,
+            spaceBetween: 16,
+          },
+          992: {
+            slidesPerView: 4,
+            spaceBetween: 24,
           },
         },
       });
