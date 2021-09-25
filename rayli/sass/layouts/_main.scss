@@ -2,22 +2,24 @@
 @use "../base/background";
 @use "../base/breakpoint";
 
-@use "../vendor/carousel";
 @use "../components/floating-card";
 @use "../components/button";
 @use "../components/upper-header";
 @use "../components/fashion-list";
 @use "../components/news-template";
+
+@use "../vendor/carousel";
 @use "../vendor/swiper";
 
 .main_contents {
   margin: 0 1rem;
   background: url(background.$horizontal-strips);
+  box-shadow: 0 0 5px gray;
+
   & > *:not(.t6_carousel) {
     padding: 1rem;
     @include breakpoint.lg {
-      transform: translateY(-3rem);
-      padding: 2rem;
+      padding: 3rem 2rem;
     }
   }
   @include breakpoint.lg {
@@ -34,15 +36,29 @@
 
 // featured cards
 
+.feature_cards {
+  @include breakpoint.lg {
+    padding: 0 2rem !important;
+    margin-top: -3rem;
+    position: relative;
+    z-index: 9;
+    .col-lg-3 {
+      margin-top: 0;
+    }
+  }
+}
+
 .feature_card {
   height: 100%;
   @extend %floating-card;
 
   h2 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
   }
-
+  p {
+    font-size: 0.8rem;
+  }
   .feature_card_img {
     display: block;
     width: 60px;
@@ -65,12 +81,12 @@
 }
 
 .welcome_news_card {
-  p:not(:first-child) {
+  p {
     color: color.$dark-gray;
-    margin: 0.5rem 0 0 0;
+    margin: 1rem 0 0 0;
   }
 
-  & > p:first-child {
+  .main_header {
     @extend %main-sub-header;
   }
 
@@ -89,8 +105,9 @@
 
 .reason {
   @extend %fashion-list-with-fa;
+  padding: 1rem 0;
   &:not(:first-child) {
-    margin-top: 1rem;
+    border-top: 1px solid color.$light-gray;
   }
 }
 

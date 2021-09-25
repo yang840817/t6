@@ -5,6 +5,7 @@
 @use "../components/logo";
 @use "../components/little-icon";
 @use "../components/search-bar";
+
 @use "../vendor/navbar";
 
 .header_contents {
@@ -21,10 +22,13 @@
   flex-direction: column;
   gap: 1rem;
   background: url(background.$horizontal-strips);
+  box-shadow: 0 0 3px gray;
+
   @include breakpoint.md {
     padding: 2rem;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -43,14 +47,18 @@
   .twitter {
     @include little-icon.social-at-x(25%);
   }
-  .two_dots {
+  .flickr {
     @include little-icon.social-at-x(50%);
   }
-  .baseball {
+  .dribbble {
     @include little-icon.social-at-x(74%);
   }
   .rss {
     @include little-icon.social-at-x(100%);
+  }
+
+  @include breakpoint.md {
+    justify-content: right;
   }
 }
 
@@ -66,6 +74,7 @@ a[href^="tel"] {
 .navbar_and_search {
   margin-top: 1rem;
   position: relative;
+
   @include breakpoint.lg {
     display: flex;
     justify-content: space-between;
@@ -78,14 +87,23 @@ form.search {
   right: 1rem;
   input {
     @extend %search-bar;
+    @include breakpoint.lg {
+      display: block;
+      width: 200px;
+    }
   }
   @include breakpoint.lg {
     position: static;
-    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
     background-color: color.$main-white;
+    box-shadow: 0 0 3px gray;
   }
 }
 
 .t6_nav {
   @extend %overwrite-bs-navbar;
+  box-shadow: 0 0 3px gray;
 }

@@ -3,13 +3,15 @@
 %multi-input-form {
   textarea {
     display: block;
+    resize: none;
   }
 
   input,
   textarea {
     width: 100%;
     background-color: color.$light-gray;
-    border: 1px solid gray;
+    border: 1px solid color.$mid-gray;
+    border-radius: 5px;
   }
 
   & > *:not(:first-child) {

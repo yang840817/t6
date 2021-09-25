@@ -3,6 +3,7 @@
 
 %overwrite-bs-navbar {
   padding: 1rem 0;
+  background-color: color.$main-white;
 
   .navbar-toggler:focus {
     box-shadow: none;
@@ -17,9 +18,15 @@
       padding: 0.5rem;
       text-transform: uppercase;
       font-weight: 600;
+
       &:hover {
         background-color: color.$main-green;
         color: color.$main-white;
+      }
+    }
+    @include breakpoint.lg {
+      &:not(:first-child) {
+        border-left: 1px solid color.$mid-gray;
       }
     }
   }

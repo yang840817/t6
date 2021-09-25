@@ -28,7 +28,7 @@
     }
   }
   @include breakpoint.lg {
-    top: 3rem;
+    top: 4rem;
     &[class$="next"] {
       right: 2rem;
     }
