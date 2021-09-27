@@ -1,0 +1,14 @@
+@use "../base/background";
+
+body {
+  background: linear-gradient(
+      180deg,
+      black 0%,
+      black 100px,
+      transparent 100px,
+      transparent 90%,
+      black 90%,
+      black 100%
+    ),
+    url(background.$body-bg);
+}

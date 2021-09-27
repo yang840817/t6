@@ -58,7 +58,7 @@
   }
 
   @include breakpoint.md {
-    justify-content: right;
+    justify-content: flex-end;
   }
 }
 
@@ -78,6 +78,13 @@ a[href^="tel"] {
   @include breakpoint.lg {
     display: flex;
     justify-content: space-between;
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      transparent 60%,
+      color.$light-gray 60%,
+      color.$light-gray 100%
+    );
   }
 }
 

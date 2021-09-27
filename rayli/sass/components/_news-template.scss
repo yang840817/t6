@@ -1,12 +1,18 @@
 @use "../base/color";
+@use "../base/breakpoint";
 @use "../components/button";
 
 %news-template {
   display: flex;
   gap: 1rem;
   .news_img {
-    width: 100px;
-    flex: 0 0 auto;
+    flex: 0 0 120px;
+    @include breakpoint.md {
+      flex: 0 0 100px;
+    }
+    @include breakpoint.lg {
+      flex: 0 0 120px;
+    }
   }
   img {
     width: 100%;

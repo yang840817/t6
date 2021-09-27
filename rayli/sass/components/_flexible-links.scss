@@ -10,6 +10,7 @@
     color: color.$dark-gray;
     text-decoration: none;
     text-transform: uppercase;
+    line-height: 1;
     &:hover {
       color: color.$main-green;
     }
@@ -21,7 +22,7 @@
     a {
       padding: 0 1rem;
       &:not(:first-child) {
-        border-left: 2px solid color.$dark-gray;
+        border-left: 2px solid color.$mid-gray;
       }
     }
   }

@@ -1,3 +1,4 @@
+@use "./layouts/body";
 @use "./layouts/header";
 @use "./layouts/main";
 @use "./layouts/footer";
@@ -5,16 +6,3 @@
 // * {
 //   outline: 1px dotted blue;
 // }
-
-body {
-  background: linear-gradient(
-      180deg,
-      black 0%,
-      black 100px,
-      transparent 100px,
-      transparent 90%,
-      black 90%,
-      black 100%
-    ),
-    url(../images/bg.jpg);
-}
