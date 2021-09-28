@@ -111,6 +111,6 @@ form.search {
 }
 
 .t6_nav {
-  @extend %overwrite-bs-navbar;
+  @extend %navbar;
   box-shadow: 0 0 3px gray;
 }

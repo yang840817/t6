@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(180deg, black 0%, black 100px, transparent 100px, transparent 90%, black 90%, black 100%), url("../images/bg.jpg");
+  background: linear-gradient(black 0%, black 100px, transparent 100px, transparent 90%, black 90%, black 100%), url("../images/bg.jpg");
 }
 
 .logo {
@@ -104,35 +104,35 @@ form.search input:focus {
   background: url("../images/social.png") 0 0;
 }
 .social_links .facebook:hover {
-  background: url("../images/social.png") 0 -100%;
+  background: url("../images/social.png") 0 100%;
 }
 .social_links .twitter {
   display: inline-block;
   background: url("../images/social.png") 25% 0;
 }
 .social_links .twitter:hover {
-  background: url("../images/social.png") 25% -100%;
+  background: url("../images/social.png") 25% 100%;
 }
 .social_links .flickr {
   display: inline-block;
   background: url("../images/social.png") 50% 0;
 }
 .social_links .flickr:hover {
-  background: url("../images/social.png") 50% -100%;
+  background: url("../images/social.png") 50% 100%;
 }
 .social_links .dribbble {
   display: inline-block;
   background: url("../images/social.png") 74% 0;
 }
 .social_links .dribbble:hover {
-  background: url("../images/social.png") 74% -100%;
+  background: url("../images/social.png") 74% 100%;
 }
 .social_links .rss {
   display: inline-block;
   background: url("../images/social.png") 100% 0;
 }
 .social_links .rss:hover {
-  background: url("../images/social.png") 100% -100%;
+  background: url("../images/social.png") 100% 100%;
 }
 @media (min-width: 768px) {
   .social_links {
@@ -209,19 +209,21 @@ form.search {
   line-height: 1;
 }
 
-.subscribe input[type=reset], .subscribe input[type=submit], .news .date, .feature_card a.more {
+.subscribe input[type=reset], .news .date, .subscribe input[type=submit], .feature_card a.more {
   display: inline-block;
   width: fit-content;
   padding: 0.5rem 1rem;
   margin: 0;
-  text-decoration: none;
   border: none;
   border-radius: 0;
 }
 
-.subscribe input[type=reset], .subscribe input[type=submit], .news .date {
+.feature_card a.more {
+  text-decoration: none;
+}
+
+.subscribe input[type=reset], .news .date, .subscribe input[type=submit] {
   font-weight: 600;
-  text-transform: uppercase;
 }
 
 .feature_card a.more {
@@ -229,22 +231,36 @@ form.search {
   color: #151515;
 }
 
-.subscribe input[type=submit], .news .date {
+.news .date, .subscribe input[type=submit] {
   background-color: #81b700;
   color: snow;
+}
+
+.subscribe input[type=submit] {
+  text-transform: uppercase;
 }
 
 .subscribe input[type=reset] {
   background-color: #151515;
   color: snow;
+  text-transform: uppercase;
 }
 
-.footer_card > p:first-child, .welcome_news_card .main_header, .featured_works p {
+.footer_card > p:first-child, .welcome_news_card .main_header, .featured_works .main_header {
   margin: 0 0 1rem 0;
   line-height: 1.2;
   font-weight: 600;
   text-transform: uppercase;
   color: #151515;
+}
+
+.welcome_news_card .main_header, .featured_works .main_header {
+  font-size: 1.5rem;
+}
+@media (min-width: 992px) {
+  .welcome_news_card .main_header, .featured_works .main_header {
+    font-size: 1.8rem;
+  }
 }
 
 .reason {
@@ -254,13 +270,13 @@ form.search {
   gap: 1rem;
 }
 .reason i + p {
-  margin-top: 0.8rem;
+  margin-top: 1rem;
 }
 .reason i {
   position: relative;
   width: 3rem;
   height: 3rem;
-  border-radius: 200px;
+  border-radius: 50%;
   background-color: #ededed;
   flex: 0 0 auto;
 }
@@ -299,31 +315,32 @@ form.search {
   object-fit: cover;
 }
 @media (min-width: 992px) {
-  .t6_carousel span[class$=next-icon] {
+  .t6_carousel .carousel-control-next-icon {
     position: absolute;
     right: 0;
     height: 119px;
     width: 40px;
     background: url("../images/slider_next.gif") 0 0;
   }
-  .t6_carousel span[class$=next-icon]:hover {
+  .t6_carousel .carousel-control-next-icon:hover {
     background: url("../images/slider_next.gif") 0 119px;
   }
-  .t6_carousel span[class$=prev-icon] {
+  .t6_carousel .carousel-control-prev-icon {
     position: absolute;
     left: 0;
     height: 119px;
     width: 40px;
     background: url("../images/slider_prev.gif") 0 0;
   }
-  .t6_carousel span[class$=prev-icon]:hover {
+  .t6_carousel .carousel-control-prev-icon:hover {
     background: url("../images/slider_prev.gif") 0 119px;
   }
 }
 
 .featured_works div[class^=swiper-button] {
   color: #cecece;
-  top: calc(50% + 1.5rem);
+  top: 50%;
+  margin-top: 0;
 }
 .featured_works div[class$=next][class^=swiper-button] {
   right: 2rem;
@@ -333,7 +350,7 @@ form.search {
 }
 @media (min-width: 576px) {
   .featured_works div[class^=swiper-button] {
-    top: 2rem;
+    top: 0.5rem;
   }
   .featured_works div[class^=swiper-button]::after {
     font-size: 1rem;
@@ -348,7 +365,7 @@ form.search {
 }
 @media (min-width: 992px) {
   .featured_works div[class^=swiper-button] {
-    top: 4rem;
+    top: 2.5rem;
   }
   .featured_works div[class$=next][class^=swiper-button] {
     right: 2rem;
@@ -384,7 +401,7 @@ form.search {
 
 @media (min-width: 992px) {
   .feature_cards {
-    margin-top: -3rem;
+    margin-top: -2rem;
     position: relative;
     z-index: 9;
   }
@@ -413,15 +430,6 @@ form.search {
 .feature_card a.more {
   display: block;
   margin-top: auto;
-}
-
-.featured_works p, .welcome_news_card .main_header {
-  font-size: 1.5rem;
-}
-@media (min-width: 992px) {
-  .featured_works p, .welcome_news_card .main_header {
-    font-size: 1.8rem;
-  }
 }
 
 .welcome_news_card p {

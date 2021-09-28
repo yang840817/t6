@@ -1,9 +1,9 @@
 @use "../base/breakpoint";
 @use "../base/background";
 
-%overwrite-bs-carousel {
+%carousel {
   @include breakpoint.lg {
-    span[class$="next-icon"] {
+    .carousel-control-next-icon {
       position: absolute;
       right: 0;
       height: 119px;
@@ -13,7 +13,7 @@
         background: url(background.$carousel-next) 0 119px;
       }
     }
-    span[class$="prev-icon"] {
+    .carousel-control-prev-icon {
       position: absolute;
       left: 0;
       height: 119px;

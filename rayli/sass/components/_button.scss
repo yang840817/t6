@@ -5,31 +5,35 @@
   width: fit-content;
   padding: 0.5rem 1rem;
   margin: 0;
-  text-decoration: none;
   border: none;
   border-radius: 0;
 }
 
+%button-for-a-tag {
+  text-decoration: none;
+}
+
 %button-emphasize {
   font-weight: 600;
-  text-transform: uppercase;
 }
 
 %button-info {
   @extend %button;
+  @extend %button-for-a-tag;
   background-color: color.$mid-gray;
   color: color.$main-black;
 }
 
-%button-ok {
+%button-date {
   @extend %button;
   @extend %button-emphasize;
   background-color: color.$main-green;
   color: color.$main-white;
 }
 
-%button-date {
-  @extend %button-ok;
+%button-ok {
+  @extend %button-date;
+  text-transform: uppercase;
 }
 
 %button-not-ok {
@@ -37,4 +41,5 @@
   @extend %button-emphasize;
   background-color: color.$main-black;
   color: color.$main-white;
+  text-transform: uppercase;
 }

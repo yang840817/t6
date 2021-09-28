@@ -1,7 +1,7 @@
 @use "../base/breakpoint";
 @use "../base/color";
 
-%overwrite-bs-navbar {
+%navbar {
   padding: 1rem 0;
   background-color: color.$main-white;
 

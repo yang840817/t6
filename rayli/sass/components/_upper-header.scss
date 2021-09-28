@@ -1,4 +1,5 @@
 @use "../base/color";
+@use "../base/breakpoint";
 
 %upper-header {
   margin: 0 0 1rem 0;
@@ -6,4 +7,12 @@
   font-weight: 600;
   text-transform: uppercase;
   color: color.$main-black;
+}
+
+%main-sub-header {
+  font-size: 1.5rem;
+  @extend %upper-header;
+  @include breakpoint.lg {
+    font-size: 1.8rem;
+  }
 }

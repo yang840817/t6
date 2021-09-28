@@ -34,14 +34,14 @@
 // carousel
 
 .t6_carousel {
-  @extend %overwrite-bs-carousel;
+  @extend %carousel;
 }
 
 // featured cards
 
 .feature_cards {
   @include breakpoint.lg {
-    margin-top: -3rem;
+    margin-top: -2rem;
     position: relative;
     z-index: 9;
     .col-lg-3 {
@@ -78,14 +78,6 @@
 
 // welcome news
 
-%main-sub-header {
-  font-size: 1.5rem;
-  @extend %upper-header;
-  @include breakpoint.lg {
-    font-size: 1.8rem;
-  }
-}
-
 .welcome_news_card {
   p {
     color: color.$dark-gray;
@@ -111,7 +103,7 @@
 }
 
 .reason {
-  @extend %fashion-list-with-fa;
+  @extend %fashion-list;
   padding-bottom: 1rem;
   border-bottom: 1px solid color.$light-gray;
   &:not(:first-child) {
@@ -131,7 +123,7 @@
 .featured_works {
   position: relative;
 
-  p {
+  .main_header {
     @extend %main-sub-header;
   }
 
@@ -141,7 +133,7 @@
   }
 
   div[class^="swiper-button"] {
-    @extend %overwrite-swiper-button;
+    @extend %swiper-button;
   }
 
   //   border line top
