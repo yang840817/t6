@@ -27,8 +27,8 @@ form.search input {
   border: 1px solid #cecece;
   background: url("../images/search.png") #ededed right 0.5rem top 50% no-repeat;
 }
-form.search input:focus {
-  background: #ededed;
+form.search input::-webkit-search-cancel-button {
+  display: none;
 }
 
 .t6_nav {
@@ -146,7 +146,6 @@ a[href^=tel] {
   color: black;
   text-decoration: none;
   text-transform: capitalize;
-  text-align: center;
 }
 
 .navbar_and_search {
@@ -246,7 +245,7 @@ form.search {
   text-transform: uppercase;
 }
 
-.footer_card > p:first-child, .welcome_news_card .main_header, .featured_works .main_header {
+.footer_card > h3, .welcome_news_card .main_header, .featured_works .main_header {
   margin: 0 0 1rem 0;
   line-height: 1.2;
   font-weight: 600;
@@ -299,6 +298,7 @@ form.search {
 }
 .news .news_img {
   flex: 0 0 120px;
+  height: 120px;
 }
 @media (min-width: 768px) {
   .news .news_img {
@@ -312,6 +312,7 @@ form.search {
 }
 .news img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 @media (min-width: 992px) {
@@ -526,10 +527,12 @@ form.search {
 }
 .person_intro .person_img {
   width: 50px;
+  height: 50px;
   flex: 0 0 auto;
 }
 .person_intro .person_img img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .person_intro p {
@@ -611,7 +614,7 @@ footer {
   }
 }
 
-.footer_card > p:first-child {
+.footer_card > h3 {
   font-size: 1.2rem;
 }
 
@@ -637,11 +640,12 @@ footer {
 .flickrs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 0.5rem;
-  row-gap: 0.5rem;
+  gap: 0.5rem;
 }
 .flickrs img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   cursor: pointer;
 }
 .flickrs img:hover {
