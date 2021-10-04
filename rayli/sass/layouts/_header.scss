@@ -3,7 +3,7 @@
 @use "../base/breakpoint";
 
 @use "../components/logo";
-@use "../components/little-icon";
+@use "../components/small-icon";
 @use "../components/search-bar";
 
 @use "../vendor/navbar";
@@ -11,7 +11,7 @@
 .header_contents {
   margin: 0 1rem;
   @include breakpoint.lg {
-    max-width: 992px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 }
@@ -29,6 +29,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 0;
   }
 }
 
@@ -42,19 +43,19 @@
   gap: 0.5rem;
 
   .facebook {
-    @include little-icon.social-at-x(0);
+    @include small-icon.social-at-x(0);
   }
   .twitter {
-    @include little-icon.social-at-x(25%);
+    @include small-icon.social-at-x(25%);
   }
   .flickr {
-    @include little-icon.social-at-x(50%);
+    @include small-icon.social-at-x(50%);
   }
   .dribbble {
-    @include little-icon.social-at-x(74%);
+    @include small-icon.social-at-x(74%);
   }
   .rss {
-    @include little-icon.social-at-x(100%);
+    @include small-icon.social-at-x(100%);
   }
 
   @include breakpoint.md {
@@ -68,6 +69,7 @@ a[href^="tel"] {
   color: black;
   text-decoration: none;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .navbar_and_search {
@@ -101,6 +103,7 @@ form.search {
   @include breakpoint.lg {
     position: static;
     display: flex;
+    flex: 0 0 auto;
     justify-content: center;
     align-items: center;
     width: 220px;
@@ -109,7 +112,7 @@ form.search {
   }
 }
 
-.t6_nav {
+.custom_nav {
   @extend %navbar;
   box-shadow: 0 0 3px gray;
 }

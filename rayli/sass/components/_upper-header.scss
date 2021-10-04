@@ -9,7 +9,7 @@
   color: color.$main-black;
 }
 
-%main-sub-header {
+%main-heading {
   font-size: 1.5rem;
   @extend %upper-header;
   @include breakpoint.lg {

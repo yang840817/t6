@@ -2,7 +2,7 @@
 @use "../base/breakpoint";
 @use "../components/button";
 
-%news-template {
+%news-card {
   display: flex;
   gap: 1rem;
   .news_img {
@@ -20,7 +20,7 @@
     height: 100%;
     object-fit: cover;
   }
-  .date {
+  .news_date {
     @extend %button-date;
   }
 }

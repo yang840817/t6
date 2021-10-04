@@ -25,14 +25,13 @@
       }
     }
     @include breakpoint.lg {
-      &:not(:first-child) {
-        border-left: 1px solid color.$mid-gray;
-      }
+      border-right: 1px solid color.$mid-gray;
     }
   }
 
   @include breakpoint.lg {
     padding: 0;
+    flex: 0 0 80%;
     .container-fluid {
       padding: 0;
     }

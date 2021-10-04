@@ -2,11 +2,11 @@
 @use "../base/background";
 @use "../base/breakpoint";
 
-@use "../components/floating-card";
+@use "../components/card";
 @use "../components/button";
 @use "../components/upper-header";
-@use "../components/fashion-list";
-@use "../components/news-template";
+@use "../components/reason-list";
+@use "../components/news-card";
 
 @use "../vendor/carousel";
 @use "../vendor/swiper";
@@ -16,14 +16,14 @@
   background: url(background.$horizontal-strips);
   box-shadow: 0 0 5px gray;
 
-  & > *:not(.t6_carousel) {
+  & > section:not(.custom_carousel) {
     padding: 1rem;
     @include breakpoint.lg {
       padding: 3rem 2rem;
     }
   }
   @include breakpoint.lg {
-    max-width: 992px;
+    max-width: 1200px;
     margin: 0 auto;
     & > .feature_cards {
       padding: 0 2rem;
@@ -33,7 +33,7 @@
 
 // carousel
 
-.t6_carousel {
+.custom_carousel {
   @extend %carousel;
 }
 
@@ -41,7 +41,7 @@
 
 .feature_cards {
   @include breakpoint.lg {
-    margin-top: -2rem;
+    margin-top: -4rem;
     position: relative;
     z-index: 9;
     .col-lg-3 {
@@ -52,7 +52,7 @@
 
 .feature_card {
   height: 100%;
-  @extend %floating-card;
+  @extend %card;
 
   h2 {
     font-size: 0.8rem;
@@ -78,15 +78,15 @@
 
 // welcome news
 
-.welcome_news_card {
+.welcome_news {
   p {
     color: color.$dark-gray;
     margin: 1rem 0 0 0;
     line-height: 1.2;
   }
 
-  .main_header {
-    @extend %main-sub-header;
+  .main_heading {
+    @extend %main-heading;
   }
 
   a {
@@ -103,7 +103,7 @@
 }
 
 .reason {
-  @extend %fashion-list;
+  @extend %reason-list;
   padding-bottom: 1rem;
   border-bottom: 1px solid color.$light-gray;
   &:not(:first-child) {
@@ -112,7 +112,7 @@
 }
 
 .news {
-  @extend %news-template;
+  @extend %news-card;
   &:not(:first-child) {
     margin-top: 1rem;
   }
@@ -123,8 +123,8 @@
 .featured_works {
   position: relative;
 
-  .main_header {
-    @extend %main-sub-header;
+  .main_heading {
+    @extend %main-heading;
   }
 
   img {

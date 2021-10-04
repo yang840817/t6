@@ -7,7 +7,7 @@
 @use "../components/person-template";
 @use "../components/button";
 @use "../components/multi-input-form";
-@use "../components/flexible-links";
+@use "../components/footer-links";
 
 footer {
   margin-top: 2rem;
@@ -17,7 +17,7 @@ footer {
   margin: 0 1rem;
 
   @include breakpoint.lg {
-    max-width: 992px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 }
@@ -27,6 +27,9 @@ footer {
   padding: 1rem;
   box-shadow: 0 0 5px gray;
 
+  p:last-child {
+    margin-bottom: 0;
+  }
   @include breakpoint.lg {
     padding: 2rem;
   }
@@ -113,7 +116,7 @@ footer {
 }
 
 .navlinks {
-  @extend %flexible-links;
+  @extend %footer-links;
 }
 
 .copyright {
