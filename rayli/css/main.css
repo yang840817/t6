@@ -150,6 +150,9 @@ a[href^=tel] {
   text-transform: capitalize;
   text-align: center;
 }
+a[href^=tel]:hover {
+  text-decoration: underline;
+}
 
 .navbar_and_search {
   margin-top: 1rem;

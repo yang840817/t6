@@ -70,6 +70,10 @@ a[href^="tel"] {
   text-decoration: none;
   text-transform: capitalize;
   text-align: center;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .navbar_and_search {
