@@ -2,17 +2,17 @@ body {
   background: linear-gradient(black 0%, black 100px, transparent 100px, transparent 90%, black 90%, black 100%), url("../images/bg.jpg");
 }
 
-.logo {
+h1.logo {
   margin: 0 auto;
 }
-.logo a {
+h1.logo a {
   display: block;
 }
-.logo img {
+h1.logo img {
   width: 100%;
 }
 @media (min-width: 768px) {
-  .logo {
+  h1.logo {
     margin: 0;
   }
 }
@@ -78,7 +78,7 @@ form.search input::-webkit-search-cancel-button {
   }
 }
 
-.logo_and_social {
+section.logo {
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -87,7 +87,7 @@ form.search input::-webkit-search-cancel-button {
   box-shadow: 0 0 3px gray;
 }
 @media (min-width: 768px) {
-  .logo_and_social {
+  section.logo {
     padding: 2rem;
     flex-direction: row;
     justify-content: space-between;
@@ -154,12 +154,12 @@ a[href^=tel]:hover {
   text-decoration: underline;
 }
 
-.navbar_and_search {
+section.nav_bar {
   margin-top: 1rem;
   position: relative;
 }
 @media (min-width: 992px) {
-  .navbar_and_search {
+  section.nav_bar {
     display: flex;
     justify-content: space-between;
     background: linear-gradient(180deg, transparent 0%, transparent 60%, #ededed 60%, #ededed 100%);
@@ -668,7 +668,7 @@ footer {
   }
 }
 
-.copyright_and_navlinks {
+section.copyright {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -676,20 +676,20 @@ footer {
   font-size: 0.9rem;
 }
 @media (min-width: 992px) {
-  .copyright_and_navlinks {
+  section.copyright {
     padding: 2rem 0;
     flex-direction: row-reverse;
     justify-content: space-between;
   }
 }
 
-.copyright {
+p.copyright {
   margin: 0;
   color: #646464;
   text-transform: uppercase;
   text-align: center;
 }
-.copyright a {
+p.copyright a {
   text-decoration: none;
   color: #81b700;
   text-transform: capitalize;

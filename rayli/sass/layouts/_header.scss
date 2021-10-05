@@ -16,7 +16,7 @@
   }
 }
 
-.logo_and_social {
+section.logo {
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -33,7 +33,7 @@
   }
 }
 
-.logo {
+h1.logo {
   @extend %logo;
 }
 
@@ -76,7 +76,7 @@ a[href^="tel"] {
   }
 }
 
-.navbar_and_search {
+section.nav_bar {
   margin-top: 1rem;
   position: relative;
 
