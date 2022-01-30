@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!-- my css -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>T6 Rex</title>
+</head>
+<body>
+  <header>
+    <!-- ~bs navbar -->
+    <nav class="navbar navbar-expand-md header_container py-0">
+      <div class="container-fluid logo_nav">
+        <h1 class="mb-0">
+          <a href="##">
+            <img src="./images/logo.png" alt="bp_logo" title="BUSINESS PLANET">
+          </a>
+        </h1>
+        <div class="phone_area">
+          <a href="##" class="facebook" title=""></a>
+          <a href="##" class="twitter" title="twitter"></a>
+          <a href="##" class="dribbble" title="dribbble"></a>
+          <a href="##" class="flickr" title="flickr"></a>
+          <a href="##" class="rss" title="rss"></a>
+          <span class="tel_num">Call Us Now: 
+            <a href="tel:+1777784-25-43" title="contact us">+1 (777) 784-25-43</a>
+          </span>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="mt-0 mt-md-3 collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="search_form">
+          <form class="d-flex ">
+            <input class="form-control search_icon" type="search" placeholder="Search the Site..." aria-label="Search">
+          </form>
+        </div>
+        <ul class="navbar-nav me-auto mt-2 mt-md-0 list_area">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="##">
+              HOME
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="##">
+              ABOUT
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              FEATURES
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="##">SUBMENU</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="##">SUBMENU</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="##">SUBMENU</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              PORTFOLIO
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="##">SUBMENU</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="##">SUBMENU</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="##">SUBMENU</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              BLOG
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="##">SUBMENU</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="##">SUBMENU</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="##">SUBMENU</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="##">
+              CONTACTS
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- ~bs 輪播圖 -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/banner1.jpg" class="d-block w-100" alt="banner1">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/banner2.jpg" class="d-block w-100" alt="banner2">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/banner3.jpg" class="d-block w-100" alt="banner3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel_button_prev" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel_button_next" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <article>
+      <div class="service">
+        <div class="service_item">
+          <div class="service_box">
+            <h2>GROWTH STRATEGES</h2>
+            <div class="service_box_logo">
+              <img class="service_box_img" src="./images/p1.png" alt="">
+            </div>
+            <p>Vestibulum dignissm, dui achendrerit blandit, sapien orcidutum nibh,vel suscipit augue nibh in enim. Nullam dignissm euismodnunc at</p>
+            <button class="service_box_button">More</button>
+          </div>
+        </div>
+        <div class="service_item">
+          <div class="service_box">
+            <h2>PERFECT SUPPORT</h2>
+            <div class="service_box_logo">
+              <img class="service_box_img" src="./images/p2.png" alt="">
+            </div>
+            <p>Donec semper, dolor eu iaculis laoreet, erat diam interdum nisi, vel consequat leo neque in ante. Curabitur fringilla tristique nisl ut</p>
+            <button class="service_box_button">More</button>
+          </div>
+        </div>
+        <div class="service_item">
+          <div class="service_box">
+            <h2>PARTNERS PROGRAMS</h2>
+            <div class="service_box_logo">
+              <img class="service_box_img" src="./images/p3.png" alt="">
+            </div>
+            <p>Nunc pellentesque malesuada enim utdignissim. Etiam aliquam malesuada magna,vel scelerisque lectus pharetra quis. Cras</p>
+            <button class="service_box_button">More</button>
+          </div>
+        </div>
+        <div class="service_item">
+          <div class="service_box">
+            <h2>PREMIUME SERVICES</h2>
+            <div class="service_box_logo">
+              <img class="service_box_img" src="./images/p4.png" alt="">
+            </div>
+            <p>Duis molestie commodo sapien, non mollis diam consequat in. Nulla blandit viverra sodales. Donec sit amet diam neque</p>
+            <button class="service_box_button">More</button>
+          </div>
+        </div>
+      </div>
+      <section class="activity">
+        <div class="activity_item">
+          <div class="activity_box">
+            <h3>WELCOME</h3>
+            <div class="activity_img"><img src="./images/welcome.jpg" class="w-100" alt="welcome"></div>
+            <p>Curabitur velit nisl,porttitor molestie quis, lacinia eget purus. Suspendisse ipsum massa,ruturm in
+            hendrerit malesuada, fermentum id erat...<a class="more_link" href="##">More</a></p>
+          </div>
+        </div>
+        <div class="activity_item">
+          <div class="activity_box">
+            <h3>WHY CHOOES US?</h3>
+            <div class="activity_list">
+              <div class="circle_arrow">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+              <p>Etiam rutrum veneatis dui,non</p>
+            </div>
+            <div class="activity_list">
+              <div class="circle_arrow">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+              <p>Aliquam ac diam in lorem vulputate auctor.</p>
+            </div>
+            <div class="activity_list">
+              <div class="circle_arrow">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+              <p>Vestibulum vitae urna quis eros convallis</p>
+            </div>
+            <div class="activity_list">
+              <div class="circle_arrow">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+              <p>Sed magna magna, congue</p>
+            </div>
+          </div>
+        </div>
+        <div class="activity_item">
+          <div class="activity_box">
+            <h3>NEWS & EVENTS</h3>
+            <div class="news">
+              <div class="news_imgbox">
+                <img src="./images/news1.jpg" class="w-100" alt="news1">
+              </div>
+              <div class="news_content">
+                <span class="news_date">
+                  12.12.12
+                </span>
+                <p>Aliquam ac diam in lorem vulputate auctor. Aliquam rhoncus nunc et justo imperdiet blandit ... <a class="more_link" href="##">More</a></p>
+              </div>
+            </div>
+            <div class="news">
+              <div class="news_imgbox">
+                <img src="./images/news2.jpg" class="w-100" alt="news2">
+              </div>
+              <div class="news_content">
+                <span class="news_date">
+                  12.12.12
+                </span>
+                <p>Sed auctor laoreet augue, id pulvinar lacus mattis non. In hac habitasse platea dictumst Proin et lorem ... <a class="more_link" href="##">More</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feature_slider">
+        <div class="swiper_header">
+          <h3>FEATURED WORK</h3>
+          <div class="sw_slider_button">
+            <i class="fas fa-fw fa-chevron-left swiper-next"></i>
+            <i class="fas fa-fw fa-chevron-right swiper-prev"></i>
+          </div>
+        </div>
+        <!-- ~Swiper slider -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="##"><img src="./images/feature1.jpg" alt="feature1"></a></div>
+            <div class="swiper-slide"><a href="##"><img src="./images/feature2.jpg" alt="feature2"></a></div>
+            <div class="swiper-slide"><a href="##"><img src="./images/feature3.jpg" alt="feature3"></a></div>
+            <div class="swiper-slide"><a href="##"><img src="./images/feature4.jpg" alt="feature4"></a></div>
+            <div class="swiper-slide"><a href="##"><img src="./images/feature1.jpg" alt="feature1"></a></div>
+            <div class="swiper-slide"><a href="##"><img src="./images/feature2.jpg" alt="feature2"></a></div>
+            <div class="swiper-slide"><a href="##"><img src="./images/feature3.jpg" alt="feature3"></a></div>
+            <div class="swiper-slide"><a href="##"><img src="./images/feature4.jpg" alt="feature4"></a></div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <section class="footer_list">
+      <div class="show_case">
+        <div class="show_case_item">
+          <div class="show_case_box">
+            <h4>LATEST TWEETS</h4>
+            <p>loading tweets...</p>
+          </div>
+        </div>
+        <div class="show_case_item">
+          <div class="show_case_box">
+            <h4>TESTIMONIALS</h4>
+            <div class="dialogue_box">
+              <p>" Sed dapibus molestie interdrum. Fusce nec est ante, sit amet lacinia lorem. Maecenas nec eros ut mauris pulvinar suscipit. Aliquam erat</p>
+            </div>
+            <div class="referrer">
+              <div>
+                <img src="./images/men.jpg" alt="Stephen Bingham">
+              </div>
+              <p>Stephen Bingham<a href="##">demolink.org</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="show_case_item">
+          <div class="show_case_box">
+            <h4>GET IN TOUCH!</h4>
+            <form class="contacts_form">
+              <input type="text" id="name" placeholder="Name" required>
+              <input type="email" id="email" placeholder="Email" required>
+              <textarea name="content" placeholder="Message" rows="6"></textarea>
+              <div>
+                <div class="contacts_clear">
+                  <input type="reset" value="CLEAR FORM">
+                </div>
+                <div class="contacts_send">
+                  <input type="submit" value="SEND!">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="show_case_item">
+          <div class="show_case_box">
+            <h4>FLICKR</h4>
+            <div class="flickr_album">
+              <a href="##"><img src="./images/f1.jpg" alt="photo album"></a>
+              <a href="##"><img src="./images/f2.jpg" alt="photo album"></a>
+              <a href="##"><img src="./images/f3.jpg" alt="photo album"></a>
+              <a href="##"><img src="./images/f4.jpg" alt="photo album"></a>
+              <a href="##"><img src="./images/f5.jpg" alt="photo album"></a>
+              <a href="##"><img src="./images/f6.jpg" alt="photo album"></a>
+              <a href="##"><img src="./images/f7.jpg" alt="photo album"></a>
+              <a href="##"><img src="./images/f8.jpg" alt="photo album"></a>
+              <a href="##"><img src="./images/f9.jpg" alt="photo album"></a>
+              <a href="##"><img src="./images/f10.jpg" alt="photo album"></a>
+              <a href="##"><img src="./images/f11.jpg" alt="photo album"></a>
+              <a href="##"><img src="./images/f12.jpg" alt="photo album"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="copyright">
+      <ul>
+        <li><a href="##">HOME</a></li>
+        <li><a href="##">ABOUT</a></li>
+        <li><a href="##">FEATURES</a></li>
+        <li><a href="##">PORTFOLIO</a></li>
+        <li><a href="##">BLOG</a></li>
+        <li><a href="##">CONTACTS</a></li>
+      </ul>
+      <span>BUSINESS PLANET &copy; 2020 | <a href="##">Privacy Policy</a></span>
+    </div>
+  </footer>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous">
+  </script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      // slidesPerGroup: 4,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        // el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-next",
+        prevEl: ".swiper-prev",
+      },
+      breakpoints: {
+        425: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+      }
+    });
+  </script>
+</body>
+</html>

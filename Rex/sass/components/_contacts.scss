@@ -1,0 +1,57 @@
+@use '../utilities/breakpoint' as *;
+@use '../utilities/color' as *;
+
+// 填寫表單設置
+%contacts_form_style {
+  border: 1px solid #DBDBDB;
+  border-radius: 3px;
+  padding: 2px 5px;
+  background-color: #E6E6E6;
+
+  color: $grey_300;
+  font-size: .8rem;
+  resize: none;
+}
+.contacts {
+  &_form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    input, textarea {
+      @extend %contacts_form_style;
+    }
+  }
+}
+@mixin form_button {
+  input {
+    padding: 5px 10px;
+    border: unset;
+    border-radius: unset;
+    background-color: unset;
+    
+    color: white;
+    font-size: .8rem;
+    font-weight: 600;
+  }
+}
+@mixin contacts_button_box($color) {
+  @include form_button;
+  display: inline-block;
+  width: fit-content;
+  background-color: $color;
+  text-align: center;
+  &:hover {
+    cursor: pointer;
+    color: black;
+    background-color: #DBDBDB;
+    input {
+      color: black;
+    }
+  }
+}
+.contacts_clear {
+  @include contacts_button_box(black);
+}
+.contacts_send {
+  @include contacts_button_box($green);
+}

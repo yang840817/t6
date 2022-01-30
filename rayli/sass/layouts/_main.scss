@@ -1,0 +1,153 @@
+@use "../base/color";
+@use "../base/background";
+@use "../base/breakpoint";
+
+@use "../components/card";
+@use "../components/button";
+@use "../components/upper-header";
+@use "../components/reason-list";
+@use "../components/news-card";
+
+@use "../vendor/carousel";
+@use "../vendor/swiper";
+
+.main_contents {
+  margin: 0 1rem;
+  background: url(background.$horizontal-strips);
+  box-shadow: 0 0 5px gray;
+
+  & > section:not(.custom_carousel) {
+    padding: 1rem;
+    @include breakpoint.lg {
+      padding: 3rem 2rem;
+    }
+  }
+  @include breakpoint.lg {
+    max-width: 1200px;
+    margin: 0 auto;
+    & > .feature_cards {
+      padding: 0 2rem;
+    }
+  }
+}
+
+// carousel
+
+.custom_carousel {
+  @extend %carousel;
+}
+
+// featured cards
+
+.feature_cards {
+  @include breakpoint.lg {
+    margin-top: -4rem;
+    position: relative;
+    z-index: 9;
+    .col-lg-3 {
+      margin-top: 0;
+    }
+  }
+}
+
+.feature_card {
+  height: 100%;
+  @extend %card;
+
+  h2 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .feature_card_img {
+    display: block;
+    width: 60px;
+    img {
+      width: 100%;
+    }
+  }
+
+  a.more {
+    display: block;
+    margin-top: auto;
+    @extend %button-info;
+  }
+}
+
+// welcome news
+
+.welcome_news {
+  p {
+    color: color.$dark-gray;
+    margin: 1rem 0 0 0;
+    line-height: 1.2;
+  }
+
+  .main_heading {
+    @extend %main-heading;
+  }
+
+  a {
+    font-weight: 600;
+    text-decoration: none;
+    color: color.$main-black;
+  }
+}
+
+.welcome_img {
+  img {
+    width: 100%;
+  }
+}
+
+.reason {
+  @extend %reason-list;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid color.$light-gray;
+  &:not(:first-child) {
+    padding-top: 1rem;
+  }
+}
+
+.news {
+  @extend %news-card;
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
+
+// Featured Works
+
+.featured_works {
+  position: relative;
+
+  .main_heading {
+    @extend %main-heading;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  div[class^="swiper-button"] {
+    @extend %swiper-button;
+  }
+
+  //   border line top
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: calc(100% - 2rem);
+    top: 0;
+    height: 1px;
+    background-color: color.$mid-gray;
+
+    @include breakpoint.lg {
+      width: calc(100% - 4rem);
+    }
+  }
+}

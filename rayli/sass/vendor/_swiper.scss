@@ -1,0 +1,43 @@
+@use "../base/breakpoint";
+@use "../base/color";
+
+%swiper-button {
+  color: color.$mid-gray;
+  top: 50%;
+  margin-top: 0;
+
+  &[class$="next"] {
+    right: 2rem;
+  }
+  &[class$="prev"] {
+    left: 2rem;
+  }
+
+  @include breakpoint.sm {
+    top: 0.5rem;
+
+    &::after {
+      font-size: 1rem;
+    }
+
+    &[class$="next"] {
+      right: 1rem;
+    }
+    &[class$="prev"] {
+      left: auto;
+      right: 3rem;
+    }
+  }
+  @include breakpoint.lg {
+    top: 2.5rem;
+
+    &[class$="next"] {
+      right: 2rem;
+    }
+
+    &[class$="prev"] {
+      left: auto;
+      right: 4rem;
+    }
+  }
+}

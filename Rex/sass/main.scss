@@ -1,0 +1,7 @@
+// reset
+@use 'base/reset.scss';
+// layout
+@use 'layout/body'; 
+@use 'layout/header';
+@use 'layout/main';
+@use 'layout/footer';

@@ -1,0 +1,12 @@
+@use "../base/color";
+@use "../base/background";
+
+%search-bar {
+  padding: 0.5rem;
+  border: 1px solid color.$mid-gray;
+  background: url(background.$magnifying-glass-img) color.$light-gray right
+    0.5rem top 50% no-repeat;
+  &::-webkit-search-cancel-button {
+    display: none;
+  }
+}

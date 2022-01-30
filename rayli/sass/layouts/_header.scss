@@ -1,0 +1,122 @@
+@use "../base/color";
+@use "../base/background";
+@use "../base/breakpoint";
+
+@use "../components/logo";
+@use "../components/small-icon";
+@use "../components/search-bar";
+
+@use "../vendor/navbar";
+
+.header_contents {
+  margin: 0 1rem;
+  @include breakpoint.lg {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+section.logo {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: url(background.$horizontal-strips);
+  box-shadow: 0 0 3px gray;
+
+  @include breakpoint.md {
+    padding: 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+}
+
+h1.logo {
+  @extend %logo;
+}
+
+.social_links {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+
+  .facebook {
+    @include small-icon.social-at-x(0);
+  }
+  .twitter {
+    @include small-icon.social-at-x(25%);
+  }
+  .flickr {
+    @include small-icon.social-at-x(50%);
+  }
+  .dribbble {
+    @include small-icon.social-at-x(74%);
+  }
+  .rss {
+    @include small-icon.social-at-x(100%);
+  }
+
+  @include breakpoint.md {
+    justify-content: flex-end;
+  }
+}
+
+a[href^="tel"] {
+  display: block;
+  margin-top: 1rem;
+  color: black;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: center;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+section.nav_bar {
+  margin-top: 1rem;
+  position: relative;
+
+  @include breakpoint.lg {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      transparent 60%,
+      color.$light-gray 60%,
+      color.$light-gray 100%
+    );
+  }
+}
+
+form.search {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  input {
+    @extend %search-bar;
+    @include breakpoint.lg {
+      display: block;
+      width: 200px;
+    }
+  }
+  @include breakpoint.lg {
+    position: static;
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    background-color: color.$main-white;
+    box-shadow: 0 0 3px gray;
+  }
+}
+
+.custom_nav {
+  @extend %navbar;
+  box-shadow: 0 0 3px gray;
+}

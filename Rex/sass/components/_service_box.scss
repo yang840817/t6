@@ -1,0 +1,26 @@
+@use '../utilities/background.scss' as *;
+@use '../utilities/breakpoint.scss' as *;
+@use '../utilities/color.scss' as *;
+
+@use '../components/card';
+
+.service {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  @include min_width($md) {
+    position: relative;
+    top: -3rem;// card在lg時疊在輪播圖上
+  }
+  &_item {
+    @include min_width($sm) {
+      flex: 1 1 48%;
+    }
+    @include min_width($md) {
+      flex: 1 1 23%;
+    }
+  }
+  &_box {
+    @include card.service_card;
+  }
+}

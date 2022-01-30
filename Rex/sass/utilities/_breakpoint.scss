@@ -1,0 +1,31 @@
+// 裝置斷點
+$sm: 576px;// 手機橫式
+$md: 768px;
+$desktop: 992px;
+
+@mixin min_width($screensize) {
+  @media (min-width: $screensize) {
+    @content;
+  }
+}
+
+// 手機橫式
+// @mixin mobile {
+//   @media (min-width: $sm) {
+//     @content;
+//   }
+// }
+
+// 平板
+// @mixin tablet {
+//   @media (min-width: $md) {
+//     @content;
+//   }
+// }
+
+// 桌機
+// @mixin desktop {
+//   @media (min-width: $desktop) {
+//     @content;
+//   }
+// }

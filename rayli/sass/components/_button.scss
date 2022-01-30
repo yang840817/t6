@@ -1,0 +1,45 @@
+@use "../base/color";
+
+%button {
+  display: inline-block;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+}
+
+%button-for-a-tag {
+  text-decoration: none;
+}
+
+%button-emphasize {
+  font-weight: 600;
+}
+
+%button-info {
+  @extend %button;
+  @extend %button-for-a-tag;
+  background-color: color.$mid-gray;
+  color: color.$main-black;
+}
+
+%button-date {
+  @extend %button;
+  @extend %button-emphasize;
+  background-color: color.$main-green;
+  color: color.$main-white;
+}
+
+%button-ok {
+  @extend %button-date;
+  text-transform: uppercase;
+}
+
+%button-not-ok {
+  @extend %button;
+  @extend %button-emphasize;
+  background-color: color.$main-black;
+  color: color.$main-white;
+  text-transform: uppercase;
+}

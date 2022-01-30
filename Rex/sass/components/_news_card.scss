@@ -1,0 +1,39 @@
+@use '../utilities/color' as *;
+
+%flex_gap {
+  display: flex;
+  gap: 1.5rem;
+}
+// activiy部分news's component
+.news {
+  @extend %flex_gap;
+  &_imgbox {
+    width: 40%;
+  }
+  &_content {
+    width: 50%;
+  }
+  &_date {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    padding: .2rem .5rem;
+    background-color: $green;
+    
+    color: white;
+    font-weight: 600;
+  }
+  // &_date {
+  //   margin-bottom: 1.5rem;
+  // }
+  // &_date {
+  //   display: inline-block;
+  //   padding: .2rem .5rem;
+  //   background-color: $green;
+    
+  //   color: white;
+  //   font-weight: 600;
+  // }
+  & + & {
+    margin-top: 1.5rem;
+  }
+}

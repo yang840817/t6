@@ -1,0 +1,27 @@
+@use "../base/breakpoint";
+@use "../base/background";
+
+%carousel {
+  @include breakpoint.lg {
+    .carousel-control-next-icon {
+      position: absolute;
+      right: 0;
+      height: 119px;
+      width: 40px;
+      background: url(background.$carousel-next) 0 0;
+      &:hover {
+        background: url(background.$carousel-next) 0 119px;
+      }
+    }
+    .carousel-control-prev-icon {
+      position: absolute;
+      left: 0;
+      height: 119px;
+      width: 40px;
+      background: url(background.$carousel-prev) 0 0;
+      &:hover {
+        background: url(background.$carousel-prev) 0 119px;
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@use '../utilities/breakpoint' as *;
+@use '../utilities/background' as *;
+@use '../utilities/color' as *;
+
+@use '../vendors/bootstrap';
+@use '../components/service_box.scss';
+@use '../components/arrowcircle';
+@use '../components/activity';
+@use '../components/news_card';
+@use '../vendors/swiper.scss';
+
+// @use '../../node_modules/bootstrap/scss/_navbar.scss';
+// @use '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+main {
+  @extend %white_line;
+  @include shadow(0, 0, 2px);
+    margin-bottom: 2rem;
+  @include min_width($md) {
+    margin-bottom: 3rem;
+  }
+}
+
+article {
+  padding: 1rem;
+  @include min_width($sm) {
+    padding: 1rem 2.5rem;
+  }
+}
+section {
+  padding: 3rem 0;
+  @include min_width($md) {
+    padding: 0 0 3rem 0;
+  }
+  &:last-child {
+    padding-bottom: 2rem;
+  }
+}
+section + section {
+  @include min_width($md) {
+    padding: 3rem 0 0 0;
+  }
+  &::before{
+    position: relative;
+    display: block;
+    content: '';
+    background: #C6C6C6;
+    height: 1px;
+    bottom: 3rem;
+  }
+}
+.feature_slider {
+  position: relative;
+  height: 100%;
+}

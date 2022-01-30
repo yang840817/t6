@@ -1,0 +1,11 @@
+@use '../utilities/breakpoint' as *;
+@use '../utilities/background' as *;
+
+body {
+  max-width: 1024px;
+  margin: 0 auto;
+  @include background(0%, 90%);
+  @include min_width($md) {
+    @include background(5rem, 90%)
+  }
+}

@@ -1,0 +1,38 @@
+@use '../utilities/color' as *;
+@use '../utilities/breakpoint' as *;
+
+.swiper_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  h3 {
+    margin-bottom: 1rem;
+    @include min_width($md) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+.sw_slider_button {
+  & i {
+    line-height: inherit;
+    color: grey;
+    &:hover {
+    color: $green;
+    }
+  }
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+.swiper-slide img {
+  display: block;
+  max-width: 100%;
+  // height: 100%;
+  object-fit: cover;
+}

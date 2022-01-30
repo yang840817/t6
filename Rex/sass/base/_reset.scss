@@ -1,0 +1,21 @@
+a {
+  text-decoration: none;
+}
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+input,
+textarea {
+  border: none;
+  outline: none;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,14 @@
+@use "../base/breakpoint";
+
+%logo {
+  margin: 0 auto;
+  a {
+    display: block;
+  }
+  img {
+    width: 100%;
+  }
+  @include breakpoint.md {
+    margin: 0;
+  }
+}
