@@ -1,0 +1,9 @@
+@use "./abstracts/flex" as *;
+
+.container {
+  @include flex(around, start, column);
+}
+
+.box {
+  @include flex($align: center);
+}

@@ -1,0 +1,37 @@
+$justifies: center between around start end;
+$aligns: stretch center start end;
+$dirctions: row column;
+
+@mixin flex($justify: start, $align: stretch, $direction: row) {
+  display: flex;
+  flex: wrap;
+  flex-direction: $direction;
+
+  // justify-content 判斷
+  @if not index($justifies, $justify) {
+    @error "#{$justify} is not a valid value. Expected one of #{$justifies}.";
+  }
+
+  @if $justify == between or $justify == around {
+    justify-content: space-#{$justify};
+  } @else if $justify == start or $justify == end {
+    justify-content: flex-#{$justify};
+  } @else {
+    justify-content: $justify;
+  }
+
+  // align-items 判斷
+  @if not index($aligns, $align) {
+    @error "#{$align} is not a valid value. Expected one of #{$aligns}";
+  }
+  @if $align == start or $align == end {
+    align-items: flex-#{$align};
+  } @else {
+    align-items: $align;
+  }
+
+  // flex-direction 判斷
+  @if not index($dirctions, $direction) {
+    @error "#{$direction} is not a valid value. Expected one of row, column";
+  }
+}
