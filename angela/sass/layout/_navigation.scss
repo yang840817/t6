@@ -1,0 +1,28 @@
+@use "../base/spacing";
+
+@use "../utilities/breakpoint";
+
+@use "../vendors/bootstrap/navbar";
+@use "../vendors/bootstrap/search";
+
+.navigation {
+  display: flex;
+
+  @include breakpoint.tablet {
+    flex-wrap: wrap;
+  }
+
+  .modify_navbar {
+    flex: 1 0 70%;
+  }
+
+  .search {
+    flex: 1 0 20%;
+  }
+
+  margin-top: spacing.$sections-margin-s;
+
+  @include breakpoint.tablet {
+    margin-top: spacing.$sections-margin-ml;
+  }
+}

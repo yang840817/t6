@@ -1,0 +1,50 @@
+@use "../base/font";
+@use "../base/spacing";
+
+@use "../utilities/background" as bg;
+@use "../utilities/breakpoint";
+
+@use "../components/dialogue";
+@use "../components/form";
+@use "../components/flicker";
+@use "../components/bottom-nav";
+
+footer {
+  margin-top: spacing.$sections-margin-s;
+
+  @include breakpoint.tablet {
+    margin-top: spacing.$sections-margin-ml;
+  }
+
+  section {
+    @include bg.section_bg;
+    padding: 20px spacing.$horizontal-padding-s;
+
+    @include breakpoint.desktop {
+      padding: 20px spacing.$horizontal-padding-ml;
+    }
+  }
+
+  .row {
+    > div + div {
+      margin-top: 20px;
+    }
+
+    @include breakpoint.tablet {
+      > div:nth-child(2) {
+        margin-top: 0;
+      }
+    }
+
+    @include breakpoint.desktop {
+      > div + div {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.footer_content_title {
+  margin-bottom: 20px;
+  @extend .secondary_title;
+}

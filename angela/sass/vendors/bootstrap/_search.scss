@@ -1,0 +1,42 @@
+@use "../../base/color" as *;
+
+@use "../../utilities/breakpoint";
+@use "../../utilities/position";
+
+@use "../../components/widget-style/inputs";
+
+// base on bootstrap search component
+//搜尋欄
+.navigation {
+  position: relative;
+}
+.search {
+  @include position.absolute(12px, 8px, auto, auto);
+  margin-left: 20px;
+
+  @include breakpoint.tablet {
+    position: static;
+    margin: 0;
+    padding: 10px;
+
+    background: white;
+  }
+
+  @include breakpoint.desktop {
+    margin-left: 20px;
+
+    box-shadow: 0 0 10px $gray-500;
+  }
+
+  input {
+    @extend .input-base;
+
+    padding-right: 30px;
+    background: $gray-100 url(../images/search.png) no-repeat;
+    background-position: right 10px bottom 50%;
+
+    &::-webkit-search-cancel-button {
+      appearance: none;
+    }
+  }
+}

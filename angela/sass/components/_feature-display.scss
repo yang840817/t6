@@ -1,0 +1,39 @@
+@use "../base/color" as *;
+@use "../utilities/icon-unify" as icon;
+
+.feature {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  border-bottom: 2px solid $gray-200;
+
+  a {
+    flex-shrink: 0;
+
+    @include icon.icon-circle-bg(40px);
+
+    i {
+      transform: translateX(0);
+      transition: 0.2s ease-in;
+    }
+
+    &:hover {
+      background: $highlight-green;
+
+      i {
+        transform: translateX(3px);
+        transition: 0.2s ease-in;
+      }
+    }
+  }
+
+  p {
+    margin-left: 20px;
+  }
+
+  & + div {
+    padding: 10px 10px;
+    border-bottom: 2px solid $gray-200;
+    text-align: center;
+  }
+}

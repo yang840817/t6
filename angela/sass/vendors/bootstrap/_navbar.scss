@@ -1,0 +1,57 @@
+@use "../../base/color" as *;
+@use "../../utilities/background" as bg;
+@use "../../utilities/breakpoint";
+
+// base on bootstrap navbar component
+
+.modify_navbar {
+  padding: 10px 10px;
+
+  background: white;
+  border-bottom: 1px solid $gray-200;
+  box-shadow: 0 0 10px $gray-500;
+
+  .navbar-nav {
+    .nav-link,
+    .dropdown-item {
+      flex: 1 0 auto;
+      text-transform: uppercase;
+
+      //移除bs預設bg-color效果
+      background-color: unset;
+      color: black;
+
+      &:focus {
+        color: white;
+        background: $highlight-green;
+      }
+
+      &:hover {
+        color: white;
+        background: $highlight-green;
+      }
+    }
+
+    .nav-link {
+      padding: 15px 15px;
+    }
+  }
+
+  .dropdown-menu {
+    padding: 0;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+}
+
+@include breakpoint.tablet {
+  .navbar {
+    padding: 0 0;
+  }
+
+  .nav-item {
+    border-right: 1px solid $gray-200;
+  }
+}

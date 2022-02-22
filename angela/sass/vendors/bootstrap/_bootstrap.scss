@@ -1,0 +1,27 @@
+// 目前版本的Bootstrap SCSS 檔案拆分設計上必須使用@import引入
+//Required
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/utilities";
+
+//Optional
+@import "../../../node_modules/bootstrap/scss/root";
+@import "../../../node_modules/bootstrap/scss/reboot";
+
+//Layout
+@import "../../../node_modules/bootstrap/scss/containers";
+@import "../../../node_modules/bootstrap/scss/grid";
+
+//Component
+@import "../../../node_modules/bootstrap/scss/forms"; //for search input
+@import "../../../node_modules/bootstrap/scss/dropdown"; //for navbar dropdown
+@import "../../../node_modules/bootstrap/scss/transitions"; //for navbar toggle
+@import "../../../node_modules/bootstrap/scss/nav";
+@import "../../../node_modules/bootstrap/scss/navbar";
+@import "../../../node_modules/bootstrap/scss/carousel";
+
+//需要 visually-hidden
+@import "../../../node_modules/bootstrap/scss/helpers";
+
+// @import "../../../node_modules/bootstrap/scss/utilities/api";

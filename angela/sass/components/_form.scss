@@ -1,0 +1,30 @@
+@use "../base/color" as *;
+
+@use "../components/widget-style/inputs";
+@use "../components/widget-style/buttons";
+
+.contact {
+  input,
+  textarea {
+    @extend .input-base;
+
+    margin-bottom: 5px;
+    width: 100%;
+  }
+
+  button {
+    @extend .button_base;
+    text-transform: uppercase;
+  }
+
+  .reset_button {
+    background: black;
+    color: white;
+  }
+
+  .submit_button {
+    margin-left: 5px;
+    background: $highlight-green;
+    color: white;
+  }
+}

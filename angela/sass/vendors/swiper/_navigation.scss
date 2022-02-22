@@ -1,0 +1,51 @@
+@use "../../base/color" as *;
+@use "../../utilities/position";
+@use "../../utilities/icon-unify" as icon;
+
+// base on swiper navigation
+.gallery_header {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+.gallery_button_group {
+  align-self: flex-end;
+}
+
+.swiper-slide {
+  position: relative;
+
+  .work_link {
+    display: none;
+  }
+
+  &:hover {
+    img {
+      opacity: 0.6;
+    }
+
+    .work_link {
+      display: block;
+      @include icon.icon-circle-bg(45px);
+      @include position.absolute-center;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: inline-block;
+  i {
+    display: block;
+    font-size: 20px;
+    color: $gray-300;
+  }
+}

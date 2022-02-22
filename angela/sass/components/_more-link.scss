@@ -1,0 +1,10 @@
+@use "../base/color" as *;
+
+.more_link {
+  font-weight: 600;
+  text-transform: capitalize;
+
+  &:hover {
+    color: $highlight-green;
+  }
+}

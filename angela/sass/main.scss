@@ -1,0 +1,28 @@
+//vendor
+@use "vendors/swiper/swiper";
+@use "vendors/bootstrap/bootstrap";
+
+//base setting
+@use "base/reset";
+@use "base/color" as *;
+
+//layout
+@use "layout/header";
+@use "layout/navigation";
+@use "layout/main";
+@use "layout/footer";
+
+* {
+  // outline: 1px solid rosybrown;
+}
+
+body {
+  min-width: 375px;
+  background: linear-gradient(
+      180deg,
+      black 0 75px,
+      transparent 75px 90%,
+      black 90% 100%
+    ),
+    url(../images/bg.jpg);
+}

@@ -1,0 +1,14 @@
+@use "../../base/color" as *;
+
+.input-base {
+  padding: 5px;
+
+  background: $gray-100;
+  border: 1px solid $gray-300;
+  border-radius: 2px;
+
+  &:focus {
+    outline: 2px solid $highlight-green;
+    box-shadow: none;
+  }
+}

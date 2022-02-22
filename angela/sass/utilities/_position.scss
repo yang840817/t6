@@ -1,0 +1,22 @@
+// 絕對定位
+@mixin absolute(
+  $top: auto,
+  $right: auto,
+  $bottom: auto,
+  $left: auto,
+  $zindex: 1
+) {
+  position: absolute;
+  top: $top;
+  bottom: $bottom;
+  left: $left;
+  right: $right;
+  z-index: $zindex;
+}
+
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

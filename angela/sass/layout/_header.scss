@@ -1,0 +1,54 @@
+@use "../base/color" as *;
+
+@use "../utilities/background" as bg;
+@use "../utilities/breakpoint";
+
+@use "../components/social-media";
+// @import "../base/color";
+
+header {
+  margin-top: 10px;
+  padding: 15px 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  @include bg.section_bg;
+  @include breakpoint.tablet {
+    justify-content: space-between;
+  }
+}
+
+.logo a {
+  display: inline-block;
+}
+
+.connect {
+  margin-top: 15px;
+
+  @include breakpoint.tablet {
+    margin: 0;
+  }
+
+  .telephone {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .tel_link {
+    &:hover {
+      color: $highlight-green;
+    }
+  }
+}
+
+.social_media {
+  display: flex;
+  justify-content: center;
+
+  @include breakpoint.tablet {
+    justify-content: flex-end;
+  }
+}

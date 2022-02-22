@@ -1,0 +1,19 @@
+.flickr_album {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+
+  img {
+    width: 100%;
+  }
+
+  &:hover {
+    img {
+      filter: grayscale(100%);
+    }
+
+    img:hover {
+      filter: grayscale(0);
+    }
+  }
+}

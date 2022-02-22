@@ -1,0 +1,35 @@
+@use "../base/color" as *;
+@use "../base/font";
+
+@use "./more-link";
+
+.news_card {
+  display: flex;
+
+  &_image {
+    flex-basis: 45%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &_body {
+    flex-basis: 50%;
+    margin-left: 15px;
+  }
+
+  .news_date {
+    display: inline-block;
+    padding: 5px;
+    color: white;
+    background: $highlight-green;
+  }
+
+  p {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+}

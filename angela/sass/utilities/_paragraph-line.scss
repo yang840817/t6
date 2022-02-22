@@ -1,0 +1,7 @@
+// 當段落超過一定行數則顯示刪節號
+@mixin line-clamp($rows) {
+  display: -webkit-box;
+  -webkit-line-clamp: $rows;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

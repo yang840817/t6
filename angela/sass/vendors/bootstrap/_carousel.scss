@@ -1,0 +1,53 @@
+@use "../../base/color" as *;
+
+@use "../../utilities/breakpoint";
+
+// base on bootstrap carousel component
+
+.carousel_modify {
+  height: 300px;
+
+  .carousel-inner,
+  .carousel-item {
+    height: 100%;
+  }
+
+  @include breakpoint.tablet {
+    height: auto;
+    .carousel-inner,
+    .carousel-item {
+      height: auto;
+    }
+  }
+
+  .carousel-item {
+    &:nth-child(2) img {
+      object-position: 70%;
+    }
+
+    &:nth-child(3) img {
+      object-position: 90%;
+    }
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  button {
+    background: black;
+    height: 100px;
+    width: fit-content;
+    position: absolute;
+
+    bottom: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &:hover {
+      background: $highlight-green;
+    }
+  }
+}

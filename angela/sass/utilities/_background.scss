@@ -1,0 +1,9 @@
+@use "../base/color" as *;
+
+$bg_section: url("../images/subbg.gif");
+
+@mixin section_bg($shadow-blur: 10px) {
+  background-image: $bg_section;
+  background-repeat: repeat;
+  box-shadow: 0 0 $shadow-blur $gray-500;
+}

@@ -1,0 +1,48 @@
+@use "sass:map";
+
+@mixin sprite($x, $y) {
+  display: inline-block;
+  background-image: url("../images/social.png");
+  background-repeat: no-repeat;
+  background-position: $x $y;
+  width: 27px;
+  height: 27px;
+
+  &:hover {
+    background-position: $x bottom;
+  }
+}
+
+.social_media {
+  li {
+    font-size: 0;
+
+    & + li {
+      margin-left: 10px;
+    }
+
+    a {
+      display: block;
+    }
+
+    &:first-child a {
+      @include sprite(0, 0);
+    }
+
+    &:nth-child(2) a {
+      @include sprite(-37px, 0);
+    }
+
+    &:nth-child(3) a {
+      @include sprite(-74px, 0);
+    }
+
+    &:nth-child(4) a {
+      @include sprite(-111px, 0);
+    }
+
+    &:nth-child(5) a {
+      @include sprite(-150px, 0);
+    }
+  }
+}

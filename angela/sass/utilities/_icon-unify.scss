@@ -1,0 +1,16 @@
+@use "../base/color" as *;
+
+@mixin icon-circle-bg($diameter) {
+  height: $diameter;
+  width: $diameter;
+  border-radius: 999px;
+  background: $gray-300;
+  color: white;
+
+  text-align: center;
+  line-height: $diameter;
+
+  &:hover {
+    background: $highlight-green;
+  }
+}

@@ -1,0 +1,83 @@
+@use "../base/color" as *;
+
+@use "../utilities/breakpoint";
+
+// 用clip-path做背景框，從父元素以drop-shadow做陰影
+.dialogue {
+  filter: drop-shadow(1px 1px 0 $gray-300) drop-shadow(-1px -1px 0 $gray-300);
+
+  p {
+    background: $gray-100;
+
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 10% 90%, 0% 100%);
+    padding: 15px 20px 40px;
+
+    @include breakpoint.tablet {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 15% 90%, 0% 100%);
+    }
+  }
+}
+
+.testimonials {
+  .dialogue {
+    margin-bottom: 20px;
+  }
+
+  .custom_info {
+    display: flex;
+
+    div {
+      margin-left: 10px;
+    }
+
+    span {
+      display: block;
+      text-transform: capitalize;
+    }
+
+    a {
+      display: block;
+      color: $highlight-green;
+      font-style: italic;
+    }
+  }
+}
+
+// 對話框-長方形-p, 底下三角形為p的偽元素，用border做三角形，一個比較大並放在下層，視覺上作為border
+// .dialogue {
+//   p {
+//     position: relative;
+//     padding: 10px 20px;
+
+//     background: $gray-100;
+//     border: 1px solid $gray-200;
+//     border-radius: 2px;
+
+//     &::after,
+//     &::before {
+//       position: absolute;
+//       content: "";
+//       height: 0;
+//       width: 0;
+//       border: solid transparent;
+//     }
+
+//     &::before {
+//       border-width: 14px 24px 0 0;
+//       border-top-color: $gray-100;
+//       left: 0;
+//       bottom: 0;
+//       transform: translateY(13px);
+//       z-index: 99;
+//     }
+
+//     &::after {
+//       border-width: 15px 28px 0 0;
+//       border-top-color: $gray-200;
+//       transform: translateY(14px) translateX(-1px);
+//       left: 0;
+//       bottom: 0;
+//       z-index: 9;
+//     }
+//   }
+// }
