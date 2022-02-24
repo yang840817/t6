@@ -16,20 +16,61 @@
 
 .swiper-slide {
   position: relative;
+  overflow: hidden;
 
-  .work_link {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: -35%;
+    right: -35%;
+    transform: rotate(45deg);
+    background: $gray-500;
+    opacity: 0.6;
+    transition: 0.2s all ease;
+  }
+
+  .work_info {
     display: none;
   }
 
   &:hover {
-    img {
-      opacity: 0.6;
+    &::before {
+      top: -35%;
+      bottom: -35%;
+      transition: 0.2s all ease;
     }
 
-    .work_link {
+    .work_info {
       display: block;
-      @include icon.icon-circle-bg(45px);
       @include position.absolute-center;
+
+      text-align: center;
+      color: white;
+
+      &_title {
+        display: block;
+        border-bottom: 2px solid $gray-200;
+        font-size: 24px;
+        font-weight: 500;
+        text-transform: capitalize;
+      }
+
+      &_links {
+        span {
+          display: block;
+          margin-top: 10px;
+          font-size: 18px;
+        }
+
+        i {
+          display: inline-block;
+          margin-top: 5px;
+          font-size: 16px;
+          @include icon.icon-circle-bg(30px);
+        }
+      }
     }
   }
 
