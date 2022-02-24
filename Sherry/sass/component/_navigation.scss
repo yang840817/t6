@@ -1,126 +1,131 @@
-@use '../abstracts/color' as *;
-@use '../abstracts/breakpoint' as *;
+@use "../abstracts/color" as *;
+@use "../abstracts/breakpoint" as *;
 
 //漢堡圖示
 .hamburger_toggler {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10%;
-    &:hover {
-        color: $color-highlight;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  &:hover {
+    color: $color-highlight;
+  }
+  i {
+    font-size: 1.5rem;
+    @include mobile {
+      font-size: 2rem;
     }
-    i {
-        font-size: 1.5rem;
-        @include mobile {
-            font-size: 2rem;
-        }
-    }
-    @include desktop {
-        display: none;
-    }
+  }
+  @include desktop {
+    display: none;
+  }
 }
 
 //collapse效果
-input[id='hamburger'] {
-    display: none;
+input[id="hamburger"] {
+  display: none;
 }
 
 #hamburger {
-    &:checked + #collapse {
-        display: flex;
-        flex-direction: column;
-    }
+  &:checked + #collapse {
+    display: flex;
+    flex-direction: column;
+  }
 
-    //nav
-    & + #collapse {
-        display: none;
+  //nav
+  & + #collapse {
+    display: none;
+    @include desktop {
+      display: flex;
+      flex-direction: row-reverse;
     }
+  }
 }
 
 @include desktop {
-    #hamburger:checked + #collapse {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    #collapse {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        gap: 2%;
-        background: linear-gradient(transparent 50%, white 50%);
-    }
+  #hamburger:checked + #collapse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  #collapse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 2%;
+    background: linear-gradient(transparent 50%, white 50%);
+  }
 }
 
 /*nav-bar*/
 .nav_bar {
-    text-align: center;
-    background: white;
-    a {
-        display: block;
-        padding: 1rem;
-        font-size: 1rem;
-        color: $color-primary;
-        &:hover {
-            background: $color-highlight;
-            color: white !important;
-        }
+  text-align: center;
+  background: white;
+  a {
+    display: block;
+    padding: 1rem;
+    font-size: 1rem;
+    color: $color-primary;
+    &:hover {
+      background: $color-highlight;
+      color: white !important;
+    }
 
-        @include desktop {
-            &:not(.drop_down_item) {
-                border-right: 1px solid $color-grey;
-            }
-        }
-    }
     @include desktop {
-        flex: 1 1 auto;
-        box-shadow: 1px -1px 8px $color-dark-grey;
-        > ul {
-            display: flex;
-        }
+      &:not(.drop_down_item) {
+        border-right: 1px solid $color-grey;
+      }
     }
+  }
+  @include desktop {
+    flex: 1 1 auto;
+    box-shadow: 1px -1px 8px $color-dark-grey;
+    > ul {
+      display: flex;
+    }
+  }
 }
 
 //nav bar toggle效果
 .drop_down {
-    position: relative;
-    &_toggle {
-        i {
-            margin-left: 8px;
-            font-size: 2px;
-        }
-        &:focus + .drop_down_menu {
-            display: block;
-            position: static;
-            top: 100%;
-            left: 0;
-            right: 0;
-            z-index: 999;
-            background: lemonchiffon;
-            @include desktop {
-                position: absolute;
-            }
-        }
+  position: relative;
+  &_toggle {
+    i {
+      margin-left: 8px;
+      font-size: 2px;
     }
-    &_menu {
-        display: none;
+    &:focus + .drop_down_menu {
+      display: block;
+      position: static;
+      top: 100%;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      background: lemonchiffon;
+      @include desktop {
+        position: absolute;
+      }
     }
+  }
+  &_menu {
+    display: none;
+  }
 }
 
 /*search bar*/
 .search {
-    background: white;
+  background: white;
+  padding: 0.5rem;
+  input {
+    width: 100%;
     padding: 0.5rem;
-    input {
-        width: 100%;
-        padding: 0.5rem;
-        background: url(../images/search.png), $color-light-grey;
-        background-repeat: no-repeat;
-        background-position: top 50% right 0.9rem;
-    }
-    @include desktop {
-        flex: 1 1 auto;
-        padding: 0.5rem;
-        box-shadow: -1px -1px 8px $color-dark-grey;
-    }
+    background: url(../images/search.png), $color-light-grey;
+    background-repeat: no-repeat;
+    background-position: top 50% right 0.9rem;
+  }
+  @include desktop {
+    flex: 1 1 auto;
+    padding: 0.5rem;
+    box-shadow: -1px -1px 8px $color-dark-grey;
+  }
 }

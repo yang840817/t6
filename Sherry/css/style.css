@@ -220,6 +220,12 @@ input[id=hamburger] {
 #hamburger + #collapse {
   display: none;
 }
+@media (min-width: 992px) {
+  #hamburger + #collapse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
 
 @media (min-width: 992px) {
   #hamburger:checked + #collapse {
@@ -791,10 +797,6 @@ form .send:hover {
 
 footer .row {
   row-gap: 2rem;
-}
-
-* {
-  outline: 1px solid black;
 }
 
 /*# sourceMappingURL=style.css.map */
