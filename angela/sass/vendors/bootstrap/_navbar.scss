@@ -11,6 +11,17 @@
   border-bottom: 1px solid $gray-200;
   box-shadow: 0 0 10px $gray-500;
 
+  & > .container {
+    padding: 0;
+  }
+
+  .navbar-toggler {
+    padding: 4px 10px;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
   .navbar-nav {
     .nav-link,
     .dropdown-item {
@@ -39,10 +50,6 @@
 
   .dropdown-menu {
     padding: 0;
-  }
-
-  .navbar-toggler:focus {
-    box-shadow: none;
   }
 }
 
