@@ -1,9 +1,3 @@
-@use "./abstracts/flex" as *;
-
-.container {
-  @include flex(around, start, column);
-}
-
-.box {
-  @include flex($align: center);
-}
+@use "./base/reset";
+@use "./layout/body";
+@use "./layout/header";

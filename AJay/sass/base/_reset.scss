@@ -26,20 +26,18 @@ li {
   padding: 0;
   list-style-type: none;
 }
-button {
-  border: none;
-}
+
 a {
   text-decoration: none;
-}
-input,
-textarea {
-  &:hover,
-  &:focus {
-    border: none;
-    outline: none;
+  color: inherit;
+  &:hover {
+    color: inherit;
   }
 }
+
 img {
   vertical-align: middle;
+}
+input {
+  outline: none;
 }

@@ -1,10 +1,11 @@
 $justifies: center between around start end;
 $aligns: stretch center start end;
 $dirctions: row column;
+$wraps: wrap nowrap;
 
-@mixin flex($justify: start, $align: stretch, $direction: row) {
+@mixin flex($justify: start, $align: stretch, $direction: row, $wrap: wrap) {
   display: flex;
-  flex: wrap;
+  flex-wrap: $wrap;
   flex-direction: $direction;
 
   // justify-content 判斷
@@ -33,5 +34,10 @@ $dirctions: row column;
   // flex-direction 判斷
   @if not index($dirctions, $direction) {
     @error "#{$direction} is not a valid value. Expected one of row, column";
+  }
+
+  // flex-wrap 判斷
+  @if not index($wraps, $wrap) {
+    @error "#{$wrap} is not a valid value. Expecte one of wrap, nowrap";
   }
 }

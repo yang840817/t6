@@ -1,0 +1,120 @@
+@use "../tools/all" as tool;
+@use "../abstracts/colors" as color;
+
+// nav漢堡
+.a-navToggler {
+  display: block;
+  padding: 0.5rem;
+  cursor: pointer;
+  @include tool.desktop {
+    display: none;
+  }
+  &:hover {
+    span {
+      background-color: color.$green;
+    }
+  }
+  span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.a-navTrigger {
+  display: none;
+  &:checked {
+    & ~ .o-navbar {
+      max-height: 350px;
+    }
+  }
+}
+.o-navbar {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s;
+  @include tool.desktop {
+    @include tool.flex(between, stretch, row, nowrap);
+    gap: 10px;
+    height: fit-content;
+    max-height: none;
+    overflow: visible;
+  }
+}
+.m-searchbar {
+  padding: 5px 10px;
+  background-color: #fff;
+  position: relative;
+  @include tool.desktop {
+    flex: 0 1 30%;
+    order: 2;
+    box-shadow: 0 0 4px color.$gray-400;
+  }
+  &_inputbar {
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    background-color: #f3f3f3;
+    @include tool.desktop {
+      padding: 5px;
+    }
+  }
+  &_magnifier {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    padding: 2px 5px;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: 0.25s;
+    &:hover {
+      background-color: color.$green;
+      > i {
+        color: #fff;
+      }
+    }
+    > i {
+      color: #bbb;
+      transition: 0.25s;
+    }
+  }
+}
+.m-list {
+  background-color: #fff;
+  @include tool.tablet {
+    @include tool.flex(start, stretch, row, wrap);
+    flex: 0 1 70%;
+  }
+  @include tool.desktop {
+    box-shadow: 0 0 4px color.$gray-400;
+  }
+  &_item {
+    @extend %body-2;
+    padding: 10px 0;
+    border-bottom: 1px dashed color.$gray-300;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.25s, color 0.25s;
+    @include tool.tablet {
+      flex: 1 1 50%;
+    }
+    @include tool.desktop {
+      flex: 0 0 auto;
+      padding: 10px 20px;
+      border-bottom: none;
+      border-right: 1px solid #eee;
+    }
+    &:hover {
+      color: #fff;
+      background-color: color.$green;
+    }
+  }
+}

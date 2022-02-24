@@ -1,0 +1,41 @@
+@use "../abstracts/colors" as color;
+
+%title-1 {
+  color: color.$black;
+  font: {
+    size: 30px;
+    family: Arial, sans-serif;
+  }
+}
+
+%title-2 {
+  color: color.$gray-400;
+  font: {
+    size: 23px;
+    family: Arial, sans-serif;
+  }
+}
+
+%body-1 {
+  color: color.$gray-200;
+  font: {
+    size: 16px;
+    family: Arial, sans-serif;
+  }
+}
+
+%body-2 {
+  color: color.$gray-500;
+  font: {
+    size: 14px;
+    family: Arial, sans-serif;
+  }
+}
+
+%body-3 {
+  font: {
+    size: 12px;
+    color: color.$gray-400;
+    family: Arial, sans-serif;
+  }
+}

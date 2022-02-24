@@ -1,17 +1,341 @@
-.container {
-  display: flex;
-  flex: wrap;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.box {
+body {
+  margin: 0;
+}
+
+section,
+article,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: inherit;
+}
+
+img {
+  vertical-align: middle;
+}
+
+input {
+  outline: none;
+}
+
+.m-list_item {
+  color: #1d1d1d;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100vh;
+  background-image: linear-gradient(#1d1d1d 0 70px, transparent 70px 90%, #1d1d1d 90% 100%), url(../images/bg.jpg);
+}
+@media (min-width: 576px) {
+  body {
+    padding: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    padding: 0 2rem;
+  }
+}
+
+.a-navToggler {
+  display: block;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  .a-navToggler {
+    display: none;
+  }
+}
+.a-navToggler:hover span {
+  background-color: #80b600;
+}
+.a-navToggler span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+}
+.a-navToggler span:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.a-navTrigger {
+  display: none;
+}
+.a-navTrigger:checked ~ .o-navbar {
+  max-height: 350px;
+}
+
+.o-navbar {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s;
+}
+@media (min-width: 992px) {
+  .o-navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 10px;
+    height: fit-content;
+    max-height: none;
+    overflow: visible;
+  }
+}
+
+.m-searchbar {
+  padding: 5px 10px;
+  background-color: #fff;
+  position: relative;
+}
+@media (min-width: 992px) {
+  .m-searchbar {
+    flex: 0 1 30%;
+    order: 2;
+    box-shadow: 0 0 4px #3a3a3a;
+  }
+}
+.m-searchbar_inputbar {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  background-color: #f3f3f3;
+}
+@media (min-width: 992px) {
+  .m-searchbar_inputbar {
+    padding: 5px;
+  }
+}
+.m-searchbar_magnifier {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  padding: 2px 5px;
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: 0.25s;
+}
+.m-searchbar_magnifier:hover {
+  background-color: #80b600;
+}
+.m-searchbar_magnifier:hover > i {
+  color: #fff;
+}
+.m-searchbar_magnifier > i {
+  color: #bbb;
+  transition: 0.25s;
+}
+
+.m-list {
+  background-color: #fff;
+}
+@media (min-width: 576px) {
+  .m-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex: 0 1 70%;
+  }
+}
+@media (min-width: 992px) {
+  .m-list {
+    box-shadow: 0 0 4px #3a3a3a;
+  }
+}
+.m-list_item {
+  padding: 10px 0;
+  border-bottom: 1px dashed #57514c;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s;
+}
+@media (min-width: 576px) {
+  .m-list_item {
+    flex: 1 1 50%;
+  }
+}
+@media (min-width: 992px) {
+  .m-list_item {
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    border-bottom: none;
+    border-right: 1px solid #eee;
+  }
+}
+.m-list_item:hover {
+  color: #fff;
+  background-color: #80b600;
+}
+
+.o-social {
+  position: relative;
+}
+
+.o-social_toggler {
+  display: block;
+  padding: 0.5rem;
+  color: #3a3a3a;
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  .o-social_toggler {
+    display: none;
+  }
+}
+.o-social_toggler:hover {
+  color: #80b600;
+}
+.o-social_toggler i {
+  font-size: 22px;
+}
+
+.o-social_trigger {
+  display: none;
+}
+.o-social_trigger:checked ~ .o-social_content {
+  max-height: 100px;
+  padding: 1rem;
+}
+
+.o-social_content {
+  position: absolute;
+  width: 270px;
+  top: 50px;
+  right: 0;
+  z-index: 30;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #fff;
+  transition: max-height 0.4s, padding 0.4s;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.6);
+}
+@media (min-width: 992px) {
+  .o-social_content {
+    position: static;
+    width: 100%;
+    height: fit-content;
+    max-height: none;
+    box-shadow: none;
+  }
+}
+.o-social_content .m-icons_item {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+}
+.o-social_content .m-icons_item:not(:last-child) {
+  margin-right: 1rem;
+}
+.o-social_content .m-icons_item.-facebook {
+  background-image: url("/images/social.png");
+  background-position: 0 0;
+}
+.o-social_content .m-icons_item.-facebook:hover {
+  background-position: 0 100%;
+}
+.o-social_content .m-icons_item.-twitter {
+  background-image: url("/images/social.png");
+  background-position: -37px 0;
+}
+.o-social_content .m-icons_item.-twitter:hover {
+  background-position: -37px 100%;
+}
+.o-social_content .m-icons_item.-flickr {
+  background-image: url("/images/social.png");
+  background-position: -74px 0;
+}
+.o-social_content .m-icons_item.-flickr:hover {
+  background-position: -74px 100%;
+}
+.o-social_content .m-icons_item.-dribbble {
+  background-image: url("/images/social.png");
+  background-position: -111px 0;
+}
+.o-social_content .m-icons_item.-dribbble:hover {
+  background-position: -111px 100%;
+}
+.o-social_content .m-icons_item.-rss {
+  background-image: url("/images/social.png");
+  background-position: -150px 0;
+}
+.o-social_content .m-icons_item.-rss:hover {
+  background-position: -150px 100%;
+}
+
+.o-header {
   display: flex;
-  flex: wrap;
+  flex-wrap: nowrap;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
+  gap: 1rem;
+  height: 100px;
+  padding: 1rem;
+  background: url("../images/subbg.gif");
+}
+.o-header_navToggler {
+  flex: 0 0 auto;
+}
+@media (min-width: 992px) {
+  .o-header_navToggler {
+    display: none;
+  }
+}
+.o-header_logo {
+  flex: 1 1 200px;
+  max-width: 300px;
+}
+.o-header_social {
+  flex: 0 0 auto;
+}
+
+.a-logo {
+  display: block;
+}
+.a-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=style.css.map */

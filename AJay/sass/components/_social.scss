@@ -1,0 +1,87 @@
+@use "../tools/all" as tool;
+@use "../abstracts/colors" as color;
+
+// sodical media
+$sprite-social: url("/images/social.png");
+
+@mixin sprite($x, $y, $img) {
+  background: {
+    image: $sprite-social;
+    position: $x $y;
+  }
+  &:hover {
+    background-position: $x 100%;
+  }
+}
+
+.o-social {
+  position: relative;
+}
+.o-social_toggler {
+  display: block;
+  padding: 0.5rem;
+  color: color.$gray-400;
+  cursor: pointer;
+  @include tool.desktop {
+    display: none;
+  }
+  &:hover {
+    color: color.$green;
+  }
+  i {
+    font-size: 22px;
+  }
+}
+.o-social_trigger {
+  display: none;
+  &:checked {
+    & ~ .o-social_content {
+      max-height: 100px;
+      padding: 1rem;
+    }
+  }
+}
+.o-social_content {
+  position: absolute;
+  width: 270px;
+  top: 50px;
+  right: 0;
+  z-index: 30;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #fff;
+  transition: max-height 0.4s, padding 0.4s;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.6);
+  @include tool.desktop {
+    position: static;
+    width: 100%;
+    height: fit-content;
+    max-height: none;
+    box-shadow: none;
+  }
+  .m-icons {
+    &_item {
+      display: inline-block;
+      width: 27px;
+      height: 27px;
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+      &.-facebook {
+        @include sprite(0, 0, $sprite-social);
+      }
+      &.-twitter {
+        @include sprite(-37px, 0, $sprite-social);
+      }
+      &.-flickr {
+        @include sprite(-74px, 0, $sprite-social);
+      }
+      &.-dribbble {
+        @include sprite(-111px, 0, $sprite-social);
+      }
+      &.-rss {
+        @include sprite(-150px, 0, $sprite-social);
+      }
+    }
+  }
+}
