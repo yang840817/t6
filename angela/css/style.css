@@ -4296,6 +4296,25 @@ header {
   transform: translateY(-50%);
   background: transparent url(../images/search.png) no-repeat;
 }
+@media (min-width: 768px) {
+  .search_submit {
+    margin-right: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .search_submit {
+    top: auto;
+    bottom: 15%;
+    transform: translateY(0);
+  }
+}
+@media (min-width: 992px) {
+  .search_submit {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+  }
+}
 
 .navigation {
   display: flex;
