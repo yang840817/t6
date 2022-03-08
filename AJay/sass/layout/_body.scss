@@ -17,4 +17,9 @@ body {
   @include tool.desktop {
     padding: 0 2rem;
   }
+  header {
+    @include tool.desktop {
+      margin-bottom: 1.5rem;
+    }
+  }
 }

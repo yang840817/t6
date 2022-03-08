@@ -5,17 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Business Planet</title>
-    <script
-      src="https://kit.fontawesome.com/7351875ccb.js"
-      crossorigin="anonymous"
-    ></script>
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/7351875ccb.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="./js/carousel.js" defer></script>
   </head>
   <body>
+    <!-- !header -->
     <header class="o-header">
       <!-- nav toggler -->
       <div class="o-header_navToggler">
@@ -58,28 +61,55 @@
     </header>
 
     <!-- navbar trigger-->
-    <input class="a-navTrigger" type="checkbox" id="navbar" />
-    <!-- navbar content -->
-    <nav class="o-navbar">
-      <form class="m-searchbar">
-        <input
-          class="m-searchbar_inputbar"
-          type="text"
-          placeholder="Search the Site..."
-        />
-        <button class="m-searchbar_magnifier">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-      </form>
-      <ul class="m-list">
-        <li class="m-list_item -active"><a href="##">home</a></li>
-        <li class="m-list_item"><a href="##">about</a></li>
-        <li class="m-list_item"><a href="##">features</a></li>
-        <li class="m-list_item"><a href="##">portfolio</a></li>
-        <li class="m-list_item"><a href="##">blog</a></li>
-        <li class="m-list_item"><a href="##">contacts</a></li>
-      </ul>
-    </nav>
+
+    <!-- !main -->
+    <main class="o-main">
+      <!-- navbar content -->
+      <input class="a-navTrigger" type="checkbox" id="navbar" />
+      <nav class="o-navbar">
+        <form class="m-searchbar">
+          <input
+            class="m-searchbar_inputbar"
+            type="text"
+            placeholder="Search the Site..."
+          />
+          <button class="m-searchbar_magnifier">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <ul class="m-list">
+          <li class="m-list_item -active"><a href="##">home</a></li>
+          <li class="m-list_item"><a href="##">about</a></li>
+          <li class="m-list_item"><a href="##">features</a></li>
+          <li class="m-list_item"><a href="##">portfolio</a></li>
+          <li class="m-list_item"><a href="##">blog</a></li>
+          <li class="m-list_item"><a href="##">contacts</a></li>
+        </ul>
+      </nav>
+
+      <!-- slider -->
+      <section aria-label="Newest Photos" class="o-main_carousel">
+        <div class="o-carousel" data-carousel>
+          <button class="o-carousel_button -prev" data-carousel-button="prev">
+            &lt;
+          </button>
+          <button class="o-carousel_button -next" data-carousel-button="next">
+            &gt;
+          </button>
+          <ul data-slides>
+            <li class="slide" data-active>
+              <img src="./images/banner1.jpg" alt="banner1" />
+            </li>
+            <li class="slide">
+              <img src="./images/banner2.jpg" alt="banner2" />
+            </li>
+            <li class="slide">
+              <img src="./images/banner3.jpg" alt="banner3" />
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>

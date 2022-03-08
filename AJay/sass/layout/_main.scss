@@ -1,0 +1,15 @@
+@use "../tools/all" as tool;
+@use "../abstracts/colors" as color;
+@use "../components/carousel";
+
+.o-main {
+  &_carousel {
+    height: 250px;
+    @include tool.tablet {
+      height: 300px;
+    }
+    @include tool.desktop {
+      height: 400px;
+    }
+  }
+}
