@@ -1,7 +1,7 @@
 @use "../base/color" as *;
-@use "../utilities/icon-unify" as icon;
+@use "../utilities/icon";
 
-.feature {
+.choose_item {
   display: flex;
   align-items: center;
   padding: 10px 10px;
@@ -22,7 +22,6 @@
 
       i {
         transform: translateX(3px);
-        transition: 0.2s ease-in;
       }
     }
   }

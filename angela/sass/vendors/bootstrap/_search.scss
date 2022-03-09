@@ -3,7 +3,7 @@
 @use "../../utilities/breakpoint";
 @use "../../utilities/position";
 
-@use "../../components/widget-style/inputs";
+@use "../../components/inputs";
 
 // base on bootstrap search component
 //搜尋欄
@@ -32,41 +32,15 @@
     @extend .input-base;
 
     padding-right: 25px;
-    // background: $gray-100 url(../images/search.png) no-repeat;
-    // background-position: right 10px bottom 50%;
+    background: $gray-100 url(../images/search.png) no-repeat;
+    background-position: right 10px bottom 50%;
+
+    &:focus {
+      background: $gray-100;
+    }
 
     &::-webkit-search-cancel-button {
       appearance: none;
     }
-  }
-
-  &_submit {
-    margin-right: 5px;
-
-    @include breakpoint.tablet {
-      margin-right: 15px;
-    }
-
-    width: 20px;
-    height: 20px;
-
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-
-    @include breakpoint.tablet {
-      top: auto;
-      bottom: 15%;
-      transform: translateY(0);
-    }
-
-    @include breakpoint.desktop {
-      top: 50%;
-      bottom: auto;
-      transform: translateY(-50%);
-    }
-
-    background: transparent url(../images/search.png) no-repeat;
   }
 }

@@ -2,7 +2,7 @@
 
 @use "../utilities/breakpoint";
 
-@use "../components/widget-style/buttons";
+@use "../components/buttons";
 
 .service_card {
   display: flex;
@@ -55,6 +55,7 @@
 
   a {
     @extend .button_base;
+
     margin-top: 20px;
 
     color: black;

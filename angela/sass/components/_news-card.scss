@@ -1,8 +1,6 @@
 @use "../base/color" as *;
 @use "../base/font";
 
-@use "./more-link";
-
 .news_card {
   display: flex;
 
@@ -31,5 +29,14 @@
   p {
     margin-top: 15px;
     font-size: 14px;
+
+    a {
+      font-weight: 600;
+      text-transform: capitalize;
+
+      &:hover {
+        color: $highlight-green;
+      }
+    }
   }
 }

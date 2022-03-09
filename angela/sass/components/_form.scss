@@ -1,7 +1,7 @@
 @use "../base/color" as *;
 
-@use "../components/widget-style/inputs";
-@use "../components/widget-style/buttons";
+@use "../components/inputs";
+@use "../components/buttons";
 
 .contact {
   input,

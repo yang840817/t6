@@ -1,6 +1,6 @@
 @use "../../base/color" as *;
 @use "../../utilities/position";
-@use "../../utilities/icon-unify" as icon;
+@use "../../utilities/icon";
 
 // base on swiper navigation
 .gallery_header {
@@ -39,7 +39,6 @@
     &::before {
       top: -35%;
       bottom: -35%;
-      transition: 0.2s all ease;
     }
 
     .work_info {

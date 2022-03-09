@@ -3,7 +3,7 @@
 @mixin icon-circle-bg($diameter) {
   height: $diameter;
   width: $diameter;
-  border-radius: 999px;
+  border-radius: 50%;
   background: $gray-300;
   color: white;
 

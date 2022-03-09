@@ -8,9 +8,8 @@
 @use "../vendors/swiper/navigation";
 
 @use "../components/service-card";
-@use "../components/feature-display";
+@use "../components/choose-bar";
 @use "../components/news-card";
-@use "../components/more-link";
 
 main {
   @include bg.section_bg;
@@ -82,9 +81,18 @@ main {
       object-fit: cover;
     }
   }
+
+  a {
+    font-weight: 600;
+    text-transform: capitalize;
+
+    &:hover {
+      color: $highlight-green;
+    }
+  }
 }
 
-.news_cards_block {
+.news_cards {
   display: flex;
   flex-direction: column;
 

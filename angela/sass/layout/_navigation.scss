@@ -12,6 +12,7 @@
     flex-wrap: wrap;
   }
 
+  // @include breakpoint.desktop {
   .modify_navbar {
     flex: 1 0 70%;
   }
@@ -19,6 +20,7 @@
   .search {
     flex: 1 0 20%;
   }
+  // }
 
   margin-top: spacing.$sections-margin-s;
 
