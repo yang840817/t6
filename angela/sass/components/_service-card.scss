@@ -32,6 +32,7 @@
 
   .service_title {
     font-size: 20px;
+    font-weight: 700;
 
     @include breakpoint.desktop {
       //預防 title 因為長度和行數不同造成沒有對齊

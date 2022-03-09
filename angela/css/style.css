@@ -4040,6 +4040,7 @@ header {
 }
 .service_card .service_title {
   font-size: 20px;
+  font-weight: 700;
 }
 @media (min-width: 992px) {
   .service_card .service_title {
@@ -4109,8 +4110,12 @@ h4,
 p,
 a,
 span,
-input {
+input,
+button {
   font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 h1,
@@ -4122,12 +4127,12 @@ h4 {
 
 .primary_title, .introduction .introduction_content_title, .work_gallery .gallery_title {
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .secondary_title, .footer_content_title {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .news_card {
