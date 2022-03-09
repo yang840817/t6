@@ -5,14 +5,27 @@
 // base on bootstrap navbar component
 
 .modify_navbar {
+  align-items: stretch;
   padding: 10px 10px;
 
   background: white;
-  border-bottom: 1px solid $gray-200;
   box-shadow: 0 0 10px $gray-500;
 
+  @include breakpoint.tablet {
+    border-bottom: 1px solid $gray-200;
+  }
+
+  @include breakpoint.desktop {
+    border-bottom: none;
+  }
+
   & > .container {
+    align-items: stretch;
     padding: 0;
+  }
+
+  .navbar-collapse {
+    align-items: stretch;
   }
 
   .navbar-toggler {
@@ -44,6 +57,10 @@
 
     .nav-link {
       padding: 15px 15px;
+
+      @include breakpoint.desktop {
+        padding: 20px 15px;
+      }
     }
   }
 
