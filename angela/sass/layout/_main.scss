@@ -1,8 +1,9 @@
 @use "../base/color" as *;
 @use "../base/spacing";
+@use "../base/font";
+@use "../base/breakpoint";
 
-@use "../utilities/background" as bg;
-@use "../utilities/breakpoint";
+@use "../utilities/background";
 
 @use "../vendors/bootstrap/carousel";
 @use "../vendors/swiper/navigation";
@@ -12,7 +13,7 @@
 @use "../components/news-card";
 
 main {
-  @include bg.section_bg;
+  @include background.section_bg;
 }
 
 .navigation {

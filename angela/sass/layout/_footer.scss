@@ -1,8 +1,8 @@
 @use "../base/font";
 @use "../base/spacing";
+@use "../base/breakpoint";
 
-@use "../utilities/background" as bg;
-@use "../utilities/breakpoint";
+@use "../utilities/background";
 
 @use "../components/dialogue";
 @use "../components/form";
@@ -17,7 +17,7 @@ footer {
   }
 
   section {
-    @include bg.section_bg;
+    @include background.section_bg;
     padding: 20px spacing.$horizontal-padding-s;
 
     @include breakpoint.desktop {

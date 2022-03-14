@@ -1,7 +1,6 @@
 @use "../../base/color" as *;
-@use "../../utilities/background" as bg;
-@use "../../utilities/breakpoint";
-
+@use "../../base/breakpoint";
+@use "../../utilities/background";
 // base on bootstrap navbar component
 
 .modify_navbar {

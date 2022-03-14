@@ -1,6 +1,5 @@
 @use "../base/color" as *;
-
-@use "../utilities/breakpoint";
+@use "../base/breakpoint";
 
 // 用clip-path做背景框，從父元素以drop-shadow做陰影
 .dialogue {

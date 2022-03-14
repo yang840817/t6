@@ -1,10 +1,9 @@
 @use "../base/color" as *;
+@use "../base/breakpoint";
 
-@use "../utilities/background" as bg;
-@use "../utilities/breakpoint";
+@use "../utilities/background";
 
 @use "../components/social-media";
-// @import "../base/color";
 
 header {
   padding: 15px 20px;
@@ -14,7 +13,7 @@ header {
   justify-content: center;
   align-items: center;
 
-  @include bg.section_bg;
+  @include background.section_bg;
   @include breakpoint.tablet {
     justify-content: space-between;
   }

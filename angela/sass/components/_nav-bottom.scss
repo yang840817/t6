@@ -1,7 +1,7 @@
 @use "../base/color" as *;
+@use "../base/breakpoint";
 
-@use "../utilities/breakpoint";
-@use "../utilities/background" as bg;
+@use "../utilities/background";
 
 .footer_bottom {
   display: flex;
