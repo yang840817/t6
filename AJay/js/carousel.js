@@ -32,5 +32,5 @@ function disableInteraction() {
   moving = true;
   setTimeout(() => {
     moving = false;
-  }, 300);
+  }, 400);
 }

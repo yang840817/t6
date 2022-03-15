@@ -1,5 +1,5 @@
-@use "../tools/all" as tool;
-@use "../abstracts/colors" as color;
+@use "../abstracts/color";
+@use "../utils/breakpoints";
 
 // sodical media
 $sprite-social: url("/images/social.png");
@@ -22,7 +22,7 @@ $sprite-social: url("/images/social.png");
   padding: 0.5rem;
   color: color.$gray-400;
   cursor: pointer;
-  @include tool.desktop {
+  @include breakpoints.desktop {
     display: none;
   }
   &:hover {
@@ -52,7 +52,7 @@ $sprite-social: url("/images/social.png");
   background-color: #fff;
   transition: max-height 0.4s, padding 0.4s;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.6);
-  @include tool.desktop {
+  @include breakpoints.desktop {
     position: static;
     width: 100%;
     height: fit-content;

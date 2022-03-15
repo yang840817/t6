@@ -1,16 +1,18 @@
-@use "../tools/all" as tool;
+@use "../utils/flex";
+@use "../utils/breakpoints";
+
 @use "../components/navbar";
 @use "../components/social";
 
 .o-header {
-  @include tool.flex(between, center, row, nowrap);
+  @include flex.flex(between, center, row, nowrap);
   gap: 1rem;
   height: 100px;
   padding: 1rem;
   background: url("../images/subbg.gif");
   &_navToggler {
     flex: 0 0 auto;
-    @include tool.desktop {
+    @include breakpoints.desktop {
       display: none;
     }
   }

@@ -1,12 +1,14 @@
-@use "../tools/all" as tool;
-@use "../abstracts/colors" as color;
+@use "../abstracts/color";
+@use "../utils/flex";
+@use "../utils/breakpoints";
+@use "../utils/typography";
 
 // nav漢堡
 .a-navToggler {
   display: block;
   padding: 0.5rem;
   cursor: pointer;
-  @include tool.desktop {
+  @include breakpoints.desktop {
     display: none;
   }
   &:hover {
@@ -37,8 +39,8 @@
   max-height: 0;
   overflow: hidden;
   transition: 0.4s;
-  @include tool.desktop {
-    @include tool.flex(between, stretch, row, nowrap);
+  @include breakpoints.desktop {
+    @include flex.flex(between, stretch, row, nowrap);
     gap: 10px;
     height: fit-content;
     max-height: none;
@@ -49,7 +51,7 @@
   padding: 5px 10px;
   background-color: #fff;
   position: relative;
-  @include tool.desktop {
+  @include breakpoints.desktop {
     flex: 0 1 30%;
     order: 2;
     box-shadow: 0 0 4px color.$gray-400;
@@ -60,7 +62,7 @@
     padding: 8px;
     border: 1px solid #ddd;
     background-color: #f3f3f3;
-    @include tool.desktop {
+    @include breakpoints.desktop {
       padding: 5px;
     }
   }
@@ -88,11 +90,11 @@
 }
 .m-list {
   background-color: #fff;
-  @include tool.tablet {
-    @include tool.flex(start, stretch, row, wrap);
+  @include breakpoints.tablet {
+    @include flex.flex(start, stretch, row, wrap);
     flex: 0 1 70%;
   }
-  @include tool.desktop {
+  @include breakpoints.desktop {
     box-shadow: 0 0 4px color.$gray-400;
   }
   &_item {
@@ -103,10 +105,10 @@
     text-transform: uppercase;
     cursor: pointer;
     transition: background-color 0.25s, color 0.25s;
-    @include tool.tablet {
+    @include breakpoints.tablet {
       flex: 1 1 50%;
     }
-    @include tool.desktop {
+    @include breakpoints.desktop {
       flex: 0 0 auto;
       padding: 10px 20px;
       border-bottom: none;

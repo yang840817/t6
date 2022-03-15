@@ -1,14 +1,17 @@
-@use "../tools/all" as tool;
-@use "../abstracts/colors" as color;
+@use "../abstracts/color";
+@use "../utils/breakpoints";
+
 @use "../components/carousel";
+@use "../components/services.scss";
 
 .o-main {
+  background-color: #fff;
   &_carousel {
     height: 250px;
-    @include tool.tablet {
+    @include breakpoints.tablet {
       height: 300px;
     }
-    @include tool.desktop {
+    @include breakpoints.desktop {
       height: 400px;
     }
   }

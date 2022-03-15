@@ -1,24 +1,23 @@
 @use "../abstracts/background";
-@use "../tools/all" as tool;
+@use "../utils/breakpoints";
 
 body {
   max-width: 1440px;
   margin: 0 auto;
-  height: 100vh;
   background-image: linear-gradient(
       #1d1d1d 0 70px,
       transparent 70px 90%,
       #1d1d1d 90% 100%
     ),
     url(../images/bg.jpg);
-  @include tool.tablet {
+  @include breakpoints.tablet {
     padding: 1rem;
   }
-  @include tool.desktop {
+  @include breakpoints.desktop {
     padding: 0 2rem;
   }
   header {
-    @include tool.desktop {
+    @include breakpoints.desktop {
       margin-bottom: 1.5rem;
     }
   }
