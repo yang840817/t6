@@ -1,18 +1,47 @@
-@use "../abstracts/color";
+@use "../base/color";
+@use "../base/background";
 @use "../utils/breakpoints";
 
 @use "../components/carousel";
 @use "../components/services.scss";
+@use "../components/about.scss";
+@use "../vendor/swiper";
 
 .o-main {
-  background-color: #fff;
-  &_carousel {
-    height: 250px;
+  padding: 0 1rem;
+  @extend %bg-content;
+  @include breakpoints.tablet {
+    padding: 0 1.5rem;
+  }
+  @include breakpoints.desktop {
+    padding: 0 2rem;
+  }
+  &_navbar {
+    margin: 0 -1rem;
     @include breakpoints.tablet {
-      height: 300px;
+      margin: 0 -1.5rem;
     }
     @include breakpoints.desktop {
-      height: 400px;
+      margin: 0 -2rem;
+    }
+  }
+  &_carousel {
+    margin: 0 -1rem 1rem -1rem;
+    height: 300px;
+    @include breakpoints.tablet {
+      margin: 0 -1.5rem 1.5rem -1.5rem;
+      height: 350px;
+    }
+    @include breakpoints.desktop {
+      margin: 0 -2rem;
+      height: 450px;
+    }
+  }
+  &_services {
+    @include breakpoints.desktop {
+      position: relative;
+      top: -2rem;
+      z-index: 2;
     }
   }
 }

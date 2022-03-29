@@ -1,8 +1,8 @@
-@use "../abstracts/background";
+@use "../base/background";
 @use "../utils/breakpoints";
 
 body {
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
   background-image: linear-gradient(
       #1d1d1d 0 70px,
@@ -20,5 +20,10 @@ body {
     @include breakpoints.desktop {
       margin-bottom: 1.5rem;
     }
+  }
+  main {
+    margin-bottom: 3rem;
+  }
+  footer {
   }
 }

@@ -1,9 +1,10 @@
-@use "../abstracts/color";
+@use "../base/color";
 
 %title-1 {
   color: color.$black;
   font: {
-    size: 30px;
+    size: 24px;
+    weight: 500;
     family: Arial, sans-serif;
   }
 }
@@ -11,7 +12,7 @@
 %title-2 {
   color: color.$gray-400;
   font: {
-    size: 23px;
+    size: 20px;
     family: Arial, sans-serif;
   }
 }
@@ -25,7 +26,7 @@
 }
 
 %body-2 {
-  color: color.$gray-500;
+  color: color.$gray-200;
   font: {
     size: 14px;
     family: Arial, sans-serif;
@@ -33,9 +34,9 @@
 }
 
 %body-3 {
+  color: color.$gray-300;
   font: {
     size: 12px;
-    color: color.$gray-400;
     family: Arial, sans-serif;
   }
 }

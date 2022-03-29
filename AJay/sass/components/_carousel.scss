@@ -12,13 +12,11 @@
     padding: 2rem 0.5rem;
     color: white;
     background: none;
-    background-color: rgba(0, 0, 0, 0.6);
-    opacity: 0.6;
-    transition: 200ms opacity ease-in-out, 200ms text-shadow ease-in-out;
-    &:hover,
-    &:focus {
-      text-shadow: 0 0 5px #fff;
-      opacity: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 250ms ease-in-out;
+    &:hover {
+      text-shadow: 0 0 3px #fff;
+      background-color: #7eb400;
     }
 
     &.-prev {
@@ -33,8 +31,8 @@
   position: absolute;
   inset: 0;
   opacity: 0;
-  transition: 200ms opacity ease-in-out;
-  transition-delay: 200ms;
+  transition: 250ms opacity ease-in-out;
+  transition-delay: 250ms;
   &[data-active] {
     z-index: 1;
     opacity: 1;

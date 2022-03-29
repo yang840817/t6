@@ -1,0 +1,110 @@
+@use "../../node_modules/swiper/swiper.scss";
+// @use "../../node_modules/swiper/modules/navigation/navigation.scss";
+
+.o-features {
+  padding: 3rem 0 5rem 0;
+  &_title {
+    margin-bottom: 1rem;
+  }
+}
+.o-features_swiper {
+  position: relative;
+  .swiper {
+    &-slide {
+      position: relative;
+      overflow: hidden;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 5%;
+        right: 5%;
+        z-index: 2;
+        transform: rotate(45deg);
+        background-color: rgba(0, 0, 0, 0.7);
+        transition: all 0.25s 0.15s ease-in;
+      }
+      &:hover {
+        &::after {
+          bottom: -30%;
+          top: -30%;
+          outline: 2px solid #7eb500;
+        }
+        & .swiper-link {
+          right: 0;
+          transform: translate(-50%, -50%) rotate(0deg);
+        }
+      }
+    }
+    &-link {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      transform-origin: right 50%;
+      transform: rotate(-90deg);
+      z-index: 3;
+      text-align: center;
+      transition: all 0.3s 0.4s linear;
+      span {
+        display: block;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        color: white;
+        text-shadow: 0 0 2px white;
+        font: {
+          size: 14px;
+          family: arial;
+          weight: 100;
+        }
+        letter-spacing: 1px;
+        &::after {
+          content: "";
+          display: block;
+          width: 110px;
+          height: 1px;
+          margin: 0 auto;
+          background-color: white;
+          box-shadow: 0 0 2px white, 0 0 4px white;
+        }
+      }
+      a {
+        display: inline-block;
+        margin-right: 5px;
+        cursor: pointer;
+        > i {
+          border-radius: 50%;
+          padding: 6px;
+          color: white;
+          background-color: #80b600;
+        }
+        > .fa-link {
+          padding: 6px 4px;
+        }
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    &-button-prev,
+    &-button-next {
+      top: -30px;
+      left: unset;
+      color: #ccc;
+      &::after {
+        font-size: 12px;
+      }
+    }
+    &-button-prev {
+      right: 22px;
+    }
+    &-button-next {
+      right: 0;
+    }
+  }
+}

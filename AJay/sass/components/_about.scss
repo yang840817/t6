@@ -1,0 +1,116 @@
+@use "../base/color";
+@use "../utils/flex";
+@use "../utils/breakpoints";
+@use "../utils/typography";
+
+@mixin ellipsis($number) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $number;
+}
+
+.o-about {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem 0 4rem 0;
+  border-bottom: 1px solid #ccc;
+  @include breakpoints.tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include breakpoints.desktop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &_item {
+    &:last-child {
+      @include breakpoints.tablet {
+        grid-column: span 2;
+      }
+      @include breakpoints.desktop {
+        grid-column: auto;
+      }
+    }
+  }
+}
+
+.a-subtitle {
+  @extend %title-1;
+  text-transform: uppercase;
+}
+
+.o-welcome {
+  @include flex.flex(start, stretch, column, nowrap);
+  row-gap: 1rem;
+  &_img {
+    img {
+      width: 100%;
+    }
+  }
+  &_description {
+    @extend %body-3;
+    line-height: 1.2;
+  }
+}
+
+.o-whyus {
+  &_title {
+    margin-bottom: 1rem;
+  }
+  &_item {
+    @include flex.flex(start, center, row, nowrap);
+    column-gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #e3e3e3;
+  }
+  &_description {
+    @extend %body-2;
+  }
+  &_icon {
+    i {
+      display: inline-block;
+      padding: 12px 15px;
+      border-radius: 50%;
+      color: white;
+      background-color: #d9d9d9;
+    }
+  }
+}
+
+.o-news {
+  @include flex.flex(start, stretch, column, wrap);
+  gap: 1rem;
+  @include breakpoints.tablet {
+    flex-direction: row;
+  }
+  @include breakpoints.desktop {
+    flex-direction: column;
+  }
+  &_title {
+    @include breakpoints.tablet {
+      flex: 0 0 100%;
+    }
+  }
+  &_item {
+    @include flex.flex(start, stretch, row, nowrap);
+    column-gap: 1rem;
+    @include breakpoints.tablet {
+      flex: 1 0 0;
+    }
+    @include breakpoints.desktop {
+    }
+  }
+  &_date {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    padding: 4px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background-color: color.$green;
+  }
+  &_description {
+    @include ellipsis(4);
+    @extend %body-3;
+  }
+}

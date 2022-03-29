@@ -1,12 +1,15 @@
-@use "../abstracts/color";
+@use "../base/color";
 @use "../utils/flex";
 @use "../utils/breakpoints";
 @use "../utils/typography";
 
 // nav漢堡
 .a-navToggler {
-  display: block;
-  padding: 0.5rem;
+  @include flex.flex(around, stretch, column, nowrap);
+  width: 52px;
+  height: 44px;
+  padding: 8px;
+  gap: 5px;
   cursor: pointer;
   @include breakpoints.desktop {
     display: none;
@@ -18,11 +21,28 @@
   }
   span {
     display: block;
-    width: 25px;
     height: 3px;
     background-color: #000;
-    &:not(:last-child) {
-      margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+    &:nth-of-type(1) {
+      transform-origin: left top;
+    }
+    &:nth-of-type(2) {
+      opacity: 1;
+    }
+    &:nth-of-type(3) {
+      transform-origin: left bottom;
+    }
+  }
+  &.-active {
+    span:nth-of-type(1) {
+      transform: rotate(45deg) translateY(-50%);
+    }
+    span:nth-of-type(2) {
+      opacity: 0;
+    }
+    span:nth-of-type(3) {
+      transform: rotate(-45deg) translateY(50%);
     }
   }
 }
@@ -31,14 +51,14 @@
   display: none;
   &:checked {
     & ~ .o-navbar {
-      max-height: 350px;
+      max-height: 300px;
     }
   }
 }
 .o-navbar {
   max-height: 0;
   overflow: hidden;
-  transition: 0.4s;
+  transition: 0.6s ease-in-out;
   @include breakpoints.desktop {
     @include flex.flex(between, stretch, row, nowrap);
     gap: 10px;
@@ -48,7 +68,6 @@
   }
 }
 .m-searchbar {
-  padding: 5px 10px;
   background-color: #fff;
   position: relative;
   @include breakpoints.desktop {
