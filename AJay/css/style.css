@@ -85,7 +85,7 @@ body main {
   font-family: Arial, sans-serif;
 }
 
-.m-tweets_content, .o-testimonials_content, .o-getInTouch_input, .o-whyus_description, .o-card_title, .m-list_item {
+.m-tweets_content, .o-testimonials_content, .o-getInTouch_input, .o-getInTouch_button, .o-whyus_description, .o-card_title, .m-list_item {
   color: #7f7f7f;
   font-size: 14px;
   font-family: Arial, sans-serif;
@@ -147,6 +147,11 @@ body main {
 }
 .a-navTrigger:checked ~ .o-navbar {
   max-height: 300px;
+}
+@media (min-width: 576px) {
+  .a-navTrigger:checked ~ .o-navbar {
+    max-height: 180px;
+  }
 }
 
 .o-navbar {
@@ -948,6 +953,58 @@ body main {
   }
 }
 
+.o-album {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  gap: 5px;
+  grid-template-rows: repeat(3, 1fr);
+}
+.o-album img {
+  max-width: 100%;
+  cursor: pointer;
+}
+.o-album_imgFrame {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  padding: 2rem;
+  opacity: 1;
+  animation: 350ms ease-in-out album;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.o-album_imgFrame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.o-album_closeBtn {
+  position: absolute;
+  top: 0;
+  right: 8px;
+  padding: 5px;
+  font-size: 20px;
+  color: #ccc;
+  transition: all 200ms;
+  cursor: pointer;
+}
+.o-album_closeBtn:hover {
+  color: #fff;
+  text-shadow: 0 0 1px #fff, 0 0 3px #fff;
+}
+
+@keyframes album {
+  from {
+    inset: 50%;
+    padding: 0;
+    opacity: 0;
+  }
+  to {
+    inset: 0;
+    padding: 2rem;
+    opacity: 1;
+  }
+}
 .a-smallTitle {
   text-transform: uppercase;
 }
@@ -1029,14 +1086,6 @@ body main {
 .o-flickr_title {
   margin-bottom: 1rem;
 }
-.o-flickr_album {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
-  gap: 5px;
-}
-.o-flickr_album img {
-  max-width: 100%;
-}
 
 .o-subNav {
   display: flex;
@@ -1061,7 +1110,6 @@ body main {
 }
 .o-subNav_copyright {
   order: 2;
-  text-transform: uppercase;
 }
 @media (min-width: 992px) {
   .o-subNav_copyright {

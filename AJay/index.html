@@ -1,27 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+  
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Business Planet</title>
+
+    <!--& BootStrap style -->
     <link
-      rel="stylesheet"
+      rel="stylesheet"  
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+    <!--& Swiper style  -->
     <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+    <!--& My style  -->
     <link rel="stylesheet" href="./css/style.css" />
+
+    <!--& Fontawesome script -->
     <script
       src="https://kit.fontawesome.com/7351875ccb.js"
       crossorigin="anonymous"
       defer
     ></script>
-    <script src="./js/navbar.js" defer></script>
-    <script src="./js/carousel.js" defer></script>
+    <!--& Swiper script  -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
+    <!--& Swiper script -->
+    <script src="./js/swiper.js" defer></script>
+    <!--& BootStrap script  -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <!--& My script  -->
+    <script type="module" src="./js/main.js" defer></script>
   </head>
+
   <body>
+
+
+    <!--* header -->
     <header class="o-header">
-      <!-- nav toggler -->
+
+      <!--! nav toggler -->
       <div class="o-header_item">
         <label class="a-navToggler" for="navbar" data-menu-icon>
           <span></span>
@@ -29,7 +47,8 @@
           <span></span>
         </label>
       </div>
-      <!-- logo -->
+
+      <!--! logo -->
       <div class="o-header_item">
         <a href="##" class="a-logo">
           <h1>
@@ -37,15 +56,14 @@
           </h1>
         </a>
       </div>
-      <!-- social media toggler  -->
+
+      <!--! social media -->
       <div class="o-header_item">
         <div class="o-social">
           <label class="o-social_toggler" for="social">
             <i class="fa-solid fa-phone-flip"></i>
           </label>
-          <!-- social media trigger -->
           <input class="o-social_trigger" type="checkbox" id="social" />
-          <!-- social media content-->
           <div class="o-social_content">
             <div class="m-icons">
               <a href="##" class="m-icons_item -facebook"> </a>
@@ -63,9 +81,11 @@
       </div>
     </header>
 
-
+    
+    <!--* main -->
     <main class="o-main">
-      <!-- navbar content -->
+
+      <!--! navbar -->
       <section class="o-main_navbar">
         <input class="a-navTrigger" type="checkbox" id="navbar" />
         <nav class="o-navbar">
@@ -90,7 +110,7 @@
         </nav>
       </section>
 
-      <!-- carousel -->
+      <!--! carousel -->
       <section class="o-main_carousel">
         <div
           class="o-carousel"
@@ -117,7 +137,7 @@
         </div>
       </section>
 
-      <!-- services -->
+      <!--! services -->
       <section class="o-main_services">
         <section class="o-services">
           <div class="o-services_item">
@@ -171,7 +191,7 @@
         </section>
       </section>
 
-      <!-- about -->
+      <!--! about -->
       <section class="o-main_about">
         <div class="o-about">
           <div class="o-about_item">
@@ -248,7 +268,7 @@
           </div>
         </div>
       </section>
-      <!-- feature -->
+      <!--! feature -->
       <section class="o-main_feature">
         <div class="o-features">
           <h2 class="o-features_title a-subtitle">feature works</h2>
@@ -317,7 +337,11 @@
       </section>
     </main>
 
+
+    <!--* footer -->
     <footer class="o-footer">
+
+        <!--! tweets -->
         <div class="o-footer_item">
           <div class="m-tweets">
             <h4 class="m-tweets_title a-smallTitle">
@@ -329,6 +353,7 @@
           </div>
         </div>
 
+        <!--! testimonials -->
         <div class="o-footer_item">
           <div class="o-testimonials">
             <h4 class="o-testimonials_title a-smallTitle">
@@ -349,6 +374,7 @@
           </div>
         </div>
         
+        <!--! getInTouch -->
         <div class="o-footer_item">
           <div class="o-getInTouch">
             <h4 class="o-getInTouch_title a-smallTitle">
@@ -365,12 +391,13 @@
           </div>
         </div>
 
+        <!--! flickr -->
         <div class="o-footer_item">
           <div class="o-flickr">
             <h4 class="o-flickr_title a-smallTitle">
               flickr
             </h4>
-            <div class="o-flickr_album">
+            <div class="o-album" data-album>
               <img src="./images/f1.jpg" alt="poster">
                 <img src="./images/f2.jpg" alt="smiling pals">
                 <img src="./images/f3.jpg" alt="people on the phone">
@@ -387,10 +414,11 @@
           </div>
         </div>
         
+        <!--! subNav -->
         <div class="o-footer_item">
           <div class="o-subNav">
             <p class="o-subNav_copyright">
-              business planet #copyright 2020 | <span>Privacy Policy</span>
+              business planet &copy; 2020 | <span>Privacy Policy</span>
             </p>
             <nav class="o-subNav_nav">
               <ul class="o-subNav_list">
@@ -407,10 +435,5 @@
       </section>
     </footer>
 
-
-
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./js/swiper.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

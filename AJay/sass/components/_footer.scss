@@ -4,6 +4,8 @@
 @use "../utils/flex";
 @use "../utils/typography";
 
+@use "./album";
+
 .a-smallTitle {
   @extend %title-2;
   text-transform: uppercase;
@@ -80,6 +82,7 @@
     }
   }
   &_button {
+    @extend %body-2;
     padding: 0.25rem 0.75rem;
     border: none;
     color: white;
@@ -97,19 +100,6 @@
   &_title {
     margin-bottom: 1rem;
   }
-  &_album {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
-    gap: 5px;
-    @include breakpoints.tablet {
-      // grid-template-rows: repeat(3, 1fr);
-    }
-    @include breakpoints.desktop {
-    }
-    img {
-      max-width: 100%;
-    }
-  }
 }
 
 .o-subNav {
@@ -124,7 +114,6 @@
   }
   &_copyright {
     order: 2;
-    text-transform: uppercase;
     @include breakpoints.desktop {
       order: 0;
     }

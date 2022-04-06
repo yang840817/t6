@@ -52,6 +52,9 @@
   &:checked {
     & ~ .o-navbar {
       max-height: 300px;
+      @include breakpoints.tablet {
+        max-height: 180px;
+      }
     }
   }
 }
