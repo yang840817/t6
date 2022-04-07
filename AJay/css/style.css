@@ -237,6 +237,7 @@ body main {
   }
 }
 .m-list_item {
+  position: relative;
   padding: 10px 0;
   border-bottom: 1px dashed #57514c;
   text-align: center;
@@ -261,7 +262,54 @@ body main {
   color: #fff;
   background-color: #80b600;
 }
+.m-list_item:hover > .m-list_drop {
+  display: block;
+  opacity: 0.6;
+  animation: 250ms ease-in-out showDrop;
+}
+.m-list_item a {
+  vertical-align: middle;
+}
+.m-list_item i {
+  margin-left: 8px;
+  font-size: 8px;
+  vertical-align: middle;
+}
+.m-list_drop {
+  position: absolute;
+  z-index: 10;
+  top: 42px;
+  right: 0;
+  display: none;
+  width: 180px;
+  height: auto;
+  color: #7f7f7f;
+  background-color: #fff;
+  transition: all 250ms linear;
+  box-shadow: 1px 2px 6px #555;
+}
+.m-list_drop:hover {
+  opacity: 1 !important;
+}
+.m-list_drop > li {
+  padding: 8px 0;
+}
+.m-list_drop > li:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+.m-list_drop > li:hover {
+  color: #fff;
+  background-color: #80b600;
+}
 
+@keyframes showDrop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.6;
+  }
+}
 .o-social {
   position: relative;
 }
@@ -320,35 +368,35 @@ body main {
   margin-right: 1rem;
 }
 .m-icons_item.-facebook {
-  background-image: url("/images/social.png");
+  background-image: url(../images/social.png);
   background-position: 0 0;
 }
 .m-icons_item.-facebook:hover {
   background-position: 0 100%;
 }
 .m-icons_item.-twitter {
-  background-image: url("/images/social.png");
+  background-image: url(../images/social.png);
   background-position: -37px 0;
 }
 .m-icons_item.-twitter:hover {
   background-position: -37px 100%;
 }
 .m-icons_item.-flickr {
-  background-image: url("/images/social.png");
+  background-image: url(../images/social.png);
   background-position: -74px 0;
 }
 .m-icons_item.-flickr:hover {
   background-position: -74px 100%;
 }
 .m-icons_item.-dribbble {
-  background-image: url("/images/social.png");
+  background-image: url(../images/social.png);
   background-position: -111px 0;
 }
 .m-icons_item.-dribbble:hover {
   background-position: -111px 100%;
 }
 .m-icons_item.-rss {
-  background-image: url("/images/social.png");
+  background-image: url(../images/social.png);
   background-position: -150px 0;
 }
 .m-icons_item.-rss:hover {
@@ -970,7 +1018,7 @@ body main {
   inset: 0;
   padding: 2rem;
   opacity: 1;
-  animation: 350ms ease-in-out album;
+  animation: 350ms cubic-bezier(0.18, 0.89, 0.32, 1.28) album;
   background-color: rgba(0, 0, 0, 0.7);
 }
 .o-album_imgFrame img {

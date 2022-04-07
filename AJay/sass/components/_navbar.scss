@@ -121,6 +121,7 @@
   }
   &_item {
     @extend %body-2;
+    position: relative;
     padding: 10px 0;
     border-bottom: 1px dashed color.$gray-300;
     text-align: center;
@@ -139,6 +140,54 @@
     &:hover {
       color: #fff;
       background-color: color.$green;
+      > .m-list_drop {
+        display: block;
+        opacity: 0.6;
+        animation: 250ms ease-in-out showDrop;
+      }
     }
+    a {
+      vertical-align: middle;
+    }
+    i {
+      margin-left: 8px;
+      font-size: 8px;
+      vertical-align: middle;
+    }
+  }
+  &_drop {
+    position: absolute;
+    z-index: 10;
+    top: 42px;
+    right: 0;
+    display: none;
+    width: 180px;
+    height: auto;
+    color: #7f7f7f;
+    background-color: #fff;
+    transition: all 250ms linear;
+    box-shadow: 1px 2px 6px #555;
+    &:hover {
+      opacity: 1 !important;
+    }
+    > li {
+      padding: 8px 0;
+      &:not(:last-child) {
+        border-bottom: 1px solid #ccc;
+      }
+      &:hover {
+        color: #fff;
+        background-color: color.$green;
+      }
+    }
+  }
+}
+
+@keyframes showDrop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.6;
   }
 }

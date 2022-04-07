@@ -2,7 +2,7 @@
 @use "../utils/breakpoints";
 
 // sodical media sprite icon
-$sprite-social: url("/images/social.png");
+$sprite-social: url(../images/social.png);
 
 @mixin sprite($x, $y, $img) {
   background: {
