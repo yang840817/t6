@@ -5,14 +5,10 @@
 @use "../components/social";
 
 .o-header {
-  @include flex.flex(around, center, row, nowrap);
+  @include flex.flex(between, center, row, nowrap);
   gap: 1rem;
-  height: 100px;
+  padding: 1rem;
   background: url("../images/subbg.gif");
-  @include breakpoints.tablet {
-    padding: 1rem;
-    justify-content: space-between;
-  }
   @include breakpoints.desktop {
     padding: 2rem;
   }
@@ -24,7 +20,7 @@
       }
     }
     &:nth-of-type(2) {
-      flex: 1 1 250px;
+      flex: 0 1 250px;
       max-width: 300px;
     }
     &:nth-of-type(3) {

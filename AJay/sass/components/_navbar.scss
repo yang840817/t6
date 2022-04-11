@@ -60,7 +60,6 @@
 }
 .o-navbar {
   max-height: 0;
-  overflow: hidden;
   transition: 0.6s ease-in-out;
   @include breakpoints.desktop {
     @include flex.flex(between, stretch, row, nowrap);
@@ -133,7 +132,7 @@
     }
     @include breakpoints.desktop {
       flex: 0 0 auto;
-      padding: 10px 20px;
+      padding: 10px 18px;
       border-bottom: none;
       border-right: 1px solid #eee;
     }
@@ -142,7 +141,7 @@
       background-color: color.$green;
       > .m-list_drop {
         display: block;
-        opacity: 0.6;
+        opacity: 0.7;
         animation: 250ms ease-in-out showDrop;
       }
     }
@@ -158,15 +157,18 @@
   &_drop {
     position: absolute;
     z-index: 10;
-    top: 42px;
+    top: 43px;
     right: 0;
     display: none;
-    width: 180px;
+    width: 50%;
     height: auto;
     color: #7f7f7f;
     background-color: #fff;
     transition: all 250ms linear;
     box-shadow: 1px 2px 6px #555;
+    @include breakpoints.desktop {
+      width: 180px;
+    }
     &:hover {
       opacity: 1 !important;
     }
@@ -188,6 +190,6 @@
     opacity: 0;
   }
   to {
-    opacity: 0.6;
+    opacity: 0.7;
   }
 }

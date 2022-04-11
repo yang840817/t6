@@ -79,7 +79,8 @@
 
 .o-news {
   @include flex.flex(start, stretch, column, wrap);
-  gap: 1rem;
+  row-gap: 1rem;
+  column-gap: 2rem;
   @include breakpoints.tablet {
     flex-direction: row;
   }
