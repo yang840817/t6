@@ -10,7 +10,8 @@
   padding: 1rem;
   background: url("../images/subbg.gif");
   @include breakpoints.desktop {
-    padding: 2rem;
+    padding: 1.5rem;
+    gap: 0;
   }
   &_item {
     &:nth-of-type(1) {
@@ -34,7 +35,5 @@
   display: block;
   img {
     width: 100%;
-    height: 100%;
-    object-fit: contain;
   }
 }

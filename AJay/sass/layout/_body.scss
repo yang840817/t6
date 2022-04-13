@@ -11,10 +11,10 @@ body {
     ),
     url(../images/bg.jpg);
   @include breakpoints.tablet {
-    padding: 1rem;
+    padding: 0 1rem;
   }
   @include breakpoints.desktop {
-    padding: 0 2rem;
+    padding: 0;
   }
   header {
     @include breakpoints.desktop {

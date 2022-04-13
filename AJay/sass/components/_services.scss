@@ -41,7 +41,7 @@
       color: white;
     }
     & .o-card_button {
-      color: initial;
+      color: #333;
     }
   }
   &_title {
@@ -65,6 +65,7 @@
   }
   &_button {
     padding: 3px 10px;
+    border: none;
     background-color: #cdcdcd;
   }
 }
