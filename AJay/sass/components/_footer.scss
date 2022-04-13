@@ -87,7 +87,10 @@
     border: none;
     color: white;
     text-transform: uppercase;
-
+    transition: all 200ms linear;
+    &:hover {
+      filter: contrast(80%);
+    }
     &.-clear {
       background-color: black;
     }

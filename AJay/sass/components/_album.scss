@@ -10,9 +10,13 @@
   @include breakpoints.desktop {
     // grid-template-rows: repeat(4, 1fr);
   }
-  img {
+  > img {
     max-width: 100%;
     cursor: pointer;
+    transition: opacity 100ms ease-in-out;
+    &:hover {
+      opacity: 0.7;
+    }
   }
   &_imgFrame {
     position: absolute;
