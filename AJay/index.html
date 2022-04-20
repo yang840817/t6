@@ -13,10 +13,7 @@
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <!--& Swiper style  -->
-    <link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
 
     <!--& My style  -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -61,14 +58,14 @@
         </a>
       </div>
 
-      <!--! social media -->
+      <!--! connection -->
       <div class="o-header_item">
-        <div class="o-social">
-          <label class="o-social_toggler" for="social">
+        <div class="o-connection">
+          <label class="a-connectionToggler" for="connection">
             <i class="fa-solid fa-phone-flip"></i>
           </label>
-          <input class="o-social_trigger" type="checkbox" id="social" />
-          <div class="o-social_content">
+          <input class="o-connection_trigger" type="checkbox" id="connection" />
+          <div class="o-connection_content">
             <div class="m-icons">
               <a href="##" class="m-icons_item -facebook"> </a>
               <a href="##" class="m-icons_item -twitter"> </a>
@@ -99,7 +96,7 @@
               type="text"
               placeholder="Search the Site..."
             />
-            <button class="m-searchbar_magnifier">
+            <button type="button" class="m-searchbar_button">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>
@@ -112,7 +109,7 @@
             </li>
             <li class="m-list_item">
               <a href="##">features</a><i class="fa-solid fa-chevron-down"></i>
-              <ul class="m-list_drop"> 
+              <ul class="m-list_dropdown"> 
                 <li>drop-1</li>
                 <li>drop-2</li>
                 <li>drop-3</li>
@@ -120,7 +117,7 @@
             </li>
             <li class="m-list_item">
               <a href="##">portfolio</a><i class="fa-solid fa-chevron-down"></i>
-              <ul class="m-list_drop">
+              <ul class="m-list_dropdown">
                 <li>drop-1</li>
                 <li>drop-2</li>
                 <li>drop-3</li>
@@ -128,7 +125,7 @@
             </li>
             <li class="m-list_item">
               <a href="##">blog</a><i class="fa-solid fa-chevron-down"></i>
-              <ul class="m-list_drop">
+              <ul class="m-list_dropdown">
                 <li>drop-1</li>
                 <li>drop-2</li>
                 <li>drop-3</li>
@@ -148,10 +145,10 @@
           data-carousel
           aria-label="Newest Photos carousel"
         >
-          <button class="o-carousel_button -prev" data-carousel-button="prev">
+          <button type="button" class="o-carousel_button -prev" data-carousel-button="prev">
             &lt;
           </button>
-          <button class="o-carousel_button -next" data-carousel-button="next">
+          <button type="button" class="o-carousel_button -next" data-carousel-button="next">
             &gt;
           </button>
           <ul data-slides>
@@ -180,7 +177,7 @@
               <p class="o-card_body">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, rem asperiores! Illum cumque impedit numquam.
               </p>
-              <button class="o-card_button">More</button>
+              <button type="button" class="o-card_button">More</button>
             </div>
           </div>
           <div class="o-services_item">
@@ -192,7 +189,7 @@
               <p class="o-card_body">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quidem molestiae ducimus illo minima!
               </p>
-              <button class="o-card_button">More</button>
+              <button type="button" class="o-card_button">More</button>
             </div>
           </div>
           <div class="o-services_item">
@@ -204,7 +201,7 @@
               <p class="o-card_body">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam atque quam vel, non incidunt ratione.
               </p>
-              <button class="o-card_button">More</button>
+              <button type="button" class="o-card_button">More</button>
             </div>
           </div>
           <div class="o-services_item">
@@ -216,7 +213,7 @@
               <p class="o-card_body">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente eos ipsum dolorum voluptas! Quas!
               </p>
-              <button class="o-card_button">More</button>
+              <button type="button" class="o-card_button">More</button>
             </div>
           </div>
         </section>
@@ -226,12 +223,12 @@
       <section class="o-main_about">
         <div class="o-about">
           <div class="o-about_item">
-            <div class="o-welcome">
-              <h2 class="a-subtitle o-welcome_title">welcome</h2>
-              <div class="o-welcome_img">
+            <h2 class="a-subtitle">welcome</h2>
+            <div class="o-graphic">
+              <div class="o-graphic_img">
                 <img src="./images/welcome.jpg" alt="welcome" />
               </div>
-              <p class="o-welcome_description">
+              <p class="o-graphic_description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
                 ratione voluptas placeat ea eum quo...More
               </p>
@@ -239,57 +236,57 @@
           </div>
 
           <div class="o-about_item">
-            <div class="o-whyus">
-              <h2 classa-subtitle ="o-whyus_title">why choose us?</h2>
-              <div class="o-whyus_item">
-                <div class="o-whyus_icon">
+            <h2 class="a-subtitle">why choose us?</h2>
+            <div class="o-bulletList">
+              <div class="o-bulletList_item">
+                <div class="o-bulletList_icon">
                   <i class="fa-solid fa-chevron-right"></i>
                 </div>
-                <p class="o-whyus_description">Lorem ipsum dolor sit amet.</p>
+                <p class="o-bulletList_description">Lorem ipsum dolor sit amet.</p>
               </div>
-              <div class="o-whyus_item">
-                <div class="o-whyus_icon">
+              <div class="o-bulletList_item">
+                <div class="o-bulletList_icon">
                   <i class="fa-solid fa-chevron-right"></i>
                 </div>
-                <p class="o-whyus_description">Lorem ipsum dolor sit amet.</p>
+                <p class="o-bulletList_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
-              <div class="o-whyus_item">
-                <div class="o-whyus_icon">
+              <div class="o-bulletList_item">
+                <div class="o-bulletList_icon">
                   <i class="fa-solid fa-chevron-right"></i>
                 </div>
-                <p class="o-whyus_description">Lorem ipsum dolor sit amet.</p>
+                <p class="o-bulletList_description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
               </div>
-              <div class="o-whyus_item">
-                <div class="o-whyus_icon">
+              <div class="o-bulletList_item">
+                <div class="o-bulletList_icon">
                   <i class="fa-solid fa-chevron-right"></i>
                 </div>
-                <p class="o-whyus_description">Lorem ipsum dolor sit amet.</p>
+                <p class="o-bulletList_description">Lorem ipsum dolor sit amet.</p>
               </div>
             </div>
           </div>
 
           <div class="o-about_item">
-            <div class="o-news">
-              <h2 clasa-subtitle s="o-news_title">news & events</h2>
-              <div class="o-news_item">
-                <div class="o-news_img">
+            <h2 class="a-subtitle">news & events</h2>
+            <div class="o-media">
+              <div class="o-media_item">
+                <div class="o-media_img">
                   <img src="./images/news1.jpg" alt="news-1" />
                 </div>
-                <div class="o-news_content">
-                  <span class="o-news_date"> 12.12.12 </span>
-                  <p class="o-news_description">
+                <div class="o-media_content">
+                  <span class="o-media_date"> 12.12.12 </span>
+                  <p class="o-media_description">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Fugit aspernatur dolor numquam temporibus autem magni? lorem
                   </p>
                 </div>
               </div>
-              <div class="o-news_item">
-                <div class="o-news_img">
+              <div class="o-media_item">
+                <div class="o-media_img">
                   <img src="./images/news2.jpg" alt="news2" />
                 </div>
-                <div class="o-news_content">
-                  <span class="o-news_date"> 12.12.12 </span>
-                  <p class="o-news_description">
+                <div class="o-media_content">
+                  <span class="o-media_date"> 12.12.12 </span>
+                  <p class="o-media_description">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Fugit aspernatur dolor numquam temporibus autem magni?
                   </p>
@@ -299,69 +296,69 @@
           </div>
         </div>
       </section>
+
+      <hr>
       <!--! feature -->
       <section class="o-main_feature">
-        <div class="o-features">
-          <h2 class="oa-subtitle -features_title">feature works</h2>
-          <!-- swiper -->
-          <div class="o-features_swiper">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./images/feature1.jpg" alt="feature1" />
-                  <div class="swiper-link"> 
-                    <span>ecenas enim</span> 
-                    <a href="##">
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                    <a href="##">
-                      <i class="fa-solid fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img src="./images/feature2.jpg" alt="feature2" />
-                  <div class="swiper-link"> 
-                    <span>ecenas enim</span> 
-                    <a href="##">
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                    <a href="##">
-                      <i class="fa-solid fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img src="./images/feature3.jpg" alt="feature3" />
-                  <div class="swiper-link">
-                    <span>ecenas enim</span> 
-                    <a href="##">
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                    <a href="##">
-                      <i class="fa-solid fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img src="./images/feature4.jpg" alt="feature4" />
-                  <div class="swiper-link"> 
-                    <span>ecenas enim</span> 
-                    <a href="##">
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                    <a href="##">
-                      <i class="fa-solid fa-link"></i>
-                    </a>
-                  </div>
+        <h2 class="a-subtitle">feature works</h2>
+        <!-- swiper -->
+        <div class="o-swiper">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/feature1.jpg" alt="feature1" />
+                <div class="swiper-link"> 
+                  <span>ecenas enim</span> 
+                  <a href="##">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                  <a href="##">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
                 </div>
               </div>
-
-              <!-- If we need scrollbar -->
-              <div class="swiper-scrollbar"></div>
+              <div class="swiper-slide">
+                <img src="./images/feature2.jpg" alt="feature2" />
+                <div class="swiper-link"> 
+                  <span>ecenas enim</span> 
+                  <a href="##">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                  <a href="##">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/feature3.jpg" alt="feature3" />
+                <div class="swiper-link">
+                  <span>ecenas enim</span> 
+                  <a href="##">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                  <a href="##">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/feature4.jpg" alt="feature4" />
+                <div class="swiper-link"> 
+                  <span>ecenas enim</span> 
+                  <a href="##">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                  <a href="##">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </div>
+              </div>
             </div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
           </div>
         </div>
       </section>
@@ -374,29 +371,29 @@
         <div class="o-footer_content">
           <!--! tweets -->
           <div class="o-footer_item">
-            <div class="m-tweets">
-              <h4 class="m-tweets_title a-smallTitle">
-                latest tweets
-              </h4>
-              <p class="m-tweets_content">
+            <h4 class="a-subTitle">
+              latest tweets
+            </h4>
+            <div class="m-paragraph">
+              <p class="m-paragraph_content">
                 loading tweets...
               </p>
             </div>
           </div>
-          <!--! testimonials -->
+          <!--! dialogue -->
           <div class="o-footer_item">
-            <div class="o-testimonials">
-              <h4 class="o-testimonials_title a-smallTitle">
-                testimonials
-              </h4>
-              <div class="o-testimonials_content">
+            <h4 class="a-subTitle">
+              testimonials
+            </h4>
+            <div class="o-dialogue">
+              <div class="o-dialogue_content">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo alias, itaque enim quae ipsa facilis?
               </div>
-              <div class="o-testimonials_author">
-                <div class="o-testimonials_img">
+              <div class="o-dialogue_author">
+                <div class="o-dialogue_img">
                   <img src="./images/men.jpg" alt="men">
                 </div>
-                <div class="o-testimonials_info">
+                <div class="o-dialogue_info">
                   <span>Stephen Bingham</span>
                   <a href="##">demolink.org</a>
                 </div>
@@ -406,39 +403,37 @@
           
           <!--! getInTouch -->
           <div class="o-footer_item">
-            <div class="o-getInTouch">
-              <h4 class="o-getInTouch_title a-smallTitle">
-                get in touch!
-              </h4>
-              <form class="o-getInTouch_form">
-                <input type="text" class="o-getInTouch_input -name" placeholder="Name">
-                <input type="text" class="o-getInTouch_input -email" placeholder="Email">
-                <textarea class="o-getInTouch_input -message" placeholder="Message"></textarea>
-                <button class="o-getInTouch_button -clear">clear form</button>
-                <button class="o-getInTouch_button -send">send!</button>
+            <h4 class="a-subTitle">
+              get in touch!
+            </h4>
+            <div class="o-userField">
+              <form class="o-userField_form">
+                <input type="text" class="o-userField_field -name" placeholder="Name">
+                <input type="text" class="o-userField_field -email" placeholder="Email">
+                <textarea class="o-userField_field -message" placeholder="Message"></textarea>
+                <button type="button" class="a-button -success">clear form</button>
+                <button type="button" class="a-button -dark">send!</button>
               </form>
             </div>
           </div>
           <!--! flickr -->
           <div class="o-footer_item">
-            <div class="o-flickr">
-              <h4 class="o-flickr_title a-smallTitle">
-                flickr
-              </h4>
-              <div class="o-album" data-album>
-                <img src="./images/f1.jpg" alt="poster">
-                  <img src="./images/f2.jpg" alt="smiling pals">
-                  <img src="./images/f3.jpg" alt="people on the phone">
-                  <img src="./images/f4.jpg" alt="customer-service staff on the phone">
-                  <img src="./images/f5.jpg" alt="taking notes">
-                  <img src="./images/f6.jpg" alt="pencils on the pad">
-                  <img src="./images/f7.jpg" alt="stamp on newspaper">
-                  <img src="./images/f8.jpg" alt="staff in a line">
-                  <img src="./images/f9.jpg" alt="smiling staff">
-                  <img src="./images/f10.jpg" alt="calculator and a pen">
-                  <img src="./images/f11.jpg" alt="pencil on a calculator">
-                  <img src="./images/f12.jpg" alt="a crystal globe">
-              </div>
+            <h4 class="a-subTitle">
+              flickr
+            </h4>
+            <div class="o-album" data-album>
+              <img src="./images/f1.jpg" alt="poster">
+                <img src="./images/f2.jpg" alt="smiling pals">
+                <img src="./images/f3.jpg" alt="people on the phone">
+                <img src="./images/f4.jpg" alt="customer-service staff on the phone">
+                <img src="./images/f5.jpg" alt="taking notes">
+                <img src="./images/f6.jpg" alt="pencils on the pad">
+                <img src="./images/f7.jpg" alt="stamp on newspaper">
+                <img src="./images/f8.jpg" alt="staff in a line">
+                <img src="./images/f9.jpg" alt="smiling staff">
+                <img src="./images/f10.jpg" alt="calculator and a pen">
+                <img src="./images/f11.jpg" alt="pencil on a calculator">
+                <img src="./images/f12.jpg" alt="a crystal globe">
             </div>
           </div>
         </div>
@@ -447,7 +442,7 @@
         <div class="o-footer_copyright">
           <div class="o-subNav">
             <p class="o-subNav_copyright">
-              business planet &copy; 2020 | <span>Privacy Policy</span>
+              <span>business planet &copy; 2020 |</span><a href="##"> Privacy Policy</a>
             </p>
             <nav class="o-subNav_nav">
               <ul class="o-subNav_list">
@@ -455,7 +450,6 @@
                 <li class="o-subNav_item"><a href="##">about</a></li>
                 <li class="o-subNav_item"><a href="##">features</a></li>
                 <li class="o-subNav_item"><a href="##">portfolio</a></li>
-                <li class="o-subNav_item"><a href="##">blog</a></li>
                 <li class="o-subNav_item"><a href="##">contacts</a></li>
               </ul>
             </nav>

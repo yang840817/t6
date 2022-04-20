@@ -1,0 +1,50 @@
+@use "../base";
+@use "../utils";
+
+.o-subNav {
+  @include utils.flex(center, center, column, nowrap);
+  row-gap: 1rem;
+  padding: 1rem 0;
+  background-color: base.$gray-500;
+  color: #666;
+  font-size: 0.75rem;
+  @include utils.desktop {
+    @include utils.flex(between, center, row, nowrap);
+  }
+  &_copyright {
+    order: 2;
+    @include utils.desktop {
+      order: 0;
+    }
+    span {
+      text-transform: uppercase;
+    }
+    a {
+      color: base.$green;
+    }
+  }
+  &_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    @include utils.tablet {
+      grid-template-columns: repeat(6, auto);
+      gap: 0;
+    }
+  }
+  &_item {
+    text-align: center;
+    text-transform: uppercase;
+    &:hover {
+      a {
+        color: base.$green;
+      }
+    }
+    @include utils.tablet {
+      padding: 0 0.5rem;
+      &:not(:last-child) {
+        border-right: 1px solid #666;
+      }
+    }
+  }
+}

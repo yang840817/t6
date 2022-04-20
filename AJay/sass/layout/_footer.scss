@@ -1,8 +1,11 @@
-@use "../base/color";
-@use "../base/background";
-@use "../utils/breakpoints";
+@use "../base";
+@use "../utils";
 
-@use "../components/footer";
+.a-subTitle {
+  @extend %title-2;
+  text-transform: uppercase;
+}
+
 .o-footer {
   &_content {
     @extend %bg-content;
@@ -15,17 +18,20 @@
       "item4 item4 item4 item4";
     gap: 1rem;
     padding: 2rem;
-    @include breakpoints.tablet {
+    @include utils.tablet {
       grid-template-areas:
         "item1 item1 item2 item2"
         "item3 item3 item4 item4";
     }
-    @include breakpoints.desktop {
+    @include utils.desktop {
       grid-template-areas: "item1 item2 item3 item4";
     }
   }
 
   &_item {
+    > .a-subTitle {
+      margin-bottom: 1rem;
+    }
     @for $i from 1 through 4 {
       &:nth-of-type(#{$i}) {
         grid-area: item#{$i};

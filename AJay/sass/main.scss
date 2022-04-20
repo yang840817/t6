@@ -1,4 +1,20 @@
 @use "./base/reset";
+
+@use "./components/navbar";
+@use "./components/connection";
+@use "./components/carousel";
+@use "./components/card";
+@use "./components/graphic";
+@use "./components/bulletList";
+@use "./components/media";
+@use "./components/dialogue";
+@use "./components/userField";
+@use "./components/button";
+@use "./components/album";
+@use "./components/subnav";
+
+@use "./vendor/swiper";
+
 @use "./layout/body";
 @use "./layout/header";
 @use "./layout/main";

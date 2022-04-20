@@ -1,7 +1,7 @@
-@use "../base/color";
+@use "../base";
 
 %title-1 {
-  color: color.$black;
+  color: base.$black;
   font: {
     size: 24px;
     weight: 500;
@@ -10,7 +10,7 @@
 }
 
 %title-2 {
-  color: color.$gray-400;
+  color: base.$gray-400;
   font: {
     size: 20px;
     family: Arial, sans-serif;
@@ -18,7 +18,7 @@
 }
 
 %body-1 {
-  color: color.$gray-200;
+  color: base.$gray-200;
   font: {
     size: 16px;
     family: Arial, sans-serif;
@@ -26,7 +26,7 @@
 }
 
 %body-2 {
-  color: color.$gray-200;
+  color: base.$gray-200;
   font: {
     size: 14px;
     family: Arial, sans-serif;
@@ -34,7 +34,7 @@
 }
 
 %body-3 {
-  color: color.$gray-300;
+  color: base.$gray-300;
   font: {
     size: 12px;
     family: Arial, sans-serif;

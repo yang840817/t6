@@ -1,0 +1,20 @@
+@use "../base";
+@use "../utils";
+
+.a-button {
+  @extend %body-2;
+  padding: 0.25rem 0.75rem;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  transition: all 200ms linear;
+  &:hover {
+    filter: contrast(80%);
+  }
+  &.-success {
+    background-color: black;
+  }
+  &.-dark {
+    background-color: base.$green;
+  }
+}

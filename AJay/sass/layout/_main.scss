@@ -1,47 +1,95 @@
-@use "../base/color";
-@use "../base/background";
-@use "../utils/breakpoints";
+@use "../base";
+@use "../utils";
 
-@use "../components/carousel";
-@use "../components/services.scss";
-@use "../components/about.scss";
-@use "../vendor/swiper";
+.a-subtitle {
+  @extend %title-1;
+  text-transform: uppercase;
+}
 
 .o-main {
   padding: 0 1rem;
   @extend %bg-content;
-  @include breakpoints.tablet {
+  > hr {
+    margin: 0;
+  }
+  @include utils.tablet {
     padding: 0 1.5rem;
   }
-  @include breakpoints.desktop {
+  @include utils.desktop {
     padding: 0 2rem;
   }
   &_navbar {
     margin: 0 -1rem;
-    @include breakpoints.tablet {
+    @include utils.tablet {
       margin: 0 -1.5rem;
     }
-    @include breakpoints.desktop {
+    @include utils.desktop {
       margin: 0 -2rem;
     }
   }
   &_carousel {
     margin: 0 -1rem 1rem -1rem;
-    height: 300px;
-    @include breakpoints.tablet {
+    height: 250px;
+    @include utils.tablet {
       margin: 0 -1.5rem 1.5rem -1.5rem;
       height: 350px;
     }
-    @include breakpoints.desktop {
+    @include utils.desktop {
       margin: 0 -2rem;
       height: 450px;
     }
   }
   &_services {
-    @include breakpoints.desktop {
+    margin-bottom: 1.5rem;
+    @include utils.desktop {
       position: relative;
       top: -2rem;
       z-index: 2;
+    }
+  }
+  &_about {
+    margin-bottom: 3rem;
+  }
+  &_feature {
+    padding: 3rem 0;
+    > .a-subtitle {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.o-services {
+  display: grid;
+  gap: 1rem;
+  @include utils.tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include utils.desktop {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+.o-about {
+  display: grid;
+  gap: 2rem;
+  @include utils.tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include utils.desktop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &_item {
+    > .a-subtitle {
+      margin-bottom: 1rem;
+    }
+    &:last-child {
+      @include utils.tablet {
+        grid-column: span 2;
+      }
+      @include utils.desktop {
+        grid-column: auto;
+      }
     }
   }
 }

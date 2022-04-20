@@ -1,0 +1,16 @@
+@use "../base";
+@use "../utils";
+
+.o-graphic {
+  @include utils.flex(start, stretch, column, nowrap);
+  row-gap: 1rem;
+  &_img {
+    img {
+      width: 100%;
+    }
+  }
+  &_description {
+    @extend %body-3;
+    line-height: 1.2;
+  }
+}

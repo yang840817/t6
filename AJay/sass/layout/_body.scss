@@ -1,5 +1,5 @@
-@use "../base/background";
-@use "../utils/breakpoints";
+@use "../base";
+@use "../utils";
 
 body {
   max-width: 1200px;
@@ -10,20 +10,18 @@ body {
       #1d1d1d 90% 100%
     ),
     url(../images/bg.jpg);
-  @include breakpoints.tablet {
+  @include utils.tablet {
     padding: 0 1rem;
   }
-  @include breakpoints.desktop {
+  @include utils.desktop {
     padding: 0;
   }
   header {
-    @include breakpoints.desktop {
+    @include utils.desktop {
       margin-bottom: 1.5rem;
     }
   }
   main {
     margin-bottom: 3rem;
-  }
-  footer {
   }
 }

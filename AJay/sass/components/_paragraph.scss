@@ -1,0 +1,11 @@
+@use "../base";
+@use "../utils";
+
+.m-paragraph {
+  &_title {
+    margin-bottom: 1rem;
+  }
+  &_content {
+    @extend %body-2;
+  }
+}

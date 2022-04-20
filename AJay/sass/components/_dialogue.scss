@@ -1,0 +1,43 @@
+@use "../base";
+@use "../utils";
+
+.o-dialogue {
+  &_title {
+    margin-bottom: 1rem;
+  }
+  &_content {
+    @extend %body-2;
+    position: relative;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #e6e6e6;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-width: 7px 12px;
+      border-style: solid;
+      border-color: #e6e6e6 transparent transparent #e6e6e6;
+    }
+  }
+  &_author {
+    @include utils.flex(start, stretch, row, nowrap);
+    gap: 1rem;
+  }
+  &_img {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &_info {
+    > a {
+      color: base.$green;
+    }
+  }
+}

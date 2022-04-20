@@ -1,5 +1,5 @@
-@use "../base/color";
-@use "../utils/breakpoints";
+@use "../base";
+@use "../utils";
 
 // sodical media sprite icon
 $sprite-social: url(../images/social.png);
@@ -14,27 +14,27 @@ $sprite-social: url(../images/social.png);
   }
 }
 
-.o-social {
-  position: relative;
-  &_toggler {
-    display: block;
-    padding: 0.5rem;
-    color: color.$gray-400;
-    cursor: pointer;
-    @include breakpoints.desktop {
-      display: none;
-    }
-    &:hover {
-      color: color.$green;
-    }
-    i {
-      font-size: 28px;
-    }
+.a-connectionToggler {
+  display: block;
+  padding: 0.5rem;
+  color: base.$gray-400;
+  cursor: pointer;
+  @include utils.desktop {
+    display: none;
   }
+  &:hover {
+    color: base.$green;
+  }
+  i {
+    font-size: 28px;
+  }
+}
+.o-connection {
+  position: relative;
   &_trigger {
     display: none;
     &:checked {
-      & ~ .o-social_content {
+      & ~ .o-connection_content {
         max-height: 100px;
         padding: 1rem;
       }
@@ -51,7 +51,7 @@ $sprite-social: url(../images/social.png);
     background-color: #fff;
     transition: max-height 0.4s, padding 0.4s;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.6);
-    @include breakpoints.desktop {
+    @include utils.desktop {
       position: static;
       width: 100%;
       height: fit-content;

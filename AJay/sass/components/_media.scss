@@ -1,0 +1,41 @@
+@use "../base";
+@use "../utils";
+
+.o-media {
+  @include utils.flex(start, stretch, column, wrap);
+  row-gap: 1rem;
+  column-gap: 2rem;
+  @include utils.tablet {
+    flex-direction: row;
+  }
+  @include utils.desktop {
+    flex-direction: column;
+  }
+  &_title {
+    @include utils.tablet {
+      flex: 0 0 100%;
+    }
+  }
+  &_item {
+    @include utils.flex(start, stretch, row, nowrap);
+    column-gap: 1rem;
+    @include utils.tablet {
+      flex: 1 0 0;
+    }
+    @include utils.desktop {
+    }
+  }
+  &_date {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    padding: 4px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background-color: base.$green;
+  }
+  &_description {
+    @include utils.ellipsis(4);
+    @extend %body-3;
+  }
+}

@@ -1,0 +1,26 @@
+@use "../base";
+@use "../utils";
+
+.o-userField {
+  &_title {
+    margin-bottom: 1rem;
+  }
+  &_field {
+    @extend %body-2;
+    width: 100%;
+    padding: 0.25rem;
+    border: 1px solid #d8d8d8;
+    background-color: #e6e6e6;
+    &.-name {
+      margin-bottom: 0.5rem;
+    }
+    &.-email {
+      margin-bottom: 0.5rem;
+    }
+    &.-message {
+      margin-bottom: 1rem;
+      outline: none;
+      resize: none;
+    }
+  }
+}
