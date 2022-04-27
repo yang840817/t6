@@ -1,13 +1,6 @@
 @use "../../node_modules/swiper/swiper.scss";
-// @use "../../node_modules/swiper/modules/navigation/navigation.scss";
 
-.o-features {
-  padding: 3rem 0 5rem 0;
-  &_title {
-    margin-bottom: 1rem;
-  }
-}
-.o-features_swiper {
+.o-swiper {
   position: relative;
   .swiper {
     &-slide {
@@ -32,7 +25,7 @@
           top: -30%;
           outline: 2px solid #7eb500;
         }
-        & .swiper-link {
+        .swiper-link {
           right: 0;
           transform: translate(-50%, -50%) rotate(0deg);
         }
