@@ -1,0 +1,99 @@
+/* reseat */
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+body {
+    background-image: linear-gradient(#1D1D1D 5%, transparent 0%, transparent 90%,#1D1D1D 0%),
+    url(../images/bg.jpg);
+}
+
+/* header */
+
+header{
+    background-image: url(./images/subbg.gif);
+}
+.social_media a:nth-child(1){
+    display: inline-block;
+    background-image: url(../images/social.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 28px;
+    height: 27px;
+}
+.social_media a:nth-child(1):hover {
+    background-position: 0 bottom;
+}
+.social_media a:nth-child(2) {
+    display: inline-block;
+    background-image: url(../images/social.png);
+    background-repeat: no-repeat;
+    background-position: -38px 0;
+    width: 28px;
+    height: 27px;
+}
+.social_media a:nth-child(2):hover {
+    background-position: -38px bottom;
+}
+.social_media a:nth-child(3) {
+    display: inline-block;
+    background-image: url(../images/social.png);
+    background-repeat: no-repeat;
+    background-position: -74px 0;
+    width: 28px;
+    height: 27px;
+}
+.social_media a:nth-child(3):hover {
+    background-position: -74px bottom;
+}
+.social_media a:nth-child(4) {
+    display: inline-block;
+    background-image: url(../images/social.png);
+    background-repeat: no-repeat;
+    background-position: -111px 0;
+    width: 28px;
+    height: 27px;
+}
+.social_media a:nth-child(4):hover {
+    background-position: -111px bottom;
+}
+.social_media a:nth-child(5) {
+    display: inline-block;
+    background-image: url(../images/social.png);
+    background-repeat: no-repeat;
+    background-position: -150px 0;
+    width: 28px;
+    height: 27px;
+}
+.social_media a:nth-child(5):hover {
+    background-position: -150px bottom;
+}
+.media_box a {
+    color: #4A4A4A;
+}
+.logo img {
+    max-width: 100%;
+}
+
+
+/* main */
+.carousel span{
+    background-color: #1D1D1D;
+}
+.b{
+    background-image: url(./images/subbg.gif);
+}
+.b .content_box {
+    background-color: #E7E7E7;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.c{
+    background-image: url(./images/subbg.gif);
+}

@@ -1,0 +1,13 @@
+@use '../abstracts/breakpoint'as *;
+@use '../abstracts/mixins'as *;
+@use '../abstracts/color'as *;
+
+.work_box {
+    &::before {
+        display: block;
+        content: "";
+        position: relative;
+        bottom: 1rem;
+        border:1px solid $gray-line ;
+    }
+}

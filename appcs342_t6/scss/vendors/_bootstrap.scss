@@ -1,0 +1,32 @@
+@use '../abstracts/breakpoint' ;
+@use '../abstracts/color' as *; 
+
+//nav
+.nav_box {
+    margin-top: 1rem;
+    position: relative;
+    background-color: #fff;
+    .navbar{
+        .navbar-nav{
+            a{
+                &:hover{
+                    background: $green;
+                    color: $while;
+                }
+            }
+        }
+    }
+}
+
+.nav_box .search{
+    position: absolute;
+    top: 0.6rem;
+    bottom: auto;
+    right: 0.5rem;
+    input {
+        background: url(../../images/search.png);
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-color: #f3f3f3;
+    }
+}

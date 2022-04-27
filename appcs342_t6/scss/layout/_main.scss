@@ -1,0 +1,11 @@
+@use '../components/service-box';
+@use '../components/news-box';
+@use '../components/work-box';
+
+
+
+$img-subbg :url("../../images/subbg.gif");
+
+main {
+    background-image: $img-subbg;
+}

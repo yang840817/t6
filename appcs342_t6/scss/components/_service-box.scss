@@ -1,0 +1,40 @@
+@use '../abstracts/breakpoint'as *;
+@use '../abstracts/mixins'as *;
+@use '../abstracts/color'as *;
+
+.service {
+    @include lg {
+        position: relative;
+        z-index: 99999;
+        transform: translateY(-3rem);
+    }
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background: $gray-service;
+    height: 95%;
+
+    &:hover {
+        color: $while;
+        background: rgba($gray-service-hover, 0.5) ;
+    }
+
+    a{
+        padding: 0.5rem 1rem ;
+        text-transform: capitalize;
+        color: $black;
+        background: $gray-service-button;
+    }
+    img {
+        object-fit: cover;
+    }
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}

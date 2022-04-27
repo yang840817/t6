@@ -1,0 +1,16 @@
+@use '../abstracts/breakpoint' as *; 
+@use '../components/media-box';
+
+$img-subbg :url("../../images/subbg.gif");
+
+header {
+    padding: 1.5rem 1rem;
+    background-image: $img-subbg;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 0 5px;
+
+    @include md {
+        justify-content: space-between;
+    }
+}
