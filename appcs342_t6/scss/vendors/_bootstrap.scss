@@ -30,3 +30,28 @@
         background-color: #f3f3f3;
     }
 }
+.carousel_button_prev {
+    background: url(../images/slider_prev.gif) no-repeat 0 0;
+    width: 2.5rem;
+    height: 7rem;
+    &:hover {
+        background-position: 0 -119px;
+    }
+}
+.carousel_button_next {
+    background: url(../images/slider_next.gif) no-repeat 0 0;
+    width: 2.5rem;
+    height: 7rem;
+    &:hover {
+        background-position: 0 -119px;
+    }
+}
+.carousel-control-prev {
+    width: fit-content;
+    left: 0;
+}
+
+.carousel-control-next {
+    width: fit-content;
+    right: 0;
+}

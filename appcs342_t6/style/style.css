@@ -7,10 +7,6 @@ ul {
   list-style-type: none;
 }
 
-textarea {
-  resize: none;
-}
-
 button {
   border: none;
 }
@@ -222,6 +218,13 @@ body {
   border: 1px solid #E3E3E3;
 }
 
+.work_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1rem;
+}
+
 main {
   background-image: url("../../images/subbg.gif");
 }
@@ -274,6 +277,9 @@ footer .flickr {
   grid-template-columns: repeat(4, 5fr);
   gap: 1rem;
 }
+footer .flickr img {
+  width: 100%;
+}
 footer .footer_information {
   display: flex;
   flex-wrap: wrap;
@@ -318,6 +324,69 @@ footer .footer_information .copyright a {
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-color: #f3f3f3;
+}
+
+.carousel_button_prev {
+  background: url(../images/slider_prev.gif) no-repeat 0 0;
+  width: 2.5rem;
+  height: 7rem;
+}
+.carousel_button_prev:hover {
+  background-position: 0 -119px;
+}
+
+.carousel_button_next {
+  background: url(../images/slider_next.gif) no-repeat 0 0;
+  width: 2.5rem;
+  height: 7rem;
+}
+.carousel_button_next:hover {
+  background-position: 0 -119px;
+}
+
+.carousel-control-prev {
+  width: fit-content;
+  left: 0;
+}
+
+.carousel-control-next {
+  width: fit-content;
+  right: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.work_button i {
+  color: grey;
+}
+.work_button i:hover {
+  color: #80B601;
 }
 
 /*# sourceMappingURL=style.css.map */
