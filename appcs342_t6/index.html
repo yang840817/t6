@@ -34,26 +34,28 @@
   <body>
     <div class="container">
       <!-- header -->
-      <header class="d-flex">
+      <header>
         <h1 class="logo">
           <a href="##">
             <img class="w-100" src="./images/logo.png" alt="BUSINESSPLANET" />
           </a>
         </h1>
         <div class="media_box">
-          <div class="social_media">
+          <div class="social_media mt-3 mt-md-0">
             <a href="##"></a>
             <a href="##"></a>
             <a href="##"></a>
             <a href="##"></a>
             <a href="##"></a>
           </div>
-          <a href="tel:+1777842543">Call Us Now: +1 (777) 784-25-43</a>
+          <a class="mt-2" href="tel:+1777842543"
+            >Call Us Now: +1 (777) 784-25-43</a
+          >
         </div>
       </header>
       <section class="nav_box">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-md navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container-fluid">
             <button
               class="navbar-toggler"
@@ -140,8 +142,7 @@
         <form class="search">
           <input
             class="form-control"
-            type="search"
-            placeholder="Search"
+            placeholder="Search the Site..."
             aria-label="Search"
           />
         </form>
@@ -198,7 +199,7 @@
         <section class="service_box px-4">
           <div class="row">
             <div class="col-12 col-md-6 col-lg-3">
-              <div class="service p-4 mt-3">
+              <div class="service">
                 <h2>Growth Strategies</h2>
                 <div><img class="w-100" src="./images/p1.png" alt="p1" /></div>
                 <p>
@@ -210,7 +211,7 @@
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
-              <div class="service p-4 mt-3">
+              <div class="service">
                 <h2>Perfect Support</h2>
                 <div><img class="w-100" src="./images/p2.png" alt="p2" /></div>
                 <p>
@@ -222,7 +223,7 @@
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
-              <div class="service p-4 mt-3">
+              <div class="service">
                 <h2>Partners Programs</h2>
                 <div><img class="w-100" src="./images/p3.png" alt="p3" /></div>
                 <p>
@@ -233,7 +234,7 @@
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
-              <div class="service p-4 mt-3">
+              <div class="service">
                 <h2>Premium Services</h2>
                 <div><img class="w-100" src="./images/p4.png" alt="p4" /></div>
                 <p>
@@ -262,7 +263,7 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
               <div class="question">
-                <h3>why choose me?</h3>
+                <h3>why choose us?</h3>
                 <ul>
                   <li>
                     <a href="##"><i class="fa-solid fa-chevron-right"></i></a>
@@ -285,7 +286,7 @@
             </div>
             <div class="col-12 col-lg-4">
               <div class="events_box">
-                <h3>new & events</h3>
+                <h3>news & events</h3>
                 <div class="event_card">
                   <div class="event_card_img">
                     <img src="./images/news1.jpg" alt="news1" />
@@ -328,16 +329,28 @@
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <a href="##"><img src="./images/g1.jpg" alt="g1" /></a>
-                <a href="##"><img src="./images/g2.jpg" alt="g2" /></a>
-                <a href="##"><img src="./images/g3.jpg" alt="g3" /></a>
-                <a href="##"><img src="./images/g4.jpg" alt="g4" /></a>
+                <img src="./images/g1.jpg" alt="work img" />
               </div>
               <div class="swiper-slide">
-                <a href="##"><img src="./images/g1.jpg" alt="g1" /></a>
-                <a href="##"><img src="./images/g2.jpg" alt="g2" /></a>
-                <a href="##"><img src="./images/g3.jpg" alt="g3" /></a>
-                <a href="##"><img src="./images/g4.jpg" alt="g4" /></a>
+                <img src="./images/g2.jpg" alt="work img" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/g3.jpg" alt="work img" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/g4.jpg" alt="work img" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/g1.jpg" alt="work img" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/g2.jpg" alt="work img" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/g3.jpg" alt="work img" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/g4.jpg" alt="work img" />
               </div>
             </div>
           </div>
@@ -366,7 +379,7 @@
                   </div>
                   <div class="info_box">
                     <img src="./images/men.jpg" alt="men info" />
-                    <div class="people_info">
+                    <div class="info_people">
                       <p>Stephen Bingham<a href="##">demolink.org</a></p>
                     </div>
                   </div>
@@ -390,8 +403,8 @@
                     placeholder="Message"
                     rows="6"
                   ></textarea>
-                  <button class="buttonone" cype="reset">clear form</button>
-                  <button class="buttontwo" type="reset">Send!</button>
+                  <button class="reset" cype="reset">clear form</button>
+                  <button class="submit" type="submit">Send!</button>
                 </form>
               </div>
             </div>
@@ -416,7 +429,7 @@
             </div>
           </div>
         </div>
-        <div class="footer_information p-2">
+        <div class="copyright_box p-2">
           <div class="copyright">
             <span>Business Planet © 2020 |</span>
             <a href="##">Privacy Policy</a>
@@ -443,8 +456,22 @@
     <script>
       var swiper = new Swiper(".mySwiper", {
         navigation: {
-          nextEl: ".fa-chevron-left",
-          prevEl: ".fa-chevron-right",
+          nextEl: ".fa-chevron-right",
+          prevEl: ".fa-chevron-left",
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          375: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
         },
       });
     </script>

@@ -2,7 +2,7 @@
 @use '../abstracts/mixins'as *;
 @use '../abstracts/color'as *;
 
-.service {
+.service_box {
     @include lg {
         position: relative;
         z-index: 99999;
@@ -12,12 +12,14 @@
 
 .service {
     display: flex;
+    padding: 1.5rem;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     background: $gray-service;
-    height: 95%;
+    height: 100%;
+    gap: 1rem;
 
     &:hover {
         color: $while;
@@ -26,6 +28,7 @@
 
     a{
         padding: 0.5rem 1rem ;
+        margin-top: auto;
         text-transform: capitalize;
         color: $black;
         background: $gray-service-button;
@@ -38,3 +41,4 @@
         margin-bottom: 1.5rem;
     }
 }
+

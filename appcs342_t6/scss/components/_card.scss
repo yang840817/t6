@@ -1,0 +1,28 @@
+@use '../abstracts/breakpoint'as *;
+@use '../abstracts/mixins'as *;
+@use '../abstracts/color'as *;
+
+.event_card {
+    display: flex;
+    justify-content: space-between;
+
+    .event_card_text {
+        width: 55%;
+
+        span {
+            display: inline-block;
+            padding: 0 1rem;
+            color: $while;
+            background-color: $green;
+
+        }
+    }
+
+    .event_card_img {
+        width: 40%;
+
+        img {
+            width: 100%;
+        }
+    }
+}

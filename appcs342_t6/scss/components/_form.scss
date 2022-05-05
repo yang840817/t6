@@ -1,0 +1,31 @@
+@use '../abstracts/breakpoint'as *;
+@use '../abstracts/mixins'as *;
+@use '../abstracts/color'as *;
+
+form {
+
+    input,
+    textarea {
+        background: $gray-dialogue;
+        width: 100%;
+        border: 0;
+
+        &:focus {
+            outline: 2px solid $green;
+        }
+    }
+
+    button {
+        margin-top: 1rem;
+        color: $while;
+        text-transform: uppercase;
+    }
+
+    .reset {
+        background-color: $black;
+    }
+
+    .submit {
+        background-color: $green;
+    }
+}

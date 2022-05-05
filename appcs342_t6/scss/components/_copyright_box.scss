@@ -1,0 +1,38 @@
+@use '../abstracts/breakpoint'as *;
+@use '../abstracts/mixins'as *;
+@use '../abstracts/color'as *;
+
+.copyright_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    span {
+        color: $gray-text;
+    }
+
+    a {
+        padding-left: 0.2rem;
+        color: $gray-text;
+
+        &:hover {
+            color: $green;
+        }
+    }
+
+    .copyright {
+        a {
+            color: $green;
+        }
+    }
+}
+
+@include md {
+    .copyright_box {
+        justify-content: space-between;
+    }
+}
+
+.copyright_box a+a {
+    border-left: 1px solid $gray-text;
+}

@@ -1,11 +1,57 @@
-@use '../components/service-box';
-@use '../components/news-box';
-@use '../components/work-box';
+@use '../components/service';
+@use '../components/choose.scss';
+@use '../components/card';
+
+@use '../abstracts/breakpoint'as *;
+@use '../abstracts/mixins'as *;
+@use '../abstracts/color'as *;
 
 
 
-$img-subbg :url("../../images/subbg.gif");
+$img-subbg :url("../images/subbg.gif");
 
 main {
     background-image: $img-subbg;
 }
+
+.service_box .row>div {
+    margin-top: 1rem;
+}
+
+.news_box {
+    text-transform: uppercase;
+
+    h3 {
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin: 1rem 0 0 0;
+        color: $gray-text;
+        font-size: 12px;
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    a {
+        color: $black;
+        font-weight: 700;
+        text-transform: capitalize;
+
+        &:hover {
+            color: $green;
+        }
+    }
+   
+}
+
+.news_box .row>div+div {
+    margin-top: 2rem;
+    @include md {
+        margin-top:0;
+    }
+}
+

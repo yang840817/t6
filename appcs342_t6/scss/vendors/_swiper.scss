@@ -40,3 +40,23 @@
         }
     }
 }
+
+.work_box {
+    text-transform: uppercase;
+
+    &::before {
+        display: block;
+        content: "";
+        position: relative;
+        bottom: 1rem;
+        border: 1px solid $gray-line;
+    }
+}
+
+.work_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1rem;
+
+}

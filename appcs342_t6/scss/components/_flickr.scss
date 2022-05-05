@@ -1,0 +1,26 @@
+@use '../abstracts/breakpoint'as *;
+@use '../abstracts/mixins'as *;
+@use '../abstracts/color'as *;
+
+footer {
+    .flickr {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+
+        img {
+            width: 100%;
+
+            &:hover {
+                transform: skew(20deg, 10deg);
+            }
+
+            &:active {
+                transform: scale(3, 3);
+                transition: 0.5s;
+            }
+        }
+    }
+
+
+}
