@@ -1,0 +1,175 @@
+.main__items .service h2 {
+  font-size: 14px;
+}
+.main__items .service p {
+  font-size: 12px;
+  color: rgb(65, 65, 65);
+}
+.main__items .service__items:last-of-type {
+  color: white;
+}
+.main__items .info h3 {
+  font-size: 20px;
+}
+.main__items .info p {
+  color: rgb(146, 146, 146);
+}
+.main__items .info .history p {
+  font-size: 12px;
+}
+.main__items .info .advantages p {
+  font-size: 14px;
+}
+.main__items .info .news p {
+  font-size: 12px;
+}
+
+.footer h3 {
+  font-size: 18px;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(129, 184, 0);
+}
+
+body {
+  background-image: url("/images/bg.jpg");
+  background-position: center;
+  background-size: 20%;
+  box-shadow: 0 60px 1px -1px rgb(21, 21, 21) inset, 0 -80px 1px -1px rgb(21, 21, 21) inset;
+}
+
+.container {
+  background-image: url("/images/subbg.gif");
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1250px;
+  }
+}
+.footer {
+  margin-top: 150px;
+  box-shadow: 1px 1px 3px 1px rgb(146, 146, 146), -1px -1px 3px 1px rgb(146, 146, 146);
+}
+
+.header__items_contact_icon_bluetooth:hover, .header__items_contact_icon_bluetooth, .header__items_contact_icon_baseball:hover, .header__items_contact_icon_baseball, .header__items_contact_icon_about:hover, .header__items_contact_icon_about, .header__items_contact_icon_twitter:hover, .header__items_contact_icon_twitter, .header__items_contact_icon_facebook:hover, .header__items_contact_icon_facebook {
+  width: 27px;
+  height: 27px;
+  background-image: url("../images/social.png");
+  background-repeat: no-repeat;
+}
+
+.header {
+  box-shadow: 1px 1px 3px 1px rgb(146, 146, 146), -1px -1px 3px 1px rgb(146, 146, 146);
+}
+.header__items {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.header__items_contact_icon {
+  text-align: right;
+}
+.header__items_contact_icon_facebook {
+  background-position: 0 0;
+}
+.header__items_contact_icon_facebook:hover {
+  background-position: 0 -27px;
+}
+.header__items_contact_icon_twitter {
+  background-position: -37px 0;
+}
+.header__items_contact_icon_twitter:hover {
+  background-position: -37px -27px;
+}
+.header__items_contact_icon_about {
+  background-position: -74px 0;
+}
+.header__items_contact_icon_about:hover {
+  background-position: -74px -27px;
+}
+.header__items_contact_icon_baseball {
+  background-position: -111px 0;
+}
+.header__items_contact_icon_baseball:hover {
+  background-position: -111px -27px;
+}
+.header__items_contact_icon_bluetooth {
+  background-position: -150px 0;
+}
+.header__items_contact_icon_bluetooth:hover {
+  background-position: -150px -27px;
+}
+.header__items_contact_numbers {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.main {
+  box-shadow: 1px 1px 3px 1px rgb(146, 146, 146), -1px -1px 3px 1px rgb(146, 146, 146);
+}
+
+.main__header {
+  margin-top: 100px;
+}
+.main__header__items {
+  display: flex;
+  justify-content: space-between;
+}
+.main__header__search {
+  margin: 10px;
+  display: flex;
+  border: 1px solid gray;
+  background-color: rgb(242, 238, 238);
+}
+.main__header__search input {
+  margin: 5px 10px;
+  padding: 5px;
+  width: 100%;
+  border: 0;
+  background-color: rgb(242, 238, 238);
+}
+.main__header__search input::placeholder {
+  text-transform: capitalize;
+  color: #626262;
+}
+.main__header__search input:focus {
+  border: none;
+}
+.main__header__search input:focus-visible {
+  border: none;
+}
+.main__header__search button {
+  background: transparent;
+  border: 1px solid transparent;
+  color: rgb(170, 169, 169);
+}
+
+.main__header__navbar .navbar-light .navbar-nav .nav-item .nav-link.active {
+  color: white;
+  background-color: rgb(129, 184, 0);
+}
+
+.main__header__navbar .navbar-light .navbar-nav .nav-item .nav-link {
+  color: black;
+  border-right: 1px rgb(229, 229, 229) solid;
+  text-transform: uppercase;
+}
+
+.main__header__navbar .navbar-light .navbar-nav .nav-item .nav-link:hover {
+  color: white;
+  background-color: rgb(129, 184, 0);
+}
+
+/*# sourceMappingURL=style.css.map */

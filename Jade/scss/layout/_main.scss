@@ -1,0 +1,63 @@
+@use '../abstracts/mixins' as m;
+@use '../base/colors' as c;
+
+.main {
+  @include m.box-shadow;
+}
+
+.main__header {
+  margin-top: 100px;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+
+  }
+  &__search {
+    margin: 10px;
+    display: flex;
+    border: 1px solid gray;
+    background-color: rgba(242, 238, 238, 1);
+    input {
+      margin: 5px 10px;
+      padding: 5px;
+      width: 100%;
+      border: 0;
+      background-color: rgba(242, 238, 238, 1);
+      &::placeholder {
+        text-transform: capitalize;
+        color: c.$bg_dark_gray;
+      }
+      &:focus {
+        border: none;
+      }
+      &:focus-visible {
+        border: none;
+      }
+    }
+    button {
+      background: transparent;
+      border: 1px solid transparent;
+      color: rgb(170, 169, 169);
+    }
+
+  }
+}
+
+
+.main__header__navbar .navbar-light .navbar-nav .nav-item .nav-link.active {
+  color: white;
+  background-color: c.$font_green;
+}
+
+.main__header__navbar .navbar-light .navbar-nav .nav-item .nav-link {
+  color: black;
+  border-right: 1px c.$bg_light_gray solid;
+  text-transform: uppercase;
+}
+
+.main__header__navbar .navbar-light .navbar-nav .nav-item .nav-link:hover {
+  color: white;
+  background-color: c.$font_green;
+}
+

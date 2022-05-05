@@ -1,0 +1,15 @@
+@use '_colors' as c;
+
+h1 , h2 , h3 , p {
+  margin: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: c.$font_green;
+}

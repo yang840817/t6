@@ -1,0 +1,48 @@
+@use '_colors' as c;
+
+.main__items {
+
+  .service {
+    h2 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 12px;
+      color: c.$font_dark_gray;
+    }
+    &__items:last-of-type {
+      color: white;
+    }
+  }
+
+  .info {
+
+    h3 {
+      font-size: 20px;
+    }
+    p {
+      color: c.$font_light_gray;
+    }
+
+    .history {
+      p {
+        font-size: 12px;
+      }
+    }
+    .advantages {
+      p {
+        font-size: 14px;
+      }
+    }
+    .news {
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+
+.footer h3 {
+  font-size: 18px;
+}
