@@ -19,11 +19,10 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- swiper -->
+    <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
-      href="https: //cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.3/css/swiper.css;
-"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
 
     <!-- Vic css -->
@@ -34,6 +33,7 @@
   </head>
   <body>
     <div class="container">
+      <!-- header -->
       <header class="d-flex">
         <h1 class="logo">
           <a href="##">
@@ -182,7 +182,7 @@
             data-bs-target="#carouselExampleControls"
             data-bs-slide="prev"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="carousel_button_prev" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
           <button
@@ -191,7 +191,7 @@
             data-bs-target="#carouselExampleControls"
             data-bs-slide="next"
           >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="carousel_button_next" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
@@ -202,9 +202,9 @@
                 <h2>Growth Strategies</h2>
                 <div><img class="w-100" src="./images/p1.png" alt="p1" /></div>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
-                  gloerm. consequatur facere officia culpa iure minus mollitia
-                  quaerat!
+                  Vestibulum dignissm, dui achendrerit blandit, sapien orcidutum
+                  nibh,vel suscipit augue nibh in enim. Nullam dignissm
+                  euismodnunc at
                 </p>
                 <a href="##">More</a>
               </div>
@@ -214,9 +214,9 @@
                 <h2>Perfect Support</h2>
                 <div><img class="w-100" src="./images/p2.png" alt="p2" /></div>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
-                  gloerm. consequatur facere officia culpa iure minus mollitia
-                  quaerat!
+                  Donec semper, dolor eu iaculis laoreet, erat diam interdum
+                  nisi, vel consequat leo neque in ante. Curabitur fringilla
+                  tristique nisl ut
                 </p>
                 <a href="##">More</a>
               </div>
@@ -226,9 +226,8 @@
                 <h2>Partners Programs</h2>
                 <div><img class="w-100" src="./images/p3.png" alt="p3" /></div>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
-                  gloerm. consequatur facere officia culpa iure minus mollitia
-                  quaerat!
+                  Nunc pellentesque malesuada enim utdignissim. Etiam aliquam
+                  malesuada magna,vel scelerisque lectus pharetra quis. Cras
                 </p>
                 <a href="##">More</a>
               </div>
@@ -238,9 +237,8 @@
                 <h2>Premium Services</h2>
                 <div><img class="w-100" src="./images/p4.png" alt="p4" /></div>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit
-                  gloerm. consequatur facere officia culpa iure minus mollitia
-                  quaerat!
+                  Duis molestie commodo sapien, non mollis diam consequat in.
+                  Nulla blandit viverra sodales. Donec sit amet diam neque
                 </p>
                 <a href="##">More</a>
               </div>
@@ -254,12 +252,12 @@
               <div class="comoany_address">
                 <div class="comoany_address_img">
                   <img src="./images/welcome.jpg" alt="comoany address" />
-                  <p>
-                    Curabitur velit nisl,porttitor molestie quis, lacinia eget
-                    purus. Suspendisse ipsum massa,ruturm in hendrerit
-                    malesuada, fermentum id erat...<a href="##">More</a>
-                  </p>
                 </div>
+                <p>
+                  Curabitur velit nisl,porttitor molestie quis, lacinia eget
+                  purus. Suspendisse ipsum massa,ruturm in hendrerit malesuada,
+                  fermentum id erat...<a href="##">More</a>
+                </p>
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
@@ -318,7 +316,7 @@
             </div>
           </div>
         </section>
-        <section class="work_box">
+        <section class="work_box p-4">
           <div class="work_header">
             <h3>feature works</h3>
             <div class="work_button">
@@ -326,24 +324,26 @@
               <i class="fa-solid fa-chevron-right"></i>
             </div>
           </div>
-          <div class="swiper-container">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <a href="##"><img src="./images/g1.jpg" alt="g1" /></a>
-              </div>
-              <div class="swiper-slide">
                 <a href="##"><img src="./images/g2.jpg" alt="g2" /></a>
-              </div>
-              <div class="swiper-slide">
                 <a href="##"><img src="./images/g3.jpg" alt="g3" /></a>
+                <a href="##"><img src="./images/g4.jpg" alt="g4" /></a>
               </div>
               <div class="swiper-slide">
+                <a href="##"><img src="./images/g1.jpg" alt="g1" /></a>
+                <a href="##"><img src="./images/g2.jpg" alt="g2" /></a>
+                <a href="##"><img src="./images/g3.jpg" alt="g3" /></a>
                 <a href="##"><img src="./images/g4.jpg" alt="g4" /></a>
               </div>
             </div>
           </div>
         </section>
       </main>
+      <!-- footer -->
       <footer>
         <div class="container p-4">
           <div class="row">
@@ -439,27 +439,12 @@
       crossorigin="anonymous"
     ></script>
     <!-- swiper js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.3/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-      var mySwiper = new Swiper(".swiper-container", {
-        // Optional parameters
-        direction: "horizontal",
-        loop: true,
-
-        // If we need pagination
-        pagination: {
-          el: ".swiper-pagination",
-        },
-
-        // Navigation arrows
+      var swiper = new Swiper(".mySwiper", {
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-          el: ".swiper-scrollbar",
+          nextEl: ".fa-chevron-left",
+          prevEl: ".fa-chevron-right",
         },
       });
     </script>

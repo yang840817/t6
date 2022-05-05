@@ -56,6 +56,9 @@ footer{
         display: grid;
         grid-template-columns: repeat(4,5fr);
         gap:1rem;
+        img {
+            width: 100%;
+        }
     }
     .footer_information{
         display: flex;
