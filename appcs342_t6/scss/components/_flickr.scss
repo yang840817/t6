@@ -1,26 +1,17 @@
 @use '../abstracts/breakpoint'as *;
-@use '../abstracts/mixins'as *;
 @use '../abstracts/color'as *;
 
-footer {
     .flickr {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 1rem;
+        gap: 0.5rem;
 
         img {
             width: 100%;
 
             &:hover {
-                transform: skew(20deg, 10deg);
+                transform: scale(1.2,1.2);
             }
 
-            &:active {
-                transform: scale(3, 3);
-                transition: 0.5s;
-            }
         }
     }
-
-
-}

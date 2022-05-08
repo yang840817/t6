@@ -1,5 +1,4 @@
 @use '../abstracts/breakpoint'as *;
-@use '../abstracts/mixins'as *;
 @use '../abstracts/color'as *;
 
 .copyright_box {
@@ -12,8 +11,8 @@
     }
 
     a {
-        padding-left: 0.2rem;
-        color: $gray-text;
+        padding-left: 0.5rem;
+        color: #4F4F4F;
 
         &:hover {
             color: $green;
@@ -27,12 +26,12 @@
     }
 }
 
-@include md {
+@include ipad {
     .copyright_box {
         justify-content: space-between;
     }
 }
 
 .copyright_box a+a {
-    border-left: 1px solid $gray-text;
+    border-left: 1px solid #8F8E8E;
 }

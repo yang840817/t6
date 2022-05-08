@@ -1,14 +1,12 @@
 @use '../abstracts/breakpoint'as *;
-@use '../abstracts/mixins'as *;
 @use '../abstracts/color'as *;
 
 form {
-
     input,
     textarea {
         background: $gray-dialogue;
         width: 100%;
-        border: 0;
+        border: 1px solid #cccccc;
 
         &:focus {
             outline: 2px solid $green;
@@ -17,7 +15,7 @@ form {
 
     button {
         margin-top: 1rem;
-        color: $while;
+        color: $white;
         text-transform: uppercase;
     }
 

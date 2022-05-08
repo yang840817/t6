@@ -1,11 +1,5 @@
 @use '../abstracts/breakpoint'as *;
-@use '../abstracts/mixins'as *;
 @use '../abstracts/color'as *;
-
-@use '../components/flickr';
-@use '../components/form';
-@use '../components/testimonials';
-@use '../components/copyright_box';
 
 $img-subbg :url("../images/subbg.gif");
 
@@ -16,7 +10,7 @@ footer{
         margin-bottom: 1rem;
         text-transform: uppercase;
     }
-    .container{
+    .footer_box{
         background-image: $img-subbg;   
     }
 }

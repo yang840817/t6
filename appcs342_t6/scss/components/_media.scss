@@ -1,11 +1,26 @@
 @use '../abstracts/breakpoint' as *;
-@use '../abstracts/mixins' as *;
 @use '../abstracts/color' as *;
+
+$img-social :url("../images/social.png");
+
+
+@mixin sprite($x, $y) {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    background-image: $img-social;
+    background-repeat: no-repeat;
+    background-position: $x $y;
+
+    &:hover {
+        background-position: $x bottom;
+    }
+}
 
 .media_box {
     text-align: center;
     .social_media {
-        @include md {
+        @include ipad {
             text-align: right;
         }
         font-size: 0;
@@ -24,11 +39,11 @@
             }
     
             &:nth-child(3) {
-                @include sprite(-75px, 0);
+                @include sprite(-74px, 0);
             }
     
             &:nth-child(4) {
-                @include sprite(-110px, 0);
+                @include sprite(-111px, 0);
             }
     
             &:nth-child(5) {

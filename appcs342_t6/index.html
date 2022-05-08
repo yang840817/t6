@@ -27,7 +27,6 @@
 
     <!-- Vic css -->
     <link rel="stylesheet" href="./style/style.css" />
-    <!-- <link rel="stylesheet" href="./apple.css" /> -->
 
     <title>T6切版</title>
   </head>
@@ -246,11 +245,11 @@
             </div>
           </div>
         </section>
-        <section class="news_box p-4">
+        <section class="activity_box p-4">
           <div class="row">
             <div class="col-12 col-md-6 col-lg-4">
-              <h3>welcome</h3>
-              <div class="comoany_address">
+              <div class="activity_item">
+                <h3>welcome</h3>
                 <div class="comoany_address_img">
                   <img src="./images/welcome.jpg" alt="comoany address" />
                 </div>
@@ -262,7 +261,7 @@
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-              <div class="question">
+              <div class="activity_item">
                 <h3>why choose us?</h3>
                 <ul>
                   <li>
@@ -285,13 +284,13 @@
               </div>
             </div>
             <div class="col-12 col-lg-4">
-              <div class="events_box">
+              <div class="activity_item">
                 <h3>news & events</h3>
                 <div class="event_card">
                   <div class="event_card_img">
                     <img src="./images/news1.jpg" alt="news1" />
                   </div>
-                  <div class="event_card_text">
+                  <div class="event_card_content">
                     <span>12.12.12</span>
                     <p>
                       Aliquam ac diam in lorem vulputate auctor. Aliquam rhoncus
@@ -304,7 +303,7 @@
                   <div class="event_card_img">
                     <img src="./images/news2.jpg" alt="news2" />
                   </div>
-                  <div class="event_card_text">
+                  <div class="event_card_content">
                     <span>12.12.12</span>
                     <p>
                       Sed auctor laoreet augue, id pulvinar lacus mattis non. In
@@ -321,8 +320,8 @@
           <div class="work_header">
             <h3>feature works</h3>
             <div class="work_button">
-              <i class="fa-solid fa-chevron-left"></i>
-              <i class="fa-solid fa-chevron-right"></i>
+              <i class="fa-solid fa-chevron-left swiper-button-left"></i>
+              <i class="fa-solid fa-chevron-right swiper-button-right"></i>
             </div>
           </div>
           <!-- Swiper -->
@@ -358,10 +357,10 @@
       </main>
       <!-- footer -->
       <footer>
-        <div class="container p-4">
+        <div class="footer_box p-4">
           <div class="row">
             <div class="col-12 col-md-6 col-lg-3">
-              <div class="tweets_body">
+              <div class="tweets_box">
                 <h4>Latest Tweets</h4>
                 <p>loading tweets...</p>
               </div>
@@ -388,7 +387,7 @@
             </div>
             <div class="col-12 col-md-6 col-lg-3 mt-4 mt-lg-0">
               <div class="contact_box">
-                <h4>ger in touch!</h4>
+                <h4>get in touch!</h4>
                 <form>
                   <input type="text" name="name" placeholder="Nane" />
                   <input
@@ -403,7 +402,7 @@
                     placeholder="Message"
                     rows="6"
                   ></textarea>
-                  <button class="reset" cype="reset">clear form</button>
+                  <button class="reset" type="reset">clear form</button>
                   <button class="submit" type="submit">Send!</button>
                 </form>
               </div>
@@ -455,15 +454,16 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        // slidesPerGroup: 4,
+        loop: true,
+        loopFillGroupWithBlank: true,
         navigation: {
-          nextEl: ".fa-chevron-right",
-          prevEl: ".fa-chevron-left",
+          nextEl: ".swiper-button-right",
+          prevEl: ".swiper-button-left",
         },
         breakpoints: {
-          0: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
           375: {
             slidesPerView: 2,
             spaceBetween: 20,

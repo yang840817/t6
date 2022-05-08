@@ -1,11 +1,5 @@
-@use '../components/service';
-@use '../components/choose.scss';
-@use '../components/card';
-
 @use '../abstracts/breakpoint'as *;
-@use '../abstracts/mixins'as *;
 @use '../abstracts/color'as *;
-
 
 
 $img-subbg :url("../images/subbg.gif");
@@ -18,8 +12,8 @@ main {
     margin-top: 1rem;
 }
 
-.news_box {
-    text-transform: uppercase;
+.activity_box {
+    text-transform: capitalize;
 
     h3 {
         margin-bottom: 1rem;
@@ -28,7 +22,6 @@ main {
     p {
         margin: 1rem 0 0 0;
         color: $gray-text;
-        font-size: 12px;
     }
 
     img {
@@ -45,12 +38,11 @@ main {
             color: $green;
         }
     }
-   
 }
 
-.news_box .row>div+div {
+.activity_box .row>div+div {
     margin-top: 2rem;
-    @include md {
+    @include ipad {
         margin-top:0;
     }
 }

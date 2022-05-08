@@ -1,5 +1,4 @@
 @use '../abstracts/breakpoint' as *; 
-@use '../components/media';
 
 $img-subbg :url("../images/subbg.gif");
 
@@ -11,7 +10,11 @@ header {
     flex-wrap: wrap;
     box-shadow: 0 0 5px;
 
-    @include md {
+    a{
+        display: inline-block;
+    }
+    
+    @include ipad {
         justify-content: space-between;
     }
 }
@@ -24,5 +27,6 @@ header {
 }
 
 .nav_box {
+    text-transform: uppercase;
     margin-top: 2rem;
 }

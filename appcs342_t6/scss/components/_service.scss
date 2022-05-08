@@ -1,11 +1,10 @@
 @use '../abstracts/breakpoint'as *;
-@use '../abstracts/mixins'as *;
 @use '../abstracts/color'as *;
 
 .service_box {
-    @include lg {
+    @include desktop {
         position: relative;
-        z-index: 99999;
+        z-index: 999;
         transform: translateY(-3rem);
     }
 }
@@ -22,8 +21,8 @@
     gap: 1rem;
 
     &:hover {
-        color: $while;
-        background: rgba($gray-service-hover, 0.5) ;
+        color: $white;
+        background: rgba($gray-service-hover, 0.9) ;
     }
 
     a{
@@ -33,11 +32,13 @@
         color: $black;
         background: $gray-service-button;
     }
+    
     img {
         object-fit: cover;
     }
+
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         margin-bottom: 1.5rem;
     }
 }

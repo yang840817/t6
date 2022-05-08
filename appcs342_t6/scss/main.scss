@@ -1,7 +1,16 @@
-@use '../scss/base/reset';
-@use '../scss/layout/header';
-@use '../scss/layout/body';
-@use '../scss/layout/main';
-@use '../scss/layout/footer';
-@use '../scss/vendors/bootstrap';
-@use '../scss/vendors/swiper';
+@use 'base/reset';
+@use 'layout/header';
+@use 'layout/body';
+@use 'layout/main';
+@use 'layout/footer';
+@use 'vendors/bootstrap';
+@use 'vendors/swiper';
+
+@use 'components/media';
+@use 'components/service';
+@use 'components/choose.scss';
+@use 'components/event_card';
+@use 'components/flickr';
+@use 'components/form';
+@use 'components/testimonials';
+@use 'components/copyright_box';
