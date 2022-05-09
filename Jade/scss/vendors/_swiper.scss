@@ -1,0 +1,20 @@
+
+.swiper {
+
+  @media (min-width:320px) {
+    height: 230px;
+    width: 270px;    
+  }
+
+  @media (min-width:768px) {
+    height: 230px;
+    width: 100%; 
+  }
+}
+
+.swiper__image_box {
+  width: 270px;
+  height: 230px;
+}
+
+

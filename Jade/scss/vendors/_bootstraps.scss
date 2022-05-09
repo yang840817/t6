@@ -1,0 +1,87 @@
+@use '../base/colors' as c;
+
+.main {
+
+  &__header {
+
+    &__items {
+
+      &__navbar {
+
+        .container-fluid {
+          justify-content: center;
+
+          button {
+            margin: 10px;
+            border: 1px transparent;
+            }
+        }
+      }
+    }
+  }
+
+  &__carousel {
+
+    .carousel-control-prev {
+      width: initial;
+    }
+    .carousel-control-next {
+      width: initial;
+    }
+  }
+}
+
+
+
+
+.main__header__items__navbar .navbar-light .navbar-nav .nav-item .nav-link.active {
+  color: white;
+  background-color: c.$font_green;
+}
+
+.main__header__items__navbar .navbar-light .navbar-nav .nav-item .nav-link {
+  color: black;
+  border-right: 1px c.$bg_light_gray solid;
+  text-transform: uppercase;
+}
+
+.main__header__items__navbar .navbar-light .navbar-nav .nav-item .nav-link:hover {
+  color: white;
+  background-color: c.$font_green;
+}
+
+.main__header__items .navbar-light .nav-link a.dropdown-item:active {
+  background-color: c.$font_green;
+}
+
+
+
+.main__header .main__header__items__navbar button:focus {
+  box-shadow: 0.1px 0.1px 2px 2px c.$font_green, -0.1px -0.1px 2px 2px c.$font_green ;
+}
+
+%carousel_icon_size {
+  width: 40px;
+	height: 119px;
+}
+
+.main .main__carousel .carousel-control-prev .carousel-control-prev-icon {
+  background: url('/images/slider_prev.gif') no-repeat 0 0px;
+	@extend %carousel_icon_size;
+
+  &:hover {
+    background: url('/images/slider_prev.gif') no-repeat 0 -119px;
+	  @extend %carousel_icon_size;
+  }
+}
+
+
+.main .main__carousel .carousel-control-next .carousel-control-next-icon {
+  background: url('/images/slider_next.gif') no-repeat 0 0px;
+	@extend %carousel_icon_size;
+
+  &:hover {
+    background: url('/images/slider_next.gif') no-repeat 0 -119px;
+	@extend %carousel_icon_size;
+  }
+}

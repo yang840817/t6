@@ -1,0 +1,80 @@
+@use '../base/colors' as c;
+
+.service__items_button {
+  margin: 15px;
+  padding: 3px 15px;
+  background-color: rgb(206, 202, 202);
+  border: 1px solid transparent;
+
+  &:active {
+    box-shadow: 0.5px 0.5px 1px 0.5px rgb(67, 66, 66);
+    transform: translate(1px, 1px);
+  }
+}
+
+.advantages__list__items {
+
+    button {
+      flex: 0 0 50px;
+      height: 50px;
+      margin-right: 10px;
+      border-radius: 50%;
+      background-color: rgb(206, 202, 202);
+      border: 1px transparent solid;
+
+      &:hover {
+        background-color: c.$font_green;
+      }
+
+      i {
+        padding: 10px;
+        color: white;
+      &:hover {
+        transform: rotate(90deg);
+        transition: 0.3s ease;
+        }
+      }
+   }
+}
+
+.news__list__text_button {
+  width: 90px;
+  height: 30px;
+  background-color: c.$font_green;
+  color: white;
+  border: 1px transparent solid;
+}
+
+.gallery__button button {
+  padding: 2px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  
+}
+
+.gallery__button i {
+  color: rgb(171, 170, 170);
+  font-size: 16px;
+  
+}
+
+.contact__form__button {
+  border: 1px transparent solid;
+  text-transform: uppercase;
+  padding: 5px 10px;
+
+  &:active {
+    box-shadow: 0.5px 0.5px 1px 0.5px gray;
+
+  }
+}
+
+.contact__form__button.clear {
+  background-color: black;
+  color: white;
+}
+
+.contact__form__button.sent {
+  background-color: c.$font_green;
+  color: white;
+}

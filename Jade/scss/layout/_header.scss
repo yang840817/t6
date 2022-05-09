@@ -12,13 +12,24 @@
 
   &__items {
     display: flex;
-    justify-content: space-between;
-
-    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 35px;
+    
+    @media (min-width:768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
 
     &_contact_icon {
-      text-align: right;
+      text-align: center;
+      padding: 10px 0 0 0;
 
+      @media (min-width:768px) {
+        padding: 0;
+        text-align: right;
+      }
       &_facebook {
         @extend %icon_bg_image;
         background-position: 0 0;
