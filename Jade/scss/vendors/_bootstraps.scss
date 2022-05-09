@@ -45,16 +45,16 @@
   text-transform: uppercase;
 }
 
+
 .main__header__items__navbar .navbar-light .navbar-nav .nav-item .nav-link:hover {
   color: white;
   background-color: c.$font_green;
 }
 
-.main__header__items .navbar-light .nav-link a.dropdown-item:active {
-  background-color: c.$font_green;
+.dropdown-item:focus, .dropdown-item:hover, .dropdown-item.active, .dropdown-item:active {
+  color: white;
+  background-color: c.$font_green;;
 }
-
-
 
 .main__header .main__header__items__navbar button:focus {
   box-shadow: 0.1px 0.1px 2px 2px c.$font_green, -0.1px -0.1px 2px 2px c.$font_green ;

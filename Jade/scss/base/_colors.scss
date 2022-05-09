@@ -5,15 +5,6 @@ $font_green:rgb(129, 184, 0);
 $font_dark_gray:rgb(65, 65, 65);
 $font_light_gray:rgb(146, 146, 146);
 
-.header, .main {
-  a{
-    color: black;
-
-    &:hover {
-      color: $font_green;
-    }
-  }
-}
 
 .footer {
 

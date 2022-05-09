@@ -1,4 +1,6 @@
 @use '../abstracts/mixins' as m;
+@use '../base/colors' as c;
+
 
 %icon_bg_image {
   width: 27px;
@@ -22,7 +24,7 @@
       justify-content: space-between;
     }
 
-    &_contact_icon {
+    &__contact_icon {
       text-align: center;
       padding: 10px 0 0 0;
 
@@ -71,10 +73,20 @@
         background-position: -150px -27px;
       }
     }
-    &_contact_numbers {
+    &__contact_numbers {
       text-transform: capitalize;
-      font-size: 14px;
 
+
+      p {
+        margin: 0%;
+        a {
+          color: black;
+  
+          &:hover {
+            color: c.$font_green;;
+          }
+        }
+      }
     }
   }
 }
