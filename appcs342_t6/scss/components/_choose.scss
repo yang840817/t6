@@ -1,0 +1,37 @@
+@use '../abstracts/breakpoint'as *;
+@use '../abstracts/color'as *;
+
+.activity_box {
+
+    ul {
+        padding-left: 0;
+    }
+
+    li {
+        display: flex;
+        padding: 0.5rem;
+        border-bottom: 1px solid $gray-line;
+
+        a {
+            flex: 0 0 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 50%;
+            background: $gray;
+            color: $white;
+            text-align: center;
+
+            &:hover {
+                background-color: $green;
+                color: $white;
+            }
+        }
+
+        p {
+            margin: 0.3rem 0 0 1rem;
+        }
+    }
+
+  
+}
+

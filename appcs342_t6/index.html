@@ -27,33 +27,34 @@
 
     <!-- Vic css -->
     <link rel="stylesheet" href="./style/style.css" />
-    <!-- <link rel="stylesheet" href="./apple.css" /> -->
 
     <title>T6切版</title>
   </head>
   <body>
     <div class="container">
       <!-- header -->
-      <header class="d-flex">
+      <header>
         <h1 class="logo">
           <a href="##">
             <img class="w-100" src="./images/logo.png" alt="BUSINESSPLANET" />
           </a>
         </h1>
         <div class="media_box">
-          <div class="social_media">
+          <div class="social_media mt-3 mt-md-0">
             <a href="##"></a>
             <a href="##"></a>
             <a href="##"></a>
             <a href="##"></a>
             <a href="##"></a>
           </div>
-          <a href="tel:+1777842543">Call Us Now: +1 (777) 784-25-43</a>
+          <a class="mt-2" href="tel:+1777842543"
+            >Call Us Now: +1 (777) 784-25-43</a
+          >
         </div>
       </header>
       <section class="nav_box">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-md navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container-fluid">
             <button
               class="navbar-toggler"
@@ -140,8 +141,7 @@
         <form class="search">
           <input
             class="form-control"
-            type="search"
-            placeholder="Search"
+            placeholder="Search the Site..."
             aria-label="Search"
           />
         </form>
@@ -198,7 +198,7 @@
         <section class="service_box px-4">
           <div class="row">
             <div class="col-12 col-md-6 col-lg-3">
-              <div class="service p-4 mt-3">
+              <div class="service">
                 <h2>Growth Strategies</h2>
                 <div><img class="w-100" src="./images/p1.png" alt="p1" /></div>
                 <p>
@@ -210,7 +210,7 @@
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
-              <div class="service p-4 mt-3">
+              <div class="service">
                 <h2>Perfect Support</h2>
                 <div><img class="w-100" src="./images/p2.png" alt="p2" /></div>
                 <p>
@@ -222,7 +222,7 @@
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
-              <div class="service p-4 mt-3">
+              <div class="service">
                 <h2>Partners Programs</h2>
                 <div><img class="w-100" src="./images/p3.png" alt="p3" /></div>
                 <p>
@@ -233,7 +233,7 @@
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
-              <div class="service p-4 mt-3">
+              <div class="service">
                 <h2>Premium Services</h2>
                 <div><img class="w-100" src="./images/p4.png" alt="p4" /></div>
                 <p>
@@ -245,11 +245,11 @@
             </div>
           </div>
         </section>
-        <section class="news_box p-4">
+        <section class="activity_box p-4">
           <div class="row">
             <div class="col-12 col-md-6 col-lg-4">
-              <h3>welcome</h3>
-              <div class="comoany_address">
+              <div class="activity_item">
+                <h3>welcome</h3>
                 <div class="comoany_address_img">
                   <img src="./images/welcome.jpg" alt="comoany address" />
                 </div>
@@ -261,8 +261,8 @@
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-              <div class="question">
-                <h3>why choose me?</h3>
+              <div class="activity_item">
+                <h3>why choose us?</h3>
                 <ul>
                   <li>
                     <a href="##"><i class="fa-solid fa-chevron-right"></i></a>
@@ -284,13 +284,13 @@
               </div>
             </div>
             <div class="col-12 col-lg-4">
-              <div class="events_box">
-                <h3>new & events</h3>
+              <div class="activity_item">
+                <h3>news & events</h3>
                 <div class="event_card">
                   <div class="event_card_img">
                     <img src="./images/news1.jpg" alt="news1" />
                   </div>
-                  <div class="event_card_text">
+                  <div class="event_card_content">
                     <span>12.12.12</span>
                     <p>
                       Aliquam ac diam in lorem vulputate auctor. Aliquam rhoncus
@@ -303,7 +303,7 @@
                   <div class="event_card_img">
                     <img src="./images/news2.jpg" alt="news2" />
                   </div>
-                  <div class="event_card_text">
+                  <div class="event_card_content">
                     <span>12.12.12</span>
                     <p>
                       Sed auctor laoreet augue, id pulvinar lacus mattis non. In
@@ -320,24 +320,36 @@
           <div class="work_header">
             <h3>feature works</h3>
             <div class="work_button">
-              <i class="fa-solid fa-chevron-left"></i>
-              <i class="fa-solid fa-chevron-right"></i>
+              <i class="fa-solid fa-chevron-left swiper-button-left"></i>
+              <i class="fa-solid fa-chevron-right swiper-button-right"></i>
             </div>
           </div>
           <!-- Swiper -->
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <a href="##"><img src="./images/g1.jpg" alt="g1" /></a>
-                <a href="##"><img src="./images/g2.jpg" alt="g2" /></a>
-                <a href="##"><img src="./images/g3.jpg" alt="g3" /></a>
-                <a href="##"><img src="./images/g4.jpg" alt="g4" /></a>
+                <img src="./images/g1.jpg" alt="work img" />
               </div>
               <div class="swiper-slide">
-                <a href="##"><img src="./images/g1.jpg" alt="g1" /></a>
-                <a href="##"><img src="./images/g2.jpg" alt="g2" /></a>
-                <a href="##"><img src="./images/g3.jpg" alt="g3" /></a>
-                <a href="##"><img src="./images/g4.jpg" alt="g4" /></a>
+                <img src="./images/g2.jpg" alt="work img" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/g3.jpg" alt="work img" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/g4.jpg" alt="work img" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/g1.jpg" alt="work img" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/g2.jpg" alt="work img" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/g3.jpg" alt="work img" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/g4.jpg" alt="work img" />
               </div>
             </div>
           </div>
@@ -345,10 +357,10 @@
       </main>
       <!-- footer -->
       <footer>
-        <div class="container p-4">
+        <div class="footer_box p-4">
           <div class="row">
             <div class="col-12 col-md-6 col-lg-3">
-              <div class="tweets_body">
+              <div class="tweets_box">
                 <h4>Latest Tweets</h4>
                 <p>loading tweets...</p>
               </div>
@@ -366,7 +378,7 @@
                   </div>
                   <div class="info_box">
                     <img src="./images/men.jpg" alt="men info" />
-                    <div class="people_info">
+                    <div class="info_people">
                       <p>Stephen Bingham<a href="##">demolink.org</a></p>
                     </div>
                   </div>
@@ -375,7 +387,7 @@
             </div>
             <div class="col-12 col-md-6 col-lg-3 mt-4 mt-lg-0">
               <div class="contact_box">
-                <h4>ger in touch!</h4>
+                <h4>get in touch!</h4>
                 <form>
                   <input type="text" name="name" placeholder="Nane" />
                   <input
@@ -390,8 +402,8 @@
                     placeholder="Message"
                     rows="6"
                   ></textarea>
-                  <button class="buttonone" cype="reset">clear form</button>
-                  <button class="buttontwo" type="reset">Send!</button>
+                  <button class="reset" type="reset">clear form</button>
+                  <button class="submit" type="submit">Send!</button>
                 </form>
               </div>
             </div>
@@ -416,7 +428,7 @@
             </div>
           </div>
         </div>
-        <div class="footer_information p-2">
+        <div class="copyright_box p-2">
           <div class="copyright">
             <span>Business Planet © 2020 |</span>
             <a href="##">Privacy Policy</a>
@@ -442,9 +454,24 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        // slidesPerGroup: 4,
+        loop: true,
+        loopFillGroupWithBlank: true,
         navigation: {
-          nextEl: ".fa-chevron-left",
-          prevEl: ".fa-chevron-right",
+          nextEl: ".swiper-button-right",
+          prevEl: ".swiper-button-left",
+        },
+        breakpoints: {
+          375: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
         },
       });
     </script>

@@ -1,40 +1,45 @@
 @use '../abstracts/breakpoint'as *;
-@use '../abstracts/mixins'as *;
 @use '../abstracts/color'as *;
 
-.service {
-    @include lg {
+.service_box {
+    @include desktop {
         position: relative;
-        z-index: 99999;
+        z-index: 999;
         transform: translateY(-3rem);
     }
 }
 
 .service {
     display: flex;
+    padding: 1.5rem;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     background: $gray-service;
-    height: 95%;
+    height: 100%;
+    gap: 1rem;
 
     &:hover {
-        color: $while;
-        background: rgba($gray-service-hover, 0.5) ;
+        color: $white;
+        background: rgba($gray-service-hover, 0.9) ;
     }
 
     a{
         padding: 0.5rem 1rem ;
+        margin-top: auto;
         text-transform: capitalize;
         color: $black;
         background: $gray-service-button;
     }
+    
     img {
         object-fit: cover;
     }
+
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         margin-bottom: 1.5rem;
     }
 }
+

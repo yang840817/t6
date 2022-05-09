@@ -1,0 +1,17 @@
+@use '../abstracts/breakpoint'as *;
+@use '../abstracts/color'as *;
+
+    .flickr {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.5rem;
+
+        img {
+            width: 100%;
+
+            &:hover {
+                transform: scale(1.2,1.2);
+            }
+
+        }
+    }

@@ -1,16 +1,32 @@
 @use '../abstracts/breakpoint' as *; 
-@use '../components/media-box';
 
-$img-subbg :url("../../images/subbg.gif");
+$img-subbg :url("../images/subbg.gif");
 
 header {
+    display: flex;
     padding: 1.5rem 1rem;
     background-image: $img-subbg;
     justify-content: center;
     flex-wrap: wrap;
     box-shadow: 0 0 5px;
 
-    @include md {
+    a{
+        display: inline-block;
+    }
+    
+    @include ipad {
         justify-content: space-between;
     }
+}
+
+.nav_box .search {
+    position: absolute;
+    top: 0.6rem;
+    bottom: auto;
+    right: 0.5rem;
+}
+
+.nav_box {
+    text-transform: uppercase;
+    margin-top: 2rem;
 }
