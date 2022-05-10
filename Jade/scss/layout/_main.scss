@@ -2,39 +2,63 @@
 @use '../base/colors' as c;
 
 
-// test
 .container {
 
   &__header {
     margin-top: 30px;
     position: relative;
-  
+    
     &__items { 
-      
-      @media (min-width: 1400px) {
-        transform: translate(0, 30px);
-        position: relative;
-        z-index: 999;
-        
+      @include m.box_shadow_not_bottom;
+
+      position: relative;
+      z-index: 999;
+
+      @media (min-width:992px) {
+        display: flex;
+        justify-content: space-between;
+        background-image: url("../images/subbg.gif");
       }
+      @media (min-width:1440px) {
+        box-shadow: none;
+
+        display: block;
+        background: transparent;
+      }
+
       .navbar {
-        @include m.box-shadow; 
-        background-image: url("/images/subbg.gif");
+        background-image: url("../images/subbg.gif");
         
-        @media (min-width:1400px) {
+        @media (min-width:1440px) {
+          @include m.box_shadow_not_bottom; 
           width: 78%;
+        }
+
+        .container-fluid {
+          justify-content: center;
+
+          @media (min-width:768px) {
+            justify-content: space-between;
+          }
         }
       }
     }
   
     &__search { 
       display: block;
-      background-image: url("/images/subbg.gif");
+      padding: 10px;
+      background-image: url("../images/subbg.gif");
       
-      @media (min-width: 1400px) {
-        @include m.box-shadow;
+      @media (min-width: 992px) {
+        box-shadow: none;
+        padding: 0;
+      }
+
+      @media (min-width: 1440px) {
+        @include m.box_shadow_not_bottom;
 
         position: absolute;
+        z-index: 2;
         top: 0;
         right: 0;
         bottom: 0;
@@ -46,25 +70,33 @@
         border: 1px solid gray;
         background-color: rgba(242, 238, 238, 1);
 
-        @media (min-width: 1400px) {
+        @media (min-width: 992px) {
           margin: 15px;
         }
     
         input {
-          padding: 5px  10px;
-          margin: 3px;
+          padding: 2px 5px;
+          margin: 0;
           width: 100%;
           border: 0;
           background-color: rgba(242, 238, 238, 1);
+
           &::placeholder {
             text-transform: capitalize;
             color: c.$bg_dark_gray;
             }
+
           &:focus-visible {
             outline: 2px c.$font_green solid;
             border-radius: 5px;
           }
+
+          @media (min-width: 992px) {
+            padding: 5px  10px;
+            margin: 3px;
+          }
         }
+
         button {
           background: transparent;
           border: 1px solid transparent;
@@ -72,68 +104,30 @@
         }
       }
     }
-  }
 
+    &__piece {
+      display: none;
+      
+      @media (min-width:1440px) {
+        position:absolute;
+        z-index: 1;
+        bottom: 0;
+
+        display: block;
+        height: 25px;
+        width: 1200px;
+        background-color: white;
+      }
+    }
+
+  }
 }
 
-// origrinal
-
 .main {
-  @include m.box-shadow;
+  @include m.box_shadow;
 
   padding: 0 0 80px 0;
-
-  // &__header {
-  //   margin-top: 30px;
   
-  //   &__items {
-      
-  //     @media (min-width:992px) {
-  //       display: flex;
-  //       justify-content: space-between;
-        
-  //     }
-  //   }
-  
-  //   &__search {
-  //     margin: 10px;
-  //     display: flex;
-  //     border: 1px solid gray;
-  //     background-color: rgba(242, 238, 238, 1);
-  
-  //     input {
-  //       padding: 5px  10px;
-  //       margin: 3px;
-  //       width: 100%;
-  //       border: 0;
-  //       background-color: rgba(242, 238, 238, 1);
-  //       &::placeholder {
-  //         text-transform: capitalize;
-  //         color: c.$bg_dark_gray;
-  //         }
-  //       &:focus-visible {
-  //         outline: 2px c.$font_green solid;
-  //         border-radius: 5px;
-  //       }
-  //     }
-  //     button {
-  //       background: transparent;
-  //       border: 1px solid transparent;
-  //       color: rgb(170, 169, 169);
-  
-  //     }
-  //   }
-  // }
-  
-  &__piece {
-    display: none;
-
-    @media (min-width:1400px) {
-      display: block;
-      height: 30px;
-      width: 1200px;
-    }
-  }
 
   &__items {
     margin: 0 40px;

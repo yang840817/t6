@@ -143,26 +143,10 @@
 
         &__gallery {
           display: grid;
-          grid-template-columns: repeat(3, 63px);
+          grid-template-columns: repeat(4, 1fr);
           gap: 5px;
 
-          @media (min-width: 375px) {
-            grid-template-columns: repeat(4, 63px);
-            
-          }
-          @media (min-width:992px) {
-            grid-template-columns: repeat(3, 63px);
-            
-          }
-
-          @media (min-width:1400px) {
-            grid-template-columns: repeat(4, 63px);
-            
-          }
-
           &__box {
-            height: 63px;
-            width: 63px;
 
             &:hover {
               opacity: 0.8;
