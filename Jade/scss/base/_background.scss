@@ -5,9 +5,11 @@ body {
   box-shadow: 0 90px 1px -1px rgba(21,21,21,255) inset, 0 -200px 1px -1px rgba(21,21,21,255) inset;
 }
 
-.container {
+.container.bg {
   background-image: url("/images/subbg.gif");
 }
+
+
 
 @media (min-width:1440px) {
   .container {
