@@ -13,11 +13,11 @@
   @include m.box-shadow;
 
   &__items {
+    padding: 35px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    padding: 35px;
     
     @media (min-width:768px) {
       flex-direction: row;
@@ -75,8 +75,7 @@
     }
     &__contact_numbers {
       text-transform: capitalize;
-
-
+      
       p {
         margin: 0%;
         a {

@@ -1,20 +1,65 @@
+@use "../base/colors" as c;
 
 .swiper {
 
-  @media (min-width:320px) {
-    height: 230px;
-    width: 270px;    
-  }
+  .swiper__image_box {
+    position: relative;
+    overflow: hidden;
 
-  @media (min-width:768px) {
-    height: 230px;
-    width: 100% ; 
+    &::before {
+      content: " ";
+      position: absolute;
+
+      background-color: rgb(43, 42, 42);
+      opacity: 0.8;
+      transform: rotate(-45deg);
+      transition: .5s;
+  
+      top: 50%;
+      bottom: 50%;
+  
+      left: -25%;
+      right:-25%;
+    }
+
+    &:hover {
+
+      &::before {
+        top: 0;
+        bottom: 0;
+      }
+    }  
+    
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+      width: 100%;
+      height: 100%;
+      
+      position: absolute;
+      top: 0;
+      left: 0;
+      // z-index: 999;
+      
+      opacity: 0;
+      overflow: hidden;
+      transition: .5s;
+
+      p {
+        color: white;
+        text-transform: capitalize;
+      }
+
+      a {
+        color: c.$font_green;
+      }
+    }
+
   }
 }
 
-.swiper__image_box {
-  width: 270px;
-  height: 230px;
-}
 
 

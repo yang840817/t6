@@ -6,7 +6,6 @@
     font-size: 25px;
     font-weight: 400;
     text-transform: uppercase;
-
   }
   @media (min-width:1440px) {
     h3 {
@@ -15,12 +14,11 @@
   }
 };
 
+// class
+
 .header {
-
   &__items {
-
     &__contact {
-
       &_numbers {
         p {
           font-size: 14px;
@@ -42,13 +40,13 @@
   }
 
   .service {
+    
     h2 {
       font-size: 20px;
     }
     p {
       font-size: 16px;
     }
-
   }
 
   .info {
@@ -60,6 +58,7 @@
     }
 
     .history {
+
       p {
         font-size: 14px;
       }
@@ -69,11 +68,13 @@
       }
     }
     .advantages {
+
       p {
         font-size: 16px;
       }
     }
     .news { 
+
       p {
         font-size: 14px;
       }
@@ -87,8 +88,7 @@
 
   .gallery {
 
-   @extend %main__items_h3_fz;
-  
+   @extend %main__items_h3_fz; 
   }
 }
 
@@ -119,11 +119,8 @@
 
     &__nav {
       text-transform: uppercase;
-    
     }
-
   }
-
 }
 
 
