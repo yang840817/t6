@@ -1,37 +1,40 @@
-@use '../abstracts/breakpoint'as *;
-@use '../abstracts/color'as *;
+@use "../abstracts/breakpoint";
+@use "../abstracts/color";
 
 .copyright_box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-    span {
-        color: $gray-text;
+  span {
+    color: #4f4f4f;
+  }
+
+  a {
+    color: #4f4f4f;
+
+    &:hover {
+      color: color.$green;
     }
+  }
 
+  a + a {
+    padding-left: 0.5rem;
+  }
+
+  .copyright {
     a {
-        padding-left: 0.5rem;
-        color: #4F4F4F;
-
-        &:hover {
-            color: $green;
-        }
+      color: color.$green;
     }
-
-    .copyright {
-        a {
-            color: $green;
-        }
-    }
+  }
 }
 
-@include ipad {
-    .copyright_box {
-        justify-content: space-between;
-    }
+@include breakpoint.ipad {
+  .copyright_box {
+    justify-content: space-between;
+  }
 }
 
-.copyright_box a+a {
-    border-left: 1px solid #8F8E8E;
+.copyright_box a + a {
+  border-left: 1px solid #8f8e8e;
 }

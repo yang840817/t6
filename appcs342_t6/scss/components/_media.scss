@@ -1,62 +1,65 @@
-@use '../abstracts/breakpoint' as *;
-@use '../abstracts/color' as *;
+@use "../abstracts/breakpoint";
+@use "../abstracts/color";
 
-$img-social :url("../images/social.png");
+$img-social: url("../images/social.png");
 
+@mixin media_sprite($x, $y) {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: $img-social;
+  background-repeat: no-repeat;
+  background-position: $x $y;
 
-@mixin sprite($x, $y) {
-    display: inline-block;
-    width: 27px;
-    height: 27px;
-    background-image: $img-social;
-    background-repeat: no-repeat;
-    background-position: $x $y;
-
-    &:hover {
-        background-position: $x bottom;
-    }
+  &:hover {
+    background-position: $x bottom;
+  }
 }
 
 .media_box {
-    text-align: center;
-    .social_media {
-        @include ipad {
-            text-align: right;
-        }
-        font-size: 0;
-    
-        a+a {
-            margin-left: 0.5rem;
-        }
-    
-        a { 
-            &:first-child {
-                @include sprite(0, 0);
-            }
-    
-            &:nth-child(2) {
-                @include sprite(-37px, 0);
-            }
-    
-            &:nth-child(3) {
-                @include sprite(-74px, 0);
-            }
-    
-            &:nth-child(4) {
-                @include sprite(-111px, 0);
-            }
-    
-            &:nth-child(5) {
-                @include sprite(-150px, 0);
-            }
-        }
+  margin-top: 1rem;
+  text-align: center;
+
+  @include breakpoint.ipad {
+    margin-top: 0;
+    text-align: right;
+  }
+
+  .social_media {
+    font-size: 0;
+
+    a + a {
+      margin-left: 0.5rem;
     }
+
+    a {
+      &:first-child {
+        @include media_sprite(0, 0);
+      }
+
+      &:nth-child(2) {
+        @include media_sprite(-37px, 0);
+      }
+
+      &:nth-child(3) {
+        @include media_sprite(-74px, 0);
+      }
+
+      &:nth-child(4) {
+        @include media_sprite(-111px, 0);
+      }
+
+      &:nth-child(5) {
+        @include media_sprite(-150px, 0);
+      }
+    }
+  }
 }
 
 .media_box a {
-    display: block;
-    font-size: 1rem;
-    color: $black;
-    text-decoration: none;
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: color.$black;
+  text-decoration: none;
 }
-

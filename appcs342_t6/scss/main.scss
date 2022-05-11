@@ -1,16 +1,18 @@
-@use 'base/reset';
-@use 'layout/header';
-@use 'layout/body';
-@use 'layout/main';
-@use 'layout/footer';
-@use 'vendors/bootstrap';
-@use 'vendors/swiper';
+@use "base/reset";
 
-@use 'components/media';
-@use 'components/service';
-@use 'components/choose.scss';
-@use 'components/event_card';
-@use 'components/flickr';
-@use 'components/form';
-@use 'components/testimonials';
-@use 'components/copyright_box';
+@use "layout/header";
+@use "layout/body";
+@use "layout/main";
+@use "layout/footer";
+
+@use "vendors/bootstrap";
+@use "vendors/swiper";
+
+@use "components/media";
+@use "components/service";
+@use "components/choose.scss";
+@use "components/event_card";
+@use "components/flickr";
+@use "components/form";
+@use "components/testimonials";
+@use "components/copyright_box";

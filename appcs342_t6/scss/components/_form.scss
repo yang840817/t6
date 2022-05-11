@@ -1,29 +1,29 @@
-@use '../abstracts/breakpoint'as *;
-@use '../abstracts/color'as *;
+@use "../abstracts/breakpoint";
+@use "../abstracts/color";
 
-form {
-    input,
-    textarea {
-        background: $gray-dialogue;
-        width: 100%;
-        border: 1px solid #cccccc;
+input,
+textarea {
+  background: color.$gray-dialogue;
+  width: 100%;
+  border: 1px solid #cccccc;
 
-        &:focus {
-            outline: 2px solid $green;
-        }
-    }
+  &:focus {
+    outline: 2px solid color.$green;
+  }
+}
 
-    button {
-        margin-top: 1rem;
-        color: $white;
-        text-transform: uppercase;
-    }
+%carousel_button {
+  margin-top: 1rem;
+  color: color.$white;
+  text-transform: uppercase;
+}
 
-    .reset {
-        background-color: $black;
-    }
+.reset {
+  @extend %carousel_button;
+  background-color: color.$black;
+}
 
-    .submit {
-        background-color: $green;
-    }
+.submit {
+  @extend %carousel_button;
+  background-color: color.$green;
 }
