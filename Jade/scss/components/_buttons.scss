@@ -12,7 +12,7 @@
   }
 }
 
-.advantages__list__items {
+.advantages__body__list__text {
 
     button {
       flex: 0 0 50px;
@@ -29,15 +29,11 @@
       i {
         padding: 10px;
         color: white;
-      &:hover {
-        transform: rotate(90deg);
-        transition: 0.3s ease;
-        }
       }
    }
 }
 
-.news__list__text_button {
+.news__body__list__text_button {
   width: 90px;
   height: 30px;
   background-color: c.$font_green;

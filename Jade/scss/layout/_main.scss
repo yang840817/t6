@@ -1,61 +1,137 @@
 @use '../abstracts/mixins' as m;
 @use '../base/colors' as c;
 
-.main {
-  @include m.box-shadow;
 
-  padding: 0 0 80px 0;
+.container {
 
   &__header {
     margin-top: 30px;
+    position: relative;
+    
+    &__items { 
+      @include m.box_shadow_not_bottom;
 
-    &__items {
-      
+      position: relative;
+      z-index: 999;
+
       @media (min-width:992px) {
         display: flex;
         justify-content: space-between;
-        
+        background-image: url("../images/subbg.gif");
       }
-    }
+      @media (min-width:1440px) {
+        box-shadow: none;
 
-    &__search {
-      margin: 10px;
-      display: flex;
-      border: 1px solid gray;
-      background-color: rgba(242, 238, 238, 1);
+        display: block;
+        background: transparent;
+      }
 
-      input {
-        padding: 5px  10px;
-        margin: 3px;
-        width: 100%;
-        border: 0;
-        background-color: rgba(242, 238, 238, 1);
-        &::placeholder {
-          text-transform: capitalize;
-          color: c.$bg_dark_gray;
+      .navbar {
+        background-image: url("../images/subbg.gif");
+        
+        @media (min-width:1440px) {
+          @include m.box_shadow_not_bottom; 
+          width: 78%;
+        }
+
+        .container-fluid {
+          justify-content: center;
+
+          @media (min-width:768px) {
+            justify-content: space-between;
           }
-        &:focus-visible {
-          outline: 2px c.$font_green solid;
-          border-radius: 5px;
         }
       }
-      button {
-        background: transparent;
-        border: 1px solid transparent;
-        color: rgb(170, 169, 169);
+    }
+  
+    &__search { 
+      display: block;
+      padding: 10px;
+      background-image: url("../images/subbg.gif");
+      
+      @media (min-width: 992px) {
+        box-shadow: none;
+        padding: 0;
+      }
 
+      @media (min-width: 1440px) {
+        @include m.box_shadow_not_bottom;
+
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      &__items {
+        display: flex;
+        margin: 0;
+        border: 1px solid gray;
+        background-color: rgba(242, 238, 238, 1);
+
+        @media (min-width: 992px) {
+          margin: 15px;
+        }
+    
+        input {
+          padding: 2px 5px;
+          margin: 0;
+          width: 100%;
+          border: 0;
+          background-color: rgba(242, 238, 238, 1);
+
+          &::placeholder {
+            text-transform: capitalize;
+            color: c.$bg_dark_gray;
+            }
+
+          &:focus-visible {
+            outline: 2px c.$font_green solid;
+            border-radius: 5px;
+          }
+
+          @media (min-width: 992px) {
+            padding: 5px  10px;
+            margin: 3px;
+          }
+        }
+
+        button {
+          background: transparent;
+          border: 1px solid transparent;
+          color: rgb(170, 169, 169);
+        }
       }
     }
+
+    &__piece {
+      display: none;
+      
+      @media (min-width:1440px) {
+        position:absolute;
+        z-index: 1;
+        bottom: 0;
+
+        display: block;
+        height: 25px;
+        width: 1200px;
+        background-color: white;
+      }
+    }
+
   }
+}
+
+.main {
+  @include m.box_shadow;
+
+  padding: 0 0 80px 0;
+  
+
   &__items {
     margin: 0 40px;
 
-    .row {
-
-      .col-lg-3 {
-
-      }
-    }
     .service {
       text-align: center;
       margin: 30px 0;
@@ -71,10 +147,25 @@
         background-color: c.$bg_light_gray;
        
         &__image_box {
-          margin: 40px;
+          margin: 10px;
+
+          @media (min-width: 768px) {
+            margin: 20px;
+          }
         }
+
         &__text {
-         margin: 5px;
+          margin: 5px;
+
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+
+          @media (min-width: 768px) {
+            text-overflow: initial;
+            white-space: normal;
+            overflow: initial;
+          }
         }
 
         &:hover {
@@ -83,55 +174,113 @@
         }
       }
     }
+
     .info {
 
       .history {
 
-        &__image_box {
+        &__body {
 
-        }
-        &__text {
-          margin: 30px 0 0 0;
+          &__image_box {
+  
+          }
+          &__text {
+            margin: 30px 0 0 0;
 
+            p {
+              margin: 0;
+            }
+
+            a {
+              display: inline-block;
+              color: black;
+
+              &:hover {
+                color: c.$font_green;
+              }
+            }
+
+            a::before {
+              content: "... ";
+              color: rgb(126, 125, 125);
+
+              &:hover {
+                color: black;
+              }
+            }
+            
+          }
         }
+
       }
 
       .advantages {
 
-        &__list {
-         
-          &__items {
-            display: flex;
-            align-items: center;
-            padding: 10px 5px;
-            border-bottom: 1px solid rgb(204, 203, 203);
-          }
-        }
+        &__body {
 
-      }
-
-      .news {
-
-        &__list {
-          display: flex;
-         
-          
-          &__text {
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 4;
-            overflow: hidden;
-
-            &_button {
-              margin: 0 0 20px 0;
+          &__list {
+              padding: 0;
+           
+            &__text {
+              padding: 10px 5px;
+              display: flex;
+              align-items: center;
+              border-bottom: 1px solid rgb(204, 203, 203);
+              
+              p {
+                margin: 0; 
+              }
             }
           }
         }
-        
-        &__list:first-of-type {
-          margin: 0 0 35px 0;
+      }
 
-        }
+      .news {
+        
+        &__body {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          &__list {
+            flex: 1 1 0;
+            
+            &__text {
+              
+              p {
+                margin: 0;
+              }
+  
+              &_button {
+                margin: 0 0 20px 0;
+              }
+
+              a {
+                color: black;
+  
+                &:hover {
+                  color: c.$font_green;
+                }
+              }
+
+              a::before {
+                content: "... ";
+                color: rgb(126, 125, 125);
+
+                &:hover {
+                  color: black;
+                }
+              }
+            }
+          }
+
+          @media (min-width: 768px) {
+            flex-direction: row;
+          }
+          @media (min-width: 992px) {
+            flex-direction: column;
+          }
+        }     
       }
     }
   }
@@ -145,10 +294,9 @@
     .gallery {
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
   }
-  
-
 }
 
 

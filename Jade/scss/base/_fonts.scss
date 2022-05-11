@@ -15,7 +15,20 @@
   }
 };
 
+.header {
 
+  &__items {
+
+    &__contact {
+
+      &_numbers {
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
 
 .main__items {
 
@@ -26,12 +39,6 @@
 
   h3 {
     margin: 30px 0 30px 0;
-  }
-
-  @media (min-width: 992px) {
-    h3 {
-      margin: 0 0 30px 0;
-    }
   }
 
   .service {
@@ -56,16 +63,25 @@
       p {
         font-size: 14px;
       }
+      a {
+        font-size: 14px;
+        text-transform: capitalize;
+      }
     }
     .advantages {
       p {
         font-size: 16px;
       }
     }
-    .news {
+    .news { 
       p {
         font-size: 14px;
       }
+      a {
+        font-size: 14px;
+        text-transform: capitalize;
+      }
+      
     }
   }
 
@@ -93,7 +109,7 @@
       }
     }
 
-    &_copyright {
+    &__copyright {
       text-transform: uppercase;
 
       a {
@@ -103,6 +119,7 @@
 
     &__nav {
       text-transform: uppercase;
+    
     }
 
   }

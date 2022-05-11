@@ -3,6 +3,14 @@
 
 .footer {
   margin-top: 70px;
+
+  &__items {
+    &__copyright {
+      p {
+        margin: 0;
+      }
+    }
+  }
   
   &__items:first-of-type {
     @include m.box-shadow;
@@ -89,6 +97,12 @@
         &__people {
           display: flex;
           gap: 10px;
+
+          &__text {
+            p {
+              margin: 0;
+            }
+          }
         }
 
       }
@@ -129,22 +143,10 @@
 
         &__gallery {
           display: grid;
-          grid-template-columns: repeat(4, 63px);
+          grid-template-columns: repeat(4, 1fr);
           gap: 5px;
 
-          @media (min-width:992px) {
-            grid-template-columns: repeat(3, 63px);
-            
-          }
-
-          @media (min-width:1400px) {
-            grid-template-columns: repeat(4, 63px);
-            
-          }
-
           &__box {
-            height: 63px;
-            width: 63px;
 
             &:hover {
               opacity: 0.8;
@@ -177,6 +179,7 @@
     }
 
     .nav {
+      display: none;
 
       .nav-item {
 
@@ -185,10 +188,14 @@
         }
 
         .nav-link {
-
           padding: 0 10px;
 
         }
+      }
+
+      @media (min-width: 576px) {
+        display: flex;
+        
       }
     }
     

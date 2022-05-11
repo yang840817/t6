@@ -1,5 +1,25 @@
 @use '../base/colors' as c;
 
+.container {
+  &__header {
+
+    &__items {
+
+      &__navbar {
+
+        .container-fluid {
+          justify-content: center;
+
+          button {
+            margin: 10px;
+            border: 1px transparent;
+            }
+        }
+      }
+    }
+  }
+}
+
 .main {
 
   &__header {
@@ -33,32 +53,28 @@
 
 
 
-
-.main__header__items__navbar .navbar-light .navbar-nav .nav-item .nav-link.active {
+.container__header .navbar-light .navbar-nav .nav-item .nav-link.active {
   color: white;
   background-color: c.$font_green;
 }
 
-.main__header__items__navbar .navbar-light .navbar-nav .nav-item .nav-link {
+.container__header .navbar-light .navbar-nav .nav-item .nav-link {
   color: black;
   border-right: 1px c.$bg_light_gray solid;
   text-transform: uppercase;
 }
 
-.main__header__items__navbar .navbar-light .navbar-nav .nav-item .nav-link:hover {
+
+.container__header .navbar-light .navbar-nav .nav-item .nav-link:hover {
   color: white;
   background-color: c.$font_green;
 }
 
-.main__header__items .navbar-light .nav-link a.dropdown-item:active {
-  background-color: c.$font_green;
-}
-
-
-
-.main__header .main__header__items__navbar button:focus {
+.container .container__header button:focus {
   box-shadow: 0.1px 0.1px 2px 2px c.$font_green, -0.1px -0.1px 2px 2px c.$font_green ;
 }
+
+// carousel
 
 %carousel_icon_size {
   width: 40px;
