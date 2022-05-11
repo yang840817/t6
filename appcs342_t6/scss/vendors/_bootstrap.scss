@@ -1,111 +1,113 @@
-@use '../abstracts/breakpoint' as *;
-@use '../abstracts/color' as *; 
+@use "../abstracts/breakpoint";
+@use "../abstracts/color";
 
 //nav
 .nav_box {
-    position: relative;
-    background: linear-gradient(180deg, transparent 60%, #fff 60%);
-    .navbar{
+  position: relative;
+  background: linear-gradient(180deg, transparent 60%, #fff 60%);
+  .navbar {
     box-shadow: 0 0 5px;
     background-color: #fff;
-        .navbar-nav{
-            a{
-                padding-left:1rem;
-                padding-right:1rem;
-                &:hover{
-                    background: $green;
-                    color: $white;
-                }
-            }
+    .navbar-nav {
+      a {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        &:hover {
+          background: color.$green;
+          color: color.$white;
         }
+      }
     }
+  }
 }
 .nav_box {
-    @include desktop {
-        display: flex;
-        .navbar{
-            padding: 0;
-            .navbar-nav {
-                a {
-                    padding: 1rem;
-                }
-            }
+  @include breakpoint.desktop {
+    display: flex;
+    .navbar {
+      padding: 0;
+      .navbar-nav {
+        a {
+          padding: 1rem;
         }
+      }
     }
+  }
 }
 .nav_box nav {
-    @include desktop {
-        flex: 1 0 70%;
-    }
+  @include breakpoint.desktop {
+    flex: 1 0 70%;
+  }
 }
 
-.nav_box .search{
-    background-color: #fff;
-    input {
-        background: url(../../images/search.png);
-        background-repeat: no-repeat;
-        background-position: right 10px center;
-        background-color: #f3f3f3;
-    }
+.nav_box .search {
+  background-color: #fff;
+  input {
+    background: url(../../images/search.png);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-color: #f3f3f3;
+  }
 }
-.nav_box .search{
-        @include desktop {
-            position: static;
-            flex: 1 0 15%;
-            padding: 0.5rem;
-            margin-left: 1rem;
-            box-shadow: 0 0 5px;
-        }
-    input {
-        @include desktop {
-            height: 100%;
-        }
+.nav_box .search {
+  @include breakpoint.desktop {
+    position: static;
+    flex: 1 0 15%;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    box-shadow: 0 0 5px;
+  }
+  input {
+    @include breakpoint.desktop {
+      height: 100%;
     }
+  }
 }
 
 li.nav-item {
-    @include desktop {
-        border-right: 1px solid #EAEAEA;
-    }
+  @include breakpoint.desktop {
+    border-right: 1px solid #eaeaea;
+  }
+}
+
+%carousel_button {
+  background: url(../images/slider_prev.gif) no-repeat 0 0;
+  width: 2.5rem;
+  height: 7rem;
 }
 .carousel_button_prev {
-    background: url(../images/slider_prev.gif) no-repeat 0 0;
-    width: 2.5rem;
-    height: 7rem;
-    &:hover {
-        background-position: 0 -119px;
-    }
+  @extend %carousel_button;
+  &:hover {
+    background-position: 0 -119px;
+  }
 }
 .carousel_button_next {
-    background: url(../images/slider_next.gif) no-repeat 0 0;
-    width: 2.5rem;
-    height: 7rem;
-    &:hover {
-        background-position: 0 -119px;
-    }
+  @extend %carousel_button;
+  &:hover {
+    background-position: 0 -119px;
+  }
 }
 .carousel-control-prev {
-    width: fit-content;
-    left: 0;
+  width: fit-content;
+  left: 0;
 }
 
 .carousel-control-next {
-    width: fit-content;
-    right: 0;
+  width: fit-content;
+  right: 0;
 }
 
 .carousel-inner img {
-    min-height: 20vh;
-    object-fit: cover;
+  min-height: 20vh;
+  object-fit: cover;
 }
 
 .search input:focus {
-    border-color: $green;
-    box-shadow: 0 0 5px $green;
+  border-color: color.$green;
+  box-shadow: 0 0 5px color.$green;
 }
 
-nav .container-fluid{
-        @include desktop {
-        padding: 0;
-    }
+nav .container-fluid {
+  @include breakpoint.desktop {
+    padding: 0;
+  }
 }

@@ -1,45 +1,42 @@
-@use '../abstracts/breakpoint'as *;
-@use '../abstracts/color'as *;
-
-.service_box {
-    @include desktop {
-        position: relative;
-        z-index: 999;
-        transform: translateY(-3rem);
-    }
-}
+@use "../abstracts/breakpoint";
+@use "../abstracts/color";
 
 .service {
-    display: flex;
-    padding: 1.5rem;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    background: $gray-service;
+  display: flex;
+  padding: 1.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background: color.$gray-service;
+  height: 100%;
+  gap: 1rem;
+
+  &:hover {
+    color: color.$white;
+    background: rgba(color.$gray-service-hover, 0.9);
+  }
+
+  a {
+    padding: 0.5rem 1rem;
+    margin-top: auto;
+    text-transform: capitalize;
+    color: color.$black;
+    background: color.$gray-service-button;
+  }
+  .service_img {
+    width: 62px;
+    height: 59px;
+  }
+
+  img {
+    width: 100%;
     height: 100%;
-    gap: 1rem;
+    object-fit: cover;
+  }
 
-    &:hover {
-        color: $white;
-        background: rgba($gray-service-hover, 0.9) ;
-    }
-
-    a{
-        padding: 0.5rem 1rem ;
-        margin-top: auto;
-        text-transform: capitalize;
-        color: $black;
-        background: $gray-service-button;
-    }
-    
-    img {
-        object-fit: cover;
-    }
-
-    h2 {
-        font-size: 1.1rem;
-        margin-bottom: 1.5rem;
-    }
+  h2 {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
 }
-

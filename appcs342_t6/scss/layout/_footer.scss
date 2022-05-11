@@ -1,16 +1,16 @@
-@use '../abstracts/breakpoint'as *;
-@use '../abstracts/color'as *;
+@use "../abstracts/breakpoint";
+@use "../abstracts/color";
 
-$img-subbg :url("../images/subbg.gif");
+$img-subbg: url("../images/subbg.gif");
 
-
-footer{
-    margin-top: 4rem;
-    h4{
-        margin-bottom: 1rem;
-        text-transform: uppercase;
-    }
-    .footer_box{
-        background-image: $img-subbg;   
-    }
+footer {
+  margin-top: 4rem;
+  h4 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  .footer_box {
+    padding: 2rem;
+    background-image: $img-subbg;
+  }
 }

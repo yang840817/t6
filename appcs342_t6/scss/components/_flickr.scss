@@ -1,17 +1,16 @@
-@use '../abstracts/breakpoint'as *;
-@use '../abstracts/color'as *;
+@use "../abstracts/breakpoint";
+@use "../abstracts/color";
 
-    .flickr {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 0.5rem;
+.flickr {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
 
-        img {
-            width: 100%;
+  img {
+    width: 100%;
 
-            &:hover {
-                transform: scale(1.2,1.2);
-            }
-
-        }
+    &:hover {
+      transform: scale(1.2, 1.2);
     }
+  }
+}
