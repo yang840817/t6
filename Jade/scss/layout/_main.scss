@@ -1,184 +1,18 @@
-@use '../abstracts/mixins' as m;
-@use '../base/colors' as c;
+@use '../abstracts/mixins';
+@use '../base/colors';
 
 
-.container {
-
-  &__navbar {
-    margin-top: 30px;
-    position: relative;
-    
-    &__body { 
-      position: relative;
-      z-index: 999;
-
-      // 為了navbar collaspe 不會被 carousel 擋住
-      
-      @include m.box_shadow_not_bottom;
-
-      @media (min-width:992px) {
-        display: flex;
-        justify-content: space-between;
-
-        background-image: url("../images/subbg.gif");
-      }
-      @media (min-width:1440px) {
-        display: block;
-        
-        box-shadow: none;
-        background: transparent;
-      }
-
-      .navbar {
-        background-image: url("../images/subbg.gif");
-        
-        @media (min-width:1440px) {
-          width: 78%;
-
-          @include m.box_shadow_not_bottom; 
-        }
-
-        .container-fluid {
-          justify-content: center;
-
-          @media (min-width:768px) {
-            justify-content: space-between;
-          }
-        }
-      }
-    }
-  
-    &__search { 
-      display: block;
-      padding: 10px;
-
-      background-image: url("../images/subbg.gif");
-      
-      @media (min-width: 992px) {
-        padding: 0;
-
-        box-shadow: none;
-      }
-
-      @media (min-width: 1440px) {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-
-        z-index: 2;
-
-        @include m.box_shadow_not_bottom;
-      }
-
-      &__body {
-        display: flex;
-        margin: 0;
-
-        border: 1px solid gray;
-        background-color: rgba(242, 238, 238, 1);
-
-        @media (min-width: 992px) {
-          margin: 15px;
-        }
-    
-        input {
-          padding: 2px 5px;
-          margin: 0;
-          width: 100%;
-
-          border: 0;
-          background-color: rgba(242, 238, 238, 1);
-
-          @media (min-width: 992px) {
-            padding: 5px  10px;
-            margin: 3px;
-          }
-
-          &::placeholder {
-            text-transform: capitalize;
-            color: c.$bg_dark_gray;
-          }
-
-          &:focus-visible {
-            outline: 2px c.$font_green solid;
-            border-radius: 5px;
-          }
-        }
-      }
-    }
-
-    &__piece {
-      display: none;
-      
-      @media (min-width:1440px) {
-        display: block;
-        height: 25px;
-        width: 1250px;
-
-        position:absolute;
-        bottom: 0;
-
-        z-index: 1;
-
-        background-color: white;
-      }
-    }
-
-  }
-}
 
 .main { 
   padding: 0 0 80px 0;
   
-  @include m.box_shadow;
+  @include mixins.box_shadow;
 
   &__items {
     margin: 0 40px;
 
     .service {
-      margin: 30px 0;
-
-      text-align: center;
-      
-      @media (min-width:992px) {
-        margin: 0;
-        
-        transform: translateY(-60px);
-      }
-      &__body {
-        padding: 20px;
-        height: 100%;
-
-        background-color: c.$bg_light_gray;
-       
-        &__image_box {
-          margin: 10px;
-
-          @media (min-width: 768px) {
-            margin: 20px;
-          }
-        }
-
-        p {
-          margin: 5px;
-
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          overflow: hidden;
-
-          @media (min-width: 768px) {
-            text-overflow: initial;
-            white-space: normal;
-            overflow: initial;
-          }
-        }
-
-        &:hover {
-          background-color: rgba(58, 58, 58, 0.7);
-          color: white;
-        }
-      }
+      // /component/cards
     }
 
     .info {
@@ -196,7 +30,7 @@
               color: black;
 
               &:hover {
-                color: c.$font_green;
+                color: colors.$font_green;
               }
             }
 
@@ -263,7 +97,7 @@
                 }
 
                 &:hover {
-                  color: c.$font_green;
+                  color: colors.$font_green;
                 }
               }
             }

@@ -6,33 +6,6 @@ $font_dark_gray:rgb(65, 65, 65);
 $font_light_gray:rgb(146, 146, 146);
 
 
-
-.container__navbar .navbar-light .navbar-nav .nav-item .nav-link.active {
-  color: white;
-  background-color: $font_green;
-}
-
-.container__navbar .navbar-light .navbar-nav .nav-item .nav-link {
-  color: black;
-  border-right: 1px $bg_light_gray solid;
-  text-transform: uppercase;
-}
-
-.container__navbar .navbar-light .navbar-nav .nav-item .nav-link:hover {
-  color: white;
-  background-color: $font_green;
-}
-
-.container .container__navbar button:focus {
-  box-shadow: 0.1px 0.1px 2px 2px $font_green, -0.1px -0.1px 2px 2px $font_green ;
-}
-
-.dropdown-item:focus, .dropdown-item:hover, .dropdown-item.active, .dropdown-item:active {
-  color: white;
-  background-color: $font_green;
-}
-
-
 .footer {
 
   &__items:first-of-type {
@@ -63,10 +36,10 @@ $font_light_gray:rgb(146, 146, 146);
     color: white;
   }
 }
-
-.footer__items__nav .nav .nav-item .nav-link.active {
+_nav .nav .nav-item .nav-link.active {
   color: $font_green;
 
+.footer__items_
   &:hover {
     color: white;
   }

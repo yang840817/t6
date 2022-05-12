@@ -1,18 +1,9 @@
 @use '../base/colors' as c;
 
-.container__navbar__search {
-
-  button {
-    color: rgb(170, 169, 169);
-    border: 1px solid transparent;
-    background: transparent;
-  }
-}
-
 .service__body {
 
   button {
-    margin: 15px;
+    margin: 15px 0;
     padding: 3px 15px;
     background-color: rgb(206, 202, 202);
     border: 1px solid transparent;

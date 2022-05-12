@@ -1,5 +1,5 @@
-@use '../abstracts/mixins' as m;
-@use '../base/colors' as c;
+@use '../abstracts/mixins';
+@use '../base/colors';
 
 
 %icon_bg_image {
@@ -10,7 +10,7 @@
 }
 
 .header {
-  @include m.box-shadow;
+  @include mixins.box-shadow;
 
   &__items {
     padding: 35px;
@@ -75,14 +75,14 @@
     }
     &__contact_numbers {
       text-transform: capitalize;
-      
+
       p {
         margin: 0%;
         a {
           color: black;
   
           &:hover {
-            color: c.$font_green;;
+            color: colors.$font_green;;
           }
         }
       }

@@ -1,20 +1,3 @@
-@use '../base/colors' as c;
-
-.container {
-  &__navbar {
-    &__body {
-       
-      .container-fluid {
-        justify-content: center;
-
-        button {
-          margin: 10px;
-          border: 1px transparent;
-          }
-      } 
-    }
-  }
-}
 
 .main {
 
