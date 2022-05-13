@@ -1,46 +1,8 @@
-$bg_light_gray:rgb(229, 229, 229);
-$bg_dark_gray:#626262;
+$primary:rgb(129, 184, 0);
+$secondary_light:rgb(229, 229, 229);
+$secondary_dark:#626262;
 
-$font_green:rgb(129, 184, 0);
 $font_dark_gray:rgb(65, 65, 65);
 $font_light_gray:rgb(146, 146, 146);
 
 
-.footer {
-
-  &__items:first-of-type {
-    a {
-      color: $font_green;
-
-      &:hover {
-        color: black;
-      }
-    }
-  }
-
-  &__items:last-of-type {
-    a {
-      color: $font_green;
-
-      &:hover {
-        color: white;
-      }
-    } 
-  }
-}
-
-.footer__items__nav .nav .nav-item .nav-link {
-  color: #626262;
-
-  &:hover {
-    color: white;
-  }
-}
-_nav .nav .nav-item .nav-link.active {
-  color: $font_green;
-
-.footer__items_
-  &:hover {
-    color: white;
-  }
-}

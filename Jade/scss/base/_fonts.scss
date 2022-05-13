@@ -1,126 +1,25 @@
-@use '_colors' as c;
+@use '../abstracts/breakpoints';
 
 %main__items_h3_fz {
-
-  h3 {
     font-size: 25px;
     font-weight: 400;
     text-transform: uppercase;
-  }
-  @media (min-width:1440px) {
-    h3 {
-      font-size: 30px;
+
+    @include breakpoints.laptop_large {
+        font-size: 30px;
     }
-  }
 };
 
-// class
 
-.header {
-   &__items {
-    &__contact {
-      &_numbers {
-        p {
-          font-size: 14px;
-        }
-      }
-    }
-  }
+%footer__items_h3_fz {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  @include breakpoints.laptop_large {
+    font-size: 25px;
+    font-weight: 400;
 }
-
-.main__items {
-
-  h2 {
-    margin: 10px;
-    text-transform: uppercase;
-  }
-
-  h3 {
-    margin: 30px 0 30px 0;
-  }
-
-  .service {
-    
-    h2 {
-      font-size: 20px;
-    }
-    p {
-      font-size: 16px;
-    }
-  }
-
-  .info {
-
-    @extend %main__items_h3_fz;
-
-    p {
-      color: rgb(126, 125, 125);
-    }
-
-    .history {
-
-      p {
-        font-size: 14px;
-      }
-      a {
-        font-size: 14px;
-        text-transform: capitalize;
-      }
-    }
-    .advantages {
-
-      p {
-        font-size: 16px;
-      }
-    }
-    .news { 
-
-      p {
-        font-size: 14px;
-      }
-      a {
-        font-size: 14px;
-        text-transform: capitalize;
-      }
-      
-    }
-  }
-
-  .gallery {
-
-   @extend %main__items_h3_fz; 
-  }
-}
-
-
-.footer {
-
-  &__items {
-    h3 {
-      margin: 30px 0 30px 0;
-      font-size: 25px;
-      font-weight: 400;
-      text-transform: uppercase;
-    }
-
-    @media (min-width: 992px) {
-      h3 {
-        margin: 0 0 30px 0;
-      }
-    }
-
-    &__copyright {
-      text-transform: uppercase;
-
-      a {
-        text-transform: lowercase;
-      }
-    }
-
-    &__nav {
-      text-transform: uppercase;
-    }
-  }
-}
+};
 
 

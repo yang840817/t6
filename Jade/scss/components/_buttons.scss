@@ -1,19 +1,5 @@
-@use '../base/colors' as c;
+@use '../base/colors';
 
-.service__body {
-
-  button {
-    margin: 15px 0;
-    padding: 3px 15px;
-    background-color: rgb(206, 202, 202);
-    border: 1px solid transparent;
-  
-    &:active {
-      box-shadow: 0.5px 0.5px 1px 0.5px rgb(67, 66, 66);
-      transform: translate(1px, 1px);
-    }
-  }
-}
 
 .advantages__body__text {
 
@@ -26,7 +12,7 @@
       border: 1px transparent solid;
 
       &:hover {
-        background-color: c.$font_green;
+        background-color: colors.$primary;
       }
 
       i {
@@ -46,7 +32,7 @@
 
     color: white;
     border: 1px transparent solid;
-    background-color: c.$font_green;
+    background-color: colors.$primary;
   }
 }
 
@@ -85,6 +71,6 @@
 }
 
 .contact__form__button.sent {
-  background-color: c.$font_green;
+  background-color: colors.$primary;
   color: white;
 }

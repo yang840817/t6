@@ -1,8 +1,11 @@
-@use '../abstracts/mixins';
+@use '../abstracts/breakpoints';
+@use '../abstracts/box_shadow';
 @use '../base/colors';
 
 
 %icon_bg_image {
+  display: inline-block;
+
   width: 27px;
   height: 27px;
   background-image: url('../images/social.png');
@@ -10,7 +13,7 @@
 }
 
 .header {
-  @include mixins.box-shadow;
+  @include box_shadow.box-shadow;
 
   &__items {
     padding: 35px;
@@ -18,10 +21,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    @media (min-width:768px) {
+
+    @include breakpoints.tablet_small {
       flex-direction: row;
       justify-content: space-between;
+    }
+
+
+    &__logo {
+      h1 {
+        margin: 0;
+      }
     }
 
     &__contact_icon {
@@ -32,6 +42,7 @@
         padding: 0;
         text-align: right;
       }
+
       &_facebook {
         @extend %icon_bg_image;
         background-position: 0 0;
@@ -78,11 +89,13 @@
 
       p {
         margin: 0%;
+        font-size: 14px;
+
         a {
           color: black;
   
           &:hover {
-            color: colors.$font_green;;
+            color: colors.$primary;
           }
         }
       }

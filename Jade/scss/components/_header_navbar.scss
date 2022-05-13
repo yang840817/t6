@@ -1,29 +1,24 @@
 @use  '../base/colors' ;
-@use '../abstracts/mixins';
+@use '../abstracts/breakpoints';
+@use '../abstracts/box_shadow';
 
-
-.container {
 
   .header__navbar {
-    position: relative;
-
     background: linear-gradient(0deg, white 40%, transparent 40% 100%);
     
     &__body { 
       position: relative;
       z-index: 999;
-      
-      @include mixins.box_shadow_not_bottom;
 
-      @media (min-width:992px) {
+      background-image: url("../images/subbg.gif");
+      @include box_shadow.box_shadow_not_bottom;
+
+      @include breakpoints.tablet_large {
         display: flex;
-        justify-content: space-between;
-
-        background-image: url("../images/subbg.gif");
+        justify-content: space-between;      
       }
-      @media (min-width:1440px) {
-        display: block;
-        
+      
+      @include breakpoints.laptop_small {
         box-shadow: none;
         background: transparent;
       }
@@ -31,47 +26,38 @@
       .navbar {
         background-image: url("../images/subbg.gif");
         
-        @media (min-width:1440px) {
-          width: 78%;
-
-          @include mixins.box_shadow_not_bottom; 
+        @include breakpoints.laptop_small {
+          width: calc(100% - 245px);
+  
+          @include box_shadow.box_shadow_not_bottom;       
         }
 
         .container-fluid {
-          justify-content: center;
-
           button {
             margin: 10px;
             border: 1px transparent;
           }
 
-          @media (min-width:768px) {
+          @include breakpoints.tablet_small {
             justify-content: space-between;
           }
-    
+        }
+
+        .nav-link {
+          padding: 15px;
         }
       }
     }
   
     &__search { 
       display: block;
-      padding: 12px;
+      padding: 10px;
 
       background-image: url("../images/subbg.gif");
-      
-      @media (min-width: 992px) {
-        box-shadow: none;
-      }
+      box-shadow: none;
 
-      @media (min-width: 1440px) {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-
-        z-index: 2;
-
-        @include mixins.box_shadow_not_bottom;
+      @include breakpoints.laptop_small {
+        @include box_shadow.box_shadow_not_bottom;
       }
 
       &__body {
@@ -82,24 +68,18 @@
         background-color: rgba(242, 238, 238, 1);
     
         input {
-          margin: 0;
           width: 100%;
 
           border: 0;
           background-color: rgba(242, 238, 238, 1);
 
-          @media (min-width: 992px) {
-            padding: 10px;
-          }
-
           &::placeholder {
             text-transform: capitalize;
-            color: colors.$bg_dark_gray;
+            color: colors.$secondary_dark;
           }
 
           &:focus-visible {
-            outline: 2px colors.$font_green solid;
-            border-radius: 5px;
+            outline: 2px colors.$primary solid;
           }
         }
 
@@ -111,29 +91,29 @@
       }
     }
   }
-}
 
-.header__navbar .navbar-light .navbar-nav .nav-item .nav-link.active {
+
+.header__navbar__body .navbar-light .navbar-nav .nav-item .nav-link.active {
   color: white;
-  background-color: colors.$font_green;
+  background-color: colors.$primary;
 }
 
-.header__navbar .navbar-light .navbar-nav .nav-item .nav-link {
+.header__navbar__body .navbar-light .navbar-nav .nav-item .nav-link {
   color: black;
-  border-right: 1px colors.$bg_light_gray solid;
+  border-right: 1px colors.$secondary_light solid;
   text-transform: uppercase;
 }
 
-.header__navbar .navbar-light .navbar-nav .nav-item .nav-link:hover {
+.header__navbar__body .navbar-light .navbar-nav .nav-item .nav-link:hover {
   color: white;
-  background-color: colors.$font_green;
+  background-color: colors.$primary;
 }
 
-.container .header__navbar button:focus {
-  box-shadow: 0.1px 0.1px 2px 2px colors.$font_green, -0.1px -0.1px 2px 2px colors.$font_green ;
+.header__navbar__body button:focus {
+  box-shadow: 0.1px 0.1px 2px 2px colors.$primary, -0.1px -0.1px 2px 2px colors.$primary ;
 }
 
 .dropdown-item:focus, .dropdown-item:hover, .dropdown-item.active, .dropdown-item:active {
   color: white;
-  background-color: colors.$font_green;
+  background-color: colors.$primary;
 }
