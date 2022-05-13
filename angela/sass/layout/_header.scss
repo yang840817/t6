@@ -21,6 +21,11 @@ header {
 
 .logo a {
   display: inline-block;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .connect {
@@ -31,7 +36,6 @@ header {
   }
 
   .telephone {
-    display: block;
     margin-top: 10px;
   }
 
