@@ -1,0 +1,20 @@
+@use "../utilities/breakpoint";
+@use "../utilities/color";
+
+@use "../components/service";
+
+.service_box .row > div {
+  margin-top: 1rem;
+  @include breakpoint.desktop {
+    margin-top: 0;
+  }
+}
+.service_box {
+  padding: 0 2rem;
+  position: relative;
+  z-index: 999;
+  transform: translateY(0);
+  @include breakpoint.desktop {
+    transform: translateY(-3rem);
+  }
+}

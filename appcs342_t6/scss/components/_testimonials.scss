@@ -1,29 +1,33 @@
-@use "../abstracts/breakpoint";
-@use "../abstracts/color";
+@use "../utilities/breakpoint";
+@use "../utilities/color";
 
 .dialogue {
   filter: drop-shadow(0px 0px 0px #cccccc) drop-shadow(0px 1px 0px #cccccc)
     drop-shadow(0px 0px 0px #cccccc) drop-shadow(0px 0px 0px #cccccc);
-
   p {
+    margin: 0;
     background: color.$gray-dialogue;
     border: 1px solid #cccccc;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 10% 90%, 0 100%);
     padding: 1rem 1rem 2rem 1rem;
   }
 }
-
 .info_box {
   display: flex;
   align-items: center;
   margin-top: 1rem;
-
-  .info_people {
-    margin-left: 1rem;
+  img {
+    max-width: 100%;
   }
-
   a {
     display: block;
     color: color.$green;
+    text-decoration: none;
+  }
+  .info_people {
+    margin-left: 1rem;
+    p {
+      margin: 0;
+    }
   }
 }

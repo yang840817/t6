@@ -1,40 +1,37 @@
-@use "../abstracts/breakpoint";
-@use "../abstracts/color";
+@use "../utilities/breakpoint";
+@use "../utilities/color";
 
 .copyright_box {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
+  @include breakpoint.desktop {
+    justify-content: space-between;
+  }
+  nav {
+    display: none;
+    @include breakpoint.mobile {
+      display: block;
+    }
+  }
   span {
     color: #4f4f4f;
   }
-
   a {
     color: #4f4f4f;
+    text-transform: uppercase;
+    text-decoration: none;
 
     &:hover {
       color: color.$green;
     }
   }
-
+  .policy {
+    color: color.$green;
+    text-transform: capitalize;
+  }
   a + a {
     padding-left: 0.5rem;
+    border-left: 1px solid #8f8e8e;
   }
-
-  .copyright {
-    a {
-      color: color.$green;
-    }
-  }
-}
-
-@include breakpoint.ipad {
-  .copyright_box {
-    justify-content: space-between;
-  }
-}
-
-.copyright_box a + a {
-  border-left: 1px solid #8f8e8e;
 }
