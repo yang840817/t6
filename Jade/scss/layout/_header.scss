@@ -13,16 +13,18 @@
 }
 
 .header {
+
   @include box_shadow.box-shadow;
 
   &__items {
-    padding: 35px;
-
+    padding: 10px;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    
     @include breakpoints.tablet_small {
+      padding: 35px;
       flex-direction: row;
       justify-content: space-between;
     }
@@ -33,69 +35,75 @@
         margin: 0;
       }
     }
-
-    &__contact_icon {
-      text-align: center;
-      padding: 10px 0 0 0;
-
-      @media (min-width:768px) {
-        padding: 0;
-        text-align: right;
+    &__contact {
+       display: none;
+       
+      @include breakpoints.tablet_small {
+        display: block;
       }
-
-      &_facebook {
-        @extend %icon_bg_image;
-        background-position: 0 0;
-      }
-      &_facebook:hover {
-        @extend %icon_bg_image;
-        background-position: 0 -27px;
-      }
-      &_twitter {
-        @extend %icon_bg_image;
-        background-position: -37px 0;
-      }
-      &_twitter:hover {
-        @extend %icon_bg_image;
-        background-position: -37px -27px;
-      }
-      &_about {
-        @extend %icon_bg_image;
-        background-position: -74px 0;
-      }
-      &_about:hover {
-        @extend %icon_bg_image;
-        background-position: -74px -27px;
-      }
-      &_baseball {
-        @extend%icon_bg_image;
-        background-position: -111px 0;
-      }
-      &_baseball:hover {
-        @extend %icon_bg_image;
-        background-position: -111px -27px;
-      }
-      &_bluetooth {
-        @extend %icon_bg_image;
-        background-position: -150px 0;
-      }
-      &_bluetooth:hover {
-        @extend %icon_bg_image;
-        background-position: -150px -27px;
-      }
-    }
-    &__contact_numbers {
-      text-transform: capitalize;
-
-      p {
-        margin: 0%;
-        font-size: 14px;
-
-        a {
-          color: black;
+      &_icon {
+        text-align: center;
+        padding: 10px 0 0 0;
   
-          &:hover {
-            color: colors.$primary;
+        @media (min-width:768px) {
+          padding: 0;
+          text-align: right;
+        }
+  
+        &_facebook {
+          @extend %icon_bg_image;
+          background-position: 0 0;
+        }
+        &_facebook:hover {
+          @extend %icon_bg_image;
+          background-position: 0 -27px;
+        }
+        &_twitter {
+          @extend %icon_bg_image;
+          background-position: -37px 0;
+        }
+        &_twitter:hover {
+          @extend %icon_bg_image;
+          background-position: -37px -27px;
+        }
+        &_about {
+          @extend %icon_bg_image;
+          background-position: -74px 0;
+        }
+        &_about:hover {
+          @extend %icon_bg_image;
+          background-position: -74px -27px;
+        }
+        &_baseball {
+          @extend%icon_bg_image;
+          background-position: -111px 0;
+        }
+        &_baseball:hover {
+          @extend %icon_bg_image;
+          background-position: -111px -27px;
+        }
+        &_bluetooth {
+          @extend %icon_bg_image;
+          background-position: -150px 0;
+        }
+        &_bluetooth:hover {
+          @extend %icon_bg_image;
+          background-position: -150px -27px;
+        }
+      }
+      &_numbers {
+        text-transform: capitalize;
+  
+        p {
+          margin: 0%;
+          font-size: 14px;
+  
+          a {
+            color: black;
+    
+            &:hover {
+              color: colors.$primary;
+            }
           }
         }
       }

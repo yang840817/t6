@@ -2,9 +2,11 @@
 @use '../abstracts/box_shadow';
 @use '../base/colors';
 @use '../base/fonts';
+@use '../layout/header';
 
 .footer {
- 
+  margin-top: 70px;
+  
   &__items:first-of-type {
     @include box_shadow.box-shadow;
 
@@ -49,8 +51,8 @@
         &__quote {
           position: relative;
 
-          height: 167px;
-          width: 270px;
+          height: 200px;
+          width: 198px;
           
           filter: drop-shadow(1px 0 0 rgb(201, 201, 201)) drop-shadow(0 1px 0 rgb(201, 201, 201)) drop-shadow(-1px 0 0 rgb(201, 201, 201)) drop-shadow(0 -1px 0 rgb(201, 201, 201));
 
@@ -59,8 +61,8 @@
             top: 0;
             left: 0;
 
-            height: 167px;
-            width: 270px;
+            height: 200px;
+            width: 198px;
 
 
             border-radius: 1px;
@@ -70,6 +72,10 @@
           
             p {
               margin: 20px;
+            }
+            @include breakpoints.mobile_large {
+              height: 167px;
+              width: 270px;
             }
 
             @include breakpoints.tablet_large {
@@ -81,6 +87,12 @@
               width: 270px;
             }
           }
+
+          @include breakpoints.mobile_large {
+            height: 167px;
+            width: 270px;
+          }
+
           @include breakpoints.tablet_large {
             height: 200px;
             width: 198px;
@@ -98,10 +110,13 @@
           &__text {
             p {
               margin: 0;
+
+              text-transform: capitalize;
             }
             a {
               color: colors.$primary;
-        
+              font-style: italic;
+
               &:hover {
                 color: black;
               }
@@ -219,10 +234,84 @@
           text-transform: uppercase;
         }
       }
-      @include breakpoints.mobile_large {
+      @include breakpoints.tablet_small {
         display: flex;       
       }
-    }    
+    } 
+
+    .footer__items__contact {
+      display: block;
+
+      @include breakpoints.tablet_small {
+        display: none;
+      }
+
+      &_icon {
+        text-align: center;
+  
+        @media (min-width:768px) {
+          padding: 0;
+          text-align: right;
+        }
+  
+        &_facebook {
+          @extend %icon_bg_image;
+          background-position: 0 -27px;
+        }
+        &_facebook:hover {
+          @extend %icon_bg_image;
+          background-position: 0 0;
+        }
+        &_twitter {
+          @extend %icon_bg_image;
+          background-position: -37px -27px;
+        }
+        &_twitter:hover {
+          @extend %icon_bg_image;
+          background-position: -37px 0;
+        }
+        &_about {
+          @extend %icon_bg_image;
+          background-position: -74px -27px;
+        }
+        &_about:hover {
+          @extend %icon_bg_image;
+          background-position: -74px 0;
+        }
+        &_baseball {
+          @extend%icon_bg_image;
+          background-position: -111px -27px;
+        }
+        &_baseball:hover {
+          @extend %icon_bg_image;
+          background-position: -111px 0;
+        }
+        &_bluetooth {
+          @extend %icon_bg_image;
+          background-position: -150px -27px;
+        }
+        &_bluetooth:hover {
+          @extend %icon_bg_image;
+          background-position: -150px 0;
+        }
+      }
+      &_numbers {
+        text-transform: capitalize;
+  
+        p {
+          margin: 0%;
+          font-size: 14px;
+  
+          a {
+            color: colors.$primary;
+    
+            &:hover {
+              color: black;
+            }
+          }
+        }
+      }
+    }
   }
 }
 

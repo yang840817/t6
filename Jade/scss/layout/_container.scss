@@ -1,29 +1,5 @@
 @use '../abstracts/breakpoints';
 
-%background_image {
-  background-image: url("/images/subbg.gif");
-}
-
-
-.container {
-  margin-top: 30px;
-  background: linear-gradient(0deg, white 40%, transparent 40% 100%);
-}
-
-.header.container {
-  margin-top: 0;
-  @extend %background_image;
-}
-
-.main.container.container {
-  margin-top: 0;
-  @extend %background_image;
-}
-
-.footer.container {
-  margin-top: 70px;
-  @extend %background_image;
-}
 
 @include breakpoints.laptop_large {
   .container {

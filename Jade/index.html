@@ -12,7 +12,8 @@
   <title>Business planet</title>
 </head>
 <body>
-  <header class="header container p-0">   
+<div class="container p-0">
+  <header class="header">   
     <div class="header__items">
       <div class="header__items__logo">
         <h1 class="header__items__logo_image_box">
@@ -33,10 +34,16 @@
       </div>
     </div>     
   </header>
-  <header class="header_navbar container p-0">
+  <header class="header__navbar">
     <div class="header__navbar__body">
       <nav class="navbar navbar-expand-md navbar-light p-0">
         <div class="container-fluid p-0">
+          <div class="header__navbar__search">
+            <form class="header__navbar__search__body">
+              <input type="search" autocomplete="off" placeholder="search the sites...">
+              <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+          </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -83,13 +90,13 @@
       </nav> 
       <div class="header__navbar__search">
         <form class="header__navbar__search__body">
-          <input type="search" placeholder="search the sites...">
+          <input type="search" autocomplete="off" placeholder="search the sites...">
           <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
       </div>
     </div>  
   </header>
-  <main class="main container p-0">
+  <main class="main">
     <div class="main__carousel">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -119,7 +126,7 @@
           <div class="service__body">
             <h2>growth strategies</h2>
             <div class="service__body__image_box">
-              <img src="/images/p1.png" alt="pie charts">
+              <a href="##"><img src="/images/p1.png" alt="pie charts"></a>
             </div>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam! Laboriosam, exercitationem. Nihil consectetur magnam aliquid.</p>
             <button type="button">more</button>
@@ -129,7 +136,7 @@
           <div class="service__body">
             <h2>perfect support</h2>
             <div class="service__body__image_box">
-              <img src="/images/p2.png" alt="a computer">
+              <a href="##"><img src="/images/p2.png" alt="a computer"></a>
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt illum perferendis aspernatur! Nemo suscipit placeat aperiam aliquid.</p>
             <button type="button">more</button>
@@ -139,7 +146,7 @@
           <div class="service__body">
             <h2>parthers programs</h2>
             <div class="service__body__image_box">
-              <img src="/images/p3.png" alt="a briefcase">
+              <a href="##"><img src="/images/p3.png" alt="a briefcase"></a>
             </div>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam! Laboriosam, exercitationem. Nihil consectetur magnam aliquid.</p>
             <button type="button">more</button>
@@ -149,7 +156,7 @@
           <div class="service__body">
             <h2>premium service</h2>
             <div class="service__body__image_box">
-              <img src="/images/p4.png" alt="a gear">
+              <a href="##"><img src="/images/p4.png" alt="a gear"></a>
             </div>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam! Laboriosam, exercitationem. Nihil consectetur magnam aliquid.</p>
             <button type="button">more</button>
@@ -164,7 +171,7 @@
             <h3>welcome</h3>
             <div class="history__body">
               <div class="history__body__image_box">
-                <img class="w-100" src="/images/welcome.jpg" alt="office building.">
+                <a href="##"></a><img class="w-100" src="/images/welcome.jpg" alt="office building.">
               </div>
               <div class="history__body__text">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus eos repudiandae qui sit odio quo ratione placeat commodi consequuntur totam minima voluptate <span><a href="##">more</a></span></p>
@@ -281,7 +288,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer container p-0">
+  <footer class="footer">
     <div class="footer__items">
       <div class="detail row">
         <div class="col-md-6 col-lg-3">
@@ -392,8 +399,21 @@
           </li>
         </ul>
       </div>
+      <div class="footer__items__contact">
+        <div class="footer__items__contact_icon">
+          <a href="##" class="footer__items__contact_icon_facebook"></a>
+          <a href="##" class="footer__items__contact_icon_twitter"></a>
+          <a href="##" class="footer__items__contact_icon_about"></a>
+          <a href="##" class="footer__items__contact_icon_baseball"></a>
+          <a href="##" class="footer__items__contact_icon_bluetooth"></a>
+        </div>
+        <div class="footer__items__contact_numbers">
+          <p>call us now : <a href="tel:784-25-43">+1 (777)784-25-43</a></p>
+        </div>
+      </div>
     </div>
   </footer>
+</div>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="/swiper.js"></script>
