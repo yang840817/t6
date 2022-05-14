@@ -1,4 +1,4 @@
-@use "../utilities/breakpoint";
+@use "../utilities/breakpoint" as *;
 @use "../utilities/color";
 
 @use "../components/media";
@@ -12,7 +12,7 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   box-shadow: 0 0 5px;
-  @include breakpoint.ipad {
+  @include breakpoint($ipad) {
     justify-content: space-between;
   }
   h1 {

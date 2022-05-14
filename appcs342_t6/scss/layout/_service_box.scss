@@ -1,11 +1,11 @@
-@use "../utilities/breakpoint";
+@use "../utilities/breakpoint" as *;
 @use "../utilities/color";
 
 @use "../components/service";
 
 .service_box .row > div {
   margin-top: 1rem;
-  @include breakpoint.desktop {
+  @include breakpoint($desktop) {
     margin-top: 0;
   }
 }
@@ -14,7 +14,7 @@
   position: relative;
   z-index: 999;
   transform: translateY(0);
-  @include breakpoint.desktop {
+  @include breakpoint($desktop) {
     transform: translateY(-3rem);
   }
 }

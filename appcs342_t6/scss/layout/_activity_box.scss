@@ -1,4 +1,4 @@
-@use "../utilities/breakpoint";
+@use "../utilities/breakpoint" as *;
 @use "../utilities/color";
 
 @use "../components/choose.scss";
@@ -29,14 +29,14 @@
   }
   .activity_item {
     margin-top: 1rem;
-    @include breakpoint.ipad {
+    @include breakpoint($ipad) {
       margin-top: 0;
     }
   }
 }
 .activity_box .row > div + div {
   margin-top: 2rem;
-  @include breakpoint.ipad {
+  @include breakpoint($ipad) {
     margin-top: 0;
   }
 }

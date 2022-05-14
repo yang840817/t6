@@ -1,16 +1,16 @@
-@use "../utilities/breakpoint";
+@use "../utilities/breakpoint" as *;
 @use "../utilities/color";
 
 .copyright_box {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  @include breakpoint.desktop {
+  @include breakpoint($desktop) {
     justify-content: space-between;
   }
   nav {
     display: none;
-    @include breakpoint.mobile {
+    @include breakpoint($mobile) {
       display: block;
     }
   }

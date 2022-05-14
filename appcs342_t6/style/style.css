@@ -474,15 +474,20 @@ li.nav-item {
 }
 
 .carousel_button_next, .carousel_button_prev {
-  background: url(../images/slider_prev.gif) no-repeat 0 0;
   width: 2.5rem;
   height: 7rem;
 }
 
+.carousel_button_prev {
+  background: url(../images/slider_prev.gif) no-repeat 0 0;
+}
 .carousel_button_prev:hover {
   background-position: 0 -119px;
 }
 
+.carousel_button_next {
+  background: url(../images/slider_next.gif) no-repeat 0 0;
+}
 .carousel_button_next:hover {
   background-position: 0 -119px;
 }

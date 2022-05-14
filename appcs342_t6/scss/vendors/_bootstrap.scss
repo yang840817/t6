@@ -1,4 +1,4 @@
-@use "../utilities/breakpoint";
+@use "../utilities/breakpoint" as *;
 @use "../utilities/color";
 
 //nav
@@ -7,7 +7,7 @@
   background: linear-gradient(180deg, transparent 60%, #fff 60%);
   text-transform: uppercase;
   margin-top: 2rem;
-  @include breakpoint.desktop {
+  @include breakpoint($desktop) {
     display: flex;
   }
   nav {
@@ -16,14 +16,14 @@
   .navbar {
     box-shadow: 0 0 5px;
     background-color: #fff;
-    @include breakpoint.desktop {
+    @include breakpoint($desktop) {
       padding: 0;
     }
     .navbar-nav {
       a {
         padding-left: 1rem;
         padding-right: 1rem;
-        @include breakpoint.desktop {
+        @include breakpoint($desktop) {
           padding: 1rem;
         }
         &:hover {
@@ -35,7 +35,7 @@
   }
 }
 nav .container-fluid {
-  @include breakpoint.desktop {
+  @include breakpoint($desktop) {
     padding: 0;
   }
 }
@@ -45,7 +45,7 @@ nav .container-fluid {
   bottom: auto;
   right: 0.5rem;
   background-color: #fff;
-  @include breakpoint.desktop {
+  @include breakpoint($desktop) {
     position: static;
     flex: 1 0 15%;
     padding: 0.5rem;
@@ -57,7 +57,7 @@ nav .container-fluid {
     background-repeat: no-repeat;
     background-position: right 10px center;
     background-color: #f3f3f3;
-    @include breakpoint.desktop {
+    @include breakpoint($desktop) {
       height: 100%;
     }
     &:focus {
@@ -71,17 +71,18 @@ li.nav-item {
 }
 
 %carousel_button {
-  background: url(../images/slider_prev.gif) no-repeat 0 0;
   width: 2.5rem;
   height: 7rem;
 }
 .carousel_button_prev {
+  background: url(../images/slider_prev.gif) no-repeat 0 0;
   @extend %carousel_button;
   &:hover {
     background-position: 0 -119px;
   }
 }
 .carousel_button_next {
+  background: url(../images/slider_next.gif) no-repeat 0 0;
   @extend %carousel_button;
   &:hover {
     background-position: 0 -119px;
