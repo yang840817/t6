@@ -52,7 +52,7 @@
     }
 
     .search {
-      flex: 1 0 20%;
+      flex: 1 0 calc(30% - 20px);
     }
   }
 }
