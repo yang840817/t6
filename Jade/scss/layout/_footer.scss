@@ -6,7 +6,7 @@
 @use '../layout/header';
 
 .footer {
-  @extend %background_image;
+  @include background.background-image;
   margin-top: 70px;
   
   &__items:first-of-type {

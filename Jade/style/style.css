@@ -110,10 +110,6 @@ body {
   }
 }
 
-.header__navbar__body, .header__navbar__body .navbar, .main, .footer, .header {
-  background-image: url("/images/subbg.gif");
-}
-
 .advantages__body__text button {
   flex: 0 0 auto;
   width: 50px;
@@ -168,105 +164,6 @@ body {
   color: white;
 }
 
-.main__items .service {
-  margin: 20px 0 0 0;
-  text-align: center;
-}
-@media (min-width: 992px) {
-  .main__items .service {
-    margin: 0;
-    transform: translateY(-50px);
-  }
-}
-.main__items .service__body {
-  padding: 20px 10px;
-  height: 100%;
-  background-color: rgb(229, 229, 229);
-}
-@media (min-width: 576px) {
-  .main__items .service__body {
-    padding: 40px 10px 20px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-}
-.main__items .service__body__image_box {
-  margin: 20px 0 0 0;
-}
-@media (min-width: 576px) {
-  .main__items .service__body__image_box {
-    margin: 0;
-  }
-}
-.main__items .service__body h2 {
-  margin: 0;
-  font-size: 16px;
-  text-transform: uppercase;
-}
-.main__items .service__body p {
-  display: none;
-}
-@media (min-width: 576px) {
-  .main__items .service__body p {
-    display: block;
-    margin: 0;
-    font-size: 14px;
-  }
-}
-.main__items .service__body button {
-  display: none;
-}
-@media (min-width: 576px) {
-  .main__items .service__body button {
-    display: inline-block;
-    margin-top: auto;
-    padding: 3px 15px;
-    background-color: rgb(206, 202, 202);
-    border: 1px solid transparent;
-  }
-  .main__items .service__body button:active {
-    box-shadow: 0.5px 0.5px 1px 0.5px rgb(67, 66, 66);
-    transform: translate(1px, 1px);
-  }
-}
-.main__items .service__body:hover {
-  background-color: rgba(58, 58, 58, 0.7);
-  color: white;
-}
-
-.header__navbar__body .navbar .container-fluid .header__navbar__search__body, .header__navbar__search__body {
-  display: flex;
-  height: 100%;
-  border: 1px solid gray;
-  background-color: rgb(242, 238, 238);
-}
-
-.header__navbar__body .navbar .container-fluid .header__navbar__search__body input, .header__navbar__search__body input {
-  width: 100%;
-  padding: 0 5px;
-  border: 0;
-  background-color: rgb(242, 238, 238);
-}
-.header__navbar__body .navbar .container-fluid .header__navbar__search__body input::placeholder, .header__navbar__search__body input::placeholder {
-  font-size: 14px;
-  text-transform: capitalize;
-  color: #626262;
-}
-.header__navbar__body .navbar .container-fluid .header__navbar__search__body input:focus-visible, .header__navbar__search__body input:focus-visible {
-  outline: 2px rgb(129, 184, 0) solid;
-}
-.header__navbar__body .navbar .container-fluid .header__navbar__search__body input::-webkit-search-cancel-button, .header__navbar__search__body input::-webkit-search-cancel-button {
-  display: none;
-}
-
-.header__navbar__body .navbar .container-fluid .header__navbar__search__body button, .header__navbar__search__body button {
-  color: rgb(170, 169, 169);
-  border: 1px solid transparent;
-  background: transparent;
-}
-
 .footer__items:last-of-type .footer__items__contact_icon_facebook, .footer__items:last-of-type .footer__items__contact_icon_facebook:hover, .footer__items:last-of-type .footer__items__contact_icon_twitter, .footer__items:last-of-type .footer__items__contact_icon_twitter:hover, .footer__items:last-of-type .footer__items__contact_icon_about, .footer__items:last-of-type .footer__items__contact_icon_about:hover, .footer__items:last-of-type .footer__items__contact_icon_baseball, .footer__items:last-of-type .footer__items__contact_icon_baseball:hover, .footer__items:last-of-type .footer__items__contact_icon_bluetooth, .footer__items:last-of-type .footer__items__contact_icon_bluetooth:hover, .header__items__contact_icon_bluetooth:hover, .header__items__contact_icon_bluetooth, .header__items__contact_icon_baseball:hover, .header__items__contact_icon_baseball, .header__items__contact_icon_about:hover, .header__items__contact_icon_about, .header__items__contact_icon_twitter:hover, .header__items__contact_icon_twitter, .header__items__contact_icon_facebook:hover, .header__items__contact_icon_facebook {
   display: inline-block;
   width: 27px;
@@ -276,6 +173,7 @@ body {
 }
 
 .header {
+  background-image: url("/images/subbg.gif");
   box-shadow: 1px 1px 3px 1px rgb(146, 146, 146), -1px -1px 3px 1px rgb(146, 146, 146);
 }
 .header__items {
@@ -363,7 +261,7 @@ body {
 .header__navbar__body {
   position: relative;
   z-index: 999;
-  background-image: url("../images/subbg.gif");
+  background-image: url("/images/subbg.gif");
   box-shadow: 1px 0 3px 0 rgb(146, 146, 146), -1px -1px 3px 0 rgb(146, 146, 146);
 }
 @media (min-width: 992px) {
@@ -380,7 +278,7 @@ body {
   }
 }
 .header__navbar__body .navbar {
-  background-image: url("../images/subbg.gif");
+  background-image: url("/images/subbg.gif");
 }
 @media (min-width: 1200px) {
   .header__navbar__body .navbar {
@@ -448,7 +346,7 @@ body {
   .header__navbar__search {
     display: block;
     padding: 10px;
-    background-image: url("../images/subbg.gif");
+    background-image: url("/images/subbg.gif");
     box-shadow: none;
   }
 }
@@ -486,6 +384,7 @@ body {
 }
 
 .footer {
+  background-image: url("/images/subbg.gif");
   margin-top: 70px;
 }
 .footer__items:first-of-type {
@@ -739,18 +638,74 @@ body {
 }
 
 .main {
+  padding: 0 0 40px 0;
+  background-image: url("/images/subbg.gif");
   box-shadow: 1px 1px 3px 1px rgb(146, 146, 146), -1px -1px 3px 1px rgb(146, 146, 146);
 }
 .main__items {
-  margin: 0 40px;
+  padding: 0 40px;
 }
-.main__items .info .col-lg-4 {
-  margin: 30px 0 0 0;
+.main__items .service {
+  margin: 20px 0 0 0;
 }
 @media (min-width: 992px) {
-  .main__items .info .col-lg-4 {
+  .main__items .service {
     margin: 0;
+    transform: translateY(-50px);
   }
+}
+.main__items .service__body {
+  padding: 20px 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  background-color: rgb(229, 229, 229);
+}
+.main__items .service__body:hover {
+  background-color: rgba(58, 58, 58, 0.7);
+  color: white;
+}
+@media (min-width: 576px) {
+  .main__items .service__body {
+    padding: 40px 10px 20px 10px;
+  }
+}
+.main__items .service__body h2 {
+  margin: 0;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.main__items .service__body p {
+  display: none;
+}
+@media (min-width: 576px) {
+  .main__items .service__body p {
+    display: block;
+    margin: 0;
+    font-size: 14px;
+  }
+}
+.main__items .service__body button {
+  display: none;
+}
+@media (min-width: 576px) {
+  .main__items .service__body button {
+    display: inline-block;
+    margin-top: auto;
+    padding: 3px 15px;
+    background-color: rgb(206, 202, 202);
+    border: 1px solid transparent;
+  }
+  .main__items .service__body button:active {
+    box-shadow: 0.5px 0.5px 1px 0.5px rgb(67, 66, 66);
+    transform: translate(1px, 1px);
+  }
+}
+.main__items .info {
+  margin: 30px 0 0 0;
 }
 .main__items .info .history h3 {
   margin: 0 0 30px 0;
@@ -764,7 +719,6 @@ body {
   color: rgb(126, 125, 125);
 }
 .main__items .info .history__body__text a {
-  display: inline-block;
   color: black;
   font-size: 14px;
   text-transform: capitalize;
@@ -841,9 +795,6 @@ body {
 .main hr {
   margin: 40px;
 }
-.main__items .gallery {
-  padding: 0 0 40px 0;
-}
 .main__items .gallery__title {
   margin: 0 0 30px 0;
   display: flex;
@@ -858,6 +809,7 @@ body {
 .header__navbar__body {
   position: relative;
   z-index: 999;
+  background-image: url("/images/subbg.gif");
   box-shadow: 1px 0 3px 0 rgb(146, 146, 146), -1px -1px 3px 0 rgb(146, 146, 146);
 }
 @media (min-width: 992px) {
@@ -872,6 +824,9 @@ body {
     box-shadow: none;
     background: transparent;
   }
+}
+.header__navbar__body .navbar {
+  background-image: url("/images/subbg.gif");
 }
 @media (min-width: 1200px) {
   .header__navbar__body .navbar {
@@ -893,6 +848,34 @@ body {
     display: none;
   }
 }
+.header__navbar__body .navbar .container-fluid .header__navbar__search__body {
+  display: flex;
+  height: 100%;
+  border: 1px solid gray;
+  background-color: rgb(242, 238, 238);
+}
+.header__navbar__body .navbar .container-fluid .header__navbar__search__body input {
+  width: 100%;
+  padding: 0 5px;
+  border: 0;
+  background-color: rgb(242, 238, 238);
+}
+.header__navbar__body .navbar .container-fluid .header__navbar__search__body input::placeholder {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #626262;
+}
+.header__navbar__body .navbar .container-fluid .header__navbar__search__body input:focus-visible {
+  outline: 2px rgb(129, 184, 0) solid;
+}
+.header__navbar__body .navbar .container-fluid .header__navbar__search__body input::-webkit-search-cancel-button {
+  display: none;
+}
+.header__navbar__body .navbar .container-fluid .header__navbar__search__body button {
+  color: rgb(170, 169, 169);
+  border: 1px solid transparent;
+  background: transparent;
+}
 .header__navbar__body .navbar .container-fluid button {
   border: 1px transparent;
 }
@@ -912,7 +895,7 @@ body {
   .header__navbar__search {
     display: block;
     padding: 10px;
-    background-image: url("../images/subbg.gif");
+    background-image: url("/images/subbg.gif");
     box-shadow: none;
   }
 }
@@ -921,6 +904,35 @@ body {
     box-shadow: 1px 0 3px 0 rgb(146, 146, 146), -1px -1px 3px 0 rgb(146, 146, 146);
   }
 }
+.header__navbar__search__body {
+  display: flex;
+  height: 100%;
+  border: 1px solid gray;
+  background-color: rgb(242, 238, 238);
+}
+.header__navbar__search__body input {
+  width: 100%;
+  padding: 0 5px;
+  border: 0;
+  background-color: rgb(242, 238, 238);
+}
+.header__navbar__search__body input::placeholder {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #626262;
+}
+.header__navbar__search__body input:focus-visible {
+  outline: 2px rgb(129, 184, 0) solid;
+}
+.header__navbar__search__body input::-webkit-search-cancel-button {
+  display: none;
+}
+.header__navbar__search__body button {
+  color: rgb(170, 169, 169);
+  border: 1px solid transparent;
+  background: transparent;
+}
+
 .header__navbar__body .navbar-light .navbar-nav .nav-item .nav-link.active {
   color: white;
   background-color: rgb(129, 184, 0);

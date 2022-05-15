@@ -2,7 +2,7 @@
 
 
 // search body 
-%search_body {
+@mixin search_body {
   display: flex;
   height: 100%;
 
@@ -11,7 +11,7 @@
 } 
 
 // search input 
-%search_input {
+@mixin search_input {
     width: 100%;
     padding: 0 5px;
 
@@ -33,7 +33,7 @@
     }  
   }
 
-  %search_button {
+  @mixin search_button {
     color: rgb(170, 169, 169);
     border: 1px solid transparent;
     background: transparent;

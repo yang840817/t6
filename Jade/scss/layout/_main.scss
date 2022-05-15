@@ -1,31 +1,74 @@
 @use '../abstracts/breakpoints';
-@use '../abstracts/box_shadow';
+@use '../base/box_shadow';
 @use '../base/colors';
 @use '../base/fonts';
 @use '../base/background';
-
-
+@use '../components/cards';
+@use '../components/more';
 
 .main {  
-  @extend %background_image;
-
+  padding: 0 0 40px 0;
+  
+  @include background.background-image;
   @include box_shadow.box_shadow;
 
   &__items {
-    margin: 0 40px;
+    padding: 0 40px;
 
     .service {
-      // /component/cards
+      margin: 20px 0 0 0;
+      
+      @include breakpoints.tablet_large {
+        margin: 0;
+        transform: translateY(-50px);
+        }
+
+      &__body {   
+        padding: 20px 10px;
+        height: 100%;
+
+        @include cards.card_body;
+        
+        @include breakpoints.mobile_large {
+          padding: 40px 10px 20px 10px;
+        }
+       
+        h2 {
+          @include cards.card_title;
+        }
+        
+        p {
+          display: none;
+          
+          @include breakpoints.mobile_large {
+            display: block;
+
+            @include cards.card_text;
+          }
+        }
+
+        button {
+          display: none;
+          
+          @include breakpoints.mobile_large {
+            display: inline-block;
+
+            @include cards.card_button;        
+          }
+        }    
+      }
     }
 
     .info {
-      .col-lg-4 {
-        margin: 30px 0 0 0;
+      margin: 30px 0 0 0;
+
+      // .col-lg-4 {
+      //   margin: 30px 0 0 0;
         
-        @include breakpoints.tablet_large {
-          margin: 0;
-        }
-      }
+      //   @include breakpoints.tablet_large {
+      //     margin: 0;
+      //   }
+      // }
 
       .history {
         h3 {
@@ -45,25 +88,8 @@
             }
             
             a {
-              display: inline-block;
-
-              color: black;
-              font-size: 14px;
-              text-transform: capitalize;
-
-              &:hover {
-                color: colors.$primary;
-              }
+              @include more.more_text;
             }
-
-            a::before {
-              content: "... ";
-              color: rgb(126, 125, 125);
-
-              &:hover {
-                color: black;
-              }
-            } 
           }
         }
       }
@@ -160,7 +186,6 @@
 
   &__items {
     .gallery {
-      padding: 0 0 40px 0;
 
       &__title {
         margin: 0 0 30px 0;

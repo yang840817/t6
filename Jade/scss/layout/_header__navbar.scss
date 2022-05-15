@@ -10,7 +10,7 @@
     position: relative;
     z-index: 999;
 
-    @extend %background_image;
+    @include background.background-image;
     @include box_shadow.box_shadow_not_bottom;
 
     @include breakpoints.tablet_large {
@@ -25,7 +25,7 @@
     }
 
     .navbar {
-      @extend %background_image;;
+      @include background.background-image;
       
       @include breakpoints.laptop_small {
         flex: 1 0 0;
@@ -47,13 +47,13 @@
           }
 
           &__body {
-            @extend %search_body;
+            @include forms.search_body;
 
             input {
-              @extend %search_input;
+              @include forms.search_input;
             }
             button {
-              @extend %search_button;
+              @include forms.search_button;
             }
           }
         }
@@ -82,7 +82,7 @@
       display: block;
       padding: 10px;
 
-      background-image: url("../images/subbg.gif");
+      @include background.background-image;
       box-shadow: none;
     }
     
@@ -91,12 +91,12 @@
     }
 
     &__body {
-      @extend %search_body;
+      @include forms.search_body;
       input {
-        @extend %search_input;
+        @include forms.search_input;
       }
       button {
-        @extend %search_button;
+        @include forms.search_button;
       }
     }
   }

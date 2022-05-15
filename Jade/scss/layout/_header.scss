@@ -14,7 +14,7 @@
 }
 
 .header {
-  @extend %background_image;
+  @include background.background-image;
 
   @include box_shadow.box-shadow;
 
@@ -122,7 +122,7 @@
     position: relative;
     z-index: 999;
 
-    background-image: url("../images/subbg.gif");
+    @include background.background-image;
     @include box_shadow.box_shadow_not_bottom;
 
     @include breakpoints.tablet_large {
@@ -137,7 +137,7 @@
     }
 
     .navbar {
-      background-image: url("../images/subbg.gif");
+      @include background.background-image;
       
       @include breakpoints.laptop_small {
         flex: 1 0 0;
@@ -218,7 +218,7 @@
       display: block;
       padding: 10px;
 
-      background-image: url("../images/subbg.gif");
+      @include background.background-image;
       box-shadow: none;
     }
     

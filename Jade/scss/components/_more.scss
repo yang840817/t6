@@ -1,0 +1,22 @@
+@use '../base/colors';
+
+@mixin more_text {
+  
+  color: black;
+  font-size: 14px;
+  text-transform: capitalize;
+
+  &:hover {
+    color: colors.$primary;
+  }
+
+  &::before {
+    content: "... ";
+    color: rgb(126, 125, 125);
+
+    &:hover {
+      color: black;
+    }
+  }
+}           
+              
