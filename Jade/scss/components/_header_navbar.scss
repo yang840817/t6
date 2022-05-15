@@ -18,7 +18,8 @@
 
     @include breakpoints.tablet_large {
       display: flex;
-      justify-content: space-between;      
+      justify-content: space-between;
+      gap: 15px;     
     }
     
     @include breakpoints.laptop_small {
@@ -30,7 +31,7 @@
       background-image: url("../images/subbg.gif");
       
       @include breakpoints.laptop_small {
-        width: calc(100% - 245px);
+        flex: 1 0 0;
 
         @include box_shadow.box_shadow_not_bottom;       
       }

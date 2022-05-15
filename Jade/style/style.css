@@ -182,6 +182,7 @@ body {
   .header__navbar__body {
     display: flex;
     justify-content: space-between;
+    gap: 15px;
   }
 }
 @media (min-width: 1200px) {
@@ -195,7 +196,7 @@ body {
 }
 @media (min-width: 1200px) {
   .header__navbar__body .navbar {
-    width: calc(100% - 245px);
+    flex: 1 0 0;
     box-shadow: 1px 0 3px 0 rgb(146, 146, 146), -1px -1px 3px 0 rgb(146, 146, 146);
   }
 }
