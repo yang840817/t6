@@ -1,6 +1,7 @@
-@use  '../base/colors' ;
+@use '../base/colors';
+@use '../base/background';
+@use '../base/box_shadow';
 @use '../abstracts/breakpoints';
-@use '../abstracts/box_shadow';
 @use '../components/forms';
 
 .header__navbar {
@@ -9,7 +10,7 @@
     position: relative;
     z-index: 999;
 
-    background-image: url("../images/subbg.gif");
+    @extend %background_image;
     @include box_shadow.box_shadow_not_bottom;
 
     @include breakpoints.tablet_large {
@@ -24,7 +25,7 @@
     }
 
     .navbar {
-      background-image: url("../images/subbg.gif");
+      @extend %background_image;;
       
       @include breakpoints.laptop_small {
         flex: 1 0 0;

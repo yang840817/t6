@@ -110,7 +110,7 @@ body {
   }
 }
 
-.main, .footer, .header {
+.header__navbar__body, .header__navbar__body .navbar, .main, .footer, .header {
   background-image: url("/images/subbg.gif");
 }
 
@@ -245,6 +245,7 @@ body {
 
 .header__navbar__body .navbar .container-fluid .header__navbar__search__body input, .header__navbar__search__body input {
   width: 100%;
+  padding: 0 5px;
   border: 0;
   background-color: rgb(242, 238, 238);
 }
@@ -857,7 +858,6 @@ body {
 .header__navbar__body {
   position: relative;
   z-index: 999;
-  background-image: url("../images/subbg.gif");
   box-shadow: 1px 0 3px 0 rgb(146, 146, 146), -1px -1px 3px 0 rgb(146, 146, 146);
 }
 @media (min-width: 992px) {
@@ -872,9 +872,6 @@ body {
     box-shadow: none;
     background: transparent;
   }
-}
-.header__navbar__body .navbar {
-  background-image: url("../images/subbg.gif");
 }
 @media (min-width: 1200px) {
   .header__navbar__body .navbar {
