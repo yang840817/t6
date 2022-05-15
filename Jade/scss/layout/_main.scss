@@ -2,10 +2,13 @@
 @use '../abstracts/box_shadow';
 @use '../base/colors';
 @use '../base/fonts';
+@use '../base/background';
 
 
 
 .main {  
+  @extend %background_image;
+
   @include box_shadow.box_shadow;
 
   &__items {

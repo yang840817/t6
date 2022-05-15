@@ -2,9 +2,11 @@
 @use '../abstracts/box_shadow';
 @use '../base/colors';
 @use '../base/fonts';
+@use '../base/background';
 @use '../layout/header';
 
 .footer {
+  @extend %background_image;
   margin-top: 70px;
   
   &__items:first-of-type {

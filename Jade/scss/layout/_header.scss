@@ -1,6 +1,7 @@
 @use '../abstracts/breakpoints';
 @use '../abstracts/box_shadow';
 @use '../base/colors';
+@use '../base/background';
 
 
 %icon_bg_image {
@@ -13,6 +14,7 @@
 }
 
 .header {
+  @extend %background_image;
 
   @include box_shadow.box-shadow;
 

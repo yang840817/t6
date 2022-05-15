@@ -110,7 +110,7 @@ body {
   }
 }
 
-.header, .main, .footer {
+.main, .footer, .header {
   background-image: url("/images/subbg.gif");
 }
 

@@ -12,7 +12,3 @@ body {
   background-image: url("/images/subbg.gif");
 }
 
-.header, .main, .footer {
-  @extend %background_image;
-}
-
