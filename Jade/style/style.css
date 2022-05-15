@@ -179,13 +179,12 @@ body {
 .header__items {
   padding: 10px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 @media (min-width: 768px) {
   .header__items {
     padding: 35px;
-    flex-direction: row;
     justify-content: space-between;
   }
 }
@@ -201,14 +200,7 @@ body {
   }
 }
 .header__items__contact_icon {
-  text-align: center;
-  padding: 10px 0 0 0;
-}
-@media (min-width: 768px) {
-  .header__items__contact_icon {
-    padding: 0;
-    text-align: right;
-  }
+  text-align: right;
 }
 .header__items__contact_icon_facebook {
   background-position: 0 0;
@@ -388,11 +380,8 @@ body {
   margin-top: 70px;
 }
 .footer__items:first-of-type {
+  padding: 40px;
   box-shadow: 1px 1px 3px 1px rgb(146, 146, 146), -1px -1px 3px 1px rgb(146, 146, 146);
-}
-.footer__items:first-of-type .detail {
-  margin: 0 40px;
-  padding: 40px 0;
 }
 .footer__items:first-of-type .detail .col-lg-3:not(:first-of-type) {
   margin: 30px 0 0 0;
@@ -490,7 +479,7 @@ body {
   margin: 0 0 30px 0;
 }
 .footer__items:first-of-type .detail .contact__form__list input, .footer__items:first-of-type .detail .contact__form__list textarea {
-  padding: 0;
+  padding: 0 5px;
   margin: 3px 0;
   color: gray;
   text-transform: capitalize;
@@ -707,6 +696,14 @@ body {
 .main__items .info {
   margin: 30px 0 0 0;
 }
+.main__items .info .col-lg-4:not(:first-of-type) {
+  margin: 30px 0 0 0;
+}
+@media (min-width: 768px) {
+  .main__items .info .col-lg-4:not(:first-of-type) {
+    margin: 0;
+  }
+}
 .main__items .info .history h3 {
   margin: 0 0 30px 0;
 }
@@ -767,10 +764,12 @@ body {
   color: rgb(126, 125, 125);
 }
 .main__items .info .news__body__list__text a {
-  display: inline-block;
+  color: black;
   font-size: 14px;
   text-transform: capitalize;
-  color: black;
+}
+.main__items .info .news__body__list__text a:hover {
+  color: rgb(129, 184, 0);
 }
 .main__items .info .news__body__list__text a::before {
   content: "... ";
@@ -778,9 +777,6 @@ body {
 }
 .main__items .info .news__body__list__text a::before:hover {
   color: black;
-}
-.main__items .info .news__body__list__text a:hover {
-  color: rgb(129, 184, 0);
 }
 @media (min-width: 768px) {
   .main__items .info .news__body {

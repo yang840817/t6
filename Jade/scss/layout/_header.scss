@@ -22,12 +22,11 @@
     padding: 10px;
     
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     
     @include breakpoints.tablet_small {
       padding: 35px;
-      flex-direction: row;
       justify-content: space-between;
     }
 
@@ -44,13 +43,7 @@
         display: block;
       }
       &_icon {
-        text-align: center;
-        padding: 10px 0 0 0;
-  
-        @media (min-width:768px) {
-          padding: 0;
-          text-align: right;
-        }
+        text-align: right;
   
         &_facebook {
           @extend %icon_bg_image;

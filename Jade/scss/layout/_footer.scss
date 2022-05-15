@@ -4,22 +4,23 @@
 @use '../base/fonts';
 @use '../base/background';
 @use '../layout/header';
+@use '../components/forms';
 
 .footer {
   @include background.background-image;
   margin-top: 70px;
   
   &__items:first-of-type {
+    padding: 40px;
+
     @include box_shadow.box-shadow;
 
     .detail {
-      margin: 0 40px;
-      padding: 40px 0;
-
-      // set margin
+      
       .col-lg-3:not(:first-of-type) {
         margin: 30px 0 0 0;
       }
+
       @include breakpoints.tablet_small {
         .col-lg-3:not(:first-of-type) {
           margin:0;
@@ -137,26 +138,10 @@
 
         &__form {
           &__list {
+
             input, textarea {
-              padding: 0;
-              margin: 3px 0;
-
-              color: gray;
-              text-transform: capitalize;
-
-              background-color: colors.$secondary_light;
-              border: 1px solid rgb(201, 201, 201);
-              border-radius: 2px;
-
-              &::placeholder {
-                padding: 2px;
-              }  
-              
-              &:focus-visible {
-                outline: 1px colors.$primary solid;
-              }
+              @include forms.input;
             }
-
             textarea {
               resize: none;
             }

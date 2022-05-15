@@ -62,13 +62,13 @@
     .info {
       margin: 30px 0 0 0;
 
-      // .col-lg-4 {
-      //   margin: 30px 0 0 0;
-        
-      //   @include breakpoints.tablet_large {
-      //     margin: 0;
-      //   }
-      // }
+      .col-lg-4:not(:first-of-type) {
+        margin: 30px 0 0 0;
+
+        @include breakpoints.tablet_small {
+          margin: 0;
+        }   
+      }
 
       .history {
         h3 {
@@ -147,24 +147,7 @@
               }
               
               a {
-                display: inline-block;
-                
-                font-size: 14px;
-                text-transform: capitalize;
-                color: black;
-
-                &::before {
-                  content: "... ";
-                  color: rgb(126, 125, 125);
-    
-                  &:hover {
-                    color: black;
-                  }
-                }
-
-                &:hover {
-                  color: colors.$primary;
-                }
+                @include more.more_text;
               }
             }
           }

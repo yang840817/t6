@@ -38,3 +38,26 @@
     border: 1px solid transparent;
     background: transparent;
   }
+
+
+// input form
+
+@mixin input {
+  padding: 0 5px;
+  margin: 3px 0;
+  
+  color: gray;
+  text-transform: capitalize;
+
+  background-color: colors.$secondary_light;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 2px;
+
+  &::placeholder {
+    padding: 2px;
+  }  
+  
+  &:focus-visible {
+    outline: 1px colors.$primary solid;
+  }
+}
