@@ -1,0 +1,128 @@
+@use  '../base/colors' ;
+@use '../abstracts/breakpoints';
+@use '../abstracts/box_shadow';
+@use '../components/forms';
+
+.header__navbar {
+
+  &__body { 
+    position: relative;
+    z-index: 999;
+
+    background-image: url("../images/subbg.gif");
+    @include box_shadow.box_shadow_not_bottom;
+
+    @include breakpoints.tablet_large {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;     
+    }
+    
+    @include breakpoints.laptop_small {
+      box-shadow: none;
+      background: transparent;
+    }
+
+    .navbar {
+      background-image: url("../images/subbg.gif");
+      
+      @include breakpoints.laptop_small {
+        flex: 1 0 0;
+
+        @include box_shadow.box_shadow_not_bottom;       
+      }
+
+      .container-fluid {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 10px;
+
+        .header__navbar__search {
+          padding: 10px;
+          display: block;
+
+          @include breakpoints.tablet_large {
+            display: none;
+          }
+
+          &__body {
+            @extend %search_body;
+
+            input {
+              @extend %search_input;
+            }
+            button {
+              @extend %search_button;
+            }
+          }
+        }
+
+        button {
+          border: 1px transparent;
+        }
+
+        @include breakpoints.tablet_small {
+          justify-content: space-between;
+        }
+      }
+
+      .nav-link {
+        padding: 15px;
+
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__search { 
+    display: none;
+
+    @include breakpoints.tablet_large {
+      display: block;
+      padding: 10px;
+
+      background-image: url("../images/subbg.gif");
+      box-shadow: none;
+    }
+    
+    @include breakpoints.laptop_small {
+      @include box_shadow.box_shadow_not_bottom;
+    }
+
+    &__body {
+      @extend %search_body;
+      input {
+        @extend %search_input;
+      }
+      button {
+        @extend %search_button;
+      }
+    }
+  }
+}
+
+
+.header__navbar__body .navbar-light .navbar-nav .nav-item .nav-link.active {
+  color: white;
+  background-color: colors.$primary;
+}
+
+.header__navbar__body .navbar-light .navbar-nav .nav-item .nav-link {
+  color: black;
+  border-right: 1px colors.$secondary_light solid;
+  text-transform: uppercase;
+}
+
+.header__navbar__body .navbar-light .navbar-nav .nav-item .nav-link:hover {
+  color: white;
+  background-color: colors.$primary;
+}
+
+.header__navbar__body button:focus {
+  box-shadow: 0.1px 0.1px 2px 2px colors.$primary, -0.1px -0.1px 2px 2px colors.$primary ;
+}
+
+.dropdown-item:focus, .dropdown-item:hover, .dropdown-item.active, .dropdown-item:active {
+  color: white;
+  background-color: colors.$primary;
+}
