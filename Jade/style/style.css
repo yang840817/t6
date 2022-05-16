@@ -164,14 +164,6 @@ body {
   color: white;
 }
 
-.footer__items:last-of-type .footer__items__contact_icon_facebook, .footer__items:last-of-type .footer__items__contact_icon_facebook:hover, .footer__items:last-of-type .footer__items__contact_icon_twitter, .footer__items:last-of-type .footer__items__contact_icon_twitter:hover, .footer__items:last-of-type .footer__items__contact_icon_about, .footer__items:last-of-type .footer__items__contact_icon_about:hover, .footer__items:last-of-type .footer__items__contact_icon_baseball, .footer__items:last-of-type .footer__items__contact_icon_baseball:hover, .footer__items:last-of-type .footer__items__contact_icon_bluetooth, .footer__items:last-of-type .footer__items__contact_icon_bluetooth:hover, .header__items__contact_icon_bluetooth:hover, .header__items__contact_icon_bluetooth, .header__items__contact_icon_baseball:hover, .header__items__contact_icon_baseball, .header__items__contact_icon_about:hover, .header__items__contact_icon_about, .header__items__contact_icon_twitter:hover, .header__items__contact_icon_twitter, .header__items__contact_icon_facebook:hover, .header__items__contact_icon_facebook {
-  display: inline-block;
-  width: 27px;
-  height: 27px;
-  background-image: url("../images/social.png");
-  background-repeat: no-repeat;
-}
-
 .header {
   background-image: url("/images/subbg.gif");
   box-shadow: 1px 1px 3px 1px rgb(146, 146, 146), -1px -1px 3px 1px rgb(146, 146, 146);
@@ -203,33 +195,83 @@ body {
   text-align: right;
 }
 .header__items__contact_icon_facebook {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url("../images/social.png");
+  background-repeat: no-repeat;
   background-position: 0 0;
 }
 .header__items__contact_icon_facebook:hover {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url("../images/social.png");
+  background-repeat: no-repeat;
   background-position: 0 -27px;
 }
 .header__items__contact_icon_twitter {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url("../images/social.png");
+  background-repeat: no-repeat;
   background-position: -37px 0;
 }
 .header__items__contact_icon_twitter:hover {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url("../images/social.png");
+  background-repeat: no-repeat;
   background-position: -37px -27px;
 }
 .header__items__contact_icon_about {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url("../images/social.png");
+  background-repeat: no-repeat;
   background-position: -74px 0;
 }
 .header__items__contact_icon_about:hover {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url("../images/social.png");
+  background-repeat: no-repeat;
   background-position: -74px -27px;
 }
 .header__items__contact_icon_baseball {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url("../images/social.png");
+  background-repeat: no-repeat;
   background-position: -111px 0;
 }
 .header__items__contact_icon_baseball:hover {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url("../images/social.png");
+  background-repeat: no-repeat;
   background-position: -111px -27px;
 }
 .header__items__contact_icon_bluetooth {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url("../images/social.png");
+  background-repeat: no-repeat;
   background-position: -150px 0;
 }
 .header__items__contact_icon_bluetooth:hover {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url("../images/social.png");
+  background-repeat: no-repeat;
   background-position: -150px -27px;
 }
 .header__items__contact_numbers {
@@ -569,33 +611,83 @@ body {
   }
 }
 .footer__items:last-of-type .footer__items__contact_icon_facebook {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url("../images/social.png");
+  background-repeat: no-repeat;
   background-position: 0 -27px;
 }
 .footer__items:last-of-type .footer__items__contact_icon_facebook:hover {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url("../images/social.png");
+  background-repeat: no-repeat;
   background-position: 0 0;
 }
 .footer__items:last-of-type .footer__items__contact_icon_twitter {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url("../images/social.png");
+  background-repeat: no-repeat;
   background-position: -37px -27px;
 }
 .footer__items:last-of-type .footer__items__contact_icon_twitter:hover {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url("../images/social.png");
+  background-repeat: no-repeat;
   background-position: -37px 0;
 }
 .footer__items:last-of-type .footer__items__contact_icon_about {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url("../images/social.png");
+  background-repeat: no-repeat;
   background-position: -74px -27px;
 }
 .footer__items:last-of-type .footer__items__contact_icon_about:hover {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url("../images/social.png");
+  background-repeat: no-repeat;
   background-position: -74px 0;
 }
 .footer__items:last-of-type .footer__items__contact_icon_baseball {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url("../images/social.png");
+  background-repeat: no-repeat;
   background-position: -111px -27px;
 }
 .footer__items:last-of-type .footer__items__contact_icon_baseball:hover {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url("../images/social.png");
+  background-repeat: no-repeat;
   background-position: -111px 0;
 }
 .footer__items:last-of-type .footer__items__contact_icon_bluetooth {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url("../images/social.png");
+  background-repeat: no-repeat;
   background-position: -150px -27px;
 }
 .footer__items:last-of-type .footer__items__contact_icon_bluetooth:hover {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url("../images/social.png");
+  background-repeat: no-repeat;
   background-position: -150px 0;
 }
 .footer__items:last-of-type .footer__items__contact_numbers {

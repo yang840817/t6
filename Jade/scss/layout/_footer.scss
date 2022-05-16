@@ -242,44 +242,34 @@
         }
   
         &_facebook {
-          @extend %icon_bg_image;
-          background-position: 0 -27px;
-        }
-        &_facebook:hover {
-          @extend %icon_bg_image;
-          background-position: 0 0;
+          @include background.icon_image(0, -27px);
+          &:hover {
+            @include background.icon_image(0, 0);
+          }
         }
         &_twitter {
-          @extend %icon_bg_image;
-          background-position: -37px -27px;
-        }
-        &_twitter:hover {
-          @extend %icon_bg_image;
-          background-position: -37px 0;
-        }
+          @include background.icon_image(-37px, -27px);
+          &:hover {
+            @include background.icon_image(-37px, 0);
+          }
+        }       
         &_about {
-          @extend %icon_bg_image;
-          background-position: -74px -27px;
-        }
-        &_about:hover {
-          @extend %icon_bg_image;
-          background-position: -74px 0;
+          @include background.icon_image(-74px, -27px);
+          &:hover {
+            @include background.icon_image(-74px, 0);
+          }
         }
         &_baseball {
-          @extend%icon_bg_image;
-          background-position: -111px -27px;
-        }
-        &_baseball:hover {
-          @extend %icon_bg_image;
-          background-position: -111px 0;
+          @include background.icon_image(-111px, -27px);
+          &:hover {
+            @include background.icon_image(-111px, 0);
+          }
         }
         &_bluetooth {
-          @extend %icon_bg_image;
-          background-position: -150px -27px;
-        }
-        &_bluetooth:hover {
-          @extend %icon_bg_image;
-          background-position: -150px 0;
+          @include background.icon_image(-150px, -27px);
+          &:hover {
+            @include background.icon_image(-150px, 0);
+          }
         }
       }
       &_numbers {
