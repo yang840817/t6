@@ -5,6 +5,9 @@
 @use '../components/forms';
 
 .header__navbar {
+  margin-top: 30px;
+  
+  background: linear-gradient(0deg, white 40%, transparent 40% 100%);
 
   &__body { 
     position: relative;
