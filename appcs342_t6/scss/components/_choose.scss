@@ -1,17 +1,19 @@
-@use "../abstracts/breakpoint";
-@use "../abstracts/color";
+@use "../utilities/breakpoint";
+@use "../utilities/color";
 
 .choose {
   ul {
+    margin: 0;
     padding-left: 0;
   }
-
   li {
     display: flex;
-    padding: 0.5rem;
     margin: 0;
+    padding: 0.5rem 1.2rem;
     border-bottom: 1px solid color.$gray-line;
-
+    p {
+      margin: 0.3rem 0 0 1rem;
+    }
     a {
       flex: 0 0 40px;
       height: 40px;
@@ -25,10 +27,6 @@
         background-color: color.$green;
         color: color.$white;
       }
-    }
-
-    p {
-      margin: 0.3rem 0 0 1rem;
     }
   }
 }

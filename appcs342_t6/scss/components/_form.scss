@@ -1,11 +1,12 @@
-@use "../abstracts/breakpoint";
-@use "../abstracts/color";
+@use "../utilities/breakpoint";
+@use "../utilities/color";
 
 input,
 textarea {
   background: color.$gray-dialogue;
   width: 100%;
   border: 1px solid #cccccc;
+  resize: none;
 
   &:focus {
     outline: 2px solid color.$green;
@@ -16,13 +17,12 @@ textarea {
   margin-top: 1rem;
   color: color.$white;
   text-transform: uppercase;
+  border: none;
 }
-
 .reset {
   @extend %carousel_button;
   background-color: color.$black;
 }
-
 .submit {
   @extend %carousel_button;
   background-color: color.$green;

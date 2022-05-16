@@ -1,0 +1,15 @@
+@use "../utilities/breakpoint";
+@use "../utilities/color";
+
+.work_box {
+  padding: 2rem;
+  text-transform: uppercase;
+
+  &::before {
+    display: block;
+    content: "";
+    position: relative;
+    bottom: 2rem;
+    border: 1px solid color.$gray-line;
+  }
+}

@@ -1,5 +1,5 @@
-@use "../abstracts/breakpoint";
-@use "../abstracts/color";
+@use "../utilities/breakpoint";
+@use "../utilities/color";
 
 .swiper {
   width: 100%;
@@ -29,7 +29,6 @@
   -webkit-align-items: center;
   align-items: center;
 }
-
 .work_button {
   & i {
     color: grey;
@@ -39,7 +38,6 @@
     }
   }
 }
-
 .work_header {
   display: flex;
   justify-content: space-between;

@@ -1,17 +1,31 @@
-@use "../abstracts/breakpoint";
-@use "../abstracts/color";
+@use "../utilities/breakpoint" as *;
+@use "../utilities/color";
 
 //nav
 .nav_box {
   position: relative;
   background: linear-gradient(180deg, transparent 60%, #fff 60%);
+  text-transform: uppercase;
+  margin-top: 2rem;
+  @include breakpoint($desktop) {
+    display: flex;
+  }
+  nav {
+    flex: 1 0 70%;
+  }
   .navbar {
     box-shadow: 0 0 5px;
     background-color: #fff;
+    @include breakpoint($desktop) {
+      padding: 0;
+    }
     .navbar-nav {
       a {
         padding-left: 1rem;
         padding-right: 1rem;
+        @include breakpoint($desktop) {
+          padding: 1rem;
+        }
         &:hover {
           background: color.$green;
           color: color.$white;
@@ -20,36 +34,18 @@
     }
   }
 }
-.nav_box {
-  @include breakpoint.desktop {
-    display: flex;
-    .navbar {
-      padding: 0;
-      .navbar-nav {
-        a {
-          padding: 1rem;
-        }
-      }
-    }
+nav .container-fluid {
+  @include breakpoint($desktop) {
+    padding: 0;
   }
 }
-.nav_box nav {
-  @include breakpoint.desktop {
-    flex: 1 0 70%;
-  }
-}
-
 .nav_box .search {
+  position: absolute;
+  top: 0.6rem;
+  bottom: auto;
+  right: 0.5rem;
   background-color: #fff;
-  input {
-    background: url(../../images/search.png);
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    background-color: #f3f3f3;
-  }
-}
-.nav_box .search {
-  @include breakpoint.desktop {
+  @include breakpoint($desktop) {
     position: static;
     flex: 1 0 15%;
     padding: 0.5rem;
@@ -57,30 +53,36 @@
     box-shadow: 0 0 5px;
   }
   input {
-    @include breakpoint.desktop {
+    background: url(../../images/search.png);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-color: #f3f3f3;
+    @include breakpoint($desktop) {
       height: 100%;
+    }
+    &:focus {
+      border-color: color.$green;
+      box-shadow: 0 0 5px color.$green;
     }
   }
 }
-
 li.nav-item {
-  @include breakpoint.desktop {
-    border-right: 1px solid #eaeaea;
-  }
+  border-right: 1px solid #eaeaea;
 }
 
 %carousel_button {
-  background: url(../images/slider_prev.gif) no-repeat 0 0;
   width: 2.5rem;
   height: 7rem;
 }
 .carousel_button_prev {
+  background: url(../images/slider_prev.gif) no-repeat 0 0;
   @extend %carousel_button;
   &:hover {
     background-position: 0 -119px;
   }
 }
 .carousel_button_next {
+  background: url(../images/slider_next.gif) no-repeat 0 0;
   @extend %carousel_button;
   &:hover {
     background-position: 0 -119px;
@@ -90,24 +92,11 @@ li.nav-item {
   width: fit-content;
   left: 0;
 }
-
 .carousel-control-next {
   width: fit-content;
   right: 0;
 }
-
 .carousel-inner img {
   min-height: 20vh;
   object-fit: cover;
-}
-
-.search input:focus {
-  border-color: color.$green;
-  box-shadow: 0 0 5px color.$green;
-}
-
-nav .container-fluid {
-  @include breakpoint.desktop {
-    padding: 0;
-  }
 }

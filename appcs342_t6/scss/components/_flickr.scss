@@ -1,11 +1,10 @@
-@use "../abstracts/breakpoint";
-@use "../abstracts/color";
+@use "../utilities/breakpoint";
+@use "../utilities/color";
 
 .flickr {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.5rem;
-
   img {
     width: 100%;
 
