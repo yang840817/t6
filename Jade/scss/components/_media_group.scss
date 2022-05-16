@@ -1,45 +1,46 @@
-@use '../base/background';
 @use '../abstracts/breakpoints';
 @use '../base/colors';
+@use '../components/icon';
 
-.media-group-dark {
+.media-group--dark {
 
- &-icon {
-   &-facebook {
-     @include background.icon_image(0, 0);
+  &__icon {
+
+    &__facebook {
+      @include icon.icon_media_image(0, 0);
+      &:hover {
+      @include icon.icon_media_image(0, -27px);
+    }
+  }
+   &__twitter {
+      @include icon.icon_media_image(-37px, 0);
+      &:hover {
+      @include icon.icon_media_image(-37px, -27px);
+    }
+  }
+  &__about {
+      @include icon.icon_media_image(-74px, 0);
+      &:hover {
+      @include icon.icon_media_image(-74px, -27px);
+    }
+  }
+  &__baseball {
+     @include icon.icon_media_image(-111px, 0);
      &:hover {
-       @include background.icon_image(0, -27px);
+       @include icon.icon_media_image(-111px, -27px);
      }
-   }
-   &-twitter {
-     @include background.icon_image(-37px, 0);
+  }
+  &__bluetooth {
+     @include icon.icon_media_image(-150px, 0);
      &:hover {
-       @include background.icon_image(-37px, -27px);
+       @include icon.icon_media_image(-150px, -27px);
      }
-   }
-   &-about {
-     @include background.icon_image(-74px, 0);
-     &:hover {
-       @include background.icon_image(-74px, -27px);
-     }
-   }
-   &-baseball {
-     @include background.icon_image(-111px, 0);
-     &:hover {
-       @include background.icon_image(-111px, -27px);
-     }
-   }
-   &-bluetooth {
-     @include background.icon_image(-150px, 0);
-     &:hover {
-       @include background.icon_image(-150px, -27px);
-     }
-   }
+  }
  }
- &-numbers {
+  &__contact {
    text-transform: capitalize;
 
-   p {
+    p {
      margin: 0%;
      font-size: 14px;
      a {
@@ -47,47 +48,47 @@
 
        &:hover {
          color: colors.$primary;
-       }
-     }
-   }
- }
-}
-
-.media-group-primary {
-
-  &-icon {
-    &-facebook {
-      @include background.icon_image(0, -27px);
-      &:hover {
-        @include background.icon_image(0, 0);
-      }
-    }
-    &-twitter {
-      @include background.icon_image(-37px, -27px);
-      &:hover {
-        @include background.icon_image(-37px, 0);
-      }
-    }       
-    &-about {
-      @include background.icon_image(-74px, -27px);
-      &:hover {
-        @include background.icon_image(-74px, 0);
-      }
-    }
-    &-baseball {
-      @include background.icon_image(-111px, -27px);
-      &:hover {
-        @include background.icon_image(-111px, 0);
-      }
-    }
-    &-bluetooth {
-      @include background.icon_image(-150px, -27px);
-      &:hover {
-        @include background.icon_image(-150px, 0);
+        }
       }
     }
   }
-  &-numbers {
+}
+
+.media-group--primary {
+
+  &__icon {
+    &__facebook {
+      @include icon.icon_media_image(0, -27px);
+      &:hover {
+        @include icon.icon_media_image(0, 0);
+      }
+    }
+    &__twitter {
+      @include icon.icon_media_image(-37px, -27px);
+      &:hover {
+        @include icon.icon_media_image(-37px, 0);
+      }
+    }       
+    &__about {
+      @include icon.icon_media_image(-74px, -27px);
+      &:hover {
+        @include icon.icon_media_image(-74px, 0);
+      }
+    }
+    &__baseball {
+      @include icon.icon_media_image(-111px, -27px);
+      &:hover {
+        @include icon.icon_media_image(-111px, 0);
+      }
+    }
+    &__bluetooth {
+      @include icon.icon_media_image(-150px, -27px);
+      &:hover {
+        @include icon.icon_media_image(-150px, 0);
+      }
+    }
+  }
+  &__contact {
     text-transform: capitalize;
 
     p {

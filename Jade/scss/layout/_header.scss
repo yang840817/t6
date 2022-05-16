@@ -5,7 +5,6 @@
 
 .header {
   @include background.background-image;
-
   @include box_shadow.box-shadow;
 
   &__items {
@@ -23,19 +22,24 @@
     &__logo {
       h1 {
         margin: 0;
+        a {
+          display: inline-block;
+        }
       }
     }
-  }
 
-  .media-group-dark {
-    display: none;
-  
-    @include breakpoints.tablet_small {
-      display: block;
-    }
-
-    &-icon {
-      text-align: right;
+    &__media {
+      .media-group--dark {
+        display: none;
+      
+        @include breakpoints.tablet_small {
+          display: block;
+        }
+    
+        &__icon {
+          text-align: right;
+        }
+      }
     }
   }
 }

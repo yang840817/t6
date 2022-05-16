@@ -1,9 +1,10 @@
 @use '../abstracts/breakpoints';
 @use '../base/colors';
 
-// Gray card
 
-.secondary-light-card {
+.card-secondary-light {
+  padding: 20px 10px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,20 +18,26 @@
     color: white;
   }
 
-  &-title {
+  &__title {
     margin: 0;
     
     font-size: 16px;
     text-transform: uppercase;
   }
 
-  &-text {
+  &__image-box {
+    a {
+      display: inline-block;
+    }
+  }
+
+  &__text {
     margin: 0;
     
     font-size: 14px;
   }
 
-  &-button {
+  &__button {
     margin-top: auto;
     padding: 3px 15px;
     
@@ -43,4 +50,6 @@
      }
   }
 }
+
+
 

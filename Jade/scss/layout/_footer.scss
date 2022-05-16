@@ -5,16 +5,14 @@
 @use '../base/background';
 
 .footer {
-  @include background.background-image;
   margin-top: 70px;
+  @include background.background-image;
   
-  &__items:first-of-type {
+  &__items:first-child {
     padding: 40px;
-
     @include box_shadow.box-shadow;
 
     .detail {
-      
       .col-lg-3:not(:first-of-type) {
         margin: 30px 0 0 0;
       }
@@ -35,79 +33,23 @@
       }
 
       .post {
-          h3 {
-            margin: 0 0 30px 0;
+        h3 {
+          @extend %title_margin;
+          @include fonts.title_font_20;
 
-            @include fonts.h3_font_20;
-
-            @include breakpoints.laptop_large {
-              @include fonts.h3_font_25;
-            }
+          @include breakpoints.laptop_large {
+            @include fonts.title_font_25;
           }
-         } 
+        }
+      } 
 
       .witness {
         h3 {
-          margin: 0 0 30px 0;
-
-            @include fonts.h3_font_20;
+          @extend %title_margin;
+          @include fonts.title_font_20;
             
-            @include breakpoints.laptop_large {
-              @include fonts.h3_font_25;
-            }
-        }
-
-        &__quote {
-          position: relative;
-
-          height: 200px;
-          width: 198px;
-          
-          filter: drop-shadow(1px 0 0 rgb(201, 201, 201)) drop-shadow(0 1px 0 rgb(201, 201, 201)) drop-shadow(-1px 0 0 rgb(201, 201, 201)) drop-shadow(0 -1px 0 rgb(201, 201, 201));
-
-          &__inner {
-            position: absolute;
-            top: 0;
-            left: 0;
-
-            height: 200px;
-            width: 198px;
-
-            border-radius: 1px;
-            background-color: colors.$secondary_light;
-
-            clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 11% 76%, 0 84%, 0 71%, 0 39%);
-          
-            p {
-              margin: 20px;
-            }
-            @include breakpoints.mobile_large {
-              height: 167px;
-              width: 270px;
-            }
-
-            @include breakpoints.tablet_large {
-              height: 200px;
-              width: 198px;
-            }
-            @include breakpoints.laptop_large {
-              height: 167px;
-              width: 270px;
-            }
-          }
-
-          @include breakpoints.mobile_large {
-            height: 167px;
-            width: 270px;
-          }
-
-          @include breakpoints.tablet_large {
-            height: 200px;
-            width: 198px;
-          }
           @include breakpoints.laptop_large {
-            height: 167px;
-            width: 270px;
+            @include fonts.title_font_25;
           }
         }
 
@@ -118,7 +60,6 @@
           &__text {
             p {
               margin: 0;
-
               text-transform: capitalize;
             }
             a {
@@ -131,17 +72,15 @@
             }
           }
         }
-
       }
 
       .contact {
         h3 {
-          margin: 0 0 30px 0;
-
-          @include fonts.h3_font_20;
+          @extend %title_margin;
+          @include fonts.title_font_20;
             
           @include breakpoints.laptop_large {
-            @include fonts.h3_font_25;
+            @include fonts.title_font_25;
           }
         }
 
@@ -156,19 +95,18 @@
 
       .flickr {
         h3 {
-          margin: 0 0 30px 0;
-
-          @include fonts.h3_font_20;
+          @extend %title_margin;
+          @include fonts.title_font_20;
             
           @include breakpoints.laptop_large {
-            @include fonts.h3_font_25;
+            @include fonts.title_font_25;
           }
         }
       }
     }
   }
 
-  &__items:last-of-type {
+  &__items:last-child {
     padding: 10px 0;
 
     display: flex;
@@ -176,8 +114,8 @@
     align-items: center;
     gap: 10px;
     
-    background-color: rgba(21,21,21,255);
     color: rgb(89, 88, 88);
+    background-color: rgba(21,21,21,255);
     
     @include breakpoints.tablet_large {
       flex-direction: row;
@@ -187,7 +125,6 @@
     .footer__items__copyright {
       p {
         margin: 0;
-
         text-transform: uppercase;
       }
       a {
@@ -210,7 +147,6 @@
 
         .nav-link {
           padding: 0 10px;
-
           text-transform: uppercase;
         }
       }
@@ -219,14 +155,14 @@
       }
     } 
 
-    .media-group-primary {
+    .media-group--primary {
       display: block;
 
       @include breakpoints.tablet_small {
         display: none;
       }
 
-      &-icon {
+      &__icon {
         text-align: center;
  
         @media (min-width:768px) {

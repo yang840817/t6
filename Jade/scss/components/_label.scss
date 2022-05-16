@@ -1,0 +1,9 @@
+@use '../base/colors';
+
+.label-primary {
+  padding: 2px 10px;
+  
+  color: white;
+  border: 1px transparent solid;
+  background-color: colors.$primary;
+}

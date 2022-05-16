@@ -42,22 +42,22 @@
 }
 
 .main .main__carousel .carousel-control-prev .carousel-control-prev-icon {
-  background: url('/images/slider_prev.gif') no-repeat 0 0px;
+  background: url('../images/slider_prev.gif') no-repeat 0 0px;
 	@extend %carousel_icon_size;
 
   &:hover {
-    background: url('/images/slider_prev.gif') no-repeat 0 -119px;
+    background: url('../images/slider_prev.gif') no-repeat 0 -119px;
 	  @extend %carousel_icon_size;
   }
 }
 
 
 .main .main__carousel .carousel-control-next .carousel-control-next-icon {
-  background: url('/images/slider_next.gif') no-repeat 0 0px;
+  background: url('../images/slider_next.gif') no-repeat 0 0px;
 	@extend %carousel_icon_size;
 
   &:hover {
-    background: url('/images/slider_next.gif') no-repeat 0 -119px;
+    background: url('../images/slider_next.gif') no-repeat 0 -119px;
 	@extend %carousel_icon_size;
   }
 }

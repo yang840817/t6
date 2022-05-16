@@ -8,7 +8,7 @@
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-  <link href="/style/style.css" rel="stylesheet">
+  <link href="style/style.css" rel="stylesheet">
   <title>Business planet</title>
 </head>
 <body>
@@ -17,19 +17,21 @@
     <div class="header__items">
       <div class="header__items__logo">
         <h1 class="header__items__logo_image_box">
-          <a href="##"><img class="w-100" src="/images/logo.png" alt="business planet"></a>
+          <a href="##"><img class="w-100" src="images/logo.png" alt="business planet"></a>
         </h1>
       </div>
-      <div class="media-group-dark">
-        <div class="media-group-dark-icon">
-          <a href="##" class="media-group-dark-icon-facebook"></a>
-          <a href="##" class="media-group-dark-icon-twitter"></a>
-          <a href="##" class="media-group-dark-icon-about"></a>
-          <a href="##" class="media-group-dark-icon-baseball"></a>
-          <a href="##" class="media-group-dark-icon-bluetooth"></a>
-        </div>
-        <div class="media-group-dark-numbers">
-          <p>call us now : <a href="tel:784-25-43">+1 (777)784-25-43</a></p>
+      <div class="header__items__media">
+        <div class="media-group--dark">
+          <div class="media-group--dark__icon">
+            <a href="##" class="media-group--dark__icon__facebook"></a>
+            <a href="##" class="media-group--dark__icon__twitter"></a>
+            <a href="##" class="media-group--dark__icon__about"></a>
+            <a href="##" class="media-group--dark__icon__baseball"></a>
+            <a href="##" class="media-group--dark__icon__bluetooth"></a>
+          </div>
+          <div class="media-group--dark__contact">
+            <p>call us now : <a href="tel:784-25-43">+1 (777)784-25-43</a></p>
+          </div>
         </div>
       </div>
     </div>     
@@ -40,7 +42,7 @@
         <div class="container-fluid p-0">
           <div class="header__navbar__search">
             <form class="search">
-              <input type="search" autocomplete="off" placeholder="search the sites...">
+              <input type="search" placeholder="search the sites...">
               <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
           </div>
@@ -90,7 +92,7 @@
       </nav> 
       <div class="header__navbar__search">
         <form class="search">
-          <input type="search" autocomplete="off" placeholder="search the sites...">
+          <input type="search" placeholder="search the sites...">
           <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
       </div>
@@ -101,13 +103,13 @@
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="/images/banner3.jpg" class="d-block w-100" alt="Two businessman are pulling each other.">
+            <img src="images/banner3.jpg" class="d-block w-100" alt="Two businessman are pulling each other.">
           </div>
           <div class="carousel-item">
-            <img src="/images/banner2.jpg" class="d-block w-100" alt="A businessman is watching future.">
+            <img src="images/banner2.jpg" class="d-block w-100" alt="A businessman is watching future.">
           </div>
           <div class="carousel-item">
-            <img src="/images/banner1.jpg" class="d-block w-100" alt="A businessman is touching VR money">
+            <img src="images/banner1.jpg" class="d-block w-100" alt="A businessman is touching VR money">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -120,58 +122,59 @@
         </button>
       </div>
     </div>
-    <section class="main__items">
-      <div class="service row g-3">
+  <section class="main__items">
+    <div class="service">
+      <div class="row g-3">
         <div class="col-12 col-md-6 col-lg-3">
-          <div class="secondary-light-card">
-            <h2 class="secondary-light-card-title">growth strategies</h2>
-            <div class="secondary-light-card-image-box">
-              <a href="##"><img src="/images/p1.png" alt="pie charts"></a>
+          <div class="card-secondary-light">
+            <h2 class="card-secondary-light__title">growth strategies</h2>
+            <div class="card-secondary-light__image-box">
+              <a href="##"><img src="images/p1.png" alt="pie charts"></a>
             </div>
-            <p class="secondary-light-card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam! Laboriosam, exercitationem. Nihil consectetur magnam aliquid.</p>
-            <button class="secondary-light-card-button" type="button">more</button>
+            <p class="card-secondary-light__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam! Laboriosam, exercitationem. Nihil consectetur magnam aliquid.</p>
+            <button class="card-secondary-light__button" type="button">more</button>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-3">
-          <div class="secondary-light-card">
-            <h2 class="secondary-light-card-title">perfect support</h2>
-            <div class="secondary-light-card-image-box">
-              <a href="##"><img src="/images/p2.png" alt="a computer"></a>
+          <div class="card-secondary-light">
+            <h2 class="card-secondary-light__title">perfect support</h2>
+            <div class="card-secondary-light__image-box">
+              <a href="##"><img src="images/p2.png" alt="a computer"></a>
             </div>
-            <p class="secondary-light-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt illum perferendis aspernatur! Nemo suscipit placeat aperiam aliquid.</p>
-            <button class="secondary-light-card-button" type="button">more</button>
+            <p class="card-secondary-light__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt illum perferendis aspernatur! Nemo suscipit placeat aperiam aliquid.</p>
+            <button class="card-secondary-light__button" type="button">more</button>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-3">
-          <div class="secondary-light-card">
-            <h2 class="secondary-light-card-title">parthers programs</h2>
-            <div class="secondary-light-card-image-box">
-              <a href="##"><img src="/images/p3.png" alt="a briefcase"></a>
+          <div class="card-secondary-light">
+            <h2 class="card-secondary-light__title">parthers programs</h2>
+            <div class="card-secondary-light__image-box">
+              <a href="##"><img src="images/p3.png" alt="a briefcase"></a>
             </div>
-            <p class="secondary-light-card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam! Laboriosam, exercitationem. Nihil consectetur magnam aliquid.</p>
-            <button class="secondary-light-card-button" type="button">more</button>
+            <p class="card-secondary-light__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam! Laboriosam, exercitationem. Nihil consectetur magnam aliquid.</p>
+            <button class="card-secondary-light__button" type="button">more</button>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-3">
-          <div class="secondary-light-card">
-            <h2 class="secondary-light-card-title">premium service</h2>
-            <div class="secondary-light-card-image-box">
-              <a href="##"><img src="/images/p4.png" alt="a gear"></a>
+          <div class="card-secondary-light">
+            <h2 class="card-secondary-light__title">premium service</h2>
+            <div class="card-secondary-light__image-box">
+              <a href="##"><img src="images/p4.png" alt="a gear"></a>
             </div>
-            <p class="secondary-light-card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam! Laboriosam, exercitationem. Nihil consectetur magnam aliquid.</p>
-            <button class="secondary-light-card-button" type="button">more</button>
+            <p class="card-secondary-light__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam! Laboriosam, exercitationem. Nihil consectetur magnam aliquid.</p>
+            <button class="card-secondary-light__button" type="button">more</button>
           </div>
         </div>
       </div>
-    </section>
-    <section class="main__items">
-      <div class="info row">
+    </div>
+    <div class="info">
+      <div class="row">
         <div class="col-12 col-md-6 col-lg-4">
           <div class="history">
             <h3>welcome</h3>
             <div class="history__body">
               <div class="history__body__image_box">
-                <a href="##"></a><img class="w-100" src="/images/welcome.jpg" alt="office building.">
+                <img class="w-100" src="images/welcome.jpg" alt="office building.">
               </div>
               <div class="history__body__text">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus eos repudiandae qui sit odio quo ratione placeat commodi consequuntur totam minima voluptate <span><a href="##">more</a></span></p>
@@ -184,19 +187,19 @@
             <h3>why choose us?</h3>
             <ul class="advantages__body">
               <li class="advantages__body__text">
-                <button class="secondary-light-round-button" type="button"><i class="fas fa-chevron-right"></i></button>
+                <button class="round-button-secondary-light" type="button"><i class="fas fa-chevron-right"></i></button>
                 <p>Lorem, ipsum dolor sit amet consectetur.</p>
               </li>
               <li class="advantages__body__text">
-                <button class="secondary-light-round-button" type="button"><i class="fas fa-chevron-right"></i></button>
+                <button class="round-button-secondary-light" type="button"><i class="fas fa-chevron-right"></i></button>
                 <p>Eligendi voluptatibus repellat enim omnis.</p>
               </li>
               <li class="advantages__body__text">
-                <button class="secondary-light-round-button" type="button"><i class="fas fa-chevron-right"></i></button>
+                <button class="round-button-secondary-light" type="button"><i class="fas fa-chevron-right"></i></button>
                 <p>Lorem ipsum dolor sit amet consectetur elit.</p>
               </li>
               <li class="advantages__body__text">
-                <button class="secondary-light-round-button" type="button"><i class="fas fa-chevron-right"></i></button>
+                <button class="round-button-secondary-light" type="button"><i class="fas fa-chevron-right"></i></button>
                 <p>Sed unde quod tempora, maiores eum delectus.</p>
               </li>
             </ul>            
@@ -208,19 +211,19 @@
             <div class="news__body">
               <div class="news__body__list row gx-3">
                 <div class="col-5 news__body__list__image_box">
-                  <img class="w-100" src="/images/news1.jpg" alt="a businessman.">
+                  <img class="w-100" src="images/news1.jpg" alt="a businessman.">
                 </div>
                 <div class="col-7 news__body__list__text">
-                  <button class="primary-button">12.12.12</button>
+                  <label class="label-primary">12.12.12</label>
                   <p>Lorem, ipsum dolor sit amet consectetur. repellat enim omnis <span><a href="##">more</a></span></p>
                 </div>
               </div>
               <div class="news__body__list row gx-3">
                 <div class="col-5 news__body__list__image_box">
-                  <img class="w-100" src="/images/news2.jpg" alt="a business meeting.">
+                  <img class="w-100" src="images/news2.jpg" alt="a business meeting.">
                 </div>
                 <div class="col-7 news__body__list__text">
-                  <button class="primary-button">12.12.12</button>
+                  <label class="label-primary">12.12.12</label>
                   <p>Dolor sit amet consectetur. voluptatibus repellat enim omnis <span><a href="##">more</a></span></p>
                 </div>
               </div>
@@ -228,149 +231,164 @@
           </div>
         </div>
       </div>
-    </section>
-    <hr>
-    <section class="main__items">
-      <div class="multi_carousel">
-        <div class="multi_carousel__header">  
-          <h3>features work</h3>
-          <div class="swiper-button">
-            <button type="button" class="prev__button">
-              <i class="fa-solid fa-chevron-left"></i>
-            </button>
-            <button type="button" class="next__button">
-              <i class="fa-solid fa-chevron-right"></i>
-            </button>
-          </div>
+    </div>
+    <hr> 
+    <div class="multi_carousel">
+      <div class="multi_carousel__header">  
+        <h3>features work</h3>
+        <div class="swiper-buttons">
+          <button type="button" class="prev__button">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button type="button" class="next__button">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
         </div>
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="swiper__image_box__text">
-                <p>Ipsum dolor</p>
-                <a href="##"><i class="fa-solid fa-link"></i></a>
-              </div>
-              <a href="##" class="swiper__image_box">
-                <img class="w-100" src="/images/g1.jpg" alt="">
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper__image_box__text">
-                <p>Ipsum dolor</p>
-                <a href="##"><i class="fa-solid fa-link"></i></a>
-              </div>
-              <a href="##" class="swiper__image_box">
-                <img class="w-100" src="/images/g2.jpg" alt="">
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper__image_box__text">
-                <p>Ipsum dolor</p>
-                <a href="##"><i class="fa-solid fa-link"></i></a>
-              </div>
-              <a href="##" class="swiper__image_box">
-                <img class="w-100" src="/images/g3.jpg" alt="">
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper__image_box__text">
-                <p>Ipsum dolor</p>
-                <a href="##"><i class="fa-solid fa-link"></i></a>
-              </div>
-              <a href="##" class="swiper__image_box">
-                <img class="w-100" src="/images/g4.jpg" alt="">
-              </a>
-            </div>
-          </div> 
-        </div>     
       </div>
-    </section>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper__image_box__text">
+              <p>Ipsum dolor</p>
+              <a href="##"><i class="fa-solid fa-link"></i></a>
+            </div>
+            <a href="##" class="swiper__image_box">
+              <img class="w-100" src="images/g1.jpg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper__image_box__text">
+              <p>Ipsum dolor</p>
+              <a href="##"><i class="fa-solid fa-link"></i></a>
+            </div>
+            <a href="##" class="swiper__image_box">
+              <img class="w-100" src="images/g2.jpg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper__image_box__text">
+              <p>Ipsum dolor</p>
+              <a href="##"><i class="fa-solid fa-link"></i></a>
+            </div>
+            <a href="##" class="swiper__image_box">
+              <img class="w-100" src="images/g3.jpg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper__image_box__text">
+              <p>Ipsum dolor</p>
+              <a href="##"><i class="fa-solid fa-link"></i></a>
+            </div>
+            <a href="##" class="swiper__image_box">
+              <img class="w-100" src="images/g4.jpg" alt="">
+            </a>
+          </div>
+        </div> 
+      </div>     
+    </div>
+  </section>
   </main>
   <footer class="footer">
-    <div class="footer__items">
-      <div class="detail row">
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="post">
-            <h3>lastest tweets</h3>
-            <div class="post__text">loading tweets...</div>
-          </div> 
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="witness">
-            <h3>testimonials</h3>
-            <div class="witness__quote">  
-              <div class="witness__quote__inner"><p>" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum tempora. "</p></div>
-            </div>
-            <div class="witness__people">
-              <div class="witness__people__image_box">
-                <img class="w-100" src="/images/men.jpg" alt="a businessman">
+    <section class="footer__items">
+      <div class="detail">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="post">
+              <h3>lastest tweets</h3>
+              <div class="post__text">loading tweets...</div>
+            </div> 
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="witness">
+              <h3>testimonials</h3>
+              <div class="quote">  
+                <div class="quote-body">
+                  <p class="quote-text">" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum tempora. "</p>
+                </div>
               </div>
-              <div class="witness__people__text">
-                <p>stephen bingham</p>
-                <a href="##">demonlink.org</a>
+              <div class="witness__people">
+                <div class="witness__people__image_box">
+                  <img class="w-100" src="images/men.jpg" alt="a businessman">
+                </div>
+                <div class="witness__people__text">
+                  <p>stephen bingham</p>
+                  <a href="##">demonlink.org</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="contact">
-            <h3>get in touch!</h3>
-            <form class="contact__form">
-              <div class="contact__form__list">
-                <input class="input w-100" type="text" placeholder="name">
-                <input class="input w-100" type="email" placeholder="email">
-                <textarea class="input w-100" col="6" rows="5" placeholder="message"></textarea>
-              </div>
-              <input class="form-dark-button" type="reset" value="clear form">
-              <input class="form-primary-button" type="submit" value="sent!">
-            </form>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="contact">
+              <h3>get in touch!</h3>
+              <form class="contact__form">
+                <div class="contact__form__list">
+                  <input class="input-form w-100" type="text" placeholder="name" name="name">
+                  <input class="input-form w-100" type="email" placeholder="email" name="email">
+                  <textarea class="input-form w-100" col="6" rows="5" placeholder="message" name="message"></textarea>
+                </div>
+                <button class="button-dark" type="reset" name="clear">clear form</button>
+                <button class="button-primary" id="liveToastBtn" type="submit" name="submit">sent!</button>
+                <div class="toast-container position-fixed top-50 left-20 p-3">
+                  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                      <strong class="me-auto">Wow!</strong>
+                      <button type="button" class="btn-close button-primary" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                      Congraduations! you are the 100th people!</br>
+                      We have a special gift for you.
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="flickr">
-            <h3>flickr</h3>
-            <div class="flickr__gallery">
-              <a href="##">
-                <img src="/images/f1.jpg" alt="flickr image">
-              </a> 
-              <a href="##">
-                <img src="/images/f2.jpg" alt="flickr image">
-              </a>
-              <a href="##">
-                <img src="/images/f3.jpg" alt="flickr image">
-              </a>
-              <a href="##">
-                <img src="/images/f4.jpg" alt="flickr image">
-              </a>
-              <a href="##">
-                <img src="/images/f5.jpg" alt="flickr image">
-              </a>
-              <a href="##">
-                <img src="/images/f6.jpg" alt="flickr image">
-              </a>
-              <a href="##">
-                <img src="/images/f7.jpg" alt="flickr image">
-              </a>
-              <a href="##">
-                <img src="/images/f8.jpg" alt="flickr image">
-              </a>
-              <a href="##">
-                <img src="/images/f9.jpg" alt="flickr image">
-              </a>
-              <a href="##">
-                <img src="/images/f10.jpg" alt="flickr image">
-              </a>
-              <a href="##">
-                <img src="/images/f11.jpg" alt="flickr image">
-              </a>
-              <a href="##">
-                <img src="/images/f12.jpg" alt="flickr image">
-              </a> 
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="flickr">
+              <h3>flickr</h3>
+              <div class="flickr__gallery">
+                <a href="##">
+                  <img src="images/f1.jpg" alt="flickr image">
+                </a> 
+                <a href="##">
+                  <img src="images/f2.jpg" alt="flickr image">
+                </a>
+                <a href="##">
+                  <img src="images/f3.jpg" alt="flickr image">
+                </a>
+                <a href="##">
+                  <img src="images/f4.jpg" alt="flickr image">
+                </a>
+                <a href="##">
+                  <img src="images/f5.jpg" alt="flickr image">
+                </a>
+                <a href="##">
+                  <img src="images/f6.jpg" alt="flickr image">
+                </a>
+                <a href="##">
+                  <img src="images/f7.jpg" alt="flickr image">
+                </a>
+                <a href="##">
+                  <img src="images/f8.jpg" alt="flickr image">
+                </a>
+                <a href="##">
+                  <img src="images/f9.jpg" alt="flickr image">
+                </a>
+                <a href="##">
+                  <img src="images/f10.jpg" alt="flickr image">
+                </a>
+                <a href="##">
+                  <img src="images/f11.jpg" alt="flickr image">
+                </a>
+                <a href="##">
+                  <img src="images/f12.jpg" alt="flickr image">
+                </a> 
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <div class="footer__items">
       <div class="footer__items__copyright">
         <p>business planet &copy; 2020 | <a class="copyright_privacy" href="##">privacy policy</a></p>
@@ -397,15 +415,15 @@
           </li>
         </ul>
       </div>
-      <div class="media-group-primary">
-        <div class="media-group-primary-icon">
-          <a href="##" class="media-group-primary-icon-facebook"></a>
-          <a href="##" class="media-group-primary-icon-twitter"></a>
-          <a href="##" class="media-group-primary-icon-about"></a>
-          <a href="##" class="media-group-primary-icon-baseball"></a>
-          <a href="##" class="media-group-primary-icon-bluetooth"></a>
+      <div class="media-group--primary">
+        <div class="media-group--primary__icon">
+          <a href="##" class="media-group--primary__icon__facebook"></a>
+          <a href="##" class="media-group--primary__icon__twitter"></a>
+          <a href="##" class="media-group--primary__icon__about"></a>
+          <a href="##" class="media-group--primary__icon__baseball"></a>
+          <a href="##" class="media-group--primary__icon__bluetooth"></a>
         </div>
-        <div class="media-group-primary-numbers">
+        <div class="media-group--primary__contact">
           <p>call us now : <a href="tel:784-25-43">+1 (777)784-25-43</a></p>
         </div>
       </div>
@@ -414,7 +432,8 @@
 </div>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script src="/swiper.js"></script>
+<script src="js/toast.js"></script>
+<script src="js/swiper.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

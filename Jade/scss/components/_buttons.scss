@@ -1,18 +1,39 @@
 @use '../base/colors';
 
-.primary-button {
-  margin: 0 0 20px 0;
+.button-primary {
+  padding: 2px 10px;
   
   color: white;
-  border: 1px transparent solid;
   background-color: colors.$primary;
+  text-transform: uppercase;
+  border: 1px transparent solid;
+
+  &:active {
+    box-shadow: 0.5px 0.5px 1px 0.5px gray;
+    transform: translate(1px, 1px);
+  }
 }
 
 
-.secondary-light-round-button {
+.button-dark {
+  padding: 2px 10px;
+
+  color: white;
+  background-color: black;
+  text-transform: uppercase;
+  border: 1px transparent solid;
+
+  &:active {
+    box-shadow: 0.5px 0.5px 1px 0.5px gray;
+    transform: translate(1px, 1px);
+  }
+}
+
+.round-button-secondary-light {
+  margin-right: 10px;
+
   width: 50px;
   height: 50px;
-  margin-right: 10px;
   border-radius: 50%;
   background-color: rgb(215, 212, 212);
   border: 1px transparent solid;
@@ -26,30 +47,3 @@
   }
 }
 
-
-// form button
-
-.form-dark-button {
-  border: 1px transparent solid;
-  text-transform: uppercase;
-  padding: 5px 10px;
-  
-  background-color: black;
-  color: white;
-  &:active {
-    box-shadow: 0.5px 0.5px 1px 0.5px gray;
-  }
-}
-
-.form-primary-button {
-  border: 1px transparent solid;
-  text-transform: uppercase;
-  padding: 5px 10px;
-
-  background-color: colors.$primary;
-  color: white;
-
-  &:active {
-    box-shadow: 0.5px 0.5px 1px 0.5px gray;
-  }
-}

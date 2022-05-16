@@ -1,14 +1,4 @@
 
 @mixin background_image {
-  background-image: url("/images/subbg.gif");
-}
-
-@mixin icon_image($x, $y) {
-  display: inline-block;
-
-  width: 27px;
-  height: 27px;
-  background-image: url('../images/social.png');
-  background-repeat: no-repeat;
-  background-position: $x $y;
+  background-image: url("../images/subbg.gif");
 }

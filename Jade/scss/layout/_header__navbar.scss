@@ -4,21 +4,21 @@
 @use '../base/box_shadow';
 
 .header__navbar {
+  position: relative;
+  z-index: 999;
+
   margin-top: 30px;
   
   background: linear-gradient(0deg, white 40%, transparent 40% 100%);
-
-  &__body { 
-    position: relative;
-    z-index: 999;
+  
+  &__body {
 
     @include background.background-image;
     @include box_shadow.box_shadow_not_bottom;
 
     @include breakpoints.tablet_large {
       display: flex;
-      justify-content: space-between;
-      gap: 15px;     
+      justify-content: space-between;   
     }
     
     @include breakpoints.laptop_small {
@@ -31,6 +31,7 @@
       
       @include breakpoints.laptop_small {
         flex: 1 0 0;
+        margin-right: 10px;
 
         @include box_shadow.box_shadow_not_bottom;       
       }
@@ -38,29 +39,22 @@
       .container-fluid {
         flex-direction: row-reverse;
         justify-content: space-between;
-        gap: 10px;
-
-        @include breakpoints.tablet_small {
-          justify-content: space-between;
-        }
 
         .header__navbar__search {
-          padding: 10px;
           display: block;
+          padding: 10px;
 
           @include breakpoints.tablet_large {
             display: none;
           }
         }
-        button {
+        button.navbar-toggler {
           padding: 0 20px;
           border: 1px transparent solid;
         }
       }
-
       .nav-link {
         padding: 15px;
-
         font-size: 14px;
       }
     }
@@ -73,9 +67,9 @@
       display: block;
       padding: 10px;
 
-      @include background.background-image;
       box-shadow: none;
-    }
+      @include background.background-image;
+    } 
     
     @include breakpoints.laptop_small {
       @include box_shadow.box_shadow_not_bottom;

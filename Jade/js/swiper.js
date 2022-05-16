@@ -17,12 +17,12 @@ const swiper = new Swiper('.swiper', {
 
     768: {
       slidesPerView: 2,
-      spaceBetween: 10
+      spaceBetween: 30
     },
 
     992: {
       slidesPerView: 4,
-      spaceBetween: 10
+      spaceBetween: 30
     }
   }
 
