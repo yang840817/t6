@@ -1,0 +1,126 @@
+@use '../base/background';
+@use '../abstracts/breakpoints';
+@use '../base/colors';
+
+.media-group {
+  display: none;
+  
+ @include breakpoints.tablet_small {
+   display: block;
+ }
+
+ &-icon {
+   text-align: right;
+
+   &-facebook {
+     @include background.icon_image(0, 0);
+     &:hover {
+       @include background.icon_image(0, -27px);
+     }
+   }
+   &-twitter {
+     @include background.icon_image(-37px, 0);
+     &:hover {
+       @include background.icon_image(-37px, -27px);
+     }
+   }
+   &-about {
+     @include background.icon_image(-74px, 0);
+     &:hover {
+       @include background.icon_image(-74px, -27px);
+     }
+   }
+   &-baseball {
+     @include background.icon_image(-111px, 0);
+     &:hover {
+       @include background.icon_image(-111px, -27px);
+     }
+   }
+   &-bluetooth {
+     @include background.icon_image(-150px, 0);
+     &:hover {
+       @include background.icon_image(-150px, -27px);
+     }
+   }
+ }
+ &-numbers {
+   text-transform: capitalize;
+
+   p {
+     margin: 0%;
+     font-size: 14px;
+
+     a {
+       color: black;
+
+       &:hover {
+         color: colors.$primary;
+       }
+     }
+   }
+ }
+}
+
+.media-group-opposite {
+  display: block;
+
+  @include breakpoints.tablet_small {
+    display: none;
+  }
+
+  &-icon {
+    text-align: center;
+
+    @media (min-width:768px) {
+      padding: 0;
+      text-align: right;
+    }
+
+    &-facebook {
+      @include background.icon_image(0, -27px);
+      &:hover {
+        @include background.icon_image(0, 0);
+      }
+    }
+    &-twitter {
+      @include background.icon_image(-37px, -27px);
+      &:hover {
+        @include background.icon_image(-37px, 0);
+      }
+    }       
+    &-about {
+      @include background.icon_image(-74px, -27px);
+      &:hover {
+        @include background.icon_image(-74px, 0);
+      }
+    }
+    &-baseball {
+      @include background.icon_image(-111px, -27px);
+      &:hover {
+        @include background.icon_image(-111px, 0);
+      }
+    }
+    &-bluetooth {
+      @include background.icon_image(-150px, -27px);
+      &:hover {
+        @include background.icon_image(-150px, 0);
+      }
+    }
+  }
+  &-numbers {
+    text-transform: capitalize;
+
+    p {
+      margin: 0%;
+      font-size: 14px;
+
+      a {
+        color: colors.$primary;
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}

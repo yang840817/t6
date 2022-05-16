@@ -1,0 +1,10 @@
+@use '../abstracts/breakpoints';
+
+
+body {
+  background-image: url("/images/bg.jpg");
+  
+  @include breakpoints.mobile_large {
+    background-image: linear-gradient(180deg, rgb(22, 22, 22) 0 90px, transparent 90px 92%, rgb(22, 22, 22) 92% 100%), url("/images/bg.jpg");
+  }
+}

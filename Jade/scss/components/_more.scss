@@ -1,7 +1,6 @@
 @use '../base/colors';
 
-@mixin more_text {
-  
+%more_ellipsis {
   color: black;
   font-size: 14px;
   text-transform: capitalize;
