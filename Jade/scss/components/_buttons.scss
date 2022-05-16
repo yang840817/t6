@@ -1,76 +1,55 @@
 @use '../base/colors';
 
-
-.advantages__body__text {
-
-    button {
-      flex: 0 0 auto;
-      width: 50px;
-      height: 50px;
-      margin-right: 10px;
-      border-radius: 50%;
-      background-color: rgb(215, 212, 212);
-      border: 1px transparent solid;
-
-      &:hover {
-        background-color: colors.$primary;
-      }
-
-      i {
-        color: white;
-      }
-   }
+.primary-button {
+  margin: 0 0 20px 0;
+  
+  color: white;
+  border: 1px transparent solid;
+  background-color: colors.$primary;
 }
 
-.news__body__list__text {
 
-  button {
-    margin: 0 0 20px 0;
-    
-    width: 90px;
-    height: 30px;
+.secondary-light-round-button {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: rgb(215, 212, 212);
+  border: 1px transparent solid;
 
-    color: white;
-    border: 1px transparent solid;
+  &:hover {
     background-color: colors.$primary;
   }
-}
 
-.gallery {
-  &__button {
-
-    button {
-      padding: 2px;
-
-      background-color: transparent;
-      border: 1px solid transparent;
-    }
-    i {
-      color: rgb(171, 170, 170);
-      font-size: 16px;
-    }
+  i {
+    color: white;
   }
 }
 
 
+// form button
 
-.contact__form__button {
+.form-dark-button {
+  border: 1px transparent solid;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  
+  background-color: black;
+  color: white;
+  &:active {
+    box-shadow: 0.5px 0.5px 1px 0.5px gray;
+  }
+}
+
+.form-primary-button {
   border: 1px transparent solid;
   text-transform: uppercase;
   padding: 5px 10px;
 
-  &:active {
-    box-shadow: 0.5px 0.5px 1px 0.5px gray;
-
-  }
-}
-
-.contact__form__button.clear {
-  background-color: black;
-  color: white;
-}
-
-.contact__form__button.sent {
   background-color: colors.$primary;
   color: white;
+
+  &:active {
+    box-shadow: 0.5px 0.5px 1px 0.5px gray;
+  }
 }

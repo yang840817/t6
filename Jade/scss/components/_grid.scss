@@ -1,0 +1,16 @@
+.flickr {
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+
+    a {
+      &:hover {
+        opacity: 0.8;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

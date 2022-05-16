@@ -1,17 +1,7 @@
 @use '../abstracts/breakpoints';
 @use '../base/box_shadow';
-@use '../base/colors';
 @use '../base/background';
 
-
-%icon_bg_image {
-  display: inline-block;
-
-  width: 27px;
-  height: 27px;
-  background-image: url('../images/social.png');
-  background-repeat: no-repeat;
-}
 
 .header {
   @include background.background-image;
@@ -30,11 +20,22 @@
       justify-content: space-between;
     }
 
-
     &__logo {
       h1 {
         margin: 0;
       }
+    }
+  }
+
+  .media-group-dark {
+    display: none;
+  
+    @include breakpoints.tablet_small {
+      display: block;
+    }
+
+    &-icon {
+      text-align: right;
     }
   }
 }

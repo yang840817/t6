@@ -1,6 +1,5 @@
 @use '../abstracts/breakpoints';
 @use '../base/box_shadow';
-@use '../base/colors';
 @use '../base/fonts';
 @use '../base/background';
 @use '../components/cards';
@@ -23,37 +22,28 @@
         transform: translateY(-50px);
         }
 
-      &__body {   
+      .secondary-light-card {   
         padding: 20px 10px;
         height: 100%;
-
-        @include cards.card_body;
         
-        @include breakpoints.mobile_large {
+        @include breakpoints.tablet_small {
           padding: 40px 10px 20px 10px;
         }
        
-        h2 {
-          @include cards.card_title;
-        }
         
-        p {
+        &-text {
           display: none;
           
           @include breakpoints.mobile_large {
             display: block;
-
-            @include cards.card_text;
           }
         }
 
-        button {
+        &-button {
           display: none;
           
           @include breakpoints.mobile_large {
-            display: inline-block;
-
-            @include cards.card_button;        
+            display: inline-block;    
           }
         }    
       }
@@ -119,12 +109,16 @@
 
             border-bottom: 1px solid rgb(204, 203, 203);
 
+            .secondary-light-round-button {
+              flex: 0 0 auto;
+            }
+
             p {
               margin: 0; 
 
               font-size: 16px;
               color: rgb(126, 125, 125);
-            }
+            }    
           }
         }
       }
@@ -179,9 +173,9 @@
   }
 
   &__items {
-    .gallery {
+    .multi_carousel {
 
-      &__title {
+      &__header {
         margin: 0 0 30px 0;
 
         display: flex;

@@ -1,7 +1,21 @@
 @use "../base/colors";
 
-.swiper {
 
+.swiper-button {
+  button {
+    padding: 2px;
+
+    background-color: transparent;
+    border: 1px solid transparent;
+  }
+  i {
+    color: rgb(171, 170, 170);
+    font-size: 16px;
+  }
+}
+
+
+.swiper {
   .swiper-slide {
     position: relative;
     overflow: hidden;
@@ -47,9 +61,7 @@
         }
       }
     }
-
   }
-
 }
 
 

@@ -1,8 +1,7 @@
-@use '../base/colors';
-@use '../base/background';
-@use '../base/box_shadow';
 @use '../abstracts/breakpoints';
-@use '../components/forms';
+@use '../base/background';
+@use '../base/colors';
+@use '../base/box_shadow';
 
 .header__navbar {
   margin-top: 30px;
@@ -41,6 +40,10 @@
         justify-content: space-between;
         gap: 10px;
 
+        @include breakpoints.tablet_small {
+          justify-content: space-between;
+        }
+
         .header__navbar__search {
           padding: 10px;
           display: block;
@@ -48,25 +51,10 @@
           @include breakpoints.tablet_large {
             display: none;
           }
-
-          &__body {
-            @include forms.search_body;
-
-            input {
-              @include forms.search_input;
-            }
-            button {
-              @include forms.search_button;
-            }
-          }
         }
-
         button {
-          border: 1px transparent;
-        }
-
-        @include breakpoints.tablet_small {
-          justify-content: space-between;
+          padding: 0 20px;
+          border: 1px transparent solid;
         }
       }
 
@@ -91,16 +79,6 @@
     
     @include breakpoints.laptop_small {
       @include box_shadow.box_shadow_not_bottom;
-    }
-
-    &__body {
-      @include forms.search_body;
-      input {
-        @include forms.search_input;
-      }
-      button {
-        @include forms.search_button;
-      }
     }
   }
 }

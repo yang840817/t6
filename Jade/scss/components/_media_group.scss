@@ -2,16 +2,9 @@
 @use '../abstracts/breakpoints';
 @use '../base/colors';
 
-.media-group {
-  display: none;
-  
- @include breakpoints.tablet_small {
-   display: block;
- }
+.media-group-dark {
 
  &-icon {
-   text-align: right;
-
    &-facebook {
      @include background.icon_image(0, 0);
      &:hover {
@@ -49,7 +42,6 @@
    p {
      margin: 0%;
      font-size: 14px;
-
      a {
        color: black;
 
@@ -61,21 +53,9 @@
  }
 }
 
-.media-group-opposite {
-  display: block;
-
-  @include breakpoints.tablet_small {
-    display: none;
-  }
+.media-group-primary {
 
   &-icon {
-    text-align: center;
-
-    @media (min-width:768px) {
-      padding: 0;
-      text-align: right;
-    }
-
     &-facebook {
       @include background.icon_image(0, -27px);
       &:hover {
@@ -113,7 +93,6 @@
     p {
       margin: 0%;
       font-size: 14px;
-
       a {
         color: colors.$primary;
 

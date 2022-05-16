@@ -3,8 +3,6 @@
 @use '../base/colors';
 @use '../base/fonts';
 @use '../base/background';
-@use '../layout/header';
-@use '../components/forms';
 
 .footer {
   @include background.background-image;
@@ -149,10 +147,6 @@
 
         &__form {
           &__list {
-
-            input, textarea {
-              @include forms.input;
-            }
             textarea {
               resize: none;
             }
@@ -160,7 +154,7 @@
         }
       }
 
-      .media {
+      .flickr {
         h3 {
           margin: 0 0 30px 0;
 
@@ -170,22 +164,6 @@
             @include fonts.h3_font_25;
           }
         }
-
-        &__gallery {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 5px;
-
-          &__box {
-            &:hover {
-              opacity: 0.8;
-            }
-            img {
-              width: 100%;
-            }
-          }
-        }
-
       }
     }
   }
@@ -240,6 +218,23 @@
         display: flex;       
       }
     } 
+
+    .media-group-primary {
+      display: block;
+
+      @include breakpoints.tablet_small {
+        display: none;
+      }
+
+      &-icon {
+        text-align: center;
+ 
+        @media (min-width:768px) {
+          padding: 0;
+          text-align: right;
+        }
+      }
+    }
   }
 }
 
