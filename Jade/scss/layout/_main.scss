@@ -1,5 +1,6 @@
 @use '../abstracts/breakpoints';
-@use '../base/box_shadow';
+@use '../base/box-shadow';
+@use '../base/colors';
 @use '../base/fonts';
 @use '../base/background';
 @use '../components/cards';
@@ -8,38 +9,43 @@
 .main {  
  
   @include background.background-image;
-  @include box_shadow.box_shadow;
+  @include box-shadow.box-shadow;
 
-  &__items {
+  &__content {
     padding: 0 40px 40px 40px;
 
     .service {
       margin-top: 20px;
       
-      @include breakpoints.tablet_large {
+      @include breakpoints.L-size {
         margin-top: 0;
         transform: translateY(-50px);
         }
 
-      .card-secondary-light {   
+      .card-secondary--light {   
         height: 100%;
         
-        @include breakpoints.tablet_small {
+        @include breakpoints.M-size {
           padding: 40px 10px 20px 10px;
         }
         
         &__text {
           display: none;
           
-          @include breakpoints.mobile_large {
+          @include breakpoints.S-size {
             display: block;
           }
         }
 
         &__button {
           display: none;
+          color: black;
+
+          &:hover {
+            color: black;
+          }
           
-          @include breakpoints.mobile_large {
+          @include breakpoints.S-size {
             display: inline-block;    
           }
         }    
@@ -52,17 +58,17 @@
       .col-lg-4:not(:first-of-type) {
         margin: 30px 0 0 0;
 
-        @include breakpoints.tablet_small {
+        @include breakpoints.M-size {
           margin-top: 0;
         }
       }
 
       .history {
         h3 {
-          @extend %title_margin;
+          @include fonts.title_margin;
           @include fonts.title_font_25;
 
-          @include breakpoints.laptop_large {
+          @include breakpoints.XXL-size {
             @include fonts.title_font_30;
           }
         }
@@ -74,7 +80,7 @@
             p {
               margin: 0;
               font-size: 14px;
-              color: rgb(126, 125, 125);
+              color: colors.$gray-600;
             }
             
             a {
@@ -86,10 +92,10 @@
 
       .advantages {
         h3 {
-          @extend %title_margin;
+          @include fonts.title_margin;
           @include fonts.title_font_25;
 
-          @include breakpoints.laptop_large {
+          @include breakpoints.XXL-size {
             @include fonts.title_font_30;
           }
         }
@@ -103,7 +109,7 @@
             display: flex;
             align-items: baseline;
 
-            border-bottom: 1px solid rgb(204, 203, 203);
+            border-bottom: 1px solid colors.$gray-400;
 
             .round-button-secondary-light {
               flex: 0 0 auto;
@@ -111,9 +117,7 @@
 
             p {
               margin: 0; 
-
-              font-size: 16px;
-              color: rgb(126, 125, 125);
+              color: colors.$gray-600;
             }    
           }
         }
@@ -121,10 +125,10 @@
 
       .news {
         h3 {
-          @extend %title_margin;
+          @include fonts.title_margin;
           @include fonts.title_font_25;
 
-          @include breakpoints.laptop_large {
+          @include breakpoints.XXL-size {
             @include fonts.title_font_30;
           }
         }
@@ -136,13 +140,25 @@
 
           &__list {
             flex: 1 1 0;
+            display: flex;
+
+            &__image-box {
+              flex: 1 1 0;       
+              img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+              }
+            }
             
             &__text {
+              flex: 2 0 0;
+              margin-left: 20px;
               p {
                 margin: 20px 0 0 0;
 
                 font-size: 14px;
-                color: rgb(126, 125, 125);
+                color: colors.$gray-600;;
               }
                    
               a {
@@ -150,10 +166,10 @@
               }
             }
           }
-          @include breakpoints.tablet_small {
+          @include breakpoints.M-size {
             flex-direction: row;
           }
-          @include breakpoints.tablet_large {
+          @include breakpoints.L-size {
             flex-direction: column;
           }
 
@@ -162,12 +178,12 @@
     }
 
     hr {
-      margin: 40px;
+      margin: 40px 0;
     }
 
-    .multi_carousel {
+    .multi-carousel {
       &__header {
-        @extend %title_margin;
+        @include fonts.title_margin;
 
         display: flex;
         justify-content: space-between;
@@ -176,7 +192,7 @@
         h3 {
           @include fonts.title_font_25;
 
-          @include breakpoints.laptop_large {
+          @include breakpoints.XXL-size {
             @include fonts.title_font_30;
           }
         }

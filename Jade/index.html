@@ -14,36 +14,34 @@
 <body>
 <div class="container p-0">
   <header class="header">   
-    <div class="header__items">
-      <div class="header__items__logo">
-        <h1 class="header__items__logo_image_box">
-          <a href="##"><img class="w-100" src="images/logo.png" alt="business planet"></a>
-        </h1>
-      </div>
-      <div class="header__items__media">
-        <div class="media-group--dark">
-          <div class="media-group--dark__icon">
-            <a href="##" class="media-group--dark__icon__facebook"></a>
-            <a href="##" class="media-group--dark__icon__twitter"></a>
-            <a href="##" class="media-group--dark__icon__about"></a>
-            <a href="##" class="media-group--dark__icon__baseball"></a>
-            <a href="##" class="media-group--dark__icon__bluetooth"></a>
-          </div>
-          <div class="media-group--dark__contact">
-            <p>call us now : <a href="tel:784-25-43">+1 (777)784-25-43</a></p>
-          </div>
+    <div class="header__logo">
+      <h1 class="header__logo_image_box">
+        <a href="##"><img class="w-100" src="images/logo.png" alt="business planet"></a>
+      </h1>
+    </div>
+    <div class="header__media">
+      <div class="media-group--dark">
+        <div class="media-group--dark__icon">
+          <a href="##" class="media-group--dark__icon__facebook"></a>
+          <a href="##" class="media-group--dark__icon__twitter"></a>
+          <a href="##" class="media-group--dark__icon__about"></a>
+          <a href="##" class="media-group--dark__icon__baseball"></a>
+          <a href="##" class="media-group--dark__icon__bluetooth"></a>
+        </div>
+        <div class="media-group--dark__contact">
+          <p>call us now : <a href="tel:784-25-43">+1 (777)784-25-43</a></p>
         </div>
       </div>
-    </div>     
+    </div>  
   </header>
-  <header class="header__navbar">
-    <div class="header__navbar__body">
+  <header class="navigation">
+    <div class="navigation__navbar">
       <nav class="navbar navbar-expand-md navbar-light p-0">
         <div class="container-fluid p-0">
-          <div class="header__navbar__search">
+          <div class="navigation__search">
             <form class="search">
-              <input type="search" placeholder="search the sites...">
-              <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <input class="search__input" type="search" placeholder="search the sites...">
+              <button class="search__button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
           </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -90,17 +88,17 @@
           </div>
         </div>
       </nav> 
-      <div class="header__navbar__search">
+      <div class="navigation__search">
         <form class="search">
-          <input type="search" placeholder="search the sites...">
-          <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <input class="search__input" type="search" name="text" placeholder="search the sites...">
+          <button class="search__button" type="submit" name="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
       </div>
     </div>  
   </header>
   <main class="main">
     <div class="main__carousel">
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="images/banner3.jpg" class="d-block w-100" alt="Two businessman are pulling each other.">
@@ -112,57 +110,57 @@
             <img src="images/banner1.jpg" class="d-block w-100" alt="A businessman is touching VR money">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
     </div>
-  <section class="main__items">
+  <section class="main__content">
     <div class="service">
       <div class="row g-3">
         <div class="col-12 col-md-6 col-lg-3">
-          <div class="card-secondary-light">
-            <h2 class="card-secondary-light__title">growth strategies</h2>
-            <div class="card-secondary-light__image-box">
+          <div class="card-secondary--light">
+            <h2 class="card-secondary--light__title">growth strategies</h2>
+            <div class="card-secondary--light__image-box">
               <a href="##"><img src="images/p1.png" alt="pie charts"></a>
             </div>
-            <p class="card-secondary-light__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam! Laboriosam, exercitationem. Nihil consectetur magnam aliquid.</p>
-            <button class="card-secondary-light__button" type="button">more</button>
+            <p class="card-secondary--light__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam! Laboriosam, exercitationem. Nihil consectetur magnam aliquid.</p>
+            <a class="card-secondary--light__button" href="##">more</a>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-3">
-          <div class="card-secondary-light">
-            <h2 class="card-secondary-light__title">perfect support</h2>
-            <div class="card-secondary-light__image-box">
+          <div class="card-secondary--light">
+            <h2 class="card-secondary--light__title">perfect support</h2>
+            <div class="card-secondary--light__image-box">
               <a href="##"><img src="images/p2.png" alt="a computer"></a>
             </div>
-            <p class="card-secondary-light__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt illum perferendis aspernatur! Nemo suscipit placeat aperiam aliquid.</p>
-            <button class="card-secondary-light__button" type="button">more</button>
+            <p class="card-secondary--light__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt illum perferendis aspernatur! Nemo suscipit placeat aperiam aliquid.</p>
+            <a class="card-secondary--light__button" href="##">more</a>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-3">
-          <div class="card-secondary-light">
-            <h2 class="card-secondary-light__title">parthers programs</h2>
-            <div class="card-secondary-light__image-box">
+          <div class="card-secondary--light">
+            <h2 class="card-secondary--light__title">parthers programs</h2>
+            <div class="card-secondary--light__image-box">
               <a href="##"><img src="images/p3.png" alt="a briefcase"></a>
             </div>
-            <p class="card-secondary-light__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam! Laboriosam, exercitationem. Nihil consectetur magnam aliquid.</p>
-            <button class="card-secondary-light__button" type="button">more</button>
+            <p class="card-secondary--light__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam! Laboriosam, exercitationem. Nihil consectetur magnam aliquid.</p>
+            <a class="card-secondary--light__button" href="##">more</a>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-3">
-          <div class="card-secondary-light">
-            <h2 class="card-secondary-light__title">premium service</h2>
-            <div class="card-secondary-light__image-box">
+          <div class="card-secondary--light">
+            <h2 class="card-secondary--light__title">premium service</h2>
+            <div class="card-secondary--light__image-box">
               <a href="##"><img src="images/p4.png" alt="a gear"></a>
             </div>
-            <p class="card-secondary-light__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam! Laboriosam, exercitationem. Nihil consectetur magnam aliquid.</p>
-            <button class="card-secondary-light__button" type="button">more</button>
+            <p class="card-secondary--light__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam! Laboriosam, exercitationem. Nihil consectetur magnam aliquid.</p>
+            <a class="card-secondary--light__button" href="##">more</a>
           </div>
         </div>
       </div>
@@ -209,20 +207,20 @@
           <div class="news">
             <h3>news & events</h3>
             <div class="news__body">
-              <div class="news__body__list row gx-3">
-                <div class="col-5 news__body__list__image_box">
-                  <img class="w-100" src="images/news1.jpg" alt="a businessman.">
+              <div class="news__body__list">
+                <div class="news__body__list__image-box">
+                  <img src="images/news1.jpg" alt="a businessman.">
                 </div>
-                <div class="col-7 news__body__list__text">
+                <div class="news__body__list__text">
                   <label class="label-primary">12.12.12</label>
                   <p>Lorem, ipsum dolor sit amet consectetur. repellat enim omnis <span><a href="##">more</a></span></p>
                 </div>
               </div>
-              <div class="news__body__list row gx-3">
-                <div class="col-5 news__body__list__image_box">
-                  <img class="w-100" src="images/news2.jpg" alt="a business meeting.">
+              <div class="news__body__list">
+                <div class="news__body__list__image-box">
+                  <img src="images/news2.jpg" alt="a business meeting.">
                 </div>
-                <div class="col-7 news__body__list__text">
+                <div class="news__body__list__text">
                   <label class="label-primary">12.12.12</label>
                   <p>Dolor sit amet consectetur. voluptatibus repellat enim omnis <span><a href="##">more</a></span></p>
                 </div>
@@ -233,8 +231,8 @@
       </div>
     </div>
     <hr> 
-    <div class="multi_carousel">
-      <div class="multi_carousel__header">  
+    <div class="multi-carousel">
+      <div class="multi-carousel__header">  
         <h3>features work</h3>
         <div class="swiper-buttons">
           <button type="button" class="prev__button">
@@ -289,7 +287,7 @@
   </section>
   </main>
   <footer class="footer">
-    <section class="footer__items">
+    <section class="footer__information">
       <div class="detail">
         <div class="row">
           <div class="col-12 col-md-6 col-lg-3">
@@ -322,24 +320,12 @@
               <h3>get in touch!</h3>
               <form class="contact__form">
                 <div class="contact__form__list">
-                  <input class="input-form w-100" type="text" placeholder="name" name="name">
-                  <input class="input-form w-100" type="email" placeholder="email" name="email">
-                  <textarea class="input-form w-100" col="6" rows="5" placeholder="message" name="message"></textarea>
+                  <input class="input w-100" type="text" placeholder="name" name="name">
+                  <input class="input w-100" type="email" placeholder="email" name="email">
+                  <textarea class="input w-100" col="6" rows="5" placeholder="message" name="message"></textarea>
                 </div>
                 <button class="button-dark" type="reset" name="clear">clear form</button>
                 <button class="button-primary" id="liveToastBtn" type="submit" name="submit">sent!</button>
-                <div class="toast-container position-fixed top-50 left-20 p-3">
-                  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                    <div class="toast-header">
-                      <strong class="me-auto">Wow!</strong>
-                      <button type="button" class="btn-close button-primary" data-bs-dismiss="toast" aria-label="Close"></button>
-                    </div>
-                    <div class="toast-body">
-                      Congraduations! you are the 100th people!</br>
-                      We have a special gift for you.
-                    </div>
-                  </div>
-                </div>
               </form>
             </div>
           </div>
@@ -389,11 +375,11 @@
         </div>
       </div>
     </section>
-    <div class="footer__items">
-      <div class="footer__items__copyright">
+    <div class="footer__contact">
+      <div class="footer__contact__copyright">
         <p>business planet &copy; 2020 | <a class="copyright_privacy" href="##">privacy policy</a></p>
       </div>
-      <div class="footer__items__nav">
+      <div class="footer__contact__nav">
         <ul class="nav navbar-light">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="##">home</a>

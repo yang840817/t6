@@ -1,6 +1,7 @@
+@forward 'reset';
 @forward 'footer';
 @forward 'header';
 @forward 'main';
 @forward 'container';
-@forward 'header__navbar';
-@forward 'background';
+@forward 'navigation';
+@forward 'body';

@@ -13,7 +13,7 @@
         object-position: right center;
       }
 
-      @include breakpoints.mobile_large {
+      @include breakpoints.S-size {
         height: auto;
 
         img {

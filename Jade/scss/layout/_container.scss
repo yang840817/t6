@@ -1,7 +1,7 @@
 @use '../abstracts/breakpoints';
 
 
-@include breakpoints.laptop_large {
+@include breakpoints.XXL-size {
   .container {
     max-width: 1250px;
   }

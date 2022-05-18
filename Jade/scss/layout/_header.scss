@@ -1,45 +1,43 @@
 @use '../abstracts/breakpoints';
-@use '../base/box_shadow';
+@use '../base/box-shadow';
 @use '../base/background';
 
 
 .header {
+  padding: 10px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   @include background.background-image;
-  @include box_shadow.box-shadow;
+  @include box-shadow.box-shadow;
 
-  &__items {
-    padding: 10px;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    @include breakpoints.tablet_small {
-      padding: 35px;
-      justify-content: space-between;
-    }
+  @include breakpoints.M-size {
+    padding: 35px;
+    justify-content: space-between;
+  }
 
-    &__logo {
-      h1 {
-        margin: 0;
-        a {
-          display: inline-block;
-        }
-      }
-    }
-
-    &__media {
-      .media-group--dark {
-        display: none;
-      
-        @include breakpoints.tablet_small {
-          display: block;
-        }
-    
-        &__icon {
-          text-align: right;
-        }
+  &__logo {
+    h1 {
+      margin: 0;
+      a {
+        display: inline-block;
       }
     }
   }
+
+  &__media {
+    .media-group--dark {
+      display: none;
+    
+      @include breakpoints.M-size {
+        display: block;
+      }
+  
+      &__icon {
+        text-align: right;
+      }
+    }
+  } 
 }

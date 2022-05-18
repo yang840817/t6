@@ -1,8 +1,7 @@
-@use '../abstracts/breakpoints';
 @use '../base/colors';
 
 
-.card-secondary-light {
+.card-secondary--light {
   padding: 20px 10px;
 
   display: flex;
@@ -11,7 +10,7 @@
   gap: 20px;
   
   text-align: center;
-  background-color: colors.$secondary_light;
+  background-color: colors.$gray-200;
   
   &:hover {
     background-color: rgba(58, 58, 58, 0.7);
@@ -41,11 +40,11 @@
     margin-top: auto;
     padding: 3px 15px;
     
-    background-color: rgb(206, 202, 202);
+    background-color: colors.$gray-400;
     border: 1px solid transparent;
     
     &:active {
-      box-shadow: 0.5px 0.5px 1px 0.5px rgb(67, 66, 66);
+      box-shadow: 0.5px 0.5px 1px 0.5px colors.$gray-900;
       transform: translate(1px, 1px);
      }
   }

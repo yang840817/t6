@@ -1,34 +1,34 @@
-@mixin mobile_small {
+@mixin XS-size {
   @media (min-width: 350px) {
     @content;
   }
 }
 
-@mixin mobile_large {
+@mixin S-size {
   @media (min-width: 576px) {
     @content;
   }
 }
 
-@mixin tablet_small {
+@mixin M-size {
   @media (min-width: 768px) {
     @content;
   }
 }
 
-@mixin tablet_large {
+@mixin L-size {
   @media (min-width: 992px) {
     @content;
   }
 }
 
-@mixin laptop_small {
+@mixin XL_size {
   @media (min-width: 1200px) {
     @content;
   }
 }
 
-@mixin laptop_large {
+@mixin XXL-size {
   @media (min-width: 1440px) {
     @content;
   }

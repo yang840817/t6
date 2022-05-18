@@ -1,15 +1,14 @@
-@use '../abstracts/breakpoints';
 @use '../base/colors';
 
 .quote {
  
-  filter: drop-shadow(1px 0 0 rgb(206, 205, 205)) drop-shadow(0 1px 0 rgb(206, 205, 205)) drop-shadow(-1px 0 0 rgb(206, 205, 205)) drop-shadow(0 -1px 0 rgb(206, 205, 205));
+  filter: drop-shadow(1px 0 0 colors.$gray-400) drop-shadow(0 1px 0 colors.$gray-400) drop-shadow(-1px 0 0 colors.$gray-400) drop-shadow(0 -1px 0 colors.$gray-400);
 
   &-body {
     padding: 20px;
 
     border-radius: 1px;
-    background-color: colors.$secondary_light;
+    background-color: colors.$gray-200;
 
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 11% 76%, 0 84%, 0 71%, 0 39%);
   }

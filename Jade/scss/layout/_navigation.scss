@@ -1,27 +1,25 @@
 @use '../abstracts/breakpoints';
 @use '../base/background';
 @use '../base/colors';
-@use '../base/box_shadow';
+@use '../base/box-shadow';
+@use '../base/z-index';
 
-.header__navbar {
+.navigation {
   position: relative;
-  z-index: 999;
-
   margin-top: 30px;
   
+  @include z-index.fixed;
   background: linear-gradient(0deg, white 40%, transparent 40% 100%);
   
-  &__body {
+  &__navbar {
 
     @include background.background-image;
-    @include box_shadow.box_shadow_not_bottom;
-
-    @include breakpoints.tablet_large {
-      display: flex;
-      justify-content: space-between;   
-    }
+    @include box-shadow.box-shadow--not-bottom;
     
-    @include breakpoints.laptop_small {
+    @include breakpoints.L-size {
+      display: flex;
+      justify-content: space-between; 
+      
       box-shadow: none;
       background: transparent;
     }
@@ -29,27 +27,28 @@
     .navbar {
       @include background.background-image;
       
-      @include breakpoints.laptop_small {
+      @include breakpoints.L-size {
         flex: 1 0 0;
         margin-right: 10px;
 
-        @include box_shadow.box_shadow_not_bottom;       
+        @include box-shadow.box-shadow--not-bottom;       
       }
 
       .container-fluid {
         flex-direction: row-reverse;
         justify-content: space-between;
 
-        .header__navbar__search {
+        .navigation__search {
+          width: 40%;
           display: block;
-          padding: 10px;
+          padding: 10px 15px;
 
-          @include breakpoints.tablet_large {
+          @include breakpoints.L-size {
             display: none;
           }
         }
         button.navbar-toggler {
-          padding: 0 20px;
+          width: 15%;
           border: 1px transparent solid;
         }
       }
@@ -63,38 +62,35 @@
   &__search { 
     display: none;
 
-    @include breakpoints.tablet_large {
+    @include breakpoints.L-size {
       display: block;
-      padding: 10px;
+      padding: 10px 15px;
+      width: 300px;
 
-      box-shadow: none;
+      @include box-shadow.box-shadow--not-bottom;
       @include background.background-image;
     } 
-    
-    @include breakpoints.laptop_small {
-      @include box_shadow.box_shadow_not_bottom;
-    }
   }
 }
 
 
-.header__navbar__body .navbar-light .navbar-nav .nav-item .nav-link.active {
+.navigation__navbar .navbar-light .navbar-nav .nav-item .nav-link.active {
   color: white;
   background-color: colors.$primary;
 }
 
-.header__navbar__body .navbar-light .navbar-nav .nav-item .nav-link {
+.navigation__navbar .navbar-light .navbar-nav .nav-item .nav-link {
   color: black;
-  border-right: 1px colors.$secondary_light solid;
+  border-right: 1px colors.$gray-200 solid;
   text-transform: uppercase;
 }
 
-.header__navbar__body .navbar-light .navbar-nav .nav-item .nav-link:hover {
+.navigation__navbar .navbar-light .navbar-nav .nav-item .nav-link:hover {
   color: white;
   background-color: colors.$primary;
 }
 
-.header__navbar__body button:focus {
+.navigation__navbar button:focus {
   box-shadow: 0.1px 0.1px 2px 2px colors.$primary, -0.1px -0.1px 2px 2px colors.$primary ;
 }
 
