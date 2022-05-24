@@ -1,6 +1,5 @@
-@use '../abstracts/breakpoints';
-@use '../base/colors';
-@use '../components/icon';
+@use '../base';
+@use 'icon';
 
 .media-group--dark {
 
@@ -47,7 +46,7 @@
        color: black;
 
        &:hover {
-         color: colors.$primary;
+         color: base.$primary;
         }
       }
     }
@@ -95,7 +94,7 @@
       margin: 0%;
       font-size: 14px;
       a {
-        color: colors.$primary;
+        color: base.$primary;
 
         &:hover {
           color: black;

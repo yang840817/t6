@@ -1,22 +1,19 @@
-@use '../abstracts/breakpoints';
-@use '../base/background';
-@use '../base/colors';
-@use '../base/box-shadow';
-@use '../base/z-index';
+@use '../abstracts';
+@use '../base';
 
 .navigation {
   position: relative;
   margin-top: 30px;
   
-  @include z-index.fixed;
+  @include base.fixed;
   background: linear-gradient(0deg, white 40%, transparent 40% 100%);
   
   &__navbar {
 
-    @include background.background-image;
-    @include box-shadow.box-shadow--not-bottom;
+    @include base.background-image;
+    @include base.box-shadow--not-bottom;
     
-    @include breakpoints.L-size {
+    @include abstracts.L-size {
       display: flex;
       justify-content: space-between; 
       
@@ -25,13 +22,13 @@
     }
 
     .navbar {
-      @include background.background-image;
+      @include base.background-image;
       
-      @include breakpoints.L-size {
+      @include abstracts.L-size {
         flex: 1 0 0;
         margin-right: 10px;
 
-        @include box-shadow.box-shadow--not-bottom;       
+        @include base.box-shadow--not-bottom;       
       }
 
       .container-fluid {
@@ -43,7 +40,7 @@
           display: block;
           padding: 10px 15px;
 
-          @include breakpoints.L-size {
+          @include abstracts.L-size {
             display: none;
           }
         }
@@ -62,13 +59,13 @@
   &__search { 
     display: none;
 
-    @include breakpoints.L-size {
+    @include abstracts.L-size {
       display: block;
       padding: 10px 15px;
       width: 300px;
 
-      @include box-shadow.box-shadow--not-bottom;
-      @include background.background-image;
+      @include base.box-shadow--not-bottom;
+      @include base.background-image;
     } 
   }
 }
@@ -76,25 +73,25 @@
 
 .navigation__navbar .navbar-light .navbar-nav .nav-item .nav-link.active {
   color: white;
-  background-color: colors.$primary;
+  background-color: base.$primary;
 }
 
 .navigation__navbar .navbar-light .navbar-nav .nav-item .nav-link {
   color: black;
-  border-right: 1px colors.$gray-200 solid;
+  border-right: 1px base.$gray-200 solid;
   text-transform: uppercase;
 }
 
 .navigation__navbar .navbar-light .navbar-nav .nav-item .nav-link:hover {
   color: white;
-  background-color: colors.$primary;
+  background-color: base.$primary;
 }
 
 .navigation__navbar button:focus {
-  box-shadow: 0.1px 0.1px 2px 2px colors.$primary, -0.1px -0.1px 2px 2px colors.$primary ;
+  box-shadow: 0.1px 0.1px 2px 2px base.$primary, -0.1px -0.1px 2px 2px base.$primary ;
 }
 
 .dropdown-item:focus, .dropdown-item:hover, .dropdown-item.active, .dropdown-item:active {
   color: white;
-  background-color: colors.$primary;
+  background-color: base.$primary;
 }

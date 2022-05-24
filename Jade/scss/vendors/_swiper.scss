@@ -1,4 +1,4 @@
-@use "../base/colors";
+@use "../base";
 
 
 .swiper-buttons {
@@ -9,7 +9,7 @@
     border: 1px solid transparent;
   }
   i {
-    color: colors.$gray-400;
+    color: base.$gray-400;
     font-size: 16px;
   }
 }
@@ -34,7 +34,7 @@
         left: -25%;
         right:-25%;
         
-        background-color: colors.$gray-1200;
+        background-color: base.$gray-1200;
         opacity: 0;
   
         p {
@@ -43,7 +43,7 @@
         }
   
         a {
-          color: colors.$primary;
+          color: base.$primary;
         }
        }
     }

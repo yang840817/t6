@@ -1,15 +1,11 @@
-@use '../abstracts/breakpoints';
-@use '../base/box-shadow';
-@use '../base/colors';
-@use '../base/fonts';
-@use '../base/background';
-@use '../components/cards';
-@use '../components/more';
+@use '../abstracts';
+@use '../base';
+@use '../components';
 
 .main {  
  
-  @include background.background-image;
-  @include box-shadow.box-shadow;
+  @include base.background-image;
+  @include base.box-shadow;
 
   &__content {
     padding: 0 40px 40px 40px;
@@ -17,7 +13,7 @@
     .service {
       margin-top: 20px;
       
-      @include breakpoints.L-size {
+      @include abstracts.L-size {
         margin-top: 0;
         transform: translateY(-50px);
         }
@@ -25,14 +21,14 @@
       .card-secondary--light {   
         height: 100%;
         
-        @include breakpoints.M-size {
+        @include abstracts.M-size {
           padding: 40px 10px 20px 10px;
         }
         
         &__text {
           display: none;
           
-          @include breakpoints.S-size {
+          @include abstracts.S-size {
             display: block;
           }
         }
@@ -45,7 +41,7 @@
             color: black;
           }
           
-          @include breakpoints.S-size {
+          @include abstracts.S-size {
             display: inline-block;    
           }
         }    
@@ -58,18 +54,18 @@
       .col-lg-4:not(:first-of-type) {
         margin: 30px 0 0 0;
 
-        @include breakpoints.M-size {
+        @include abstracts.M-size {
           margin-top: 0;
         }
       }
 
       .history {
         h3 {
-          @include fonts.title_margin;
-          @include fonts.title_font_25;
+          @include base.title_margin;
+          @include base.title_font_25;
 
-          @include breakpoints.XXL-size {
-            @include fonts.title_font_30;
+          @include abstracts.XXL-size {
+            @include base.title_font_30;
           }
         }
 
@@ -80,7 +76,7 @@
             p {
               margin: 0;
               font-size: 14px;
-              color: colors.$gray-600;
+              color: base.$gray-600;
             }
             
             a {
@@ -92,11 +88,11 @@
 
       .advantages {
         h3 {
-          @include fonts.title_margin;
-          @include fonts.title_font_25;
+          @include base.title_margin;
+          @include base.title_font_25;
 
-          @include breakpoints.XXL-size {
-            @include fonts.title_font_30;
+          @include abstracts.XXL-size {
+            @include base.title_font_30;
           }
         }
 
@@ -109,7 +105,7 @@
             display: flex;
             align-items: baseline;
 
-            border-bottom: 1px solid colors.$gray-400;
+            border-bottom: 1px solid base.$gray-400;
 
             .round-button-secondary-light {
               flex: 0 0 auto;
@@ -117,7 +113,7 @@
 
             p {
               margin: 0; 
-              color: colors.$gray-600;
+              color: base.$gray-600;
             }    
           }
         }
@@ -125,11 +121,11 @@
 
       .news {
         h3 {
-          @include fonts.title_margin;
-          @include fonts.title_font_25;
+          @include base.title_margin;
+          @include base.title_font_25;
 
-          @include breakpoints.XXL-size {
-            @include fonts.title_font_30;
+          @include abstracts.XXL-size {
+            @include base.title_font_30;
           }
         }
 
@@ -158,7 +154,7 @@
                 margin: 20px 0 0 0;
 
                 font-size: 14px;
-                color: colors.$gray-600;;
+                color: base.$gray-600;;
               }
                    
               a {
@@ -166,10 +162,10 @@
               }
             }
           }
-          @include breakpoints.M-size {
+          @include abstracts.M-size {
             flex-direction: row;
           }
-          @include breakpoints.L-size {
+          @include abstracts.L-size {
             flex-direction: column;
           }
 
@@ -183,17 +179,17 @@
 
     .multi-carousel {
       &__header {
-        @include fonts.title_margin;
+        @include base.title_margin;
 
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         h3 {
-          @include fonts.title_font_25;
+          @include base.title_font_25;
 
-          @include breakpoints.XXL-size {
-            @include fonts.title_font_30;
+          @include abstracts.XXL-size {
+            @include base.title_font_30;
           }
         }
       }

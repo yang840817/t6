@@ -1,7 +1,7 @@
-@use '../abstracts/breakpoints';
+@use '../abstracts';
 
 
-@include breakpoints.XXL-size {
+@include abstracts.XXL-size {
   .container {
     max-width: 1250px;
   }

@@ -1,4 +1,4 @@
-@use '../base/colors';
+@use '../base';
 
 
 .card-secondary--light {
@@ -10,7 +10,7 @@
   gap: 20px;
   
   text-align: center;
-  background-color: colors.$gray-200;
+  background-color: base.$gray-200;
   
   &:hover {
     background-color: rgba(58, 58, 58, 0.7);
@@ -40,11 +40,11 @@
     margin-top: auto;
     padding: 3px 15px;
     
-    background-color: colors.$gray-400;
+    background-color: base.$gray-400;
     border: 1px solid transparent;
     
     &:active {
-      box-shadow: 0.5px 0.5px 1px 0.5px colors.$gray-900;
+      box-shadow: 0.5px 0.5px 1px 0.5px base.$gray-900;
       transform: translate(1px, 1px);
      }
   }

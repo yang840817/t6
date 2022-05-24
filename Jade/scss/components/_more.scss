@@ -1,4 +1,4 @@
-@use '../base/colors';
+@use '../base';
 
 
 %more_ellipsis {
@@ -7,7 +7,7 @@
   text-transform: capitalize;
 
   &:hover {
-    color: colors.$primary;
+    color: base.$primary;
   }
 
   &::before {

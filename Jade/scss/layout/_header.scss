@@ -1,6 +1,5 @@
-@use '../abstracts/breakpoints';
-@use '../base/box-shadow';
-@use '../base/background';
+@use '../abstracts';
+@use '../base';
 
 
 .header {
@@ -10,10 +9,10 @@
   justify-content: center;
   align-items: center;
   
-  @include background.background-image;
-  @include box-shadow.box-shadow;
+  @include base.background-image;
+  @include base.box-shadow;
 
-  @include breakpoints.M-size {
+  @include abstracts.M-size {
     padding: 35px;
     justify-content: space-between;
   }
@@ -31,7 +30,7 @@
     .media-group--dark {
       display: none;
     
-      @include breakpoints.M-size {
+      @include abstracts.M-size {
         display: block;
       }
   
