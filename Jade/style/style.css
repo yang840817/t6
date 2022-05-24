@@ -83,46 +83,49 @@
   bottom: 0;
 }
 
-.button-primary {
+.button--primary {
   padding: 2px 10px;
+  font-size: 14px;
   color: white;
   background-color: rgb(129, 184, 0);
   text-transform: uppercase;
   border: 1px transparent solid;
 }
-.button-primary:active {
+.button--primary:active {
   box-shadow: 0.5px 0.5px 1px 0.5px #808080;
   transform: translate(1px, 1px);
 }
 
-.button-dark {
+.button--dark {
   padding: 2px 10px;
+  font-size: 14px;
   color: white;
   background-color: black;
   text-transform: uppercase;
   border: 1px transparent solid;
 }
-.button-dark:active {
+.button--dark:active {
   box-shadow: 0.5px 0.5px 1px 0.5px #808080;
   transform: translate(1px, 1px);
 }
 
-.round-button-secondary-light {
+.round-button--gray {
   margin-right: 10px;
+  font-size: 14px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: #D7D4D4;
   border: 1px transparent solid;
 }
-.round-button-secondary-light:hover {
+.round-button--gray:hover {
   background-color: rgb(129, 184, 0);
 }
-.round-button-secondary-light i {
+.round-button--gray i {
   color: white;
 }
 
-.card-secondary--light {
+.card--gray {
   padding: 20px 10px;
   display: flex;
   flex-direction: column;
@@ -131,29 +134,35 @@
   text-align: center;
   background-color: #E5E5E5;
 }
-.card-secondary--light:hover {
+.card--gray:hover {
   background-color: rgba(58, 58, 58, 0.7);
   color: white;
 }
-.card-secondary--light__title {
+.card--gray__title {
   margin: 0;
   font-size: 16px;
   text-transform: uppercase;
 }
-.card-secondary--light__image-box a {
+.card--gray__image-box a {
   display: inline-block;
 }
-.card-secondary--light__text {
+.card--gray__text {
   margin: 0;
   font-size: 14px;
 }
-.card-secondary--light__button {
+.card--gray__button {
   margin-top: auto;
   padding: 3px 15px;
+  font-size: 14px;
+  color: black;
   background-color: #CECDCD;
   border: 1px solid transparent;
 }
-.card-secondary--light__button:active {
+.card--gray__button:hover {
+  color: black;
+}
+.card--gray__button:active {
+  color: black;
   box-shadow: 0.5px 0.5px 1px 0.5px #434242;
   transform: translate(1px, 1px);
 }
@@ -430,7 +439,7 @@
   padding-bottom: 30px;
 }
 
-.label-primary {
+.label--primary {
   padding: 2px 10px;
   color: white;
   border: 1px transparent solid;

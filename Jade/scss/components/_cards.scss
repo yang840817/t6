@@ -1,7 +1,7 @@
 @use '../base';
 
 
-.card-secondary--light {
+.card--gray {
   padding: 20px 10px;
 
   display: flex;
@@ -39,11 +39,17 @@
   &__button {
     margin-top: auto;
     padding: 3px 15px;
-    
+
+    font-size: 14px;
+    color: black;
     background-color: base.$gray-400;
     border: 1px solid transparent;
     
+    &:hover {
+      color: black;
+    }
     &:active {
+      color: black;
       box-shadow: 0.5px 0.5px 1px 0.5px base.$gray-900;
       transform: translate(1px, 1px);
      }
