@@ -459,19 +459,19 @@ a {
   box-shadow: 1px 1px 3px 1px #9A9A9A, -1px -1px 3px 1px #9A9A9A;
 }
 .footer__information .detail .col-lg-3:not(:first-of-type) {
-  margin: 30px 0 0 0;
+  margin-top: 30px;
 }
 @media (min-width: 768px) {
   .footer__information .detail .col-lg-3:not(:first-of-type) {
-    margin: 0;
+    margin-top: 0;
   }
   .footer__information .detail .col-lg-3:nth-of-type(3), .footer__information .detail .col-lg-3:nth-of-type(4) {
-    margin: 30px 0 0 0;
+    margin-top: 30px;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 992px) {
   .footer__information .detail .col-lg-3:nth-of-type(3), .footer__information .detail .col-lg-3:nth-of-type(4) {
-    margin: 0;
+    margin-top: 0;
   }
 }
 .footer__information .detail .post h3 {
@@ -665,31 +665,31 @@ a {
     transform: translateY(-50px);
   }
 }
-.main__content .service .card-secondary--light {
+.main__content .service .card--gray {
   height: 100%;
 }
 @media (min-width: 768px) {
-  .main__content .service .card-secondary--light {
+  .main__content .service .card--gray {
     padding: 40px 10px 20px 10px;
   }
 }
-.main__content .service .card-secondary--light__text {
+.main__content .service .card--gray__text {
   display: none;
 }
 @media (min-width: 576px) {
-  .main__content .service .card-secondary--light__text {
+  .main__content .service .card--gray__text {
     display: block;
   }
 }
-.main__content .service .card-secondary--light__button {
+.main__content .service .card--gray__button {
   display: none;
   color: black;
 }
-.main__content .service .card-secondary--light__button:hover {
+.main__content .service .card--gray__button:hover {
   color: black;
 }
 @media (min-width: 576px) {
-  .main__content .service .card-secondary--light__button {
+  .main__content .service .card--gray__button {
     display: inline-block;
   }
 }
@@ -747,7 +747,7 @@ a {
   align-items: baseline;
   border-bottom: 1px solid #CECDCD;
 }
-.main__content .info .advantages__body__text .round-button-secondary-light {
+.main__content .info .advantages__body__text .round-button--gray {
   flex: 0 0 auto;
 }
 .main__content .info .advantages__body__text p {
