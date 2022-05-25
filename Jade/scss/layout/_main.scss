@@ -4,7 +4,7 @@
 
 .main {  
  
-  @include base.background-image;
+  @include base.section_bg_image;
   @include base.box-shadow;
 
   &__content {

@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
   
-  @include base.background-image;
+  @include base.section_bg_image;
   @include base.box-shadow;
 
   @include abstracts.M-size {

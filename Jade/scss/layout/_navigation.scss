@@ -9,7 +9,7 @@
   
   &__navbar {
 
-    @include base.background-image;
+    @include base.section_bg_image;
     @include base.box-shadow--not-bottom;
     
     @include abstracts.L-size {
@@ -21,7 +21,7 @@
     }
 
     .navbar {
-      @include base.background-image;
+      @include base.section_bg_image;
       
       @include abstracts.L-size {
         flex: 1 0 0;
@@ -63,8 +63,8 @@
       padding: 10px 15px;
       width: 300px;
 
+      @include base.section_bg_image;
       @include base.box-shadow--not-bottom;
-      @include base.background-image;
     } 
   }
 }

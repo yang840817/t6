@@ -3,7 +3,7 @@
 
 .footer {
   margin-top: 70px;
-  @include base.background-image;
+  @include base.section_bg_image;
   
   &__information {
     padding: 40px;
