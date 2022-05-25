@@ -1,8 +1,7 @@
 @use '../abstracts';
 
-
-@include abstracts.XXL-size {
-  .container {
+.container {
+  @include abstracts.XXL-size {
     max-width: 1250px;
   }
 }
