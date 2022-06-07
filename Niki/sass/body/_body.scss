@@ -1,4 +1,14 @@
 * {
-    outline: solid red 1px;
-    font-family: Arial, Helvetica, sans-serif;
+  outline: solid red 1px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(
+      to bottom,
+      rgb(22, 22, 22) 0 90px,
+      transparent 90px 92%,
+      rgb(22, 22, 22) 92% 100%
+    ),
+    url("../images/bg.jpg");
 }
