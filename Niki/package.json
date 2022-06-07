@@ -1,0 +1,14 @@
+{
+  "name": "t6-niki",
+  "version": "1.0.0",
+  "description": "T6切版",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Niki <frank29580649@yahoo.com.tw>",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}
