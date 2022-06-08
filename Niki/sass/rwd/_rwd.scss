@@ -1,29 +1,41 @@
+// $sm-size: 576px;
+// $md-size: 768px;
+// $lg-size: 992px;
+// $xl-size: 1200px;
+// $xxl-size: 1400px;
+                          
+// @mixin breakpoint($size) {
+//   @media (min-width: $size) {
+//     @content;
+//   }
+// }
+
 @mixin sm-size {
-  @media (max-width: 576px) {
+  @media (min-width: 576px) {
     @content;
   }
 }
 
 @mixin md-size {
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     @content;
   }
 }
 
 @mixin lg-size {
-  @media (max-width: 992px) {
+  @media (min-width: 992px) {
     @content;
   }
 }
 
 @mixin xl-size {
-  @media (max-width: 1200px) {
+  @media (min-width: 1200px) {
     @content;
   }
 }
 
 @mixin xxl-size {
-  @media (max-width: 1400px) {
+  @media (min-width: 1400px) {
     @content;
   }
 }

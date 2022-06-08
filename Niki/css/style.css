@@ -1,10 +1,94 @@
+a {
+  text-decoration: none;
+  color: initial;
+}
+
 * {
   outline: solid red 1px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-  background: linear-gradient(to bottom, rgb(22, 22, 22) 0 90px, transparent 90px 92%, rgb(22, 22, 22) 92% 100%), url("../images/bg.jpg");
+  background: linear-gradient(to bottom, #171717 0 90px, transparent 90px 92%, #171717 92% 100%), url("../images/bg.jpg");
+}
+
+.header .container-fluid {
+  row-gap: 16px;
+}
+.header .header__--background {
+  background-image: url("../images/subbg.gif");
+}
+@media (min-width: 992px) {
+  .header .header__--background {
+    width: 100%;
+  }
+}
+.header .header__multimedia {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+@media (min-width: 992px) {
+  .header .header__multimedia {
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+}
+.header .header__medialink a {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url("../images/social.png");
+}
+.header .header__medialink a:hover {
+  background-position-y: -27px;
+}
+.header .header__twitter {
+  background-position: -37px 0;
+}
+.header .header__double {
+  background-position: -74px 0;
+}
+.header .header__basketball {
+  background-position: -111px 0;
+}
+.header .header__wifi {
+  background-position: -150px 0;
+}
+.header .navbar-toggler:focus {
+  box-shadow: initial;
+}
+.header .navbar-toggler-icon {
+  width: 50px;
+  height: 50px;
+  background: initial;
+}
+.header .navbar-collapse {
+  column-gap: 10px;
+}
+.header .navbar-nav {
+  background-color: #ffffff;
+}
+.header .nav-item .nav-link, .header .nav-item .dropdown-item {
+  padding: 20px 16px;
+  color: #000;
+  font-weight: bolder;
+}
+.header .nav-item .nav-link.active, .header .nav-item .active.dropdown-item, .header .nav-item .nav-link:hover, .header .nav-item .dropdown-item:hover {
+  color: #ffffff;
+  background-color: #80b701;
+}
+.header .nav-item .nav-link.show, .header .nav-item .show.dropdown-item {
+  color: #ffffff;
+  background-color: rgba(128, 183, 1, 0.4666666667);
+}
+.header form {
+  padding: 13px 0;
+  background-color: #ffffff;
+}
+.header form .btn {
+  top: 13px;
+  right: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

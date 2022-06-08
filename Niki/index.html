@@ -16,37 +16,39 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container g-0">
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid flex-wrap">
-          <div class="row">
-            <div class="col-12">
-              <h1 class="w-100">
-                <a class="navbar-brand w-100" href="#">
+      <nav class="navbar navbar-expand-lg navbar-light p-0 header">
+        <div class="container-fluid d-block flex-grow-1">
+          <div class="row g-0 mb-lg-4 p-xl-4 header__--background">
+            <div class="col-12 col-lg-6 col-xl-4 p-0">
+              <h1 class="w-100 mb-0 p-3 p-xl-0">
+                <a class="navbar-brand w-100 me-0" href="#">
                   <img class="w-100" src="images/logo.png" alt="BUSINESSPLANET">
                 </a>
               </h1>
             </div>
-            <div class="col-8">
-              <div>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-              </div>
-              <div>
-                <a href="tel:+1777842543">Call Us Now:+1(777)784-25-43</a>
+            <div class="col-10 col-lg-6 col-xl-8 p-3 p-xl-0">
+              <div class="header__multimedia">
+                <div class="header__medialink">
+                  <a class="header__facebook" href="##"></a>
+                  <a class="header__twitter" href="##"></a>
+                  <a class="header__double" href="##"></a>
+                  <a class="header__basketball" href="##"></a>
+                  <a class="header__wifi" href="##"></a>
+                </div>
+                <div>
+                  <a href="tel:+1777842543">Call Us Now:+1(777)784-25-43</a>
+                </div>
               </div>
             </div>
-            <div class="col-4">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <div class="col-2 d-lg-none">
+              <button class="navbar-toggler m-0 p-0 h-100 w-100 d-flex align-items-center justify-content-center" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
                   <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'>
-                    <path stroke='rgba(0, 0, 0, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2'
+                    <path stroke='rgba(128, 182, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2'
                       d='M4 7h22M4 15h22M4 23h22' />
                   </svg>
                 </span>
@@ -54,19 +56,19 @@
             </div>
           </div>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto m-0 px-3 px-lg-0 w-100">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">ABOUY</a>
+                <a class="nav-link" href="#">ABOUT</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
                   FEATURES
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-menu p-0" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">Home</a></li>
                   <li><a class="dropdown-item" href="#">ABOUT</a></li>
                   <li><a class="dropdown-item" href="#">FEATURES</a></li>
@@ -77,7 +79,7 @@
                   aria-expanded="false">
                   PORTFOLIO
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-menu p-0" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">Home</a></li>
                   <li><a class="dropdown-item" href="#">ABOUT</a></li>
                   <li><a class="dropdown-item" href="#">FEATURES</a></li>
@@ -88,7 +90,7 @@
                   aria-expanded="false">
                   BLOG
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-menu p-0" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">Home</a></li>
                   <li><a class="dropdown-item" href="#">ABOUT</a></li>
                   <li><a class="dropdown-item" href="#">FEATURES</a></li>
@@ -98,9 +100,11 @@
                 <a class="nav-link">CONTACTS</a>
               </li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+            <form class="position-relative px-3">
+              <input class="form-control" type="search" placeholder="Search the Site..." aria-label="Search">
+              <button class="btn position-absolute" type="submit">
+                <img src="images/search.png" alt="search">
+              </button>
             </form>
           </div>
         </div>
@@ -141,7 +145,7 @@
         </div>
       </section>
       <section class="introduction">
-        <div class="row">
+        <div class="row g-0">
           <div class="col">
             Column
           </div>
@@ -179,7 +183,7 @@
         </div>
       </section>
       <section class="supplement">
-        <div class="row">
+        <div class="row g-0">
           <div class="col">
             Column
           </div>
@@ -196,7 +200,7 @@
       </section>
     </main>
     <footer>
-      <div class="row">
+      <div class="row g-0">
         <div class="col-12 col-md-6 order-md-2">
           <nav class="nav">
             <a class="nav-link active" aria-current="page" href="#">Active</a>
