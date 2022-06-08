@@ -68,6 +68,12 @@ body {
 }
 .header .navbar-nav {
   background-color: #ffffff;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .header .navbar-nav {
+    width: 70%;
+  }
 }
 .header .nav-item .nav-link, .header .nav-item .dropdown-item {
   padding: 20px 16px;
@@ -82,6 +88,9 @@ body {
   color: #ffffff;
   background-color: rgba(128, 183, 1, 0.4666666667);
 }
+.header .dropdown-toggle::after {
+  content: initial;
+}
 .header form {
   padding: 13px 0;
   background-color: #ffffff;
@@ -89,6 +98,25 @@ body {
 .header form .btn {
   top: 13px;
   right: 16px;
+}
+
+.banner .carousel-control-prev, .banner .carousel-control-next {
+  background: url("../images/slider_prev.gif") no-repeat 0 0;
+  width: 40px;
+  height: 119px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.banner .carousel-control-prev:hover, .banner .carousel-control-next:hover {
+  background-position-y: -119px;
+}
+.banner .carousel-control-next {
+  background: url("../images/slider_next.gif") no-repeat 0 0;
+}
+.banner .carousel-indicators {
+  margin: 0 auto 0 0;
+  right: initial;
+  position: initial;
 }
 
 /*# sourceMappingURL=style.css.map */

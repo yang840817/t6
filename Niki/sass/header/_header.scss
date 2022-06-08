@@ -70,6 +70,10 @@
 
   .navbar-nav {
     background-color: #ffffff;
+    width: 100%;
+    @include rwd.lg-size{
+      width: 70%;
+    }
   }
 
   .nav-item {
@@ -90,6 +94,12 @@
 
   .dropdown-item {
     @extend .nav-link;
+  }
+  
+  .dropdown-toggle{
+    &::after{
+      content: initial;
+    }
   }
 
   form{
