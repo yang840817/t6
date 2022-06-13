@@ -1,0 +1,43 @@
+@use "../rwd/rwd";
+
+/* banner */
+
+.banner {
+  .carousel-control-prev {
+    background: url("../images/slider_prev.gif") no-repeat 0 0;
+    width: 40px;
+    height: 119px;
+    top: 50%;
+    background-position-y: 0px;
+    transform: translate(0, -50%);
+    &:hover {
+      background-position-y: -119px;
+    }
+  }
+
+  .carousel-control-next {
+    @extend .carousel-control-prev;
+    background-image: url("../images/slider_next.gif");
+  }
+
+  .carousel-indicators {
+    margin: 0 auto 0 0;
+    [data-bs-target] {
+      height: initial;
+      text-indent: initial;
+      border: 0;
+      &.active {
+        background-color: #fff;
+      }
+    }
+  }
+
+  .card {
+    background-color: #e8e8e8;
+    color: #646464;
+    &:hover {
+      background-color: #646464;
+      color: #e8e8e8;
+    }
+  }
+}

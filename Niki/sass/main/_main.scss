@@ -1,1 +1,6 @@
-@use "banner/banner";
+@use "../rwd/rwd";
+
+main{
+    background-image: url("../images/subbg.gif");
+    // background-color: aqua;
+}

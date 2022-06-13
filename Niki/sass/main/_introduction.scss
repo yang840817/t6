@@ -1,0 +1,15 @@
+@use "../rwd/rwd";
+
+.introduction {
+  // background-color: #ffffff;
+  .card {
+    background-color: transparent;
+    color: #939393;
+    i {
+      font-size: 2rem;
+      display: block;
+      text-align: center;
+      color: #dadada;
+    }
+  }
+}
