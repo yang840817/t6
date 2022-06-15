@@ -35,9 +35,38 @@
   .card {
     background-color: #e8e8e8;
     color: #646464;
-    &:hover {
+    &:hover,
+    &.active {
       background-color: #646464;
       color: #e8e8e8;
     }
+    &-title {
+      font-size: 18px;
+    }
+    &-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+    }
+    &-text {
+      @include rwd.md-size {
+        height: 120px;
+      }
+      @include rwd.lg-size {
+        height: 100px;
+      }
+      @include rwd.xl-size {
+        height: 120px;
+      }
+      @include rwd.xxl-size {
+        height: 100px;
+      }
+    }
+  }
+  .btn {
+    background-color: #cecece;
+    color: #373737;
   }
 }

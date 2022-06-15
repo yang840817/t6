@@ -1,0 +1,107 @@
+@use "../rwd/rwd";
+
+.featured-works {
+  position: relative;
+  &__animate-control {
+    display: inline-block;
+    position: absolute;
+    top: 55px;
+    right: 60px;
+    + span {
+      right: 30px;
+      &:hover {
+        ~ .featured-works__animate-container {
+          .featured-works__animate {
+            animation-direction: reverse;
+          }
+        }
+      }
+    }
+    &:hover {
+      ~ .featured-works__animate-container {
+        .featured-works__animate {
+          animation-duration: 10s;
+        }
+      }
+    }
+    SVG {
+      height: 20px;
+    }
+  }
+  &__animate {
+    animation-name: moveSlideshow;
+    animation-duration: 15s;
+    /* animation-play-state: paused; */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    // transition: all linear 6s;
+    &:hover {
+      animation-play-state: paused;
+    }
+    &-hover {
+      top: 100%;
+      transition: all 1s;
+      &-control {
+        &:hover {
+          .featured-works__animate-hover {
+            top: 0%;
+          }
+        }
+      }
+    }
+    &-content {
+      width: 130%;
+      height: 200%;
+      transform: rotate(330deg);
+      transform-origin: left;
+      background: linear-gradient(
+        to bottom,
+        #00000080 0px,
+        #00000080 20%,
+        #00000000 20%,
+        #00000000
+      );
+      padding-top: 50%;
+      color: #ffffff;
+      font-weight: bold;
+      p {
+        font-size: 20px;
+        padding: 10px 40px;
+        border-bottom: 2px solid #ffffff;
+      }
+    }
+    &-text {
+      background-color: #00000080;
+      height: 40%;
+      padding: 0 15%;
+      border-bottom: 1px solid #82b600;
+    }
+  }
+
+  @keyframes moveSlideshow {
+    100% {
+      transform: translateX(-400%);
+    }
+  }
+  @include rwd.sm-size {
+    @keyframes moveSlideshow {
+      100% {
+        transform: translateX(-200%);
+      }
+    }
+  }
+  @include rwd.lg-size {
+    @keyframes moveSlideshow {
+      100% {
+        transform: translateX(-133.33%);
+      }
+    }
+  }
+  @include rwd.xl-size {
+    @keyframes moveSlideshow {
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  }
+}
