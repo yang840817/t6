@@ -206,13 +206,22 @@ main {
   border: 0;
   border-bottom: 1px solid #e4e4e4;
 }
+hr.separate {
+  opacity: 1;
+  height: 2px;
+  padding: 0 16px;
+  background-color: #c7c7c7;
+  background-clip: content-box;
+  margin: 48px 0 0;
+}
+
 .featured-works {
   position: relative;
 }
 .featured-works__animate-control {
   display: inline-block;
   position: absolute;
-  top: 55px;
+  top: 10px;
   right: 60px;
 }
 .featured-works__animate-control + span {
@@ -226,6 +235,9 @@ main {
 }
 .featured-works__animate-control SVG {
   height: 20px;
+}
+.featured-works .carousel-item {
+  transition: initial;
 }
 .featured-works__animate {
   animation-name: moveSlideshow;
