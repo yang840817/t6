@@ -1,11 +1,12 @@
 @use "../rwd/rwd";
+@use "../mixin/mixin-t6";
 
 .header {
   .container-fluid {
     row-gap: 16px;
   }
 
-  .header__--background {
+  &__background {
     background-image: url("../images/subbg.gif");
 
     @include rwd.lg-size {
@@ -13,7 +14,7 @@
     }
   }
 
-  .header__multimedia {
+  &__multimedia {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -24,7 +25,7 @@
     }
   }
 
-  .header__medialink {
+  &__medialink {
     a {
       display: inline-block;
       width: 27px;
@@ -36,58 +37,63 @@
     }
   }
 
-  .header__twitter {
+  &__twitter {
     background-position: -37px 0;
   }
 
-  .header__double {
+  &__double {
     background-position: -74px 0;
   }
 
-  .header__basketball {
+  &__basketball {
     background-position: -111px 0;
   }
 
-  .header__wifi {
+  &__wifi {
     background-position: -150px 0;
   }
 
-  .navbar-toggler{
-    &:focus{
-      box-shadow: initial;
+  .navbar {
+    &-toggler {
+      border: 0;
+      &:focus {
+        box-shadow: initial;
+      }
+      &-icon {
+        width: 50px;
+        height: 50px;
+        background: initial;
+      }
     }
-  }
-
-  .navbar-toggler-icon {
-    width: 50px;
-    height: 50px;
-    background: initial;
-  }
-
-  .navbar-collapse {
-    column-gap: 10px;
-  }
-
-  .navbar-nav {
-    background-color: #ffffff;
-    width: 100%;
-    @include rwd.lg-size{
-      width: 70%;
+    &-collapse {
+      column-gap: 10px;
+    }
+    &-nav {
+      background-color: #ffffff;
+      width: 100%;
+      @include rwd.lg-size {
+        width: 70%;
+      }
     }
   }
 
   .nav-item {
+    border-right: 1px solid #eeeeee;
     .nav-link {
       padding: 20px 16px;
-      color: #000;
-      font-weight: bolder;
-      &.active , &:hover{ 
-        color: #ffffff;
-        background-color: #80b701;
+      @include mixin-t6.font-color(inherit, #000000, bold);
+      // color: #000;
+      // font-weight: bolder;
+      &.active,
+      &:hover {
+        @include mixin-t6.color_bg-color(#ffffff, #80b701);
+        // color: #ffffff;
+        // background-color: #80b701;
       }
-      &.show{
-        color: #ffffff;
-        background-color: #80b70177;
+      &.show {
+        @include mixin-t6.color_bg-color(#ffffff, #80b70177);
+        // color: #ffffff;
+        // background-color: #80b70177;
       }
     }
   }
@@ -95,20 +101,20 @@
   .dropdown-item {
     @extend .nav-link;
   }
-  
-  .dropdown-toggle{
-    &::after{
+
+  .dropdown-toggle {
+    &::after {
       content: initial;
     }
   }
 
-  form{
+  form {
     padding: 13px 0;
     background-color: #ffffff;
-  
-  .btn {
-    top:13px;
-    right:16px;
-  }
+
+    .btn {
+      top: 13px;
+      right: 16px;
+    }
   }
 }
