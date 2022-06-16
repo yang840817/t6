@@ -9,21 +9,21 @@
     right: 60px;
     + span {
       right: 30px;
-      &:hover {
-        ~ .featured-works__animate-container {
-          .featured-works__animate {
-            animation-direction: reverse;
-          }
-        }
-      }
+      // &:hover {
+      //   ~ .featured-works__animate-container {
+      //     .featured-works__animate {
+      //       animation-direction: reverse;
+      //     }
+      //   }
+      // }
     }
-    &:hover {
-      ~ .featured-works__animate-container {
-        .featured-works__animate {
-          animation-duration: 10s;
-        }
-      }
-    }
+    // &:hover {
+    //   ~ .featured-works__animate-container {
+    //     .featured-works__animate {
+    //       animation-duration: 10s;
+    //     }
+    //   }
+    // }
     SVG {
       height: 20px;
     }
