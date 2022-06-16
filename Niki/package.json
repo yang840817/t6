@@ -4,7 +4,8 @@
   "description": "T6切版",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass -w  sass/style.scss:css/style.css" 
   },
   "author": "Niki <frank29580649@yahoo.com.tw>",
   "license": "ISC",
