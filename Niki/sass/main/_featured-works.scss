@@ -38,7 +38,6 @@
     /* animation-play-state: paused; */
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    // transition: all linear 6s;
     &:hover {
       animation-play-state: paused;
     }
