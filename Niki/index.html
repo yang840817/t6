@@ -22,8 +22,8 @@
 
 <body>
   <div class="container g-0">
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light p-0 header">
+    <header class="header">
+      <div class="navbar navbar-expand-lg navbar-light p-0">
         <div class="container-fluid d-block flex-grow-1">
           <div class="row g-0 mb-lg-4 p-xl-4 header__background">
             <div class="col-12 col-lg-6 col-xl-4 p-0">
@@ -60,7 +60,7 @@
               </button>
             </div>
           </div>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <nav class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto m-0 px-3 px-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -114,7 +114,7 @@
                 <img src="images/search.png" alt="search">
               </button>
             </form>
-          </div>
+          </nav>
         </div>
       </nav>
     </header>
@@ -403,452 +403,36 @@
       </section>
       <hr class="separate">
       <section class="featured-works px-3 py-5">
-        <!-- 
-          <h2>FEATURED WORKS</h2>
-        <span class="featured-works__animate-control">
-          <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#fff'>
-            <path stroke='rgba(205, 205, 205, 1)'
-              d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z' />
-          </svg>
-        </span>
-        <span class="featured-works__animate-control">
-          <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#fff'>
-            <path stroke='rgba(205, 205, 205, 1)'
-              d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z' />
-          </svg>
-        </span>
-        <div class="featured-works__animate-container overflow-hidden">
-          <div class="row gx-3 flex-nowrap featured-works__animate">
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-              <div class="position-relative featured-works__animate-hover-control">
-                <img src="images/g1.jpg" class="d-block w-100" alt="g1">
-                <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                  <div class="featured-works__animate-content">
-                    <div class="featured-works__animate-text">
-                      <p>ECENAS ENIM</p>
-                      <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                        <img src="images/icon1.png" alt="watch-detial">
-                      </a>
-                      <a class="d-inline-block px-3" href="##">
-                        <img src="images/icon2.png" alt="link">
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-              <div class="position-relative featured-works__animate-hover-control">
-                <img src="images/g2.jpg" class="d-block w-100" alt="g2">
-                <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                  <div class="featured-works__animate-content">
-                    <div class="featured-works__animate-text">
-                      <p>ECENAS ENIM</p>
-                      <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                        <img src="images/icon1.png" alt="watch-detial">
-                      </a>
-                      <a class="d-inline-block px-3" href="##">
-                        <img src="images/icon2.png" alt="link">
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-              <div class="position-relative featured-works__animate-hover-control">
-                <img src="images/g3.jpg" class="d-block w-100" alt="g3">
-                <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                  <div class="featured-works__animate-content">
-                    <div class="featured-works__animate-text">
-                      <p>ECENAS ENIM</p>
-                      <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                        <img src="images/icon1.png" alt="watch-detial">
-                      </a>
-                      <a class="d-inline-block px-3" href="##">
-                        <img src="images/icon2.png" alt="link">
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-              <div class="position-relative featured-works__animate-hover-control">
-                <img src="images/g4.jpg" class="d-block w-100" alt="g4">
-                <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                  <div class="featured-works__animate-content">
-                    <div class="featured-works__animate-text">
-                      <p>ECENAS ENIM</p>
-                      <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                        <img src="images/icon1.png" alt="watch-detial">
-                      </a>
-                      <a class="d-inline-block px-3" href="##">
-                        <img src="images/icon2.png" alt="link">
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-              <div class="position-relative featured-works__animate-hover-control">
-                <img src="images/g1.jpg" class="d-block w-100" alt="g1">
-                <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                  <div class="featured-works__animate-content">
-                    <div class="featured-works__animate-text">
-                      <p>ECENAS ENIM</p>
-                      <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                        <img src="images/icon1.png" alt="watch-detial">
-                      </a>
-                      <a class="d-inline-block px-3" href="##">
-                        <img src="images/icon2.png" alt="link">
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-              <div class="position-relative featured-works__animate-hover-control">
-                <img src="images/g2.jpg" class="d-block w-100" alt="g2">
-                <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                  <div class="featured-works__animate-content">
-                    <div class="featured-works__animate-text">
-                      <p>ECENAS ENIM</p>
-                      <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                        <img src="images/icon1.png" alt="watch-detial">
-                      </a>
-                      <a class="d-inline-block px-3" href="##">
-                        <img src="images/icon2.png" alt="link">
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-              <div class="position-relative featured-works__animate-hover-control">
-                <img src="images/g3.jpg" class="d-block w-100" alt="g3">
-                <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                  <div class="featured-works__animate-content">
-                    <div class="featured-works__animate-text">
-                      <p>ECENAS ENIM</p>
-                      <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                        <img src="images/icon1.png" alt="watch-detial">
-                      </a>
-                      <a class="d-inline-block px-3" href="##">
-                        <img src="images/icon2.png" alt="link">
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-              <div class="position-relative featured-works__animate-hover-control">
-                <img src="images/g4.jpg" class="d-block w-100" alt="g4">
-                <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                  <div class="featured-works__animate-content">
-                    <div class="featured-works__animate-text">
-                      <p>ECENAS ENIM</p>
-                      <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                        <img src="images/icon1.png" alt="watch-detial">
-                      </a>
-                      <a class="d-inline-block px-3" href="##">
-                        <img src="images/icon2.png" alt="link">
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-         -->
-        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false"
-          data-bs-interval="false">
-          <div class="carousel-inner">
-              <div class="carousel-item active"></div>
-              <div class="carousel-item"></div>
-              <div class="carousel-item"></div>
-              <div class="carousel-item"></div>
-              <div class="featured-works__animate-container overflow-hidden">
-                <div class="row gx-3 flex-nowrap featured-works__animate">
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3"></div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3"></div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3"></div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3"></div>
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g1.jpg" class="d-block w-100" alt="g1">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g2.jpg" class="d-block w-100" alt="g2">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g3.jpg" class="d-block w-100" alt="g3">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g4.jpg" class="d-block w-100" alt="g4">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g1.jpg" class="d-block w-100" alt="g1">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g2.jpg" class="d-block w-100" alt="g2">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g3.jpg" class="d-block w-100" alt="g3">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g4.jpg" class="d-block w-100" alt="g4">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g4.jpg" class="d-block w-100" alt="g4">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g1.jpg" class="d-block w-100" alt="g1">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
         <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false"
           data-bs-interval="false">
           <h2>FEATURED WORKS</h2>
           <span class="featured-works__animate-control" type="button"
-            data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+            data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
             <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#fff'>
               <path stroke='rgba(205, 205, 205, 1)'
                 d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z' />
             </svg>
           </span>
           <span class="featured-works__animate-control" type="button"
-            data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+            data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
             <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#fff'>
               <path stroke='rgba(205, 205, 205, 1)'
                 d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z' />
             </svg>
           </span>
           <div class="carousel-inner">
-            <div class="carousel-item">
-
-              <div class="featured-works__animate-container overflow-hidden">
+            <div class="carousel-item active featured-works__animate--act1"></div>
+            <div class="carousel-item featured-works__animate--act2"></div>
+            <div class="carousel-item featured-works__animate--act3"></div>
+            <div class="carousel-item featured-works__animate--act4"></div>
+            <div class="carousel-item featured-works__animate--act5"></div>
+            <div class="carousel-item featured-works__animate--act6"></div>
+            <div class="carousel-item featured-works__animate--act7"></div>
+            <div class="carousel-item featured-works__animate--act8"></div>
+            <div class="featured-works__animate-container overflow-hidden">
+              <div class="featured-works__animate--move">
                 <div class="row gx-3 flex-nowrap featured-works__animate">
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g4.jpg" class="d-block w-100" alt="g4">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g1.jpg" class="d-block w-100" alt="g1">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g2.jpg" class="d-block w-100" alt="g2">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3 featured-works__animate--order">
                     <div class="position-relative featured-works__animate-hover-control">
                       <img src="images/g3.jpg" class="d-block w-100" alt="g3">
                       <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
@@ -866,7 +450,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3 featured-works__animate--order">
                     <div class="position-relative featured-works__animate-hover-control">
                       <img src="images/g4.jpg" class="d-block w-100" alt="g4">
                       <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
@@ -884,7 +468,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3 featured-works__animate--order">
                     <div class="position-relative featured-works__animate-hover-control">
                       <img src="images/g1.jpg" class="d-block w-100" alt="g1">
                       <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
@@ -902,7 +486,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3 featured-works__animate--order">
                     <div class="position-relative featured-works__animate-hover-control">
                       <img src="images/g2.jpg" class="d-block w-100" alt="g2">
                       <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
@@ -920,7 +504,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3 featured-works__animate--order">
                     <div class="position-relative featured-works__animate-hover-control">
                       <img src="images/g3.jpg" class="d-block w-100" alt="g3">
                       <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
@@ -938,7 +522,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3 featured-works__animate--order">
                     <div class="position-relative featured-works__animate-hover-control">
                       <img src="images/g4.jpg" class="d-block w-100" alt="g4">
                       <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
@@ -956,7 +540,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3 featured-works__animate--order">
                     <div class="position-relative featured-works__animate-hover-control">
                       <img src="images/g1.jpg" class="d-block w-100" alt="g1">
                       <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
@@ -974,7 +558,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3 featured-works__animate--order">
                     <div class="position-relative featured-works__animate-hover-control">
                       <img src="images/g2.jpg" class="d-block w-100" alt="g2">
                       <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
@@ -992,7 +576,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3 featured-works__animate--order">
                     <div class="position-relative featured-works__animate-hover-control">
                       <img src="images/g3.jpg" class="d-block w-100" alt="g3">
                       <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
@@ -1010,32 +594,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-
-              <div class="featured-works__animate-container overflow-hidden">
-                <div class="row gx-3 flex-nowrap featured-works__animate">
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g3.jpg" class="d-block w-100" alt="g3">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3 featured-works__animate--order">
                     <div class="position-relative featured-works__animate-hover-control">
                       <img src="images/g4.jpg" class="d-block w-100" alt="g4">
                       <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
@@ -1053,7 +612,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3 featured-works__animate--order">
                     <div class="position-relative featured-works__animate-hover-control">
                       <img src="images/g1.jpg" class="d-block w-100" alt="g1">
                       <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
@@ -1071,383 +630,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3 featured-works__animate--order">
                     <div class="position-relative featured-works__animate-hover-control">
                       <img src="images/g2.jpg" class="d-block w-100" alt="g2">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g3.jpg" class="d-block w-100" alt="g3">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g4.jpg" class="d-block w-100" alt="g4">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g1.jpg" class="d-block w-100" alt="g1">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g2.jpg" class="d-block w-100" alt="g2">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-
-              <div class="featured-works__animate-container overflow-hidden">
-                <div class="row gx-3 flex-nowrap featured-works__animate">
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g2.jpg" class="d-block w-100" alt="g2">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g3.jpg" class="d-block w-100" alt="g3">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g4.jpg" class="d-block w-100" alt="g4">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g1.jpg" class="d-block w-100" alt="g1">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g2.jpg" class="d-block w-100" alt="g2">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g3.jpg" class="d-block w-100" alt="g3">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g4.jpg" class="d-block w-100" alt="g4">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g1.jpg" class="d-block w-100" alt="g1">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item active">
-
-              <div class="featured-works__animate-container overflow-hidden">
-                <div class="row gx-3 flex-nowrap featured-works__animate">
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g1.jpg" class="d-block w-100" alt="g1">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g2.jpg" class="d-block w-100" alt="g2">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g3.jpg" class="d-block w-100" alt="g3">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g4.jpg" class="d-block w-100" alt="g4">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g1.jpg" class="d-block w-100" alt="g1">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g2.jpg" class="d-block w-100" alt="g2">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g3.jpg" class="d-block w-100" alt="g3">
-                      <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
-                        <div class="featured-works__animate-content">
-                          <div class="featured-works__animate-text">
-                            <p>ECENAS ENIM</p>
-                            <a class="d-inline-block ms-5 ms-sm-4 px-3" href="##">
-                              <img src="images/icon1.png" alt="watch-detial">
-                            </a>
-                            <a class="d-inline-block px-3" href="##">
-                              <img src="images/icon2.png" alt="link">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="position-relative featured-works__animate-hover-control">
-                      <img src="images/g4.jpg" class="d-block w-100" alt="g4">
                       <div class="position-absolute overflow-hidden w-100 h-100 featured-works__animate-hover">
                         <div class="featured-works__animate-content">
                           <div class="featured-works__animate-text">
@@ -1509,8 +694,7 @@
                 <input type="text" name="name" class="form-control" placeholder="Name" aria-label="Username"
                   aria-describedby="basic-addon1">
                 <input type="email" name="email" class="form-control" id="floatingInput" placeholder="Email">
-                <!-- <input type="text" name="text"  class="form-control" id="floatingInput" placeholder="Message"> -->
-                <textarea rows="3" type="text" name="text" class="form-control" id="floatingInput"
+                <textarea rows="3" name="text" class="form-control" id="floatingInput"
                   placeholder="Message"></textarea>
                 </textarea>
                 <input type="reset" value="CLEAR FORM">

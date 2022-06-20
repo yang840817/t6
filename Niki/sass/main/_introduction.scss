@@ -16,7 +16,7 @@
       }
     }
     i {
-      @include mixin-t6.font-color(32px, #dadada);
+      @include mixin-t6.font-color(32px, #dadada ,900);
       // font-size: 32px;
       // color: #dadada;
       display: block;

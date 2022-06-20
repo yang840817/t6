@@ -4,6 +4,7 @@ a {
 }
 
 * {
+  /* outline: solid red 1px;*/
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -194,7 +195,7 @@ main {
 .introduction .card i {
   font-size: 32px;
   color: #dadada;
-  font-weight: inherit;
+  font-weight: 900;
   display: block;
   text-align: center;
 }
@@ -227,12 +228,68 @@ hr.separate {
 .featured-works {
   position: relative;
 }
+.featured-works .carousel-item-prev ~ .featured-works__animate-container .featured-works__animate--move {
+  transform: translateX(-200%);
+  transition: all 0.6s;
+}
+@media (min-width: 576px) {
+  .featured-works .carousel-item-prev ~ .featured-works__animate-container .featured-works__animate--move {
+    transform: translateX(-50%);
+  }
+}
+@media (min-width: 992px) {
+  .featured-works .carousel-item-prev ~ .featured-works__animate-container .featured-works__animate--move {
+    transform: translateX(-33.333%);
+  }
+}
+@media (min-width: 1200px) {
+  .featured-works .carousel-item-prev ~ .featured-works__animate-container .featured-works__animate--move {
+    transform: translateX(-25%);
+  }
+}
+.featured-works .carousel-item-next ~ .featured-works__animate-container .featured-works__animate--move {
+  transform: translateX(-300%);
+  transition: all 0.6s;
+}
+@media (min-width: 576px) {
+  .featured-works .carousel-item-next ~ .featured-works__animate-container .featured-works__animate--move {
+    transform: translateX(-150%);
+  }
+}
+@media (min-width: 992px) {
+  .featured-works .carousel-item-next ~ .featured-works__animate-container .featured-works__animate--move {
+    transform: translateX(-100%);
+  }
+}
+@media (min-width: 1200px) {
+  .featured-works .carousel-item-next ~ .featured-works__animate-container .featured-works__animate--move {
+    transform: translateX(-75%);
+  }
+}
 .featured-works__animate {
   animation: moveSlideshow 15s linear infinite;
   /* animation-play-state: paused; */
 }
 .featured-works__animate:hover {
   animation-play-state: paused;
+}
+.featured-works__animate--move {
+  transform: translateX(-200%);
+}
+@media (min-width: 576px) {
+  .featured-works__animate--move {
+    transform: translateX(-100%);
+  }
+}
+@media (min-width: 992px) {
+  .featured-works__animate--move {
+    transform: translateX(-66.666%);
+  }
+}
+@media (min-width: 1200px) {
+  .featured-works__animate--move {
+    transform: translateX(-50%);
+  }
 }
 .featured-works__animate-control {
   display: inline-block;
@@ -244,7 +301,179 @@ hr.separate {
   right: 30px;
 }
 .featured-works__animate-control SVG {
-  height: 20px;
+  padding: 10px 16px;
+  height: 40px;
+}
+.featured-works__animate--order {
+  order: 20;
+}
+.featured-works__animate--act2.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(2) {
+  order: 1;
+}
+.featured-works__animate--act2.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(3) {
+  order: 2;
+}
+.featured-works__animate--act2.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(4) {
+  order: 3;
+}
+.featured-works__animate--act2.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(5) {
+  order: 4;
+}
+.featured-works__animate--act2.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(6) {
+  order: 5;
+}
+.featured-works__animate--act2.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(7) {
+  order: 6;
+}
+.featured-works__animate--act2.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(8) {
+  order: 7;
+}
+.featured-works__animate--act2.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(9) {
+  order: 8;
+}
+.featured-works__animate--act2.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(10) {
+  order: 9;
+}
+.featured-works__animate--act2.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(11) {
+  order: 10;
+}
+.featured-works__animate--act2.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(12) {
+  order: 11;
+}
+.featured-works__animate--act3.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(3) {
+  order: 2;
+}
+.featured-works__animate--act3.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(4) {
+  order: 3;
+}
+.featured-works__animate--act3.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(5) {
+  order: 4;
+}
+.featured-works__animate--act3.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(6) {
+  order: 5;
+}
+.featured-works__animate--act3.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(7) {
+  order: 6;
+}
+.featured-works__animate--act3.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(8) {
+  order: 7;
+}
+.featured-works__animate--act3.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(9) {
+  order: 8;
+}
+.featured-works__animate--act3.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(10) {
+  order: 9;
+}
+.featured-works__animate--act3.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(11) {
+  order: 10;
+}
+.featured-works__animate--act3.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(12) {
+  order: 11;
+}
+.featured-works__animate--act4.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(4) {
+  order: 3;
+}
+.featured-works__animate--act4.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(5) {
+  order: 4;
+}
+.featured-works__animate--act4.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(6) {
+  order: 5;
+}
+.featured-works__animate--act4.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(7) {
+  order: 6;
+}
+.featured-works__animate--act4.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(8) {
+  order: 7;
+}
+.featured-works__animate--act4.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(9) {
+  order: 8;
+}
+.featured-works__animate--act4.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(10) {
+  order: 9;
+}
+.featured-works__animate--act4.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(11) {
+  order: 10;
+}
+.featured-works__animate--act4.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(12) {
+  order: 11;
+}
+.featured-works__animate--act5.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(5) {
+  order: 4;
+}
+.featured-works__animate--act5.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(6) {
+  order: 5;
+}
+.featured-works__animate--act5.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(7) {
+  order: 6;
+}
+.featured-works__animate--act5.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(8) {
+  order: 7;
+}
+.featured-works__animate--act5.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(9) {
+  order: 8;
+}
+.featured-works__animate--act5.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(10) {
+  order: 9;
+}
+.featured-works__animate--act5.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(11) {
+  order: 10;
+}
+.featured-works__animate--act5.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(12) {
+  order: 11;
+}
+.featured-works__animate--act6.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(6) {
+  order: 5;
+}
+.featured-works__animate--act6.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(7) {
+  order: 6;
+}
+.featured-works__animate--act6.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(8) {
+  order: 7;
+}
+.featured-works__animate--act6.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(9) {
+  order: 8;
+}
+.featured-works__animate--act6.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(10) {
+  order: 9;
+}
+.featured-works__animate--act6.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(11) {
+  order: 10;
+}
+.featured-works__animate--act6.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(12) {
+  order: 11;
+}
+.featured-works__animate--act7.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(7) {
+  order: 6;
+}
+.featured-works__animate--act7.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(8) {
+  order: 7;
+}
+.featured-works__animate--act7.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(9) {
+  order: 8;
+}
+.featured-works__animate--act7.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(10) {
+  order: 9;
+}
+.featured-works__animate--act7.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(11) {
+  order: 10;
+}
+.featured-works__animate--act7.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(12) {
+  order: 11;
+}
+.featured-works__animate--act8.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(8) {
+  order: 7;
+}
+.featured-works__animate--act8.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(9) {
+  order: 8;
+}
+.featured-works__animate--act8.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(10) {
+  order: 9;
+}
+.featured-works__animate--act8.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(11) {
+  order: 10;
+}
+.featured-works__animate--act8.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(12) {
+  order: 11;
 }
 .featured-works__animate-hover {
   top: 100%;
@@ -277,17 +506,11 @@ hr.separate {
 .featured-works__animate-control {
   display: inline-block;
   position: absolute;
-  top: 10px;
-  right: 60px;
+  top: 0;
+  right: 80px;
 }
 .featured-works__animate-control + span {
   right: 30px;
-}
-.featured-works__animate-control SVG {
-  height: 20px;
-}
-.featured-works .carousel-item {
-  transition: initial;
 }
 @keyframes moveSlideshow {
   100% {
@@ -363,11 +586,11 @@ footer .supplement .card-body::after {
 footer .supplement__mail-us input, footer .supplement__mail-us textarea {
   background-color: #e7e7e7;
 }
-footer .supplement__mail-us input + [type], footer .supplement__mail-us textarea + [type] {
+footer .supplement__mail-us input + .form-control, footer .supplement__mail-us textarea + .form-control {
   margin-top: 8px;
 }
 @media (min-width: 992px) {
-  footer .supplement__mail-us input + [type], footer .supplement__mail-us textarea + [type] {
+  footer .supplement__mail-us input + .form-control, footer .supplement__mail-us textarea + .form-control {
     margin-top: 16px;
   }
 }

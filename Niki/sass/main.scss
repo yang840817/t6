@@ -7,4 +7,6 @@
 @use "main/separate";
 @use "main/featured-works";
 @use "footer/footer";
-
+// import練習使用 header
+// @import "header";指定資料夾,目標資料夾裡面要有一個 _index.scss檔案指引資料夾其他檔案
+// @import "header/header" 指定特頂檔案,目前感覺跟use一樣

@@ -61,7 +61,7 @@ footer {
     &__mail-us {
       input , textarea{
         background-color: #e7e7e7;
-        + [type] {
+        + .form-control {
           margin-top: 8px;
           @include rwd.lg-size{
             margin-top: 16px;
