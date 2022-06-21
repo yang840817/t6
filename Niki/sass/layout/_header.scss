@@ -75,45 +75,5 @@
       }
     }
   }
-
-  .nav-item {
-    border-right: 1px solid #eeeeee;
-    .nav-link {
-      padding: 20px 16px;
-      @include mixins.font-color(inherit, #000000, bold);
-      // color: #000;
-      // font-weight: bolder;
-      &.active,
-      &:hover {
-        @include mixins.color_bg-color(#ffffff, #80b701);
-        // color: #ffffff;
-        // background-color: #80b701;
-      }
-      &.show {
-        @include mixins.color_bg-color(#ffffff, #80b70177);
-        // color: #ffffff;
-        // background-color: #80b70177;
-      }
-    }
-  }
-
-  .dropdown-item {
-    @extend .nav-link;
-  }
-
-  .dropdown-toggle {
-    &::after {
-      content: initial;
-    }
-  }
-
-  form {
-    padding: 13px 0;
-    background-color: #ffffff;
-
-    .btn {
-      top: 13px;
-      right: 16px;
-    }
-  }
+  @import "../components/navbar-nav";
 }
