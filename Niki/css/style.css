@@ -1,6 +1,16 @@
+* {
+  /* outline: solid red 1px;*/
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 a {
   text-decoration: none;
   color: initial;
+}
+
+.card {
+  border: 0;
+  border-radius: 0;
 }
 
 * {
@@ -138,18 +148,19 @@ main {
 .banner .carousel-indicators [data-bs-target].active {
   background-color: #fff;
 }
-.banner .card {
+
+.card-group .card {
   color: #646464;
   background-color: #e8e8e8;
 }
-.banner .card:hover, .banner .card.active {
+.card-group .card:hover, .card-group .card.active {
   color: #e8e8e8;
   background-color: #646464;
 }
-.banner .card-title {
+.card-group .card-title {
   font-size: 18px;
 }
-.banner .card-body {
+.card-group .card-body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -157,28 +168,32 @@ main {
   height: 100%;
 }
 @media (min-width: 768px) {
-  .banner .card-text {
+  .card-group .card-text {
     height: 120px;
   }
 }
 @media (min-width: 992px) {
-  .banner .card-text {
+  .card-group .card-text {
     height: 100px;
   }
 }
 @media (min-width: 1200px) {
-  .banner .card-text {
+  .card-group .card-text {
     height: 120px;
   }
 }
 @media (min-width: 1400px) {
-  .banner .card-text {
+  .card-group .card-text {
     height: 100px;
   }
 }
-.banner .btn {
+.card-group .btn {
   background-color: #cecece;
   color: #373737;
+}
+.card-group .row > .btn {
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .introduction h2 {
