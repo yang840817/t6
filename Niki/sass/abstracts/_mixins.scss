@@ -40,3 +40,14 @@
     }
   }
   
+  @mixin font-color($font-size: inherit , $color: inherit , $weight: inherit) {
+    font-size: $font-size;
+    color: $color;
+    font-weight: $weight;
+  }
+  
+  @mixin color_bg-color( $color: inherit , $bg-color: inherit) {
+    color: $color;
+    background-color: $bg-color;
+  }
+  

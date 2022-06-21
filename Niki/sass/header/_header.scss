@@ -1,6 +1,4 @@
 @use "../abstracts/mixins";
-@use "../rwd/rwd";
-@use "../mixin/mixin-t6";
 
 .header {
   .container-fluid {
@@ -82,17 +80,17 @@
     border-right: 1px solid #eeeeee;
     .nav-link {
       padding: 20px 16px;
-      @include mixin-t6.font-color(inherit, #000000, bold);
+      @include mixins.font-color(inherit, #000000, bold);
       // color: #000;
       // font-weight: bolder;
       &.active,
       &:hover {
-        @include mixin-t6.color_bg-color(#ffffff, #80b701);
+        @include mixins.color_bg-color(#ffffff, #80b701);
         // color: #ffffff;
         // background-color: #80b701;
       }
       &.show {
-        @include mixin-t6.color_bg-color(#ffffff, #80b70177);
+        @include mixins.color_bg-color(#ffffff, #80b70177);
         // color: #ffffff;
         // background-color: #80b70177;
       }

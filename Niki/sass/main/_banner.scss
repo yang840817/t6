@@ -1,5 +1,4 @@
 @use "../abstracts/mixins";
-@use "../mixin/mixin-t6";
 
 /* banner */
 
@@ -34,12 +33,12 @@
   }
 
   .card {
-    @include mixin-t6.color_bg-color( #646464,#e8e8e8);
+    @include mixins.color_bg-color( #646464,#e8e8e8);
     // background-color: #e8e8e8;
     // color: #646464;
     &:hover,
     &.active {
-      @include mixin-t6.color_bg-color(#e8e8e8, #646464);
+      @include mixins.color_bg-color(#e8e8e8, #646464);
       // background-color: #646464;
       // color: #e8e8e8;
     }

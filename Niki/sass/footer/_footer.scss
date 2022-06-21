@@ -1,5 +1,4 @@
 @use "../abstracts/mixins";
-@use "../mixin/mixin-t6";
 
 /* footer */
 
@@ -31,7 +30,7 @@ footer {
       margin-bottom: 0;
       padding: 0 8px;
       :last-child {
-        @include mixin-t6.font-color(inherit,#72a101,bold)
+        @include mixins.font-color(inherit,#72a101,bold)
         // color: #72a101;
         // font-weight: bold;
       }
@@ -123,7 +122,7 @@ footer {
   }
 
   .copyright {
-    @include mixin-t6.font-color(12px, #535353);
+    @include mixins.font-color(12px, #535353);
     // font-size: 12px;
     // color: #535353;
     text-align: center;

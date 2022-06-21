@@ -1,5 +1,4 @@
 @use "../abstracts/mixins";
-@use "../mixin/mixin-t6";
 
 .introduction {
   // background-color: #ffffff;
@@ -16,7 +15,7 @@
       }
     }
     i {
-      @include mixin-t6.font-color(32px, #dadada ,900);
+      @include mixins.font-color(32px, #dadada ,900);
       // font-size: 32px;
       // color: #dadada;
       display: block;
@@ -29,7 +28,7 @@
     &-title:not(h2) {
       display: inline-block;
       background-color: #81b701;
-      @include mixin-t6.font-color(18px, #ffffff);
+      @include mixins.font-color(18px, #ffffff);
       // font-size: 18px;
       // color: #ffffff;
     }
