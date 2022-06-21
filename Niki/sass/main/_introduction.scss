@@ -1,4 +1,4 @@
-@use "../rwd/rwd";
+@use "../abstracts/mixins";
 @use "../mixin/mixin-t6";
 
 .introduction {
@@ -21,7 +21,7 @@
       // color: #dadada;
       display: block;
       text-align: center;
-      @include rwd.md-size {
+      @include mixins.size-md {
         font-size: 48px;
       }
     }

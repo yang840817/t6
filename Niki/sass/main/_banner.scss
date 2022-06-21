@@ -1,4 +1,4 @@
-@use "../rwd/rwd";
+@use "../abstracts/mixins";
 @use "../mixin/mixin-t6";
 
 /* banner */
@@ -54,16 +54,16 @@
       height: 100%;
     }
     &-text {
-      @include rwd.md-size {
+      @include mixins.size-md {
         height: 120px;
       }
-      @include rwd.lg-size {
+      @include mixins.size-lg {
         height: 100px;
       }
-      @include rwd.xl-size {
+      @include mixins.size-xl {
         height: 120px;
       }
-      @include rwd.xxl-size {
+      @include mixins.size-xxl {
         height: 100px;
       }
     }

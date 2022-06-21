@@ -1,4 +1,4 @@
-@use "../rwd/rwd";
+@use "../abstracts/mixins";
 @use "../mixin/mixin-t6";
 
 /* footer */
@@ -63,7 +63,7 @@ footer {
         background-color: #e7e7e7;
         + .form-control {
           margin-top: 8px;
-          @include rwd.lg-size{
+          @include mixins.size-lg{
             margin-top: 16px;
           }
         }
@@ -95,7 +95,7 @@ footer {
   .nav {
     font-size: 12px;
 
-    @include rwd.lg-size {
+    @include mixins.size-lg {
       justify-content: end;
     }
   }
@@ -109,11 +109,11 @@ footer {
     &:hover {
       color: #72a101;
     }
-    @include rwd.lg-size {
+    @include mixins.size-lg {
       padding: 0 8px;
       flex: 0 0 auto;
     }
-    @include rwd.xl-size {
+    @include mixins.size-xl {
       padding: 0 16px;
     }
 
@@ -127,7 +127,7 @@ footer {
     // font-size: 12px;
     // color: #535353;
     text-align: center;
-    @include rwd.md-size {
+    @include mixins.size-md {
       text-align: left;
     }
     span {

@@ -1,4 +1,4 @@
-@use "../rwd/rwd";
+@use "../abstracts/mixins";
 
 .featured-works {
   position: relative;
@@ -7,13 +7,13 @@
       .featured-works__animate--move {
         transform: translateX(-200%);
         transition: all 0.6s;
-        @include rwd.sm-size {
+        @include mixins.size-sm {
           transform: translateX(-50%);
         }
-        @include rwd.lg-size {
+        @include mixins.size-lg {
           transform: translateX(-33.333%);
         }
-        @include rwd.xl-size {
+        @include mixins.size-xl {
           transform: translateX(-25%);
         }
       }
@@ -24,13 +24,13 @@
       .featured-works__animate--move {
         transform: translateX(-300%);
         transition: all 0.6s;
-        @include rwd.sm-size {
+        @include mixins.size-sm {
           transform: translateX(-150%);
         }
-        @include rwd.lg-size {
+        @include mixins.size-lg {
           transform: translateX(-100%);
         }
-        @include rwd.xl-size {
+        @include mixins.size-xl {
           transform: translateX(-75%);
         }
       }
@@ -45,13 +45,13 @@
     }
     &--move {
       transform: translateX(-200%);
-      @include rwd.sm-size {
+      @include mixins.size-sm {
         transform: translateX(-100%);
       }
-      @include rwd.lg-size {
+      @include mixins.size-lg {
         transform: translateX(-66.666%);
       }
-      @include rwd.xl-size {
+      @include mixins.size-xl {
         transform: translateX(-50%);
       }
     }
@@ -379,21 +379,21 @@
       transform: translateX(-400%);
     }
   }
-  @include rwd.sm-size {
+  @include mixins.size-sm {
     @keyframes moveSlideshow {
       100% {
         transform: translateX(-200%);
       }
     }
   }
-  @include rwd.lg-size {
+  @include mixins.size-lg {
     @keyframes moveSlideshow {
       100% {
         transform: translateX(-133.33%);
       }
     }
   }
-  @include rwd.xl-size {
+  @include mixins.size-xl {
     @keyframes moveSlideshow {
       100% {
         transform: translateX(-100%);

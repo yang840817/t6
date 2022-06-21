@@ -1,3 +1,4 @@
+@use "../abstracts/mixins";
 @use "../rwd/rwd";
 @use "../mixin/mixin-t6";
 
@@ -9,7 +10,7 @@
   &__background {
     background-image: url("../images/subbg.gif");
 
-    @include rwd.lg-size {
+    @include mixins.size-lg {
       width: 100%;
     }
   }
@@ -19,7 +20,7 @@
     flex-direction: column;
     height: 100%;
 
-    @include rwd.lg-size {
+    @include mixins.size-lg {
       align-items: flex-end;
       justify-content: flex-end;
     }
@@ -71,7 +72,7 @@
     &-nav {
       background-color: #ffffff;
       width: 100%;
-      @include rwd.lg-size {
+      @include mixins.size-lg {
         width: 70%;
       }
     }
