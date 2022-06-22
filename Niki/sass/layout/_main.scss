@@ -6,10 +6,7 @@ main {
 }
 
 @import "../components/banner";
-
-.card-group {
-  @import "../components/card";
-}
+@import "../components/card-group";
 
 .introduction {
   h2 {
