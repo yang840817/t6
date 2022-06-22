@@ -1,8 +1,3 @@
-* {
-  /* outline: solid red 1px;*/
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 a {
   text-decoration: none;
   color: initial;
@@ -270,364 +265,308 @@ hr.separate {
   margin: 48px 0 0;
 }
 
-.featured-works {
-  position: relative;
-}
-
-.featured-works .carousel-item-prev ~ .featured-works__animate-container .featured-works__animate--move {
+.featured-works .carousel-item-prev ~ .carousel-animate__container .carousel-animate--move {
   transform: translateX(-200%);
   transition: all 0.6s;
 }
 
 @media (min-width: 576px) {
-  .featured-works .carousel-item-prev ~ .featured-works__animate-container .featured-works__animate--move {
+  .featured-works .carousel-item-prev ~ .carousel-animate__container .carousel-animate--move {
     transform: translateX(-50%);
   }
 }
 @media (min-width: 992px) {
-  .featured-works .carousel-item-prev ~ .featured-works__animate-container .featured-works__animate--move {
+  .featured-works .carousel-item-prev ~ .carousel-animate__container .carousel-animate--move {
     transform: translateX(-33.333%);
   }
 }
 @media (min-width: 1200px) {
-  .featured-works .carousel-item-prev ~ .featured-works__animate-container .featured-works__animate--move {
+  .featured-works .carousel-item-prev ~ .carousel-animate__container .carousel-animate--move {
     transform: translateX(-25%);
   }
 }
-.featured-works .carousel-item-next ~ .featured-works__animate-container .featured-works__animate--move {
+.featured-works .carousel-item-next ~ .carousel-animate__container .carousel-animate--move {
   transform: translateX(-300%);
   transition: all 0.6s;
 }
 
 @media (min-width: 576px) {
-  .featured-works .carousel-item-next ~ .featured-works__animate-container .featured-works__animate--move {
+  .featured-works .carousel-item-next ~ .carousel-animate__container .carousel-animate--move {
     transform: translateX(-150%);
   }
 }
 @media (min-width: 992px) {
-  .featured-works .carousel-item-next ~ .featured-works__animate-container .featured-works__animate--move {
+  .featured-works .carousel-item-next ~ .carousel-animate__container .carousel-animate--move {
     transform: translateX(-100%);
   }
 }
 @media (min-width: 1200px) {
-  .featured-works .carousel-item-next ~ .featured-works__animate-container .featured-works__animate--move {
+  .featured-works .carousel-item-next ~ .carousel-animate__container .carousel-animate--move {
     transform: translateX(-75%);
   }
 }
-.featured-works__animate {
-  animation: moveSlideshow 15s linear infinite;
-  /* animation-play-state: paused; */
+.featured-works .carousel-animate__control {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 60px;
 }
 
-.featured-works__animate:hover {
-  animation-play-state: paused;
+.featured-works .carousel-animate__control + span {
+  right: 20px;
 }
 
-.featured-works__animate--move {
+.featured-works .carousel-animate__control SVG {
+  padding: 10px;
+  height: 40px;
+}
+
+.featured-works .carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(2) {
+  order: 1;
+}
+
+.featured-works .carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(3) {
+  order: 2;
+}
+
+.featured-works .carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(4) {
+  order: 3;
+}
+
+.featured-works .carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(5) {
+  order: 4;
+}
+
+.featured-works .carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(6) {
+  order: 5;
+}
+
+.featured-works .carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(7) {
+  order: 6;
+}
+
+.featured-works .carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(8) {
+  order: 7;
+}
+
+.featured-works .carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(9) {
+  order: 8;
+}
+
+.featured-works .carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(10) {
+  order: 9;
+}
+
+.featured-works .carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(11) {
+  order: 10;
+}
+
+.featured-works .carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(12) {
+  order: 11;
+}
+
+.featured-works .carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(3) {
+  order: 2;
+}
+
+.featured-works .carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(4) {
+  order: 3;
+}
+
+.featured-works .carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(5) {
+  order: 4;
+}
+
+.featured-works .carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(6) {
+  order: 5;
+}
+
+.featured-works .carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(7) {
+  order: 6;
+}
+
+.featured-works .carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(8) {
+  order: 7;
+}
+
+.featured-works .carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(9) {
+  order: 8;
+}
+
+.featured-works .carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(10) {
+  order: 9;
+}
+
+.featured-works .carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(11) {
+  order: 10;
+}
+
+.featured-works .carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(12) {
+  order: 11;
+}
+
+.featured-works .carousel-animate__act4.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(4) {
+  order: 3;
+}
+
+.featured-works .carousel-animate__act4.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(5) {
+  order: 4;
+}
+
+.featured-works .carousel-animate__act4.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(6) {
+  order: 5;
+}
+
+.featured-works .carousel-animate__act4.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(7) {
+  order: 6;
+}
+
+.featured-works .carousel-animate__act4.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(8) {
+  order: 7;
+}
+
+.featured-works .carousel-animate__act4.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(9) {
+  order: 8;
+}
+
+.featured-works .carousel-animate__act4.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(10) {
+  order: 9;
+}
+
+.featured-works .carousel-animate__act4.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(11) {
+  order: 10;
+}
+
+.featured-works .carousel-animate__act4.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(12) {
+  order: 11;
+}
+
+.featured-works .carousel-animate__act5.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(5) {
+  order: 4;
+}
+
+.featured-works .carousel-animate__act5.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(6) {
+  order: 5;
+}
+
+.featured-works .carousel-animate__act5.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(7) {
+  order: 6;
+}
+
+.featured-works .carousel-animate__act5.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(8) {
+  order: 7;
+}
+
+.featured-works .carousel-animate__act5.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(9) {
+  order: 8;
+}
+
+.featured-works .carousel-animate__act5.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(10) {
+  order: 9;
+}
+
+.featured-works .carousel-animate__act5.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(11) {
+  order: 10;
+}
+
+.featured-works .carousel-animate__act5.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(12) {
+  order: 11;
+}
+
+.featured-works .carousel-animate__act6.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(6) {
+  order: 5;
+}
+
+.featured-works .carousel-animate__act6.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(7) {
+  order: 6;
+}
+
+.featured-works .carousel-animate__act6.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(8) {
+  order: 7;
+}
+
+.featured-works .carousel-animate__act6.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(9) {
+  order: 8;
+}
+
+.featured-works .carousel-animate__act6.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(10) {
+  order: 9;
+}
+
+.featured-works .carousel-animate__act6.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(11) {
+  order: 10;
+}
+
+.featured-works .carousel-animate__act6.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(12) {
+  order: 11;
+}
+
+.featured-works .carousel-animate__act7.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(7) {
+  order: 6;
+}
+
+.featured-works .carousel-animate__act7.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(8) {
+  order: 7;
+}
+
+.featured-works .carousel-animate__act7.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(9) {
+  order: 8;
+}
+
+.featured-works .carousel-animate__act7.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(10) {
+  order: 9;
+}
+
+.featured-works .carousel-animate__act7.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(11) {
+  order: 10;
+}
+
+.featured-works .carousel-animate__act7.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(12) {
+  order: 11;
+}
+
+.featured-works .carousel-animate__act8.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(8) {
+  order: 7;
+}
+
+.featured-works .carousel-animate__act8.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(9) {
+  order: 8;
+}
+
+.featured-works .carousel-animate__act8.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(10) {
+  order: 9;
+}
+
+.featured-works .carousel-animate__act8.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(11) {
+  order: 10;
+}
+
+.featured-works .carousel-animate__act8.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(12) {
+  order: 11;
+}
+
+.featured-works .carousel-animate--move {
   transform: translateX(-200%);
 }
 
 @media (min-width: 576px) {
-  .featured-works__animate--move {
+  .featured-works .carousel-animate--move {
     transform: translateX(-100%);
   }
 }
 @media (min-width: 992px) {
-  .featured-works__animate--move {
+  .featured-works .carousel-animate--move {
     transform: translateX(-66.666%);
   }
 }
 @media (min-width: 1200px) {
-  .featured-works__animate--move {
+  .featured-works .carousel-animate--move {
     transform: translateX(-50%);
   }
 }
-.featured-works__animate-control {
-  display: inline-block;
-  position: absolute;
-  top: 10px;
-  right: 60px;
-}
-
-.featured-works__animate-control + span {
-  right: 30px;
-}
-
-.featured-works__animate-control SVG {
-  padding: 10px 16px;
-  height: 40px;
-}
-
-.featured-works__animate--order {
-  order: 20;
-}
-
-.featured-works__animate--act2.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(2) {
-  order: 1;
-}
-
-.featured-works__animate--act2.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(3) {
-  order: 2;
-}
-
-.featured-works__animate--act2.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(4) {
-  order: 3;
-}
-
-.featured-works__animate--act2.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(5) {
-  order: 4;
-}
-
-.featured-works__animate--act2.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(6) {
-  order: 5;
-}
-
-.featured-works__animate--act2.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(7) {
-  order: 6;
-}
-
-.featured-works__animate--act2.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(8) {
-  order: 7;
-}
-
-.featured-works__animate--act2.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(9) {
-  order: 8;
-}
-
-.featured-works__animate--act2.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(10) {
-  order: 9;
-}
-
-.featured-works__animate--act2.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(11) {
-  order: 10;
-}
-
-.featured-works__animate--act2.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(12) {
-  order: 11;
-}
-
-.featured-works__animate--act3.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(3) {
-  order: 2;
-}
-
-.featured-works__animate--act3.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(4) {
-  order: 3;
-}
-
-.featured-works__animate--act3.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(5) {
-  order: 4;
-}
-
-.featured-works__animate--act3.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(6) {
-  order: 5;
-}
-
-.featured-works__animate--act3.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(7) {
-  order: 6;
-}
-
-.featured-works__animate--act3.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(8) {
-  order: 7;
-}
-
-.featured-works__animate--act3.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(9) {
-  order: 8;
-}
-
-.featured-works__animate--act3.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(10) {
-  order: 9;
-}
-
-.featured-works__animate--act3.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(11) {
-  order: 10;
-}
-
-.featured-works__animate--act3.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(12) {
-  order: 11;
-}
-
-.featured-works__animate--act4.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(4) {
-  order: 3;
-}
-
-.featured-works__animate--act4.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(5) {
-  order: 4;
-}
-
-.featured-works__animate--act4.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(6) {
-  order: 5;
-}
-
-.featured-works__animate--act4.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(7) {
-  order: 6;
-}
-
-.featured-works__animate--act4.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(8) {
-  order: 7;
-}
-
-.featured-works__animate--act4.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(9) {
-  order: 8;
-}
-
-.featured-works__animate--act4.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(10) {
-  order: 9;
-}
-
-.featured-works__animate--act4.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(11) {
-  order: 10;
-}
-
-.featured-works__animate--act4.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(12) {
-  order: 11;
-}
-
-.featured-works__animate--act5.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(5) {
-  order: 4;
-}
-
-.featured-works__animate--act5.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(6) {
-  order: 5;
-}
-
-.featured-works__animate--act5.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(7) {
-  order: 6;
-}
-
-.featured-works__animate--act5.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(8) {
-  order: 7;
-}
-
-.featured-works__animate--act5.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(9) {
-  order: 8;
-}
-
-.featured-works__animate--act5.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(10) {
-  order: 9;
-}
-
-.featured-works__animate--act5.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(11) {
-  order: 10;
-}
-
-.featured-works__animate--act5.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(12) {
-  order: 11;
-}
-
-.featured-works__animate--act6.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(6) {
-  order: 5;
-}
-
-.featured-works__animate--act6.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(7) {
-  order: 6;
-}
-
-.featured-works__animate--act6.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(8) {
-  order: 7;
-}
-
-.featured-works__animate--act6.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(9) {
-  order: 8;
-}
-
-.featured-works__animate--act6.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(10) {
-  order: 9;
-}
-
-.featured-works__animate--act6.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(11) {
-  order: 10;
-}
-
-.featured-works__animate--act6.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(12) {
-  order: 11;
-}
-
-.featured-works__animate--act7.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(7) {
-  order: 6;
-}
-
-.featured-works__animate--act7.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(8) {
-  order: 7;
-}
-
-.featured-works__animate--act7.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(9) {
-  order: 8;
-}
-
-.featured-works__animate--act7.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(10) {
-  order: 9;
-}
-
-.featured-works__animate--act7.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(11) {
-  order: 10;
-}
-
-.featured-works__animate--act7.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(12) {
-  order: 11;
-}
-
-.featured-works__animate--act8.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(8) {
-  order: 7;
-}
-
-.featured-works__animate--act8.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(9) {
-  order: 8;
-}
-
-.featured-works__animate--act8.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(10) {
-  order: 9;
-}
-
-.featured-works__animate--act8.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(11) {
-  order: 10;
-}
-
-.featured-works__animate--act8.active ~ .featured-works__animate-container .featured-works__animate > :nth-child(12) {
-  order: 11;
-}
-
-.featured-works__animate-hover {
-  top: 100%;
-  transition: all 1s;
-}
-
-.featured-works__animate-hover-control:hover .featured-works__animate-hover {
-  top: 0%;
-}
-
-.featured-works__animate-content {
-  width: 130%;
-  height: 200%;
-  transform: rotate(330deg);
-  transform-origin: left;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5019607843) 0px, rgba(0, 0, 0, 0.5019607843) 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0));
-  padding-top: 50%;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-.featured-works__animate-content p {
-  font-size: 20px;
-  padding: 10px 40px;
-  border-bottom: 2px solid #ffffff;
-}
-
-.featured-works__animate-text {
-  background-color: rgba(0, 0, 0, 0.5019607843);
-  height: 40%;
-  padding: 0 15%;
-  border-bottom: 1px solid #82b600;
-}
-
-.featured-works__animate-control {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  right: 80px;
-}
-
-.featured-works__animate-control + span {
-  right: 30px;
+.featured-works .carousel-animate__animation {
+  animation: moveSlideshow 15s linear infinite;
+  /* animation-play-state: paused; */
 }
 
 @keyframes moveSlideshow {
@@ -656,6 +595,47 @@ hr.separate {
     }
   }
 }
+.featured-works .carousel-animate__animation:hover {
+  animation-play-state: paused;
+}
+
+.featured-works .carousel-animate--order {
+  order: 20;
+}
+
+.featured-works__hover {
+  top: 100%;
+  transition: all 1s;
+}
+
+.featured-works__hover-control:hover .featured-works__hover {
+  top: 0%;
+}
+
+.featured-works__hover-content {
+  width: 130%;
+  height: 200%;
+  transform: rotate(330deg);
+  transform-origin: left;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5019607843) 0px, rgba(0, 0, 0, 0.5019607843) 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0));
+  padding-top: 50%;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.featured-works__hover-content p {
+  font-size: 20px;
+  padding: 10px 40px;
+  border-bottom: 2px solid #ffffff;
+}
+
+.featured-works__hover-text {
+  background-color: rgba(0, 0, 0, 0.5019607843);
+  height: 40%;
+  padding: 0 15%;
+  border-bottom: 1px solid #82b600;
+}
+
 /* footer */
 /* supplement */
 footer .supplement {

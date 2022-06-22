@@ -1,8 +1,6 @@
-// @use "../abstracts/mixins";
-
 .carousel-item-prev {
-  ~ .featured-works__animate-container {
-    .featured-works__animate--move {
+  ~ .carousel-animate__container {
+    .carousel-animate--move {
       transform: translateX(-200%);
       transition: all 0.6s;
       @include mixins.size-sm {
@@ -18,8 +16,8 @@
   }
 }
 .carousel-item-next {
-  ~ .featured-works__animate-container {
-    .featured-works__animate--move {
+  ~ .carousel-animate__container {
+    .carousel-animate--move {
       transform: translateX(-300%);
       transition: all 0.6s;
       @include mixins.size-sm {
@@ -34,58 +32,25 @@
     }
   }
 }
-&__animate {
-  animation: moveSlideshow 15s linear infinite;
-  /* animation-play-state: paused; */
-  // animation-play-state: paused;
-  &:hover {
-    animation-play-state: paused;
-  }
-  &--move {
-    transform: translateX(-200%);
-    @include mixins.size-sm {
-      transform: translateX(-100%);
-    }
-    @include mixins.size-lg {
-      transform: translateX(-66.666%);
-    }
-    @include mixins.size-xl {
-      transform: translateX(-50%);
-    }
-  }
-  &-control {
+
+.carousel-animate {
+  &__control {
     display: inline-block;
     position: absolute;
-    top: 10px;
+    top: 0;
     right: 60px;
     + span {
-      right: 30px;
-      // &:hover {
-      //   ~ .featured-works__animate-container {
-      //     .featured-works__animate {
-      //       animation-direction: reverse;
-      //     }
-      //   }
-      // }
+      right: 20px;
     }
-    // &:hover {
-    //   ~ .featured-works__animate-container {
-    //     .featured-works__animate {
-    //       animation-duration: 10s;
-    //     }
-    //   }
-    // }
     SVG {
-      padding: 10px 16px;
+      padding: 10px;
       height: 40px;
     }
   }
-  &--order {
-    order: 20;
-  }
-  &--act2.active {
-    ~ .featured-works__animate-container {
-      .featured-works__animate {
+
+  &__act2.active {
+    ~ .carousel-animate__container {
+      .carousel-animate__animation {
         > {
           :nth-child(2) {
             order: 1;
@@ -124,9 +89,9 @@
       }
     }
   }
-  &--act3.active {
-    ~ .featured-works__animate-container {
-      .featured-works__animate {
+  &__act3.active {
+    ~ .carousel-animate__container {
+      .carousel-animate__animation {
         > {
           :nth-child(3) {
             order: 2;
@@ -162,9 +127,9 @@
       }
     }
   }
-  &--act4.active {
-    ~ .featured-works__animate-container {
-      .featured-works__animate {
+  &__act4.active {
+    ~ .carousel-animate__container {
+      .carousel-animate__animation {
         > {
           :nth-child(4) {
             order: 3;
@@ -197,9 +162,9 @@
       }
     }
   }
-  &--act5.active {
-    ~ .featured-works__animate-container {
-      .featured-works__animate {
+  &__act5.active {
+    ~ .carousel-animate__container {
+      .carousel-animate__animation {
         > {
           :nth-child(5) {
             order: 4;
@@ -229,9 +194,9 @@
       }
     }
   }
-  &--act6.active {
-    ~ .featured-works__animate-container {
-      .featured-works__animate {
+  &__act6.active {
+    ~ .carousel-animate__container {
+      .carousel-animate__animation {
         > {
           :nth-child(6) {
             order: 5;
@@ -258,9 +223,9 @@
       }
     }
   }
-  &--act7.active {
-    ~ .featured-works__animate-container {
-      .featured-works__animate {
+  &__act7.active {
+    ~ .carousel-animate__container {
+      .carousel-animate__animation {
         > {
           :nth-child(7) {
             order: 6;
@@ -284,9 +249,9 @@
       }
     }
   }
-  &--act8.active {
-    ~ .featured-works__animate-container {
-      .featured-works__animate {
+  &__act8.active {
+    ~ .carousel-animate__container {
+      .carousel-animate__animation {
         > {
           :nth-child(8) {
             order: 7;
@@ -307,77 +272,55 @@
       }
     }
   }
-  &-hover {
-    top: 100%;
-    transition: all 1s;
-    &-control {
-      &:hover {
-        .featured-works__animate-hover {
-          top: 0%;
+
+  &--move {
+    transform: translateX(-200%);
+    @include mixins.size-sm {
+      transform: translateX(-100%);
+    }
+    @include mixins.size-lg {
+      transform: translateX(-66.666%);
+    }
+    @include mixins.size-xl {
+      transform: translateX(-50%);
+    }
+  }
+
+  &__animation {
+    animation: moveSlideshow 15s linear infinite;
+    /* animation-play-state: paused; */
+    // animation-play-state: paused;
+    @keyframes moveSlideshow {
+      100% {
+        transform: translateX(-400%);
+      }
+    }
+    @include mixins.size-sm {
+      @keyframes moveSlideshow {
+        100% {
+          transform: translateX(-200%);
         }
       }
     }
-  }
-  &-content {
-    width: 130%;
-    height: 200%;
-    transform: rotate(330deg);
-    transform-origin: left;
-    background: linear-gradient(
-      to bottom,
-      #00000080 0px,
-      #00000080 20%,
-      #00000000 20%,
-      #00000000
-    );
-    padding-top: 50%;
-    color: #ffffff;
-    font-weight: bold;
-    p {
-      font-size: 20px;
-      padding: 10px 40px;
-      border-bottom: 2px solid #ffffff;
-    }
-  }
-  &-text {
-    background-color: #00000080;
-    height: 40%;
-    padding: 0 15%;
-    border-bottom: 1px solid #82b600;
-  }
-}
-&__animate-control {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  right: 80px;
-  + span {
-    right: 30px;
-  }
-  @keyframes moveSlideshow {
-    100% {
-      transform: translateX(-400%);
-    }
-  }
-  @include mixins.size-sm {
-    @keyframes moveSlideshow {
-      100% {
-        transform: translateX(-200%);
+    @include mixins.size-lg {
+      @keyframes moveSlideshow {
+        100% {
+          transform: translateX(-133.33%);
+        }
       }
     }
-  }
-  @include mixins.size-lg {
-    @keyframes moveSlideshow {
-      100% {
-        transform: translateX(-133.33%);
+    @include mixins.size-xl {
+      @keyframes moveSlideshow {
+        100% {
+          transform: translateX(-100%);
+        }
       }
     }
-  }
-  @include mixins.size-xl {
-    @keyframes moveSlideshow {
-      100% {
-        transform: translateX(-100%);
-      }
+    &:hover {
+      animation-play-state: paused;
     }
+  }
+  &--order {
+    order: 20;
   }
 }

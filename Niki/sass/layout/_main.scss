@@ -7,10 +7,9 @@ main {
 
 @import "../components/banner";
 
-.card-group{
+.card-group {
   @import "../components/card";
 }
-
 
 .introduction {
   h2 {
@@ -25,7 +24,7 @@ main {
       }
     }
     i {
-      @include mixins.font-color(32px, #dadada ,900);
+      @include mixins.font-color(32px, #dadada, 900);
       // font-size: 32px;
       // color: #dadada;
       display: block;
@@ -53,15 +52,52 @@ main {
 }
 
 hr.separate {
-    opacity: 1;
-    height: 2px;
-    padding: 0 16px;
-    background-color: #c7c7c7;
-    background-clip: content-box;
-    margin: 48px 0 0;
+  opacity: 1;
+  height: 2px;
+  padding: 0 16px;
+  background-color: #c7c7c7;
+  background-clip: content-box;
+  margin: 48px 0 0;
 }
 
 .featured-works {
-  position: relative;
   @import "../components/animate-carousel";
+  &__hover {
+    top: 100%;
+    transition: all 1s;
+    &-control {
+      &:hover {
+        .featured-works__hover {
+          top: 0%;
+        }
+      }
+    }
+    &-content {
+      width: 130%;
+      height: 200%;
+      transform: rotate(330deg);
+      transform-origin: left;
+      background: linear-gradient(
+        to bottom,
+        #00000080 0px,
+        #00000080 20%,
+        #00000000 20%,
+        #00000000
+      );
+      padding-top: 50%;
+      color: #ffffff;
+      font-weight: bold;
+      p {
+        font-size: 20px;
+        padding: 10px 40px;
+        border-bottom: 2px solid #ffffff;
+      }
+    }
+    &-text {
+      background-color: #00000080;
+      height: 40%;
+      padding: 0 15%;
+      border-bottom: 1px solid #82b600;
+    }
+  }
 }
