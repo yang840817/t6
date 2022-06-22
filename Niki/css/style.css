@@ -11,6 +11,7 @@ a {
 .card {
   border: 0;
   border-radius: 0;
+  background-color: transparent;
 }
 
 * {
@@ -191,9 +192,39 @@ main {
   background-color: #cecece;
   color: #373737;
 }
-.card-group .row > .btn {
-  width: fit-content;
-  margin: 0 auto;
+
+.introduction h2 {
+  color: #000000;
+}
+.introduction .card {
+  color: #939393;
+  border: 0;
+}
+.introduction .card-text span {
+  color: #000000;
+}
+.introduction .card i {
+  font-size: 32px;
+  color: #dadada;
+  font-weight: 900;
+  display: block;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .introduction .card i {
+    font-size: 48px;
+  }
+}
+.introduction .card-title:not(h2) {
+  display: inline-block;
+  background-color: #81b701;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: inherit;
+}
+.introduction__choose .card {
+  border: 0;
+  border-bottom: 1px solid #e4e4e4;
 }
 
 hr.separate {
@@ -517,41 +548,6 @@ hr.separate {
       transform: translateX(-100%);
     }
   }
-}
-
-.introduction h2 {
-  color: #000000;
-}
-.introduction .card {
-  background-color: transparent;
-  color: #939393;
-  border: 0;
-}
-.introduction .card-text span {
-  color: #000000;
-}
-.introduction .card i {
-  font-size: 32px;
-  color: #dadada;
-  font-weight: 900;
-  display: block;
-  text-align: center;
-}
-@media (min-width: 768px) {
-  .introduction .card i {
-    font-size: 48px;
-  }
-}
-.introduction .card-title:not(h2) {
-  display: inline-block;
-  background-color: #81b701;
-  font-size: 18px;
-  color: #ffffff;
-  font-weight: inherit;
-}
-.introduction__choose .card {
-  border: 0;
-  border-bottom: 1px solid #e4e4e4;
 }
 
 /* footer */

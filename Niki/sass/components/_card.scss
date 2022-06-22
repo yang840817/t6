@@ -1,0 +1,41 @@
+@use "../abstracts/mixins";
+
+.card {
+  @include mixins.color_bg-color(#646464, #e8e8e8);
+  // background-color: #e8e8e8;
+  // color: #646464;
+  &:hover,
+  &.active {
+    @include mixins.color_bg-color(#e8e8e8, #646464);
+    // background-color: #646464;
+    // color: #e8e8e8;
+  }
+  &-title {
+    font-size: 18px;
+  }
+  &-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  &-text {
+    @include mixins.size-md {
+      height: 120px;
+    }
+    @include mixins.size-lg {
+      height: 100px;
+    }
+    @include mixins.size-xl {
+      height: 120px;
+    }
+    @include mixins.size-xxl {
+      height: 100px;
+    }
+  }
+}
+.btn {
+  background-color: #cecece;
+  color: #373737;
+}

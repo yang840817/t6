@@ -6,7 +6,51 @@ main {
 }
 
 @import "../components/banner";
-@import "../components/card-group";
+
+.card-group{
+  @import "../components/card";
+}
+
+
+.introduction {
+  h2 {
+    color: #000000;
+  }
+  .card {
+    color: #939393;
+    border: 0;
+    &-text {
+      span {
+        color: #000000;
+      }
+    }
+    i {
+      @include mixins.font-color(32px, #dadada ,900);
+      // font-size: 32px;
+      // color: #dadada;
+      display: block;
+      text-align: center;
+      @include mixins.size-md {
+        font-size: 48px;
+      }
+    }
+
+    &-title:not(h2) {
+      display: inline-block;
+      background-color: #81b701;
+      @include mixins.font-color(18px, #ffffff);
+      // font-size: 18px;
+      // color: #ffffff;
+    }
+  }
+
+  &__choose {
+    .card {
+      border: 0;
+      border-bottom: 1px solid #e4e4e4;
+    }
+  }
+}
 
 hr.separate {
     opacity: 1;
