@@ -1,14 +1,16 @@
 @use "base/reset";
 @use "base/base";
-@use "layout/header";
-@use "layout/main";
+// @use "layout/header";
+// @use "layout/main";
 // @use "main/banner";
 // @use "main/card-group";
 // @use "main/introduction";
 // @use "main/separate";
 // @use "main/featured-works";
-@use "layout/footer";
+// @use "layout/footer";
 
-// import練習使用 header
-// @import "header";指定資料夾,目標資料夾裡面要有一個 _index.scss檔案指引資料夾其他檔案
-// @import "header/header" 指定特頂檔案,目前感覺跟use一樣
+// import練習使用 layout
+@import "layout";
+// 指定資料夾,目標資料夾裡面要有一個 _index.scss檔案指引資料夾其他檔案
+// @import "header/header" 
+// 指定特頂檔案,目前感覺跟use一樣
