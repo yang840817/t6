@@ -1,5 +1,3 @@
-@use "../abstracts/mixins";
-
 .card {
   @include mixins.color_bg-color(#646464, #e8e8e8);
   // background-color: #e8e8e8;
