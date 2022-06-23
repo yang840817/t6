@@ -1,4 +1,6 @@
-.under-nav{
+@use "../abstracts/mixins";
+
+.under-nav {
   .nav {
     font-size: 12px;
 

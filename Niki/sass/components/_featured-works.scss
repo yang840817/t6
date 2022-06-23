@@ -1,4 +1,4 @@
-@use "../components/animate-carousel-2";
+@use "../abstracts/animate-carousel-2";
 
 .featured-works {
     @extend %carousel-animate ;

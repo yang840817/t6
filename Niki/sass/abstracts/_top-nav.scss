@@ -1,4 +1,6 @@
-.header {
+@use "../abstracts/mixins";
+
+%top-nav {
   .nav-item {
     border-right: 1px solid #eeeeee;
   }
