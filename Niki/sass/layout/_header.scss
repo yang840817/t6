@@ -1,5 +1,5 @@
 @use "../abstracts/mixins";
-@use "../abstracts/top-nav";
+@use "../components/top-nav";
 
 .header {
   .container-fluid {
@@ -76,7 +76,5 @@
       }
     }
   }
-  @extend %top-nav ;
-
 }
 

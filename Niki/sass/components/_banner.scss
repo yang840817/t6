@@ -30,4 +30,35 @@
       }
     }
   }
+
+  .carousel-inner {
+    height: 500px;
+    @include mixins.size-md {
+      height: initial;
+      width: 100%;
+    }
+    :nth-child(1) {
+      img {
+        transform: translateX(-300px);
+        @include mixins.size-md {
+          transform: initial;
+        }
+      }
+    }
+    :nth-child(2) {
+      img {
+        transform: translateX(-500px);
+        @include mixins.size-md {
+          transform: initial;
+        }
+      }
+    }
+  }
+
+  .carousel-item {
+    overflow: hidden;
+    img {
+      @extend .carousel-inner;
+    }
+  }
 }
