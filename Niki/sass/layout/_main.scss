@@ -6,7 +6,6 @@
 
 main {
   background-image: url("../images/subbg.gif");
-  // background-color: aqua;
   @include mixins.size-lg {
     margin-top: -32px;
     padding-top: 32px;

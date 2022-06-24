@@ -15,18 +15,12 @@
   .nav-link {
     padding: 20px 16px;
     @include mixins.font-color(inherit, #000000, bold);
-    // color: #000;
-    // font-weight: bolder;
     &.active,
     &:hover {
       @include mixins.color_bg-color(#ffffff, #80b701);
-      // color: #ffffff;
-      // background-color: #80b701;
     }
     &.show {
       @include mixins.color_bg-color(#ffffff, #80b70177);
-      // color: #ffffff;
-      // background-color: #80b70177;
     }
   }
 

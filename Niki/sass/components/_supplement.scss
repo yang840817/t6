@@ -62,6 +62,9 @@
         }
       }
     }
+    textarea {
+      resize:none
+    }
   }
   [name="text"] {
     margin-bottom: 24px;
@@ -76,6 +79,7 @@
     @extend [type="reset"];
     background-color: #81b701;
   }
+  
 
   // flickr
   &__grid {
@@ -88,9 +92,5 @@
     @include mixins.size-xl {
       grid-template-columns: repeat(4, 1fr);
     }
-  }
-
-  &__flickr-img {
-    width: 100%;
   }
 }

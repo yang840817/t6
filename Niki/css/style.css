@@ -125,7 +125,6 @@ body {
   }
 }
 
-/* banner */
 .banner .carousel-control-prev, .banner .carousel-control-next {
   background: url("../images/slider_prev.gif") no-repeat 0 0;
   width: 40px;
@@ -633,6 +632,9 @@ hr.separate {
     margin-top: 16px;
   }
 }
+.supplement__mail-us textarea {
+  resize: none;
+}
 .supplement [name=text] {
   margin-bottom: 24px;
 }
@@ -659,9 +661,6 @@ hr.separate {
   .supplement__grid {
     grid-template-columns: repeat(4, 1fr);
   }
-}
-.supplement__flickr-img {
-  width: 100%;
 }
 
 .under-nav {
