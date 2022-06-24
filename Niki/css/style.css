@@ -218,244 +218,244 @@ body {
   border-bottom: 1px solid #e4e4e4;
 }
 
-.featured-works .carousel-item-prev ~ .carousel-animate__container .carousel-animate--move {
+.carousel-animate .carousel-item-prev ~ .carousel-animate__container .carousel-animate--move {
   transform: translateX(-200%);
   transition: all 0.6s;
 }
 @media (min-width: 576px) {
-  .featured-works .carousel-item-prev ~ .carousel-animate__container .carousel-animate--move {
+  .carousel-animate .carousel-item-prev ~ .carousel-animate__container .carousel-animate--move {
     transform: translateX(-50%);
   }
 }
 @media (min-width: 992px) {
-  .featured-works .carousel-item-prev ~ .carousel-animate__container .carousel-animate--move {
+  .carousel-animate .carousel-item-prev ~ .carousel-animate__container .carousel-animate--move {
     transform: translateX(-33.333%);
   }
 }
 @media (min-width: 1200px) {
-  .featured-works .carousel-item-prev ~ .carousel-animate__container .carousel-animate--move {
+  .carousel-animate .carousel-item-prev ~ .carousel-animate__container .carousel-animate--move {
     transform: translateX(-25%);
   }
 }
-.featured-works .carousel-item-next ~ .carousel-animate__container .carousel-animate--move {
+.carousel-animate .carousel-item-next ~ .carousel-animate__container .carousel-animate--move {
   transform: translateX(-300%);
   transition: all 0.6s;
 }
 @media (min-width: 576px) {
-  .featured-works .carousel-item-next ~ .carousel-animate__container .carousel-animate--move {
+  .carousel-animate .carousel-item-next ~ .carousel-animate__container .carousel-animate--move {
     transform: translateX(-150%);
   }
 }
 @media (min-width: 992px) {
-  .featured-works .carousel-item-next ~ .carousel-animate__container .carousel-animate--move {
+  .carousel-animate .carousel-item-next ~ .carousel-animate__container .carousel-animate--move {
     transform: translateX(-100%);
   }
 }
 @media (min-width: 1200px) {
-  .featured-works .carousel-item-next ~ .carousel-animate__container .carousel-animate--move {
+  .carousel-animate .carousel-item-next ~ .carousel-animate__container .carousel-animate--move {
     transform: translateX(-75%);
   }
 }
-.featured-works .carousel-animate__control {
+.carousel-animate__control {
   display: inline-block;
   position: absolute;
   top: 0;
   right: 60px;
 }
-.featured-works .carousel-animate__control + span {
+.carousel-animate__control + span {
   right: 20px;
 }
-.featured-works .carousel-animate__control SVG {
+.carousel-animate__control SVG {
   padding: 10px;
   height: 40px;
 }
-.featured-works .carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(2) {
+.carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(2) {
   order: 1;
 }
-.featured-works .carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(3) {
+.carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(3) {
   order: 2;
 }
-.featured-works .carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(4) {
+.carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(4) {
   order: 3;
 }
-.featured-works .carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(5) {
+.carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(5) {
   order: 4;
 }
-.featured-works .carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(6) {
+.carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(6) {
   order: 5;
 }
-.featured-works .carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(7) {
+.carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(7) {
   order: 6;
 }
-.featured-works .carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(8) {
+.carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(8) {
   order: 7;
 }
-.featured-works .carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(9) {
+.carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(9) {
   order: 8;
 }
-.featured-works .carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(10) {
+.carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(10) {
   order: 9;
 }
-.featured-works .carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(11) {
+.carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(11) {
   order: 10;
 }
-.featured-works .carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(12) {
+.carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(12) {
   order: 11;
 }
-.featured-works .carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(3) {
+.carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(3) {
   order: 2;
 }
-.featured-works .carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(4) {
+.carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(4) {
   order: 3;
 }
-.featured-works .carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(5) {
+.carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(5) {
   order: 4;
 }
-.featured-works .carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(6) {
+.carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(6) {
   order: 5;
 }
-.featured-works .carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(7) {
+.carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(7) {
   order: 6;
 }
-.featured-works .carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(8) {
+.carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(8) {
   order: 7;
 }
-.featured-works .carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(9) {
+.carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(9) {
   order: 8;
 }
-.featured-works .carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(10) {
+.carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(10) {
   order: 9;
 }
-.featured-works .carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(11) {
+.carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(11) {
   order: 10;
 }
-.featured-works .carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(12) {
+.carousel-animate__act3.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(12) {
   order: 11;
 }
-.featured-works .carousel-animate__act4.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(4) {
+.carousel-animate__act4.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(4) {
   order: 3;
 }
-.featured-works .carousel-animate__act4.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(5) {
+.carousel-animate__act4.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(5) {
   order: 4;
 }
-.featured-works .carousel-animate__act4.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(6) {
+.carousel-animate__act4.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(6) {
   order: 5;
 }
-.featured-works .carousel-animate__act4.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(7) {
+.carousel-animate__act4.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(7) {
   order: 6;
 }
-.featured-works .carousel-animate__act4.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(8) {
+.carousel-animate__act4.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(8) {
   order: 7;
 }
-.featured-works .carousel-animate__act4.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(9) {
+.carousel-animate__act4.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(9) {
   order: 8;
 }
-.featured-works .carousel-animate__act4.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(10) {
+.carousel-animate__act4.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(10) {
   order: 9;
 }
-.featured-works .carousel-animate__act4.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(11) {
+.carousel-animate__act4.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(11) {
   order: 10;
 }
-.featured-works .carousel-animate__act4.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(12) {
+.carousel-animate__act4.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(12) {
   order: 11;
 }
-.featured-works .carousel-animate__act5.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(5) {
+.carousel-animate__act5.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(5) {
   order: 4;
 }
-.featured-works .carousel-animate__act5.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(6) {
+.carousel-animate__act5.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(6) {
   order: 5;
 }
-.featured-works .carousel-animate__act5.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(7) {
+.carousel-animate__act5.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(7) {
   order: 6;
 }
-.featured-works .carousel-animate__act5.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(8) {
+.carousel-animate__act5.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(8) {
   order: 7;
 }
-.featured-works .carousel-animate__act5.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(9) {
+.carousel-animate__act5.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(9) {
   order: 8;
 }
-.featured-works .carousel-animate__act5.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(10) {
+.carousel-animate__act5.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(10) {
   order: 9;
 }
-.featured-works .carousel-animate__act5.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(11) {
+.carousel-animate__act5.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(11) {
   order: 10;
 }
-.featured-works .carousel-animate__act5.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(12) {
+.carousel-animate__act5.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(12) {
   order: 11;
 }
-.featured-works .carousel-animate__act6.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(6) {
+.carousel-animate__act6.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(6) {
   order: 5;
 }
-.featured-works .carousel-animate__act6.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(7) {
+.carousel-animate__act6.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(7) {
   order: 6;
 }
-.featured-works .carousel-animate__act6.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(8) {
+.carousel-animate__act6.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(8) {
   order: 7;
 }
-.featured-works .carousel-animate__act6.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(9) {
+.carousel-animate__act6.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(9) {
   order: 8;
 }
-.featured-works .carousel-animate__act6.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(10) {
+.carousel-animate__act6.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(10) {
   order: 9;
 }
-.featured-works .carousel-animate__act6.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(11) {
+.carousel-animate__act6.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(11) {
   order: 10;
 }
-.featured-works .carousel-animate__act6.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(12) {
+.carousel-animate__act6.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(12) {
   order: 11;
 }
-.featured-works .carousel-animate__act7.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(7) {
+.carousel-animate__act7.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(7) {
   order: 6;
 }
-.featured-works .carousel-animate__act7.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(8) {
+.carousel-animate__act7.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(8) {
   order: 7;
 }
-.featured-works .carousel-animate__act7.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(9) {
+.carousel-animate__act7.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(9) {
   order: 8;
 }
-.featured-works .carousel-animate__act7.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(10) {
+.carousel-animate__act7.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(10) {
   order: 9;
 }
-.featured-works .carousel-animate__act7.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(11) {
+.carousel-animate__act7.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(11) {
   order: 10;
 }
-.featured-works .carousel-animate__act7.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(12) {
+.carousel-animate__act7.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(12) {
   order: 11;
 }
-.featured-works .carousel-animate__act8.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(8) {
+.carousel-animate__act8.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(8) {
   order: 7;
 }
-.featured-works .carousel-animate__act8.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(9) {
+.carousel-animate__act8.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(9) {
   order: 8;
 }
-.featured-works .carousel-animate__act8.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(10) {
+.carousel-animate__act8.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(10) {
   order: 9;
 }
-.featured-works .carousel-animate__act8.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(11) {
+.carousel-animate__act8.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(11) {
   order: 10;
 }
-.featured-works .carousel-animate__act8.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(12) {
+.carousel-animate__act8.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(12) {
   order: 11;
 }
-.featured-works .carousel-animate--move {
+.carousel-animate--move {
   transform: translateX(-200%);
 }
 @media (min-width: 576px) {
-  .featured-works .carousel-animate--move {
+  .carousel-animate--move {
     transform: translateX(-100%);
   }
 }
 @media (min-width: 992px) {
-  .featured-works .carousel-animate--move {
+  .carousel-animate--move {
     transform: translateX(-66.666%);
   }
 }
 @media (min-width: 1200px) {
-  .featured-works .carousel-animate--move {
+  .carousel-animate--move {
     transform: translateX(-50%);
   }
 }
-.featured-works .carousel-animate__animation {
+.carousel-animate__animation {
   animation: moveSlideshow 15s linear infinite;
   /* animation-play-state: paused; */
 }
@@ -485,10 +485,10 @@ body {
     }
   }
 }
-.featured-works .carousel-animate__animation:hover {
+.carousel-animate__animation:hover {
   animation-play-state: paused;
 }
-.featured-works .carousel-animate--order {
+.carousel-animate--order {
   order: 20;
 }
 
@@ -621,8 +621,10 @@ hr.separate {
   width: 100%;
 }
 
-.under-nav .nav {
+.under-nav {
   font-size: 12px;
+  color: #535353;
+  font-weight: inherit;
 }
 @media (min-width: 992px) {
   .under-nav .nav {
@@ -636,7 +638,7 @@ hr.separate {
   color: #535353;
 }
 .under-nav .nav-link.active, .under-nav .nav-link:hover {
-  color: #72a101;
+  color: #ffffff;
 }
 @media (min-width: 992px) {
   .under-nav .nav-link {
@@ -653,9 +655,6 @@ hr.separate {
   border-left: 1px solid #ffffff;
 }
 .under-nav__copyright {
-  font-size: 12px;
-  color: #535353;
-  font-weight: inherit;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -664,6 +663,13 @@ hr.separate {
   }
 }
 .under-nav__copyright span:last-child {
+  color: #ffffff;
+}
+
+footer .under-nav .nav-link.active, footer .under-nav .nav-link:hover {
+  color: #72a101;
+}
+footer .under-nav__copyright span:last-child {
   color: #72a101;
 }
 

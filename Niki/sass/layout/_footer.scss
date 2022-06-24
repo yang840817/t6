@@ -1,2 +1,20 @@
 @use "../components/supplement";
 @use "../components/under-nav";
+
+footer {
+  .under-nav {
+    .nav-link {
+      &.active,
+      &:hover {
+        color: #72a101;
+      }
+    }
+    &__copyright {
+      span {
+        &:last-child {
+          color: #72a101;
+        }
+      }
+    }
+  }
+}

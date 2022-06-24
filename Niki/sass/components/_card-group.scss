@@ -3,13 +3,9 @@
 .card-group {
   .card {
     @include mixins.color_bg-color(#646464, #e8e8e8);
-    // background-color: #e8e8e8;
-    // color: #646464;
     &:hover,
     &.active {
       @include mixins.color_bg-color(#e8e8e8, #646464);
-      // background-color: #646464;
-      // color: #e8e8e8;
     }
     &-title {
       font-size: 18px;

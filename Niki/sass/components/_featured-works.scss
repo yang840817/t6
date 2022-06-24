@@ -1,7 +1,6 @@
-@use "../abstracts/animate-carousel-2";
+@use "animate-carousel";
 
 .featured-works {
-    @extend %carousel-animate ;
     &__hover {
       top: 100%;
       transition: all 1s;

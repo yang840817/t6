@@ -1,9 +1,8 @@
 @use "../abstracts/mixins";
 
-.under-nav {
+.under-nav{
+  @include mixins.font-color(12px, #535353);
   .nav {
-    font-size: 12px;
-
     @include mixins.size-lg {
       justify-content: end;
     }
@@ -16,7 +15,7 @@
 
     &.active,
     &:hover {
-      color: #72a101;
+      color: #ffffff;
     }
     @include mixins.size-lg {
       padding: 0 8px;
@@ -32,17 +31,17 @@
   }
 
   &__copyright {
-    @include mixins.font-color(12px, #535353);
-    // font-size: 12px;
-    // color: #535353;
     text-align: center;
     @include mixins.size-md {
       text-align: left;
     }
     span {
       &:last-child {
-        color: #72a101;
+        color: #ffffff;
       }
     }
   }
+  // &--footer {
+  //   color: #535353;
+  // }
 }
