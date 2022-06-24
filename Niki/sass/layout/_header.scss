@@ -23,6 +23,11 @@
       align-items: flex-end;
       justify-content: flex-end;
     }
+    a{
+      &:hover{
+        color: #72a101;
+      }
+    }
   }
 
   &__medialink {

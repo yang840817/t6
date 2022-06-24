@@ -80,6 +80,9 @@ body {
     justify-content: flex-end;
   }
 }
+.header__multimedia a:hover {
+  color: #72a101;
+}
 .header__medialink a {
   display: inline-block;
   width: 27px;
