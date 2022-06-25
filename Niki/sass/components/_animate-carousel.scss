@@ -4,7 +4,7 @@
   .carousel-item-prev {
     ~ .carousel-animate__container {
       .carousel-animate--move {
-        transform: translateX(-200%);
+        transform: translateX(-100%);
         transition: all 0.6s;
         @include mixins.size-sm {
           transform: translateX(-50%);
@@ -53,38 +53,8 @@
     ~ .carousel-animate__container {
       .carousel-animate__animation {
         > {
-          :nth-child(2) {
+          :nth-child(n+2) {
             order: 1;
-          }
-          :nth-child(3) {
-            order: 2;
-          }
-          :nth-child(4) {
-            order: 3;
-          }
-          :nth-child(5) {
-            order: 4;
-          }
-          :nth-child(6) {
-            order: 5;
-          }
-          :nth-child(7) {
-            order: 6;
-          }
-          :nth-child(8) {
-            order: 7;
-          }
-          :nth-child(9) {
-            order: 8;
-          }
-          :nth-child(10) {
-            order: 9;
-          }
-          :nth-child(11) {
-            order: 10;
-          }
-          :nth-child(12) {
-            order: 11;
           }
         }
       }
@@ -94,35 +64,8 @@
     ~ .carousel-animate__container {
       .carousel-animate__animation {
         > {
-          :nth-child(3) {
-            order: 2;
-          }
-          :nth-child(4) {
-            order: 3;
-          }
-          :nth-child(5) {
-            order: 4;
-          }
-          :nth-child(6) {
-            order: 5;
-          }
-          :nth-child(7) {
-            order: 6;
-          }
-          :nth-child(8) {
-            order: 7;
-          }
-          :nth-child(9) {
-            order: 8;
-          }
-          :nth-child(10) {
-            order: 9;
-          }
-          :nth-child(11) {
-            order: 10;
-          }
-          :nth-child(12) {
-            order: 11;
+          :nth-child(n+3) {
+            order: 1;
           }
         }
       }
@@ -132,32 +75,8 @@
     ~ .carousel-animate__container {
       .carousel-animate__animation {
         > {
-          :nth-child(4) {
-            order: 3;
-          }
-          :nth-child(5) {
-            order: 4;
-          }
-          :nth-child(6) {
-            order: 5;
-          }
-          :nth-child(7) {
-            order: 6;
-          }
-          :nth-child(8) {
-            order: 7;
-          }
-          :nth-child(9) {
-            order: 8;
-          }
-          :nth-child(10) {
-            order: 9;
-          }
-          :nth-child(11) {
-            order: 10;
-          }
-          :nth-child(12) {
-            order: 11;
+          :nth-child(n+4) {
+            order: 1;
           }
         }
       }
@@ -167,29 +86,8 @@
     ~ .carousel-animate__container {
       .carousel-animate__animation {
         > {
-          :nth-child(5) {
-            order: 4;
-          }
-          :nth-child(6) {
-            order: 5;
-          }
-          :nth-child(7) {
-            order: 6;
-          }
-          :nth-child(8) {
-            order: 7;
-          }
-          :nth-child(9) {
-            order: 8;
-          }
-          :nth-child(10) {
-            order: 9;
-          }
-          :nth-child(11) {
-            order: 10;
-          }
-          :nth-child(12) {
-            order: 11;
+          :nth-child(n+5) {
+            order: 1;
           }
         }
       }
@@ -199,26 +97,8 @@
     ~ .carousel-animate__container {
       .carousel-animate__animation {
         > {
-          :nth-child(6) {
-            order: 5;
-          }
-          :nth-child(7) {
-            order: 6;
-          }
-          :nth-child(8) {
-            order: 7;
-          }
-          :nth-child(9) {
-            order: 8;
-          }
-          :nth-child(10) {
-            order: 9;
-          }
-          :nth-child(11) {
-            order: 10;
-          }
-          :nth-child(12) {
-            order: 11;
+          :nth-child(n+6) {
+            order: 1;
           }
         }
       }
@@ -228,23 +108,8 @@
     ~ .carousel-animate__container {
       .carousel-animate__animation {
         > {
-          :nth-child(7) {
-            order: 6;
-          }
-          :nth-child(8) {
-            order: 7;
-          }
-          :nth-child(9) {
-            order: 8;
-          }
-          :nth-child(10) {
-            order: 9;
-          }
-          :nth-child(11) {
-            order: 10;
-          }
-          :nth-child(12) {
-            order: 11;
+          :nth-child(n+7) {
+            order: 1;
           }
         }
       }
@@ -254,20 +119,8 @@
     ~ .carousel-animate__container {
       .carousel-animate__animation {
         > {
-          :nth-child(8) {
-            order: 7;
-          }
-          :nth-child(9) {
-            order: 8;
-          }
-          :nth-child(10) {
-            order: 9;
-          }
-          :nth-child(11) {
-            order: 10;
-          }
-          :nth-child(12) {
-            order: 11;
+          :nth-child(n+8) {
+            order: 1;
           }
         }
       }
