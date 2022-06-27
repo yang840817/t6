@@ -19,18 +19,15 @@
 
     &.active {
       @include breakpoint.size-lg {
-        // @include mixins.color_bg-color(#ffffff, #80b701);
         color: #ffffff;
         background-color: #80b701;
       }
     }
     &:hover {
-      // @include mixins.color_bg-color(#ffffff, #80b701);
       color: #ffffff;
       background-color: #80b701;
     }
     &.show {
-      // @include mixins.color_bg-color(#ffffff, #80b70177);
       color: #ffffff;
       background-color: #80b70177;
     }
