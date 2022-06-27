@@ -1,4 +1,4 @@
-@use "../abstracts/mixins";
+@use "../abstracts/breakpoint";
 
 .carousel-animate {
   .carousel-item-prev {
@@ -6,13 +6,13 @@
       .carousel-animate--move {
         transform: translateX(-100%);
         transition: all 0.6s;
-        @include mixins.size-sm {
+        @include breakpoint.size-sm {
           transform: translateX(-50%);
         }
-        @include mixins.size-lg {
+        @include breakpoint.size-lg {
           transform: translateX(-33.333%);
         }
-        @include mixins.size-xl {
+        @include breakpoint.size-xl {
           transform: translateX(-25%);
         }
       }
@@ -23,13 +23,13 @@
       .carousel-animate--move {
         transform: translateX(-300%);
         transition: all 0.6s;
-        @include mixins.size-sm {
+        @include breakpoint.size-sm {
           transform: translateX(-150%);
         }
-        @include mixins.size-lg {
+        @include breakpoint.size-lg {
           transform: translateX(-100%);
         }
-        @include mixins.size-xl {
+        @include breakpoint.size-xl {
           transform: translateX(-75%);
         }
       }
@@ -129,13 +129,13 @@
 
   &--move {
     transform: translateX(-200%);
-    @include mixins.size-sm {
+    @include breakpoint.size-sm {
       transform: translateX(-100%);
     }
-    @include mixins.size-lg {
+    @include breakpoint.size-lg {
       transform: translateX(-66.666%);
     }
-    @include mixins.size-xl {
+    @include breakpoint.size-xl {
       transform: translateX(-50%);
     }
   }
@@ -143,27 +143,26 @@
   &__animation {
     animation: moveSlideshow 15s linear infinite;
     /* animation-play-state: paused; */
-    // animation-play-state: paused;
     @keyframes moveSlideshow {
       100% {
         transform: translateX(-400%);
       }
     }
-    @include mixins.size-sm {
+    @include breakpoint.size-sm {
       @keyframes moveSlideshow {
         100% {
           transform: translateX(-200%);
         }
       }
     }
-    @include mixins.size-lg {
+    @include breakpoint.size-lg {
       @keyframes moveSlideshow {
         100% {
           transform: translateX(-133.33%);
         }
       }
     }
-    @include mixins.size-xl {
+    @include breakpoint.size-xl {
       @keyframes moveSlideshow {
         100% {
           transform: translateX(-100%);

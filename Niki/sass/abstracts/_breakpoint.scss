@@ -1,8 +1,8 @@
-// $size-sm: 576px;
-// $size-md: 768px;
-// $size-lg: 992px;
-// $size-xl: 1200px;
-// $size-xxl: 1400px;
+// size-sm: 576px;
+// size-md: 768px;
+// size-lg: 992px;
+// size-xl: 1200px;
+// size-xxl: 1400px;
                           
 // @mixin breakpoint($size) {
 //   @media (min-width: $size) {
@@ -39,15 +39,3 @@
       @content;
     }
   }
-  
-  @mixin font-color($font-size: inherit , $color: inherit , $weight: inherit) {
-    font-size: $font-size;
-    color: $color;
-    font-weight: $weight;
-  }
-  
-  @mixin color_bg-color( $color: inherit , $bg-color: inherit) {
-    color: $color;
-    background-color: $bg-color;
-  }
-  

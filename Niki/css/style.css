@@ -35,7 +35,13 @@ body {
   color: #000000;
   font-weight: bold;
 }
-.top-nav .nav-link.active, .top-nav .active.dropdown-item, .top-nav .nav-link:hover, .top-nav .dropdown-item:hover {
+@media (min-width: 992px) {
+  .top-nav .nav-link.active, .top-nav .active.dropdown-item {
+    color: #ffffff;
+    background-color: #80b701;
+  }
+}
+.top-nav .nav-link:hover, .top-nav .dropdown-item:hover {
   color: #ffffff;
   background-color: #80b701;
 }
@@ -192,36 +198,18 @@ body {
 .card-group .card-title {
   font-size: 18px;
 }
-.card-group .card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
-@media (min-width: 768px) {
-  .card-group .card-text {
-    height: 120px;
-  }
-}
-@media (min-width: 992px) {
-  .card-group .card-text {
-    height: 100px;
-  }
-}
-@media (min-width: 1200px) {
-  .card-group .card-text {
-    height: 120px;
-  }
-}
-@media (min-width: 1400px) {
-  .card-group .card-text {
-    height: 100px;
-  }
-}
-.card-group .btn {
+.card-group .card .btn {
   background-color: #cecece;
   color: #373737;
+}
+
+@media (min-width: 768px) {
+  .card-group {
+    margin-top: -16px;
+  }
+}
+.card-group__btn {
+  margin-top: auto;
 }
 
 .introduction h2 {
@@ -432,40 +420,58 @@ hr.separate {
   margin: 48px 0 0;
 }
 
-.supplement {
-  background-image: url("../images/subbg.gif");
+.contact-us input,
+.contact-us textarea {
+  background-color: #e7e7e7;
 }
-.supplement__title,
-.supplement .card-title {
-  font-size: 24px;
-  font-weight: bolder;
-  line-height: initial;
+.contact-us input + .form-control,
+.contact-us textarea + .form-control {
+  margin-top: 8px;
 }
-.supplement__latest {
-  min-height: 200px;
+@media (min-width: 992px) {
+  .contact-us input + .form-control,
+.contact-us textarea + .form-control {
+    margin-top: 16px;
+  }
 }
-.supplement__testimonials-people {
+.contact-us textarea {
+  resize: none;
+}
+.contact-us [name=text] {
+  margin-bottom: 24px;
+}
+.contact-us [type=reset], .contact-us [type=submit] {
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #151515;
+  border: 0;
+}
+.contact-us [type=submit] {
+  background-color: #81b701;
+}
+
+.comment__people {
   display: flex;
 }
-.supplement__testimonials-introduction {
+.comment__people-introduction {
   margin-bottom: 0;
   padding: 0 8px;
 }
-.supplement__testimonials-introduction :last-child {
+.comment__people-introduction :last-child {
   font-size: inherit;
   color: #72a101;
   font-weight: bold;
 }
-.supplement .card {
+.comment .card {
   border: 0;
   border-radius: 0;
 }
-.supplement .card-body {
+.comment .card-body {
   background-color: #e7e7e7;
   position: relative;
   margin-bottom: 50px;
 }
-.supplement .card-body::after {
+.comment .card-body::after {
   content: "";
   position: absolute;
   left: 0;
@@ -474,34 +480,17 @@ hr.separate {
   border-style: solid;
   border-width: 30px 40px 0px 0px;
 }
-.supplement__mail-us input,
-.supplement__mail-us textarea {
-  background-color: #e7e7e7;
+
+.supplement {
+  background-image: url("../images/subbg.gif");
 }
-.supplement__mail-us input + .form-control,
-.supplement__mail-us textarea + .form-control {
-  margin-top: 8px;
+.supplement__title {
+  font-size: 24px;
+  font-weight: bolder;
+  line-height: initial;
 }
-@media (min-width: 992px) {
-  .supplement__mail-us input + .form-control,
-.supplement__mail-us textarea + .form-control {
-    margin-top: 16px;
-  }
-}
-.supplement__mail-us textarea {
-  resize: none;
-}
-.supplement [name=text] {
-  margin-bottom: 24px;
-}
-.supplement [type=reset], .supplement [type=submit] {
-  color: #ffffff;
-  font-weight: bold;
-  background-color: #151515;
-  border: 0;
-}
-.supplement [type=submit] {
-  background-color: #81b701;
+.supplement__latest {
+  min-height: 200px;
 }
 .supplement__grid {
   gap: 10px;

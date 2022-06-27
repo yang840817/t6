@@ -1,9 +1,10 @@
-@use "../abstracts/mixins";
+@use "../abstracts/breakpoint";
+@use "../abstracts/font-style";
 
 .under-nav{
-  @include mixins.font-color(12px, #535353);
+  @include font-style.font-color(12px, #535353);
   .nav {
-    @include mixins.size-lg {
+    @include breakpoint.size-lg {
       justify-content: end;
     }
   }
@@ -17,11 +18,11 @@
     &:hover {
       color: #ffffff;
     }
-    @include mixins.size-lg {
+    @include breakpoint.size-lg {
       padding: 0 8px;
       flex: 0 0 auto;
     }
-    @include mixins.size-xl {
+    @include breakpoint.size-xl {
       padding: 0 16px;
     }
 
@@ -32,7 +33,7 @@
 
   &__copyright {
     text-align: center;
-    @include mixins.size-md {
+    @include breakpoint.size-md {
       text-align: left;
     }
     span {
@@ -41,7 +42,4 @@
       }
     }
   }
-  // &--footer {
-  //   color: #535353;
-  // }
 }

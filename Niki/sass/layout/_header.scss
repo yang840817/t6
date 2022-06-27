@@ -1,4 +1,4 @@
-@use "../abstracts/mixins";
+@use "../abstracts/breakpoint";
 @use "../components/top-nav";
 
 .header {
@@ -9,7 +9,7 @@
   &__background {
     background-image: url("../images/subbg.gif");
 
-    @include mixins.size-lg {
+    @include breakpoint.size-lg {
       width: 100%;
     }
   }
@@ -19,7 +19,7 @@
     flex-direction: column;
     height: 100%;
 
-    @include mixins.size-lg {
+    @include breakpoint.size-lg {
       align-items: flex-end;
       justify-content: flex-end;
     }
@@ -76,7 +76,7 @@
     &-nav {
       background-color: #ffffff;
       width: 100%;
-      @include mixins.size-lg {
+      @include breakpoint.size-lg {
         width: 70%;
       }
     }

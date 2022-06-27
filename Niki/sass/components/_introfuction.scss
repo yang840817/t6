@@ -1,4 +1,5 @@
-@use "../abstracts/mixins";
+@use "../abstracts/breakpoint";
+@use "../abstracts/font-style";
 
 .introduction {
     h2 {
@@ -13,12 +14,12 @@
         }
       }
       i {
-        @include mixins.font-color(32px, #dadada, 900);
+        @include font-style.font-color(32px, #dadada, 900);
         // font-size: 32px;
         // color: #dadada;
         display: block;
         text-align: center;
-        @include mixins.size-md {
+        @include breakpoint.size-md {
           font-size: 48px;
         }
       }
@@ -26,7 +27,7 @@
       &-title:not(h2) {
         display: inline-block;
         background-color: #81b701;
-        @include mixins.font-color(18px, #ffffff);
+        @include font-style.font-color(18px, #ffffff);
       }
     }
   

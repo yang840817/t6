@@ -1,0 +1,19 @@
+
+%card {
+  .card {
+    color: #646464;
+    background-color: #e8e8e8;
+    &:hover,
+    &.active {
+      color: #e8e8e8;
+      background-color: #646464;
+    }
+    &-title {
+      font-size: 18px;
+    }
+    .btn {
+      background-color: #cecece;
+      color: #373737;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-@use "../abstracts/mixins";
+@use "../abstracts/breakpoint";
 @use "../components/banner";
 @use "../components/card-group";
 @use "../components/introfuction";
@@ -6,7 +6,7 @@
 
 main {
   background-image: url("../images/subbg.gif");
-  @include mixins.size-lg {
+  @include breakpoint.size-lg {
     margin-top: -32px;
     padding-top: 32px;
   }
