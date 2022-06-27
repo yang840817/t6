@@ -286,14 +286,13 @@ body {
   display: inline-block;
   position: absolute;
   top: 0;
-  right: 60px;
+  right: 30px;
 }
 .carousel-animate__control + span {
-  right: 20px;
+  right: 0px;
 }
 .carousel-animate__control SVG {
-  padding: 10px;
-  height: 40px;
+  height: 20px;
 }
 .carousel-animate__act2.active ~ .carousel-animate__container .carousel-animate__animation > :nth-child(n+2) {
   order: 1;
