@@ -38,7 +38,7 @@
     }
     :nth-child(1) {
       img {
-        transform: translateX(-300px);
+        object-position: -300px;
         @include breakpoint.size-md {
           transform: initial;
         }
@@ -46,7 +46,7 @@
     }
     :nth-child(2) {
       img {
-        transform: translateX(-500px);
+        object-position: -500px;
         @include breakpoint.size-md {
           transform: initial;
         }
