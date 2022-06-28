@@ -335,32 +335,20 @@ body {
 }
 .carousel-animate__animation {
   animation: moveSlideshow 15s linear infinite;
-  /* animation-play-state: paused; */
-}
-@keyframes moveSlideshow {
-  100% {
-    transform: translateX(-400%);
-  }
 }
 @media (min-width: 576px) {
-  @keyframes moveSlideshow {
-    100% {
-      transform: translateX(-200%);
-    }
+  .carousel-animate__animation {
+    animation-name: moveSlideshow-sm;
   }
 }
 @media (min-width: 992px) {
-  @keyframes moveSlideshow {
-    100% {
-      transform: translateX(-133.33%);
-    }
+  .carousel-animate__animation {
+    animation-name: moveSlideshow-lg;
   }
 }
 @media (min-width: 1200px) {
-  @keyframes moveSlideshow {
-    100% {
-      transform: translateX(-100%);
-    }
+  .carousel-animate__animation {
+    animation-name: moveSlideshow-xl;
   }
 }
 .carousel-animate__animation:hover {
@@ -370,6 +358,26 @@ body {
   order: 20;
 }
 
+@keyframes moveSlideshow {
+  100% {
+    transform: translateX(-400%);
+  }
+}
+@keyframes moveSlideshow-sm {
+  100% {
+    transform: translateX(-200%);
+  }
+}
+@keyframes moveSlideshow-lg {
+  100% {
+    transform: translateX(-133.33%);
+  }
+}
+@keyframes moveSlideshow-xl {
+  100% {
+    transform: translateX(-100%);
+  }
+}
 .featured-works__hover {
   top: 100%;
   transition: all 1s;
