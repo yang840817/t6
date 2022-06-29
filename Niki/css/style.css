@@ -170,17 +170,12 @@ body {
 .banner .carousel-inner :nth-child(1) img, .banner .carousel-item img :nth-child(1) img {
   object-position: -300px;
 }
-@media (min-width: 768px) {
-  .banner .carousel-inner :nth-child(1) img, .banner .carousel-item img :nth-child(1) img {
-    transform: initial;
-  }
-}
 .banner .carousel-inner :nth-child(2) img, .banner .carousel-item img :nth-child(2) img {
   object-position: -500px;
 }
 @media (min-width: 768px) {
-  .banner .carousel-inner :nth-child(2) img, .banner .carousel-item img :nth-child(2) img {
-    transform: initial;
+  .banner .carousel-inner :nth-child(n) img, .banner .carousel-item img :nth-child(n) img {
+    object-position: initial;
   }
 }
 .banner .carousel-item {
