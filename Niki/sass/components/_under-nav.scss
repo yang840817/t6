@@ -1,8 +1,8 @@
 @use "../abstracts/breakpoint";
-@use "../abstracts/typography";
+@use "../abstracts/text";
 
 .under-nav{
-  @include typography.font-style(12px, #535353);
+  @include text.font-style(12px, #535353);
   .nav {
     @include breakpoint.size-lg {
       justify-content: end;

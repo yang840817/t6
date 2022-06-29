@@ -1,5 +1,5 @@
 @use "../abstracts/breakpoint";
-@use "../abstracts/typography";
+@use "../abstracts/text";
 
 .introduction {
     h2 {
@@ -14,7 +14,7 @@
         }
       }
       i {
-        @include typography.font-style(32px, #dadada, 900);
+        @include text.font-style(32px, #dadada, 900);
         // font-size: 32px;
         // color: #dadada;
         display: block;
@@ -27,7 +27,7 @@
       &-title:not(h2) {
         display: inline-block;
         background-color: #81b701;
-        @include typography.font-style(18px, #ffffff);
+        @include text.font-style(18px, #ffffff);
       }
     }
   

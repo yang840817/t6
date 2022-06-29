@@ -1,4 +1,4 @@
-@use "../abstracts/typography";
+@use "../abstracts/text";
 
 .comment {
   &__people {
@@ -7,7 +7,7 @@
       margin-bottom: 0;
       padding: 0 8px;
       :last-child {
-        @include typography.font-style(inherit, #72a101, bold);
+        @include text.font-style(inherit, #72a101, bold);
       }
     }
   }
