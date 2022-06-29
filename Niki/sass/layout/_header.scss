@@ -1,5 +1,6 @@
 @use "../abstracts/breakpoint";
 @use "../components/top-nav";
+@use "../abstracts/color";
 
 .header {
   .container-fluid {
@@ -25,7 +26,7 @@
     }
     a{
       &:hover{
-        color: #72a101;
+        color: color.$active;
       }
     }
   }

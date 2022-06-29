@@ -526,7 +526,7 @@ hr.separate {
   color: #535353;
 }
 .under-nav .nav-link.active, .under-nav .nav-link:hover {
-  color: #ffffff;
+  color: #72a101;
 }
 @media (min-width: 992px) {
   .under-nav .nav-link {
@@ -551,13 +551,6 @@ hr.separate {
   }
 }
 .under-nav__copyright span:last-child {
-  color: #ffffff;
-}
-
-footer .under-nav .nav-link.active, footer .under-nav .nav-link:hover {
-  color: #72a101;
-}
-footer .under-nav__copyright span:last-child {
   color: #72a101;
 }
 

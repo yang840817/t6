@@ -1,5 +1,6 @@
 @use "../abstracts/breakpoint";
 @use "../abstracts/text";
+@use "../abstracts/color";
 
 .under-nav{
   @include text.font-style(12px, #535353);
@@ -16,7 +17,7 @@
 
     &.active,
     &:hover {
-      color: #ffffff;
+      color: color.$active;
     }
     @include breakpoint.size-lg {
       padding: 0 8px;
@@ -38,7 +39,7 @@
     }
     span {
       &:last-child {
-        color: #ffffff;
+        color: color.$active;
       }
     }
   }
