@@ -1,5 +1,5 @@
 @use "../abstracts/breakpoint";
-@use "../abstracts/font-style";
+@use "../abstracts/typography";
 
 .top-nav {
   .navbar-nav {
@@ -15,7 +15,7 @@
   }
   .nav-link {
     padding: 20px 16px;
-    @include font-style.font-color(inherit, #000000, bold);
+    @include typography.font-style(inherit, #000000, bold);
 
     &.active {
       @include breakpoint.size-lg {
