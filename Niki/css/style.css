@@ -178,6 +178,14 @@ body {
 .banner .carousel-item {
   overflow: hidden;
 }
+@media (min-width: 768px) {
+  .card-group {
+    margin-top: -16px;
+  }
+}
+.card-group__button {
+  margin-top: auto;
+}
 .card-group .card {
   color: #646464;
   background-color: #e8e8e8;
@@ -192,15 +200,6 @@ body {
 .card-group .card .btn {
   background-color: #cecece;
   color: #373737;
-}
-
-@media (min-width: 768px) {
-  .card-group {
-    margin-top: -16px;
-  }
-}
-.card-group__button {
-  margin-top: auto;
 }
 
 .introduction h2 {

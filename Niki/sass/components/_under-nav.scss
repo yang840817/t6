@@ -2,7 +2,7 @@
 @use "../abstracts/text";
 @use "../abstracts/color";
 
-.under-nav{
+.under-nav {
   @include text.font-style(12px, #535353);
   .nav {
     @include breakpoint.size-lg {
