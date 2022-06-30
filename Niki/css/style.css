@@ -414,10 +414,11 @@ main {
 
 hr.separate {
   opacity: 1;
-  height: 2px;
-  padding: 0 16px;
-  background-color: #c7c7c7;
   background-clip: content-box;
+  height: 2px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #c7c7c7;
   margin: 48px 0 0;
 }
 

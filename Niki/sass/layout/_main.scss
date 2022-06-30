@@ -1,7 +1,8 @@
 @use "../abstracts/breakpoint";
+@use "../abstracts/separate";
 @use "../components/banner";
 @use "../components/card-group";
-@use "../components/introfuction";
+@use "../components/introtuction";
 @use "../components/featured-works";
 
 main {
@@ -13,10 +14,6 @@ main {
 }
 
 hr.separate {
-  opacity: 1;
-  height: 2px;
-  padding: 0 16px;
-  background-color: #c7c7c7;
-  background-clip: content-box;
+  @include separate.separate(2px , 16px , #c7c7c7);
   margin: 48px 0 0;
 }
