@@ -4,6 +4,7 @@
   input,
   textarea {
     background-color: #e7e7e7;
+    resize: none;
     + .form-control {
       margin-top: 8px;
       @include breakpoint.size-lg {
@@ -11,18 +12,18 @@
       }
     }
   }
-  textarea {
-    resize: none;
-  }
+
   [name="text"] {
     margin-bottom: 24px;
   }
+
   [type="reset"] {
     color: #ffffff;
     font-weight: bold;
     background-color: #151515;
     border: 0;
   }
+
   [type="submit"] {
     @extend [type="reset"];
     background-color: #81b701;
