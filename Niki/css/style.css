@@ -417,6 +417,11 @@ hr.separate {
   background-color: #c7c7c7;
   margin: 48px 0 0;
 }
+@media (min-width: 1200px) {
+  hr.separate {
+    padding: 0 48px;
+  }
+}
 
 .contact-us input,
 .contact-us textarea {
@@ -444,6 +449,9 @@ hr.separate {
 }
 .contact-us [type=submit] {
   background-color: #81b701;
+}
+.contact-us button {
+  padding: 5px 10px;
 }
 
 .comment__people {
