@@ -458,16 +458,13 @@ hr.separate {
   color: #72a101;
   font-weight: bold;
 }
-.comment .card {
-  border: 0;
-  border-radius: 0;
-}
-.comment .card-body {
+.comment__text {
   background-color: #e7e7e7;
   position: relative;
   margin-bottom: 50px;
+  padding: 16px;
 }
-.comment .card-body::after {
+.comment__text::after {
   content: "";
   position: absolute;
   left: 0;
