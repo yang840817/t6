@@ -3,10 +3,6 @@
 @use "../abstracts/color";
 
 .header {
-  .container-fluid {
-    row-gap: 16px;
-  }
-
   &__background {
     background-image: url("../images/subbg.gif");
 

@@ -63,9 +63,6 @@ body {
   right: 16px;
 }
 
-.header .container-fluid {
-  row-gap: 16px;
-}
 .header__background {
   background-image: url("../images/subbg.gif");
 }
@@ -425,6 +422,7 @@ hr.separate {
 .contact-us input,
 .contact-us textarea {
   background-color: #e7e7e7;
+  resize: none;
 }
 .contact-us input + .form-control,
 .contact-us textarea + .form-control {
@@ -435,9 +433,6 @@ hr.separate {
 .contact-us textarea + .form-control {
     margin-top: 16px;
   }
-}
-.contact-us textarea {
-  resize: none;
 }
 .contact-us [name=text] {
   margin-bottom: 24px;
