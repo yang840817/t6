@@ -28,8 +28,15 @@ body {
     border-right: 1px solid #eeeeee;
   }
 }
-.top-nav .nav-link, .top-nav .dropdown-item {
+.top-nav .nav-item .nav-link, .top-nav .nav-item .dropdown-item {
   padding: 20px 16px;
+}
+@media (min-width: 1200px) {
+  .top-nav .nav-item .nav-link, .top-nav .nav-item .dropdown-item {
+    padding: 20px 24px;
+  }
+}
+.top-nav .nav-link, .top-nav .dropdown-item {
   font-size: inherit;
   color: #000000;
   font-weight: bold;
@@ -155,29 +162,30 @@ body {
 .banner .carousel-indicators [data-bs-target].active {
   background-color: #fff;
 }
-.banner .carousel-inner, .banner .carousel-item img {
+.banner .carousel-inner {
   height: 500px;
 }
 @media (min-width: 768px) {
-  .banner .carousel-inner, .banner .carousel-item img {
+  .banner .carousel-inner {
     height: initial;
     width: 100%;
   }
 }
-.banner .carousel-inner :nth-child(1) img, .banner .carousel-item img :nth-child(1) img {
+.banner .carousel-inner :nth-child(1) img {
   object-position: -300px;
 }
-.banner .carousel-inner :nth-child(2) img, .banner .carousel-item img :nth-child(2) img {
+.banner .carousel-inner :nth-child(2) img {
   object-position: -500px;
 }
 @media (min-width: 768px) {
-  .banner .carousel-inner :nth-child(n) img, .banner .carousel-item img :nth-child(n) img {
+  .banner .carousel-inner :nth-child(n) img {
     object-position: initial;
   }
 }
-.banner .carousel-item {
-  overflow: hidden;
+.banner .carousel-item img {
+  width: 100%;
 }
+
 @media (min-width: 768px) {
   .card-group {
     margin-top: -16px;

@@ -12,11 +12,15 @@
     @include breakpoint.size-lg {
       border-right: 1px solid #eeeeee;
     }
+    .nav-link {
+      padding: 20px 16px;
+      @include breakpoint.size-xl {
+        padding: 20px 24px;
+      }
+    }
   }
   .nav-link {
-    padding: 20px 16px;
     @include text.font-style(inherit, #000000, bold);
-
     &.active {
       @include breakpoint.size-lg {
         color: #ffffff;
