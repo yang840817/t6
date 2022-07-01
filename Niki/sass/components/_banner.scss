@@ -1,21 +1,15 @@
 @use "../abstracts/breakpoint";
+@use "../abstracts/carousel-control";
 
 .banner {
   .carousel-control-prev {
+    @extend %carousel-control;
     background: url("../images/slider_prev.gif") no-repeat 0 0;
-    width: 40px;
-    height: 119px;
-    top: 50%;
-    background-position-y: 0px;
-    transform: translate(0, -50%);
-    &:hover {
-      background-position-y: -119px;
-    }
   }
 
   .carousel-control-next {
-    @extend .carousel-control-prev;
-    background-image: url("../images/slider_next.gif");
+    @extend %carousel-control;
+    background: url("../images/slider_next.gif") no-repeat 0 0;
   }
 
   .carousel-indicators {
