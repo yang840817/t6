@@ -50,7 +50,7 @@
 
   form {
     padding: 13px 0;
-    background-color:  color.$light;
+    background-color:  color.$bg-light;
     @extend .navbar-nav;
     input[type="search"]::-webkit-search-cancel-button {
       display: none;
