@@ -24,16 +24,16 @@
     @include text.font-style(inherit, #000000, bold);
     &.active {
       @include breakpoint.size-lg {
-        color: #ffffff;
+        color:  color.$text-light;
         background-color: #80b701;
       }
     }
     &:hover {
-      color: #ffffff;
+      color:  color.$text-light;
       background-color: #80b701;
     }
     &.show {
-      color: #ffffff;
+      color:  color.$text-light;
       background-color: #80b70177;
     }
   }
