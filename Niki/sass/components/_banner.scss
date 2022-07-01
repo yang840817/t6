@@ -56,9 +56,8 @@
   }
 
   .carousel-item {
-    overflow: hidden;
     img {
-      @extend .carousel-inner;
+      width: 100%;
     }
   }
 }
