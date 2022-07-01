@@ -14,9 +14,10 @@ main {
 }
 
 hr.separate {
-  @include separate.separate(2px , 16px , #c7c7c7);
+  @include separate.separate(2px, 16px, #c7c7c7);
   margin: 48px 0 0;
-  @include breakpoint.size-xl{
-    padding: 0 48px;
+  @include breakpoint.size-xl {
+    margin-left: 48px;
+    margin-right: 48px;
   }
 }

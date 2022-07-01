@@ -1,8 +1,7 @@
 @mixin separate($height: 2px, $px: 16px, $color: #000000) {
   opacity: 1;
-  background-clip: content-box;
   height: $height;
-  padding-left: $px;
-  padding-right: $px;
+  margin-left: $px;
+  margin-right: $px;
   background-color: $color;
 }
