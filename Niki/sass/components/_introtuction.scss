@@ -1,16 +1,17 @@
 @use "../abstracts/breakpoint";
 @use "../abstracts/text";
+@use "../abstracts/color";
 
 .introduction {
   h2 {
-    color: #000000;
+    color: color.$text-black;
   }
   .card {
     color: #939393;
     border: 0;
     &-text {
       span {
-        color: #000000;
+        color: color.$text-black;
       }
     }
     i {
