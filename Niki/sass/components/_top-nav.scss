@@ -1,5 +1,6 @@
 @use "../abstracts/breakpoint";
 @use "../abstracts/text";
+@use "../abstracts/color";
 
 .top-nav {
   .navbar-nav {
@@ -49,7 +50,7 @@
 
   form {
     padding: 13px 0;
-    background-color: #ffffff;
+    background-color:  color.$light;
     @extend .navbar-nav;
     input[type="search"]::-webkit-search-cancel-button {
       display: none;
