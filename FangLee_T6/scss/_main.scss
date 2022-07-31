@@ -1,0 +1,110 @@
+@use "_base.scss" as *;
+.main {
+    background-image: url("../images/subbg.gif");
+    background-repeat: repeat;
+}
+
+.main_row-1 {
+    .carousel_container {
+        .carousel-control-next, 
+        .carousel-control-prev {
+            top: 50%;
+            transform: translatey(-50%);
+            width: 5%;
+            height: 30%;
+            color: #fff;
+            background-color: black;
+        }
+    }
+
+    .product_container {
+        padding: 1rem;
+        .col-12 + .col-12 {
+            margin-top: 1rem;
+            @media (min-width: $layout-breakpoint-sm) {
+                margin-top: 0;
+            }
+        }
+        .product_item {
+            display: grid;
+            grid-template-rows: repeat(3,auto);
+            grid-template-columns: minmax(10%,20%) 1fr;
+            row-gap: .5rem;
+            column-gap: 1rem;
+            background-color: $color-gary;
+            padding: 1rem;
+            &:hover {
+                background-color: darken($color-gary, 50%);
+                color: white;
+                }
+            }
+        .title {
+            grid-row: 1 / 2;
+            grid-column: 1 / -1;
+            margin: 0;
+            text-transform: uppercase;
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .image_box {
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+        }
+        .text_box {
+            grid-row: 2 / 3;
+            grid-column: 2 / -1;
+            color: $color-text;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+        }
+        .more_botton {
+            grid-row: 3 / -1;
+            grid-column: 1 / -1;
+            background-color: $button-primary;
+            padding: .5rem 1rem;
+            line-height: 1;
+            width: fit-content;
+            justify-self: center;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.main_row-2 {
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    grid-template-columns: repeat(3,minmax(auto,1fr));
+    .wlcome_container {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+    .chooes_container {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+    .news_container {
+        grid-row: 1 / 2;
+        grid-column: 3 / -1;
+
+        .news_item {
+            display: grid;
+            grid-template-rows: repeat(2,auto);
+            grid-template-columns: repeat(2,minmax(auto,1fr));;
+            
+        }
+
+    }
+    hr {
+        grid-row: 2 / 3;
+        grid-column: 1 / -1;
+    }
+    .featured_container {
+        grid-row: 3 / -1;
+        grid-column: 1 / -1;
+    
+    }
+}
