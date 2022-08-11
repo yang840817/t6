@@ -1,0 +1,29 @@
+@use "../utils/breakpoints";
+@use "../utils/color";
+
+header {
+    margin-bottom: 1.5rem;
+    background-image: url("../images/subbg.gif");
+    background-repeat: repeat;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include breakpoints.lg {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1.5rem 2.5rem;
+    }
+}
+h1 {
+    margin: 0;
+}
+.logo_container {
+    display: inline-block;
+    .image_box {
+        display: inline-block;
+    }
+    img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,56 @@
+@use "../utils/breakpoints";
+@use "../utils/color";
+@use "../utils/text";
+
+.icon_list {
+    .title {
+        text-transform: uppercase;
+        @include breakpoints.lg {
+            font-size: 1.5rem;
+        }
+    }
+    .list {
+        margin: 0;
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        padding-left: 4rem;
+    }
+    .item {
+        position: relative;
+        &:first-child {
+            padding-bottom: 1.5rem;
+        }
+        &:not(:first-child) {
+            padding: 1.5rem 0;
+        }
+
+        a {
+            color: color.$gary-500;
+            text-decoration: none;
+            &:hover {
+                color: color.$color-primary;
+            }
+        }
+        &::before {
+            font-family:'Bootstrap-icons';
+            content: "\F285";
+            padding: 1rem;
+            line-height: 2;
+            margin-left: -4rem;
+            margin-right: 1rem;
+            color: white;
+            background-color: color.$gary-300;
+            border-radius: 50%;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0px;
+            width: calc( 100% + 4rem );
+            height: 1px;
+            background-color: color.$gary-300;
+        }
+    }
+}

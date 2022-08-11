@@ -1,0 +1,36 @@
+@use "../utils/breakpoints";
+@use "../utils/color";
+@use "../utils/text";
+
+.secondary_nav {
+    text-align: center;
+    justify-content: center;
+    @include breakpoints.lg {
+        justify-content:flex-end;
+    }
+    a {
+        position: relative;
+        padding: 0 1rem;
+        color: color.$gary-600;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:not(:first-child)::after{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 10%;
+            left: 0;
+            width: 2px;
+            height: 80%;
+            background-color: color.$gary-500;
+        }
+        
+        &:hover {
+            color: color.$white;
+        }
+    }
+    a.active {
+        color: color.$color-primary;
+    }
+}
+

@@ -1,0 +1,18 @@
+@use "../utils/breakpoints";
+@use "../utils/color";
+@use "../utils/text";
+
+
+.gallery {
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: .5rem;
+    .image_box {
+        display: inline-block;
+        transition: transform .15s;
+    }
+    img:hover {
+        transform: scale(.95);
+    }
+}

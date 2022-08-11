@@ -1,0 +1,27 @@
+@use "../utils/breakpoints";
+@use "../utils/color";
+@use "../utils/text";
+
+.text_more {
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: color.$black;
+    &:hover {
+        color: color.$color-primary;
+    }
+}
+
+.btn_primary {
+    padding: .5rem 1rem;
+    background-color: color.$gary-400;
+    color: black;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: capitalize;
+    &:hover {
+        background-color: color.$color-primary;
+        color: color.$white;
+    }
+}
+

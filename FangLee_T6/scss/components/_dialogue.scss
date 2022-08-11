@@ -1,0 +1,48 @@
+@use "../utils/breakpoints";
+@use "../utils/color";
+@use "../utils/text";
+
+.dialogue_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    .dialogue_box {
+        filter: drop-shadow(0 0 1px color.$gary-500);
+        .dialogue {
+            top: 1px;
+            padding: 1.25rem 1.5rem 2.5rem;
+            clip-path: polygon(0% 0%,100% 0%,100% 90%,10% 90%,0% 100%);
+            background-color: color.$gary-200;
+            p {
+                margin: 0;
+                line-height: 1.2;
+                @include text.ellipsis(4);
+            }
+        }
+    }
+    .person_info {
+        display: flex;
+        gap: 1rem;
+    }
+    .image_box {
+        width: 25%;
+        img {
+            width: 100%;
+        }
+    }
+    .text_box {
+        align-self: center;
+        p {
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+            color: color.$black;
+            &:hover {
+                color: color.$color-primary;
+                font-style: italic;
+                font-weight: 600;    
+            }
+        }
+    }
+}

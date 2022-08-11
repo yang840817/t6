@@ -1,0 +1,21 @@
+@use "../utils/breakpoints";
+
+html {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    min-width: 375px;
+    background: url(../images/bg.jpg), black;
+    background-repeat: repeat-x, repeat;
+    background-position: top 5rem center, center;
+    background-size: 20% 85%, 100%;
+    @include breakpoints.md {
+        padding: .5rem 8%;
+    }
+}
+
+* {
+    // outline: 1px solid red;
+}

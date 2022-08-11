@@ -1,4 +1,16 @@
-@use "_base.scss";
-@use "_header.scss";
-@use "_main.scss";
-@use "_footer.scss";
+@use "base/base";
+
+@use "components/social-media";
+@use "components/card";
+@use "components/botton";
+@use "components/list";
+@use "components/dialogue";
+@use "components/gallery";
+@use "components/secondary-nav";
+
+@use "layout/header";
+@use "layout/main";
+@use "layout/footer";
+
+@use "vendors/bootstrap";
+@use "vendors/swiper";
