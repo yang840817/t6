@@ -200,58 +200,6 @@ body {
   color: #ffffff;
 }
 
-.icon_list .title {
-  text-transform: uppercase;
-}
-@media (min-width: 992px) {
-  .icon_list .title {
-    font-size: 1.5rem;
-  }
-}
-.icon_list .list {
-  margin: 0;
-  display: flex;
-  list-style: none;
-  flex-direction: column;
-  padding-left: 4rem;
-}
-.icon_list .item {
-  position: relative;
-}
-.icon_list .item:first-child {
-  padding-bottom: 1.5rem;
-}
-.icon_list .item:not(:first-child) {
-  padding: 1.5rem 0;
-}
-.icon_list .item a {
-  color: #7f7f7f;
-  text-decoration: none;
-}
-.icon_list .item a:hover {
-  color: #80b600;
-}
-.icon_list .item::before {
-  font-family: "Bootstrap-icons";
-  content: "\f285";
-  padding: 1rem;
-  line-height: 2;
-  margin-left: -4rem;
-  margin-right: 1rem;
-  color: white;
-  background-color: #d9d9d9;
-  border-radius: 50%;
-}
-.icon_list .item::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0px;
-  width: calc(100% + 4rem);
-  height: 1px;
-  background-color: #d9d9d9;
-}
-
 .dialogue_container {
   display: flex;
   flex-direction: column;
@@ -753,6 +701,7 @@ main {
   background-color: #e6e6e6;
 }
 .input_box .form-control:focus {
+  border-color: #80b600;
   box-shadow: 0 0 0 0.25rem #92d000;
 }
 .input_box .form-control:not(:first-child) {
@@ -778,14 +727,66 @@ main {
   margin-left: 0.5rem;
 }
 
-.botton_reset:hover {
+.botton_reset:hover, .botton_reset:focus {
   background-color: #000000;
   color: #ffffff;
 }
 
-.botton_send:hover {
+.botton_send:hover, .botton_send:focus {
   background-color: #80b600;
   color: #ffffff;
+}
+
+.accordion .accordion-item {
+  background-color: unset;
+  border-right: 0;
+  border-left: 0;
+}
+.accordion .accordion-item:first-of-type {
+  border-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.accordion .accordion-item:last-of-type {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.accordion .accordion-button {
+  background-color: inherit;
+  color: #7f7f7f;
+}
+.accordion .accordion-button:focus {
+  border-color: #80b600;
+  box-shadow: none;
+}
+.accordion .accordion-button:hover {
+  color: #80b600;
+}
+.accordion .accordion-button::after {
+  display: none;
+}
+.accordion .accordion-button::before {
+  font-family: "Bootstrap-icons";
+  content: "\f285";
+  flex-shrink: 0;
+  margin-right: 1rem;
+  transition: transform 0.2s ease-in-out;
+  padding: 1rem;
+  line-height: 1;
+  background-color: #d9d9d9;
+  color: white;
+  border-radius: 50%;
+}
+.accordion .accordion-button:not(.collapsed) {
+  background-color: #e6e6e6;
+}
+.accordion .accordion-button:not(.collapsed)::before {
+  transform: rotate(90deg);
+  background-color: #80b600;
+}
+.accordion .accordion-body {
+  color: #7f7f7f;
+  background-color: #e6e6e6;
 }
 
 .ourfeatured .swiper-button-prev, .ourfeatured .swiper-button-next {
