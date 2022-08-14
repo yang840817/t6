@@ -1,0 +1,47 @@
+@use "../utils/breakpoints";
+@use "../utils/color";
+
+// Bootstrap
+.carousel {
+    box-shadow: 0px -2px 10px -4px color.$black;
+    .carousel-control-next,
+    .carousel-control-prev {
+        top: 50%;
+        transform: translatey(-50%);
+        width: 2rem;
+        height: 70px;
+        opacity: 1;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        @include breakpoints.lg {
+            width: 2.5rem;
+            height: 119px;
+        }
+    }
+    .carousel-control-next {
+        background-image: url("../images/slider_next.gif");
+        background-position: top -13px right;
+        @include breakpoints.lg {
+            background-position: top right;
+        }
+        &:hover {
+            background-position: bottom -12px right;
+            @include breakpoints.lg {
+                background-position: bottom right;
+            }
+        }
+    }
+    .carousel-control-prev {
+        background-image: url("../images/slider_prev.gif");
+        background-position: top -13px left;
+        @include breakpoints.lg {
+            background-position: top left;
+        }
+        &:hover {
+            background-position: bottom -12px left;
+            @include breakpoints.lg {
+                background-position: bottom left;
+            }
+        }
+    }
+}

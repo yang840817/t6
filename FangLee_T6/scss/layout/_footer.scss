@@ -2,14 +2,14 @@
 @use "../utils/color";
 @use "../utils/text";
 
-.footer-row-1 {
+.contact_container {
     background-image: url("../images/subbg.gif");
     background-repeat: repeat;
+    box-shadow: 0px 0px 5px -1px;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    box-shadow: 0px 0px 5px -1px;
     @include breakpoints.sm {
         padding: 1.5rem;
         display: grid;
@@ -32,7 +32,7 @@
     }
 }
 
-.footer-row-2 {
+.footer_container {
     padding: 1rem;
     display: flex;
     flex-direction: column;

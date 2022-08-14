@@ -1,0 +1,50 @@
+@use "../utils/breakpoints";
+@use "../utils/color";
+
+// Bootstrap
+.contact_form {
+    .input_box {
+        margin-bottom: 1rem;
+        .form-control {
+            background-color: color.$gary-200;
+            &:focus {
+                border-color: color.$color-primary;
+                box-shadow: 0 0 0 0.25rem lighten(color.$color-primary, 5%);            
+            }
+            &:not(:first-child) {
+                margin-top: .5rem;
+            }
+        }
+    }
+    .button_box {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .btn {
+        background-color: color.$gary-300;
+        color: color.$black;
+        border-radius: 0;
+        text-transform: uppercase;
+        &:focus {
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem lighten(color.$color-primary, 5%);
+        }
+        &:not(:first-child) {
+            margin-left: .5rem;
+        }
+    }
+    .botton_reset {
+        &:hover , 
+        &:focus {
+            background-color: color.$black;
+            color: color.$white;
+        }
+    }
+    .botton_send {
+        &:hover ,
+        &:focus {
+            background-color: color.$color-primary;
+            color: color.$white;
+        }
+    }
+}

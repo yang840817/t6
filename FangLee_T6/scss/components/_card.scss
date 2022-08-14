@@ -12,8 +12,8 @@
     gap: 1rem;
     h4 {
         margin: 0;
+        text-align: center;
         text-transform: uppercase;
-        @include text.ellipsis(1);
         @include breakpoints.sm {
             font-size: 1rem;
         }
@@ -30,7 +30,6 @@
             @include text.ellipsis(4);
         }
     }
-
     &:hover {
         background-color: rgba(color.$gary-600, .9);
         border: 1px solid color.$gary-600;
