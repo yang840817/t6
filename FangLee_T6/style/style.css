@@ -776,6 +776,7 @@ hr {
 }
 
 .myfeatured .swiper-button-next, .myfeatured .swiper-button-prev {
+  padding: 2rem 1rem;
   background-color: rgba(0, 0, 0, 0.3);
   color: #ffffff;
 }
