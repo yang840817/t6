@@ -495,7 +495,7 @@ hr {
 }
 @media (min-width: 992px) {
   .footer_container {
-    padding: 1rem 0;
+    padding: 1rem 2.5rem;
     flex-direction: row;
     justify-content: space-between;
   }

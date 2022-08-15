@@ -14,7 +14,7 @@
     }
 }
 
-@mixin wiper-button-md ($right) {
+@mixin swiper-button-md ($right) {
     top: 2.5rem;
     right: $right;
     padding: .5rem;
@@ -30,10 +30,12 @@
         font-size: 1.5rem;
     }
 }
-@mixin wiper-button-lg ($right) {
+
+@mixin swiper-button-lg ($right) {
     top: 3.5rem;
     right: $right;
 }
+
 
 
 .featured {
@@ -78,20 +80,20 @@
         @extend %swiper-button;
         @include breakpoints.md {
             left: auto;
-            @include wiper-button-md (3rem);
+            @include swiper-button-md (3rem);
         }
         @include breakpoints.lg {
-            @include wiper-button-lg (4.5rem)
+            @include swiper-button-lg (4.5rem)
         }
     }
     .swiper-button-next {
         right: 0;
         @extend %swiper-button;
         @include breakpoints.md {
-            @include wiper-button-md (1rem);
+            @include swiper-button-md (1rem);
         }
         @include breakpoints.lg {
-            @include wiper-button-lg (2.5rem)
+            @include swiper-button-lg (2.5rem)
         }
     }
 }
