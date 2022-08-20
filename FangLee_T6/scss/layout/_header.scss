@@ -1,8 +1,7 @@
 @use "../utils/breakpoints";
-@use "../utils/color";
 
 header {
-    margin-bottom: 1.5rem;
+    margin-top: .5rem;
     background-image: url("../images/subbg.gif");
     background-repeat: repeat;
     box-shadow: 0px 0px 5px -1px;
@@ -18,6 +17,7 @@ header {
 }
 h1 {
     margin: 0;
+    font-size: 0;
 }
 .logo_container {
     display: inline-block;
@@ -26,5 +26,13 @@ h1 {
     }
     img {
         width: 100%;
+    }
+}
+
+.social_media_light {
+    display: none;
+    @include breakpoints.lg {
+        display: flex;
+        flex-direction: column;
     }
 }

@@ -1,7 +1,12 @@
 @use "../utils/breakpoints";
 @use "../utils/color";
 
-
+@mixin icon_sprites {
+    background: url("../images/social.png");
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 27px;
+}
 @mixin icon_position ($x,$y) {
     background-position: top $x  left $y;
 }
@@ -9,55 +14,48 @@
     background-position: bottom $x  left $y;
 }
 
-.social_media {
-    display: flex;
-    flex-direction: column;
+.social_media_light {
     .icon_list {
         display: flex;
-        justify-content: space-between;
         margin-bottom: .5rem;
         @include breakpoints.lg {
             justify-content: end;
         }
         a {
-            background-image: url("../images/social.png");
-            background-repeat: no-repeat;
-            background-size: 600%;
-            width: 2rem;
-            height: 2rem;        
+            @include icon_sprites;
             &:not(:first-child) {
                 @include breakpoints.lg {
                     margin-left: .5rem;    
                 }
             }
             &:nth-child(1) {
-                @include icon_position(2px , 1px);
+                @include icon_position(0px , 0px);
                 &:hover {
-                    @include icon_position_hover (3px, 1px);
+                    @include icon_position_hover (0px, 0px);
                 }
             }
             &:nth-child(2) {
-                @include icon_position(2px , -39px);
+                @include icon_position (0px , -37px);
                 &:hover {
-                    @include icon_position_hover (3px, -39px);
+                    @include icon_position_hover (0px, -37px);
                 }
             }
             &:nth-child(3) {
-                @include icon_position(2px , -79px);
+                @include icon_position (0px , -74px);
                 &:hover {
-                    @include icon_position_hover (3px, -79px);
+                    @include icon_position_hover (0px, -74px);
                 }
             }
             &:nth-child(4) {
-                @include icon_position(2px , -119px);
+                @include icon_position (0px , -111px);
                 &:hover {
-                    @include icon_position_hover (3px, -119px);
+                    @include icon_position_hover (0px, -111px);
                 }
             }
             &:nth-child(5) {
-                @include icon_position(2px , -161px);
+                @include icon_position (0px , -150px);
                 &:hover {
-                    @include icon_position_hover (3px, -161px);
+                    @include icon_position_hover (0px, -150px);
                 }
             }
         }
@@ -65,9 +63,70 @@
     span {
         a {
             text-decoration: none;
-            color: black;
+            color: color.$black;
             &:hover {
                 color: color.$color-primary;
+            }
+        }
+    }
+}
+
+.social_media_dark {
+    .icon_list {
+        display: flex;
+        margin-bottom: .5rem;
+        justify-content: space-evenly;
+        a {
+            @include icon_sprites;
+            background-color: color.$gary-500;
+            border-radius: 50%;
+            &:not(:first-child) {
+                @include breakpoints.lg {
+                    margin-left: .5rem;    
+                }
+            }
+            &:hover {
+                background-color: color.$white;
+            }
+            &:nth-child(1) {
+                @include icon_position (0px , 0px);
+                &:hover {
+                    @include icon_position_hover (0px, 0px);
+                }
+            }
+            &:nth-child(2) {
+                @include icon_position (0px , -37px);
+                &:hover {
+                    @include icon_position_hover (0px, -37px);
+                }
+            }
+            &:nth-child(3) {
+                @include icon_position (0px , -74px);
+                &:hover {
+                    @include icon_position_hover (0px, -74px);
+                }
+            }
+            &:nth-child(4) {
+                @include icon_position (0px , -111px);
+                &:hover {
+                    @include icon_position_hover (0px, -111px);
+                }
+            }
+            &:nth-child(5) {
+                @include icon_position (0px , -150px);
+                &:hover {
+                    @include icon_position_hover (0px, -150px);
+                }
+            }
+        }
+    }
+    span {
+        color: color.$color-primary;
+        a {
+            text-decoration: none;
+            color: color.$gary-500;
+            &:hover {
+                color: color.$white;
             }
         }
     }

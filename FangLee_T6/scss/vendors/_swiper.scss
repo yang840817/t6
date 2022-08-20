@@ -14,9 +14,9 @@
     }
 }
 
-@mixin swiper-button-md ($right) {
+@mixin swiper-button-md ($x) {
     top: 2.5rem;
-    right: $right;
+    right: $x;
     padding: .5rem;
     width: auto;
     height: auto;
@@ -31,15 +31,9 @@
     }
 }
 
-@mixin swiper-button-lg ($right) {
+@mixin swiper-button-lg ($x) {
     top: 3.5rem;
-    right: $right;
-}
-
-
-
-.featured {
-    position: relative;
+    right: $x;
 }
 
 .myfeatured {

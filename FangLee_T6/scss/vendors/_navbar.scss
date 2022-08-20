@@ -4,6 +4,7 @@
 // Bootstrap
 .navbar {
     position: relative;
+    margin-top: 2.5rem;
     padding: 0;
     align-items: stretch;
     .navbar-toggler {
@@ -38,6 +39,9 @@
             &:focus-visible {
                 outline: none;
             }
+        }
+        input[type="search"]::-webkit-search-cancel-button {
+            -webkit-appearance: none;
         }
         button {
             background-color: color.$gary-100;

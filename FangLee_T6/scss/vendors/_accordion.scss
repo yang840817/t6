@@ -3,8 +3,12 @@
 
 // Bootstrap
 .accordion {
+    @include breakpoints.sm {
+        margin-top: -1rem;
+    }
     .accordion-item {
         background-color: unset;
+        border-bottom-color: color.$gary-200;
         border-right: 0;
         border-left: 0;
         &:first-of-type {

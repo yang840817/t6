@@ -12,9 +12,10 @@
     gap: 1rem;
     h4 {
         margin: 0;
+        height: 2.5rem;
         text-align: center;
         text-transform: uppercase;
-        @include breakpoints.sm {
+        @include breakpoints.lg {
             font-size: 1rem;
         }
     }
@@ -27,12 +28,13 @@
             display: block;
             margin: 0;
             text-align: center;
-            @include text.ellipsis(4);
+            @include text.ellipsis(3);
         }
     }
     &:hover {
         background-color: rgba(color.$gary-600, .9);
-        border: 1px solid color.$gary-600;
+        box-shadow: 0px 0px 0px 1px color.$gary-600;
+        // border: 1px solid color.$gary-600;
         color: white;
     }
 }
@@ -45,7 +47,7 @@
         flex-direction: row;
         gap: 1.5rem;
     }
-    @include breakpoints.lg {
+    @include breakpoints.xl {
         flex-direction: column;
     }
     .item {
@@ -76,8 +78,8 @@
             grid-column: 2 / -1;
             .text {
                 margin: 0;
+                line-height: 1.2;
                 color: color.$gary-500;
-                @include text.ellipsis(3);
             }
         }
     }
