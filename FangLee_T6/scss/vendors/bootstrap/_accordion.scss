@@ -1,7 +1,6 @@
-@use "../utils/breakpoints";
-@use "../utils/color";
+@use "../../utils/breakpoints";
+@use "../../utils/color";
 
-// Bootstrap
 .accordion {
     @include breakpoints.sm {
         margin-top: -1rem;

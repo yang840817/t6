@@ -2,7 +2,6 @@
 
 html {
     font-size: 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -10,12 +9,12 @@ body {
     background: url(../images/bg.jpg), black;
     background-repeat: repeat-x, repeat;
     background-position: top 5rem center, center;
-    background-size: 20% 85%, 100%;
+    background-size: 277px 85%, 100%;
     @include breakpoints.md {
         padding: 0 8%;
     }
 }
 
 * {
-    // outline: 1px solid red; 
+    outline: 1px solid red;
 }

@@ -70,15 +70,17 @@ main {
         }
     }
     .company_info {
+        & :not(:last-child) {
+            margin-bottom: 1rem;
+        }    
         .image_box {
-            margin-bottom: 1.25rem;
             img {
                 width: 100%;
             }
         }
         p {
-            line-height: 1.2;
             margin: 0;
+            line-height: 1.2;
             color: color.$gary-500;
         }
     }

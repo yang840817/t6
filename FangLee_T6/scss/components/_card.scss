@@ -2,14 +2,13 @@
 @use "../utils/color";
 @use "../utils/text";
 
-
 .card_item {
     padding: 2rem 1rem;
-    display: flex;
     background-color: color.$gary-200;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    text-align: center;
+    & :not(:last-child) {
+        margin-bottom: 1rem;
+    }
     h4 {
         margin: 0;
         height: 2.5rem;
@@ -19,22 +18,26 @@
             font-size: 1rem;
         }
     }
-    .image_box img {
-        width: 100%;
+    .image_box {
+        display: inline-block;
+        width: 20%;
+        img {
+            width: 100%;
+        }
     }
+    
     p {
-        display: none;
+        margin: 0;
+        text-align: center;
+        @include text.ellipsis(2);
         @include breakpoints.md {
-            display: block;
-            margin: 0;
-            text-align: center;
             @include text.ellipsis(3);
         }
+
     }
     &:hover {
         background-color: rgba(color.$gary-600, .9);
         box-shadow: 0px 0px 0px 1px color.$gary-600;
-        // border: 1px solid color.$gary-600;
         color: white;
     }
 }

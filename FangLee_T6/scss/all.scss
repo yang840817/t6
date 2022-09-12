@@ -5,14 +5,13 @@
 @use "components/button";
 @use "components/dialogue";
 @use "components/gallery";
-@use "components/secondary-nav";
 
 @use "layout/header";
 @use "layout/main";
 @use "layout/footer";
 
-@use "vendors/accordion";
-@use "vendors/carousel";
-@use "vendors/form";
-@use "vendors/navbar";
-@use "vendors/swiper";
+@use "vendors/bootstrap/accordion";
+@use "vendors/bootstrap/carousel";
+@use "vendors/bootstrap/form";
+@use "vendors/bootstrap/navbar";
+@use "vendors/swiper/swiper";

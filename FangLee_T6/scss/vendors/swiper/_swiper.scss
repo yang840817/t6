@@ -1,42 +1,8 @@
-@use "../utils/breakpoints";
-@use "../utils/color";
+@use "../../utils/breakpoints";
+@use "../../utils/color";
 
-
-%swiper-button {
-    padding: 2rem 1rem;
-    background-color: rgba(color.$black, .3);
-    color: color.$white;
-    &:hover {
-        background-color: color.$color-primary;
-    }
-    &:after {
-        font-size: 2rem;
-    }
-}
-
-@mixin swiper-button-md ($x) {
-    top: 2.5rem;
-    right: $x;
-    padding: .5rem;
-    width: auto;
-    height: auto;
-    background-color: inherit;
-    color: color.$gary-500;
-    &:hover {
-        background-color: inherit;
-        color: color.$color-primary;
-    }
-    &:after {
-        font-size: 1.5rem;
-    }
-}
-
-@mixin swiper-button-lg ($x) {
-    top: 3.5rem;
-    right: $x;
-}
-
-.myfeatured {
+// Infinite loop with slides per group
+.swiper {
     @include breakpoints.md {
         position: unset;
     }
@@ -69,25 +35,52 @@
             background-color: rgb(0, 0, 0,.3);
         }
     }
-    .swiper-button-prev {
-        left: 0;
-        @extend %swiper-button;
+    .swiper_button {
+        padding: 2rem 1rem;
+        background-color: rgba(color.$black, .3);
+        color: color.$white;
+        &:hover {
+            background-color: color.$color-primary;
+        }
+        &:after {
+            font-size: 2rem;
+        }
         @include breakpoints.md {
-            left: auto;
-            @include swiper-button-md (3rem);
+            top: 2.5rem;
+            padding: .5rem;
+            width: auto;
+            height: auto;
+            background-color: inherit;
+            color: color.$gary-500;
+            &:hover {
+                background-color: inherit;
+                color: color.$color-primary;
+            }
+            &:after {
+                font-size: 1.5rem;
+            }
         }
         @include breakpoints.lg {
-            @include swiper-button-lg (4.5rem)
+            top: 4rem;
+        }
+    }
+    .swiper-button-prev {
+        left: 0;
+        @include breakpoints.md {
+            left: auto;
+            right: 3.5rem;
+        }
+        @include breakpoints.lg {
+            right: 4.5rem;
         }
     }
     .swiper-button-next {
         right: 0;
-        @extend %swiper-button;
         @include breakpoints.md {
-            @include swiper-button-md (1rem);
+            right: 1.5rem;
         }
         @include breakpoints.lg {
-            @include swiper-button-lg (2.5rem)
+            right: 2.5rem;
         }
     }
 }

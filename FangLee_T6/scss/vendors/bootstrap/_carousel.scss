@@ -1,0 +1,49 @@
+@use "../../utils/breakpoints";
+@use "../../utils/color";
+
+.carousel {
+    height: 50vh;
+    box-shadow: 0px -2px 10px -4px color.$black;
+    @include breakpoints.lg {
+        height: auto;
+    }
+    .carousel-inner {
+        height: 100%;
+        & :nth-child(1) {
+            img {
+                object-position: 36% 50%;
+            }
+        }
+        & :nth-child(2) {
+            img {
+                object-position: 75% 50%;
+            }
+        }
+        & :nth-child(3) {
+            img {
+                object-position: 3% 50%;
+            }
+        }
+    }
+    .carousel-item {
+        height: 100%;
+        img {
+            object-fit: cover;
+        }
+    }
+    .carousel_control {
+        top: 50%;
+        transform: translatey(-50%);
+        width: 40px;
+        height: 119px;
+        &:hover {
+            background-position: bottom;
+        }
+    }    
+    .carousel-control-prev {
+        background-image: url("../images/slider_prev.gif");
+    }
+    .carousel-control-next {
+        background-image: url("../images/slider_next.gif");
+    }
+}

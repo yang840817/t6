@@ -1,68 +1,66 @@
 @use "../utils/breakpoints";
 @use "../utils/color";
 
-@mixin icon_sprites {
-    background: url("../images/social.png");
-    background-repeat: no-repeat;
-    width: 27px;
-    height: 27px;
-}
-@mixin icon_position ($x,$y) {
-    background-position: top $x  left $y;
-}
-@mixin icon_position_hover ($x,$y) {
-    background-position: bottom $x  left $y;
+.social_media {
+    .icon_list {
+        margin-bottom: .5rem;
+        font-size: 0;
+        a {
+            background: url("../images/social.png");
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 27px;
+            height: 27px;
+            &:not(:first-child) {
+                margin-left: .75rem;
+            }
+        }
+    }
+    p {
+        margin-bottom: 0;
+        a {
+            text-decoration: none;
+        }
+    }
 }
 
-.social_media_light {
+.icon_dark {
     .icon_list {
-        display: flex;
-        margin-bottom: .5rem;
-        @include breakpoints.lg {
-            justify-content: end;
-        }
         a {
-            @include icon_sprites;
-            &:not(:first-child) {
-                @include breakpoints.lg {
-                    margin-left: .5rem;    
-                }
-            }
             &:nth-child(1) {
-                @include icon_position(0px , 0px);
+                background-position: top 0px  left 0px;
                 &:hover {
-                    @include icon_position_hover (0px, 0px);
+                    background-position: bottom 0px  left 0px;
                 }
             }
             &:nth-child(2) {
-                @include icon_position (0px , -37px);
+                background-position: top 0px  left -37px;
                 &:hover {
-                    @include icon_position_hover (0px, -37px);
+                    background-position: bottom 0px  left -37px;
                 }
             }
             &:nth-child(3) {
-                @include icon_position (0px , -74px);
+                background-position: top 0px  left -74px;
                 &:hover {
-                    @include icon_position_hover (0px, -74px);
+                    background-position: bottom 0px  left -74px;
                 }
             }
             &:nth-child(4) {
-                @include icon_position (0px , -111px);
+                background-position: top 0px  left -111px;
                 &:hover {
-                    @include icon_position_hover (0px, -111px);
+                    background-position: bottom 0px  left -111px;
                 }
             }
             &:nth-child(5) {
-                @include icon_position (0px , -150px);
+                background-position: top 0px  left -150px;
                 &:hover {
-                    @include icon_position_hover (0px, -150px);
+                    background-position: bottom 0px  left -150px;
                 }
             }
         }
     }
-    span {
+    p {
         a {
-            text-decoration: none;
             color: color.$black;
             &:hover {
                 color: color.$color-primary;
@@ -71,60 +69,49 @@
     }
 }
 
-.social_media_dark {
+.icon_light {
     .icon_list {
-        display: flex;
-        margin-bottom: .5rem;
-        justify-content: space-evenly;
         a {
-            @include icon_sprites;
-            background-color: color.$gary-500;
-            border-radius: 50%;
-            &:not(:first-child) {
-                @include breakpoints.lg {
-                    margin-left: .5rem;    
-                }
-            }
             &:hover {
                 background-color: color.$white;
+                border-radius: 50%;
             }
             &:nth-child(1) {
-                @include icon_position (0px , 0px);
+                background-position: bottom 0px  left 0px;
                 &:hover {
-                    @include icon_position_hover (0px, 0px);
+                    background-position: top 0px  left 0px;
                 }
             }
             &:nth-child(2) {
-                @include icon_position (0px , -37px);
+                background-position: bottom 0px  left -37px;
                 &:hover {
-                    @include icon_position_hover (0px, -37px);
+                    background-position: top 0px  left -37px;
                 }
             }
             &:nth-child(3) {
-                @include icon_position (0px , -74px);
+                background-position: bottom 0px  left -74px;
                 &:hover {
-                    @include icon_position_hover (0px, -74px);
+                    background-position: top 0px  left -74px;
                 }
             }
             &:nth-child(4) {
-                @include icon_position (0px , -111px);
+                background-position: bottom 0px  left -111px;
                 &:hover {
-                    @include icon_position_hover (0px, -111px);
+                    background-position: top 0px  left -111px;
                 }
             }
             &:nth-child(5) {
-                @include icon_position (0px , -150px);
+                background-position: bottom 0px  left -150px;
                 &:hover {
-                    @include icon_position_hover (0px, -150px);
+                    background-position: top 0px  left -150px;
                 }
             }
         }
     }
-    span {
-        color: color.$color-primary;
+    p {
+        color: color.$gary-500;
         a {
-            text-decoration: none;
-            color: color.$gary-500;
+            color: color.$color-primary;
             &:hover {
                 color: color.$white;
             }
