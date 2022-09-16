@@ -1,10 +1,10 @@
-@use "../utils/color";
+@use "../utility/color";
 
 .text_more {
     font-weight: 600;
     text-decoration: none;
     text-transform: capitalize;
-    color: color.$black;
+    color: black;
     &:hover {
         color: color.$color-primary;
     }
@@ -19,7 +19,7 @@
     text-transform: capitalize;
     &:hover {
         background-color: color.$color-primary;
-        color: color.$white;
+        color: white;
     }
 }
 

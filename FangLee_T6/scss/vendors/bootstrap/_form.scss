@@ -1,4 +1,4 @@
-@use "../../utils/color";
+@use "../../utility/color";
 
 .contact_form {
     .input_box {
@@ -22,7 +22,7 @@
     }
     .btn {
         background-color: color.$gary-300;
-        color: color.$white;
+        color: white;
         border-radius: 0;
         text-transform: uppercase;
         &:focus {
@@ -37,7 +37,7 @@
         }
     }
     .botton_reset {
-        background-color: color.$black;
+        background-color: black;
     }
     .botton_send {
         background-color: color.$color-primary;

@@ -15,10 +15,6 @@ body {
   }
 }
 
-* {
-  outline: 1px solid red;
-}
-
 .social_media .icon_list {
   margin-bottom: 0.5rem;
   font-size: 0;
@@ -71,14 +67,14 @@ body {
   background-position: bottom 0px left -150px;
 }
 .icon_dark p a {
-  color: #000000;
+  color: black;
 }
 .icon_dark p a:hover {
   color: #80b600;
 }
 
 .icon_light .icon_list a:hover {
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 50%;
 }
 .icon_light .icon_list a:nth-child(1) {
@@ -118,7 +114,7 @@ body {
   color: #80b600;
 }
 .icon_light p a:hover {
-  color: #ffffff;
+  color: white;
 }
 
 .card_item {
@@ -223,7 +219,7 @@ body {
   font-weight: 600;
   text-decoration: none;
   text-transform: capitalize;
-  color: #000000;
+  color: black;
 }
 .text_more:hover {
   color: #80b600;
@@ -239,7 +235,7 @@ body {
 }
 .btn_primary:hover {
   background-color: #80b600;
-  color: #ffffff;
+  color: white;
 }
 
 .dialogue_container {
@@ -382,7 +378,7 @@ h1 img {
   background-color: #7f7f7f;
 }
 .subnav a:hover {
-  color: #ffffff;
+  color: white;
 }
 .subnav a:first-child {
   padding-left: 0;
@@ -645,16 +641,15 @@ hr {
   display: none;
 }
 .accordion .accordion-button::before {
-  font-family: "Bootstrap-icons";
-  content: "\f285";
-  flex-shrink: 0;
+  content: "";
   margin-right: 1rem;
-  transition: transform 0.2s ease-in-out;
-  padding: 1rem;
-  line-height: 1;
-  background-color: #d9d9d9;
-  color: white;
+  padding: 1.25rem;
+  flex-shrink: 0;
+  background: url("../images/chevron-right.svg"), #d9d9d9;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 50%;
+  transition: transform 0.2s ease-in-out;
 }
 .accordion .accordion-button:not(.collapsed) {
   background-color: #e6e6e6;
@@ -670,7 +665,7 @@ hr {
 
 .carousel {
   height: 50vh;
-  box-shadow: 0px -2px 10px -4px #000000;
+  box-shadow: 0px -2px 10px -4px black;
 }
 @media (min-width: 992px) {
   .carousel {
@@ -731,7 +726,7 @@ hr {
 }
 .contact_form .btn {
   background-color: #d9d9d9;
-  color: #ffffff;
+  color: white;
   border-radius: 0;
   text-transform: uppercase;
 }
@@ -746,7 +741,7 @@ hr {
   margin-left: 0.5rem;
 }
 .contact_form .botton_reset {
-  background-color: #000000;
+  background-color: black;
 }
 .contact_form .botton_send {
   background-color: #80b600;
@@ -759,7 +754,7 @@ hr {
   align-items: stretch;
 }
 .navbar .navbar-toggler {
-  background-color: #ffffff;
+  background-color: white;
   border: 0;
   border-radius: 0;
 }
@@ -770,13 +765,13 @@ hr {
   position: relative;
   padding: 0.5rem 1rem;
   flex: 1 1 auto;
-  background-color: #ffffff;
+  background-color: white;
 }
 @media (min-width: 992px) {
   .navbar .search_form {
     flex: 0 1 30%;
     order: 2;
-    box-shadow: 0px -4px 10px -4px #000000;
+    box-shadow: 0px -4px 10px -4px black;
   }
 }
 .navbar .search_form .form-control {
@@ -814,14 +809,14 @@ hr {
   box-shadow: none;
 }
 .navbar .navbar-collapse {
-  background-color: #ffffff;
+  background-color: white;
 }
 @media (min-width: 992px) {
   .navbar .navbar-collapse {
     margin-right: 0.7rem;
     flex: 1 1 auto;
     order: 1;
-    box-shadow: 0px -4px 10px -4px #000000;
+    box-shadow: 0px -4px 10px -4px black;
   }
 }
 @media (min-width: 992px) {
@@ -830,13 +825,13 @@ hr {
   }
 }
 .navbar .navbar-nav .nav-link {
-  color: #000000;
+  color: black;
   text-transform: uppercase;
   text-align: center;
 }
 .navbar .navbar-nav .nav-link.active, .navbar .navbar-nav .nav-link:hover {
   background-color: #80b600;
-  color: #ffffff;
+  color: white;
 }
 @media (min-width: 992px) {
   .navbar .navbar-nav .nav-link {
@@ -844,7 +839,7 @@ hr {
   }
 }
 .navbar .navbar-nav .dropdown-menu {
-  background-color: #ffffff;
+  background-color: white;
   text-align: center;
   border: 0;
   border-radius: 0;
@@ -904,7 +899,7 @@ hr {
 .swiper .swiper_button {
   padding: 2rem 1rem;
   background-color: rgba(0, 0, 0, 0.3);
-  color: #ffffff;
+  color: white;
 }
 .swiper .swiper_button:hover {
   background-color: #80b600;

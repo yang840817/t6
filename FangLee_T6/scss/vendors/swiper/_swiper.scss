@@ -1,5 +1,5 @@
-@use "../../utils/breakpoints";
-@use "../../utils/color";
+@use "../../utility/breakpoints";
+@use "../../utility/color";
 
 // Infinite loop with slides per group
 .swiper {
@@ -37,8 +37,8 @@
     }
     .swiper_button {
         padding: 2rem 1rem;
-        background-color: rgba(color.$black, .3);
-        color: color.$white;
+        background-color: rgba(black, .3);
+        color: white;
         &:hover {
             background-color: color.$color-primary;
         }

@@ -1,5 +1,5 @@
-@use "../utils/breakpoints";
-@use "../utils/color";
+@use "../utility/breakpoints";
+@use "../utility/color";
 
 .social_media {
     .icon_list {
@@ -61,7 +61,7 @@
     }
     p {
         a {
-            color: color.$black;
+            color: black;
             &:hover {
                 color: color.$color-primary;
             }
@@ -73,7 +73,7 @@
     .icon_list {
         a {
             &:hover {
-                background-color: color.$white;
+                background-color: white;
                 border-radius: 50%;
             }
             &:nth-child(1) {
@@ -113,7 +113,7 @@
         a {
             color: color.$color-primary;
             &:hover {
-                color: color.$white;
+                color: white;
             }
         }
     }

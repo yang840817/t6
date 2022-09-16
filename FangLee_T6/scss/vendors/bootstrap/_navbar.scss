@@ -1,5 +1,5 @@
-@use "../../utils/breakpoints";
-@use "../../utils/color";
+@use "../../utility/breakpoints";
+@use "../../utility/color";
 
 .navbar {
     position: relative;
@@ -7,7 +7,7 @@
     padding: 0;
     align-items: stretch;
     .navbar-toggler {
-        background-color: color.$white;
+        background-color: white;
         border: 0;
         border-radius: 0;
         &:focus {
@@ -18,11 +18,11 @@
         position: relative;
         padding: 0.5rem 1rem;
         flex: 1 1 auto;
-        background-color: color.$white;
+        background-color: white;
         @include breakpoints.lg {
             flex: 0 1 30%;
             order: 2;
-            box-shadow: 0px -4px 10px -4px color.$black;
+            box-shadow: 0px -4px 10px -4px black;
         }
         .form-control {
             padding: 0.5rem 42px 0.5rem 1rem;
@@ -61,12 +61,12 @@
         }
     }
     .navbar-collapse {
-        background-color: color.$white;
+        background-color: white;
         @include breakpoints.lg {
             margin-right: .7rem;
             flex: 1 1 auto;
             order: 1;
-            box-shadow: 0px -4px 10px -4px color.$black;
+            box-shadow: 0px -4px 10px -4px black;
             }
     }
     .navbar-nav {
@@ -76,20 +76,20 @@
             }
         }
         .nav-link {
-            color: color.$black;
+            color: black;
             text-transform: uppercase;
             text-align: center;
             &.active,
             &:hover {
                 background-color: color.$color-primary;
-                color: color.$white;
+                color: white;
             }
             @include breakpoints.lg {
                 padding: 1.25rem 1rem;
             }
         }
         .dropdown-menu {
-            background-color: color.$white;
+            background-color: white;
             text-align: center;
             border: 0;
             border-radius: 0;

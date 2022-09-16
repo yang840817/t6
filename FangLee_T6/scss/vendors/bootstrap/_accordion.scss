@@ -1,5 +1,5 @@
-@use "../../utils/breakpoints";
-@use "../../utils/color";
+@use "../../utility/breakpoints";
+@use "../../utility/color";
 
 .accordion {
     @include breakpoints.sm {
@@ -34,16 +34,15 @@
             display: none;
         }
         &::before {
-            font-family:'Bootstrap-icons';
-            content: "\F285";
-            flex-shrink: 0;
+            content:"";
             margin-right: 1rem;
-            transition: transform .2s ease-in-out;
-            padding: 1rem;
-            line-height: 1;
-            background-color: color.$gary-300;
-            color: white;
+            padding: 1.25rem;
+            flex-shrink: 0;
+            background: url("../images/chevron-right.svg"),color.$gary-300;
+            background-position: center;
+            background-repeat: no-repeat;
             border-radius: 50%;
+            transition: transform .2s ease-in-out;
         }
         &:not(.collapsed) {
             background-color: color.$gary-200;

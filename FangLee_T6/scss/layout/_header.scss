@@ -1,5 +1,5 @@
-@use "../utils/breakpoints";
-@use "../utils/color";
+@use "../utility/breakpoints";
+@use "../utility/color";
 
 header {
     background-image: url("../images/subbg.gif");
@@ -66,7 +66,7 @@ h1 {
             background-color: color.$gary-500;
         }
         &:hover {
-            color: color.$white;
+            color: white;
         }
         &:first-child {
             padding-left: 0;
