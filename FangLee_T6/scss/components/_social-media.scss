@@ -1,120 +1,114 @@
 @use "../utility/breakpoints";
 @use "../utility/color";
 
+
 .social_media {
-    .icon_list {
-        margin-bottom: .5rem;
-        font-size: 0;
-        a {
-            background: url("../images/social.png");
-            background-repeat: no-repeat;
-            display: inline-block;
-            width: 27px;
-            height: 27px;
-            &:not(:first-child) {
-                margin-left: .75rem;
-            }
-        }
-    }
-    p {
-        margin-bottom: 0;
-        a {
-            text-decoration: none;
-        }
-    }
+  margin-bottom: 0.5rem;
+  font-size: 0;
+  a {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    background: url("../images/social.png");
+    background-repeat: no-repeat;
+  }
+  a + a {
+    margin-left: 0.75rem;
+  }
+}
+.phone_num {
+  margin: 0;
+  a {
+    text-decoration: none;
+  }
 }
 
-.icon_dark {
-    .icon_list {
-        a {
-            &:nth-child(1) {
-                background-position: top 0px  left 0px;
-                &:hover {
-                    background-position: bottom 0px  left 0px;
-                }
-            }
-            &:nth-child(2) {
-                background-position: top 0px  left -37px;
-                &:hover {
-                    background-position: bottom 0px  left -37px;
-                }
-            }
-            &:nth-child(3) {
-                background-position: top 0px  left -74px;
-                &:hover {
-                    background-position: bottom 0px  left -74px;
-                }
-            }
-            &:nth-child(4) {
-                background-position: top 0px  left -111px;
-                &:hover {
-                    background-position: bottom 0px  left -111px;
-                }
-            }
-            &:nth-child(5) {
-                background-position: top 0px  left -150px;
-                &:hover {
-                    background-position: bottom 0px  left -150px;
-                }
-            }
-        }
+
+// header media
+.media_primary {
+  a:nth-child(1) {
+    background-position: top 0px  left 0px;
+    &:hover {
+      background-position: bottom 0px  left 0px;
     }
-    p {
-        a {
-            color: black;
-            &:hover {
-                color: color.$color-primary;
-            }
-        }
+  }
+  a:nth-child(2) {
+    background-position: top 0px  left -37px;
+    &:hover {
+      background-position: bottom 0px  left -37px;
     }
+  }
+  a:nth-child(3) {
+    background-position: top 0px  left -74px;
+    &:hover {
+      background-position: bottom 0px  left -74px;
+    }
+  }
+  a:nth-child(4) {
+    background-position: top 0px  left -111px;
+    &:hover {
+      background-position: bottom 0px  left -111px;
+    }
+  }
+  a:nth-child(5) {
+    background-position: top 0px  left -150px;
+    &:hover {
+      background-position: bottom 0px  left -150px;
+    }
+  }
+}
+.num_primary {
+  a {
+    color: black;
+    &:hover {
+      color: color.$color-primary;
+    }
+  }
 }
 
-.icon_light {
-    .icon_list {
-        a {
-            &:hover {
-                background-color: white;
-                border-radius: 50%;
-            }
-            &:nth-child(1) {
-                background-position: bottom 0px  left 0px;
-                &:hover {
-                    background-position: top 0px  left 0px;
-                }
-            }
-            &:nth-child(2) {
-                background-position: bottom 0px  left -37px;
-                &:hover {
-                    background-position: top 0px  left -37px;
-                }
-            }
-            &:nth-child(3) {
-                background-position: bottom 0px  left -74px;
-                &:hover {
-                    background-position: top 0px  left -74px;
-                }
-            }
-            &:nth-child(4) {
-                background-position: bottom 0px  left -111px;
-                &:hover {
-                    background-position: top 0px  left -111px;
-                }
-            }
-            &:nth-child(5) {
-                background-position: bottom 0px  left -150px;
-                &:hover {
-                    background-position: top 0px  left -150px;
-                }
-            }
-        }
+// footer media
+.media_secondary {
+  a:hover {
+    background-color: white;
+    border-radius: 50%;
+  }
+  a:nth-child(1) {
+    background-position: bottom 0px  left 0px;
+    &:hover {
+      background-position: top 0px  left 0px;
     }
-    p {
-        color: color.$gary-500;
-        a {
-            color: color.$color-primary;
-            &:hover {
-                color: white;
-            }
-        }
+  }
+  a:nth-child(2) {
+    background-position: bottom 0px  left -37px;
+    &:hover {
+      background-position: top 0px  left -37px;
     }
+  }
+  a:nth-child(3) {
+    background-position: bottom 0px  left -74px;
+    &:hover {
+      background-position: top 0px  left -74px;
+    }
+  }
+  a:nth-child(4) {
+    background-position: bottom 0px  left -111px;
+    &:hover {
+      background-position: top 0px  left -111px;
+    }
+  }
+  a:nth-child(5) {
+    background-position: bottom 0px  left -150px;
+    &:hover {
+      background-position: top 0px  left -150px;
+    }
+  }
+}
+.num_secondary {
+  color: color.$gary-600;
+  a {
+    color: color.$color-primary;
+    &:hover {
+      color: white;
+    }
+  }
 }

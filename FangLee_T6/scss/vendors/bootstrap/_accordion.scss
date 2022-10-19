@@ -2,58 +2,58 @@
 @use "../../utility/color";
 
 .accordion {
-    @include breakpoints.sm {
-        margin-top: -1rem;
+  @include breakpoints.sm {
+    margin-top: -1rem;
+  }
+  .accordion-item {
+    background-color: unset;
+    border-bottom-color: color.$gary-200;
+    border-right: 0;
+    border-left: 0;
+    &:first-of-type {
+      border-top: 0;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
     }
-    .accordion-item {
-        background-color: unset;
-        border-bottom-color: color.$gary-200;
-        border-right: 0;
-        border-left: 0;
-        &:first-of-type {
-            border-top: 0;
-            border-top-left-radius: 0;
-            border-top-right-radius: 0;
-        }
-        &:last-of-type {
-            border-bottom-right-radius: 0;
-            border-bottom-left-radius: 0;
-        }
+    &:last-of-type {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
     }
-    .accordion-button{
-        background-color: inherit;
-        color: color.$gary-500;
-        &:focus {
-            border-color: color.$color-primary;
-            box-shadow: none;
-        }
-        &:hover {
-            color: color.$color-primary;
-        }
-        &::after {
-            display: none;
-        }
-        &::before {
-            content:"";
-            margin-right: 1rem;
-            padding: 1.25rem;
-            flex-shrink: 0;
-            background: url("../images/chevron-right.svg"),color.$gary-300;
-            background-position: center;
-            background-repeat: no-repeat;
-            border-radius: 50%;
-            transition: transform .2s ease-in-out;
-        }
-        &:not(.collapsed) {
-            background-color: color.$gary-200;
-        }
-        &:not(.collapsed)::before {
-            transform: rotate(90deg);
-            background-color: color.$color-primary;
-        }
+  }
+  .accordion-button{
+    background-color: inherit;
+    color: color.$gary-500;
+    &:focus {
+      border-color: color.$color-primary;
+      box-shadow: none;
     }
-    .accordion-body {
-        color: color.$gary-500;
-        background-color: color.$gary-200;
+    &:hover {
+      color: color.$color-primary;
     }
+    &::after {
+      display: none;
+    }
+    &::before {
+      content:"";
+      margin-right: 1rem;
+      padding: 1.25rem;
+      flex-shrink: 0;
+      background: url("../images/chevron-right.svg"),color.$gary-300;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+      transition: transform .2s ease-in-out;
+    }
+    &:not(.collapsed) {
+      background-color: color.$gary-200;
+    }
+    &:not(.collapsed)::before {
+      transform: rotate(90deg);
+      background-color: color.$color-primary;
+    }
+  }
+  .accordion-body {
+    color: color.$gary-500;
+    background-color: color.$gary-200;
+  }
 }

@@ -2,80 +2,44 @@
 @use "../utility/color";
 
 header {
-    background-image: url("../images/subbg.gif");
-    background-repeat: repeat;
-    box-shadow: 0px 0px 5px -1px;
-    padding: 1rem;
-    text-align: center;
-    @include breakpoints.md {
-        margin-top: .5rem;
-    }
-    @include breakpoints.lg {
-        padding: 1.5rem 2.5rem;
-        text-align-last: justify;
-    }
+  background-image: url("../images/subbg.gif");
+  background-repeat: repeat;
+  box-shadow: 0px 0px 5px -1px;
+  padding: 1rem;
+  text-align: center;
+  @include breakpoints.md {
+    margin-top: .5rem;
+  }
+  @include breakpoints.lg {
+    padding: 2rem;
+    text-align: initial;
+    text-align-last: justify;
+  }
 }
 
 h1 {
-    margin: 0;
-    font-size: 0;
-    .image_box {
-        display: inline-block;
-    }
-    img {
-        width: 100%;
-    }
-    @include breakpoints.lg {
-        display: inline-block;
-        vertical-align: middle;
-    }
+  margin: 0;
+  font-size: 0;
+  .image_box {
+    display: inline-block;
+  }
+  img {
+    width: 100%;
+  }
+  @include breakpoints.lg {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
-.social_media.icon_dark {
-    display: none;
-    @include breakpoints.lg {
-        display: inline-block;
-        vertical-align: middle;
-    }
-    .icon_list {
-        text-align-last: end;
-    }
-}
-
-.subnav {
-    font-size: 0;
-    @include breakpoints.xl {
-        display: inline-block;
-        vertical-align: middle;
-    }
-    a {
-        position: relative;
-        padding: 0 1rem;
-        color: color.$gary-600;
-        font-size: 1rem;
-        text-decoration: none;
-        text-transform: uppercase;
-        &:not(:first-child)::after{
-            content: "";
-            display: block;
-            position: absolute;
-            top: 10%;
-            left: 0;
-            width: 2px;
-            height: 80%;
-            background-color: color.$gary-500;
-        }
-        &:hover {
-            color: white;
-        }
-        &:first-child {
-            padding-left: 0;
-        }
-        &:last-child {
-            padding-right: 0;
-        }
-    }
-    a.active {
-        color: color.$color-primary;
-    }
+header > :last-child {
+  display: none;
+  text-align-last: end;
+  @include breakpoints.lg {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .icon_list {
+    text-align-last: end;
+  }
 }

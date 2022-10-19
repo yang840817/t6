@@ -2,115 +2,114 @@
 @use "../utility/color";
 
 main {
-    background-image: url("../images/subbg.gif");
-    background-repeat: repeat;
-    box-shadow: 0px 0px 5px -1px;
-    @include breakpoints.lg {
-        padding-bottom: 3rem;
-    }
+  background-image: url("../images/subbg.gif");
+  background-repeat: repeat;
+  box-shadow: 0px 0px 5px -1px;
+  @include breakpoints.lg {
+    padding-bottom: 3rem;
+  }
 }
 
 .product_service {
-    padding: 1rem;
-    display: grid;
-    gap: 1rem;
-    @include breakpoints.md {
-        padding: 1.5rem;
-        grid-template-columns: repeat(2,1fr);
-        gap: 1.5rem;
-    }
-    @include breakpoints.lg {
-        position: relative;
-        top: -1.5rem;
-        padding: 0 2.5rem;
-        grid-template-columns: repeat(4,1fr);
-    }
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+  @include breakpoints.md {
+    padding: 1.5rem;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+  }
+  @include breakpoints.lg {
+    position: relative;
+    top: -1.5rem;
+    padding: 0 2.5rem;
+    grid-template-columns: repeat(4,1fr);
+  }
 }
 
 .info_container {
-    padding: 1rem;
-    display: grid;
-    gap: 1rem;
-    @include breakpoints.sm {
-        grid-template-columns: repeat(2,1fr);
-        gap: 1.5rem;
-        & > :nth-child(1) {
-            grid-column: 1 / 2;
-        }
-        & > :nth-child(2) {
-            grid-column: 2 / -1;
-        }
-        & > :nth-child(3) {
-            grid-column: 1 / -1;
-        }
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+  @include breakpoints.sm {
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    section:nth-child(1) {
+      grid-column: 1 / 2;
     }
-    @include breakpoints.md {
-        padding: 1.5rem;
+    section:nth-child(2) {
+      grid-column: 2 / -1;
     }
+    section:nth-child(3) {
+      grid-column: 1 / -1;
+    }
+  }
+  @include breakpoints.md {
+    padding: 1.5rem;
+  }
+  @include breakpoints.lg {
+    padding: 2.5rem;
+  }
+  @include breakpoints.xl {
+    grid-template-columns: repeat(3,1fr);
+    section:nth-child(1) {
+      grid-column: 1 / 2;
+    }
+    section:nth-child(2) {
+      grid-column: 2 / 3;
+    }
+    section:nth-child(3) {
+      grid-column: 3 / -1;
+    }
+  }
+  h2 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
     @include breakpoints.lg {
-        padding: 2.5rem;
+      margin-bottom: 1.5rem;
     }
-    @include breakpoints.xl {
-        grid-template-columns: repeat(3,1fr);
-        & > :nth-child(1) {
-            grid-column: 1 / 2;
-        }
-        & > :nth-child(2) {
-            grid-column: 2 / 3;
-        }
-        & > :nth-child(3) {
-            grid-column: 3 / -1;
-        }
+  }
+  .company_info {
+    & > :not(:last-child) {
+      margin-bottom: 1rem;
+    }    
+    .image_box {
+      img {
+        width: 100%;
+      }
     }
-    h2 {
-        margin-bottom: 1rem;
-        text-transform: uppercase;
-        @include breakpoints.lg {
-            margin-bottom: 1.5rem;
-        }
+    p {
+      margin: 0;
+      line-height: 1.2;
+      color: color.$gary-500;
     }
-    .company_info {
-        & :not(:last-child) {
-            margin-bottom: 1rem;
-        }    
-        .image_box {
-            img {
-                width: 100%;
-            }
-        }
-        p {
-            margin: 0;
-            line-height: 1.2;
-            color: color.$gary-500;
-        }
-    }
+  }
 }
 
 hr {
-    margin: 0 1rem;
-    @include breakpoints.md {
-        margin: 0 1.5rem;
-    }
-    @include breakpoints.lg {
-        margin: 0 2.5rem;
-    }
-
+  margin: 0 1rem;
+  @include breakpoints.md {
+    margin: 0 1.5rem;
+  }
+  @include breakpoints.lg {
+    margin: 0 2.5rem;
+  }
 }
 
 .featured {
-    padding: 1rem;
-    @include breakpoints.md {
-        position: relative;
-        padding: 1.5rem;
-    }
+  padding: 1rem;
+  @include breakpoints.md {
+    position: relative;
+    padding: 1.5rem;
+  }
+  @include breakpoints.lg {
+    padding: 2.5rem;
+  }
+  h2 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
     @include breakpoints.lg {
-        padding: 2.5rem;
+      margin-bottom: 1.5rem;
     }
-    h2 {
-        margin-bottom: 1rem;
-        text-transform: uppercase;
-        @include breakpoints.lg {
-            margin-bottom: 1.5rem;
-        }
-    }
+  }
 }

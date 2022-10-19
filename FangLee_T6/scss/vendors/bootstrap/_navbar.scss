@@ -2,110 +2,109 @@
 @use "../../utility/color";
 
 .navbar {
+  position: relative;
+  margin-top: 2.5rem;
+  padding: 0;
+  align-items: stretch;
+  .navbar-toggler {
+    background-color: white;
+    border: 0;
+    border-radius: 0;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .search_form {
     position: relative;
-    margin-top: 2.5rem;
-    padding: 0;
-    align-items: stretch;
-    .navbar-toggler {
-        background-color: white;
-        border: 0;
-        border-radius: 0;
-        &:focus {
-            box-shadow: none;
-        }
+    padding: 0.5rem 1rem;
+    flex: 1 1 auto;
+    background-color: white;
+    @include breakpoints.lg {
+      flex: 0 1 30%;
+      order: 2;
+      box-shadow: 0px -4px 10px -4px black;
     }
-    .search_form {
-        position: relative;
-        padding: 0.5rem 1rem;
-        flex: 1 1 auto;
-        background-color: white;
-        @include breakpoints.lg {
-            flex: 0 1 30%;
-            order: 2;
-            box-shadow: 0px -4px 10px -4px black;
-        }
-        .form-control {
-            padding: 0.5rem 42px 0.5rem 1rem;
-            background-color: color.$gary-100;
-            border: 1px solid color.$gary-200;
-            border-radius: 0;
-            font-size: 20px;
-            &:focus {
-                border-color: color.$color-primary;
-                box-shadow: 0 0 0 3px lighten(color.$color-primary, 5%);
-            }
-            &:focus-visible {
-                outline: none;
-            }
-        }
-        input[type="search"]::-webkit-search-cancel-button {
-            -webkit-appearance: none;
-        }
-        button {
-            background-color: color.$gary-100;
-        }
-        .botton_search {
-            position: absolute;
-            top: 50%;
-            right: 18px;
-            transform: translateY(-50%);
-            padding: 20px;
-            border: 0px;
-            background-image: url("../images/search.png");
-            background-repeat: no-repeat;
-            background-position: center;
-            
-            &:focus {
-                box-shadow: none;
-            }
-        }
+    .form-control {
+      padding: 0.5rem 42px 0.5rem 1rem;
+      background-color: color.$gary-100;
+      border: 1px solid color.$gary-200;
+      border-radius: 0;
+      font-size: 20px;
+      &:focus {
+        border-color: color.$color-primary;
+        box-shadow: 0 0 0 3px lighten(color.$color-primary, 5%);
+      }
+      &:focus-visible {
+        outline: none;
+      }
     }
-    .navbar-collapse {
-        background-color: white;
-        @include breakpoints.lg {
-            margin-right: .7rem;
-            flex: 1 1 auto;
-            order: 1;
-            box-shadow: 0px -4px 10px -4px black;
-            }
+    input[type="search"]::-webkit-search-cancel-button {
+      -webkit-appearance: none;
     }
-    .navbar-nav {
-        .nav-item {
-            @include breakpoints.lg {
-                border-right: 1px solid color.$gary-300;
-            }
-        }
-        .nav-link {
-            color: black;
-            text-transform: uppercase;
-            text-align: center;
-            &.active,
-            &:hover {
-                background-color: color.$color-primary;
-                color: white;
-            }
-            @include breakpoints.lg {
-                padding: 1.25rem 1rem;
-            }
-        }
-        .dropdown-menu {
-            background-color: white;
-            text-align: center;
-            border: 0;
-            border-radius: 0;
-        }
+    button {
+      background-color: color.$gary-100;
     }
-    &::after {
-        content: "";
-        display: none;
-        position: absolute;
-        bottom: 0;
-        z-index: -1;
-        width: 100%;
-        height: 1.5rem;
-        background-color: color.$gary-100;
-        @include breakpoints.lg {
-            display: block;
-            }
+    .button_search {
+      position: absolute;
+      top: 50%;
+      right: 18px;
+      transform: translateY(-50%);
+      padding: 20px;
+      border: 0px;
+      background-image: url("../images/search.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      &:focus {
+        box-shadow: none;
+      }
     }
+  }
+  .navbar-collapse {
+    background-color: white;
+    @include breakpoints.lg {
+      margin-right: .7rem;
+      flex: 1 1 auto;
+      order: 1;
+      box-shadow: 0px -4px 10px -4px black;
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      @include breakpoints.lg {
+        border-right: 1px solid color.$gary-300;
+      }
+    }
+    .nav-link {
+      color: black;
+      text-transform: uppercase;
+      text-align: center;
+      &.active,
+      &:hover {
+        background-color: color.$color-primary;
+        color: white;
+      }
+      @include breakpoints.lg {
+        padding: 1.25rem 1rem;
+      }
+    }
+    .dropdown-menu {
+      background-color: white;
+      text-align: center;
+      border: 0;
+      border-radius: 0;
+    }
+  }
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: 1.5rem;
+    background-color: color.$gary-100;
+    @include breakpoints.lg {
+      display: block;
+    }
+  }
 }
