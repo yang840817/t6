@@ -32,12 +32,12 @@
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      background-color: rgb(0, 0, 0,.3);
+      background-color: rgb(0, 0, 0, 0.3);
     }
   }
   .swiper_button {
     padding: 2rem 1rem;
-    background-color: rgba(black, .3);
+    background-color: rgba(black, 0.3);
     color: white;
     &:hover {
       background-color: color.$color-primary;
@@ -47,7 +47,7 @@
     }
     @include breakpoints.md {
       top: 2.5rem;
-      padding: .5rem;
+      padding: 0.5rem;
       width: auto;
       height: auto;
       background-color: inherit;

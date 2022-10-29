@@ -42,7 +42,7 @@
       background-position: center;
       background-repeat: no-repeat;
       border-radius: 50%;
-      transition: transform .2s ease-in-out;
+      transition: transform 0.2s ease-in-out;
     }
     &:not(.collapsed) {
       background-color: color.$gary-200;

@@ -1,7 +1,6 @@
 @use "../utility/breakpoints";
 @use "../utility/color";
 
-
 footer {
   margin-top: 4rem;
 }
@@ -74,39 +73,58 @@ footer {
   }
 }
 .subnav {
-  font-size: 0;
-  @include breakpoints.xl {
+  @include breakpoints.lg {
     display: inline-block;
+    
     vertical-align: middle;
+    font-size: 0;
   }
   a {
-    position: relative;
-    padding: 0 1rem;
-    color: color.$gary-600;
-    font-size: 1rem;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
     text-decoration: none;
+    color: color.$gary-600;
     text-transform: uppercase;
-    & + & ::after{
-      content: "";
-      display: block;
-      position: absolute;
-      top: 10%;
-      left: 0;
-      width: 2px;
-      height: 80%;
-      background-color: color.$gary-500;
-    }
+    padding: 0.5rem;
     &:hover {
       color: white;
     }
-    &:first-child {
-      padding-left: 0;
+    &.active {
+      color: color.$color-primary;
     }
-    &:last-child {
-      padding-right: 0;
+    
+    @include breakpoints.lg {
+      display: inline-block;
+      position: relative;
+      font-size: 1rem;
+      padding: 0 1rem;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+      & + a::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 10%;
+        left: 0;
+        width: 2px;
+        height: 80%;
+        background-color: color.$gary-500;
+      }
     }
+    
   }
-  a.active {
-    color: color.$color-primary;
-  }
+  
+  
 }
+// a {
+  // 
+  // font-size: 1rem;
+  // @include breakpoints.xl {
+    
+// }
+    

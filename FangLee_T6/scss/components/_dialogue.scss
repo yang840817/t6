@@ -3,35 +3,43 @@
 
 .dialogue_container {
   .dialogue_box {
+    margin-bottom: 1.5rem;
     filter: drop-shadow(0 0 1px color.$gary-500);
-    .dialogue {
-      top: 1px;
-      padding: 1.25rem 1.5rem 1.5rem;
-      clip-path: polygon(0% 0%,100% 0%,100% 90%,10% 90%,0% 100%);
-      background-color: color.$gary-200;
-      p {
-        margin: 0;
-        line-height: 1.2;
-        @include text.ellipsis(4);
-      }
+  }
+  .dialogue {
+    top: 1px;
+    padding: 1.25rem 1.5rem 1.5rem;
+    clip-path: polygon(0% 0%,100% 0%,100% 90%,10% 90%,0% 100%);
+    background-color: color.$gary-200;
+    p {
+      margin: 0;
+      line-height: 1.2;
+      @include text.ellipsis(4);
     }
   }
   .person_info {
-    display: flex;
-    gap: 1rem;
+    font-size: 0;
+    & > :not(:first-child) {
+      margin-left: 1rem;
+    }
   }
+  
   .image_box {
-    width: 25%;
+    display: inline-block;
+    vertical-align: middle;
     img {
       width: 100%;
     }
   }
   .text_box {
-    align-self: center;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1rem;
+    line-height: 1.2;
     p {
       margin: 0;
     }
-    a{
+    a {
       color: color.$color-primary;
       font-style: italic;
       font-weight: 600;
@@ -42,3 +50,4 @@
     }
   }
 }
+

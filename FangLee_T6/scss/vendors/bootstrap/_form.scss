@@ -2,7 +2,7 @@
 
 .contact_form {
   .input_box {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     .form-control {
       background-color: color.$gary-200;
       &:focus {
@@ -10,14 +10,14 @@
         box-shadow: 0 0 0 0.25rem lighten(color.$color-primary, 5%);            
       }
       &:not(:first-child) {
-        margin-top: .5rem;
+        margin-top: 0.5rem;
       }
     }
   }
   .button_box {
     display: flex;
     flex-wrap: nowrap;
-    transition: transform .15s;
+    transition: transform 0.15s;
     }
   .btn {
     background-color: color.$gary-300;
@@ -32,7 +32,7 @@
       transform: scale(95%);
     }
     &:not(:first-child) {
-      margin-left: .5rem;
+      margin-left: 0.3rem;
     }
   }
   .button_reset {
