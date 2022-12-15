@@ -1,0 +1,204 @@
+.footer_container {
+  margin-top: 72px;
+}
+.footer_main_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  padding: 36px 40px;
+  background: url(../images/subbg.png);
+  .item {
+    width: 100%;
+    @include breakpoint($md) {
+      width: calc(100% / 2 - 14px);
+    }
+    @include breakpoint($xl) {
+      width: calc(100% / 4 - 21px);
+    }
+  }
+  h3 {
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+.comment_content {
+  padding: 16px 12px 16px 24px;
+  background: lightgray;
+  border: 1px solid gray;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.triangle_element {
+  position: relative;
+  margin-top: -1px;
+  width: 25px;
+  height: 15px;
+  overflow: hidden;
+}
+.triangle_element:after {
+  position: absolute;
+  content: "";
+  // width: 142%;
+  // height: 142%;
+  // background: linear-gradient(45deg, gray 0 19.6px, lightgray 19.6px);
+  // transform: rotate(45deg) translate(-20px, 0);
+  width: 185%;
+  height: 200%;
+  background: linear-gradient(30deg, gray 0 50%, lightgray 50%);
+  transform: rotate(60deg) translate(-34.7px, 5.5px);
+  border: 1px solid gray;
+}
+.comment_from {
+  display: flex;
+  margin-top: 20px;
+  gap: 12px;
+  a {
+    font-style: italic;
+    color: $green;
+  }
+}
+
+.form_fillout {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  input,
+  textarea {
+    background: #e6e6e6;
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    resize: none;
+    &:focus-visible {
+      outline: 3px solid $green;
+    }
+  }
+}
+.form_control {
+  margin-top: 20px;
+  input {
+    padding: 6px 14px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+  }
+  .reset_button {
+    background: black;
+  }
+  .submit_button {
+    background: $green;
+  }
+}
+.flickr_thumbnail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  > div {
+    width: calc((100% - 30px) / 6);
+    @include breakpoint($xl) {
+      width: calc((100% - 15px) / 4);
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+.footer_community_container {
+  display: block;
+  @include breakpoint($md) {
+    display: none;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li a {
+      display: block;
+      height: 27px;
+      width: 28px;
+      background: url(../images/social.png) no-repeat;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    li:nth-child(1) a {
+      background-position: 0 100%;
+    }
+    li:nth-child(2) a {
+      background-position: 25% 100%;
+    }
+    li:nth-child(3) a {
+      background-position: 50% 100%;
+    }
+    li:nth-child(4) a {
+      background-position: 75% 100%;
+    }
+    li:nth-child(5) a {
+      background-position: 100% 100%;
+    }
+  }
+  .company_tel {
+    display: inline-block;
+    margin-top: 12px;
+    text-transform: capitalize;
+    color: $green;
+  }
+}
+.copy_right {
+  color: $gray-500;
+  a {
+    color: $green;
+  }
+}
+
+.footer_nav_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 0;
+  font-size: 12px;
+  @include breakpoint($lg) {
+    flex-direction: row;
+  }
+
+  ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @include breakpoint($md) {
+      display: flex;
+    }
+  }
+  li {
+    position: relative;
+    @include breakpoint($md) {
+      + li::before {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        width: 1px;
+        height: 10px;
+        content: "";
+        background: black;
+      }
+    }
+    a {
+      display: inline-block;
+      padding: 0 10px;
+      text-transform: uppercase;
+      color: $gray-500;
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+}

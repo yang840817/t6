@@ -1,0 +1,288 @@
+@mixin control-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 115px;
+  border: none;
+  &:hover {
+    background-position: 0 -120px;
+  }
+}
+.navbar {
+  position: relative;
+  margin-top: 30px;
+  padding: 0;
+  > div {
+    gap: 8px;
+  }
+  > div > div {
+    background-color: white;
+  }
+  &::after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 20px;
+    bottom: 0;
+    background: #f6f6f6;
+  }
+  .navbar-nav {
+    .nav-link {
+      position: relative;
+      text-transform: uppercase;
+      padding: 16px 28px;
+      color: black;
+      border-right: 1px solid $gray-100;
+      &:hover {
+        background: $green;
+        color: white;
+      }
+      i {
+        position: absolute;
+        margin-left: 4px;
+        top: 50%;
+        bottom: 50%;
+      }
+    }
+  }
+}
+
+.search_container {
+  display: flex;
+  flex-grow: 1;
+  padding: 10px 14px 5px 18px;
+  background-color: white;
+  gap: 8px;
+  @include breakpoint($lg) {
+    order: 2;
+  }
+}
+.search_form {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  padding: 5px 9px 10px;
+  outline: 1px solid #e5e5e5;
+  background: #f3f3f3;
+  @include breakpoint($xl) {
+    min-width: 285px;
+  }
+}
+.search_input {
+  border: none;
+  background: none;
+  flex-grow: 1;
+  flex-shrink: 1;
+  &:focus-visible {
+    outline: 3px $green solid;
+  }
+}
+.search_button {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: url(../images/search.png);
+}
+
+.control-prev {
+  @include control-button;
+  left: 0;
+  background: url(../images/slider_prev.png);
+}
+.control-next {
+  @include control-button;
+  right: 0;
+  background: url(../images/slider_next.png);
+}
+
+.main_content_container {
+  background: url(../images/subbg.png);
+  padding: 0;
+}
+.main_info_container {
+  padding: 0px 40px;
+}
+.card_list {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  @include breakpoint($md) {
+    margin-top: -26px;
+  }
+
+  .card_item {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    padding: 26px 38px;
+    width: 100%;
+    background: #e7e7e7;
+    &:hover {
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+    }
+    @include breakpoint($md) {
+      width: calc(100% / 2 - 14px);
+    }
+    @include breakpoint($xl) {
+      width: calc(100% / 4 - 21px);
+    }
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 26px;
+      text-align: center;
+    }
+  }
+  .card_title {
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  .img_container {
+    max-width: 60px;
+  }
+  a {
+    display: block;
+    margin-top: auto;
+    padding: 8px 16px;
+    color: black;
+    background: #cdcdcd;
+    &:hover {
+      color: white;
+      background: $green;
+    }
+  }
+}
+.info_list {
+  padding: 60px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+
+  .info_item {
+    width: 100%;
+    @include breakpoint($xl) {
+      width: calc(100% / 3 - 18.67px);
+    }
+    h2 {
+      margin-bottom: 28px;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+  }
+}
+.welcome {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  @include breakpoint($md) {
+    flex-direction: row;
+  }
+  @include breakpoint($xl) {
+    flex-direction: column;
+  }
+  .img_container {
+    @include breakpoint($md) {
+      min-width: 350px;
+    }
+  }
+}
+.choose_us > div {
+  display: flex;
+  align-items: baseline;
+  padding: 0 16px;
+  gap: 10px;
+  border-bottom: 1px solid lightgray;
+  div {
+    margin: 12px 0 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: lightgray;
+  }
+  p {
+    margin: 12px 0;
+  }
+  i {
+    color: white;
+  }
+}
+.news_events {
+  display: flex;
+  gap: 28px;
+  flex-direction: column;
+  > div {
+    display: flex;
+    gap: 28px;
+  }
+  .img_container {
+    max-width: 140px;
+    flex-shrink: 0;
+  }
+  .date {
+    padding: 5px 12px;
+    width: 85px;
+    background: $green;
+    color: white;
+  }
+}
+.divider {
+  margin: 20px 0;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+}
+.featured_list {
+  padding: 32px 0 72px;
+}
+.works_title {
+  display: flex;
+  justify-content: space-between;
+  h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+  .swiper_control {
+    align-self: center;
+    color: lightgray;
+    i:hover {
+      color: $green;
+    }
+  }
+}
+.swiper-slide {
+  position: relative;
+  &:hover {
+    .hover_link {
+      display: flex;
+    }
+  }
+  .hover_link {
+    position: absolute;
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    a {
+      display: inline-block;
+      width: 15%;
+      &:hover {
+        transform: scale(1.5);
+        transition: transform 0.5s ease-in-out;
+      }
+    }
+  }
+}
