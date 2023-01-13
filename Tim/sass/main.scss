@@ -1,50 +1,7 @@
-@import "./uninity/_index";
-@import "./layout/header";
-@import "./layout/main";
-@import "./layout/footer";
-body {
-  position: relative;
-  padding-top: 8px;
-  background: url(../images/bg.jpg);
-  &::before {
-    position: absolute;
-    z-index: -1;
-    content: "";
-    width: 100%;
-    height: 95px;
-    top: 0;
-    background: $black;
-  }
-  &::after {
-    position: absolute;
-    z-index: -1;
-    content: "";
-    width: 100%;
-    height: 220px;
-    background: $black;
-    bottom: 0;
-  }
-}
-
-.body_container {
-  max-width: 1210px;
-  min-width: 375px;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  width: 100%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-bottom: 0;
-}
+//reset
+@use "./base/reset";
+//layout
+@use "./layout/body";
+@use "./layout/header";
+@use "./layout/main";
+@use "./layout/footer";

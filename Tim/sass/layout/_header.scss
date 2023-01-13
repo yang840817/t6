@@ -1,72 +1,14 @@
-.header_container {
+@use "../abstracts/index" as *;
+
+@use "../components/logo";
+@use "../components/_header_media-link";
+
+header {
   display: flex;
   justify-content: center;
-  position: relative;
   padding: 36px 40px;
-  background: url(../images/subbg.png);
+  background: $bg-notes;
   @include breakpoint($md) {
     justify-content: space-between;
-  }
-}
-.header_logo_container {
-  margin-bottom: 0;
-  width: 100%;
-  max-width: 350px;
-}
-
-.header_community_container {
-  display: none;
-  @include breakpoint($md) {
-    display: block;
-  }
-  ul {
-    display: flex;
-    justify-content: end;
-    gap: 5px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    li a {
-      display: block;
-      height: 27px;
-      width: 28px;
-      background: url(../images/social.png) no-repeat;
-    }
-    li:nth-child(1) a {
-      background-position: 0 0;
-      &:hover {
-        background-position: 0 100%;
-      }
-    }
-    li:nth-child(2) a {
-      background-position: 25% 0;
-      &:hover {
-        background-position: 25% 100%;
-      }
-    }
-    li:nth-child(3) a {
-      background-position: 50% 0;
-      &:hover {
-        background-position: 50% 100%;
-      }
-    }
-    li:nth-child(4) a {
-      background-position: 75% 0;
-      &:hover {
-        background-position: 75% 100%;
-      }
-    }
-    li:nth-child(5) a {
-      background-position: 100% 0;
-      &:hover {
-        background-position: 100% 100%;
-      }
-    }
-  }
-  .company_tel {
-    display: inline-block;
-    margin-top: 12px;
-    text-transform: capitalize;
-    color: black;
   }
 }
