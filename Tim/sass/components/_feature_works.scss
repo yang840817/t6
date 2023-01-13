@@ -1,0 +1,53 @@
+@use "../abstracts/index" as *;
+
+.divider {
+  margin: 20px 0;
+  width: 100%;
+  border-bottom: 1px solid $gray-100;
+}
+.featured_list {
+  padding: 32px 0 72px;
+}
+.works_title {
+  display: flex;
+  justify-content: space-between;
+  h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+}
+.swiper_control {
+  align-self: center;
+  color: lightgray;
+  i:hover {
+    color: $green;
+  }
+}
+.swiper-slide {
+  position: relative;
+  &:hover {
+    .hover_link {
+      display: flex;
+    }
+  }
+  .hover_link {
+    position: absolute;
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    a {
+      display: inline-block;
+      width: 15%;
+      &:hover {
+        transform: scale(1.5);
+        transition: transform 0.5s ease-in-out;
+      }
+    }
+  }
+}

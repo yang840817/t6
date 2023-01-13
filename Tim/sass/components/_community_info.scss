@@ -1,0 +1,27 @@
+@use "../abstracts/index" as *;
+
+@use "../components/lastest-tweets";
+@use "../components/testimonials";
+@use "../components/form";
+@use "../components/flickr";
+
+.community_info_container {
+  margin-top: 72px;
+  display: grid;
+  grid-template-columns: 1;
+  gap: 28px;
+  padding: 36px 40px;
+  background: $bg-notes;
+  @include breakpoint($md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include breakpoint($xl) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  h3 {
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}

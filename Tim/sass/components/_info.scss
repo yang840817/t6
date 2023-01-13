@@ -1,0 +1,89 @@
+@use "../abstracts/index" as *;
+
+.info_list {
+  padding: 60px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+
+  .info_item {
+    width: 100%;
+    @include breakpoint($xl) {
+      width: calc(100% / 3 - 18.67px);
+    }
+    h2 {
+      margin-bottom: 28px;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+    p {
+      color: $gray-400;
+      a {
+        color: $black;
+        &:hover {
+          color: $green;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+.welcome {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  @include breakpoint($md) {
+    flex-direction: row;
+  }
+  @include breakpoint($xl) {
+    flex-direction: column;
+  }
+  .img_container {
+    @include breakpoint($md) {
+      min-width: 350px;
+    }
+  }
+}
+.choose_us > div {
+  display: flex;
+  align-items: baseline;
+  padding: 0 16px;
+  gap: 10px;
+  border-bottom: 1px solid $gray-100;
+  div {
+    margin: 12px 0 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: $gray-200;
+  }
+  p {
+    margin: 12px 0;
+  }
+  i {
+    color: $white;
+  }
+}
+.news_events {
+  display: flex;
+  gap: 28px;
+  flex-direction: column;
+  > div {
+    display: flex;
+    gap: 28px;
+  }
+  .img_container {
+    max-width: 140px;
+    flex-shrink: 0;
+  }
+  .date {
+    padding: 5px 12px;
+    width: 85px;
+    background: $green;
+    color: $white;
+  }
+}

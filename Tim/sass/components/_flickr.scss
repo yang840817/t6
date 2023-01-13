@@ -1,0 +1,13 @@
+@use "../abstracts/index" as *;
+
+.flickr_thumbnail {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 5px;
+  @include breakpoint($xl) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  > div:hover {
+    transform: scale(1.1);
+  }
+}

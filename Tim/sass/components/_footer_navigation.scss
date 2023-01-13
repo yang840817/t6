@@ -1,0 +1,55 @@
+@use "../abstracts/index" as *;
+
+@use "../components/footer_media-link";
+
+.footer_nav_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 0;
+  font-size: 12px;
+  background: $black;
+  @include breakpoint($lg) {
+    flex-direction: row;
+  }
+  ul {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    @include breakpoint($md) {
+      display: flex;
+    }
+  }
+  li {
+    position: relative;
+    @include breakpoint($md) {
+      + li::before {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        width: 1px;
+        height: 10px;
+        content: "";
+        background: $gray-400;
+      }
+    }
+    a {
+      display: inline-block;
+      padding: 0 10px;
+      text-transform: uppercase;
+      color: $gray-500;
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+}
+.copy_right {
+  color: $gray-500;
+  a {
+    color: $green;
+  }
+}

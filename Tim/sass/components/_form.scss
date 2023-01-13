@@ -1,0 +1,32 @@
+@use "../abstracts/index" as *;
+
+.form_fillout {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  input,
+  textarea {
+    background: $gray-100;
+    border: 1px solid $gray-200;
+    border-radius: 2px;
+    resize: none;
+    &:focus-visible {
+      outline: 3px solid $green;
+    }
+  }
+}
+.form_control {
+  margin-top: 20px;
+  input {
+    padding: 6px 14px;
+    text-transform: uppercase;
+    color: $white;
+    border: none;
+  }
+  .reset_button {
+    background: $black;
+  }
+  .submit_button {
+    background: $green;
+  }
+}

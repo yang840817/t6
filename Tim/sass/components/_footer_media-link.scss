@@ -1,0 +1,46 @@
+@use "../abstracts/index" as *;
+
+.footer_media-link {
+  display: block;
+  @include breakpoint($md) {
+    display: none;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+  }
+  li a {
+    display: block;
+    height: 27px;
+    width: 28px;
+    background: url(../images/social.png) no-repeat;
+    background-position-y: 100%;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  li:nth-child(1) a {
+    background-position-x: 0;
+  }
+  li:nth-child(2) a {
+    background-position-x: 25%;
+  }
+  li:nth-child(3) a {
+    background-position-x: 50%;
+  }
+  li:nth-child(4) a {
+    background-position-x: 75%;
+  }
+  li:nth-child(5) a {
+    background-position-x: 100%;
+  }
+  .company_tel {
+    display: inline-block;
+    margin-top: 12px;
+    text-transform: capitalize;
+    color: $green;
+  }
+}

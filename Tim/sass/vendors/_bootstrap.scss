@@ -1,0 +1,74 @@
+@use "../abstracts/index" as *;
+
+@mixin control-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 115px;
+  border: none;
+  &:hover {
+    background-position: 0 -120px;
+  }
+}
+//nav
+.navbar {
+  position: relative;
+  margin-top: 30px;
+  padding: 0;
+  > div {
+    gap: 8px;
+  }
+  > div > div {
+    background-color: $white;
+  }
+  &::after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 20px;
+    bottom: 0;
+    background: $gray-100;
+  }
+  .navbar-nav {
+    .nav-link {
+      position: relative;
+      text-transform: uppercase;
+      padding: 16px 28px;
+      color: black;
+      border-right: 1px solid $gray-100;
+      &:hover {
+        background: $green;
+        color: $white;
+      }
+      i {
+        position: absolute;
+        margin-left: 4px;
+        top: 50%;
+        bottom: 50%;
+      }
+    }
+  }
+}
+//carousel
+.carousel-item {
+  height: 300px;
+  @include breakpoint($md) {
+    height: auto;
+  }
+  img {
+    object-fit: cover;
+    object-position: center right;
+  }
+}
+.control-prev {
+  @include control-button;
+  left: 0;
+  background: url(../images/slider_prev.png);
+}
+.control-next {
+  @include control-button;
+  right: 0;
+  background: url(../images/slider_next.png);
+}
