@@ -1,4 +1,4 @@
-@use "../abstracts/index" as *;
+@use "../abstracts" as *;
 
 @use "../components/lastest-tweets";
 @use "../components/testimonials";
@@ -6,9 +6,7 @@
 @use "../components/flickr";
 
 .community_info_container {
-  margin-top: 72px;
   display: grid;
-  grid-template-columns: 1;
   gap: 28px;
   padding: 36px 40px;
   background: $bg-notes;
