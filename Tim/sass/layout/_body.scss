@@ -14,22 +14,12 @@ body {
   background: $bg-wood;
   &::before {
     @extend %body-pseudo-element;
-    //  position: absolute;
-    // z-index: -1;
-    // content: "";
-    // width: 100%;
     height: 95px;
     top: 0;
-    // background: $black;
   }
   &::after {
     @extend %body-pseudo-element;
-    // position: absolute;
-    // z-index: -1;
-    // content: "";
-    // width: 100%;
     height: 220px;
-    // background: $black;
     bottom: 0;
   }
 }

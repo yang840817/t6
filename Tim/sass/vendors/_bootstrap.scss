@@ -19,7 +19,7 @@
   > div {
     gap: 8px;
   }
-  > div > div {
+  .navbar-collapse {
     background-color: $white;
   }
   &::after {

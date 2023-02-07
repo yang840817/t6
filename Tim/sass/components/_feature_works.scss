@@ -5,14 +5,11 @@
   width: 100%;
   border-bottom: 1px solid $gray-200;
 }
-.featured_list {
-  padding: 32px 0 72px;
-}
 .works_title {
   display: flex;
   justify-content: space-between;
   h2 {
-    font-size: 20px;
+    font-size: 28px;
     text-transform: uppercase;
     margin-bottom: 28px;
   }
@@ -29,7 +26,7 @@
   &:hover {
     .hover_link {
       display: flex;
-      animation: text 2s ease-in-out;
+      animation: text 1s ease-in-out;
     }
     @keyframes text {
       from {

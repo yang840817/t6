@@ -13,11 +13,8 @@ img {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
 p {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 body::after, body::before {
@@ -123,7 +120,7 @@ header {
 .navbar > div {
   gap: 8px;
 }
-.navbar > div > div {
+.navbar .navbar-collapse {
   background-color: #ffffff;
 }
 .navbar::after {
@@ -293,7 +290,6 @@ header {
 }
 
 .info_list {
-  padding: 60px 0;
   display: flex;
   flex-wrap: wrap;
   gap: 28px;
@@ -308,7 +304,7 @@ header {
 }
 .info_list .info_item h2 {
   margin-bottom: 28px;
-  font-size: 20px;
+  font-size: 28px;
   text-transform: uppercase;
 }
 .info_list .info_item p {
@@ -394,16 +390,12 @@ header {
   border-bottom: 1px solid #d9d9d9;
 }
 
-.featured_list {
-  padding: 32px 0 72px;
-}
-
 .works_title {
   display: flex;
   justify-content: space-between;
 }
 .works_title h2 {
-  font-size: 20px;
+  font-size: 28px;
   text-transform: uppercase;
   margin-bottom: 28px;
 }
@@ -421,7 +413,7 @@ header {
 }
 .swiper-slide:hover .hover_link {
   display: flex;
-  animation: text 2s ease-in-out;
+  animation: text 1s ease-in-out;
 }
 @keyframes text {
   from {
@@ -466,6 +458,12 @@ header {
 
 .main_info_container {
   padding: 0px 40px;
+}
+.main_info_container > :nth-child(2) {
+  padding: 60px 0;
+}
+.main_info_container > :last-child {
+  padding: 32px 0 72px;
 }
 
 .comment_content {
@@ -672,10 +670,10 @@ header {
   color: #80b701;
 }
 
-.copy_right {
+.copyright {
   color: #5c5c5c;
 }
-.copy_right a {
+.copyright a {
   color: #80b701;
 }
 
