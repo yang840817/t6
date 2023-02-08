@@ -1,15 +1,10 @@
 @use "../abstracts" as *;
 
 .info_list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 28px;
-
-  .info_item {
-    width: 100%;
-    @include breakpoint($xl) {
-      width: calc(100% / 3 - 18.67px);
-    }
+  @include breakpoint($xl) {
+    grid-template-columns: repeat(3, 1fr);
     h2 {
       margin-bottom: 28px;
       font-size: 28px;
