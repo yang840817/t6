@@ -1,12 +1,9 @@
 @use "../abstracts" as *;
-
 .card_list {
-  position: relative;
   z-index: 1;
   display: grid;
   gap: 28px;
   @include breakpoint($md) {
-    margin-top: -26px;
     grid-template-columns: repeat(2, 1fr);
   }
   @include breakpoint($xl) {

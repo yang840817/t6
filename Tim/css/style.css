@@ -27,7 +27,6 @@ body::after, body::before {
 
 body {
   position: relative;
-  padding-top: 8px;
   background: url(../images/bg.jpg);
 }
 body::before {
@@ -47,6 +46,9 @@ body::after {
 .logo_container {
   width: 100%;
   max-width: 350px;
+}
+.logo_container a {
+  display: block;
 }
 
 .header_media-link {
@@ -236,14 +238,12 @@ header {
 }
 
 .card_list {
-  position: relative;
   z-index: 1;
   display: grid;
   gap: 28px;
 }
 @media (min-width: 768px) {
   .card_list {
-    margin-top: -26px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -378,7 +378,7 @@ header {
 }
 
 .divider {
-  margin: 20px 0;
+  margin: 80px 0 20px;
   width: 100%;
   border-bottom: 1px solid #d9d9d9;
 }
@@ -401,10 +401,10 @@ header {
   color: #80b701;
 }
 
-.swiper-slide {
+.img_hover_link {
   position: relative;
 }
-.swiper-slide::before {
+.img_hover_link::before {
   display: none;
   position: absolute;
   width: 100%;
@@ -412,8 +412,8 @@ header {
   content: "";
   background: linear-gradient(150deg, rgba(0, 0, 0, 0.5) 0 20%, rgba(255, 255, 255, 0) 20% 30%, rgba(0, 0, 0, 0.5) 30% 80%, rgb(113, 183, 0) 80% 81%, rgba(255, 255, 255, 0) 81% 100%);
 }
-.swiper-slide:hover::before,
-.swiper-slide:hover .hover_link {
+.img_hover_link:hover::before,
+.img_hover_link:hover .hover_link {
   display: flex;
   animation: text 1s ease-in-out;
 }
@@ -425,7 +425,7 @@ header {
     top: 0px;
   }
 }
-.swiper-slide .hover_link {
+.img_hover_link .hover_link {
   position: absolute;
   top: 0;
   display: none;
@@ -437,11 +437,11 @@ header {
   height: 100%;
   transform: rotateZ(-30deg);
 }
-.swiper-slide .hover_link a {
+.img_hover_link .hover_link a {
   display: inline-block;
   width: 15%;
 }
-.swiper-slide .hover_link a:hover {
+.img_hover_link .hover_link a:hover {
   transform: scale(1.5);
   transition: transform 0.5s ease-in-out;
 }
@@ -452,13 +452,20 @@ header {
 }
 
 .main_info_container {
-  padding: 0px 40px;
+  position: relative;
+  padding: 0px 40px 70px;
+  margin-top: 26px;
+}
+@media (min-width: 768px) {
+  .main_info_container {
+    margin-top: -26px;
+  }
 }
 .main_info_container > :nth-child(2) {
-  padding: 60px 0;
+  margin-top: 60px;
 }
 .main_info_container > :last-child {
-  padding: 32px 0 72px;
+  margin-top: 50px;
 }
 
 .comment_content {

@@ -9,7 +9,6 @@
 
 body {
   position: relative;
-  padding-top: 8px;
   background: $bg-wood;
   &::before {
     @extend %body-pseudo-element;
