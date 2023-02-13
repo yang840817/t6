@@ -1,6 +1,5 @@
 @use "../abstracts" as *;
 .card_list {
-  z-index: 1;
   display: grid;
   gap: 28px;
   @include breakpoint($md) {

@@ -39,8 +39,7 @@ body::after {
 }
 
 .body_container {
-  max-width: 1210px;
-  min-width: 375px;
+  max-width: 1200px;
 }
 
 .logo_container {
@@ -51,54 +50,79 @@ body::after {
   display: block;
 }
 
-.header_media-link {
-  display: none;
-}
-@media (min-width: 768px) {
-  .header_media-link {
-    display: block;
-  }
-}
-.header_media-link ul {
+.media-link ul {
   display: flex;
-  justify-content: end;
   gap: 5px;
   margin: 0;
   padding: 0;
 }
-.header_media-link li a {
+.media-link li a {
   display: block;
   height: 27px;
   width: 28px;
   background: url(../images/social.png) no-repeat;
-  background-position-y: 0;
 }
-.header_media-link li a:hover {
-  background-position-y: 100%;
-}
-.header_media-link li:nth-child(1) a {
+.media-link li:nth-child(1) a {
   background-position-x: 0;
 }
-.header_media-link li:nth-child(2) a {
+.media-link li:nth-child(2) a {
   background-position-x: 25%;
 }
-.header_media-link li:nth-child(3) a {
+.media-link li:nth-child(3) a {
   background-position-x: 50%;
 }
-.header_media-link li:nth-child(4) a {
+.media-link li:nth-child(4) a {
   background-position-x: 75%;
 }
-.header_media-link li:nth-child(5) a {
+.media-link li:nth-child(5) a {
   background-position-x: 100%;
 }
-
-.company_tel {
+.media-link .company_tel {
   display: inline-block;
   margin-top: 12px;
   text-transform: capitalize;
+  color: #80b701;
+}
+
+.media-link.primary {
+  display: none;
+}
+@media (min-width: 768px) {
+  .media-link.primary {
+    display: block;
+  }
+}
+.media-link.primary ul {
+  justify-content: end;
+}
+.media-link.primary li a:hover {
+  background-position-y: 100%;
+}
+.media-link.primary .company_tel {
   color: #1d1d1d;
 }
-.company_tel:hover {
+.media-link.primary .company_tel:hover {
+  color: #80b701;
+}
+
+.media-link.dark {
+  display: block;
+}
+@media (min-width: 768px) {
+  .media-link.dark {
+    display: none;
+  }
+}
+.media-link.dark ul {
+  justify-content: center;
+}
+.media-link.dark li a {
+  background-position-y: 100%;
+}
+.media-link.dark li a:hover {
+  transform: scale(1.2);
+}
+.media-link.dark .company_tel {
   color: #80b701;
 }
 
@@ -114,9 +138,20 @@ header {
   }
 }
 
+.control-next, .control-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 115px;
+  border: none;
+}
+.control-next:hover, .control-prev:hover {
+  background-position: 0 -120px;
+}
+
 .navbar {
   position: relative;
-  margin-top: 30px;
   padding: 0;
 }
 .navbar > div {
@@ -166,31 +201,13 @@ header {
 }
 
 .control-prev {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 115px;
-  border: none;
   left: 0;
   background: url(../images/slider_prev.png);
 }
-.control-prev:hover {
-  background-position: 0 -120px;
-}
 
 .control-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 115px;
-  border: none;
   right: 0;
   background: url(../images/slider_next.png);
-}
-.control-next:hover {
-  background-position: 0 -120px;
 }
 
 .search_container {
@@ -221,6 +238,7 @@ header {
 }
 
 .search_input {
+  width: 100%;
   border: none;
   background: none;
   flex-grow: 1;
@@ -238,7 +256,6 @@ header {
 }
 
 .card_list {
-  z-index: 1;
   display: grid;
   gap: 28px;
 }
@@ -446,6 +463,10 @@ header {
   transition: transform 0.5s ease-in-out;
 }
 
+main {
+  margin-top: 30px;
+}
+
 .main_content_container {
   background: url(../images/subbg.png);
   padding: 0;
@@ -573,53 +594,6 @@ header {
   margin-bottom: 28px;
   font-size: 20px;
   font-weight: 500;
-}
-
-.footer_media-link {
-  display: block;
-}
-@media (min-width: 768px) {
-  .footer_media-link {
-    display: none;
-  }
-}
-.footer_media-link ul {
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-  margin: 0;
-  padding: 0;
-}
-.footer_media-link li a {
-  display: block;
-  height: 27px;
-  width: 28px;
-  background: url(../images/social.png) no-repeat;
-  background-position-y: 100%;
-}
-.footer_media-link li a:hover {
-  transform: scale(1.2);
-}
-.footer_media-link li:nth-child(1) a {
-  background-position-x: 0;
-}
-.footer_media-link li:nth-child(2) a {
-  background-position-x: 25%;
-}
-.footer_media-link li:nth-child(3) a {
-  background-position-x: 50%;
-}
-.footer_media-link li:nth-child(4) a {
-  background-position-x: 75%;
-}
-.footer_media-link li:nth-child(5) a {
-  background-position-x: 100%;
-}
-.footer_media-link .company_tel {
-  display: inline-block;
-  margin-top: 12px;
-  text-transform: capitalize;
-  color: #80b701;
 }
 
 .footer_nav_container {

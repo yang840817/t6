@@ -1,0 +1,75 @@
+@use "../abstracts" as *;
+
+.media-link {
+  ul {
+    display: flex;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+  }
+  li a {
+    display: block;
+    height: 27px;
+    width: 28px;
+    background: url(../images/social.png) no-repeat;
+  }
+  li:nth-child(1) a {
+    background-position-x: 0;
+  }
+  li:nth-child(2) a {
+    background-position-x: 25%;
+  }
+  li:nth-child(3) a {
+    background-position-x: 50%;
+  }
+  li:nth-child(4) a {
+    background-position-x: 75%;
+  }
+  li:nth-child(5) a {
+    background-position-x: 100%;
+  }
+  .company_tel {
+    display: inline-block;
+    margin-top: 12px;
+    text-transform: capitalize;
+    color: $green;
+  }
+}
+.media-link.primary {
+  display: none;
+  @include breakpoint($md) {
+    display: block;
+  }
+  ul {
+    justify-content: end;
+  }
+  li a {
+    &:hover {
+      background-position-y: 100%;
+    }
+  }
+  .company_tel {
+    color: $black;
+    &:hover {
+      color: $green;
+    }
+  }
+}
+.media-link.dark {
+  display: block;
+  @include breakpoint($md) {
+    display: none;
+  }
+  ul {
+    justify-content: center;
+  }
+  li a {
+    background-position-y: 100%;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  .company_tel {
+    color: $green;
+  }
+}

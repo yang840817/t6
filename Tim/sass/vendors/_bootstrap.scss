@@ -1,6 +1,6 @@
 @use "../abstracts" as *;
 
-@mixin control-button {
+%control-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -14,7 +14,6 @@
 //nav
 .navbar {
   position: relative;
-  margin-top: 30px;
   padding: 0;
   > div {
     gap: 8px;
@@ -63,12 +62,12 @@
   }
 }
 .control-prev {
-  @include control-button;
+  @extend %control-button;
   left: 0;
   background: url(../images/slider_prev.png);
 }
 .control-next {
-  @include control-button;
+  @extend %control-button;
   right: 0;
   background: url(../images/slider_next.png);
 }

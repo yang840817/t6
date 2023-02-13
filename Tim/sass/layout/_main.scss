@@ -5,7 +5,9 @@
 @use "../components/card";
 @use "../components/info";
 @use "../components/feature_works";
-
+main {
+  margin-top: 30px;
+}
 .main_content_container {
   background: $bg-notes;
   padding: 0;
